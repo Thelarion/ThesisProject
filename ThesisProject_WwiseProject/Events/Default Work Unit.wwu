@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{2FB4EF43-DF60-47B9-9EEF-A2004292FBF9}" SchemaVersion="110">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{2FB4EF43-DF60-47B9-9EEF-A2004292FBF9}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="PlayerFoot" ID="{082039E4-8A12-4A7E-8C3D-A3C8AF76EE16}">
+					<ChildrenList>
+						<Action Name="" ID="{42D6B9CE-ECAE-41F1-954A-D309A9CF54AB}" ShortID="157364474">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Footsteps" ID="{ADCDE20A-314C-4B47-9238-F38198157E67}" WorkUnitID="{6B91872B-49A8-4BB8-A212-FBF7E77C3676}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Teleport" ID="{7AD5B035-93FF-4B62-BDE9-AAFB342F1587}">
+					<ChildrenList>
+						<Action Name="" ID="{5299BF83-8E20-40DF-9355-9613FE512477}" ShortID="319739385">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Teleport" ID="{A0A9E09E-70F5-4F69-AE8E-B834E7998EAD}" WorkUnitID="{6B91872B-49A8-4BB8-A212-FBF7E77C3676}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
