@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{E965A4AA-07EE-4611-8F19-203F9D710CE1}">
 					<ObjectInclusionList>
+						<ObjectRef Name="FreqDistance" ID="{99AC6BE6-146C-4182-9837-E7FB3AE78D80}" WorkUnitID="{6B91872B-49A8-4BB8-A212-FBF7E77C3676}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PlayerFoot" ID="{082039E4-8A12-4A7E-8C3D-A3C8AF76EE16}" WorkUnitID="{2FB4EF43-DF60-47B9-9EEF-A2004292FBF9}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Teleport" ID="{A0A9E09E-70F5-4F69-AE8E-B834E7998EAD}" WorkUnitID="{6B91872B-49A8-4BB8-A212-FBF7E77C3676}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>

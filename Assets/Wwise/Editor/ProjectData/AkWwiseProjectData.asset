@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 36069028d9c6b149af9e7a7e2bc60423
     GuidInternal: 
-    m_lastTime: -8585282418747844817
+    m_lastTime: -8585276406047076212
     List:
     - name: Main
       guid: aaa465e9ee0711468f19203f9d710ce1
@@ -94,8 +94,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 43efb42f60dfb9479eefa2004292fbf9
     GuidInternal: 
-    m_lastTime: -8585282418747974813
+    m_lastTime: -8585276393279794409
     List:
+    - name: FreqDistanceEvent
+      guid: 74c402e6d7077340a734ccbd7b265c9e
+      id: 2218041646
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: FreqDistanceEvent
+        ObjectType: 3
+        guid: 74c402e6d7077340a734ccbd7b265c9e
+      Path: Events\Default Work Unit\FreqDistanceEvent
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: PlayerFoot
       guid: e4392008128a7e4a8c3da3c8af76ee16
       id: 2664667690
@@ -142,8 +159,22 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: b620eed12b95f847963eed7bcbbaf028
     GuidInternal: 
-    m_lastTime: -8585282545793315633
-    List: []
+    m_lastTime: -8585276383732286716
+    List:
+    - name: distance_freq
+      guid: fe80d52caaf1b548be6137f43f4af98d
+      id: 3639684685
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b620eed12b95f847963eed7bcbbaf028
+      - ElementName: distance_freq
+        ObjectType: 13
+        guid: fe80d52caaf1b548be6137f43f4af98d
+      Path: Game Parameters\Default Work Unit\distance_freq
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:

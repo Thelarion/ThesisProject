@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	530129416	Teleport			\Default Work Unit\Teleport	
+	2218041646	FreqDistanceEvent			\Default Work Unit\FreqDistanceEvent	
 	2664667690	PlayerFoot			\Default Work Unit\PlayerFoot	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
@@ -10,6 +11,12 @@ Switch	ID	Name	Switch Group			Notes
 	2185786256	Gravel	Materials			
 	2195636714	Dirt	Materials			
 	2637588553	Tile	Materials			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	3639684685	distance_freq			\Default Work Unit\distance_freq	
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	160084483	Sine	Wwise Sine		\Actor-Mixer Hierarchy\Default Work Unit\FreqDistance\Sine	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	19019098	FS_Concrete_01	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Footsteps\Concrete\FS_Concrete_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete\FS_Concrete_01		42952

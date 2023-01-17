@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{D1EE20B6-952B-47F8-963E-ED7BCBBAF028}" SchemaVersion="110">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{D1EE20B6-952B-47F8-963E-ED7BCBBAF028}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{D1EE20B6-952B-47F8-963E-ED7BCBBAF028}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="distance_freq" ID="{2CD580FE-F1AA-48B5-BE61-37F43F4AF98D}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="10"/>
+						<Property Name="Max" Type="Real64" Value="10"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

@@ -495,6 +495,75 @@
 						<ActiveSource Name="Teleport" ID="{8AF5C081-225E-4E6E-AA33-1337F157C997}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="FreqDistance" ID="{99AC6BE6-146C-4182-9837-E7FB3AE78D80}" ShortID="359235314">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SourcePlugin Name="Sine" ID="{6E4A7D07-2F51-4024-93AF-C8CCCDB1770E}" ShortID="160084483" PluginName="Wwise Sine" CompanyID="0" PluginID="100">
+							<PropertyList>
+								<Property Name="SineFrequency" Type="Real32" Value="313"/>
+								<Property Name="SineGain" Type="Real32" Value="-25"/>
+							</PropertyList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{7D87AE8C-6EBF-488C-87CA-242CF4F7E9A6}" ShortID="701208771">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="SineFrequency"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="distance_freq" ID="{2CD580FE-F1AA-48B5-BE61-37F43F4AF98D}" WorkUnitID="{D1EE20B6-952B-47F8-963E-ED7BCBBAF028}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{A208865A-B405-426B-B35D-EC9EB477EE9C}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="5"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>5073.50797</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.64866</XPos>
+																		<YPos>575.16558</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>10</XPos>
+																		<YPos>20</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<Language>SFX</Language>
+						</SourcePlugin>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Sine" ID="{6E4A7D07-2F51-4024-93AF-C8CCCDB1770E}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

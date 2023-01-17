@@ -73,7 +73,7 @@ namespace StarterAssets
         public float FootstepDelayTime = 0.3f;
         public AK.Wwise.Event FootstepSound;
 
-        public RaycastInteraction raycastInteraction;
+        public AimManager aimManager;
 
 
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
@@ -133,7 +133,7 @@ namespace StarterAssets
         {
             if (_input.fire)
             {
-                raycastInteraction.Fire();
+                aimManager.Fire();
                 _input.fire = false;
             }
         }

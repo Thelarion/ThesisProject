@@ -25,6 +25,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="FreqDistanceEvent" ID="{E602C474-07D7-4073-A734-CCBD7B265C9E}">
+					<ChildrenList>
+						<Action Name="" ID="{A1259364-C192-4637-9C01-FE69666E7478}" ShortID="64396003">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FreqDistance" ID="{99AC6BE6-146C-4182-9837-E7FB3AE78D80}" WorkUnitID="{6B91872B-49A8-4BB8-A212-FBF7E77C3676}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

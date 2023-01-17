@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{986487A9-2683-E47A-8688-3D0FE6FDB954}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{8F27AC8C-CFF0-AB46-6D87-608B8E08C3C0}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -21,6 +21,9 @@
 			<Busses>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
+			<GameParameters>
+				<GameParameter Id="3639684685" Name="distance_freq"/>
+			</GameParameters>
 			<SwitchGroups>
 				<SwitchGroup Id="4050929301" Name="Materials">
 					<Switches>
@@ -32,7 +35,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{1572BF2D-19DE-8AD5-2E5D-56EDADD96CDE}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{7BD1CA61-B76B-F662-4A60-9B1E044AB88F}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -105,7 +108,19 @@
 					<CachePath>SFX/Footsteps/Concrete/FS_Concrete_04_10C4C929.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<Custom>
+					<Plugin Id="160084483" Name="Sine" LibName="Wwise Sine" LibId="6553602"/>
+				</Custom>
+			</Plugins>
 			<Events>
+				<Event Id="2218041646" Name="FreqDistanceEvent" DurationType="Infinite">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="160084483"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
 				<Event Id="2664667690" Name="PlayerFoot" DurationType="OneShot" DurationMin="0.386644" DurationMax="0.8593651">
 					<SwitchContainers>
 						<SwitchContainer>
@@ -152,6 +167,9 @@
 					</MediaRefs>
 				</Event>
 			</Events>
+			<GameParameters>
+				<GameParameter Id="3639684685" Name="distance_freq"/>
+			</GameParameters>
 			<SwitchGroups>
 				<SwitchGroup Id="4050929301" Name="Materials">
 					<Switches>
@@ -164,5 +182,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{0529E129-0567-F596-E6FF-8076F8E747BD}</FileHash>
+	<FileHash>{9699141C-CABD-FB15-787E-76F1D2473518}</FileHash>
 </SoundBanksInfo>

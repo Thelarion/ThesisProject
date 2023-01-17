@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID FREQDISTANCEEVENT = 2218041646U;
         static const AkUniqueID PLAYERFOOT = 2664667690U;
         static const AkUniqueID TELEPORT = 530129416U;
     } // namespace EVENTS
@@ -33,6 +34,11 @@ namespace AK
         } // namespace MATERIALS
 
     } // namespace SWITCHES
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID DISTANCE_FREQ = 3639684685U;
+    } // namespace GAME_PARAMETERS
 
     namespace BANKS
     {

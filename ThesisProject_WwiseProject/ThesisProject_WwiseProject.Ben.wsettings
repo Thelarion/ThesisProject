@@ -6,6 +6,7 @@
 				<Property Name="AudioFilesImporter\Path" Type="string" Value="D:\6. Uni\Courses\Wwise Course\Lesson 4\Audio files for Lesson 4\"/>
 				<Property Name="Event Action List\{082039E4-8A12-4A7E-8C3D-A3C8AF76EE16}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{7AD5B035-93FF-4B62-BDE9-AAFB342F1587}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{E602C474-07D7-4073-A734-CCBD7B265C9E}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="EventView\FilterMode2" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
