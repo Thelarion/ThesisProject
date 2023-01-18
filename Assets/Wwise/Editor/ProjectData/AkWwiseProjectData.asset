@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 36069028d9c6b149af9e7a7e2bc60423
     GuidInternal: 
-    m_lastTime: -8585276406047076212
+    m_lastTime: -8585275407774397842
     List:
     - name: Main
       guid: aaa465e9ee0711468f19203f9d710ce1
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 43efb42f60dfb9479eefa2004292fbf9
     GuidInternal: 
-    m_lastTime: -8585276393279794409
+    m_lastTime: -8585275407775095500
     List:
     - name: FreqDistanceEvent
       guid: 74c402e6d7077340a734ccbd7b265c9e
@@ -110,6 +110,40 @@ MonoBehaviour:
         ObjectType: 3
         guid: 74c402e6d7077340a734ccbd7b265c9e
       Path: Events\Default Work Unit\FreqDistanceEvent
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: OnTargetKlonk
+      guid: dd0ef47b0c9c9f41abf53863563d6e36
+      id: 1970655510
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: OnTargetKlonk
+        ObjectType: 3
+        guid: dd0ef47b0c9c9f41abf53863563d6e36
+      Path: Events\Default Work Unit\OnTargetKlonk
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: OnTargetWhiteNoise
+      guid: 341b09c19c05d249bb233b4e3d366514
+      id: 1041700194
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: OnTargetWhiteNoise
+        ObjectType: 3
+        guid: 341b09c19c05d249bb233b4e3d366514
+      Path: Events\Default Work Unit\OnTargetWhiteNoise
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -300,7 +334,7 @@ MonoBehaviour:
     m_lastTime: -8585282545794215635
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000002000000030000000500000006000000070000000b0000000c0000002f00000030000000730000007d0000007e000000
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

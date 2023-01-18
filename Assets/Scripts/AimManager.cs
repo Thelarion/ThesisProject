@@ -14,12 +14,16 @@ public class AimManager : MonoBehaviour
     private GameObject currentTarget = null;
     private RaycastHit hitTargetCheck;
     private RaycastHit hitWallCheck;
+    private RaycastHit hitOnTargetCheck;
     public AK.Wwise.Event frequencyDistance;
+    public AK.Wwise.Event onTargetWhiteNoise;
     private bool stopSFXBehindWall = false;
+    private bool isAimOnTarget = false;
 
     void FixedUpdate()
     {
         CheckIfTargetBehindWall();
+        CheckIfAimOnTarget();
 
         if (currentTarget == null)
         {
@@ -64,6 +68,39 @@ public class AimManager : MonoBehaviour
             rightRayToObject.text = lengthRayForwardPlusDistanceFromRayEndpoint.ToString();
             leftCameraToObject.text = distanceCameraToObject.ToString();
             topLeftDifference.text = (Mathf.Sqrt(lengthRayForwardPlusDistanceFromRayEndpoint - distanceCameraToObject)).ToString("F3");
+        }
+    }
+
+    private void CheckIfAimOnTarget()
+    {
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hitOnTargetCheck, Mathf.Infinity))
+        {
+            if (hitOnTargetCheck.collider.tag == "Target")
+            {
+                setAimOnTargetStatus();
+            }
+            // If ray hits objects that are not targets
+            else setAimOffTargetStatus();
+        }
+        // If ray hits nothing at all
+        else setAimOffTargetStatus();
+
+    }
+    private void setAimOnTargetStatus()
+    {
+        if (!isAimOnTarget)
+        {
+            isAimOnTarget = true;
+            onTargetWhiteNoise.Post(gameObject);
+        }
+    }
+
+    private void setAimOffTargetStatus()
+    {
+        if (isAimOnTarget)
+        {
+            isAimOnTarget = false;
+            onTargetWhiteNoise.Stop(gameObject);
         }
     }
 

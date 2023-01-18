@@ -24,8 +24,6 @@ public class TargetMove : MonoBehaviour
 
         Vector3 offset = movementVector * movementFactor;
 
-        // print(offset);
-
         transform.position = startingPosition + offset;
     }
 }

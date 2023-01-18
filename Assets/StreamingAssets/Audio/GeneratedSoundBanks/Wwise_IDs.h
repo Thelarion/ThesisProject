@@ -14,6 +14,8 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID FREQDISTANCEEVENT = 2218041646U;
+        static const AkUniqueID ONTARGETKLONK = 1970655510U;
+        static const AkUniqueID ONTARGETWHITENOISE = 1041700194U;
         static const AkUniqueID PLAYERFOOT = 2664667690U;
         static const AkUniqueID TELEPORT = 530129416U;
     } // namespace EVENTS

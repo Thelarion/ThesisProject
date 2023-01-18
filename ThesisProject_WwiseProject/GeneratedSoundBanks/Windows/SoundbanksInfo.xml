@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{8F27AC8C-CFF0-AB46-6D87-608B8E08C3C0}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{D146EB3F-4864-737C-FC63-535A90B94725}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -35,7 +35,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{7BD1CA61-B76B-F662-4A60-9B1E044AB88F}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{E276D055-D361-0F6C-7483-07FB7E9C4697}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -46,6 +46,10 @@
 				<File Id="25687503" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Gravel\FS_Gravel_01.wav</ShortName>
 					<CachePath>SFX/Footsteps/Gravel/FS_Gravel_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="83795591" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Klonk.wav</ShortName>
+					<CachePath>SFX/Klonk_B4EFE77F.wem</CachePath>
 				</File>
 				<File Id="136132481" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Tile\FS_Tile_03.wav</ShortName>
@@ -111,6 +115,7 @@
 			<Plugins>
 				<Custom>
 					<Plugin Id="160084483" Name="Sine" LibName="Wwise Sine" LibId="6553602"/>
+					<Plugin Id="962926609" Name="Tone Generator" LibName="Wwise Tone Generator" LibId="6684674"/>
 				</Custom>
 			</Plugins>
 			<Events>
@@ -118,6 +123,18 @@
 					<PluginRefs>
 						<Custom>
 							<PluginRef Id="160084483"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+				<Event Id="1970655510" Name="OnTargetKlonk" DurationType="OneShot" DurationMin="0.7646842" DurationMax="0.7646842">
+					<MediaRefs>
+						<MediaRef Id="83795591"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1041700194" Name="OnTargetWhiteNoise" DurationType="Infinite">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="962926609"/>
 						</Custom>
 					</PluginRefs>
 				</Event>
@@ -182,5 +199,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{9699141C-CABD-FB15-787E-76F1D2473518}</FileHash>
+	<FileHash>{5D492A9C-E684-9990-1ECC-F57513202787}</FileHash>
 </SoundBanksInfo>

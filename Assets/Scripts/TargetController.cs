@@ -19,21 +19,25 @@ public class TargetController : MonoBehaviour
     // Readonly property, I would return a new HashSet so nobody on the outside can alter the content
     public static HashSet<TargetController> Instances => new HashSet<TargetController>(_instances);
 
+    // Add target to instances
     private void Awake()
     {
         _instances.Add(this);
     }
 
+    // Set values for health bar slider
     private void Start()
     {
         healthBar.SetMaxHealth(MAX_HEALTH, currentHealth);
     }
 
+    // Remove target from instances when destroyed
     private void OnDestroy()
     {
         _instances.Remove(this);
     }
 
+    // Damage call and activate health bar when at 75 health
     public void takeDamage(int damage)
     {
         currentHealth -= damage;
@@ -45,6 +49,7 @@ public class TargetController : MonoBehaviour
         }
     }
 
+    // Check if still health left
     public bool checkHasHealth()
     {
         hasHealth = currentHealth > 0 ? true : false;
