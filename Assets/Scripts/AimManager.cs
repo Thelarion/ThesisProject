@@ -154,9 +154,16 @@ public class AimManager : MonoBehaviour
         {
             if (hitTargetCheck.transform.tag == "Target")
             {
-                Destroy(hitTargetCheck.transform.gameObject);
-                frequencyDistance.Stop(gameObject);
-                currentTarget = null;
+                // Deal 25 int damage
+                TargetController currentTargetController = hitTargetCheck.transform.GetComponent<TargetController>();
+                currentTargetController.takeDamage(25);
+                // Check if health is above 0
+                if (!currentTargetController.checkHasHealth())
+                {
+                    Destroy(hitTargetCheck.transform.gameObject);
+                    frequencyDistance.Stop(gameObject);
+                    currentTarget = null;
+                }
             }
         }
     }
