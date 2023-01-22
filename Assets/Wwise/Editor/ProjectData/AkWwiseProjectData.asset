@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 36069028d9c6b149af9e7a7e2bc60423
     GuidInternal: 
-    m_lastTime: -8585275407774397842
+    m_lastTime: -8585272074173149767
     List:
     - name: Main
       guid: aaa465e9ee0711468f19203f9d710ce1
@@ -94,8 +94,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 43efb42f60dfb9479eefa2004292fbf9
     GuidInternal: 
-    m_lastTime: -8585275407775095500
+    m_lastTime: -8585272074173338325
     List:
+    - name: BalloonHover
+      guid: 35b0d57aff93624bbde9aafb342f1587
+      id: 164414172
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: BalloonHover
+        ObjectType: 3
+        guid: 35b0d57aff93624bbde9aafb342f1587
+      Path: Events\Default Work Unit\BalloonHover
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: FreqDistanceEvent
       guid: 74c402e6d7077340a734ccbd7b265c9e
       id: 2218041646
@@ -110,40 +127,6 @@ MonoBehaviour:
         ObjectType: 3
         guid: 74c402e6d7077340a734ccbd7b265c9e
       Path: Events\Default Work Unit\FreqDistanceEvent
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: OnTargetKlonk
-      guid: dd0ef47b0c9c9f41abf53863563d6e36
-      id: 1970655510
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: OnTargetKlonk
-        ObjectType: 3
-        guid: dd0ef47b0c9c9f41abf53863563d6e36
-      Path: Events\Default Work Unit\OnTargetKlonk
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: OnTargetWhiteNoise
-      guid: 341b09c19c05d249bb233b4e3d366514
-      id: 1041700194
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: OnTargetWhiteNoise
-        ObjectType: 3
-        guid: 341b09c19c05d249bb233b4e3d366514
-      Path: Events\Default Work Unit\OnTargetWhiteNoise
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -164,9 +147,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Teleport
-      guid: 35b0d57aff93624bbde9aafb342f1587
-      id: 530129416
+    - name: WhiteNoiseOnTarget
+      guid: 341b09c19c05d249bb233b4e3d366514
+      id: 1848491570
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -174,10 +157,10 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: Teleport
+      - ElementName: WhiteNoiseOnTarget
         ObjectType: 3
-        guid: 35b0d57aff93624bbde9aafb342f1587
-      Path: Events\Default Work Unit\Teleport
+        guid: 341b09c19c05d249bb233b4e3d366514
+      Path: Events\Default Work Unit\WhiteNoiseOnTarget
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -193,7 +176,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: b620eed12b95f847963eed7bcbbaf028
     GuidInternal: 
-    m_lastTime: -8585276383732286716
+    m_lastTime: -8585272090082875300
     List:
     - name: distance_freq
       guid: fe80d52caaf1b548be6137f43f4af98d
@@ -209,6 +192,34 @@ MonoBehaviour:
         ObjectType: 13
         guid: fe80d52caaf1b548be6137f43f4af98d
       Path: Game Parameters\Default Work Unit\distance_freq
+    - name: frequency_depth
+      guid: 17fe0f60ee1f174d901fc9f00c6592b8
+      id: 1440328639
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b620eed12b95f847963eed7bcbbaf028
+      - ElementName: frequency_depth
+        ObjectType: 13
+        guid: 17fe0f60ee1f174d901fc9f00c6592b8
+      Path: Game Parameters\Default Work Unit\frequency_depth
+    - name: synth_pwm_up_down
+      guid: 781943bc04d39040bec840c997d41550
+      id: 4213591503
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b620eed12b95f847963eed7bcbbaf028
+      - ElementName: synth_pwm_up_down
+        ObjectType: 13
+        guid: 781943bc04d39040bec840c997d41550
+      Path: Game Parameters\Default Work Unit\synth_pwm_up_down
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -221,8 +232,106 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 7fb15f74f422ed4bad756627e85a9cb3
     GuidInternal: 
-    m_lastTime: -8585282545793485623
-    List: []
+    m_lastTime: -8585272225639727698
+    List:
+    - name: AimDirection
+      guid: bdd2e6e80180014ab731b31c36909571
+      id: 3737870095
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7fb15f74f422ed4bad756627e85a9cb3
+      - ElementName: AimDirection
+        ObjectType: 9
+        guid: bdd2e6e80180014ab731b31c36909571
+      Path: States\Default Work Unit\AimDirection
+      values:
+      - name: AimDown
+        guid: 9f14bcd25c4c7c48b4b8ac9a1f27fb70
+        id: 3625632552
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 7fb15f74f422ed4bad756627e85a9cb3
+        - ElementName: AimDirection
+          ObjectType: 9
+          guid: bdd2e6e80180014ab731b31c36909571
+        - ElementName: AimDown
+          ObjectType: 8
+          guid: 9f14bcd25c4c7c48b4b8ac9a1f27fb70
+      - name: AimLeft
+        guid: e8df3ce4fc979c4ca5d705d471570779
+        id: 2448668527
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 7fb15f74f422ed4bad756627e85a9cb3
+        - ElementName: AimDirection
+          ObjectType: 9
+          guid: bdd2e6e80180014ab731b31c36909571
+        - ElementName: AimLeft
+          ObjectType: 8
+          guid: e8df3ce4fc979c4ca5d705d471570779
+      - name: AimRight
+        guid: 8e5192c6ac69bf46b273403a38f62808
+        id: 2402943410
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 7fb15f74f422ed4bad756627e85a9cb3
+        - ElementName: AimDirection
+          ObjectType: 9
+          guid: bdd2e6e80180014ab731b31c36909571
+        - ElementName: AimRight
+          ObjectType: 8
+          guid: 8e5192c6ac69bf46b273403a38f62808
+      - name: AimUp
+        guid: 63d4b57fceae9647adefc4cdf56a459f
+        id: 3959127275
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 7fb15f74f422ed4bad756627e85a9cb3
+        - ElementName: AimDirection
+          ObjectType: 9
+          guid: bdd2e6e80180014ab731b31c36909571
+        - ElementName: AimUp
+          ObjectType: 8
+          guid: 63d4b57fceae9647adefc4cdf56a459f
+      - name: None
+        guid: 78a0b24ab3e88648a7ca0c8e3cb10d5e
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 7fb15f74f422ed4bad756627e85a9cb3
+        - ElementName: AimDirection
+          ObjectType: 9
+          guid: bdd2e6e80180014ab731b31c36909571
+        - ElementName: None
+          ObjectType: 8
+          guid: 78a0b24ab3e88648a7ca0c8e3cb10d5e
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -334,7 +443,7 @@ MonoBehaviour:
     m_lastTime: -8585282545794215635
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 05000000060000000c0000000d0000000e000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

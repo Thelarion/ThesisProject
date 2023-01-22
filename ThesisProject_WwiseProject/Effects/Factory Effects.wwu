@@ -64,7 +64,7 @@
 								<Property Name="OutputGain" Type="Real32" Value="3"/>
 								<Property Name="Ratio" Type="Real32" Value="20"/>
 								<Property Name="ReleaseTime" Type="Real32" Value="0.021"/>
-								<Property Name="Threshold" Type="Real32" Value="-37"/>
+								<Property Name="Threshold" Type="Real32" Value="-23.3"/>
 							</PropertyList>
 						</Effect>
 						<Effect Name="All_Buttons_IN" ID="{E5FFEBA7-4F6F-421E-ABB7-286C011BD0C8}" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
@@ -1858,7 +1858,7 @@
 					<ChildrenList>
 						<Effect Name="Say_what" ID="{E823825D-3114-4F6D-A6A4-7FB673A10A61}" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
 							<PropertyList>
-								<Property Name="ModFrequency" Type="Real32" Value="1.18"/>
+								<Property Name="ModFrequency" Type="Real32" Value="1.84"/>
 								<Property Name="ModPWM" Type="Real32" Value="27"/>
 								<Property Name="ModPhaseOffset" Type="Real32" Value="-180"/>
 								<Property Name="ModPhaseSpread" Type="Real32" Value="58"/>
@@ -1886,12 +1886,101 @@
 						</Effect>
 						<Effect Name="Boomerang" ID="{65397B72-19EC-43DB-B2D2-EB84437B6BDC}" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
 							<PropertyList>
-								<Property Name="ModFrequency" Type="Real32" Value="3"/>
-								<Property Name="ModPWM" Type="Real32" Value="0"/>
+								<Property Name="ModDepth" Type="Real32" Value="60"/>
+								<Property Name="ModFrequency" Type="Real32" Value="1.06"/>
+								<Property Name="ModPWM" Type="Real32" Value="98"/>
 								<Property Name="ModPhaseOffset" Type="Real32" Value="-180"/>
-								<Property Name="ModPhaseSpread" Type="Real32" Value="58"/>
-								<Property Name="ModWaveform" Type="int32" Value="1"/>
+								<Property Name="ModPhaseSpread" Type="Real32" Value="38"/>
+								<Property Name="ModSmoothing" Type="Real32" Value="78"/>
 							</PropertyList>
+							<StateInfo>
+								<StatePropertyList>
+									<Property Name="ModDepth"/>
+								</StatePropertyList>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="AimDirection" ID="{E8E6D2BD-8001-4A01-B731-B31C36909571}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="AimRight" ID="{C692518E-69AC-46BF-B273-403A38F62808}"/>
+										<CustomState Name="" ID="{9D9A5F7F-B0E1-4A82-963A-2C2AD98C4578}" ShortID="312226227">
+											<PropertyList>
+												<Property Name="ModDepth" Type="Real32" Value="0"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="AimUp" ID="{7FB5D463-AECE-4796-ADEF-C4CDF56A459F}"/>
+										<CustomState Name="" ID="{47E7A41F-586E-4F2D-9ABB-A025919D56BC}" ShortID="864967878">
+											<PropertyList>
+												<Property Name="ModDepth" Type="Real32" Value="0"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="AimDown" ID="{D2BC149F-4C5C-487C-B4B8-AC9A1F27FB70}"/>
+										<CustomState Name="" ID="{09E5FD65-5B0E-40B7-B683-FBB450BA5B92}" ShortID="6566306">
+											<PropertyList>
+												<Property Name="ModDepth" Type="Real32" Value="0"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="AimLeft" ID="{E43CDFE8-97FC-4C9C-A5D7-05D471570779}"/>
+										<CustomState Name="" ID="{C67570D4-EDCD-40E0-9890-1EA2CDF3B640}" ShortID="562773014">
+											<PropertyList>
+												<Property Name="ModDepth" Type="Real32" Value="0"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{119AA1B9-8AA6-492F-A77E-76694AA8884D}" ShortID="554076696">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="ModFrequency"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="frequency_depth" ID="{600FFE17-1FEE-4D17-901F-C9F00C6592B8}" WorkUnitID="{D1EE20B6-952B-47F8-963E-ED7BCBBAF028}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{773255DC-F55A-441F-9F05-D4EE29AB8C3D}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="5"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0.02</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.05</XPos>
+																		<YPos>2</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>2</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
 						</Effect>
 						<Effect Name="Halfway_There" ID="{DD67F3B9-38CD-46FD-931A-19625D534C90}" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
 							<PropertyList>
@@ -1900,7 +1989,6 @@
 								<Property Name="ModPhaseOffset" Type="Real32" Value="-180"/>
 								<Property Name="ModPhaseSpread" Type="Real32" Value="19"/>
 								<Property Name="ModSmoothing" Type="Real32" Value="39"/>
-								<Property Name="ModWaveform" Type="int32" Value="2"/>
 							</PropertyList>
 						</Effect>
 						<Effect Name="Very_Bad_Connection" ID="{0C5A674D-5EC0-45A6-87A7-3885B3196DCD}" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
@@ -1934,11 +2022,10 @@
 						</Effect>
 						<Effect Name="Fast_LF_Tremolo_No_Smoothing" ID="{D972718E-231C-4DBF-9288-FCAF4BF47B50}" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
 							<PropertyList>
-								<Property Name="ModFrequency" Type="Real32" Value="19.84"/>
+								<Property Name="ModFrequency" Type="Real32" Value="1.4"/>
 								<Property Name="ModPWM" Type="Real32" Value="4"/>
 								<Property Name="ModPhaseOffset" Type="Real32" Value="-180"/>
 								<Property Name="ModPhaseSpread" Type="Real32" Value="180"/>
-								<Property Name="ModWaveform" Type="int32" Value="3"/>
 							</PropertyList>
 						</Effect>
 					</ChildrenList>

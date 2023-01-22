@@ -1,6 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{DA0BC45C-13AC-4C6B-AAD7-B15B261FFC04}" SchemaVersion="110">
 	<Modulators>
-		<WorkUnit Name="Default Work Unit" ID="{DA0BC45C-13AC-4C6B-AAD7-B15B261FFC04}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{DA0BC45C-13AC-4C6B-AAD7-B15B261FFC04}" PersistMode="Standalone">
+			<ChildrenList>
+				<ModulatorLfo Name="Voice Volume" ID="{FA9CAB03-94C5-4F3F-B7DC-5D4AD76E010B}" ShortID="632041041">
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{7171D531-B9F4-4848-B92D-D5BB3893F499}" ShortID="44296433">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="LfoFrequency"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="Frequency" ID="{929F7179-9692-4D50-AEA6-D3FD1124CE42}" WorkUnitID="{DA0BC45C-13AC-4C6B-AAD7-B15B261FFC04}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{F50A9FF3-11FD-44AC-8368-911E29941E71}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="5"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>1</YPos>
+																<Flags>21</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>4.7</YPos>
+																<Flags>53</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</ModulatorLfo>
+				<ModulatorLfo Name="Frequency" ID="{929F7179-9692-4D50-AEA6-D3FD1124CE42}" ShortID="558581355">
+					<PropertyList>
+						<Property Name="LfoDepth" Type="Real64" Value="0"/>
+						<Property Name="LfoFrequency" Type="Real64" Value="1.9"/>
+						<Property Name="LfoPWM" Type="Real64" Value="0"/>
+					</PropertyList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{F01649B3-3C03-4764-84CB-714E39B579BE}" ShortID="311859802">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="LfoDepth"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="frequency_depth" ID="{600FFE17-1FEE-4D17-901F-C9F00C6592B8}" WorkUnitID="{D1EE20B6-952B-47F8-963E-ED7BCBBAF028}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{EBD8E320-8CE4-4A44-A475-900B67DBAFFE}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>100</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</ModulatorLfo>
+			</ChildrenList>
+		</WorkUnit>
 	</Modulators>
 </WwiseDocument>

@@ -14,12 +14,12 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Teleport" ID="{7AD5B035-93FF-4B62-BDE9-AAFB342F1587}">
+				<Event Name="BalloonHover" ID="{7AD5B035-93FF-4B62-BDE9-AAFB342F1587}">
 					<ChildrenList>
 						<Action Name="" ID="{5299BF83-8E20-40DF-9355-9613FE512477}" ShortID="319739385">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Teleport" ID="{A0A9E09E-70F5-4F69-AE8E-B834E7998EAD}" WorkUnitID="{6B91872B-49A8-4BB8-A212-FBF7E77C3676}"/>
+									<ObjectRef Name="Balloon Hover" ID="{A0A9E09E-70F5-4F69-AE8E-B834E7998EAD}" WorkUnitID="{6B91872B-49A8-4BB8-A212-FBF7E77C3676}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -30,29 +30,18 @@
 						<Action Name="" ID="{A1259364-C192-4637-9C01-FE69666E7478}" ShortID="64396003">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="FreqDistance" ID="{99AC6BE6-146C-4182-9837-E7FB3AE78D80}" WorkUnitID="{6B91872B-49A8-4BB8-A212-FBF7E77C3676}"/>
+									<ObjectRef Name="Frequency Distance" ID="{99AC6BE6-146C-4182-9837-E7FB3AE78D80}" WorkUnitID="{6B91872B-49A8-4BB8-A212-FBF7E77C3676}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="OnTargetKlonk" ID="{7BF40EDD-9C0C-419F-ABF5-3863563D6E36}">
-					<ChildrenList>
-						<Action Name="" ID="{53C0D3A7-A706-462F-B945-DD648C2F6CE6}" ShortID="421108180">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="OnTargetKlonk" ID="{C0FA8271-2021-4C8D-8141-AF906B7C61D8}" WorkUnitID="{6B91872B-49A8-4BB8-A212-FBF7E77C3676}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="OnTargetWhiteNoise" ID="{C1091B34-059C-49D2-BB23-3B4E3D366514}">
+				<Event Name="WhiteNoiseOnTarget" ID="{C1091B34-059C-49D2-BB23-3B4E3D366514}">
 					<ChildrenList>
 						<Action Name="" ID="{74B3CA67-43C8-4154-BEE1-8ABAE20953D7}" ShortID="330827111">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="OnTargetWhiteNoise" ID="{2450B3B4-6CD3-4471-8B62-BB204A302A4D}" WorkUnitID="{6B91872B-49A8-4BB8-A212-FBF7E77C3676}"/>
+									<ObjectRef Name="White Noise OnTarget" ID="{2450B3B4-6CD3-4471-8B62-BB204A302A4D}" WorkUnitID="{6B91872B-49A8-4BB8-A212-FBF7E77C3676}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

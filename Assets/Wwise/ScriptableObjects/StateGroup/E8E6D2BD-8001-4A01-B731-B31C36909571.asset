@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2884db9baba48ae43abdd083adbd1799, type: 3}
-  m_Name: 7BF40EDD-9C0C-419F-ABF5-3863563D6E36
+  m_Script: {fileID: 11500000, guid: 4b33ac414f1199e4cb8899dea8613aaf, type: 3}
+  m_Name: E8E6D2BD-8001-4A01-B731-B31C36909571
   m_EditorClassIdentifier: 
-  objectName: OnTargetKlonk
-  id: 1970655510
-  guid: 7BF40EDD-9C0C-419F-ABF5-3863563D6E36
+  objectName: AimDirection
+  id: 3737870095
+  guid: E8E6D2BD-8001-4A01-B731-B31C36909571

@@ -48,26 +48,27 @@ public class AimManager : MonoBehaviour
             // https://www.reddit.com/r/Unity3D/comments/p0zfi4/how_do_i_get_an_angle_from_two_vectors/
             float angleHorizontal = Vector3.SignedAngle(transform.TransformDirection(Vector3.forward), currentTarget.transform.position - transform.position, Vector3.up);
             // Debug.Log(angleHorizontal);
-            // DisplayHorizontalCommmand(angleHorizontal);
+            DisplayHorizontalCommmand(angleHorizontal);
 
             float angleVertical = Vector3.SignedAngle(transform.TransformDirection(Vector3.forward), currentTarget.transform.position - transform.position, Vector3.right);
             // Debug.Log(angleVertical);
-            // DisplayVerticalCommand(angleVertical);
+            DisplayVerticalCommand(angleVertical);
 
             float lengthRayForwardPlusDistanceFromRayEndpoint = distanceRayEndpointToObject + lengthCameraToGetPoint;
+            // Root is for increasing the small digits
             float distanceFreq = (Mathf.Sqrt(lengthRayForwardPlusDistanceFromRayEndpoint - distanceCameraToObject));
 
             AkSoundEngine.SetRTPCValue("distance_freq", distanceFreq);
 
             // Draw ray and lines
-            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * lengthCameraToGetPoint, Color.red);
-            Debug.DrawLine(rayCameraForward.GetPoint(lengthCameraToGetPoint), currentTarget.transform.position, Color.green);
-            Debug.DrawLine(transform.position, currentTarget.transform.position, Color.yellow);
+            // Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * lengthCameraToGetPoint, Color.red);
+            // Debug.DrawLine(rayCameraForward.GetPoint(lengthCameraToGetPoint), currentTarget.transform.position, Color.green);
+            // Debug.DrawLine(transform.position, currentTarget.transform.position, Color.yellow);
 
             // Outputs on UI
-            rightRayToObject.text = lengthRayForwardPlusDistanceFromRayEndpoint.ToString();
-            leftCameraToObject.text = distanceCameraToObject.ToString();
-            topLeftDifference.text = (Mathf.Sqrt(lengthRayForwardPlusDistanceFromRayEndpoint - distanceCameraToObject)).ToString("F3");
+            // rightRayToObject.text = lengthRayForwardPlusDistanceFromRayEndpoint.ToString();
+            // leftCameraToObject.text = distanceCameraToObject.ToString();
+            // topLeftDifference.text = (Mathf.Sqrt(lengthRayForwardPlusDistanceFromRayEndpoint - distanceCameraToObject)).ToString("F3");
         }
     }
 
@@ -165,11 +166,13 @@ public class AimManager : MonoBehaviour
     {
         if (angleHorizontal > 0)
         {
-            print("Right");
+            // Aim to the left
+            AkSoundEngine.SetRTPCValue("frequency_depth", 0f);
         }
         else if (angleHorizontal < 0)
         {
-            print("Left");
+            // Aim to the reft
+            AkSoundEngine.SetRTPCValue("frequency_depth", 100f);
         }
     }
 
@@ -177,11 +180,13 @@ public class AimManager : MonoBehaviour
     {
         if (angleVertical > 0)
         {
-            print("Up");
+            // Aim down
+            AkSoundEngine.SetRTPCValue("synth_pwm_up_down", 50f);
         }
         else if (angleVertical < 0)
         {
-            print("Down");
+            // Aim up
+            AkSoundEngine.SetRTPCValue("synth_pwm_up_down", 0f);
         }
     }
 

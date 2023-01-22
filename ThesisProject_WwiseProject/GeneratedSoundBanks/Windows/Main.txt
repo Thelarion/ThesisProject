@@ -1,7 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
-	530129416	Teleport			\Default Work Unit\Teleport	
-	1041700194	OnTargetWhiteNoise			\Default Work Unit\OnTargetWhiteNoise	
-	1970655510	OnTargetKlonk			\Default Work Unit\OnTargetKlonk	
+	164414172	BalloonHover			\Default Work Unit\BalloonHover	
+	1848491570	WhiteNoiseOnTarget			\Default Work Unit\WhiteNoiseOnTarget	
 	2218041646	FreqDistanceEvent			\Default Work Unit\FreqDistanceEvent	
 	2664667690	PlayerFoot			\Default Work Unit\PlayerFoot	
 
@@ -15,19 +14,24 @@ Switch	ID	Name	Switch Group			Notes
 	2637588553	Tile	Materials			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
+	1440328639	frequency_depth			\Default Work Unit\frequency_depth	
 	3639684685	distance_freq			\Default Work Unit\distance_freq	
+	4213591503	synth_pwm_up_down			\Default Work Unit\synth_pwm_up_down	
+
+Modulator LFO	ID	Name			Wwise Object Path	Notes
+	558581355	Frequency			\Default Work Unit\Frequency	
+	632041041	Voice Volume			\Default Work Unit\Voice Volume	
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
-	160084483	Sine	Wwise Sine		\Actor-Mixer Hierarchy\Default Work Unit\FreqDistance\Sine	
-	962926609	Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Default Work Unit\OnTargetWhiteNoise\Tone Generator	
+	345407793	Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Default Work Unit\Frequency Distance\Synth One	
+	962926609	Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Default Work Unit\White Noise OnTarget\Tone Generator	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	19019098	FS_Concrete_01	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Footsteps\Concrete\FS_Concrete_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete\FS_Concrete_01		42952
 	25687503	FS_Gravel_01	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Footsteps\Gravel\FS_Gravel_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Gravel\FS_Gravel_01		43006
-	83795591	OnTargetKlonk	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Klonk_B4EFE77F.wem		\Actor-Mixer Hierarchy\Default Work Unit\OnTargetKlonk		134988
 	136132481	FS_Tile_03	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Footsteps\Tile\FS_Tile_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Tile\FS_Tile_03		58572
+	313054933	Balloon Hover	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\balloon_hover_831E7B72.wem		\Actor-Mixer Hierarchy\Default Work Unit\Balloon Hover		768096
 	391679118	FS_Dirt_03	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Footsteps\Dirt\FS_Dirt_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Dirt\FS_Dirt_03		75892
-	438483893	Teleport	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Teleport_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Teleport		3675716
 	454928087	FS_Concrete_03	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Footsteps\Concrete\FS_Concrete_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete\FS_Concrete_03		63518
 	473231221	FS_Gravel_03	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Footsteps\Gravel\FS_Gravel_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Gravel\FS_Gravel_03		48248
 	490717431	FS_Dirt_02	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Footsteps\Dirt\FS_Dirt_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Dirt\FS_Dirt_02		75892

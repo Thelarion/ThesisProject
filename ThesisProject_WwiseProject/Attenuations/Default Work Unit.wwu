@@ -12,6 +12,7 @@
 						</Property>
 						<Property Name="ConeInnerAngle" Type="int32" Value="80"/>
 						<Property Name="ConeOuterAngle" Type="int32" Value="255"/>
+						<Property Name="RadiusMax" Type="Real64" Value="20"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -27,17 +28,12 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>49.999</XPos>
-											<YPos>-10.63684</YPos>
-											<Flags>0</Flags>
-										</Point>
-										<Point>
-											<XPos>50.004</XPos>
+											<XPos>10</XPos>
 											<YPos>-200</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>100</XPos>
+											<XPos>20</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>

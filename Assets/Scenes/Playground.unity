@@ -622,7 +622,7 @@ PrefabInstance:
     - target: {fileID: 5019407653510244810, guid: ff8e365a52ec04d40a2ec6c1dce51a05,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5019407653784650175, guid: ff8e365a52ec04d40a2ec6c1dce51a05,
         type: 3}
@@ -1028,7 +1028,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &511814686
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1169,7 +1169,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &563645826
 Transform:
   m_ObjectHideFlags: 0
@@ -1415,7 +1415,7 @@ PrefabInstance:
     - target: {fileID: 5019407653510244810, guid: ff8e365a52ec04d40a2ec6c1dce51a05,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff8e365a52ec04d40a2ec6c1dce51a05, type: 3}
@@ -2088,7 +2088,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &925031891
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2719,7 +2719,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1420632239
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2806,11 +2806,6 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 8287edaeb31e672439b503ce4a52dd95,
-      type: 2}
-  onTargetSFX:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 16d842aaba90ba84ba0ce99c907dd008,
       type: 2}
   onTargetWhiteNoise:
     idInternal: 0
@@ -4272,6 +4267,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5019407653510244661, guid: ff8e365a52ec04d40a2ec6c1dce51a05,
+        type: 3}
+      propertyPath: triggerList.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5019407653510244661, guid: ff8e365a52ec04d40a2ec6c1dce51a05,
+        type: 3}
+      propertyPath: triggerList.Array.data[0]
+      value: 1281810935
       objectReference: {fileID: 0}
     - target: {fileID: 5019407653510244662, guid: ff8e365a52ec04d40a2ec6c1dce51a05,
         type: 3}

@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{745FB17F-22F4-4BED-AD75-6627E85A9CB3}" SchemaVersion="110">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{745FB17F-22F4-4BED-AD75-6627E85A9CB3}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{745FB17F-22F4-4BED-AD75-6627E85A9CB3}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="AimDirection" ID="{E8E6D2BD-8001-4A01-B731-B31C36909571}">
+					<ChildrenList>
+						<State Name="None" ID="{4AB2A078-E8B3-4886-A7CA-0C8E3CB10D5E}"/>
+						<State Name="AimUp" ID="{7FB5D463-AECE-4796-ADEF-C4CDF56A459F}"/>
+						<State Name="AimDown" ID="{D2BC149F-4C5C-487C-B4B8-AC9A1F27FB70}"/>
+						<State Name="AimLeft" ID="{E43CDFE8-97FC-4C9C-A5D7-05D471570779}"/>
+						<State Name="AimRight" ID="{C692518E-69AC-46BF-B273-403A38F62808}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

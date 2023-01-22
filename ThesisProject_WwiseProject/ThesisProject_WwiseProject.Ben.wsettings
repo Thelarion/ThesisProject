@@ -4,6 +4,7 @@
 		<UserProjectSettings Name="" ID="{5DF15E22-79C8-425A-9EC6-9CF4CCC5F5C2}">
 			<PropertyList>
 				<Property Name="AudioFilesImporter\Path" Type="string" Value="D:\6. Uni\Courses\Wwise Course\Lesson 4\Audio files for Lesson 4\"/>
+				<Property Name="EffectsView\MeteringObject\{87BE3270-3D27-45BB-9E46-7F2D9380F523}" Type="string" Value="{99AC6BE6-146C-4182-9837-E7FB3AE78D80}"/>
 				<Property Name="Event Action List\{082039E4-8A12-4A7E-8C3D-A3C8AF76EE16}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{7AD5B035-93FF-4B62-BDE9-AAFB342F1587}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{7BF40EDD-9C0C-419F-ABF5-3863563D6E36}\x64_Expand States" Type="string" Value=""/>
@@ -31,7 +32,7 @@
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="d86WZubcO0u8oeCYeqO3/g=="/>
 				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="qqRl6e4HEUaPGSA/nXEM4Q=="/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}"/>
-				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups_v2" Type="string" Value="GSIRYLRziUGcWb48la/JYgEAbypuAAAAwKQDPfx/AAA4z8bnpAEAAAAAAACkAQAAwKQDPfx/AAAEktq4/H8AAHA8DfWkAQAAAAAAAKQBAAAIAAAAAAAAALjgbypuAAAAAADvuPx/AAAfAe+4/H8AAAAA77j8fwAAwKQDPfx/AADApAM9/H8AADjPxuekAQAAAQAAALX1bT1hf4lPrUN2waWA+xsBAG8qbgAAAMCkAz38fwAAOM/G56QBAAAAAAAApAEAAMCkAz38fwAABJLauPx/AABwPA31pAEAAAAAAACkAQAACAAAAAAAAAC44G8qbgAAAAAA77j8fwAAHwHvuPx/AAAAAO+4/H8AAMCkAz38fwAAwKQDPfx/AAA4z8bnpAEAAAEAAAA="/>
+				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups_v2" Type="string" Value="tfVtPWF/iU+tQ3bBpYD7GwEAr7HEAAAAwKRok/x/AACI/rs2awIAAAAAAABrAgAAwKRok/x/AAAEkieJ/H8AAHDsMUNrAgAAAAAAAGsCAAAIAAAAAAAAAAjnr7HEAAAAAAA8ifx/AAAfATyJ/H8AAAAAPIn8fwAAwKRok/x/AADApGiT/H8AAIj+uzZrAgAAAQAAABkiEWC0c4lBnFm+PJWvyWIBAK+xxAAAAMCkaJP8fwAAiP67NmsCAAAAAAAAawIAAMCkaJP8fwAABJInifx/AABw7DFDawIAAAAAAABrAgAACAAAAAAAAAAI56+xxAAAAAAAPIn8fwAAHwE8ifx/AAAAADyJ/H8AAMCkaJP8fwAAwKRok/x/AACI/rs2awIAAAEAAAA="/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
 				<Property Name="MeterView\MeterMode1Viewpoint0" Type="int32" Value="1"/>
@@ -117,6 +118,7 @@
 						<Value Platform="Windows"></Value>
 					</ValueList>
 				</Property>
+				<Property Name="Soundcaster\PreviousSession" Type="string" Value="{5718D2AD-D52F-4502-BB4B-87BB6BF4C51C}"/>
 			</PropertyList>
 		</UserProjectSettings>
 	</UserProjectSettingsInfo>

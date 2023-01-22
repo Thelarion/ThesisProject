@@ -463,7 +463,7 @@
 						</GroupingList>
 					</GroupingInfo>
 				</SwitchContainer>
-				<Sound Name="Teleport" ID="{A0A9E09E-70F5-4F69-AE8E-B834E7998EAD}" ShortID="272065676">
+				<Sound Name="Balloon Hover" ID="{A0A9E09E-70F5-4F69-AE8E-B834E7998EAD}" ShortID="272065676">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
@@ -480,11 +480,16 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="Teleport" ID="{8AF5C081-225E-4E6E-AA33-1337F157C997}">
+						<AudioFileSource Name="balloon_hover" ID="{6A9ED91F-1D9E-4864-8FB4-26C0C5E462B1}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.0184331797235023"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.0307219662058369"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+							</PropertyList>
 							<Language>SFX</Language>
-							<AudioFile>Teleport.wav</AudioFile>
+							<AudioFile>balloon_hover.wav</AudioFile>
 							<MediaIDList>
-								<MediaID ID="438483893"/>
+								<MediaID ID="313054933"/>
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
@@ -492,12 +497,19 @@
 						<Position Name="" ID="{3206D274-7B5A-4402-9E70-6A4E04DEB63A}"/>
 					</PositioningInfo>
 					<ActiveSourceList>
-						<ActiveSource Name="Teleport" ID="{8AF5C081-225E-4E6E-AA33-1337F157C997}" Platform="Linked"/>
+						<ActiveSource Name="balloon_hover" ID="{6A9ED91F-1D9E-4864-8FB4-26C0C5E462B1}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="FreqDistance" ID="{99AC6BE6-146C-4182-9837-E7FB3AE78D80}" ShortID="359235314">
+				<Sound Name="Frequency Distance" ID="{99AC6BE6-146C-4182-9837-E7FB3AE78D80}" ShortID="359235314">
 					<PropertyList>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{A9FFF4AD-EEA0-422B-A25B-77620A062160}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -508,18 +520,21 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<SourcePlugin Name="Sine" ID="{6E4A7D07-2F51-4024-93AF-C8CCCDB1770E}" ShortID="160084483" PluginName="Wwise Sine" CompanyID="0" PluginID="100">
+						<SourcePlugin Name="Synth One" ID="{E417179C-919C-487F-A61F-7AD7830F8F31}" ShortID="345407793" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
 							<PropertyList>
-								<Property Name="SineFrequency" Type="Real32" Value="313"/>
-								<Property Name="SineGain" Type="Real32" Value="-25"/>
+								<Property Name="BaseFrequency" Type="Real32" Value="600"/>
+								<Property Name="Osc1Level" Type="Real32" Value="-5"/>
+								<Property Name="Osc1Pwm" Type="Real32" Value="0"/>
+								<Property Name="Osc2Level" Type="Real32" Value="-5"/>
+								<Property Name="Osc2Waveform" Type="int32" Value="1"/>
 							</PropertyList>
 							<ObjectLists>
 								<ObjectList Name="RTPC">
 									<Reference>
 										<Local>
-											<RTPC Name="" ID="{7D87AE8C-6EBF-488C-87CA-242CF4F7E9A6}" ShortID="701208771">
+											<RTPC Name="" ID="{5624B8FD-372C-40BE-BE2E-134915864A04}" ShortID="750546924">
 												<PropertyList>
-													<Property Name="PropertyName" Type="string" Value="SineFrequency"/>
+													<Property Name="PropertyName" Type="string" Value="BaseFrequency"/>
 												</PropertyList>
 												<ReferenceList>
 													<Reference Name="ControlInput">
@@ -527,24 +542,59 @@
 													</Reference>
 													<Reference Name="Curve">
 														<Custom>
-															<Curve Name="" ID="{A208865A-B405-426B-B35D-EC9EB477EE9C}">
+															<Curve Name="" ID="{5B2E3984-56DD-4E8C-BFF8-77C5421F6516}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="5"/>
 																</PropertyList>
 																<PointList>
 																	<Point>
 																		<XPos>0</XPos>
-																		<YPos>5073.50797</YPos>
+																		<YPos>1000</YPos>
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>0.64866</XPos>
-																		<YPos>575.16558</YPos>
+																		<XPos>1.00826</XPos>
+																		<YPos>300</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
 																		<XPos>10</XPos>
-																		<YPos>20</YPos>
+																		<YPos>50</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{17011E74-8D6D-4C56-952A-80FAB092701F}" ShortID="832274042">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Osc2Pwm"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="synth_pwm_up_down" ID="{BC431978-D304-4090-BEC8-40C997D41550}" WorkUnitID="{D1EE20B6-952B-47F8-963E-ED7BCBBAF028}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{27E5D31D-95EB-4652-B682-34DD1D636AE0}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>50</XPos>
+																		<YPos>50</YPos>
 																		<Flags>37</Flags>
 																	</Point>
 																</PointList>
@@ -560,45 +610,52 @@
 							<Language>SFX</Language>
 						</SourcePlugin>
 					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{D54FDC16-EEF7-4AB0-AB0C-943893E30B6E}" ShortID="190926176">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Volume"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="Voice Volume" ID="{FA9CAB03-94C5-4F3F-B7DC-5D4AD76E010B}" WorkUnitID="{DA0BC45C-13AC-4C6B-AAD7-B15B261FFC04}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{21811A17-4558-41C1-ACAE-26B2364751AD}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>21</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>0</YPos>
+																<Flags>53</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
 					<ActiveSourceList>
-						<ActiveSource Name="Sine" ID="{6E4A7D07-2F51-4024-93AF-C8CCCDB1770E}" Platform="Linked"/>
+						<ActiveSource Name="Synth One" ID="{E417179C-919C-487F-A61F-7AD7830F8F31}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="OnTargetKlonk" ID="{C0FA8271-2021-4C8D-8141-AF906B7C61D8}" ShortID="802723299">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Klonk" ID="{EF7160EA-8B07-4047-85C5-3812F689D366}">
-							<PropertyList>
-								<Property Name="FadeInDuration" Type="Real64" Value="0.00440325722043603"/>
-								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-								<Property Name="TrimBegin" Type="Real64" Value="0.0660414454155969"/>
-							</PropertyList>
-							<Language>SFX</Language>
-							<AudioFile>Klonk.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="83795591"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Klonk" ID="{EF7160EA-8B07-4047-85C5-3812F689D366}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="OnTargetWhiteNoise" ID="{2450B3B4-6CD3-4471-8B62-BB204A302A4D}" ShortID="656062473">
+				<Sound Name="White Noise OnTarget" ID="{2450B3B4-6CD3-4471-8B62-BB204A302A4D}" ShortID="656062473">
 					<PropertyList>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-15</Value>
-							</ValueList>
-						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">

@@ -13,12 +13,29 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID BALLOONHOVER = 164414172U;
         static const AkUniqueID FREQDISTANCEEVENT = 2218041646U;
-        static const AkUniqueID ONTARGETKLONK = 1970655510U;
-        static const AkUniqueID ONTARGETWHITENOISE = 1041700194U;
         static const AkUniqueID PLAYERFOOT = 2664667690U;
-        static const AkUniqueID TELEPORT = 530129416U;
+        static const AkUniqueID WHITENOISEONTARGET = 1848491570U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace AIMDIRECTION
+        {
+            static const AkUniqueID GROUP = 3737870095U;
+
+            namespace STATE
+            {
+                static const AkUniqueID AIMDOWN = 3625632552U;
+                static const AkUniqueID AIMLEFT = 2448668527U;
+                static const AkUniqueID AIMRIGHT = 2402943410U;
+                static const AkUniqueID AIMUP = 3959127275U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace AIMDIRECTION
+
+    } // namespace STATES
 
     namespace SWITCHES
     {
@@ -40,6 +57,8 @@ namespace AK
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID DISTANCE_FREQ = 3639684685U;
+        static const AkUniqueID FREQUENCY_DEPTH = 1440328639U;
+        static const AkUniqueID SYNTH_PWM_UP_DOWN = 4213591503U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS

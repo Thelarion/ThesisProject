@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{D146EB3F-4864-737C-FC63-535A90B94725}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{43455CCE-8027-06A7-BEDA-0F492131AA9B}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -22,8 +22,21 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 			<GameParameters>
+				<GameParameter Id="1440328639" Name="frequency_depth"/>
 				<GameParameter Id="3639684685" Name="distance_freq"/>
+				<GameParameter Id="4213591503" Name="synth_pwm_up_down"/>
 			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="3737870095" Name="AimDirection">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="2402943410" Name="AimRight"/>
+						<State Id="2448668527" Name="AimLeft"/>
+						<State Id="3625632552" Name="AimDown"/>
+						<State Id="3959127275" Name="AimUp"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 			<SwitchGroups>
 				<SwitchGroup Id="4050929301" Name="Materials">
 					<Switches>
@@ -35,7 +48,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{E276D055-D361-0F6C-7483-07FB7E9C4697}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{CB6CEFE6-F959-2745-2423-A1036F08205C}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -47,21 +60,17 @@
 					<ShortName>Footsteps\Gravel\FS_Gravel_01.wav</ShortName>
 					<CachePath>SFX/Footsteps/Gravel/FS_Gravel_01_10C4C929.wem</CachePath>
 				</File>
-				<File Id="83795591" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Klonk.wav</ShortName>
-					<CachePath>SFX/Klonk_B4EFE77F.wem</CachePath>
-				</File>
 				<File Id="136132481" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Tile\FS_Tile_03.wav</ShortName>
 					<CachePath>SFX/Footsteps/Tile/FS_Tile_03_10C4C929.wem</CachePath>
 				</File>
+				<File Id="313054933" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>balloon_hover.wav</ShortName>
+					<CachePath>SFX/balloon_hover_831E7B72.wem</CachePath>
+				</File>
 				<File Id="391679118" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Dirt\FS_Dirt_03.wav</ShortName>
 					<CachePath>SFX/Footsteps/Dirt/FS_Dirt_03_10C4C929.wem</CachePath>
-				</File>
-				<File Id="438483893" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Teleport.wav</ShortName>
-					<CachePath>SFX/Teleport_D79FB2B7.wem</CachePath>
 				</File>
 				<File Id="454928087" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Concrete\FS_Concrete_03.wav</ShortName>
@@ -114,27 +123,20 @@
 			</Media>
 			<Plugins>
 				<Custom>
-					<Plugin Id="160084483" Name="Sine" LibName="Wwise Sine" LibId="6553602"/>
+					<Plugin Id="345407793" Name="Synth One" LibName="Wwise Synth One" LibId="9699330"/>
 					<Plugin Id="962926609" Name="Tone Generator" LibName="Wwise Tone Generator" LibId="6684674"/>
 				</Custom>
 			</Plugins>
 			<Events>
+				<Event Id="164414172" Name="BalloonHover" MaxAttenuation="20" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="313054933"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2218041646" Name="FreqDistanceEvent" DurationType="Infinite">
 					<PluginRefs>
 						<Custom>
-							<PluginRef Id="160084483"/>
-						</Custom>
-					</PluginRefs>
-				</Event>
-				<Event Id="1970655510" Name="OnTargetKlonk" DurationType="OneShot" DurationMin="0.7646842" DurationMax="0.7646842">
-					<MediaRefs>
-						<MediaRef Id="83795591"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="1041700194" Name="OnTargetWhiteNoise" DurationType="Infinite">
-					<PluginRefs>
-						<Custom>
-							<PluginRef Id="962926609"/>
+							<PluginRef Id="345407793"/>
 						</Custom>
 					</PluginRefs>
 				</Event>
@@ -178,14 +180,18 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="530129416" Name="Teleport" MaxAttenuation="100" DurationType="Infinite">
-					<MediaRefs>
-						<MediaRef Id="438483893"/>
-					</MediaRefs>
+				<Event Id="1848491570" Name="WhiteNoiseOnTarget" DurationType="Infinite">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="962926609"/>
+						</Custom>
+					</PluginRefs>
 				</Event>
 			</Events>
 			<GameParameters>
+				<GameParameter Id="1440328639" Name="frequency_depth"/>
 				<GameParameter Id="3639684685" Name="distance_freq"/>
+				<GameParameter Id="4213591503" Name="synth_pwm_up_down"/>
 			</GameParameters>
 			<SwitchGroups>
 				<SwitchGroup Id="4050929301" Name="Materials">
@@ -199,5 +205,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{5D492A9C-E684-9990-1ECC-F57513202787}</FileHash>
+	<FileHash>{4C6F3241-82D5-7F2C-EC72-72F18F896FF4}</FileHash>
 </SoundBanksInfo>
