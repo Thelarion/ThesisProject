@@ -48,7 +48,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{F483ACE5-E79A-E300-0B41-CF3286AA7C46}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{CB6CEFE6-F959-2745-2423-A1036F08205C}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -140,13 +140,6 @@
 						</Custom>
 					</PluginRefs>
 				</Event>
-				<Event Id="1041700194" Name="OnTargetWhiteNoise" DurationType="Infinite">
-					<PluginRefs>
-						<Custom>
-							<PluginRef Id="962926609"/>
-						</Custom>
-					</PluginRefs>
-				</Event>
 				<Event Id="2664667690" Name="PlayerFoot" DurationType="OneShot" DurationMin="0.386644" DurationMax="0.8593651">
 					<SwitchContainers>
 						<SwitchContainer>
@@ -187,6 +180,13 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="1848491570" Name="WhiteNoiseOnTarget" DurationType="Infinite">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="962926609"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
 			</Events>
 			<GameParameters>
 				<GameParameter Id="1440328639" Name="frequency_depth"/>
@@ -205,5 +205,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{D6250DE0-ACBB-6B89-C17E-C59B4C28834C}</FileHash>
+	<FileHash>{8E75BD3E-D360-D907-E399-96C697B84224}</FileHash>
 </SoundBanksInfo>
