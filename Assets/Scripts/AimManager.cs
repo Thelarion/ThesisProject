@@ -202,6 +202,7 @@ public class AimManager : MonoBehaviour
                 // Check if health is above 0
                 if (!currentTargetController.checkHasHealth())
                 {
+                    hitOnTargetCheck.transform.GetComponent<AkAmbient>().Stop(0);
                     Destroy(hitTargetCheck.transform.gameObject);
                     frequencyDistance.Stop(gameObject);
                     currentTarget = null;

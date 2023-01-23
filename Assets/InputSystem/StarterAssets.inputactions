@@ -178,7 +178,7 @@
                     "id": "d1d171b6-19d8-47a6-ba3a-71b6a8e7b3c0",
                     "path": "<Gamepad>/rightStick",
                     "interactions": "",
-                    "processors": "InvertVector2(invertX=false),StickDeadzone,ScaleVector2(x=300,y=300)",
+                    "processors": "InvertVector2(invertX=false),StickDeadzone,ScaleVector2(x=100,y=100)",
                     "groups": "Gamepad",
                     "action": "Look",
                     "isComposite": false,
@@ -234,7 +234,18 @@
                     "path": "<Mouse>/leftButton",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "KeyboardMouse",
+                    "action": "Fire",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "143e650f-7820-4280-8797-cfb64f065f6f",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
                     "action": "Fire",
                     "isComposite": false,
                     "isPartOfComposite": false

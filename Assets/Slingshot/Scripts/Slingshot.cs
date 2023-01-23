@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Slingshot : MonoBehaviour
 {
@@ -9,7 +10,8 @@ public class Slingshot : MonoBehaviour
 
     private Rigidbody rb;
 
-    public GameObject metalSphere;
+    public GameObject metalSpherePrefab;
+    private GameObject metalSphere;
     public GameObject rightElastic;
     public GameObject leftElastic;
     public GameObject rightLine;
@@ -42,13 +44,13 @@ public class Slingshot : MonoBehaviour
     void Update()
     {
         //If you press the left mouse button, the elastic starts to stretch.
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButtonDown(0) || Gamepad.current.buttonEast.wasPressedThisFrame)
         {
             z -= 0.1f;
             if (i == 1)
             {
                 //if the i(increment) is equal to one, it means that there is no metal sphere in the slingshot, then the sphere is created to be thrown next.
-                metalSphere = Instantiate(metalSphere, new Vector3(metalSphere.transform.position.x, metalSphere.transform.position.y, -3), Quaternion.identity);
+                metalSphere = Instantiate(metalSpherePrefab, new Vector3(metalSpherePrefab.transform.position.x, metalSpherePrefab.transform.position.y, -3), Quaternion.identity);
                 rb = metalSphere.GetComponent<Rigidbody>();
                 //The metal sphere is parented to the slingshot, so that it can move with the slingshot.
                 metalSphere.transform.parent = this.transform;
@@ -89,10 +91,10 @@ public class Slingshot : MonoBehaviour
             leatherLine.transform.localPosition = new Vector3(-1.42f, 2.286f, pulled + 1.2f);
             // }
 
-        }
-        //When the left mouse button is released, the metallic sphere will be thrown and the elastic will be decompressed with the movement.
-        if (Input.GetMouseButtonUp(0))
-        {
+            // }
+            // //When the left mouse button is released, the metallic sphere will be thrown and the elastic will be decompressed with the movement.
+            // if (Input.GetMouseButtonUp(0))
+            // {
             //i receives the value of one so that a new metallic sphere is created when the mouse is pressed again.
             i = 1;
 
@@ -123,6 +125,7 @@ public class Slingshot : MonoBehaviour
             //The metal sphere is taken (parent = null) in the slingshot, so that the sphere stops moving with the slingshot and the camera.
             metalSphere.transform.parent = null;
             z = -2;
+            Destroy(metalSphere, 3f);
         }
     }
 }
