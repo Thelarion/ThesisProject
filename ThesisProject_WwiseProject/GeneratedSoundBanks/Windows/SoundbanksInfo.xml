@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{7A032675-912D-57B8-5D19-B29EBD819774}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{82C9810C-F0A4-9ADB-9836-753EC5C00997}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -37,6 +37,7 @@
 			</AuxBusses>
 			<GameParameters>
 				<GameParameter Id="1440328639" Name="frequency_depth"/>
+				<GameParameter Id="2345103495" Name="wall_occlusion"/>
 				<GameParameter Id="3639684685" Name="distance_freq"/>
 				<GameParameter Id="4213591503" Name="synth_pwm_up_down"/>
 			</GameParameters>
@@ -62,7 +63,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{73DEE36E-3469-260F-5A88-5047821700C2}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{92F41FD4-1619-14DA-96E9-F915E88477A8}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -142,7 +143,7 @@
 				</Custom>
 			</Plugins>
 			<Events>
-				<Event Id="164414172" Name="BalloonHover" MaxAttenuation="20" DurationType="Infinite">
+				<Event Id="164414172" Name="BalloonHover" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="313054933"/>
 					</MediaRefs>
@@ -204,6 +205,7 @@
 			</Events>
 			<GameParameters>
 				<GameParameter Id="1440328639" Name="frequency_depth"/>
+				<GameParameter Id="2345103495" Name="wall_occlusion"/>
 				<GameParameter Id="3639684685" Name="distance_freq"/>
 				<GameParameter Id="4213591503" Name="synth_pwm_up_down"/>
 			</GameParameters>
@@ -219,5 +221,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{46DE762F-B7B9-C8C6-DC18-6716E1547BDE}</FileHash>
+	<FileHash>{5B859887-793A-289C-791B-2A20AC4723DF}</FileHash>
 </SoundBanksInfo>

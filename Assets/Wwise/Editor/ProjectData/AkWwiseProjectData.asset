@@ -233,7 +233,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: b620eed12b95f847963eed7bcbbaf028
     GuidInternal: 
-    m_lastTime: -8585272090082875300
+    m_lastTime: -8585270360253567504
     List:
     - name: distance_freq
       guid: fe80d52caaf1b548be6137f43f4af98d
@@ -277,6 +277,20 @@ MonoBehaviour:
         ObjectType: 13
         guid: 781943bc04d39040bec840c997d41550
       Path: Game Parameters\Default Work Unit\synth_pwm_up_down
+    - name: wall_occlusion
+      guid: 6e97bfcd53cab6498c0c5767dd5366f1
+      id: 2345103495
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b620eed12b95f847963eed7bcbbaf028
+      - ElementName: wall_occlusion
+        ObjectType: 13
+        guid: 6e97bfcd53cab6498c0c5767dd5366f1
+      Path: Game Parameters\Default Work Unit\wall_occlusion
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -500,7 +514,7 @@ MonoBehaviour:
     m_lastTime: -8585282545794215635
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000200000003000000040000000500000006000000070000000b0000000c0000000d0000000e0000000f0000001100000012000000130000001400000016000000170000001b000000
+  ExpandedWaapiItemIds: 010000000200000003000000040000000500000006000000070000000b0000000c0000000d0000000e0000000f0000001100000012000000130000001400000016000000170000001b0000001d000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

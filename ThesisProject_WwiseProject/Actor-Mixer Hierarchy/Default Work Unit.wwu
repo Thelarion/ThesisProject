@@ -681,7 +681,6 @@
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -711,6 +710,45 @@
 							<PositioningInfo>
 								<Position Name="" ID="{3206D274-7B5A-4402-9E70-6A4E04DEB63A}"/>
 							</PositioningInfo>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{7F5FFB72-8082-4D20-80DC-5C6FFC65484E}" ShortID="513321367">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Lowpass"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="wall_occlusion" ID="{CDBF976E-CA53-49B6-8C0C-5767DD5366F1}" WorkUnitID="{D1EE20B6-952B-47F8-963E-ED7BCBBAF028}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{2FA465A5-73EB-4097-B213-CD64BD864F20}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>87</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
 							<ActiveSourceList>
 								<ActiveSource Name="balloon_hover" ID="{6A9ED91F-1D9E-4864-8FB4-26C0C5E462B1}" Platform="Linked"/>
 							</ActiveSourceList>

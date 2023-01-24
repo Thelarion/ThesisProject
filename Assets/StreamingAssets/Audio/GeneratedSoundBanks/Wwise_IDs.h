@@ -59,6 +59,7 @@ namespace AK
         static const AkUniqueID DISTANCE_FREQ = 3639684685U;
         static const AkUniqueID FREQUENCY_DEPTH = 1440328639U;
         static const AkUniqueID SYNTH_PWM_UP_DOWN = 4213591503U;
+        static const AkUniqueID WALL_OCCLUSION = 2345103495U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS

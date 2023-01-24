@@ -10,7 +10,12 @@
 							<Position X="0" Y="0"/>
 						</Module>
 					</ModuleList>
-					<RTPCValueList ShowAll="true"/>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="wall_occlusion" ID="{CDBF976E-CA53-49B6-8C0C-5767DD5366F1}"/>
+							<Value>0</Value>
+						</RTPCValue>
+					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="None" ID="{4AB2A078-E8B3-4886-A7CA-0C8E3CB10D5E}"/>
 					</CurrentStateList>

@@ -19,6 +19,7 @@ public class AimManager : MonoBehaviour
     public AK.Wwise.Event onTargetWhiteNoise;
     private bool stopSFXBehindWall = false;
     private bool isAimOnTarget = false;
+    public LayerMask layerMask;
 
     void FixedUpdate()
     {
@@ -109,9 +110,11 @@ public class AimManager : MonoBehaviour
     {
         if (currentTarget != null)
         {
-            if (Physics.Linecast(transform.position, currentTarget.transform.position, out hitWallCheck))
+            // layermask 9 = ignore Ground (applied to reverb zones, slingshot and ground)
+            if (Physics.Linecast(transform.position, currentTarget.transform.position, out hitWallCheck, layerMask))
             {
-                if (hitWallCheck.collider.gameObject.tag == "Wall")
+                print(hitWallCheck.transform.gameObject.name);
+                if (hitWallCheck.transform.gameObject.tag == "Wall")
                 {
                     stopSFX();
                 }

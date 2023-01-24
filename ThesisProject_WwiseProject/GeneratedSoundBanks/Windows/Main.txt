@@ -15,6 +15,7 @@ Switch	ID	Name	Switch Group			Notes
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1440328639	frequency_depth			\Default Work Unit\frequency_depth	
+	2345103495	wall_occlusion			\Default Work Unit\wall_occlusion	
 	3639684685	distance_freq			\Default Work Unit\distance_freq	
 	4213591503	synth_pwm_up_down			\Default Work Unit\synth_pwm_up_down	
 
