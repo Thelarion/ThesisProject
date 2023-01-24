@@ -67,7 +67,7 @@ namespace StarterAssets
         private float _fallTimeoutDelta;
 
         // footsteps
-        bool isWalking;
+        bool isFootstepCycleOn;
         bool isJumping;
         // bool isRunning;
         public float FootstepDelayTime = 0.3f;
@@ -221,7 +221,7 @@ namespace StarterAssets
             // move the player
             _controller.Move(inputDirection.normalized * (_speed * Time.deltaTime) + new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
 
-            if (_input.move != Vector2.zero && !isWalking && !isJumping)
+            if (_input.move != Vector2.zero && !isFootstepCycleOn && !isJumping)
             {
                 StartCoroutine(PlayFootsteps());
             }
@@ -296,10 +296,10 @@ namespace StarterAssets
 
         IEnumerator PlayFootsteps()
         {
-            isWalking = true;
+            isFootstepCycleOn = true;
             FootstepSound.Post(gameObject);
             yield return new WaitForSeconds(FootstepDelayTime); //delay for a period of time
-            isWalking = false;
+            isFootstepCycleOn = false;
         }
     }
 }

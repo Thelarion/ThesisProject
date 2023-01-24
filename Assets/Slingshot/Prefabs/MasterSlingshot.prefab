@@ -57,9 +57,10 @@ SpringJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1035414335971282}
   m_ConnectedBody: {fileID: 54039511054573386}
+  m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: -0.003, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 4.6566134e-10, y: 0.001900005, z: 0}
+  m_ConnectedAnchor: {x: 0.0000000050105156, y: 0.0019002898, z: 0.0000000047683715}
   serializedVersion: 2
   m_Spring: 3000
   m_Damper: 0
@@ -117,6 +118,8 @@ LineRenderer:
   m_MotionVectors: 0
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -128,6 +131,7 @@ LineRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -255,9 +259,10 @@ SpringJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1041180471543458}
   m_ConnectedBody: {fileID: 54184048452756388}
+  m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: -0.003, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -2.6077027e-10, y: 0.0018999964, z: 0}
+  m_ConnectedAnchor: {x: -0.0000000050291415, y: 0.0018996571, z: 0.0000000047683715}
   serializedVersion: 2
   m_Spring: 3000
   m_Damper: 0
@@ -357,9 +362,10 @@ SpringJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1078012564003800}
   m_ConnectedBody: {fileID: 54890195561012060}
+  m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: -0.003, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 1.1641534e-10, y: 0.001900005, z: 0}
+  m_ConnectedAnchor: {x: 0.0000000014575199, y: 0.0019002145, z: -0.000000007152557}
   serializedVersion: 2
   m_Spring: 3000
   m_Damper: 0
@@ -429,9 +435,10 @@ SpringJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1137085306121174}
   m_ConnectedBody: {fileID: 54888910112262926}
+  m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: -0.003, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 4.6566134e-10, y: 0.0019000004, z: 0}
+  m_ConnectedAnchor: {x: 0.0000000011362136, y: 0.0019002997, z: 0.0000000023841857}
   serializedVersion: 2
   m_Spring: 3000
   m_Damper: 0
@@ -501,9 +508,10 @@ SpringJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1164179386664368}
   m_ConnectedBody: {fileID: 54599157759248514}
+  m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: -0.003, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -2.607705e-10, y: 0.0018996492, z: 0}
+  m_ConnectedAnchor: {x: -2.607705e-10, y: 0.0019088073, z: -0.0000000023841857}
   serializedVersion: 2
   m_Spring: 3000
   m_Damper: 0
@@ -621,9 +629,10 @@ SpringJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1174371712138636}
   m_ConnectedBody: {fileID: 54073265677438786}
+  m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: -0.003, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -2.6077032e-10, y: 0.001900011, z: 0}
+  m_ConnectedAnchor: {x: -0.000000002644956, y: 0.0019003563, z: -0.0000000047683715}
   serializedVersion: 2
   m_Spring: 3000
   m_Damper: 0
@@ -740,9 +749,10 @@ SpringJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1227483329430010}
   m_ConnectedBody: {fileID: 54286595259450362}
+  m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: -0.003, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.00029645534, y: -0.053502403, z: 0.0017504144}
+  m_ConnectedAnchor: {x: 0.00029645863, y: -0.053461462, z: 0.0017504077}
   serializedVersion: 2
   m_Spring: 0
   m_Damper: 0
@@ -812,9 +822,10 @@ SpringJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1233232808526768}
   m_ConnectedBody: {fileID: 54547816986614366}
+  m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: -0.003, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -2.6077054e-10, y: 0.0018993997, z: 0}
+  m_ConnectedAnchor: {x: -0.0000000050291415, y: 0.0018915773, z: 0.000000007152557}
   serializedVersion: 2
   m_Spring: 3000
   m_Damper: 0
@@ -884,9 +895,10 @@ SpringJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1241721819624954}
   m_ConnectedBody: {fileID: 54678291895940530}
+  m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: -0.003, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.0000000010756775, y: 0.001900005, z: 0}
+  m_ConnectedAnchor: {x: -0.0000000058440492, y: 0.0018998552, z: 0}
   serializedVersion: 2
   m_Spring: 3000
   m_Damper: 0
@@ -955,9 +967,10 @@ SpringJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1254990345022954}
   m_ConnectedBody: {fileID: 54221115189230734}
+  m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: -0.003, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.00037538318, y: -0.053502403, z: 0.0017504144}
+  m_ConnectedAnchor: {x: -0.00037538557, y: -0.053477112, z: 0.0017504215}
   serializedVersion: 2
   m_Spring: 1000
   m_Damper: 0
@@ -1027,9 +1040,10 @@ SpringJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1274418185146242}
   m_ConnectedBody: {fileID: 54549334133203318}
+  m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: -0.003, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -2.607705e-10, y: 0.0018996664, z: 0}
+  m_ConnectedAnchor: {x: -0.000000002644956, y: 0.0019048259, z: -0.0000000047683715}
   serializedVersion: 2
   m_Spring: 3000
   m_Damper: 0
@@ -1116,6 +1130,8 @@ SkinnedMeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 3
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1127,6 +1143,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -2032,6 +2049,7 @@ FixedJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1276201425130750}
   m_ConnectedBody: {fileID: 54221115189230734}
+  m_ConnectedArticulationBody: {fileID: 0}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_EnableCollision: 0
@@ -2046,6 +2064,7 @@ FixedJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1276201425130750}
   m_ConnectedBody: {fileID: 54286595259450362}
+  m_ConnectedArticulationBody: {fileID: 0}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_EnableCollision: 0
@@ -2109,9 +2128,10 @@ SpringJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1279355774097170}
   m_ConnectedBody: {fileID: 54938524815075258}
+  m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: -0.003, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -2.6077032e-10, y: 0.001900011, z: 0}
+  m_ConnectedAnchor: {x: -0.000000001974404, y: 0.0018999764, z: -0.000000009536743}
   serializedVersion: 2
   m_Spring: 3000
   m_Damper: 0
@@ -2181,9 +2201,10 @@ SpringJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1285609747486702}
   m_ConnectedBody: {fileID: 54903894073639056}
+  m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: -0.003, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -2.607705e-10, y: 0.0018999099, z: 0}
+  m_ConnectedAnchor: {x: 4.842875e-10, y: 0.0018966236, z: -0.0000000023841857}
   serializedVersion: 2
   m_Spring: 3000
   m_Damper: 0
@@ -2253,9 +2274,10 @@ SpringJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1310144551962686}
   m_ConnectedBody: {fileID: 54234505763590942}
+  m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: -0.003, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -2.6077027e-10, y: 0.0018999964, z: 0}
+  m_ConnectedAnchor: {x: -0.0000000012293456, y: 0.0018993911, z: 0}
   serializedVersion: 2
   m_Spring: 3000
   m_Damper: 0
@@ -2313,6 +2335,8 @@ SkinnedMeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 3
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2324,6 +2348,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -2421,9 +2446,10 @@ SpringJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1400028056119922}
   m_ConnectedBody: {fileID: 54874866536482966}
+  m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: -0.003, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -2.6077052e-10, y: 0.001899393, z: 0}
+  m_ConnectedAnchor: {x: 0.0000000050291415, y: 0.001914354, z: -0.0000000023841857}
   serializedVersion: 2
   m_Spring: 3000
   m_Damper: 0
@@ -2525,9 +2551,10 @@ SpringJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1434713817864342}
   m_ConnectedBody: {fileID: 54903831212748620}
+  m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: -0.003, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -7.264316e-10, y: 0.0019000004, z: 0}
+  m_ConnectedAnchor: {x: -0.000000005494803, y: 0.0018995614, z: -0.000000007152557}
   serializedVersion: 2
   m_Spring: 3000
   m_Damper: 0
@@ -2597,9 +2624,10 @@ SpringJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1456227187443514}
   m_ConnectedBody: {fileID: 54672785113620222}
+  m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: -0.003, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -2.607706e-10, y: 0.0018987152, z: 0}
+  m_ConnectedAnchor: {x: 0.0000000014528628, y: 0.00191621, z: -0.0000000023841857}
   serializedVersion: 2
   m_Spring: 3000
   m_Damper: 0
@@ -2669,9 +2697,10 @@ SpringJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1490747029851700}
   m_ConnectedBody: {fileID: 54209133639464484}
+  m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: -0.003, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -2.6077043e-10, y: 0.0018999964, z: 0}
+  m_ConnectedAnchor: {x: -0.000000002644956, y: 0.0019004028, z: 0.0000000023841857}
   serializedVersion: 2
   m_Spring: 3000
   m_Damper: 0
@@ -2741,9 +2770,10 @@ SpringJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1540414683855226}
   m_ConnectedBody: {fileID: 54623557818911140}
+  m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: -0.003, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -2.6077038e-10, y: 0.001899981, z: 0}
+  m_ConnectedAnchor: {x: -0.000000002644956, y: 0.0018997369, z: 0.000000007152557}
   serializedVersion: 2
   m_Spring: 3000
   m_Damper: 0
@@ -2813,9 +2843,10 @@ SpringJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1628044564118450}
   m_ConnectedBody: {fileID: 54052912116231974}
+  m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: -0.003, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -7.264316e-10, y: 0.001900005, z: 0}
+  m_ConnectedAnchor: {x: -0.000000007878989, y: 0.0018997729, z: 0.000000011920928}
   serializedVersion: 2
   m_Spring: 3000
   m_Damper: 0
@@ -2948,6 +2979,8 @@ SkinnedMeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 3
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2959,6 +2992,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -3864,6 +3898,7 @@ FixedJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1647356458259798}
   m_ConnectedBody: {fileID: 54221115189230734}
+  m_ConnectedArticulationBody: {fileID: 0}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_EnableCollision: 0
@@ -3878,6 +3913,7 @@ FixedJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1647356458259798}
   m_ConnectedBody: {fileID: 54286595259450362}
+  m_ConnectedArticulationBody: {fileID: 0}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_EnableCollision: 0
@@ -3941,9 +3977,10 @@ SpringJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1682126647225350}
   m_ConnectedBody: {fileID: 54302771728093040}
+  m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: -0.003, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -2.607706e-10, y: 0.0018987152, z: 0}
+  m_ConnectedAnchor: {x: -2.607706e-10, y: 0.001929661, z: 0.0000000023841857}
   serializedVersion: 2
   m_Spring: 3000
   m_Damper: 0
@@ -4013,9 +4050,10 @@ SpringJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1696402269418790}
   m_ConnectedBody: {fileID: 54069210738372128}
+  m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: -0.003, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -2.607705e-10, y: 0.0018999099, z: 0}
+  m_ConnectedAnchor: {x: -0.0000000050291415, y: 0.0018989234, z: 0.0000000047683715}
   serializedVersion: 2
   m_Spring: 3000
   m_Damper: 0
@@ -4085,9 +4123,10 @@ SpringJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1779459619541434}
   m_ConnectedBody: {fileID: 54080542530192166}
+  m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: -0.003, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -2.6077052e-10, y: 0.001899393, z: 0}
+  m_ConnectedAnchor: {x: -0.0000000050291415, y: 0.0018882817, z: 0.000000007152557}
   serializedVersion: 2
   m_Spring: 3000
   m_Damper: 0
@@ -4157,9 +4196,10 @@ SpringJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1783372584157624}
   m_ConnectedBody: {fileID: 54777669058695222}
+  m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: -0.003, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -2.6077054e-10, y: 0.0018993997, z: 0}
+  m_ConnectedAnchor: {x: -0.0000000039115546, y: 0.0018821908, z: 0.0000000023841857}
   serializedVersion: 2
   m_Spring: 3000
   m_Damper: 0
@@ -4227,6 +4267,8 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4240,6 +4282,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -4252,6 +4295,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!64 &64047143100712920
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4262,9 +4306,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 9425cbc42156ef040895ac8d76083c5e, type: 3}
 --- !u!1 &1823154740555416
 GameObject:
@@ -4323,9 +4367,10 @@ SpringJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1823154740555416}
   m_ConnectedBody: {fileID: 54410543507697192}
+  m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: -0.003, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -2.6077043e-10, y: 0.0018999964, z: 0}
+  m_ConnectedAnchor: {x: 0.0000000018998982, y: 0.0018996291, z: -0.0000000023841857}
   serializedVersion: 2
   m_Spring: 3000
   m_Damper: 0
@@ -4395,9 +4440,10 @@ SpringJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1827601541887922}
   m_ConnectedBody: {fileID: 54526383514356220}
+  m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: -0.003, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -2.6077046e-10, y: 0.00189988, z: 0}
+  m_ConnectedAnchor: {x: 4.0978185e-10, y: 0.0018996897, z: 0.000000009536743}
   serializedVersion: 2
   m_Spring: 3000
   m_Damper: 0
@@ -4467,9 +4513,10 @@ SpringJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1838685033089620}
   m_ConnectedBody: {fileID: 54210007254240748}
+  m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: -0.003, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -2.607705e-10, y: 0.0018998806, z: 0}
+  m_ConnectedAnchor: {x: 0.000000002346933, y: 0.0019021078, z: -0.000000014305114}
   serializedVersion: 2
   m_Spring: 3000
   m_Damper: 0
@@ -4539,9 +4586,10 @@ SpringJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1843696223107102}
   m_ConnectedBody: {fileID: 54324306244941662}
+  m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: -0.003, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -2.607705e-10, y: 0.0018996664, z: 0}
+  m_ConnectedAnchor: {x: -0.0000000011548404, y: 0.0019016429, z: -0.000000009536743}
   serializedVersion: 2
   m_Spring: 3000
   m_Damper: 0
@@ -4599,6 +4647,8 @@ SkinnedMeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 3
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4610,6 +4660,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -4677,7 +4728,7 @@ Transform:
   m_GameObject: {fileID: 1909137602687160}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.43, y: -3.36, z: 8.23}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.060177397, y: 0.060177397, z: 0.060177397}
   m_Children:
   - {fileID: 4029945735924908}
   - {fileID: 4799732159005648}
@@ -4701,8 +4752,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12f01b5a237e7b948b4cd23ad9e62698, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  metalSphereVelocity: 25
-  metalSphere: {fileID: 1853232240325812, guid: 2fd01713a2c54aa48a5b9404b8652553,
+  metalSphereVelocity: 40
+  metalSpherePrefab: {fileID: 1853232240325812, guid: 2fd01713a2c54aa48a5b9404b8652553,
     type: 3}
   rightElastic: {fileID: 1326783052024522}
   leftElastic: {fileID: 1893521922444026}
@@ -4722,13 +4773,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 944ddef673060514da045d6b892e063c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numberOfBones: 15
-  elasticResistance: 1
-  spring: 3000
+  numberOfBones: 2
+  elasticResistance: 6
+  spring: 1000
   minDistance: 0
-  maxDistance: 0.15
-  tolerance: 0.05
-  elasticLinesWidth: 0.4
+  maxDistance: 0.01
+  tolerance: 0.01
+  elasticLinesWidth: 0.02
   rightBones:
   - {fileID: 1078012564003800}
   - {fileID: 1035414335971282}
@@ -4814,6 +4865,8 @@ LineRenderer:
   m_MotionVectors: 0
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4825,6 +4878,7 @@ LineRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -4952,9 +5006,10 @@ SpringJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1934925894612300}
   m_ConnectedBody: {fileID: 54900422231707640}
+  m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: -0.003, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -2.607705e-10, y: 0.0018998806, z: 0}
+  m_ConnectedAnchor: {x: -0.0000000074133277, y: 0.0018958759, z: -0.0000000047683715}
   serializedVersion: 2
   m_Spring: 3000
   m_Damper: 0
@@ -5024,9 +5079,10 @@ SpringJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1955377386703596}
   m_ConnectedBody: {fileID: 54203552672146008}
+  m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: -0.003, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -2.6077046e-10, y: 0.00189988, z: 0}
+  m_ConnectedAnchor: {x: -0.000000002644956, y: 0.0019007834, z: -0.0000000047683715}
   serializedVersion: 2
   m_Spring: 3000
   m_Damper: 0
@@ -5096,9 +5152,10 @@ SpringJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1956525503820742}
   m_ConnectedBody: {fileID: 54958758569277292}
+  m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: -0.003, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -2.6077038e-10, y: 0.001899981, z: 0}
+  m_ConnectedAnchor: {x: -0.0000000036880374, y: 0.0018992014, z: 0.0000000023841857}
   serializedVersion: 2
   m_Spring: 3000
   m_Damper: 0
@@ -5168,9 +5225,10 @@ SpringJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1967058095193266}
   m_ConnectedBody: {fileID: 54973636422564876}
+  m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: -0.003, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -2.607705e-10, y: 0.0018996492, z: 0}
+  m_ConnectedAnchor: {x: 8.5681656e-10, y: 0.001904192, z: 0.000000011920928}
   serializedVersion: 2
   m_Spring: 3000
   m_Damper: 0

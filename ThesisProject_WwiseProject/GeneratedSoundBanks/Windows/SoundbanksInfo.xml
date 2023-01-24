@@ -9,18 +9,32 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{43455CCE-8027-06A7-BEDA-0F492131AA9B}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{7A032675-912D-57B8-5D19-B29EBD819774}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
+				<ShareSets>
+					<Plugin Id="602546716" Name="Room_Large" LibName="Wwise RoomVerb" LibId="7733251"/>
+				</ShareSets>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
 					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
 				</AudioDevices>
 			</Plugins>
 			<Busses>
+				<Bus Id="393239870" Name="SFX"/>
+				<Bus Id="1229948536" Name="Environment"/>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
+			<AuxBusses>
+				<AuxBus Id="348963605" Name="Reverb">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="602546716"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+			</AuxBusses>
 			<GameParameters>
 				<GameParameter Id="1440328639" Name="frequency_depth"/>
 				<GameParameter Id="3639684685" Name="distance_freq"/>
@@ -48,7 +62,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{CB6CEFE6-F959-2745-2423-A1036F08205C}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{73DEE36E-3469-260F-5A88-5047821700C2}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -205,5 +219,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{4C6F3241-82D5-7F2C-EC72-72F18F896FF4}</FileHash>
+	<FileHash>{46DE762F-B7B9-C8C6-DC18-6716E1547BDE}</FileHash>
 </SoundBanksInfo>

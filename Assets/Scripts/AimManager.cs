@@ -8,9 +8,9 @@ using System;
 public class AimManager : MonoBehaviour
 {
 
-    public Text rightRayToObject;
-    public Text leftCameraToObject;
-    public Text topLeftDifference;
+    // public Text rightRayToObject;
+    // public Text leftCameraToObject;
+    // public Text topLeftDifference;
     private GameObject currentTarget = null;
     private RaycastHit hitTargetCheck;
     private RaycastHit hitWallCheck;
