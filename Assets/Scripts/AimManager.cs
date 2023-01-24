@@ -75,7 +75,7 @@ public class AimManager : MonoBehaviour
 
     private void CheckIfAimOnTarget()
     {
-        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hitOnTargetCheck, Mathf.Infinity))
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hitOnTargetCheck, Mathf.Infinity, layerMask))
         {
             if (hitOnTargetCheck.collider.tag == "Target")
             {
@@ -111,9 +111,10 @@ public class AimManager : MonoBehaviour
         if (currentTarget != null)
         {
             // layermask 9 = ignore Ground (applied to reverb zones, slingshot and ground)
+            // layermask 8 = ignore Character 
             if (Physics.Linecast(transform.position, currentTarget.transform.position, out hitWallCheck, layerMask))
             {
-                print(hitWallCheck.transform.gameObject.name);
+                // print(hitWallCheck.transform.gameObject.name);
                 if (hitWallCheck.transform.gameObject.tag == "Wall")
                 {
                     stopSFX();
@@ -195,7 +196,7 @@ public class AimManager : MonoBehaviour
 
     public void Fire()
     {
-        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hitTargetCheck, Mathf.Infinity))
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hitTargetCheck, Mathf.Infinity, layerMask))
         {
             if (hitTargetCheck.transform.tag == "Target")
             {

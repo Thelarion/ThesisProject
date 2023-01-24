@@ -73,7 +73,9 @@ namespace StarterAssets
         public float FootstepDelayTime = 0.3f;
         public AK.Wwise.Event FootstepSound;
 
+        [Header("Misc")]
         public AimManager aimManager;
+        public GameObject blindfold;
 
 
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
@@ -127,6 +129,7 @@ namespace StarterAssets
             GroundedCheck();
             Move();
             Fire();
+            Blindfold();
         }
 
         private void Fire()
@@ -135,6 +138,16 @@ namespace StarterAssets
             {
                 aimManager.Fire();
                 _input.fire = false;
+            }
+        }
+
+        private void Blindfold()
+        {
+            if (_input.blindfold)
+            {
+                bool toggle = blindfold.activeSelf ? false : true;
+                blindfold.SetActive(toggle);
+                _input.blindfold = false;
             }
         }
 
