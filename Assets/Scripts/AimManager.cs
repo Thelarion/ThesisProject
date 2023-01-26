@@ -20,6 +20,7 @@ public class AimManager : MonoBehaviour
     private bool stopSFXBehindWall = false;
     private bool isAimOnTarget = false;
     public LayerMask layerMask;
+    public Material outline;
 
     void FixedUpdate()
     {
@@ -150,20 +151,36 @@ public class AimManager : MonoBehaviour
         // Set the initial distance to infinity high
         float distanceCameraNextTarget = Mathf.Infinity;
 
-        // Loop over all target in order to get the target with the lowest distance to the player
-        foreach (var target in targets)
-        {
-            // Get the distance value of the recent object
-            float compareValue = Vector3.Distance(transform.position, target.transform.position);
+        TargetController currentLoopObjectShortestDistance = null;
 
-            // Compare the most recent with the saved value 
-            if (compareValue < distanceCameraNextTarget)
+        if (targets.Count > 0)
+        {
+            // Loop over all target in order to get the target with the lowest distance to the player
+            foreach (var target in targets)
             {
-                distanceCameraNextTarget = compareValue;
-                currentTarget = target.gameObject;
-                frequencyDistance.Post(gameObject);
-            };
+                // Get the distance value of the recent object
+                float compareValueTarget = Vector3.Distance(transform.position, target.transform.position);
+
+                // Compare the most recent value with the saved value 
+                if (compareValueTarget < distanceCameraNextTarget)
+                {
+                    distanceCameraNextTarget = compareValueTarget;
+                    currentLoopObjectShortestDistance = target;
+
+                };
+            }
+            SetUpNewTarget(currentLoopObjectShortestDistance);
         }
+    }
+
+    private void SetUpNewTarget(TargetController target)
+    {
+        // Set the new target
+        currentTarget = target.gameObject;
+        // Activate the outline
+        currentTarget.GetComponent<ChangeOutline>().ActivateOutline(outline);
+        // Post the aim frequency
+        frequencyDistance.Post(gameObject);
     }
 
     private void DisplayHorizontalCommmand(float angleHorizontal)
@@ -209,6 +226,7 @@ public class AimManager : MonoBehaviour
                     hitOnTargetCheck.transform.GetComponent<AkAmbient>().Stop(0);
                     Destroy(hitTargetCheck.transform.gameObject);
                     frequencyDistance.Stop(gameObject);
+                    currentTarget.GetComponent<ChangeOutline>().DeactivateOutline();
                     currentTarget = null;
                 }
             }

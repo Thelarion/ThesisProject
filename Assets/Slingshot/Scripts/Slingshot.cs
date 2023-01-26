@@ -120,7 +120,7 @@ public class Slingshot : MonoBehaviour
             // }
             // else
             // {
-            rb.AddForce(transform.forward * metalSphereVelocity * 15, ForceMode.Impulse);
+            rb.AddForce(transform.forward * metalSphereVelocity * 80, ForceMode.Impulse);
             // }
             //The metal sphere is taken (parent = null) in the slingshot, so that the sphere stops moving with the slingshot and the camera.
             metalSphere.transform.parent = null;

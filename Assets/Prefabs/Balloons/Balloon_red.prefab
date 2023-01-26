@@ -458,9 +458,9 @@ GameObject:
   - component: {fileID: 6305554908009511351}
   - component: {fileID: 6305554908009511350}
   - component: {fileID: 993626681}
-  - component: {fileID: 3216197329680297393}
+  - component: {fileID: 2795953977654667400}
   m_Layer: 0
-  m_Name: Balloon_blue
+  m_Name: Balloon_red
   m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -509,7 +509,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -7109489786472185975, guid: 7848cf6e9f26855459702bade117266b, type: 3}
+  - {fileID: 8170135606579677259, guid: ee9e2978aedd54d4e92c0d68b0c8522e, type: 3}
   - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -657,7 +657,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 311
---- !u!114 &3216197329680297393
+--- !u!114 &2795953977654667400
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
