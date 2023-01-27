@@ -3006,8 +3006,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1, z: 1.9909976}
+  m_Center: {x: 0, y: 0, z: -0.4954978}
 --- !u!23 &2042216993
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3503,6 +3503,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 432477867329669193, guid: 97b7e85f00698534483ff008570301e8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5537444757038686344, guid: 97b7e85f00698534483ff008570301e8,
         type: 3}
       propertyPath: numberOfBones
@@ -3522,6 +3527,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8184419809200125219, guid: 97b7e85f00698534483ff008570301e8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8853855696034951065, guid: 97b7e85f00698534483ff008570301e8,
         type: 3}

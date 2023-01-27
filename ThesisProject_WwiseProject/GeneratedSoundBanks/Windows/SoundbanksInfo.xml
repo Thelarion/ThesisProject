@@ -63,7 +63,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{92F41FD4-1619-14DA-96E9-F915E88477A8}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{03CF1152-1351-5AE3-D2FF-9BB1C1AA50D6}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -143,7 +143,7 @@
 				</Custom>
 			</Plugins>
 			<Events>
-				<Event Id="164414172" Name="BalloonHover" DurationType="Infinite">
+				<Event Id="164414172" Name="BalloonHover" MaxAttenuation="20" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="313054933"/>
 					</MediaRefs>
@@ -221,5 +221,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{5B859887-793A-289C-791B-2A20AC4723DF}</FileHash>
+	<FileHash>{3AB62B9E-004E-E9B4-1813-56D4E2BB71CC}</FileHash>
 </SoundBanksInfo>
