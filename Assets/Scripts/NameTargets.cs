@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class NameTargets : MonoBehaviour
 {
-    private OperationController operationController;
+    private OperationController _operationController;
     private enum colors
     {
         Yellow,
@@ -14,11 +14,13 @@ public class NameTargets : MonoBehaviour
 
     void Awake()
     {
-        operationController = GameObject.Find("List").GetComponent<OperationController>();
+        _operationController = GameObject.Find("List").GetComponent<OperationController>();
         int x = 0;
-        foreach (colors color in operationController._melodySequence)
+        foreach (colors color in _operationController._melodySequence)
         {
-            transform.GetChild(x).name = color.ToString();
+            Transform _childTarget = transform.GetChild(x);
+            _childTarget.name = color.ToString();
+            _childTarget.GetComponent<TargetController>().setIndexInSequence(x);
             x++;
         }
     }

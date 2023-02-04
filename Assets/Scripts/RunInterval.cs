@@ -13,7 +13,7 @@ public class RunInterval : MonoBehaviour
     [HideInInspector] public bool TapState;
 
 
-    void Awake()
+    void Start()
     {
         LoadMaterialsFromResources();
         _nameGameObject = transform.name;

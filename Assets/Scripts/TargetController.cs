@@ -6,6 +6,7 @@ using UnityEngine.UI;
 // Put this component on your enemy prefabs / objects
 public class TargetController : MonoBehaviour
 {
+    private int _indexInSequence;
     private bool _tapState;
     private static OperationController operationController;
 
@@ -24,6 +25,12 @@ public class TargetController : MonoBehaviour
     private void Update()
     {
         _tapState = GetComponent<RunInterval>().TapState;
+
+    }
+
+    public void setIndexInSequence(int index)
+    {
+        _indexInSequence = index;
     }
 
     // Remove target from instances when destroyed
@@ -32,7 +39,7 @@ public class TargetController : MonoBehaviour
         GetComponent<AkAmbient>().Stop(0);
         if (_tapState)
         {
-            operationController.ActivateListFrame();
+            operationController.ActivateListFrame(_indexInSequence, transform.name);
         }
         _instances.Remove(this);
     }

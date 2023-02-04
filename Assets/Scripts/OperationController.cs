@@ -41,8 +41,7 @@ public class OperationController : MonoBehaviour
         int x = 0;
         foreach (Transform L in _listUI)
         {
-            L.GetComponent<Image>().sprite = _spritesAvailable[_sequenceIndex[x]] as Sprite;
-            x++;
+            L.GetComponent<Image>().sprite = _spritesAvailable[_sequenceIndex[x++]] as Sprite;
         }
     }
 
@@ -57,9 +56,10 @@ public class OperationController : MonoBehaviour
         }
     }
 
-    public void ActivateListFrame()
+    public void ActivateListFrame(int tappedListElement, string tappedName)
     {
-        // ListUI.GetComponent<Image>().sprite = sprites[];
-        // print(ListUI.GetComponent<Image>().sprite);
+        int indexFrame = _spritesAvailableStrings.IndexOf(tappedName + "_frame");
+        Sprite frame = _spritesAvailable[indexFrame] as Sprite;
+        _listUI[tappedListElement].GetComponent<Image>().sprite = frame;
     }
 }
