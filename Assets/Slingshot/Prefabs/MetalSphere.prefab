@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 135757361080677684}
   - component: {fileID: 23661475123502074}
   - component: {fileID: 54159265005807030}
+  - component: {fileID: -6332625093728815220}
   m_Layer: 0
   m_Name: MetalSphere
   m_TagString: Sphere
@@ -111,4 +112,19 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
+--- !u!114 &-6332625093728815220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853232240325812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ea2c144883e6fc4894a5bc28612b24c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioManager: {fileID: 5048044596942918496, guid: bca3b567329403d4ca2b43feab449a7f,
+    type: 3}
+  aimManager: {fileID: 0}

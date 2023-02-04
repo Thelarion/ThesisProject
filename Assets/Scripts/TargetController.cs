@@ -6,12 +6,8 @@ using UnityEngine.UI;
 // Put this component on your enemy prefabs / objects
 public class TargetController : MonoBehaviour
 {
-    // 
-    private const int MAX_HEALTH = 100;
-    public int currentHealth = MAX_HEALTH;
-    private bool hasHealth;
-    public HealthBar healthBar;
-    public GameObject healthBarObject;
+    private bool _tapState;
+    private static OperationController operationController;
 
     // every instance registers to and removes itself from here
     private static readonly HashSet<TargetController> _instances = new HashSet<TargetController>();
@@ -23,36 +19,21 @@ public class TargetController : MonoBehaviour
     private void Awake()
     {
         _instances.Add(this);
+        operationController = GameObject.Find("List").GetComponent<OperationController>();
     }
-
-    // Set values for health bar slider
-    private void Start()
+    private void Update()
     {
-        healthBar.SetMaxHealth(MAX_HEALTH, currentHealth);
+        _tapState = GetComponent<RunInterval>().TapState;
     }
 
     // Remove target from instances when destroyed
     private void OnDestroy()
     {
-        _instances.Remove(this);
-    }
-
-    // Damage call and activate health bar when at 75 health
-    public void takeDamage(int damage)
-    {
-        currentHealth -= damage;
-        healthBar.SetHealth(currentHealth);
-
-        if (currentHealth == 75)
+        GetComponent<AkAmbient>().Stop(0);
+        if (_tapState)
         {
-            healthBarObject.SetActive(true);
+            operationController.ActivateListFrame();
         }
-    }
-
-    // Check if still health left
-    public bool checkHasHealth()
-    {
-        hasHealth = currentHealth > 0 ? true : false;
-        return hasHealth;
+        _instances.Remove(this);
     }
 }

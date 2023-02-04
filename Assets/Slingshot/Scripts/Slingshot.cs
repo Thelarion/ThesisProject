@@ -44,7 +44,8 @@ public class Slingshot : MonoBehaviour
     void Update()
     {
         //If you press the left mouse button, the elastic starts to stretch.
-        if (Input.GetMouseButtonDown(0) || Gamepad.current.buttonEast.wasPressedThisFrame)
+        // if (Input.GetMouseButtonDown(0) || Gamepad.current.buttonEast.wasPressedThisFrame)
+        if (Input.GetMouseButtonDown(0))
         {
             z -= 0.1f;
             if (i == 1)

@@ -11,7 +11,7 @@ public class AimManager : MonoBehaviour
     // public Text rightRayToObject;
     // public Text leftCameraToObject;
     // public Text topLeftDifference;
-    private GameObject currentTarget = null;
+    public GameObject currentTarget = null;
     private RaycastHit hitTargetCheck;
     private RaycastHit hitWallCheck;
     private RaycastHit hitOnTargetCheck;
@@ -178,7 +178,7 @@ public class AimManager : MonoBehaviour
         // Set the new target
         currentTarget = target.gameObject;
         // Activate the outline
-        currentTarget.GetComponent<ChangeOutline>().ActivateOutline(outline);
+        // currentTarget.GetComponent<ChangeOutline>().ActivateOutline(outline);
         // Post the aim frequency
         frequencyDistance.Post(gameObject);
     }
@@ -211,25 +211,25 @@ public class AimManager : MonoBehaviour
         }
     }
 
-    public void Fire()
-    {
-        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hitTargetCheck, Mathf.Infinity, layerMask))
-        {
-            if (hitTargetCheck.transform.tag == "Target")
-            {
-                // Deal 25 int damage
-                TargetController currentTargetController = hitTargetCheck.transform.GetComponent<TargetController>();
-                currentTargetController.takeDamage(25);
-                // Check if health is above 0
-                if (!currentTargetController.checkHasHealth())
-                {
-                    hitOnTargetCheck.transform.GetComponent<AkAmbient>().Stop(0);
-                    Destroy(hitTargetCheck.transform.gameObject);
-                    frequencyDistance.Stop(gameObject);
-                    currentTarget.GetComponent<ChangeOutline>().DeactivateOutline();
-                    currentTarget = null;
-                }
-            }
-        }
-    }
+    // public void Fire()
+    // {
+    //     if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hitTargetCheck, Mathf.Infinity, layerMask))
+    //     {
+    //         if (hitTargetCheck.transform.tag == "Target")
+    //         {
+    // Deal 25 int damage
+    // TargetController currentTargetController = hitTargetCheck.transform.GetComponent<TargetController>();
+    // currentTargetController.takeDamage(25);
+    // Check if health is above 0
+    // if (!currentTargetController.checkHasHealth())
+    // {
+    // hitOnTargetCheck.transform.GetComponent<AkAmbient>().Stop(0);
+    // Destroy(hitTargetCheck.transform.gameObject);
+    // audioManager.StopDistanceFrequency(gameObject);
+    // currentTarget.GetComponent<ChangeOutline>().DeactivateOutline();
+    // currentTarget = null;
+    // }
+    //         }
+    //     }
+    // }
 }

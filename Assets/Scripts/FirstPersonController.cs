@@ -136,7 +136,7 @@ namespace StarterAssets
         {
             if (_input.fire)
             {
-                aimManager.Fire();
+                // aimManager.Fire();
                 _input.fire = false;
             }
         }
