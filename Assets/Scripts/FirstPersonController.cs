@@ -76,6 +76,8 @@ namespace StarterAssets
         [Header("Misc")]
         public AimManager aimManager;
         public GameObject blindfold;
+        public GameManager gameManager;
+        public bool MenuToggle = false;
 
 
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
@@ -110,6 +112,7 @@ namespace StarterAssets
 
         private void Start()
         {
+            gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
             _controller = GetComponent<CharacterController>();
             _input = GetComponent<StarterAssetsInputs>();
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
@@ -128,8 +131,9 @@ namespace StarterAssets
             JumpAndGravity();
             GroundedCheck();
             Move();
-            Fire();
+            // Fire();
             Blindfold();
+            Menu();
         }
 
         private void Fire()
@@ -151,9 +155,21 @@ namespace StarterAssets
             }
         }
 
+        private void Menu()
+        {
+            if (_input.menu)
+            {
+                gameManager.ToggleMenu();
+                _input.menu = false;
+            }
+        }
+
         private void LateUpdate()
         {
-            CameraRotation();
+            if (!MenuToggle)
+            {
+                CameraRotation();
+            }
         }
 
         private void GroundedCheck()

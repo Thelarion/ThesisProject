@@ -14,6 +14,7 @@ namespace StarterAssets
         public bool sprint;
         public bool fire;
         public bool blindfold;
+        public bool menu;
 
         [Header("Movement Settings")]
         public bool analogMovement;
@@ -55,6 +56,11 @@ namespace StarterAssets
         {
             BlindfoldInput(value.isPressed);
         }
+
+        public void OnMenu(InputValue value)
+        {
+            MenuInput(value.isPressed);
+        }
 #endif
 
 
@@ -86,6 +92,11 @@ namespace StarterAssets
         public void BlindfoldInput(bool newBlindfoldState)
         {
             blindfold = newBlindfoldState;
+        }
+
+        public void MenuInput(bool newMenuState)
+        {
+            menu = newMenuState;
         }
 
         private void OnApplicationFocus(bool hasFocus)
