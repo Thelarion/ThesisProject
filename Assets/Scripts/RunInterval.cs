@@ -11,10 +11,11 @@ public class RunInterval : MonoBehaviour
     private int _materialIndex;
     private string _nameGameObject;
     [HideInInspector] public bool TapState;
-
+    public PlayNoteOnTone PlayNoteOnTone;
 
     void Start()
     {
+        PlayNoteOnTone = transform.parent.gameObject.GetComponent<PlayNoteOnTone>();
         LoadMaterialsFromResources();
         _nameGameObject = transform.name;
         _renderer = GetComponent<Renderer>();
@@ -24,7 +25,7 @@ public class RunInterval : MonoBehaviour
 
     private void LoadMaterialsFromResources()
     {
-        var load = Resources.LoadAll("MaterialBalloon", typeof(Material)).Cast<Material>();
+        var load = Resources.LoadAll("MaterialNotes", typeof(Material)).Cast<Material>();
         foreach (var material in load)
         {
             _materialsAvailable.Add(material);
@@ -49,6 +50,8 @@ public class RunInterval : MonoBehaviour
     {
         ChangeMaterial();
         CheckTargetState();
+        var currentMaterialName = _materialRenderer[0].name;
+        PlayNoteOnTone.PlayNote(currentMaterialName, transform.gameObject);
         yield return new WaitForSeconds(3);
         StartCoroutine(IntervalChangeTarget());
     }

@@ -21,6 +21,7 @@ public class AimManager : MonoBehaviour
     private bool isAimOnTarget = false;
     public LayerMask layerMask;
     public Material outline;
+    public bool AssitanceStateOff = true;
 
     void FixedUpdate()
     {
@@ -72,6 +73,23 @@ public class AimManager : MonoBehaviour
             // leftCameraToObject.text = distanceCameraToObject.ToString();
             // topLeftDifference.text = (Mathf.Sqrt(lengthRayForwardPlusDistanceFromRayEndpoint - distanceCameraToObject)).ToString("F3");
         }
+    }
+
+    public void TurnAimAssitanceOff()
+    {
+        StopAllSounds();
+    }
+
+    public void TurnAimAssitanceOn()
+    {
+        // Reset target to start initial process from scratch
+        currentTarget = null;
+    }
+
+    private void StopAllSounds()
+    {
+        onTargetWhiteNoise.Stop(gameObject);
+        frequencyDistance.Stop(gameObject);
     }
 
     private void CheckIfAimOnTarget()

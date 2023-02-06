@@ -13,8 +13,19 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID A2 = 1886858600U;
+        static const AkUniqueID A3 = 1886858601U;
+        static const AkUniqueID B2 = 1870081013U;
+        static const AkUniqueID B3 = 1870081012U;
         static const AkUniqueID BALLOONHOVER = 164414172U;
+        static const AkUniqueID C3 = 1853303303U;
+        static const AkUniqueID C4 = 1853303296U;
+        static const AkUniqueID CEABCEVENT = 2118505581U;
+        static const AkUniqueID D3 = 1836525714U;
+        static const AkUniqueID E3 = 1819748157U;
+        static const AkUniqueID F3 = 1802970440U;
         static const AkUniqueID FREQDISTANCEEVENT = 2218041646U;
+        static const AkUniqueID G3 = 1786192859U;
         static const AkUniqueID PLAYERFOOT = 2664667690U;
         static const AkUniqueID WHITENOISEONTARGET = 1848491570U;
     } // namespace EVENTS

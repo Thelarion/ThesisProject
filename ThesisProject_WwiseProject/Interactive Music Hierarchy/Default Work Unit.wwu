@@ -1,6 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{0C0D58AB-E33A-483F-9A09-970848D4441A}" SchemaVersion="110">
 	<InteractiveMusic>
-		<WorkUnit Name="Default Work Unit" ID="{0C0D58AB-E33A-483F-9A09-970848D4441A}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{0C0D58AB-E33A-483F-9A09-970848D4441A}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Music" ID="{AA5460DF-1943-4B6E-9F91-598515FCA3BF}" ShortID="1028317850"/>
+				<Folder Name="Melodies" ID="{6B114A54-C074-4D2E-99CB-3E8F56A9E198}" ShortID="857658330">
+					<ChildrenList>
+						<MusicSegment Name="CEABC" ID="{0F381F0A-774E-4EBF-AE44-458D92245DA5}" ShortID="221000671">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="CEABC" ID="{97E18C46-F5AA-4517-8649-5F4B4F005FF6}" ShortID="329753352">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="CEABC" ID="{14DF769D-84D3-4A17-8DD2-3B16A01A201E}">
+											<Language>SFX</Language>
+											<AudioFile>CEABC.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="191538228"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{29F9216C-B298-4839-B0DF-D07AFC80A4D0}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{5FD328D8-1834-4B77-8C80-F335FDC51671}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="CEABC" ID="{0F7CF6B4-0860-4459-81C2-6C1F13653643}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="4000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="CEABC" ID="{14DF769D-84D3-4A17-8DD2-3B16A01A201E}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{AD089BBC-7E5E-4DB1-9493-6794F183A838}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{20D99E41-2F24-4F31-93BA-1335E5D78556}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="2000"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</InteractiveMusic>
 </WwiseDocument>

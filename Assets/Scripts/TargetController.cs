@@ -36,7 +36,7 @@ public class TargetController : MonoBehaviour
     // Remove target from instances when destroyed
     private void OnDestroy()
     {
-        GetComponent<AkAmbient>().Stop(0);
+        // GetComponent<AkAmbient>().Stop(0);
         if (_tapState)
         {
             operationController.ActivateListFrame(_indexInSequence, transform.name);

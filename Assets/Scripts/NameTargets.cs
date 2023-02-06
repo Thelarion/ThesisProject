@@ -5,21 +5,25 @@ using UnityEngine;
 public class NameTargets : MonoBehaviour
 {
     private OperationController _operationController;
-    private enum colors
+    private enum notes
     {
-        Yellow,
-        Red,
-        Blue,
+        C,
+        D,
+        E,
+        F,
+        G,
+        A,
+        B,
     }
 
     void Awake()
     {
         _operationController = GameObject.Find("List").GetComponent<OperationController>();
         int x = 0;
-        foreach (colors color in _operationController._melodySequence)
+        foreach (notes note in _operationController._melodySequence)
         {
             Transform _childTarget = transform.GetChild(x);
-            _childTarget.name = color.ToString();
+            _childTarget.name = note.ToString();
             _childTarget.GetComponent<TargetController>().setIndexInSequence(x);
             x++;
         }

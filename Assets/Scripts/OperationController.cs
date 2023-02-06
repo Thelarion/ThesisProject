@@ -8,14 +8,18 @@ using System;
 public class OperationController : MonoBehaviour
 {
     [SerializeField]
-    public enum colors
+    public enum notes
     {
-        Yellow,
-        Red,
-        Blue,
+        C,
+        D,
+        E,
+        F,
+        G,
+        A,
+        B,
     }
 
-    [SerializeField] public colors[] _melodySequence;
+    [SerializeField] public notes[] _melodySequence;
     [SerializeField] private Transform[] _listUI;
     private ArrayList _spritesAvailable = new ArrayList();
     private ArrayList _spritesAvailableStrings = new ArrayList();
@@ -30,7 +34,7 @@ public class OperationController : MonoBehaviour
 
     private void InitializeSequence()
     {
-        foreach (colors name in _melodySequence)
+        foreach (notes name in _melodySequence)
         {
             _sequenceIndex.Add(_spritesAvailableStrings.IndexOf(name.ToString()));
         }
@@ -47,7 +51,7 @@ public class OperationController : MonoBehaviour
 
     private void LoadSpritesFromResources()
     {
-        var load = Resources.LoadAll("SpritesBalloon", typeof(Sprite)).Cast<Sprite>();
+        var load = Resources.LoadAll("SpritesNotes", typeof(Sprite)).Cast<Sprite>();
         foreach (var material in load)
         {
             _spritesAvailable.Add(material);
