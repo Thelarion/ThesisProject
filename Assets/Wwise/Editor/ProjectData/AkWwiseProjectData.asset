@@ -123,7 +123,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 36069028d9c6b149af9e7a7e2bc60423
     GuidInternal: 
-    m_lastTime: -8585259095133443792
+    m_lastTime: -8585259050194411167
     List:
     - name: Main
       guid: aaa465e9ee0711468f19203f9d710ce1
@@ -151,7 +151,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 43efb42f60dfb9479eefa2004292fbf9
     GuidInternal: 
-    m_lastTime: -8585259161734634014
+    m_lastTime: -8585258992851497426
     List:
     - name: A2
       guid: d80565ca86137c44bc2366cd2d1463ca
@@ -455,6 +455,63 @@ MonoBehaviour:
         ObjectType: 3
         guid: e4392008128a7e4a8c3da3c8af76ee16
       Path: Events\Default Work Unit\PlayerFoot
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Pling
+      guid: e011f4bf74827046867a5cb3491b9ef9
+      id: 652836727
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: SFX
+        ObjectType: 4
+        guid: c73df9cd04502e468b4b7a815b229a25
+      - ElementName: Pling
+        ObjectType: 3
+        guid: e011f4bf74827046867a5cb3491b9ef9
+      Path: Events\Default Work Unit\SFX\Pling
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: PlingSuccess
+      guid: 32b938e5577a1344b920ce49a6a22a8e
+      id: 1212327680
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: SFX
+        ObjectType: 4
+        guid: c73df9cd04502e468b4b7a815b229a25
+      - ElementName: PlingSuccess
+        ObjectType: 3
+        guid: 32b938e5577a1344b920ce49a6a22a8e
+      Path: Events\Default Work Unit\SFX\PlingSuccess
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SFX
+      guid: c73df9cd04502e468b4b7a815b229a25
+      id: 393239870
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: SFX
+        ObjectType: 4
+        guid: c73df9cd04502e468b4b7a815b229a25
+      Path: Events\Default Work Unit\SFX
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -768,7 +825,7 @@ MonoBehaviour:
     m_lastTime: -8585282545794215635
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000200000003000000040000000500000006000000070000000a0000000b0000000c0000000d0000000e0000000f0000001100000012000000130000001400000016000000170000001b0000001d000000
+  ExpandedWaapiItemIds: 010000000200000003000000040000000500000006000000070000000a0000000c0000000e0000000f0000001100000012000000130000001400000016000000170000001b0000001d000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

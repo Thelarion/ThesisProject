@@ -12,15 +12,19 @@ public class RunInterval : MonoBehaviour
     private string _nameGameObject;
     [HideInInspector] public bool TapState;
     public PlayNoteOnTone PlayNoteOnTone;
+    private string currentMaterialName;
+    private ParticleSystem noteParticles;
 
     void Start()
     {
+        noteParticles = transform.GetChild(0).GetComponent<ParticleSystem>();
         PlayNoteOnTone = transform.parent.gameObject.GetComponent<PlayNoteOnTone>();
         LoadMaterialsFromResources();
         _nameGameObject = transform.name;
         _renderer = GetComponent<Renderer>();
         _materialRenderer = _renderer.materials;
         StartCoroutine(IntervalChangeTarget());
+        StartCoroutine(IntervalNoteAndEffect());
     }
 
     private void LoadMaterialsFromResources()
@@ -50,9 +54,17 @@ public class RunInterval : MonoBehaviour
     {
         ChangeMaterial();
         CheckTargetState();
-        var currentMaterialName = _materialRenderer[0].name;
-        PlayNoteOnTone.PlayNote(currentMaterialName, transform.gameObject);
+        currentMaterialName = _materialRenderer[0].name;
+        // PlayNoteOnTone.PlayNote(currentMaterialName, transform.gameObject);
         yield return new WaitForSeconds(3);
         StartCoroutine(IntervalChangeTarget());
+    }
+
+    IEnumerator IntervalNoteAndEffect()
+    {
+        PlayNoteOnTone.PlayNote(currentMaterialName, transform.gameObject);
+        noteParticles.Play();
+        yield return new WaitForSeconds(1);
+        StartCoroutine(IntervalNoteAndEffect());
     }
 }

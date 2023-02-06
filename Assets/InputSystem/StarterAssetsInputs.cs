@@ -15,6 +15,7 @@ namespace StarterAssets
         public bool fire;
         public bool blindfold;
         public bool menu;
+        public bool melody;
 
         [Header("Movement Settings")]
         public bool analogMovement;
@@ -61,6 +62,11 @@ namespace StarterAssets
         {
             MenuInput(value.isPressed);
         }
+
+        public void OnMelody(InputValue value)
+        {
+            MelodyInput(value.isPressed);
+        }
 #endif
 
 
@@ -97,6 +103,11 @@ namespace StarterAssets
         public void MenuInput(bool newMenuState)
         {
             menu = newMenuState;
+        }
+
+        public void MelodyInput(bool newMelodyState)
+        {
+            melody = newMelodyState;
         }
 
         private void OnApplicationFocus(bool hasFocus)

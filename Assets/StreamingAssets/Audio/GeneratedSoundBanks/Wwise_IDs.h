@@ -27,6 +27,8 @@ namespace AK
         static const AkUniqueID FREQDISTANCEEVENT = 2218041646U;
         static const AkUniqueID G3 = 1786192859U;
         static const AkUniqueID PLAYERFOOT = 2664667690U;
+        static const AkUniqueID PLING = 652836727U;
+        static const AkUniqueID PLINGSUCCESS = 1212327680U;
         static const AkUniqueID WHITENOISEONTARGET = 1848491570U;
     } // namespace EVENTS
 

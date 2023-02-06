@@ -24,7 +24,8 @@ public class OperationController : MonoBehaviour
     private ArrayList _spritesAvailable;
     private ArrayList _spritesAvailableStrings = new ArrayList();
     private List<int> _sequenceIndex = new List<int>();
-    public bool ColourHelpOn = false;
+    public AK.Wwise.Event Pling;
+    [HideInInspector] public bool ColourHelpOn = false;
     private string currentColourState = "SpritesNotesGrey";
 
     private void Start()
@@ -79,5 +80,6 @@ public class OperationController : MonoBehaviour
         int indexFrame = _spritesAvailableStrings.IndexOf(tappedName + "_frame");
         Sprite frame = _spritesAvailable[indexFrame] as Sprite;
         _listUI[tappedListElement].GetComponent<Image>().sprite = frame;
+        Pling.Post(gameObject);
     }
 }

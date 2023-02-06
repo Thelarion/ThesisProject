@@ -63,7 +63,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{443D683C-35B0-D77F-513E-E99D793B65B9}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{D5DC6429-4EB7-3D15-AF9A-881CA2C3D6E7}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -187,22 +187,22 @@
 				</Custom>
 			</Plugins>
 			<Events>
-				<Event Id="1886858600" Name="A2" MaxAttenuation="50" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="1886858600" Name="A2" MaxAttenuation="10" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="869907179"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1886858601" Name="A3" MaxAttenuation="50" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="1886858601" Name="A3" MaxAttenuation="10" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="188759417"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1870081013" Name="B2" MaxAttenuation="50" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="1870081013" Name="B2" MaxAttenuation="10" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="886792696"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1870081012" Name="B3" MaxAttenuation="50" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="1870081012" Name="B3" MaxAttenuation="10" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="602516568"/>
 					</MediaRefs>
@@ -212,12 +212,12 @@
 						<MediaRef Id="313054933"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1853303303" Name="C3" MaxAttenuation="50" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="1853303303" Name="C3" MaxAttenuation="10" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="214797377"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1853303296" Name="C4" MaxAttenuation="50" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="1853303296" Name="C4" MaxAttenuation="10" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="672687142"/>
 					</MediaRefs>
@@ -227,17 +227,17 @@
 						<MediaRef Id="191538228"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1836525714" Name="D3" MaxAttenuation="50" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="1836525714" Name="D3" MaxAttenuation="10" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="637238498"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1819748157" Name="E3" MaxAttenuation="50" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="1819748157" Name="E3" MaxAttenuation="10" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="945492545"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1802970440" Name="F3" MaxAttenuation="50" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="1802970440" Name="F3" MaxAttenuation="10" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="900315779"/>
 					</MediaRefs>
@@ -249,7 +249,7 @@
 						</Custom>
 					</PluginRefs>
 				</Event>
-				<Event Id="1786192859" Name="G3" MaxAttenuation="50" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="1786192859" Name="G3" MaxAttenuation="10" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="1065528809"/>
 					</MediaRefs>
@@ -320,5 +320,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{7A643A5D-49FB-9445-FE75-95475CB83A78}</FileHash>
+	<FileHash>{0CFF2C13-2187-FB53-2E68-B688157B9324}</FileHash>
 </SoundBanksInfo>

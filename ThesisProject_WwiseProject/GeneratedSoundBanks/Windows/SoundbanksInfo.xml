@@ -63,7 +63,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{D5DC6429-4EB7-3D15-AF9A-881CA2C3D6E7}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{79813C78-BD12-CE15-83BC-4E9B713FE05C}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -115,6 +115,10 @@
 					<ShortName>Footsteps\Dirt\FS_Dirt_01.wav</ShortName>
 					<CachePath>SFX/Footsteps/Dirt/FS_Dirt_01_10C4C929.wem</CachePath>
 				</File>
+				<File Id="517302441" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>PlingSuccess.wav</ShortName>
+					<CachePath>SFX/PlingSuccess_10C4C929.wem</CachePath>
+				</File>
 				<File Id="564419961" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Dirt\FS_Dirt_04.wav</ShortName>
 					<CachePath>SFX/Footsteps/Dirt/FS_Dirt_04_10C4C929.wem</CachePath>
@@ -138,6 +142,10 @@
 				<File Id="742077720" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Tile\FS_Tile_01.wav</ShortName>
 					<CachePath>SFX/Footsteps/Tile/FS_Tile_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="773820192" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Pling.wav</ShortName>
+					<CachePath>SFX/Pling_10C4C929.wem</CachePath>
 				</File>
 				<File Id="795254982" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Gravel\FS_Gravel_02.wav</ShortName>
@@ -294,6 +302,16 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="652836727" Name="Pling" DurationType="OneShot" DurationMin="4" DurationMax="4">
+					<MediaRefs>
+						<MediaRef Id="773820192"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1212327680" Name="PlingSuccess" DurationType="OneShot" DurationMin="2" DurationMax="2">
+					<MediaRefs>
+						<MediaRef Id="517302441"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1848491570" Name="WhiteNoiseOnTarget" DurationType="Infinite">
 					<PluginRefs>
 						<Custom>
@@ -320,5 +338,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{5F73BEF5-0D69-F404-AF5B-C86C6A55D15A}</FileHash>
+	<FileHash>{CFB9CFBA-D972-94D4-C49F-0734F3E01A1B}</FileHash>
 </SoundBanksInfo>

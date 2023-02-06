@@ -77,6 +77,7 @@ namespace StarterAssets
         public AimManager aimManager;
         public GameObject blindfold;
         public GameManager gameManager;
+        public PlayerAudio playerAudio;
         public bool MenuToggle = false;
 
 
@@ -112,6 +113,7 @@ namespace StarterAssets
 
         private void Start()
         {
+            playerAudio = GameObject.Find("PlayerAudio").GetComponent<PlayerAudio>();
             gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
             _controller = GetComponent<CharacterController>();
             _input = GetComponent<StarterAssetsInputs>();
@@ -134,6 +136,7 @@ namespace StarterAssets
             // Fire();
             Blindfold();
             Menu();
+            Melody();
         }
 
         private void Fire()
@@ -161,6 +164,15 @@ namespace StarterAssets
             {
                 gameManager.ToggleMenu();
                 _input.menu = false;
+            }
+        }
+
+        private void Melody()
+        {
+            if (_input.melody)
+            {
+                playerAudio.PlayMelody();
+                _input.melody = false;
             }
         }
 

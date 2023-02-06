@@ -3,7 +3,7 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{5DF15E22-79C8-425A-9EC6-9CF4CCC5F5C2}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="G:\My Drive\02_KTH\00. Master Thesis\7. Project Files\Melodies\Exports\"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="G:\My Drive\02_KTH\00. Master Thesis\7. Project Files\SFX\"/>
 				<Property Name="EffectsView\MeteringObject\{87BE3270-3D27-45BB-9E46-7F2D9380F523}" Type="string" Value="{99AC6BE6-146C-4182-9837-E7FB3AE78D80}"/>
 				<Property Name="Event Action List\{082039E4-8A12-4A7E-8C3D-A3C8AF76EE16}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{3AB1EEBD-001C-4B4D-BB83-C89F30542A22}\x64_Expand States" Type="string" Value=""/>
@@ -17,6 +17,7 @@
 				<Property Name="Event Action List\{8D282F26-098A-4957-A315-617F0D523301}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{A074F87D-E2C3-4998-BCC2-73FB593FE7FB}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{B98A6583-5ACF-4A04-861D-8422A0613722}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{BFF411E0-8274-4670-867A-5CB3491B9EF9}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{C1091B34-059C-49D2-BB23-3B4E3D366514}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{CA6505D8-1386-447C-BC23-66CD2D1463CA}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{E602C474-07D7-4073-A734-CCBD7B265C9E}\x64_Expand States" Type="string" Value=""/>

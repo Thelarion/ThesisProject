@@ -176,6 +176,32 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="SFX" ID="{CDF93DC7-5004-462E-8B4B-7A815B229A25}" ShortID="194764734">
+					<ChildrenList>
+						<Event Name="Pling" ID="{BFF411E0-8274-4670-867A-5CB3491B9EF9}">
+							<ChildrenList>
+								<Action Name="" ID="{15B8EA0B-0904-469D-A7F0-6B3E5518CDC1}" ShortID="458503682">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Pling" ID="{6668FAEA-0D09-428C-8CC0-43F40AAC4CF3}" WorkUnitID="{6B91872B-49A8-4BB8-A212-FBF7E77C3676}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="PlingSuccess" ID="{E538B932-7A57-4413-B920-CE49A6A22A8E}">
+							<ChildrenList>
+								<Action Name="" ID="{ECD4A3C5-17FB-4C46-A5AD-E94011ED2AA4}" ShortID="369687403">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PlingSuccess" ID="{0A0234D2-4DA0-45BF-808B-B4CDD098DED2}" WorkUnitID="{6B91872B-49A8-4BB8-A212-FBF7E77C3676}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
