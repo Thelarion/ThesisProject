@@ -17,7 +17,6 @@ public class PlayNoteOnTone : MonoBehaviour
 
     public void PlayNote(string name, GameObject tone)
     {
-        print(name);
         switch (name)
         {
             case "C":

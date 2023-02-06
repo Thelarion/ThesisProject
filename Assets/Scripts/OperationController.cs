@@ -21,15 +21,28 @@ public class OperationController : MonoBehaviour
 
     [SerializeField] public notes[] _melodySequence;
     [SerializeField] private Transform[] _listUI;
-    private ArrayList _spritesAvailable = new ArrayList();
+    private ArrayList _spritesAvailable;
     private ArrayList _spritesAvailableStrings = new ArrayList();
     private List<int> _sequenceIndex = new List<int>();
+    public bool ColourHelpOn = false;
+    private string currentColourState = "SpritesNotesGrey";
 
     private void Start()
+    {
+        UpdateUI();
+    }
+
+    private void UpdateUI()
     {
         LoadSpritesFromResources();
         InitializeSequence();
         InitilizeUI();
+    }
+
+    public void ToggleListColourHelp()
+    {
+        currentColourState = currentColourState == "SpritesNotesGrey" ? "SpritesNotesColour" : "SpritesNotesGrey";
+        UpdateUI();
     }
 
     private void InitializeSequence()
@@ -51,7 +64,8 @@ public class OperationController : MonoBehaviour
 
     private void LoadSpritesFromResources()
     {
-        var load = Resources.LoadAll("SpritesNotes", typeof(Sprite)).Cast<Sprite>();
+        var load = Resources.LoadAll(currentColourState, typeof(Sprite)).Cast<Sprite>();
+        _spritesAvailable = new ArrayList();
         foreach (var material in load)
         {
             _spritesAvailable.Add(material);

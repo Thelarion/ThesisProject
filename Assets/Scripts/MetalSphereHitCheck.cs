@@ -9,5 +9,10 @@ public class MetalSphereHitCheck : MonoBehaviour
         {
             Destroy(other.transform.gameObject);
         }
+
+        if (other.transform.tag == "Target")
+        {
+            Destroy(transform.gameObject);
+        }
     }
 }
