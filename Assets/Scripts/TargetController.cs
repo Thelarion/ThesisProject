@@ -33,6 +33,11 @@ public class TargetController : MonoBehaviour
         _indexInSequence = index;
     }
 
+    public int getIndexInSequence()
+    {
+        return _indexInSequence;
+    }
+
     // Remove target from instances when destroyed
     private void OnDestroy()
     {

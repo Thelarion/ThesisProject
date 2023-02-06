@@ -27,10 +27,17 @@ public class OperationController : MonoBehaviour
     public AK.Wwise.Event Pling;
     [HideInInspector] public bool ColourHelpOn = false;
     private string currentColourState = "SpritesNotesGrey";
+    private TargetController currentClosestTarget;
+    private Image currentFrame = null;
 
     private void Start()
     {
         UpdateUI();
+    }
+
+    private void Update()
+    {
+        ActivateDistanceFrame();
     }
 
     private void UpdateUI()
@@ -77,9 +84,74 @@ public class OperationController : MonoBehaviour
 
     public void ActivateListFrame(int tappedListElement, string tappedName)
     {
+        // Get index of the GameObject name within the array
         int indexFrame = _spritesAvailableStrings.IndexOf(tappedName + "_frame");
+        // Initiate the sprite wtih the index of the GameObject
         Sprite frame = _spritesAvailable[indexFrame] as Sprite;
+        // Set the sprite within the list UI
         _listUI[tappedListElement].GetComponent<Image>().sprite = frame;
         Pling.Post(gameObject);
+    }
+
+    private void ActivateDistanceFrame()
+    {
+        TargetController closestTarget = DistanceToTarget.ReturnClosestTarget();
+
+        if (closestTarget != currentClosestTarget)
+        {
+            // Safety for less calculations
+            currentClosestTarget = closestTarget;
+
+
+            // Make 'old' frame invisible
+            if (currentFrame != null)
+            {
+                StartCoroutine(DecreaseAlpha(currentFrame));
+            }
+            // Get new list frame
+            currentFrame = _listUI[currentClosestTarget.getIndexInSequence()].GetChild(0).GetComponent<Image>();
+            // Make it visible
+            StartCoroutine(IncreaseAlpha(currentFrame));
+        }
+
+
+        // pulsating alpha?
+    }
+
+    private IEnumerator DecreaseAlpha(Image currentFrame)
+    {
+        var time = 0f;
+
+        while (time <= 1)
+        {
+            Color newColor = currentFrame.color;
+            newColor.a = newColor.a - 0.01f;
+            currentFrame.color = newColor;
+
+            time += Time.deltaTime;
+            yield return null;
+        }
+        Color newColorSafety = currentFrame.color;
+        newColorSafety.a = 0f;
+        currentFrame.color = newColorSafety;
+    }
+
+    private IEnumerator IncreaseAlpha(Image currentFrame)
+    {
+        var time = 0f;
+
+        while (time <= 1)
+        {
+            Color newColor = currentFrame.color;
+            newColor.a = newColor.a + 0.01f;
+            currentFrame.color = newColor;
+
+            time += Time.deltaTime;
+            yield return null;
+        }
+        Color newColorSafety = currentFrame.color;
+        newColorSafety.a = 1f;
+        currentFrame.color = newColorSafety;
+
     }
 }

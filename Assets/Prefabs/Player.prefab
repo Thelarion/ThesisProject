@@ -805,6 +805,7 @@ GameObject:
   - component: {fileID: 5476559786484903668}
   - component: {fileID: 9008879316150871804}
   - component: {fileID: 9008879316150871780}
+  - component: {fileID: 2055162322186341556}
   m_Layer: 0
   m_Name: MainCamera
   m_TagString: MainCamera
@@ -1057,6 +1058,18 @@ MonoBehaviour:
   eventIdInternal: 0
   valueGuidInternal: 
   m_callbackDataInternal: {fileID: 0}
+--- !u!114 &2055162322186341556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3528674100898286625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c3e8a0fb2fab7e4ea2d430feaa65569, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3606295275162554051
 GameObject:
   m_ObjectHideFlags: 0
@@ -1282,6 +1295,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8904381959120908911}
+  - component: {fileID: 57170440}
   m_Layer: 8
   m_Name: PlayerAudio
   m_TagString: Untagged
@@ -1303,6 +1317,23 @@ Transform:
   m_Father: {fileID: 8853855696034951065}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &57170440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4932187637561997422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1239f7f16aebdc4383bf43e88c74806, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Melody:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: c3d823d3f52f9a84d948b27b4015ca8e,
+      type: 2}
 --- !u!1 &5537444756221829429
 GameObject:
   m_ObjectHideFlags: 0
@@ -7081,6 +7112,7 @@ MonoBehaviour:
   aimManager: {fileID: 9008879316150871804}
   blindfold: {fileID: 432477867329669193}
   gameManager: {fileID: 0}
+  playerAudio: {fileID: 0}
   MenuToggle: 0
 --- !u!114 &2122472149014863827
 MonoBehaviour:
