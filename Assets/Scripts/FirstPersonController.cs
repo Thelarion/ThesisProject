@@ -138,7 +138,7 @@ namespace StarterAssets
             Menu();
             Melody();
         }
-        int j;
+
         private void Fire()
         {
             if (_input.fire)

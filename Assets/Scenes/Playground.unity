@@ -1599,6 +1599,7 @@ Transform:
   - {fileID: 1611128958}
   - {fileID: 1170373476}
   - {fileID: 1029462176}
+  - {fileID: 423215412}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1801,12 +1802,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 423215410}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 9.594499, y: -5.711114, z: -0.30329776}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_Father: {fileID: 356765713}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &475027492
 GameObject:
@@ -1894,7 +1895,7 @@ GameObject:
   - component: {fileID: 484563047}
   - component: {fileID: 484563048}
   m_Layer: 0
-  m_Name: Tone3
+  m_Name: SpawnContainer3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1929,7 +1930,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc4ba6d119e7ff64c8a185ce88f800f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lastTargetSpawnPoint: 0
 --- !u!1 &492001251
 GameObject:
   m_ObjectHideFlags: 0
@@ -12582,7 +12582,7 @@ GameObject:
   - component: {fileID: 913459328}
   - component: {fileID: 913459327}
   m_Layer: 0
-  m_Name: Note3
+  m_Name: Tone3
   m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13089,7 +13089,7 @@ GameObject:
   - component: {fileID: 977330328}
   - component: {fileID: 977330327}
   m_Layer: 0
-  m_Name: Note2
+  m_Name: Tone2
   m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14602,7 +14602,7 @@ GameObject:
   - component: {fileID: 1300407407}
   - component: {fileID: 1300407408}
   m_Layer: 0
-  m_Name: Tone1
+  m_Name: SpawnContainer1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14637,7 +14637,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc4ba6d119e7ff64c8a185ce88f800f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lastTargetSpawnPoint: 0
 --- !u!1 &1308345313
 GameObject:
   m_ObjectHideFlags: 0
@@ -15171,7 +15170,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1453093033
 GameObject:
@@ -15462,7 +15461,7 @@ Transform:
   - {fileID: 1524547814}
   - {fileID: 484563047}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1512775570
 MonoBehaviour:
@@ -15510,7 +15509,7 @@ Transform:
   m_Children:
   - {fileID: 121239024}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1521566086
 GameObject:
@@ -15618,7 +15617,7 @@ GameObject:
   - component: {fileID: 1524547814}
   - component: {fileID: 1524547815}
   m_Layer: 0
-  m_Name: Tone2
+  m_Name: SpawnContainer2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15653,7 +15652,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc4ba6d119e7ff64c8a185ce88f800f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lastTargetSpawnPoint: 0
 --- !u!1 &1572770323
 GameObject:
   m_ObjectHideFlags: 0
@@ -15871,7 +15869,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1653808558
 GameObject:
@@ -22425,7 +22423,7 @@ GameObject:
   - component: {fileID: 6929557060340565133}
   - component: {fileID: 4887681139784322093}
   m_Layer: 0
-  m_Name: Note1
+  m_Name: Tone1
   m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

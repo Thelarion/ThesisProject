@@ -4,17 +4,16 @@ using UnityEngine;
 
 public class SaveLastTargetSpawn : MonoBehaviour
 {
-    private int lastTargetSpawnPoint;
+    private int _checkLastTargetSpawnPoint;
 
     public int GetNewSpawnIndex()
     {
-        lastTargetSpawnPoint = lastTargetSpawnPoint + UnityEngine.Random.Range(1, 3);
-        if (lastTargetSpawnPoint > 3)
+        _checkLastTargetSpawnPoint = _checkLastTargetSpawnPoint + UnityEngine.Random.Range(1, 3);
+        if (_checkLastTargetSpawnPoint > 3)
         {
-            lastTargetSpawnPoint -= 3;
+            _checkLastTargetSpawnPoint -= 3;
         }
 
-        return lastTargetSpawnPoint;
+        return _checkLastTargetSpawnPoint;
     }
-
 }
