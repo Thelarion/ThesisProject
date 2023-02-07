@@ -125,6 +125,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ea2c144883e6fc4894a5bc28612b24c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioManager: {fileID: 5048044596942918496, guid: bca3b567329403d4ca2b43feab449a7f,
-    type: 3}
-  aimManager: {fileID: 0}
+  PlingSuccess:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: e13abed61ca479440a894ffc9a65bf9f,
+      type: 2}
+  PlingFail:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: fe0e1646268b26f4e90873451f2a1967,
+      type: 2}

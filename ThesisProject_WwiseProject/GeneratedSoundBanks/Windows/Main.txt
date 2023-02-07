@@ -13,6 +13,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1870081013	B2			\Default Work Unit\Notes\B2	
 	1886858600	A2			\Default Work Unit\Notes\A2	
 	1886858601	A3			\Default Work Unit\Notes\A3	
+	2086503983	PlingFail			\Default Work Unit\SFX\PlingFail	
 	2118505581	CEABCEvent			\Default Work Unit\Melodies\CEABCEvent	
 	2218041646	FreqDistanceEvent			\Default Work Unit\FreqDistanceEvent	
 	2664667690	PlayerFoot			\Default Work Unit\PlayerFoot	
@@ -43,6 +44,7 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	19019098	FS_Concrete_01	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Footsteps\Concrete\FS_Concrete_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Footsteps\Concrete\FS_Concrete_01		42952
 	25687503	FS_Gravel_01	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Footsteps\Gravel\FS_Gravel_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Footsteps\Gravel\FS_Gravel_01		43006
+	33821008	PlingFail	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\PlingFail_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PlingFail		768096
 	136132481	FS_Tile_03	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Footsteps\Tile\FS_Tile_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Footsteps\Tile\FS_Tile_03		58572
 	188759417	A3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Notes\A3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Notes\A3		384096
 	191538228	CEABC	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\CEABC_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Melodies\CEABC\CEABC		768096

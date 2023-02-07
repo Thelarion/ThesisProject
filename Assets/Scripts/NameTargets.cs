@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,6 +6,7 @@ using UnityEngine;
 public class NameTargets : MonoBehaviour
 {
     private OperationController _operationController;
+    public int _targetCount;
     private enum notes
     {
         C,
@@ -14,6 +16,31 @@ public class NameTargets : MonoBehaviour
         G,
         A,
         B,
+    }
+
+    private void Update()
+    {
+        CheckTargetCount();
+    }
+
+    private void CheckTargetCount()
+    {
+        if (CountChildrenTargets(transform) <= 0)
+        {
+            print("No targets left");
+            GameObject.Find("List").GetComponent<OperationController>().DecreaseAlphaZeroTargets();
+        }
+    }
+
+    public int CountChildrenTargets(Transform t)
+    {
+        int k = 0;
+        foreach (Transform c in t)
+        {
+            if (c.gameObject.activeSelf)
+                k++;
+        }
+        return k;
     }
 
     void Awake()

@@ -200,6 +200,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="PlingFail" ID="{BDF1BCC3-3521-49FB-A33B-11B6D7B71982}">
+							<ChildrenList>
+								<Action Name="" ID="{BCABB629-8555-40D8-B755-6E1899F7B317}" ShortID="897588064">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PlingFail" ID="{1468C59F-4E40-4EAB-AACF-353ECD971BFA}" WorkUnitID="{6B91872B-49A8-4BB8-A212-FBF7E77C3676}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

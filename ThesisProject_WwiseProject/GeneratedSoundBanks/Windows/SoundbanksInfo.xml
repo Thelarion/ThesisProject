@@ -63,7 +63,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{79813C78-BD12-CE15-83BC-4E9B713FE05C}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{EC06D214-E545-91ED-5521-8278AEB4BBE5}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -74,6 +74,10 @@
 				<File Id="25687503" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Gravel\FS_Gravel_01.wav</ShortName>
 					<CachePath>SFX/Footsteps/Gravel/FS_Gravel_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="33821008" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>PlingFail.wav</ShortName>
+					<CachePath>SFX/PlingFail_10C4C929.wem</CachePath>
 				</File>
 				<File Id="136132481" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Tile\FS_Tile_03.wav</ShortName>
@@ -307,6 +311,11 @@
 						<MediaRef Id="773820192"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2086503983" Name="PlingFail" DurationType="OneShot" DurationMin="4" DurationMax="4">
+					<MediaRefs>
+						<MediaRef Id="33821008"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1212327680" Name="PlingSuccess" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="517302441"/>
@@ -338,5 +347,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{CFB9CFBA-D972-94D4-C49F-0734F3E01A1B}</FileHash>
+	<FileHash>{2FC4F123-8680-C545-B2E0-DB74FF7496BD}</FileHash>
 </SoundBanksInfo>

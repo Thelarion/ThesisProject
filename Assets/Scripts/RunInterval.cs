@@ -11,7 +11,7 @@ public class RunInterval : MonoBehaviour
     private int _materialIndex;
     private string _nameGameObject;
     [HideInInspector] public bool TapState;
-    public PlayNoteOnTone PlayNoteOnTone;
+    [HideInInspector] public PlayNoteOnTone PlayNoteOnTone;
     private string currentMaterialName;
     private ParticleSystem noteParticles;
 
@@ -48,6 +48,7 @@ public class RunInterval : MonoBehaviour
         string[] splitArray = _renderer.material.name.Split(char.Parse(" "));
         string currentTargetName = splitArray[0];
         TapState = currentTargetName == _nameGameObject ? true : false;
+
     }
 
     IEnumerator IntervalChangeTarget()
@@ -55,7 +56,6 @@ public class RunInterval : MonoBehaviour
         ChangeMaterial();
         CheckTargetState();
         currentMaterialName = _materialRenderer[0].name;
-        // PlayNoteOnTone.PlayNote(currentMaterialName, transform.gameObject);
         yield return new WaitForSeconds(3);
         StartCoroutine(IntervalChangeTarget());
     }

@@ -151,7 +151,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 43efb42f60dfb9479eefa2004292fbf9
     GuidInternal: 
-    m_lastTime: -8585258992851497426
+    m_lastTime: -8585258395223272587
     List:
     - name: A2
       guid: d80565ca86137c44bc2366cd2d1463ca
@@ -475,6 +475,26 @@ MonoBehaviour:
         ObjectType: 3
         guid: e011f4bf74827046867a5cb3491b9ef9
       Path: Events\Default Work Unit\SFX\Pling
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: PlingFail
+      guid: c3bcf1bd2135fb49a33b11b6d7b71982
+      id: 2086503983
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: SFX
+        ObjectType: 4
+        guid: c73df9cd04502e468b4b7a815b229a25
+      - ElementName: PlingFail
+        ObjectType: 3
+        guid: c3bcf1bd2135fb49a33b11b6d7b71982
+      Path: Events\Default Work Unit\SFX\PlingFail
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -825,7 +845,7 @@ MonoBehaviour:
     m_lastTime: -8585282545794215635
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000200000003000000040000000500000006000000070000000a0000000c0000000e0000000f0000001100000012000000130000001400000016000000170000001b0000001d000000
+  ExpandedWaapiItemIds: 010000000200000003000000040000000500000006000000070000000a0000000c0000000d0000000e0000000f0000001100000012000000130000001400000016000000170000001b0000001d000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

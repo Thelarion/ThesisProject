@@ -24,7 +24,6 @@ public class OperationController : MonoBehaviour
     private ArrayList _spritesAvailable;
     private ArrayList _spritesAvailableStrings = new ArrayList();
     private List<int> _sequenceIndex = new List<int>();
-    public AK.Wwise.Event Pling;
     [HideInInspector] public bool ColourHelpOn = false;
     private string currentColourState = "SpritesNotesGrey";
     private TargetController currentClosestTarget;
@@ -90,7 +89,6 @@ public class OperationController : MonoBehaviour
         Sprite frame = _spritesAvailable[indexFrame] as Sprite;
         // Set the sprite within the list UI
         _listUI[tappedListElement].GetComponent<Image>().sprite = frame;
-        Pling.Post(gameObject);
     }
 
     private void ActivateDistanceFrame()
@@ -102,7 +100,6 @@ public class OperationController : MonoBehaviour
             // Safety for less calculations
             currentClosestTarget = closestTarget;
 
-
             // Make 'old' frame invisible
             if (currentFrame != null)
             {
@@ -113,45 +110,55 @@ public class OperationController : MonoBehaviour
             // Make it visible
             StartCoroutine(IncreaseAlpha(currentFrame));
         }
-
-
-        // pulsating alpha?
     }
 
-    private IEnumerator DecreaseAlpha(Image currentFrame)
+    public void DecreaseAlphaZeroTargets()
     {
-        var time = 0f;
+        StartCoroutine(DecreaseAlpha(currentFrame));
+    }
 
-        while (time <= 1)
+    IEnumerator DecreaseAlpha(Image currentFrame)
+    {
+        float time = 0f;
+        float duration = 1f;
+        float startValue = 1f;
+        float endValue = 0f;
+
+        while (time < duration)
         {
+
             Color newColor = currentFrame.color;
-            newColor.a = newColor.a - 0.01f;
+            newColor.a = Mathf.Lerp(startValue, endValue, time / duration);
             currentFrame.color = newColor;
 
             time += Time.deltaTime;
             yield return null;
         }
         Color newColorSafety = currentFrame.color;
-        newColorSafety.a = 0f;
+        newColorSafety.a = endValue;
         currentFrame.color = newColorSafety;
     }
 
-    private IEnumerator IncreaseAlpha(Image currentFrame)
+    // https://gamedevbeginner.com/the-right-way-to-lerp-in-unity-with-examples/
+    IEnumerator IncreaseAlpha(Image currentFrame)
     {
-        var time = 0f;
+        float time = 0f;
+        float duration = 1f;
+        float startValue = 0f;
+        float endValue = 1f;
 
-        while (time <= 1)
+        while (time < duration)
         {
+
             Color newColor = currentFrame.color;
-            newColor.a = newColor.a + 0.01f;
+            newColor.a = Mathf.Lerp(startValue, endValue, time / duration);
             currentFrame.color = newColor;
 
             time += Time.deltaTime;
             yield return null;
         }
         Color newColorSafety = currentFrame.color;
-        newColorSafety.a = 1f;
+        newColorSafety.a = endValue;
         currentFrame.color = newColorSafety;
-
     }
 }

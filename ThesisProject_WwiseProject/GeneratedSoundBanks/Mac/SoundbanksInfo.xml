@@ -63,7 +63,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{D5DC6429-4EB7-3D15-AF9A-881CA2C3D6E7}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{EC06D214-E545-91ED-5521-8278AEB4BBE5}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -74,6 +74,10 @@
 				<File Id="25687503" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Gravel\FS_Gravel_01.wav</ShortName>
 					<CachePath>SFX/Footsteps/Gravel/FS_Gravel_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="33821008" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>PlingFail.wav</ShortName>
+					<CachePath>SFX/PlingFail_10C4C929.wem</CachePath>
 				</File>
 				<File Id="136132481" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Tile\FS_Tile_03.wav</ShortName>
@@ -115,6 +119,10 @@
 					<ShortName>Footsteps\Dirt\FS_Dirt_01.wav</ShortName>
 					<CachePath>SFX/Footsteps/Dirt/FS_Dirt_01_10C4C929.wem</CachePath>
 				</File>
+				<File Id="517302441" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>PlingSuccess.wav</ShortName>
+					<CachePath>SFX/PlingSuccess_10C4C929.wem</CachePath>
+				</File>
 				<File Id="564419961" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Dirt\FS_Dirt_04.wav</ShortName>
 					<CachePath>SFX/Footsteps/Dirt/FS_Dirt_04_10C4C929.wem</CachePath>
@@ -138,6 +146,10 @@
 				<File Id="742077720" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Tile\FS_Tile_01.wav</ShortName>
 					<CachePath>SFX/Footsteps/Tile/FS_Tile_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="773820192" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Pling.wav</ShortName>
+					<CachePath>SFX/Pling_10C4C929.wem</CachePath>
 				</File>
 				<File Id="795254982" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Gravel\FS_Gravel_02.wav</ShortName>
@@ -294,6 +306,21 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="652836727" Name="Pling" DurationType="OneShot" DurationMin="4" DurationMax="4">
+					<MediaRefs>
+						<MediaRef Id="773820192"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2086503983" Name="PlingFail" DurationType="OneShot" DurationMin="4" DurationMax="4">
+					<MediaRefs>
+						<MediaRef Id="33821008"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1212327680" Name="PlingSuccess" DurationType="OneShot" DurationMin="2" DurationMax="2">
+					<MediaRefs>
+						<MediaRef Id="517302441"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1848491570" Name="WhiteNoiseOnTarget" DurationType="Infinite">
 					<PluginRefs>
 						<Custom>
@@ -320,5 +347,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{0CFF2C13-2187-FB53-2E68-B688157B9324}</FileHash>
+	<FileHash>{8984B577-33BF-8BF0-D5DD-7D2048857A40}</FileHash>
 </SoundBanksInfo>

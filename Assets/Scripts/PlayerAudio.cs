@@ -9,6 +9,5 @@ public class PlayerAudio : MonoBehaviour
     public void PlayMelody()
     {
         Melody.Post(gameObject);
-        print("asd");
     }
 }
