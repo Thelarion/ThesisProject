@@ -151,7 +151,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 43efb42f60dfb9479eefa2004292fbf9
     GuidInternal: 
-    m_lastTime: -8585257391614926856
+    m_lastTime: -8585257241591182079
     List:
     - name: A2
       guid: d80565ca86137c44bc2366cd2d1463ca
@@ -230,23 +230,6 @@ MonoBehaviour:
         ObjectType: 3
         guid: 262f288d8a095749a315617f0d523301
       Path: Events\Default Work Unit\Notes\B3
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: BalloonHover
-      guid: 35b0d57aff93624bbde9aafb342f1587
-      id: 164414172
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: BalloonHover
-        ObjectType: 3
-        guid: 35b0d57aff93624bbde9aafb342f1587
-      Path: Events\Default Work Unit\BalloonHover
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -350,6 +333,75 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: d10
+      guid: 5e77bdad9013c54db57d3aab89596901
+      id: 3801406080
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: SFX
+        ObjectType: 4
+        guid: c73df9cd04502e468b4b7a815b229a25
+      - ElementName: DistanceCount
+        ObjectType: 4
+        guid: 7b4ed62605ccc948971fb1776133d1ca
+      - ElementName: d10
+        ObjectType: 3
+        guid: 5e77bdad9013c54db57d3aab89596901
+      Path: Events\Default Work Unit\SFX\DistanceCount\d10
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: d100
+      guid: d16e0e2407e5df4fad1362691e11b81f
+      id: 810809264
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: SFX
+        ObjectType: 4
+        guid: c73df9cd04502e468b4b7a815b229a25
+      - ElementName: DistanceCount
+        ObjectType: 4
+        guid: 7b4ed62605ccc948971fb1776133d1ca
+      - ElementName: d100
+        ObjectType: 3
+        guid: d16e0e2407e5df4fad1362691e11b81f
+      Path: Events\Default Work Unit\SFX\DistanceCount\d100
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: d20
+      guid: f93bea8499c41247994767a09f020673
+      id: 3851738969
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: SFX
+        ObjectType: 4
+        guid: c73df9cd04502e468b4b7a815b229a25
+      - ElementName: DistanceCount
+        ObjectType: 4
+        guid: 7b4ed62605ccc948971fb1776133d1ca
+      - ElementName: d20
+        ObjectType: 3
+        guid: f93bea8499c41247994767a09f020673
+      Path: Events\Default Work Unit\SFX\DistanceCount\d20
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: D3
       guid: 7df874a0c3e29849bcc273fb593fe7fb
       id: 1836525714
@@ -367,6 +419,207 @@ MonoBehaviour:
         ObjectType: 3
         guid: 7df874a0c3e29849bcc273fb593fe7fb
       Path: Events\Default Work Unit\Notes\D3
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: d30
+      guid: 959aa9fc7973b14dade8fbcc4f22241b
+      id: 3834961382
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: SFX
+        ObjectType: 4
+        guid: c73df9cd04502e468b4b7a815b229a25
+      - ElementName: DistanceCount
+        ObjectType: 4
+        guid: 7b4ed62605ccc948971fb1776133d1ca
+      - ElementName: d30
+        ObjectType: 3
+        guid: 959aa9fc7973b14dade8fbcc4f22241b
+      Path: Events\Default Work Unit\SFX\DistanceCount\d30
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: d40
+      guid: 88b36135c20c6c4091a77064c5be7d7e
+      id: 3885294271
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: SFX
+        ObjectType: 4
+        guid: c73df9cd04502e468b4b7a815b229a25
+      - ElementName: DistanceCount
+        ObjectType: 4
+        guid: 7b4ed62605ccc948971fb1776133d1ca
+      - ElementName: d40
+        ObjectType: 3
+        guid: 88b36135c20c6c4091a77064c5be7d7e
+      Path: Events\Default Work Unit\SFX\DistanceCount\d40
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: d50
+      guid: 157e1220582ce4468da57a0250a03b65
+      id: 3868516556
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: SFX
+        ObjectType: 4
+        guid: c73df9cd04502e468b4b7a815b229a25
+      - ElementName: DistanceCount
+        ObjectType: 4
+        guid: 7b4ed62605ccc948971fb1776133d1ca
+      - ElementName: d50
+        ObjectType: 3
+        guid: 157e1220582ce4468da57a0250a03b65
+      Path: Events\Default Work Unit\SFX\DistanceCount\d50
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: d60
+      guid: 0dee418af8eb2b4395cb759996a22fd6
+      id: 3918849413
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: SFX
+        ObjectType: 4
+        guid: c73df9cd04502e468b4b7a815b229a25
+      - ElementName: DistanceCount
+        ObjectType: 4
+        guid: 7b4ed62605ccc948971fb1776133d1ca
+      - ElementName: d60
+        ObjectType: 3
+        guid: 0dee418af8eb2b4395cb759996a22fd6
+      Path: Events\Default Work Unit\SFX\DistanceCount\d60
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: d70
+      guid: 1c230eb36eb4ab488e3f7e7308ff640e
+      id: 3902071826
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: SFX
+        ObjectType: 4
+        guid: c73df9cd04502e468b4b7a815b229a25
+      - ElementName: DistanceCount
+        ObjectType: 4
+        guid: 7b4ed62605ccc948971fb1776133d1ca
+      - ElementName: d70
+        ObjectType: 3
+        guid: 1c230eb36eb4ab488e3f7e7308ff640e
+      Path: Events\Default Work Unit\SFX\DistanceCount\d70
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: d80
+      guid: 7b4a315303de8f41ba8d5b89f1425b0c
+      id: 3952404715
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: SFX
+        ObjectType: 4
+        guid: c73df9cd04502e468b4b7a815b229a25
+      - ElementName: DistanceCount
+        ObjectType: 4
+        guid: 7b4ed62605ccc948971fb1776133d1ca
+      - ElementName: d80
+        ObjectType: 3
+        guid: 7b4a315303de8f41ba8d5b89f1425b0c
+      Path: Events\Default Work Unit\SFX\DistanceCount\d80
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: d90
+      guid: be63adf71394764fb510bbe862f7616e
+      id: 3935627128
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: SFX
+        ObjectType: 4
+        guid: c73df9cd04502e468b4b7a815b229a25
+      - ElementName: DistanceCount
+        ObjectType: 4
+        guid: 7b4ed62605ccc948971fb1776133d1ca
+      - ElementName: d90
+        ObjectType: 3
+        guid: be63adf71394764fb510bbe862f7616e
+      Path: Events\Default Work Unit\SFX\DistanceCount\d90
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: distanceC
+      guid: 37d9845939562e468e10cf9f08a2920e
+      id: 2982082363
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: SFX
+        ObjectType: 4
+        guid: c73df9cd04502e468b4b7a815b229a25
+      - ElementName: distanceC
+        ObjectType: 3
+        guid: 37d9845939562e468e10cf9f08a2920e
+      Path: Events\Default Work Unit\SFX\distanceC
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: DistanceCount
+      guid: 7b4ed62605ccc948971fb1776133d1ca
+      id: 1258232269
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: SFX
+        ObjectType: 4
+        guid: c73df9cd04502e468b4b7a815b229a25
+      - ElementName: DistanceCount
+        ObjectType: 4
+        guid: 7b4ed62605ccc948971fb1776133d1ca
+      Path: Events\Default Work Unit\SFX\DistanceCount
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -913,7 +1166,7 @@ MonoBehaviour:
     m_lastTime: -8585282545794215635
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 01000000020000000300000004000000050000000600000007000000090000000c0000000d0000000e0000000f0000001100000012000000130000001400000016000000170000001b0000001d000000c1000000c2000000c8000000
+  ExpandedWaapiItemIds: 010000000200000003000000040000000500000006000000070000000b0000000c0000000d0000000e0000000f0000001100000012000000130000001400000016000000170000001b0000001d00000031000000c1000000c2000000c8000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

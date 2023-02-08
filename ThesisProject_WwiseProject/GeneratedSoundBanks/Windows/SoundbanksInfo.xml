@@ -65,7 +65,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{A2A309E8-8BD0-6E70-696F-AE38F42CC249}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{93DB7D02-9680-EEF6-41CB-57AC61482E6F}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -81,9 +81,17 @@
 					<ShortName>PlingFail.wav</ShortName>
 					<CachePath>SFX/PlingFail_10C4C929.wem</CachePath>
 				</File>
+				<File Id="106854697" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>DistanceCount\80.wav</ShortName>
+					<CachePath>SFX/DistanceCount/80_10C4C929.wem</CachePath>
+				</File>
 				<File Id="136132481" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Tile\FS_Tile_03.wav</ShortName>
 					<CachePath>SFX/Footsteps/Tile/FS_Tile_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="179996937" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>DistanceCount\30.wav</ShortName>
+					<CachePath>SFX/DistanceCount/30_10C4C929.wem</CachePath>
 				</File>
 				<File Id="188759417" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Notes\A3.wav</ShortName>
@@ -96,6 +104,10 @@
 				<File Id="214797377" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Notes\C3.wav</ShortName>
 					<CachePath>SFX/Notes/C3_10C4C929.wem</CachePath>
+				</File>
+				<File Id="221568551" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>DistanceCount\10.wav</ShortName>
+					<CachePath>SFX/DistanceCount/10_10C4C929.wem</CachePath>
 				</File>
 				<File Id="313054933" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>balloon_hover.wav</ShortName>
@@ -117,6 +129,10 @@
 					<ShortName>Footsteps\Dirt\FS_Dirt_02.wav</ShortName>
 					<CachePath>SFX/Footsteps/Dirt/FS_Dirt_02_10C4C929.wem</CachePath>
 				</File>
+				<File Id="509973139" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>DistanceCount\70.wav</ShortName>
+					<CachePath>SFX/DistanceCount/70_10C4C929.wem</CachePath>
+				</File>
 				<File Id="512266225" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Dirt\FS_Dirt_01.wav</ShortName>
 					<CachePath>SFX/Footsteps/Dirt/FS_Dirt_01_10C4C929.wem</CachePath>
@@ -125,6 +141,10 @@
 					<ShortName>PlingSuccess.wav</ShortName>
 					<CachePath>SFX/PlingSuccess_10C4C929.wem</CachePath>
 				</File>
+				<File Id="538381605" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>DistanceCount\90.wav</ShortName>
+					<CachePath>SFX/DistanceCount/90_10C4C929.wem</CachePath>
+				</File>
 				<File Id="564419961" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Dirt\FS_Dirt_04.wav</ShortName>
 					<CachePath>SFX/Footsteps/Dirt/FS_Dirt_04_10C4C929.wem</CachePath>
@@ -132,6 +152,10 @@
 				<File Id="602516568" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Notes\B3.wav</ShortName>
 					<CachePath>SFX/Notes/B3_10C4C929.wem</CachePath>
+				</File>
+				<File Id="603105156" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>DistanceCount\100.wav</ShortName>
+					<CachePath>SFX/DistanceCount/100_10C4C929.wem</CachePath>
 				</File>
 				<File Id="632144886" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BeaconSignal.wav</ShortName>
@@ -148,6 +172,10 @@
 				<File Id="708823612" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Concrete\FS_Concrete_02.wav</ShortName>
 					<CachePath>SFX/Footsteps/Concrete/FS_Concrete_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="732948850" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>DistanceCount\50.wav</ShortName>
+					<CachePath>SFX/DistanceCount/50_10C4C929.wem</CachePath>
 				</File>
 				<File Id="742077720" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Tile\FS_Tile_01.wav</ShortName>
@@ -189,6 +217,10 @@
 					<ShortName>Notes\E3.wav</ShortName>
 					<CachePath>SFX/Notes/E3_10C4C929.wem</CachePath>
 				</File>
+				<File Id="964224159" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>DistanceCount\60.wav</ShortName>
+					<CachePath>SFX/DistanceCount/60_10C4C929.wem</CachePath>
+				</File>
 				<File Id="966532559" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BeaconLock.wav</ShortName>
 					<CachePath>SFX/BeaconLock_10C4C929.wem</CachePath>
@@ -197,9 +229,17 @@
 					<ShortName>Footsteps\Concrete\FS_Concrete_04.wav</ShortName>
 					<CachePath>SFX/Footsteps/Concrete/FS_Concrete_04_10C4C929.wem</CachePath>
 				</File>
+				<File Id="1042648744" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>DistanceCount\20.wav</ShortName>
+					<CachePath>SFX/DistanceCount/20_10C4C929.wem</CachePath>
+				</File>
 				<File Id="1065528809" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Notes\G3.wav</ShortName>
 					<CachePath>SFX/Notes/G3_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1072872748" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>DistanceCount\40.wav</ShortName>
+					<CachePath>SFX/DistanceCount/40_10C4C929.wem</CachePath>
 				</File>
 			</Media>
 			<Plugins>
@@ -228,11 +268,6 @@
 				<Event Id="1870081012" Name="B3" MaxAttenuation="10" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="602516568"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="164414172" Name="BalloonHover" MaxAttenuation="20" DurationType="Infinite">
-					<MediaRefs>
-						<MediaRef Id="313054933"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="19930668" Name="BeaconLock" DurationType="OneShot" DurationMin="1.3" DurationMax="1.3">
@@ -265,11 +300,62 @@
 						<MediaRef Id="191538228"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3801406080" Name="d10" DurationType="OneShot" DurationMin="0.40014583" DurationMax="0.40014583">
+					<MediaRefs>
+						<MediaRef Id="221568551"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="810809264" Name="d100" DurationType="OneShot" DurationMin="0.88675" DurationMax="0.88675">
+					<MediaRefs>
+						<MediaRef Id="603105156"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3851738969" Name="d20" DurationType="OneShot" DurationMin="0.69852084" DurationMax="0.69852084">
+					<MediaRefs>
+						<MediaRef Id="1042648744"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1836525714" Name="D3" MaxAttenuation="10" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="637238498"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3834961382" Name="d30" DurationType="OneShot" DurationMin="0.6155" DurationMax="0.6155">
+					<MediaRefs>
+						<MediaRef Id="179996937"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3885294271" Name="d40" DurationType="OneShot" DurationMin="0.635125" DurationMax="0.635125">
+					<MediaRefs>
+						<MediaRef Id="1072872748"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3868516556" Name="d50" DurationType="OneShot" DurationMin="0.6949583" DurationMax="0.6949583">
+					<MediaRefs>
+						<MediaRef Id="732948850"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3918849413" Name="d60" DurationType="OneShot" DurationMin="0.75" DurationMax="0.75">
+					<MediaRefs>
+						<MediaRef Id="964224159"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3902071826" Name="d70" DurationType="OneShot" DurationMin="0.72658336" DurationMax="0.72658336">
+					<MediaRefs>
+						<MediaRef Id="509973139"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3952404715" Name="d80" DurationType="OneShot" DurationMin="0.49145833" DurationMax="0.49145833">
+					<MediaRefs>
+						<MediaRef Id="106854697"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3935627128" Name="d90" DurationType="OneShot" DurationMin="0.625" DurationMax="0.625">
+					<MediaRefs>
+						<MediaRef Id="538381605"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2982082363" Name="distanceC" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1819748157" Name="E3" MaxAttenuation="10" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="945492545"/>
@@ -375,5 +461,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{B2573395-0DE7-7E7E-E44B-ADE106EBF259}</FileHash>
+	<FileHash>{FCED2BE5-FB8A-0D07-082F-93FB9EF4983E}</FileHash>
 </SoundBanksInfo>

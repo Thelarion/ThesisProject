@@ -8,6 +8,7 @@ public class AudioBeacon : MonoBehaviour
     public GameObject targetBeacon;
     public AK.Wwise.Event BeaconLR;
     public AK.Wwise.Event BeaconLock;
+    public AK.Wwise.Event[] distanceCounts;
     private float _panning;
     private bool _beaconActive = false;
     private bool _beaconLock_hasPlayed = false;
@@ -22,6 +23,34 @@ public class AudioBeacon : MonoBehaviour
         if (_beaconActive)
         {
             AngleDir();
+            DistanceToBeacon();
+        }
+    }
+    float semaphoreDistance;
+    private void DistanceToBeacon()
+    {
+        float distanceToBeacon = Vector3.Distance(targetBeacon.transform.position, transform.position);
+
+        float roundDistance = Mathf.Round(distanceToBeacon);
+        bool tenthFound = ((roundDistance / 10) % 1) == 0;
+
+        // if (roundDistance != semaphoreDistance)
+        // {
+        //     semaphoreDistance = Mathf.Infinity;
+        // }
+
+        if (tenthFound)
+        {
+            if (roundDistance != semaphoreDistance)
+            {
+                semaphoreDistance = roundDistance;
+                print(roundDistance);
+
+                int countIndex = Mathf.RoundToInt(roundDistance / 10);
+                print(countIndex);
+                if (countIndex > 0 && countIndex < 10)
+                    distanceCounts[countIndex - 1].Post(gameObject);
+            }
         }
     }
 
@@ -52,18 +81,10 @@ public class AudioBeacon : MonoBehaviour
 
         // if (myApproximation(projectionOnRight, 0f, 0.5f))
         // {
-        //     Debug.Log("FRONT");
-        //     AkSoundEngine.SetRTPCValue("beacon_lr_volume", 0);
-
-        //     if (!_beaconLock_hasPlayed && _beaconActive)
-        //     {
-        //         BeaconLock.Post(gameObject);
-        //         _beaconLock_hasPlayed = true;
-        //     }
         // }
         if (directionFace > 0.99f)
         {
-            Debug.Log("FRONT");
+            // Debug.Log("FRONT");
             AkSoundEngine.SetRTPCValue("beacon_lr_volume", 0);
 
             if (!_beaconLock_hasPlayed && _beaconActive)
@@ -74,13 +95,13 @@ public class AudioBeacon : MonoBehaviour
         }
         else if (projectionOnRight < 0)
         {
-            Debug.Log("LEFT");
+            // Debug.Log("LEFT");
             ResetLRAndLock();
             SetRTPCAndVolume(-1f);
         }
         else if (projectionOnRight > 0)
         {
-            Debug.Log("RIGHT");
+            // Debug.Log("RIGHT");
             ResetLRAndLock();
             SetRTPCAndVolume(1f);
         }

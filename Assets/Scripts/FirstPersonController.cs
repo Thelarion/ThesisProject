@@ -76,9 +76,9 @@ namespace StarterAssets
         [Header("Misc")]
         public AimManager aimManager;
         public GameObject blindfold;
-        public GameManager gameManager;
-        public PlayerAudio playerAudio;
-        public bool MenuToggle = false;
+        [HideInInspector] public GameManager gameManager;
+        [HideInInspector] public PlayerAudio playerAudio;
+        [HideInInspector] public bool MenuToggle = false;
 
 
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED

@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public GameObject menuPanel;
     public GameObject menuAccessibility;
     private FirstPersonController firstPersonController;
+    private bool menuActive;
 
     private void Start()
     {
@@ -36,7 +37,18 @@ public class GameManager : MonoBehaviour
 
     public void ToggleMenu()
     {
-        menuPanel.SetActive(!menuPanel.activeSelf);
+        if (!menuActive)
+        {
+            menuPanel.SetActive(true);
+            menuActive = true;
+        }
+        else
+        {
+            menuPanel.SetActive(false);
+            menuAccessibility.SetActive(false);
+            menuActive = false;
+        }
+
     }
 
     public void Quit()

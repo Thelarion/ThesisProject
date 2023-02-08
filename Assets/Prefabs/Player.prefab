@@ -806,7 +806,6 @@ GameObject:
   - component: {fileID: 9008879316150871804}
   - component: {fileID: 9008879316150871780}
   - component: {fileID: 2055162322186341556}
-  - component: {fileID: 749782281}
   m_Layer: 0
   m_Name: MainCamera
   m_TagString: MainCamera
@@ -1071,29 +1070,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3e8a0fb2fab7e4ea2d430feaa65569, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &749782281
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3528674100898286625}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29ec3b612118cf84a82092f56bc9ac8e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetBeacon: {fileID: 0}
-  BeaconLR:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 77f147ffe6479f943b9e184e9afafc4a,
-      type: 2}
-  BeaconLock:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 8847168e12567c1489408220be16aa3a,
-      type: 2}
 --- !u!1 &3606295275162554051
 GameObject:
   m_ObjectHideFlags: 0
@@ -6775,7 +6751,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5650951637454661285}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
