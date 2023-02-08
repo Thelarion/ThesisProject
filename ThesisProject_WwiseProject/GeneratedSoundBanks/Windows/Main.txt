@@ -1,6 +1,8 @@
 Event	ID	Name			Wwise Object Path	Notes
+	19930668	BeaconLock			\Default Work Unit\SFX\BeaconLock	
 	164414172	BalloonHover			\Default Work Unit\BalloonHover	
 	652836727	Pling			\Default Work Unit\SFX\Pling	
+	767190967	BeaconLR			\Default Work Unit\SFX\BeaconLR	
 	1212327680	PlingSuccess			\Default Work Unit\SFX\PlingSuccess	
 	1786192859	G3			\Default Work Unit\Notes\G3	
 	1802970440	F3			\Default Work Unit\Notes\F3	
@@ -28,8 +30,10 @@ Switch	ID	Name	Switch Group			Notes
 	2637588553	Tile	Materials			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
+	189100965	left_right			\Default Work Unit\left_right	
 	1440328639	frequency_depth			\Default Work Unit\frequency_depth	
 	2345103495	wall_occlusion			\Default Work Unit\wall_occlusion	
+	2474654343	beacon_lr_volume			\Default Work Unit\beacon_lr_volume	
 	3639684685	distance_freq			\Default Work Unit\distance_freq	
 	4213591503	synth_pwm_up_down			\Default Work Unit\synth_pwm_up_down	
 
@@ -39,6 +43,7 @@ Modulator LFO	ID	Name			Wwise Object Path	Notes
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	345407793	Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Default Work Unit\Aiming\Frequency Distance\Synth One	
+	737587789	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Beacon\BeaconLR\SilenceBeacon\Silence	
 	962926609	Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Default Work Unit\Aiming\White Noise OnTarget\Tone Generator	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
@@ -58,6 +63,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	517302441	PlingSuccess	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\PlingSuccess_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PlingSuccess		384096
 	564419961	FS_Dirt_04	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Footsteps\Dirt\FS_Dirt_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Footsteps\Dirt\FS_Dirt_04		54372
 	602516568	B3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Notes\B3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Notes\B3		384096
+	632144886	BeaconLR	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\BeaconSignal_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Beacon\BeaconLR\BeaconLR		42096
 	637238498	D3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Notes\D3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Notes\D3		384096
 	672687142	C4	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Notes\C4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Notes\C4		384096
 	708823612	FS_Concrete_02	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Footsteps\Concrete\FS_Concrete_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Footsteps\Concrete\FS_Concrete_02		55048
@@ -71,6 +77,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	893369011	FS_Tile_04	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Footsteps\Tile\FS_Tile_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Footsteps\Tile\FS_Tile_04		34826
 	900315779	F3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Notes\F3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Notes\F3		384096
 	945492545	E3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Notes\E3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Notes\E3		384096
+	966532559	BeaconLock	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\BeaconLock_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Beacon\BeaconLock		249696
 	1030614238	FS_Concrete_04	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Footsteps\Concrete\FS_Concrete_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Footsteps\Concrete\FS_Concrete_04		39220
 	1065528809	G3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Notes\G3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Notes\G3		384096
 

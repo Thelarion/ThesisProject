@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 111a36df2b99a2459ec0d5f0605e9fb4
     GuidInternal: 
-    m_lastTime: -8585270398742643640
+    m_lastTime: -8585257448943817809
     List:
     - name: Environment
       guid: ae6f6b737fc0694c98d071093c86bcc7
@@ -151,7 +151,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 43efb42f60dfb9479eefa2004292fbf9
     GuidInternal: 
-    m_lastTime: -8585258395223272587
+    m_lastTime: -8585257391614926856
     List:
     - name: A2
       guid: d80565ca86137c44bc2366cd2d1463ca
@@ -247,6 +247,46 @@ MonoBehaviour:
         ObjectType: 3
         guid: 35b0d57aff93624bbde9aafb342f1587
       Path: Events\Default Work Unit\BalloonHover
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: BeaconLock
+      guid: 2bb7d26173335449a5a2a3e2d4cfd5ef
+      id: 19930668
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: SFX
+        ObjectType: 4
+        guid: c73df9cd04502e468b4b7a815b229a25
+      - ElementName: BeaconLock
+        ObjectType: 3
+        guid: 2bb7d26173335449a5a2a3e2d4cfd5ef
+      Path: Events\Default Work Unit\SFX\BeaconLock
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: BeaconLR
+      guid: beaec52c83c1614b9b47bdc7b337289d
+      id: 767190967
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: SFX
+        ObjectType: 4
+        guid: c73df9cd04502e468b4b7a815b229a25
+      - ElementName: BeaconLR
+        ObjectType: 3
+        guid: beaec52c83c1614b9b47bdc7b337289d
+      Path: Events\Default Work Unit\SFX\BeaconLR
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -564,8 +604,22 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: b620eed12b95f847963eed7bcbbaf028
     GuidInternal: 
-    m_lastTime: -8585270360253567504
+    m_lastTime: -8585257473508753377
     List:
+    - name: beacon_lr_volume
+      guid: 6bb35e447ed42240a599348a4ba0d55b
+      id: 2474654343
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b620eed12b95f847963eed7bcbbaf028
+      - ElementName: beacon_lr_volume
+        ObjectType: 13
+        guid: 6bb35e447ed42240a599348a4ba0d55b
+      Path: Game Parameters\Default Work Unit\beacon_lr_volume
     - name: distance_freq
       guid: fe80d52caaf1b548be6137f43f4af98d
       id: 3639684685
@@ -594,6 +648,20 @@ MonoBehaviour:
         ObjectType: 13
         guid: 17fe0f60ee1f174d901fc9f00c6592b8
       Path: Game Parameters\Default Work Unit\frequency_depth
+    - name: left_right
+      guid: 111b5460e4a51c4aa022d83adf062581
+      id: 189100965
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b620eed12b95f847963eed7bcbbaf028
+      - ElementName: left_right
+        ObjectType: 13
+        guid: 111b5460e4a51c4aa022d83adf062581
+      Path: Game Parameters\Default Work Unit\left_right
     - name: synth_pwm_up_down
       guid: 781943bc04d39040bec840c997d41550
       id: 4213591503
@@ -845,7 +913,7 @@ MonoBehaviour:
     m_lastTime: -8585282545794215635
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000200000003000000040000000500000006000000070000000a0000000c0000000d0000000e0000000f0000001100000012000000130000001400000016000000170000001b0000001d000000
+  ExpandedWaapiItemIds: 01000000020000000300000004000000050000000600000007000000090000000c0000000d0000000e0000000f0000001100000012000000130000001400000016000000170000001b0000001d000000c1000000c2000000c8000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

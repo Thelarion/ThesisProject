@@ -9,7 +9,6 @@
 						<MusicSegment Name="CEABC" ID="{0F381F0A-774E-4EBF-AE44-458D92245DA5}" ShortID="221000671">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="0"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -71,6 +70,40 @@
 									</ObjectLists>
 								</MusicTrack>
 							</ChildrenList>
+							<PositioningInfo>
+								<Position Name="" ID="{161233F0-49A0-4F94-895C-79457A41CCA8}">
+									<ChildrenList>
+										<Path2D Name="CEABC_Path" ID="{B2475065-9169-4CC0-812D-052EA37653D8}">
+											<PointList>
+												<Point>
+													<XPos>-12.18274</XPos>
+													<YPos>13.27683</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>-39.5939</XPos>
+													<YPos>-100</YPos>
+													<Flags>0</Flags>
+													<Time>1666</Time>
+												</Point>
+												<Point>
+													<XPos>-18.2741</XPos>
+													<YPos>-75.14124</YPos>
+													<Flags>0</Flags>
+													<Time>3333</Time>
+												</Point>
+												<Point>
+													<XPos>22.84263</XPos>
+													<YPos>-77.40113</YPos>
+													<Flags>0</Flags>
+													<Time>5000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+									</ChildrenList>
+								</Position>
+							</PositioningInfo>
 							<ObjectLists>
 								<ObjectList Name="Cues">
 									<Reference>

@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{CBA680D3-2723-E134-0331-9D43C07F7683}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{F5EACD8E-4AE8-C121-6368-DCF3D9760014}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -36,8 +36,10 @@
 				</AuxBus>
 			</AuxBusses>
 			<GameParameters>
+				<GameParameter Id="189100965" Name="left_right"/>
 				<GameParameter Id="1440328639" Name="frequency_depth"/>
 				<GameParameter Id="2345103495" Name="wall_occlusion"/>
+				<GameParameter Id="2474654343" Name="beacon_lr_volume"/>
 				<GameParameter Id="3639684685" Name="distance_freq"/>
 				<GameParameter Id="4213591503" Name="synth_pwm_up_down"/>
 			</GameParameters>
@@ -63,7 +65,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{EC06D214-E545-91ED-5521-8278AEB4BBE5}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{A2A309E8-8BD0-6E70-696F-AE38F42CC249}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -131,6 +133,10 @@
 					<ShortName>Notes\B3.wav</ShortName>
 					<CachePath>SFX/Notes/B3_10C4C929.wem</CachePath>
 				</File>
+				<File Id="632144886" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BeaconSignal.wav</ShortName>
+					<CachePath>SFX/BeaconSignal_10C4C929.wem</CachePath>
+				</File>
 				<File Id="637238498" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Notes\D3.wav</ShortName>
 					<CachePath>SFX/Notes/D3_10C4C929.wem</CachePath>
@@ -183,6 +189,10 @@
 					<ShortName>Notes\E3.wav</ShortName>
 					<CachePath>SFX/Notes/E3_10C4C929.wem</CachePath>
 				</File>
+				<File Id="966532559" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BeaconLock.wav</ShortName>
+					<CachePath>SFX/BeaconLock_10C4C929.wem</CachePath>
+				</File>
 				<File Id="1030614238" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Concrete\FS_Concrete_04.wav</ShortName>
 					<CachePath>SFX/Footsteps/Concrete/FS_Concrete_04_10C4C929.wem</CachePath>
@@ -195,6 +205,7 @@
 			<Plugins>
 				<Custom>
 					<Plugin Id="345407793" Name="Synth One" LibName="Wwise Synth One" LibId="9699330"/>
+					<Plugin Id="737587789" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
 					<Plugin Id="962926609" Name="Tone Generator" LibName="Wwise Tone Generator" LibId="6684674"/>
 				</Custom>
 			</Plugins>
@@ -223,6 +234,21 @@
 					<MediaRefs>
 						<MediaRef Id="313054933"/>
 					</MediaRefs>
+				</Event>
+				<Event Id="19930668" Name="BeaconLock" DurationType="OneShot" DurationMin="1.3" DurationMax="1.3">
+					<MediaRefs>
+						<MediaRef Id="966532559"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="767190967" Name="BeaconLR" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="632144886"/>
+					</MediaRefs>
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="737587789"/>
+						</Custom>
+					</PluginRefs>
 				</Event>
 				<Event Id="1853303303" Name="C3" MaxAttenuation="10" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
@@ -330,8 +356,10 @@
 				</Event>
 			</Events>
 			<GameParameters>
+				<GameParameter Id="189100965" Name="left_right"/>
 				<GameParameter Id="1440328639" Name="frequency_depth"/>
 				<GameParameter Id="2345103495" Name="wall_occlusion"/>
+				<GameParameter Id="2474654343" Name="beacon_lr_volume"/>
 				<GameParameter Id="3639684685" Name="distance_freq"/>
 				<GameParameter Id="4213591503" Name="synth_pwm_up_down"/>
 			</GameParameters>
@@ -347,5 +375,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{8984B577-33BF-8BF0-D5DD-7D2048857A40}</FileHash>
+	<FileHash>{1D27D55A-2369-36D5-C84A-0D208607FF0C}</FileHash>
 </SoundBanksInfo>

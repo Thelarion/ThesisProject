@@ -11,7 +11,7 @@ public class TargetController : MonoBehaviour
     private int _indexInSequence;
     private bool _tapState;
     private static OperationController operationController;
-    public TargetSpawnPoints targetSpawnPoints;
+    [HideInInspector] public TargetSpawnPoints targetSpawnPoints;
 
     // every instance registers to and removes itself from here
     private static readonly HashSet<TargetController> _instances = new HashSet<TargetController>();

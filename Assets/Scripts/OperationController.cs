@@ -88,7 +88,11 @@ public class OperationController : MonoBehaviour
         // Initiate the sprite wtih the index of the GameObject
         Sprite frame = _spritesAvailable[indexFrame] as Sprite;
         // Set the sprite within the list UI
-        _listUI[tappedListElement].GetComponent<Image>().sprite = frame;
+        // if checks null on game stop
+        if (_listUI[tappedListElement] != null)
+        {
+            _listUI[tappedListElement].GetComponent<Image>().sprite = frame;
+        }
     }
 
     private void ActivateDistanceFrame()

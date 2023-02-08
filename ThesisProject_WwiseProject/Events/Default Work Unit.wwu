@@ -211,6 +211,28 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="BeaconLR" ID="{2CC5AEBE-C183-4B61-9B47-BDC7B337289D}">
+							<ChildrenList>
+								<Action Name="" ID="{3158A98D-16B9-4D3C-8A9C-3E93AEEC7D96}" ShortID="1009738334">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BeaconLR" ID="{2D56B668-72F8-4A5F-A78A-B63B545A9E15}" WorkUnitID="{6B91872B-49A8-4BB8-A212-FBF7E77C3676}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="BeaconLock" ID="{61D2B72B-3373-4954-A5A2-A3E2D4CFD5EF}">
+							<ChildrenList>
+								<Action Name="" ID="{F7A9DEF3-B39C-44A8-BD49-A7DA03B53CC8}" ShortID="224193786">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BeaconLock" ID="{D31B0F77-9386-4B11-B8C6-C34759FAC9CD}" WorkUnitID="{6B91872B-49A8-4BB8-A212-FBF7E77C3676}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

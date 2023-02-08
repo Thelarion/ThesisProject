@@ -18,6 +18,8 @@ namespace AK
         static const AkUniqueID B2 = 1870081013U;
         static const AkUniqueID B3 = 1870081012U;
         static const AkUniqueID BALLOONHOVER = 164414172U;
+        static const AkUniqueID BEACONLOCK = 19930668U;
+        static const AkUniqueID BEACONLR = 767190967U;
         static const AkUniqueID C3 = 1853303303U;
         static const AkUniqueID C4 = 1853303296U;
         static const AkUniqueID CEABCEVENT = 2118505581U;
@@ -70,8 +72,10 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID BEACON_LR_VOLUME = 2474654343U;
         static const AkUniqueID DISTANCE_FREQ = 3639684685U;
         static const AkUniqueID FREQUENCY_DEPTH = 1440328639U;
+        static const AkUniqueID LEFT_RIGHT = 189100965U;
         static const AkUniqueID SYNTH_PWM_UP_DOWN = 4213591503U;
         static const AkUniqueID WALL_OCCLUSION = 2345103495U;
     } // namespace GAME_PARAMETERS
