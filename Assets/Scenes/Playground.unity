@@ -15438,13 +15438,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 913459325}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0b1998fba7d59414cb4a3e4cafe7fd3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  period: 9
-  movementVector: {x: 0, y: 0.2, z: 0}
+  period: 2
+  movementVector: {x: 0, y: 0, z: 0}
 --- !u!114 &913459332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16246,13 +16246,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 977330325}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0b1998fba7d59414cb4a3e4cafe7fd3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  period: 9
-  movementVector: {x: 0, y: 0.2, z: 0}
+  period: 2
+  movementVector: {x: 0, y: 0, z: 0}
 --- !u!114 &977330332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29032,13 +29032,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4887681139784322092}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0b1998fba7d59414cb4a3e4cafe7fd3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  period: 9
-  movementVector: {x: 0, y: 0.2, z: 0}
+  period: 2
+  movementVector: {x: 0, y: 0, z: 0}
 --- !u!1 &4887681139784322092
 GameObject:
   m_ObjectHideFlags: 0
