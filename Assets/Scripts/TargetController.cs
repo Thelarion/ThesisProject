@@ -54,7 +54,7 @@ public class TargetController : MonoBehaviour
         // GetComponent<AkAmbient>().Stop(0);
         if (_tapState)
         {
-            operationController.ActivateListFrame(_indexInSequence, transform.name);
+            operationController.ActivateFrameSuccess(_indexInSequence, transform.name);
         }
         _instances.Remove(this);
     }

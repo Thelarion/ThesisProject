@@ -28,7 +28,7 @@ public class NameTargets : MonoBehaviour
         if (CountChildrenTargets(transform) <= 0)
         {
             print("No targets left");
-            GameObject.Find("List").GetComponent<OperationController>().DecreaseAlphaZeroTargets();
+            GameObject.Find("List").GetComponent<OperationController>().DecreaseAlphaIfZeroTargets();
         }
     }
 

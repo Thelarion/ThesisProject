@@ -27,7 +27,7 @@ public class OperationController : MonoBehaviour
     [HideInInspector] public bool ColourHelpOn = false;
     private string currentColourState = "SpritesNotesGrey";
     private TargetController currentClosestTarget;
-    private Image currentFrame = null;
+    private Image currentFrameDistance = null;
 
     private void Start()
     {
@@ -36,20 +36,35 @@ public class OperationController : MonoBehaviour
 
     private void Update()
     {
-        ActivateDistanceFrame();
+        ActivateFrameDistance();
     }
 
     private void UpdateUI()
     {
         LoadSpritesFromResources();
         InitializeSequence();
-        InitilizeUI();
+        InitializeUI();
     }
 
     public void ToggleListColourHelp()
     {
         currentColourState = currentColourState == "SpritesNotesGrey" ? "SpritesNotesColour" : "SpritesNotesGrey";
+        ColourHelpOn = ColourHelpOn == true ? false : true;
         UpdateUI();
+        ChangeListItemsColourMode();
+    }
+
+    private void ChangeListItemsColourMode()
+    {
+        int x = 0;
+        foreach (Transform child in transform)
+        {
+            if (child.GetComponent<ListItemLockState>().LockState == true)
+            {
+                StartCoroutine(DecreaseAlpha(GetModeAndImage(!ColourHelpOn, x)));
+                ActivateFrameSuccess(x++, child.name);
+            }
+        }
     }
 
     private void InitializeSequence()
@@ -60,7 +75,7 @@ public class OperationController : MonoBehaviour
         }
     }
 
-    private void InitilizeUI()
+    private void InitializeUI()
     {
         int x = 0;
         foreach (Transform L in _listUI)
@@ -81,21 +96,27 @@ public class OperationController : MonoBehaviour
         }
     }
 
-    public void ActivateListFrame(int tappedListElement, string tappedName)
+    public void ActivateFrameSuccess(int tappedListItemIndex, string tappedName)
     {
-        // Get index of the GameObject name within the array
-        int indexFrame = _spritesAvailableStrings.IndexOf(tappedName + "_frame");
-        // Initiate the sprite wtih the index of the GameObject
-        Sprite frame = _spritesAvailable[indexFrame] as Sprite;
         // Set the sprite within the list UI
         // if checks null on game stop
-        if (_listUI[tappedListElement] != null)
+        if (_listUI[tappedListItemIndex] != null)
         {
-            _listUI[tappedListElement].GetComponent<Image>().sprite = frame;
+            Image currentFrameSuccess = GetModeAndImage(ColourHelpOn, tappedListItemIndex);
+            _listUI[tappedListItemIndex].GetComponent<ListItemLockState>().LockState = true;
+            StartCoroutine(IncreaseAlpha(currentFrameSuccess));
         }
     }
 
-    private void ActivateDistanceFrame()
+    private Image GetModeAndImage(bool ColourHelpOn, int index)
+    {
+        int mode = ColourHelpOn ? 2 : 1;
+        Image currentFrameSuccess = _listUI[index].GetChild(mode).GetComponent<Image>();
+        print(mode);
+        return currentFrameSuccess;
+    }
+
+    private void ActivateFrameDistance()
     {
         TargetController closestTarget = DistanceToTarget.ReturnClosestTarget();
 
@@ -105,20 +126,20 @@ public class OperationController : MonoBehaviour
             currentClosestTarget = closestTarget;
 
             // Make 'old' frame invisible
-            if (currentFrame != null)
+            if (currentFrameDistance != null)
             {
-                StartCoroutine(DecreaseAlpha(currentFrame));
+                StartCoroutine(DecreaseAlpha(currentFrameDistance));
             }
             // Get new list frame
-            currentFrame = _listUI[currentClosestTarget.getIndexInSequence()].GetChild(0).GetComponent<Image>();
+            currentFrameDistance = _listUI[currentClosestTarget.getIndexInSequence()].GetChild(0).GetComponent<Image>();
             // Make it visible
-            StartCoroutine(IncreaseAlpha(currentFrame));
+            StartCoroutine(IncreaseAlpha(currentFrameDistance));
         }
     }
 
-    public void DecreaseAlphaZeroTargets()
+    public void DecreaseAlphaIfZeroTargets()
     {
-        StartCoroutine(DecreaseAlpha(currentFrame));
+        StartCoroutine(DecreaseAlpha(currentFrameDistance));
     }
 
     IEnumerator DecreaseAlpha(Image currentFrame)
