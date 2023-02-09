@@ -46,6 +46,21 @@ public class OperationController : MonoBehaviour
         InitializeUI();
     }
 
+    public List<Transform> CheckIfTonesCompleted()
+    {
+        List<Transform> missingTones = new List<Transform>();
+
+        foreach (Transform child in transform)
+        {
+            if (child.GetComponent<ListItemIdentity>().LockState == false)
+            {
+                missingTones.Add(child);
+            }
+        }
+
+        return missingTones;
+    }
+
     public void ToggleListColourHelp()
     {
         currentColourState = currentColourState == "SpritesNotesGrey" ? "SpritesNotesColour" : "SpritesNotesGrey";
@@ -59,7 +74,7 @@ public class OperationController : MonoBehaviour
         int x = 0;
         foreach (Transform child in transform)
         {
-            if (child.GetComponent<ListItemLockState>().LockState == true)
+            if (child.GetComponent<ListItemIdentity>().LockState == true)
             {
                 StartCoroutine(DecreaseAlpha(GetModeAndImage(!ColourHelpOn, x)));
                 ActivateFrameSuccess(x++, child.name);
@@ -78,9 +93,10 @@ public class OperationController : MonoBehaviour
     private void InitializeUI()
     {
         int x = 0;
-        foreach (Transform L in _listUI)
+        foreach (Transform listItem in _listUI)
         {
-            L.GetComponent<Image>().sprite = _spritesAvailable[_sequenceIndex[x++]] as Sprite;
+            listItem.GetComponent<Image>().sprite = _spritesAvailable[_sequenceIndex[x]] as Sprite;
+            listItem.GetComponent<ListItemIdentity>().toneName = _spritesAvailableStrings[_sequenceIndex[x++]].ToString();
         }
     }
 
@@ -103,7 +119,7 @@ public class OperationController : MonoBehaviour
         if (_listUI[tappedListItemIndex] != null)
         {
             Image currentFrameSuccess = GetModeAndImage(ColourHelpOn, tappedListItemIndex);
-            _listUI[tappedListItemIndex].GetComponent<ListItemLockState>().LockState = true;
+            _listUI[tappedListItemIndex].GetComponent<ListItemIdentity>().LockState = true;
             StartCoroutine(IncreaseAlpha(currentFrameSuccess));
         }
     }
