@@ -27,9 +27,13 @@ public class MetalSphereHitCheck : MonoBehaviour
         // Case when the tone plays the wrong note
         if (other.transform.tag == "Target" && !other.transform.GetComponent<RunInterval>().TapState)
         {
+            other.transform.GetComponent<TargetMove>().StopMovementWhenMiss();
+
             int indexInSequence = other.transform.GetComponent<TargetController>().getIndexInSequence();
             other.transform.position = targetSpawnPoints.ReturnRandomSpawnTransform(indexInSequence).position;
             PlingFail.Post(gameObject);
+
+            other.transform.GetComponent<TargetMove>().InitializeMovementAfterMiss();
         }
 
         // Destroy the sphere if it hits a target
