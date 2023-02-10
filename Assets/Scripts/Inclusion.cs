@@ -22,11 +22,12 @@ public class Inclusion : MonoBehaviour
 
     public void InclusionIO()
     {
+        // Lock Camera, deactivate jump and adjust rotation speed
         FirstPersonController FPC = Player.transform.GetComponent<FirstPersonController>();
         FPC.TopClamp = -5f;         // Lock the camera horizontally
         FPC.BottomClamp = -5f;      // Lock the camera horizontally
         FPC.JumpHeight = 0f;        // Deactivate Jump
-        FPC.RotationSpeed = 0.6f;   // Slow down rotation speed for arrow keys mostly
+        FPC.RotationSpeed = 0.3f;   // Slow down rotation speed for arrow keys mostly
 
         // Switch the current action map from "Player" to "PlayerInclusion"
         PlayerInput PI = Player.transform.GetComponent<PlayerInput>();
@@ -40,6 +41,7 @@ public class Inclusion : MonoBehaviour
         PlayerFollowCamera.SetActive(false);
         PlayerFollowCameraNoiseOff.SetActive(true);
 
+        // Adjust behaviour of the targets
         TargetParent TP = TargetParent.transform.GetComponent<TargetParent>();
         TP.ToggleInclusionTargets();
         TP.StopMovement();
@@ -48,9 +50,4 @@ public class Inclusion : MonoBehaviour
 
         IO = false;
     }
-
-    // 
-    // set targets on fixed height
-    // 
-    // script toggle on/off
 }

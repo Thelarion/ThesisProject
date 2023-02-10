@@ -32,15 +32,9 @@ public class TargetSpawnPoints : MonoBehaviour
 
     public Transform ReturnRandomSpawnTransform(int sequenceIndex)
     {
-        // randomContainerTarget = randomContainerTarget + UnityEngine.Random.Range(1, 3);
-        // if (randomContainerTarget > 3)
-        // {
-        //     randomContainerTarget -= 3;
-        // }
 
         int newSpawnIndex = transform.GetChild(sequenceIndex).GetComponent<SaveLastTargetSpawn>().GetNewSpawnIndex();
 
-        // print(randomContainerTarget);
         // First item is parent itself
         currentSpawnContainerItems = GetCurrentSpawnContainerItems(sequenceIndex, currentSpawnContainerItems);
         return currentSpawnContainerItems[newSpawnIndex].transform;
@@ -76,7 +70,6 @@ public class TargetSpawnPoints : MonoBehaviour
         currentSpawnContainerItems = GetCurrentSpawnContainerItems(sequenceIndex, currentSpawnContainerItems);
 
         int spawnPointIndexFromContainer = currentSpawnContainer.GetComponent<SaveLastTargetSpawn>().GetCurrentTargetSpawnPoint();
-        // print(spawnPointIndexFromContainer);
 
         return currentSpawnContainerItems[spawnPointIndexFromContainer].transform;
     }

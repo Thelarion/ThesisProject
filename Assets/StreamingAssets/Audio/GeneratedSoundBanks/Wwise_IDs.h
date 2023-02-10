@@ -33,6 +33,7 @@ namespace AK
         static const AkUniqueID D80 = 3952404715U;
         static const AkUniqueID D90 = 3935627128U;
         static const AkUniqueID D100 = 810809264U;
+        static const AkUniqueID DESTINATION_REACHED = 4069116836U;
         static const AkUniqueID DISTANCEC = 2982082363U;
         static const AkUniqueID E3 = 1819748157U;
         static const AkUniqueID F3 = 1802970440U;

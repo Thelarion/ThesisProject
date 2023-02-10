@@ -601,6 +601,17 @@
                 },
                 {
                     "name": "",
+                    "id": "0e5d2fe4-82e9-435b-91a8-9957f143471c",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Fire",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "be68d388-3120-4f4d-a01c-a7c9e023ff0d",
                     "path": "<Keyboard>/h",
                     "interactions": "",

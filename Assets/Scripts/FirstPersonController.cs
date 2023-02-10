@@ -79,6 +79,7 @@ namespace StarterAssets
         [HideInInspector] public GameManager gameManager;
         [HideInInspector] public PlayerAudio playerAudio;
         [HideInInspector] public bool MenuToggle = false;
+        [HideInInspector] public Slingshot slingshot;
 
 
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
@@ -115,6 +116,7 @@ namespace StarterAssets
         {
             playerAudio = GameObject.Find("PlayerAudio").GetComponent<PlayerAudio>();
             gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+            slingshot = GameObject.Find("Slingshot").GetComponent<Slingshot>();
             _controller = GetComponent<CharacterController>();
             _input = GetComponent<StarterAssetsInputs>();
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
@@ -130,20 +132,24 @@ namespace StarterAssets
 
         private void Update()
         {
-            JumpAndGravity();
-            GroundedCheck();
-            Move();
-            // Fire();
-            Blindfold();
             Menu();
-            Melody();
+
+            if (!MenuToggle)
+            {
+                JumpAndGravity();
+                GroundedCheck();
+                Move();
+                Fire();
+                Blindfold();
+                Melody();
+            }
         }
 
         private void Fire()
         {
             if (_input.fire)
             {
-
+                slingshot.FireSlingshot();
                 _input.fire = false;
             }
         }

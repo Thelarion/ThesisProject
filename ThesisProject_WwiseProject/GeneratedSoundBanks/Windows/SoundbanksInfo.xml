@@ -65,7 +65,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{93DB7D02-9680-EEF6-41CB-57AC61482E6F}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{C8698420-7668-8218-AC81-B9BDD59E9395}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -116,6 +116,10 @@
 				<File Id="391679118" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Dirt\FS_Dirt_03.wav</ShortName>
 					<CachePath>SFX/Footsteps/Dirt/FS_Dirt_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="447603507" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>destination_reached.wav</ShortName>
+					<CachePath>SFX/destination_reached_10C4C929.wem</CachePath>
 				</File>
 				<File Id="454928087" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Concrete\FS_Concrete_03.wav</ShortName>
@@ -355,6 +359,11 @@
 						<MediaRef Id="538381605"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="4069116836" Name="destination_reached" DurationType="OneShot" DurationMin="1.375" DurationMax="1.375">
+					<MediaRefs>
+						<MediaRef Id="447603507"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2982082363" Name="distanceC" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1819748157" Name="E3" MaxAttenuation="10" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
@@ -461,5 +470,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{FCED2BE5-FB8A-0D07-082F-93FB9EF4983E}</FileHash>
+	<FileHash>{D80CDB2C-CA55-72EF-E401-5AACBBEF83AD}</FileHash>
 </SoundBanksInfo>

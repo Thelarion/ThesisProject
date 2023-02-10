@@ -41,92 +41,87 @@ public class Slingshot : MonoBehaviour
         }
     }
 
-    void Update()
+    public void FireSlingshot()
     {
-        //If you press the left mouse button, the elastic starts to stretch.
-        // if (Input.GetMouseButtonDown(0) || Gamepad.current.buttonEast.wasPressedThisFrame)
-        if (Input.GetMouseButtonDown(0))
+        z -= 0.1f;
+        if (i == 1)
         {
-            z -= 0.1f;
-            if (i == 1)
-            {
-                //if the i(increment) is equal to one, it means that there is no metal sphere in the slingshot, then the sphere is created to be thrown next.
-                metalSphere = Instantiate(metalSpherePrefab, new Vector3(metalSpherePrefab.transform.position.x, metalSpherePrefab.transform.position.y, -3), Quaternion.identity);
-                rb = metalSphere.GetComponent<Rigidbody>();
-                //The metal sphere is parented to the slingshot, so that it can move with the slingshot.
-                metalSphere.transform.parent = this.transform;
-                i = 0;
-            }
-
-            //Disables the elastic mesh renderer.
-            rightElastic.GetComponent<SkinnedMeshRenderer>().enabled = false;
-            leftElastic.GetComponent<SkinnedMeshRenderer>().enabled = false;
-            leather.GetComponent<SkinnedMeshRenderer>().enabled = false;
-
-            //Activates the elastic line, so the movement becomes more fluid and beautiful.
-            rightLine.SetActive(true);
-            leftLine.SetActive(true);
-            leatherLine.GetComponent<SkinnedMeshRenderer>().enabled = true;
-
-            rightElasticLine = rightLine.transform.GetComponent<LineRenderer>();
-            leftElasticLine = leftLine.transform.GetComponent<LineRenderer>();
-
-            // if (z >= pulled)
-            // {
-            //     //For the elastic to stretch the value of the z axis is increased to - 7 or pulled value, maximum of the stretch.
-            //     rightElasticLine.SetPosition(1, new Vector3(0, 0, z));
-            //     //The lines are growing and the value of the z axis is increased.
-            //     leftElasticLine.SetPosition(1, new Vector3(0, 0, z));
-            //     //Leather and metallic sphere follow the movement of the line.
-            //     metalSphere.transform.localPosition = new Vector3(-1.42f, 2.286f, z + 1.7f);
-            //     leather.transform.localPosition = new Vector3(-1.42f, 2.286f, z + 1.2f);
-            //     leatherLine.transform.localPosition = new Vector3(-1.42f, 2.286f, z + 1.2f);
-            // }
-            // else
-            // {
-            //If the z axis value reaches the maximum -7 or pulled value, that value will remain and the slingshot elastic will be completely stretched.
-            rightElasticLine.SetPosition(1, new Vector3(0, 0, pulled));
-            leftElasticLine.SetPosition(1, new Vector3(0, 0, pulled));
-            metalSphere.transform.localPosition = new Vector3(-1.42f, 2.286f, pulled + 1.7f);
-            leather.transform.localPosition = new Vector3(-1.42f, 2.286f, pulled + 1.2f);
-            leatherLine.transform.localPosition = new Vector3(-1.42f, 2.286f, pulled + 1.2f);
-            // }
-
-            // }
-            // //When the left mouse button is released, the metallic sphere will be thrown and the elastic will be decompressed with the movement.
-            // if (Input.GetMouseButtonUp(0))
-            // {
-            //i receives the value of one so that a new metallic sphere is created when the mouse is pressed again.
-            i = 1;
-
-            //Activates the elastic mesh renderer.
-            rightElastic.GetComponent<SkinnedMeshRenderer>().enabled = true;
-            leftElastic.GetComponent<SkinnedMeshRenderer>().enabled = true;
-            leather.GetComponent<SkinnedMeshRenderer>().enabled = true;
-
-            //Disables the elastic line.
-            rightLine.SetActive(false);
-            leftLine.SetActive(false);
-            leatherLine.GetComponent<SkinnedMeshRenderer>().enabled = false;
-
-            //Activates the sphere's gravity as soon as it is thrown.
-            rb.useGravity = true;
-
-            //Adds a forward force on the rigidbody of the metallic sphere, depending on the amount that the elastic is stretched.
-            // if (z >= -7)
-            // {
-            //For the elastic to stretch the value of the z axis is increased to - 7, maximum of the stretch.
-            //The force that the metallic sphere will be thrown, will be multiplied by the amount of stretch of the elastic.
-            //     rb.AddForce(transform.forward * metalSphereVelocity * -z, ForceMode.Impulse);
-            // }
-            // else
-            // {
-            rb.AddForce(transform.forward * metalSphereVelocity * 80, ForceMode.Impulse);
-            // }
-            //The metal sphere is taken (parent = null) in the slingshot, so that the sphere stops moving with the slingshot and the camera.
-            metalSphere.transform.parent = null;
-            z = -2;
-            Destroy(metalSphere, 3f);
+            //if the i(increment) is equal to one, it means that there is no metal sphere in the slingshot, then the sphere is created to be thrown next.
+            metalSphere = Instantiate(metalSpherePrefab, new Vector3(metalSpherePrefab.transform.position.x, metalSpherePrefab.transform.position.y, -3), Quaternion.identity);
+            rb = metalSphere.GetComponent<Rigidbody>();
+            //The metal sphere is parented to the slingshot, so that it can move with the slingshot.
+            metalSphere.transform.parent = this.transform;
+            i = 0;
         }
+
+        //Disables the elastic mesh renderer.
+        rightElastic.GetComponent<SkinnedMeshRenderer>().enabled = false;
+        leftElastic.GetComponent<SkinnedMeshRenderer>().enabled = false;
+        leather.GetComponent<SkinnedMeshRenderer>().enabled = false;
+
+        //Activates the elastic line, so the movement becomes more fluid and beautiful.
+        rightLine.SetActive(true);
+        leftLine.SetActive(true);
+        leatherLine.GetComponent<SkinnedMeshRenderer>().enabled = true;
+
+        rightElasticLine = rightLine.transform.GetComponent<LineRenderer>();
+        leftElasticLine = leftLine.transform.GetComponent<LineRenderer>();
+
+        // if (z >= pulled)
+        // {
+        //     //For the elastic to stretch the value of the z axis is increased to - 7 or pulled value, maximum of the stretch.
+        //     rightElasticLine.SetPosition(1, new Vector3(0, 0, z));
+        //     //The lines are growing and the value of the z axis is increased.
+        //     leftElasticLine.SetPosition(1, new Vector3(0, 0, z));
+        //     //Leather and metallic sphere follow the movement of the line.
+        //     metalSphere.transform.localPosition = new Vector3(-1.42f, 2.286f, z + 1.7f);
+        //     leather.transform.localPosition = new Vector3(-1.42f, 2.286f, z + 1.2f);
+        //     leatherLine.transform.localPosition = new Vector3(-1.42f, 2.286f, z + 1.2f);
+        // }
+        // else
+        // {
+        //If the z axis value reaches the maximum -7 or pulled value, that value will remain and the slingshot elastic will be completely stretched.
+        rightElasticLine.SetPosition(1, new Vector3(0, 0, pulled));
+        leftElasticLine.SetPosition(1, new Vector3(0, 0, pulled));
+        metalSphere.transform.localPosition = new Vector3(-1.42f, 2.286f, pulled + 1.7f);
+        leather.transform.localPosition = new Vector3(-1.42f, 2.286f, pulled + 1.2f);
+        leatherLine.transform.localPosition = new Vector3(-1.42f, 2.286f, pulled + 1.2f);
+        // }
+
+        // }
+        // //When the left mouse button is released, the metallic sphere will be thrown and the elastic will be decompressed with the movement.
+        // if (Input.GetMouseButtonUp(0))
+        // {
+        //i receives the value of one so that a new metallic sphere is created when the mouse is pressed again.
+        i = 1;
+
+        //Activates the elastic mesh renderer.
+        rightElastic.GetComponent<SkinnedMeshRenderer>().enabled = true;
+        leftElastic.GetComponent<SkinnedMeshRenderer>().enabled = true;
+        leather.GetComponent<SkinnedMeshRenderer>().enabled = true;
+
+        //Disables the elastic line.
+        rightLine.SetActive(false);
+        leftLine.SetActive(false);
+        leatherLine.GetComponent<SkinnedMeshRenderer>().enabled = false;
+
+        //Activates the sphere's gravity as soon as it is thrown.
+        rb.useGravity = true;
+
+        //Adds a forward force on the rigidbody of the metallic sphere, depending on the amount that the elastic is stretched.
+        // if (z >= -7)
+        // {
+        //For the elastic to stretch the value of the z axis is increased to - 7, maximum of the stretch.
+        //The force that the metallic sphere will be thrown, will be multiplied by the amount of stretch of the elastic.
+        //     rb.AddForce(transform.forward * metalSphereVelocity * -z, ForceMode.Impulse);
+        // }
+        // else
+        // {
+        rb.AddForce(transform.forward * metalSphereVelocity * 80, ForceMode.Impulse);
+        // }
+        //The metal sphere is taken (parent = null) in the slingshot, so that the sphere stops moving with the slingshot and the camera.
+        metalSphere.transform.parent = null;
+        z = -2;
+        Destroy(metalSphere, 3f);
     }
 }

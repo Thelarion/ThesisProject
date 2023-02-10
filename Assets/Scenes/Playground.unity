@@ -29347,6 +29347,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1499613709295295528, guid: 97b7e85f00698534483ff008570301e8,
         type: 3}
+      propertyPath: destinationReached.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 9aa77516e64c1bc4d9778fc2d3951c88,
+        type: 2}
+    - target: {fileID: 1499613709295295528, guid: 97b7e85f00698534483ff008570301e8,
+        type: 3}
       propertyPath: distanceCounts.Array.data[0].WwiseObjectReference
       value: 
       objectReference: {fileID: 11400000, guid: b92bcf1ec9342774a96425a29b42713c,
@@ -29454,6 +29460,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5538931608162451277, guid: 97b7e85f00698534483ff008570301e8,
+        type: 3}
+      propertyPath: m_Name
+      value: Slingshot
       objectReference: {fileID: 0}
     - target: {fileID: 5682438527600074391, guid: 97b7e85f00698534483ff008570301e8,
         type: 3}

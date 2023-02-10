@@ -151,7 +151,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 43efb42f60dfb9479eefa2004292fbf9
     GuidInternal: 
-    m_lastTime: -8585257241591182079
+    m_lastTime: -8585255594856850757
     List:
     - name: A2
       guid: d80565ca86137c44bc2366cd2d1463ca
@@ -233,6 +233,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Beacon
+      guid: ed98b4f3cbb4cd45a62eb3dbe94f8e70
+      id: 3241852425
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: SFX
+        ObjectType: 4
+        guid: c73df9cd04502e468b4b7a815b229a25
+      - ElementName: Beacon
+        ObjectType: 4
+        guid: ed98b4f3cbb4cd45a62eb3dbe94f8e70
+      Path: Events\Default Work Unit\SFX\Beacon
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: BeaconLock
       guid: 2bb7d26173335449a5a2a3e2d4cfd5ef
       id: 19930668
@@ -246,10 +266,13 @@ MonoBehaviour:
       - ElementName: SFX
         ObjectType: 4
         guid: c73df9cd04502e468b4b7a815b229a25
+      - ElementName: Beacon
+        ObjectType: 4
+        guid: ed98b4f3cbb4cd45a62eb3dbe94f8e70
       - ElementName: BeaconLock
         ObjectType: 3
         guid: 2bb7d26173335449a5a2a3e2d4cfd5ef
-      Path: Events\Default Work Unit\SFX\BeaconLock
+      Path: Events\Default Work Unit\SFX\Beacon\BeaconLock
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -266,10 +289,13 @@ MonoBehaviour:
       - ElementName: SFX
         ObjectType: 4
         guid: c73df9cd04502e468b4b7a815b229a25
+      - ElementName: Beacon
+        ObjectType: 4
+        guid: ed98b4f3cbb4cd45a62eb3dbe94f8e70
       - ElementName: BeaconLR
         ObjectType: 3
         guid: beaec52c83c1614b9b47bdc7b337289d
-      Path: Events\Default Work Unit\SFX\BeaconLR
+      Path: Events\Default Work Unit\SFX\Beacon\BeaconLR
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -346,13 +372,16 @@ MonoBehaviour:
       - ElementName: SFX
         ObjectType: 4
         guid: c73df9cd04502e468b4b7a815b229a25
+      - ElementName: Beacon
+        ObjectType: 4
+        guid: ed98b4f3cbb4cd45a62eb3dbe94f8e70
       - ElementName: DistanceCount
         ObjectType: 4
         guid: 7b4ed62605ccc948971fb1776133d1ca
       - ElementName: d10
         ObjectType: 3
         guid: 5e77bdad9013c54db57d3aab89596901
-      Path: Events\Default Work Unit\SFX\DistanceCount\d10
+      Path: Events\Default Work Unit\SFX\Beacon\DistanceCount\d10
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -369,13 +398,16 @@ MonoBehaviour:
       - ElementName: SFX
         ObjectType: 4
         guid: c73df9cd04502e468b4b7a815b229a25
+      - ElementName: Beacon
+        ObjectType: 4
+        guid: ed98b4f3cbb4cd45a62eb3dbe94f8e70
       - ElementName: DistanceCount
         ObjectType: 4
         guid: 7b4ed62605ccc948971fb1776133d1ca
       - ElementName: d100
         ObjectType: 3
         guid: d16e0e2407e5df4fad1362691e11b81f
-      Path: Events\Default Work Unit\SFX\DistanceCount\d100
+      Path: Events\Default Work Unit\SFX\Beacon\DistanceCount\d100
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -392,13 +424,16 @@ MonoBehaviour:
       - ElementName: SFX
         ObjectType: 4
         guid: c73df9cd04502e468b4b7a815b229a25
+      - ElementName: Beacon
+        ObjectType: 4
+        guid: ed98b4f3cbb4cd45a62eb3dbe94f8e70
       - ElementName: DistanceCount
         ObjectType: 4
         guid: 7b4ed62605ccc948971fb1776133d1ca
       - ElementName: d20
         ObjectType: 3
         guid: f93bea8499c41247994767a09f020673
-      Path: Events\Default Work Unit\SFX\DistanceCount\d20
+      Path: Events\Default Work Unit\SFX\Beacon\DistanceCount\d20
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -435,13 +470,16 @@ MonoBehaviour:
       - ElementName: SFX
         ObjectType: 4
         guid: c73df9cd04502e468b4b7a815b229a25
+      - ElementName: Beacon
+        ObjectType: 4
+        guid: ed98b4f3cbb4cd45a62eb3dbe94f8e70
       - ElementName: DistanceCount
         ObjectType: 4
         guid: 7b4ed62605ccc948971fb1776133d1ca
       - ElementName: d30
         ObjectType: 3
         guid: 959aa9fc7973b14dade8fbcc4f22241b
-      Path: Events\Default Work Unit\SFX\DistanceCount\d30
+      Path: Events\Default Work Unit\SFX\Beacon\DistanceCount\d30
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -458,13 +496,16 @@ MonoBehaviour:
       - ElementName: SFX
         ObjectType: 4
         guid: c73df9cd04502e468b4b7a815b229a25
+      - ElementName: Beacon
+        ObjectType: 4
+        guid: ed98b4f3cbb4cd45a62eb3dbe94f8e70
       - ElementName: DistanceCount
         ObjectType: 4
         guid: 7b4ed62605ccc948971fb1776133d1ca
       - ElementName: d40
         ObjectType: 3
         guid: 88b36135c20c6c4091a77064c5be7d7e
-      Path: Events\Default Work Unit\SFX\DistanceCount\d40
+      Path: Events\Default Work Unit\SFX\Beacon\DistanceCount\d40
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -481,13 +522,16 @@ MonoBehaviour:
       - ElementName: SFX
         ObjectType: 4
         guid: c73df9cd04502e468b4b7a815b229a25
+      - ElementName: Beacon
+        ObjectType: 4
+        guid: ed98b4f3cbb4cd45a62eb3dbe94f8e70
       - ElementName: DistanceCount
         ObjectType: 4
         guid: 7b4ed62605ccc948971fb1776133d1ca
       - ElementName: d50
         ObjectType: 3
         guid: 157e1220582ce4468da57a0250a03b65
-      Path: Events\Default Work Unit\SFX\DistanceCount\d50
+      Path: Events\Default Work Unit\SFX\Beacon\DistanceCount\d50
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -504,13 +548,16 @@ MonoBehaviour:
       - ElementName: SFX
         ObjectType: 4
         guid: c73df9cd04502e468b4b7a815b229a25
+      - ElementName: Beacon
+        ObjectType: 4
+        guid: ed98b4f3cbb4cd45a62eb3dbe94f8e70
       - ElementName: DistanceCount
         ObjectType: 4
         guid: 7b4ed62605ccc948971fb1776133d1ca
       - ElementName: d60
         ObjectType: 3
         guid: 0dee418af8eb2b4395cb759996a22fd6
-      Path: Events\Default Work Unit\SFX\DistanceCount\d60
+      Path: Events\Default Work Unit\SFX\Beacon\DistanceCount\d60
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -527,13 +574,16 @@ MonoBehaviour:
       - ElementName: SFX
         ObjectType: 4
         guid: c73df9cd04502e468b4b7a815b229a25
+      - ElementName: Beacon
+        ObjectType: 4
+        guid: ed98b4f3cbb4cd45a62eb3dbe94f8e70
       - ElementName: DistanceCount
         ObjectType: 4
         guid: 7b4ed62605ccc948971fb1776133d1ca
       - ElementName: d70
         ObjectType: 3
         guid: 1c230eb36eb4ab488e3f7e7308ff640e
-      Path: Events\Default Work Unit\SFX\DistanceCount\d70
+      Path: Events\Default Work Unit\SFX\Beacon\DistanceCount\d70
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -550,13 +600,16 @@ MonoBehaviour:
       - ElementName: SFX
         ObjectType: 4
         guid: c73df9cd04502e468b4b7a815b229a25
+      - ElementName: Beacon
+        ObjectType: 4
+        guid: ed98b4f3cbb4cd45a62eb3dbe94f8e70
       - ElementName: DistanceCount
         ObjectType: 4
         guid: 7b4ed62605ccc948971fb1776133d1ca
       - ElementName: d80
         ObjectType: 3
         guid: 7b4a315303de8f41ba8d5b89f1425b0c
-      Path: Events\Default Work Unit\SFX\DistanceCount\d80
+      Path: Events\Default Work Unit\SFX\Beacon\DistanceCount\d80
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -573,13 +626,42 @@ MonoBehaviour:
       - ElementName: SFX
         ObjectType: 4
         guid: c73df9cd04502e468b4b7a815b229a25
+      - ElementName: Beacon
+        ObjectType: 4
+        guid: ed98b4f3cbb4cd45a62eb3dbe94f8e70
       - ElementName: DistanceCount
         ObjectType: 4
         guid: 7b4ed62605ccc948971fb1776133d1ca
       - ElementName: d90
         ObjectType: 3
         guid: be63adf71394764fb510bbe862f7616e
-      Path: Events\Default Work Unit\SFX\DistanceCount\d90
+      Path: Events\Default Work Unit\SFX\Beacon\DistanceCount\d90
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: destination_reached
+      guid: 60509861cdadc9418721eff81467818e
+      id: 4069116836
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: SFX
+        ObjectType: 4
+        guid: c73df9cd04502e468b4b7a815b229a25
+      - ElementName: Beacon
+        ObjectType: 4
+        guid: ed98b4f3cbb4cd45a62eb3dbe94f8e70
+      - ElementName: DistanceCount
+        ObjectType: 4
+        guid: 7b4ed62605ccc948971fb1776133d1ca
+      - ElementName: destination_reached
+        ObjectType: 3
+        guid: 60509861cdadc9418721eff81467818e
+      Path: Events\Default Work Unit\SFX\Beacon\DistanceCount\destination_reached
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -616,10 +698,13 @@ MonoBehaviour:
       - ElementName: SFX
         ObjectType: 4
         guid: c73df9cd04502e468b4b7a815b229a25
+      - ElementName: Beacon
+        ObjectType: 4
+        guid: ed98b4f3cbb4cd45a62eb3dbe94f8e70
       - ElementName: DistanceCount
         ObjectType: 4
         guid: 7b4ed62605ccc948971fb1776133d1ca
-      Path: Events\Default Work Unit\SFX\DistanceCount
+      Path: Events\Default Work Unit\SFX\Beacon\DistanceCount
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1166,7 +1251,7 @@ MonoBehaviour:
     m_lastTime: -8585282545794215635
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000200000003000000040000000500000006000000070000000b0000000c0000000d0000000e0000000f0000001100000012000000130000001400000016000000170000001b0000001d00000031000000c1000000c2000000c8000000
+  ExpandedWaapiItemIds: 010000000200000003000000040000000500000006000000070000000b0000000c0000000d0000000e0000000f0000001100000012000000130000001400000016000000170000001b0000001d0000002c0000002e0000002f000000310000003f000000c1000000c2000000c8000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

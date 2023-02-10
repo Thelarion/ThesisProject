@@ -65,7 +65,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{93DB7D02-9680-EEF6-41CB-57AC61482E6F}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{C4278F64-505B-9D36-0120-5550020BC24F}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -355,6 +355,7 @@
 						<MediaRef Id="538381605"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="4069116836" Name="destination_reached" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2982082363" Name="distanceC" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1819748157" Name="E3" MaxAttenuation="10" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
@@ -461,5 +462,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{71542F47-99A4-2226-A923-298CE3AB93CD}</FileHash>
+	<FileHash>{8609B989-16EB-00F7-2205-1EA52F61FDD9}</FileHash>
 </SoundBanksInfo>

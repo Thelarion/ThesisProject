@@ -9,6 +9,7 @@ public class AudioBeacon : MonoBehaviour
     public AK.Wwise.Event BeaconLR;
     public AK.Wwise.Event BeaconLock;
     public AK.Wwise.Event[] distanceCounts;
+    public AK.Wwise.Event destinationReached;
     private float _panning;
     private bool _beaconActive = false;
     private bool _beaconLock_hasPlayed = false;
@@ -31,26 +32,36 @@ public class AudioBeacon : MonoBehaviour
     {
         float distanceToBeacon = Vector3.Distance(targetBeacon.transform.position, transform.position);
 
-        float roundDistance = Mathf.Round(distanceToBeacon);
-        bool tenthFound = ((roundDistance / 10) % 1) == 0;
+        // Artificially increase the distance by some units
+        // distanceToBeacon -= 5f;
 
-        // if (roundDistance != semaphoreDistance)
-        // {
-        //     semaphoreDistance = Mathf.Infinity;
-        // }
+        float roundedDistance = Mathf.Round(distanceToBeacon);
+        print(roundedDistance);
+        bool tenthFound = ((roundedDistance / 10) % 1) == 0;
+
+        int roundedDistanceDiv10 = (Mathf.RoundToInt(roundedDistance / 10));    // Divide the distance by 10
 
         if (tenthFound)
         {
-            if (roundDistance != semaphoreDistance)
+            if (roundedDistance != semaphoreDistance)
             {
-                semaphoreDistance = roundDistance;
-                print(roundDistance);
+                semaphoreDistance = roundedDistance;                // Make sure not playing when moving back and forth within a tenth
 
-                int countIndex = Mathf.RoundToInt(roundDistance / 10);
-                print(countIndex);
-                if (countIndex > 0 && countIndex < 10)
-                    distanceCounts[countIndex - 1].Post(gameObject);
+                int Div10Index = roundedDistanceDiv10 - 1;          // lowered by 1, as (10 / 10) = 1, but need element 0
+
+                print(roundedDistanceDiv10);                        // Distance as index
+
+                if (roundedDistanceDiv10 > 0 && roundedDistanceDiv10 < 10) // Safety, as for now only 0 - 9 exists
+                {
+                    distanceCounts[Div10Index].Post(gameObject);
+                }
             }
+        }
+
+        if (roundedDistance < 4 && _beaconActive)
+        {
+            destinationReached.Post(gameObject);
+            _beaconActive = false;
         }
     }
 
@@ -78,10 +89,6 @@ public class AudioBeacon : MonoBehaviour
 
         float directionFace = Vector3.Dot(transform.forward, (targetBeacon.transform.position - transform.position).normalized);
 
-
-        // if (myApproximation(projectionOnRight, 0f, 0.5f))
-        // {
-        // }
         if (directionFace > 0.99f)
         {
             // Debug.Log("FRONT");
