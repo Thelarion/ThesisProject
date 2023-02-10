@@ -17,7 +17,8 @@ public class TargetSpawnPoints : MonoBehaviour
     private static Transform[] _spawnPointsT4;
     private static Transform[] _spawnPointsT5;
 
-    static Transform[] currentSpawnContainer = null;
+    static Transform[] currentSpawnContainerItems = null;
+    static GameObject currentSpawnContainer;
     // static int randomContainerTarget;
 
     void Awake()
@@ -29,7 +30,6 @@ public class TargetSpawnPoints : MonoBehaviour
         //    _spawnPointsT5 = Tone5.GetComponentsInChildren<Transform>();
     }
 
-    // Update is called once per frame
     public Transform ReturnRandomSpawnTransform(int sequenceIndex)
     {
         // randomContainerTarget = randomContainerTarget + UnityEngine.Random.Range(1, 3);
@@ -42,28 +42,63 @@ public class TargetSpawnPoints : MonoBehaviour
 
         // print(randomContainerTarget);
         // First item is parent itself
-        currentSpawnContainer = GetCurrentSpawnContainer(sequenceIndex, currentSpawnContainer);
-        return currentSpawnContainer[newSpawnIndex].transform;
+        currentSpawnContainerItems = GetCurrentSpawnContainerItems(sequenceIndex, currentSpawnContainerItems);
+        return currentSpawnContainerItems[newSpawnIndex].transform;
     }
 
-    private Transform[] GetCurrentSpawnContainer(int sequenceIndex, Transform[] currentSpawnContainer)
+    private Transform[] GetCurrentSpawnContainerItems(int sequenceIndex, Transform[] currentSpawnContainerItems)
     {
         switch (sequenceIndex)
         {
             case 0:
-                currentSpawnContainer = _spawnPointsT1;
+                currentSpawnContainerItems = _spawnPointsT1;
                 break;
             case 1:
-                currentSpawnContainer = _spawnPointsT2;
+                currentSpawnContainerItems = _spawnPointsT2;
                 break;
             case 2:
-                currentSpawnContainer = _spawnPointsT3;
+                currentSpawnContainerItems = _spawnPointsT3;
                 break;
             case 3:
-                currentSpawnContainer = _spawnPointsT4;
+                currentSpawnContainerItems = _spawnPointsT4;
                 break;
             case 4:
-                currentSpawnContainer = _spawnPointsT5;
+                currentSpawnContainerItems = _spawnPointsT5;
+                break;
+        }
+
+        return currentSpawnContainerItems;
+    }
+
+    public Transform GetActiveSpawnPointFromSpawnContainer(int sequenceIndex)
+    {
+        currentSpawnContainer = GetCurrentSpawnContainer(sequenceIndex, currentSpawnContainer);
+        currentSpawnContainerItems = GetCurrentSpawnContainerItems(sequenceIndex, currentSpawnContainerItems);
+
+        int spawnPointIndexFromContainer = currentSpawnContainer.GetComponent<SaveLastTargetSpawn>().GetCurrentTargetSpawnPoint();
+        // print(spawnPointIndexFromContainer);
+
+        return currentSpawnContainerItems[spawnPointIndexFromContainer].transform;
+    }
+
+    private GameObject GetCurrentSpawnContainer(int sequenceIndex, GameObject currentSpawnContainer)
+    {
+        switch (sequenceIndex)
+        {
+            case 0:
+                currentSpawnContainer = TargetContainer1;
+                break;
+            case 1:
+                currentSpawnContainer = TargetContainer2;
+                break;
+            case 2:
+                currentSpawnContainer = TargetContainer3;
+                break;
+            case 3:
+                currentSpawnContainer = TargetContainer4;
+                break;
+            case 4:
+                currentSpawnContainer = TargetContainer5;
                 break;
         }
 

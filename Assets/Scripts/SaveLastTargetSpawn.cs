@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class SaveLastTargetSpawn : MonoBehaviour
 {
-    private int _checkLastTargetSpawnPoint;
+    [SerializeField] private int _checkLastTargetSpawnPoint;
+
+    public int GetCurrentTargetSpawnPoint()
+    {
+        return _checkLastTargetSpawnPoint;
+    }
 
     public int GetNewSpawnIndex()
     {

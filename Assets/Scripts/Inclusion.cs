@@ -12,6 +12,7 @@ public class Inclusion : MonoBehaviour
     public GameObject PlayerFollowCamera;
     public GameObject PlayerFollowCameraNoiseOff;
     public GameObject CinemachineCameraTarget;
+    public GameObject TargetParent;
     public bool IO = false;
 
     private void Update()
@@ -39,8 +40,13 @@ public class Inclusion : MonoBehaviour
         PlayerFollowCamera.SetActive(false);
         PlayerFollowCameraNoiseOff.SetActive(true);
 
-        IO = false;
+        TargetParent TP = TargetParent.transform.GetComponent<TargetParent>();
+        TP.ToggleInclusionTargets();
+        TP.StopMovement();
+        TP.ResetNotePositionToSpawnPoint();
+        TP.InitializeMovement();
 
+        IO = false;
     }
 
     // 

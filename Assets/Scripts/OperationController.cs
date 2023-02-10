@@ -128,7 +128,6 @@ public class OperationController : MonoBehaviour
     {
         int mode = ColourHelpOn ? 2 : 1;
         Image currentFrameSuccess = _listUI[index].GetChild(mode).GetComponent<Image>();
-        print(mode);
         return currentFrameSuccess;
     }
 

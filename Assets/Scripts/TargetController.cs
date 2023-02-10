@@ -48,6 +48,11 @@ public class TargetController : MonoBehaviour
         return _indexInSequence;
     }
 
+    public void ResetPositionToSpawnPoint()
+    {
+        transform.position = targetSpawnPoints.GetActiveSpawnPointFromSpawnContainer(_indexInSequence).position;
+    }
+
     // Remove target from instances when destroyed
     private void OnDestroy()
     {

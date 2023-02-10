@@ -6,10 +6,10 @@ public class TargetMove : MonoBehaviour
 {
     float movementFactor;
     [SerializeField] float period = 2f;
-    // [SerializeField] 
     public Vector3 movementVector;
     private Vector3 startingPosition;
-    private bool positionIsInitialized = false;
+    private bool positionIsSet = false;
+    public bool InclusionIO = false;
     private bool interpolate = false;
     Vector3 offset;
     float randomXPrev = 0f;
@@ -21,31 +21,27 @@ public class TargetMove : MonoBehaviour
         StartCoroutine(WaitForPositionInitialization());
     }
 
-    public void StopMovementWhenMiss()
+    public void StopMovementWhenMissOrInclusion()
     {
-        positionIsInitialized = false;
+        positionIsSet = false;
     }
 
-    public void InitializeMovementAfterMiss()
+    public void InitializeMovementAfterMissOrInclusion()
     {
         startingPosition = transform.position;
-        positionIsInitialized = true;
+        positionIsSet = true;
     }
-
 
     IEnumerator WaitForPositionInitialization()
     {
         yield return new WaitForSeconds(0.5f);
         startingPosition = transform.position;
-        positionIsInitialized = true;
+        positionIsSet = true;
     }
 
     void Update()
     {
-        if (positionIsInitialized)
-        {
-            OscillateMovement();
-        }
+        if (positionIsSet) { OscillateMovement(); }
     }
 
     private void OscillateMovement()
@@ -60,14 +56,45 @@ public class TargetMove : MonoBehaviour
 
         if (!interpolate)
         {
-            StartCoroutine(InterpolateRandomMovementX(rawSinWave, interpolateX, interpolateY, interpolateZ));
+            if (!InclusionIO)
+            {
+                StartCoroutine(InterpolateRandomMovementXYZ(rawSinWave, interpolateX, interpolateY, interpolateZ));
+            }
+            else
+            {
+                StartCoroutine(InterpolateRandomMovementXZ(rawSinWave, interpolateX, interpolateZ));
+            }
         }
         movementFactor = (rawSinWave + 1f) / 2f;
         offset = movementVector * movementFactor;
         transform.position = startingPosition + offset;
     }
+    IEnumerator InterpolateRandomMovementXZ(float rawSinWave, float interpolateX, float interpolateZ)
+    {
+        interpolate = true;
 
-    IEnumerator InterpolateRandomMovementX(float rawSinWave, float interpolateX, float interpolateY, float interpolateZ)
+        float randomXNew = UnityEngine.Random.Range(-3f, 4f);
+        float randomZNew = UnityEngine.Random.Range(-2f, 3f);
+
+        // randomXNew = CheckUnwantedAccelerationX(randomXNew);
+
+        float t = 0f;
+        float duration = 5f;
+        while (t < duration)
+        {
+            interpolateX = Mathf.Lerp(randomXPrev, randomXNew, t / duration);
+            interpolateZ = Mathf.Lerp(randomZPrev, randomZNew, t / duration);
+            t += Time.deltaTime;
+            movementVector = new Vector3(interpolateX, 0.0f, interpolateZ);
+            yield return null;
+        }
+
+        randomXPrev = randomXNew;
+        randomZPrev = randomZNew;
+
+        interpolate = false;
+    }
+    IEnumerator InterpolateRandomMovementXYZ(float rawSinWave, float interpolateX, float interpolateY, float interpolateZ)
     {
         interpolate = true;
 
@@ -79,13 +106,13 @@ public class TargetMove : MonoBehaviour
 
         float t = 0f;
         float duration = 5f;
-        while (t < duration)
+        while (t < duration && !InclusionIO)
         {
             interpolateX = Mathf.Lerp(randomXPrev, randomXNew, t / duration);
             interpolateY = Mathf.Lerp(randomYPrev, randomYNew, t / duration);
             interpolateZ = Mathf.Lerp(randomZPrev, randomZNew, t / duration);
             t += Time.deltaTime;
-            movementVector = new Vector3(interpolateX, interpolateY, interpolateZ);
+            if (!InclusionIO) { movementVector = new Vector3(interpolateX, interpolateY, interpolateZ); }
             yield return null;
         }
 

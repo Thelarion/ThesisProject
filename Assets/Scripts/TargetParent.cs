@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NameTargets : MonoBehaviour
+public class TargetParent : MonoBehaviour
 {
     private OperationController _operationController;
     public int _targetCount;
@@ -21,6 +21,48 @@ public class NameTargets : MonoBehaviour
     private void Update()
     {
         CheckTargetCount();
+    }
+
+    public void ToggleInclusionTargets()
+    {
+        foreach (Transform child in transform)
+        {
+            bool _currentInclusion = child.GetComponent<TargetMove>().InclusionIO;
+
+            if (!_currentInclusion)
+            {
+                child.GetComponent<TargetMove>().InclusionIO = true;
+            }
+            else
+            {
+                child.GetComponent<TargetMove>().InclusionIO = false;
+            }
+        }
+    }
+
+    public void InitializeMovement()
+    {
+        foreach (Transform child in transform)
+        {
+
+            child.GetComponent<TargetMove>().InitializeMovementAfterMissOrInclusion();
+        }
+    }
+
+    public void StopMovement()
+    {
+        foreach (Transform child in transform)
+        {
+            child.GetComponent<TargetMove>().StopMovementWhenMissOrInclusion();
+        }
+    }
+
+    public void ResetNotePositionToSpawnPoint()
+    {
+        foreach (Transform child in transform)
+        {
+            child.transform.GetComponent<TargetController>().ResetPositionToSpawnPoint();
+        }
     }
 
     private void CheckTargetCount()
