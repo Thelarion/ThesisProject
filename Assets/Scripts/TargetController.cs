@@ -50,7 +50,8 @@ public class TargetController : MonoBehaviour
 
     public void ResetPositionToSpawnPoint()
     {
-        transform.position = targetSpawnPoints.GetActiveSpawnPointFromSpawnContainer(_indexInSequence).position;
+        // transform.position = targetSpawnPoints.GetActiveSpawnPointFromSpawnContainer(_indexInSequence).position;
+        gameObject.transform.position = targetSpawnPoints.ReturnRandomSpawnTransform(_indexInSequence).position;
     }
 
     // Remove target from instances when destroyed

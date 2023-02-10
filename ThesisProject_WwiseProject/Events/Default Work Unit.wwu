@@ -350,7 +350,17 @@
 												</Action>
 											</ChildrenList>
 										</Event>
-										<Event Name="destination_reached" ID="{61985060-ADCD-41C9-8721-EFF81467818E}"/>
+										<Event Name="destination_reached" ID="{61985060-ADCD-41C9-8721-EFF81467818E}">
+											<ChildrenList>
+												<Action Name="" ID="{A9CDBAC4-920C-4D1C-8FC0-2AF1885FA405}" ShortID="935229895">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="destination_reached" ID="{B0F9A1EC-73B9-48B9-B932-B7CFEC950B70}" WorkUnitID="{6B91872B-49A8-4BB8-A212-FBF7E77C3676}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
 									</ChildrenList>
 								</Folder>
 							</ChildrenList>

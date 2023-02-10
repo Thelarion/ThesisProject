@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using StarterAssets;
 
 public class GameManager : MonoBehaviour
@@ -49,6 +50,11 @@ public class GameManager : MonoBehaviour
             menuActive = false;
         }
 
+    }
+
+    public void StartGame()
+    {
+        SceneManager.LoadScene("Playground");
     }
 
     public void Quit()

@@ -7,20 +7,36 @@ using UnityEngine.InputSystem;
 
 public class Inclusion : MonoBehaviour
 {
-
     public GameObject Player;
     public GameObject PlayerFollowCamera;
     public GameObject PlayerFollowCameraNoiseOff;
-    public GameObject CinemachineCameraTarget;
+    public GameObject PlayerCameraRoot;
     public GameObject TargetParent;
+    private static bool InclusionActive = false;
     public bool IO = false;
 
     private void Update()
     {
-        if (IO) { InclusionIO(); }
+        if (IO)
+        {
+            InclusionIO();
+        }
     }
 
-    public void InclusionIO()
+    private void Start()
+    {
+        if (InclusionActive)
+        {
+            InclusionIO();
+        }
+    }
+
+    public void SetInclusionState()
+    {
+        InclusionActive = true;
+    }
+
+    private void InclusionIO()
     {
         // Lock Camera, deactivate jump and adjust rotation speed
         FirstPersonController FPC = Player.transform.GetComponent<FirstPersonController>();
@@ -35,7 +51,7 @@ public class Inclusion : MonoBehaviour
         print(PI.currentActionMap);
 
         // Fix camera rotation without skip
-        CinemachineCameraTarget.transform.localRotation = Quaternion.Euler(-5.0f, 0.0f, 0.0f);
+        PlayerCameraRoot.transform.localRotation = Quaternion.Euler(-5.0f, 0.0f, 0.0f);
 
         // Deactivate the breathing effect on the CinemachineVirtualCam
         PlayerFollowCamera.SetActive(false);

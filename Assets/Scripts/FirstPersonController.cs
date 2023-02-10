@@ -116,7 +116,7 @@ namespace StarterAssets
         {
             playerAudio = GameObject.Find("PlayerAudio").GetComponent<PlayerAudio>();
             gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-            slingshot = GameObject.Find("Slingshot").GetComponent<Slingshot>();
+            slingshot = GameObject.Find("MasterSlingshot").GetComponent<Slingshot>();
             _controller = GetComponent<CharacterController>();
             _input = GetComponent<StarterAssetsInputs>();
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
