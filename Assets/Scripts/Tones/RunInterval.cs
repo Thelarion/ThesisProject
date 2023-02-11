@@ -60,7 +60,6 @@ public class RunInterval : MonoBehaviour
     {
         // Copy the original array
         ArrayList fluentMaterialArray = new ArrayList(_materialsAvailable);
-        // fluentMaterialArray = _materialsAvailable;
 
         if (!materialGenerated)
         {

@@ -134,7 +134,6 @@ public class PlayNoteOnTone : MonoBehaviour
                 }
                 break;
         }
-        print(tone.name);
         currentNote.Post(tone);
     }
 

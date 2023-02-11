@@ -13,21 +13,21 @@ public class OperationController : MonoBehaviour
         C2, D2, E2, F2, G2, A2, B2,
         C3, D3, E3, F3, G3, A3, B3,
         C4, D4, E4, F4, G4, A4, B4,
-        // C, D, E, F, G, A, B,
-
     }
 
     [SerializeField] public notes[] _melodySequence;
 
     [Header("General")]
-    [SerializeField] private Transform[] _listUI;
-    private ArrayList _spritesAvailable;
-    private ArrayList _spritesAvailableStrings = new ArrayList();
-    private List<int> _sequenceIndex = new List<int>();
-    [HideInInspector] public bool ColourHelpOn = false;
-    private string currentColourState = "SpritesNotesGrey";
+    [SerializeField] private Transform[] _NoteDisplays;
+    private ArrayList _spritesUINotesFromMelodySequence;
+    private ArrayList _spritesUINotesFromMelodySequenceStrings = new ArrayList();
+    private ArrayList _backgroundColours;
+    private ArrayList _backgroundColoursStrings;
+    private List<int> _uI_sequenceIndex = new List<int>();
+    [HideInInspector] public static bool ColourHelpOn = false;
     private TargetController currentClosestTarget;
     private Image currentFrameDistance = null;
+    public Sprite UI_BackgroundGrey;
 
     private void Start()
     {
@@ -41,9 +41,10 @@ public class OperationController : MonoBehaviour
 
     private void UpdateUI()
     {
-        LoadSpritesFromResources();
+        LoadUINotesFromResources();
         InitializeSequence();
         InitializeUI();
+        InitializeUIBackground();
     }
 
     public List<Transform> CheckIfTonesCompleted()
@@ -63,18 +64,33 @@ public class OperationController : MonoBehaviour
 
     public void ToggleListColourHelp()
     {
-        currentColourState = currentColourState == "SpritesNotesGrey" ? "SpritesNotesColour" : "SpritesNotesGrey";
         ColourHelpOn = ColourHelpOn == true ? false : true;
         UpdateUI();
-        ChangeListItemsColourMode();
+        ToggleUIFrames();
+        LoadUIBackgroundsColourFromResources();
     }
 
-    private void ChangeListItemsColourMode()
+    private void InitializeUIBackground()
+    {
+        if (!ColourHelpOn)
+        {
+            foreach (Transform item in transform)
+            {
+                item.GetComponent<Image>().sprite = UI_BackgroundGrey;
+            }
+        }
+        else
+        {
+
+        }
+    }
+
+    private void ToggleUIFrames()
     {
         int x = 0;
         foreach (Transform child in transform)
         {
-            if (child.GetComponent<ListItemIdentity>().LockState == true)
+            if (child.GetChild(0).GetComponent<ListItemIdentity>().LockState == true)
             {
                 StartCoroutine(DecreaseAlpha(GetModeAndImage(!ColourHelpOn, x)));
                 ActivateFrameSuccess(x++, child.name);
@@ -84,42 +100,71 @@ public class OperationController : MonoBehaviour
 
     private void InitializeSequence()
     {
-        foreach (notes name in _melodySequence)
+        foreach (notes note in _melodySequence)
         {
-            _sequenceIndex.Add(_spritesAvailableStrings.IndexOf(name.ToString()));
+            string noteNameAsString = note.ToString();          // get rid of octave information
+            string noteName = noteNameAsString[0].ToString();   // get rid of octave information
+
+            _uI_sequenceIndex.Add(_spritesUINotesFromMelodySequenceStrings.IndexOf(noteName));
         }
     }
 
     private void InitializeUI()
     {
         int x = 0;
-        foreach (Transform listItem in _listUI)
+        foreach (Transform noteDisplay in _NoteDisplays)
         {
-            listItem.GetComponent<Image>().sprite = _spritesAvailable[_sequenceIndex[x]] as Sprite;
-            listItem.GetComponent<ListItemIdentity>().toneName = _spritesAvailableStrings[_sequenceIndex[x++]].ToString();
+            noteDisplay.GetComponent<Image>().sprite = _spritesUINotesFromMelodySequence[_uI_sequenceIndex[x]] as Sprite;
+            noteDisplay.GetComponent<ListItemIdentity>().toneName = _spritesUINotesFromMelodySequenceStrings[_uI_sequenceIndex[x++]].ToString();
         }
     }
 
-    private void LoadSpritesFromResources()
+    private void LoadUINotesFromResources()
     {
-        var load = Resources.LoadAll(currentColourState, typeof(Sprite)).Cast<Sprite>();
-        _spritesAvailable = new ArrayList();
-        foreach (var material in load)
-        {
-            _spritesAvailable.Add(material);
-            _spritesAvailableStrings.Add(material.name);
+        var load = Resources.LoadAll("UI_Notes", typeof(Sprite)).Cast<Sprite>();
 
+        _spritesUINotesFromMelodySequence = new ArrayList();
+        foreach (var ui_notes in load)
+        {
+            _spritesUINotesFromMelodySequence.Add(ui_notes);
+            _spritesUINotesFromMelodySequenceStrings.Add(ui_notes.name);
         }
+    }
+
+    private void LoadUIBackgroundsColourFromResources()
+    {
+        var load = Resources.LoadAll("UI_BackgroundColour", typeof(Sprite)).Cast<Sprite>();
+
+        _backgroundColours = new ArrayList();
+        _backgroundColoursStrings = new ArrayList();
+
+        foreach (var colour in load)
+        {
+            _backgroundColours.Add(colour);
+            _backgroundColoursStrings.Add(colour.name);
+        }
+
+        int x = 0;
+        foreach (Transform child in transform)
+        {
+            string melodyIterationAsString = _melodySequence[x++].ToString();          // get rid of octave information
+            string melodyIterationName = melodyIterationAsString[0].ToString();
+
+            int _indexOfChild = _backgroundColoursStrings.IndexOf(melodyIterationName);
+
+            child.GetComponent<Image>().sprite = _backgroundColours[_indexOfChild] as Sprite;
+        }
+
     }
 
     public void ActivateFrameSuccess(int tappedListItemIndex, string tappedName)
     {
         // Set the sprite within the list UI
         // if checks null on game stop
-        if (_listUI[tappedListItemIndex] != null)
+        if (_NoteDisplays[tappedListItemIndex] != null)
         {
             Image currentFrameSuccess = GetModeAndImage(ColourHelpOn, tappedListItemIndex);
-            _listUI[tappedListItemIndex].GetComponent<ListItemIdentity>().LockState = true;
+            _NoteDisplays[tappedListItemIndex].GetComponent<ListItemIdentity>().LockState = true;
             StartCoroutine(IncreaseAlpha(currentFrameSuccess));
         }
     }
@@ -127,7 +172,7 @@ public class OperationController : MonoBehaviour
     private Image GetModeAndImage(bool ColourHelpOn, int index)
     {
         int mode = ColourHelpOn ? 2 : 1;
-        Image currentFrameSuccess = _listUI[index].GetChild(mode).GetComponent<Image>();
+        Image currentFrameSuccess = _NoteDisplays[index].GetChild(mode).GetComponent<Image>();
         return currentFrameSuccess;
     }
 
@@ -146,7 +191,7 @@ public class OperationController : MonoBehaviour
                 StartCoroutine(DecreaseAlpha(currentFrameDistance));
             }
             // Get new list frame
-            currentFrameDistance = _listUI[currentClosestTarget.getIndexInSequence()].GetChild(0).GetComponent<Image>();
+            currentFrameDistance = _NoteDisplays[currentClosestTarget.getIndexInSequence()].GetChild(0).GetComponent<Image>();
             // Make it visible
             StartCoroutine(IncreaseAlpha(currentFrameDistance));
         }
