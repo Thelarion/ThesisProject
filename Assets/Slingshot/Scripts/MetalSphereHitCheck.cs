@@ -5,7 +5,7 @@ public class MetalSphereHitCheck : MonoBehaviour
     public AK.Wwise.Event PlingSuccess;
     public AK.Wwise.Event PlingFail;
 
-    public TargetSpawnPoints targetSpawnPoints;
+    [HideInInspector] public TargetSpawnPoints targetSpawnPoints;
 
     private void Start()
     {

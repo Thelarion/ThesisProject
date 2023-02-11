@@ -26,8 +26,8 @@ public class TargetSpawnPoints : MonoBehaviour
         _spawnPointsT1 = TargetContainer1.GetComponentsInChildren<Transform>();
         _spawnPointsT2 = TargetContainer2.GetComponentsInChildren<Transform>();
         _spawnPointsT3 = TargetContainer3.GetComponentsInChildren<Transform>();
-        //    _spawnPointsT4 = Tone4.GetComponentsInChildren<Transform>();
-        //    _spawnPointsT5 = Tone5.GetComponentsInChildren<Transform>();
+        _spawnPointsT4 = TargetContainer4.GetComponentsInChildren<Transform>();
+        _spawnPointsT5 = TargetContainer5.GetComponentsInChildren<Transform>();
     }
 
     public Transform ReturnRandomSpawnTransform(int sequenceIndex)

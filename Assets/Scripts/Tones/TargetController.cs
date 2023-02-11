@@ -29,9 +29,7 @@ public class TargetController : MonoBehaviour
 
     private void Start()
     {
-        // print(gameObject.name);
         gameObject.transform.position = targetSpawnPoints.ReturnRandomSpawnTransform(_indexInSequence).position;
-        // print(gameObject.transform.position);
     }
     private void Update()
     {

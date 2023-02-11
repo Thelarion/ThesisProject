@@ -13,15 +13,6 @@ public class Inclusion : MonoBehaviour
     public GameObject PlayerCameraRoot;
     public GameObject TargetParent;
     private static bool InclusionActive = false;
-    public bool IO = false;
-
-    private void Update()
-    {
-        if (IO)
-        {
-            InclusionIO();
-        }
-    }
 
     private void Start()
     {
@@ -43,7 +34,7 @@ public class Inclusion : MonoBehaviour
         FPC.TopClamp = -5f;         // Lock the camera horizontally
         FPC.BottomClamp = -5f;      // Lock the camera horizontally
         FPC.JumpHeight = 0f;        // Deactivate Jump
-        FPC.RotationSpeed = 0.3f;   // Slow down rotation speed for arrow keys mostly
+        FPC.RotationSpeed = 0.4f;   // Slow down rotation speed for arrow keys mostly
 
         // Switch the current action map from "Player" to "PlayerInclusion"
         PlayerInput PI = Player.transform.GetComponent<PlayerInput>();
@@ -60,10 +51,6 @@ public class Inclusion : MonoBehaviour
         // Adjust behaviour of the targets
         TargetParent TP = TargetParent.transform.GetComponent<TargetParent>();
         TP.ToggleInclusionTargets();
-        TP.StopMovement();
         TP.ResetNotePositionToSpawnPoint();
-        TP.InitializeMovement();
-
-        IO = false;
     }
 }

@@ -77,7 +77,7 @@ namespace StarterAssets
         public AimManager aimManager;
         public GameObject blindfold;
         [HideInInspector] public GameManager gameManager;
-        [HideInInspector] public PlayerAudio playerAudio;
+        [HideInInspector] public MelodyManager melodyManager;
         [HideInInspector] public bool MenuToggle = false;
         [HideInInspector] public Slingshot slingshot;
 
@@ -114,7 +114,7 @@ namespace StarterAssets
 
         private void Start()
         {
-            playerAudio = GameObject.Find("PlayerAudio").GetComponent<PlayerAudio>();
+            melodyManager = GameObject.Find("List").GetComponent<MelodyManager>();
             gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
             slingshot = GameObject.Find("MasterSlingshot").GetComponent<Slingshot>();
             _controller = GetComponent<CharacterController>();
@@ -177,7 +177,7 @@ namespace StarterAssets
         {
             if (_input.melody)
             {
-                playerAudio.PlayMelody();
+                melodyManager.PlayMelody();
                 _input.melody = false;
             }
         }
