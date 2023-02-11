@@ -1,20 +1,30 @@
 Event	ID	Name			Wwise Object Path	Notes
 	19930668	BeaconLock			\Default Work Unit\SFX\Beacon\BeaconLock	
-	652836727	Pling			\Default Work Unit\SFX\Pling	
 	767190967	BeaconLR			\Default Work Unit\SFX\Beacon\BeaconLR	
 	810809264	d100			\Default Work Unit\SFX\Beacon\DistanceCount\d100	
 	1212327680	PlingSuccess			\Default Work Unit\SFX\PlingSuccess	
-	1786192859	G3			\Default Work Unit\Notes\G3	
-	1802970440	F3			\Default Work Unit\Notes\F3	
-	1819748157	E3			\Default Work Unit\Notes\E3	
-	1836525714	D3			\Default Work Unit\Notes\D3	
+	1786192858	G2			\Default Work Unit\Notes\O2\G2	
+	1786192859	G3			\Default Work Unit\Notes\O3\G3	
+	1786192860	G4			\Default Work Unit\Notes\O4\G4	
+	1802970440	F3			\Default Work Unit\Notes\O3\F3	
+	1802970441	F2			\Default Work Unit\Notes\O2\F2	
+	1802970447	F4			\Default Work Unit\Notes\O4\F4	
+	1819748154	E4			\Default Work Unit\Notes\O4\E4	
+	1819748156	E2			\Default Work Unit\Notes\O2\E2	
+	1819748157	E3			\Default Work Unit\Notes\O3\E3	
+	1836525714	D3			\Default Work Unit\Notes\O3\D3	
+	1836525715	D2			\Default Work Unit\Notes\O2\D2	
+	1836525717	D4			\Default Work Unit\Notes\O4\D4	
 	1848491570	WhiteNoiseOnTarget			\Default Work Unit\WhiteNoiseOnTarget	
-	1853303296	C4			\Default Work Unit\Notes\C4	
-	1853303303	C3			\Default Work Unit\Notes\C3	
-	1870081012	B3			\Default Work Unit\Notes\B3	
-	1870081013	B2			\Default Work Unit\Notes\B2	
-	1886858600	A2			\Default Work Unit\Notes\A2	
-	1886858601	A3			\Default Work Unit\Notes\A3	
+	1853303296	C4			\Default Work Unit\Notes\O4\C4	
+	1853303302	C2			\Default Work Unit\Notes\O2\C2	
+	1853303303	C3			\Default Work Unit\Notes\O3\C3	
+	1870081011	B4			\Default Work Unit\Notes\O4\B4	
+	1870081012	B3			\Default Work Unit\Notes\O3\B3	
+	1870081013	B2			\Default Work Unit\Notes\O2\B2	
+	1886858600	A2			\Default Work Unit\Notes\O2\A2	
+	1886858601	A3			\Default Work Unit\Notes\O3\A3	
+	1886858606	A4			\Default Work Unit\Notes\O4\A4	
 	2086503983	PlingFail			\Default Work Unit\SFX\PlingFail	
 	2118505581	CEABCEvent			\Default Work Unit\Melodies\CEABCEvent	
 	2218041646	FreqDistanceEvent			\Default Work Unit\FreqDistanceEvent	
@@ -43,7 +53,6 @@ Switch	ID	Name	Switch Group			Notes
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	189100965	left_right			\Default Work Unit\left_right	
 	1440328639	frequency_depth			\Default Work Unit\frequency_depth	
-	2345103495	wall_occlusion			\Default Work Unit\wall_occlusion	
 	2474654343	beacon_lr_volume			\Default Work Unit\beacon_lr_volume	
 	3639684685	distance_freq			\Default Work Unit\distance_freq	
 	4213591503	synth_pwm_up_down			\Default Work Unit\synth_pwm_up_down	
@@ -58,18 +67,24 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	962926609	Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Default Work Unit\Aiming\White Noise OnTarget\Tone Generator	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	804718	E4	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O4\E4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Notes\O4\E4		384096
 	19019098	FS_Concrete_01	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Footsteps\Concrete\FS_Concrete_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Footsteps\Concrete\FS_Concrete_01		42952
 	25687503	FS_Gravel_01	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Footsteps\Gravel\FS_Gravel_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Footsteps\Gravel\FS_Gravel_01		43006
+	25952176	D4	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O4\D4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Notes\O4\D4		384096
 	33821008	PlingFail	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\PlingFail_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PlingFail		768096
 	106854697	80	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\DistanceCount\80_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Beacon\DistanceCount\80		94456
 	136132481	FS_Tile_03	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Footsteps\Tile\FS_Tile_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Footsteps\Tile\FS_Tile_03		58572
+	145167046	E3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O3\E3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Notes\O3\E3		384096
 	179996937	30	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\DistanceCount\30_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Beacon\DistanceCount\30		118272
-	188759417	A3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Notes\A3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Notes\A3		384096
+	181898422	E2	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O2\E2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Notes\O2\E2		384096
 	191538228	CEABC	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\CEABC_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Melodies\CEABC\CEABC		768096
-	214797377	C3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Notes\C3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Notes\C3		384096
+	206363750	G3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O3\G3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Notes\O3\G3		384096
 	221568551	10	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\DistanceCount\10_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Beacon\DistanceCount\10		76924
-	313054933	Balloon Hover	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\balloon_hover_831E7B72.wem		\Actor-Mixer Hierarchy\Default Work Unit\Targets\Balloon Hover		768096
+	323227027	A3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O3\A3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Notes\O3\A3		384096
+	332946074	C4	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O4\C4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Notes\O4\C4		384096
 	391679118	FS_Dirt_03	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Footsteps\Dirt\FS_Dirt_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Footsteps\Dirt\FS_Dirt_03		75892
+	423178395	F2	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O2\F2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Notes\O2\F2		384096
+	427559518	B4	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O4\B4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Notes\O4\B4		384096
 	447603507	destination_reached	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\destination_reached_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Beacon\DistanceCount\destination_reached		264096
 	454928087	FS_Concrete_03	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Footsteps\Concrete\FS_Concrete_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Footsteps\Concrete\FS_Concrete_03		63518
 	473231221	FS_Gravel_03	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Footsteps\Gravel\FS_Gravel_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Footsteps\Gravel\FS_Gravel_03		48248
@@ -79,27 +94,29 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	517302441	PlingSuccess	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\PlingSuccess_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PlingSuccess		384096
 	538381605	90	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\DistanceCount\90_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Beacon\DistanceCount\90		120096
 	564419961	FS_Dirt_04	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Footsteps\Dirt\FS_Dirt_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Footsteps\Dirt\FS_Dirt_04		54372
-	602516568	B3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Notes\B3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Notes\B3		384096
 	603105156	100	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\DistanceCount\100_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Beacon\DistanceCount\100		170352
+	624828506	D2	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O2\D2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Notes\O2\D2		384096
 	632144886	BeaconLR	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\BeaconSignal_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Beacon\BeaconLR\BeaconLR		42096
-	637238498	D3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Notes\D3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Notes\D3		384096
-	672687142	C4	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Notes\C4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Notes\C4		384096
 	708823612	FS_Concrete_02	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Footsteps\Concrete\FS_Concrete_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Footsteps\Concrete\FS_Concrete_02		55048
+	720284769	A4	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O4\A4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Notes\O4\A4		384096
 	732948850	50	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\DistanceCount\50_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Beacon\DistanceCount\50		133528
 	742077720	FS_Tile_01	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Footsteps\Tile\FS_Tile_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Footsteps\Tile\FS_Tile_01		37538
-	773820192	Pling	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Pling_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Pling		768096
+	755696122	F4	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O4\F4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Notes\O4\F4		384096
+	782485844	G4	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O4\G4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Notes\O4\G4		384096
 	795254982	FS_Gravel_02	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Footsteps\Gravel\FS_Gravel_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Footsteps\Gravel\FS_Gravel_02		34198
+	807706107	G2	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O2\G2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Notes\O2\G2		384096
 	843155914	FS_Tile_02	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Footsteps\Tile\FS_Tile_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Footsteps\Tile\FS_Tile_02		53700
-	869907179	A2	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Notes\A2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Notes\A2		384096
 	885493880	FS_Gravel_04	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Footsteps\Gravel\FS_Gravel_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Footsteps\Gravel\FS_Gravel_04		35250
-	886792696	B2	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Notes\B2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Notes\B2		384096
 	893369011	FS_Tile_04	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Footsteps\Tile\FS_Tile_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Footsteps\Tile\FS_Tile_04		34826
-	900315779	F3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Notes\F3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Notes\F3		384096
-	945492545	E3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Notes\E3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Notes\E3		384096
+	918400394	C3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O3\C3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Notes\O3\C3		384096
+	925483801	A2	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O2\A2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Notes\O2\A2		384096
+	927525782	D3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O3\D3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Notes\O3\D3		384096
 	964224159	60	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\DistanceCount\60_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Beacon\DistanceCount\60		144096
 	966532559	BeaconLock	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\BeaconLock_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Beacon\BeaconLock		249696
+	980309991	C2	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O2\C2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Notes\O2\C2		384096
+	990206362	B3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O3\B3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Notes\O3\B3		384096
 	1030614238	FS_Concrete_04	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Footsteps\Concrete\FS_Concrete_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Footsteps\Concrete\FS_Concrete_04		39220
 	1042648744	20	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\DistanceCount\20_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Beacon\DistanceCount\20		134212
-	1065528809	G3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Notes\G3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Notes\G3		384096
+	1064747333	F3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O3\F3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Notes\O3\F3		384096
 	1072872748	40	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\DistanceCount\40_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Beacon\DistanceCount\40		122040
 

@@ -11,6 +11,18 @@
 						<Switch Name="Concrete" ID="{7624D16A-D815-43AD-A2F4-FF7B846EB163}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="Notes" ID="{E1C91F62-C821-4B46-9883-DD73BF311742}">
+					<ChildrenList>
+						<Switch Name="C" ID="{6DDC42CF-D8EA-4099-88BC-DFFDE27F6B4F}"/>
+						<Switch Name="D" ID="{DBFDCA59-EF7F-453D-AECD-0EF71578B257}"/>
+						<Switch Name="E" ID="{02AB2355-067E-4D4F-B6D5-94897C04F084}"/>
+						<Switch Name="F" ID="{5A4D8C09-837D-4CDE-A96E-1D78431F69A0}"/>
+						<Switch Name="G" ID="{B55AC1FE-7DE6-4EB6-B3F8-D7283850E280}"/>
+						<Switch Name="A" ID="{69A2F832-DD04-48E8-A090-5AF674AE02FC}"/>
+						<Switch Name="B" ID="{2EB7549A-98A9-4DA8-906E-E0C3A2E5267B}"/>
+						<Switch Name="ErrorDefault" ID="{1F290698-C25B-44C1-AA17-891CAC401169}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

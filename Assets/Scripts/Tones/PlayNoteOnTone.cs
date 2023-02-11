@@ -5,45 +5,142 @@ using UnityEngine;
 
 public class PlayNoteOnTone : MonoBehaviour
 {
-    public AK.Wwise.Event C;
-    public AK.Wwise.Event D;
-    public AK.Wwise.Event E;
-    public AK.Wwise.Event F;
-    public AK.Wwise.Event G;
-    public AK.Wwise.Event A;
-    public AK.Wwise.Event B;
+    public AK.Wwise.Event C2;
+    public AK.Wwise.Event D2;
+    public AK.Wwise.Event E2;
+    public AK.Wwise.Event F2;
+    public AK.Wwise.Event G2;
+    public AK.Wwise.Event A2;
+    public AK.Wwise.Event B2;
+    public AK.Wwise.Event C3;
+    public AK.Wwise.Event D3;
+    public AK.Wwise.Event E3;
+    public AK.Wwise.Event F3;
+    public AK.Wwise.Event G3;
+    public AK.Wwise.Event A3;
+    public AK.Wwise.Event B3;
+    public AK.Wwise.Event C4;
+    public AK.Wwise.Event D4;
+    public AK.Wwise.Event E4;
+    public AK.Wwise.Event F4;
+    public AK.Wwise.Event G4;
+    public AK.Wwise.Event A4;
+    public AK.Wwise.Event B4;
 
-    public AK.Wwise.Event currentNote;
+    private AK.Wwise.Event currentNote = new AK.Wwise.Event();
 
-    public void PlayNote(string name, GameObject tone)
+
+
+    public void PlayNote(string materialToNote, string _nameGOOctave, GameObject tone)
     {
-        switch (name)
+        switch (materialToNote)
         {
             case "C":
-                currentNote = C;
+                switch (_nameGOOctave)
+                {
+                    case "2":
+                        currentNote = C2;
+                        break;
+                    case "3":
+                        currentNote = C3;
+                        break;
+                    case "4":
+                        currentNote = C4;
+                        break;
+                }
                 break;
             case "D":
-                currentNote = D;
+                switch (_nameGOOctave)
+                {
+                    case "2":
+                        currentNote = D2;
+                        break;
+                    case "3":
+                        currentNote = D3;
+                        break;
+                    case "4":
+                        currentNote = D4;
+                        break;
+                }
                 break;
             case "E":
-                currentNote = E;
+                switch (_nameGOOctave)
+                {
+                    case "2":
+                        currentNote = E2;
+                        break;
+                    case "3":
+                        currentNote = E3;
+                        break;
+                    case "4":
+                        currentNote = E4;
+                        break;
+                }
                 break;
             case "F":
-                currentNote = F;
+                switch (_nameGOOctave)
+                {
+                    case "2":
+                        currentNote = F2;
+                        break;
+                    case "3":
+                        currentNote = F3;
+                        break;
+                    case "4":
+                        currentNote = F4;
+                        break;
+                }
                 break;
             case "G":
-                currentNote = G;
+                switch (_nameGOOctave)
+                {
+                    case "2":
+                        currentNote = G2;
+                        break;
+                    case "3":
+                        currentNote = G3;
+                        break;
+                    case "4":
+                        currentNote = G4;
+                        break;
+                }
                 break;
             case "A":
-                currentNote = A;
+                switch (_nameGOOctave)
+                {
+                    case "2":
+                        currentNote = A2;
+                        break;
+                    case "3":
+                        currentNote = A3;
+                        break;
+                    case "4":
+                        currentNote = A4;
+                        break;
+                }
                 break;
             case "B":
-                currentNote = B;
-                break;
-            default:
-                currentNote = C;
+                switch (_nameGOOctave)
+                {
+                    case "2":
+                        currentNote = B2;
+                        break;
+                    case "3":
+                        currentNote = B3;
+                        break;
+                    case "4":
+                        currentNote = B4;
+                        break;
+                }
                 break;
         }
+        print(tone.name);
         currentNote.Post(tone);
     }
+
+    // void PostNote(string note, GameObject tone)
+    // {
+    //     AkSoundEngine.SetSwitch("Notes", note, tone);
+    //     AkSoundEngine.PostEvent("O2", tone);
+    // }
 }

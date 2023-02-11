@@ -123,7 +123,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 36069028d9c6b149af9e7a7e2bc60423
     GuidInternal: 
-    m_lastTime: -8585259050194411167
+    m_lastTime: -8585254849204308924
     List:
     - name: Main
       guid: aaa465e9ee0711468f19203f9d710ce1
@@ -151,88 +151,8 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 43efb42f60dfb9479eefa2004292fbf9
     GuidInternal: 
-    m_lastTime: -8585255428618666120
+    m_lastTime: -8585254849204618242
     List:
-    - name: A2
-      guid: d80565ca86137c44bc2366cd2d1463ca
-      id: 1886858600
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: Notes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: A2
-        ObjectType: 3
-        guid: d80565ca86137c44bc2366cd2d1463ca
-      Path: Events\Default Work Unit\Notes\A2
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: A3
-      guid: a94f5e6b316e8b4a93455a5d621af8f4
-      id: 1886858601
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: Notes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: A3
-        ObjectType: 3
-        guid: a94f5e6b316e8b4a93455a5d621af8f4
-      Path: Events\Default Work Unit\Notes\A3
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: B2
-      guid: 1a01bd7031aeb541afffb6d210c75fc4
-      id: 1870081013
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: Notes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: B2
-        ObjectType: 3
-        guid: 1a01bd7031aeb541afffb6d210c75fc4
-      Path: Events\Default Work Unit\Notes\B2
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: B3
-      guid: 262f288d8a095749a315617f0d523301
-      id: 1870081012
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: Notes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: B3
-        ObjectType: 3
-        guid: 262f288d8a095749a315617f0d523301
-      Path: Events\Default Work Unit\Notes\B3
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: Beacon
       guid: ed98b4f3cbb4cd45a62eb3dbe94f8e70
       id: 3241852425
@@ -296,46 +216,6 @@ MonoBehaviour:
         ObjectType: 3
         guid: beaec52c83c1614b9b47bdc7b337289d
       Path: Events\Default Work Unit\SFX\Beacon\BeaconLR
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: C3
-      guid: bdeeb13a1c004d4bbb83c89f30542a22
-      id: 1853303303
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: Notes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: C3
-        ObjectType: 3
-        guid: bdeeb13a1c004d4bbb83c89f30542a22
-      Path: Events\Default Work Unit\Notes\C3
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: C4
-      guid: c9d3dff0ac460e459857d120aae824f5
-      id: 1853303296
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: Notes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: C4
-        ObjectType: 3
-        guid: c9d3dff0ac460e459857d120aae824f5
-      Path: Events\Default Work Unit\Notes\C4
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -434,26 +314,6 @@ MonoBehaviour:
         ObjectType: 3
         guid: f93bea8499c41247994767a09f020673
       Path: Events\Default Work Unit\SFX\Beacon\DistanceCount\d20
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: D3
-      guid: 7df874a0c3e29849bcc273fb593fe7fb
-      id: 1836525714
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: Notes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: D3
-        ObjectType: 3
-        guid: 7df874a0c3e29849bcc273fb593fe7fb
-      Path: Events\Default Work Unit\Notes\D3
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -708,46 +568,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: E3
-      guid: 83658ab9cf5a044a861d8422a0613722
-      id: 1819748157
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: Notes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: E3
-        ObjectType: 3
-        guid: 83658ab9cf5a044a861d8422a0613722
-      Path: Events\Default Work Unit\Notes\E3
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: F3
-      guid: 1b39af8b0f471546866f74ca1ebfeaf7
-      id: 1802970440
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: Notes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: F3
-        ObjectType: 3
-        guid: 1b39af8b0f471546866f74ca1ebfeaf7
-      Path: Events\Default Work Unit\Notes\F3
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: FreqDistanceEvent
       guid: 74c402e6d7077340a734ccbd7b265c9e
       id: 2218041646
@@ -762,26 +582,6 @@ MonoBehaviour:
         ObjectType: 3
         guid: 74c402e6d7077340a734ccbd7b265c9e
       Path: Events\Default Work Unit\FreqDistanceEvent
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: G3
-      guid: 175ed93ec402dc45b2198ba7925bf0ea
-      id: 1786192859
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: Notes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: G3
-        ObjectType: 3
-        guid: 175ed93ec402dc45b2198ba7925bf0ea
-      Path: Events\Default Work Unit\Notes\G3
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -833,26 +633,6 @@ MonoBehaviour:
         ObjectType: 3
         guid: e4392008128a7e4a8c3da3c8af76ee16
       Path: Events\Default Work Unit\PlayerFoot
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Pling
-      guid: e011f4bf74827046867a5cb3491b9ef9
-      id: 652836727
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SFX
-        ObjectType: 4
-        guid: c73df9cd04502e468b4b7a815b229a25
-      - ElementName: Pling
-        ObjectType: 3
-        guid: e011f4bf74827046867a5cb3491b9ef9
-      Path: Events\Default Work Unit\SFX\Pling
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1152,7 +932,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 2cc96633e1efc745a10ab3fad73419fc
     GuidInternal: 
-    m_lastTime: -8585282493993287750
+    m_lastTime: -8585254861384396238
     List:
     - name: Materials
       guid: 6c094231a8874f408fd7b315fb91a6a9
@@ -1236,6 +1016,152 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
+    - name: Notes
+      guid: 621fc9e121c8464b9883dd73bf311742
+      id: 201729212
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2cc96633e1efc745a10ab3fad73419fc
+      - ElementName: Notes
+        ObjectType: 11
+        guid: 621fc9e121c8464b9883dd73bf311742
+      Path: Switches\Default Work Unit\Notes
+      values:
+      - name: A
+        guid: 32f8a26904dde848a0905af674ae02fc
+        id: 84696446
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 2cc96633e1efc745a10ab3fad73419fc
+        - ElementName: Notes
+          ObjectType: 11
+          guid: 621fc9e121c8464b9883dd73bf311742
+        - ElementName: A
+          ObjectType: 10
+          guid: 32f8a26904dde848a0905af674ae02fc
+      - name: B
+        guid: 9a54b72ea998a84d906ee0c3a2e5267b
+        id: 84696445
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 2cc96633e1efc745a10ab3fad73419fc
+        - ElementName: Notes
+          ObjectType: 11
+          guid: 621fc9e121c8464b9883dd73bf311742
+        - ElementName: B
+          ObjectType: 10
+          guid: 9a54b72ea998a84d906ee0c3a2e5267b
+      - name: C
+        guid: cf42dc6dead8994088bcdffde27f6b4f
+        id: 84696444
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 2cc96633e1efc745a10ab3fad73419fc
+        - ElementName: Notes
+          ObjectType: 11
+          guid: 621fc9e121c8464b9883dd73bf311742
+        - ElementName: C
+          ObjectType: 10
+          guid: cf42dc6dead8994088bcdffde27f6b4f
+      - name: D
+        guid: 59cafddb7fef3d45aecd0ef71578b257
+        id: 84696443
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 2cc96633e1efc745a10ab3fad73419fc
+        - ElementName: Notes
+          ObjectType: 11
+          guid: 621fc9e121c8464b9883dd73bf311742
+        - ElementName: D
+          ObjectType: 10
+          guid: 59cafddb7fef3d45aecd0ef71578b257
+      - name: E
+        guid: 5523ab027e064f4db6d594897c04f084
+        id: 84696442
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 2cc96633e1efc745a10ab3fad73419fc
+        - ElementName: Notes
+          ObjectType: 11
+          guid: 621fc9e121c8464b9883dd73bf311742
+        - ElementName: E
+          ObjectType: 10
+          guid: 5523ab027e064f4db6d594897c04f084
+      - name: ErrorDefault
+        guid: 9806291f5bc2c144aa17891cac401169
+        id: 1793348552
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 2cc96633e1efc745a10ab3fad73419fc
+        - ElementName: Notes
+          ObjectType: 11
+          guid: 621fc9e121c8464b9883dd73bf311742
+        - ElementName: ErrorDefault
+          ObjectType: 10
+          guid: 9806291f5bc2c144aa17891cac401169
+      - name: F
+        guid: 098c4d5a7d83de4ca96e1d78431f69a0
+        id: 84696441
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 2cc96633e1efc745a10ab3fad73419fc
+        - ElementName: Notes
+          ObjectType: 11
+          guid: 621fc9e121c8464b9883dd73bf311742
+        - ElementName: F
+          ObjectType: 10
+          guid: 098c4d5a7d83de4ca96e1d78431f69a0
+      - name: G
+        guid: fec15ab5e67db64eb3f8d7283850e280
+        id: 84696440
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 2cc96633e1efc745a10ab3fad73419fc
+        - ElementName: Notes
+          ObjectType: 11
+          guid: 621fc9e121c8464b9883dd73bf311742
+        - ElementName: G
+          ObjectType: 10
+          guid: fec15ab5e67db64eb3f8d7283850e280
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -1251,7 +1177,7 @@ MonoBehaviour:
     m_lastTime: -8585282545794215635
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 01000000020000000300000004000000050000000600000007000000080000000b0000000c0000000d0000000e0000000f0000001100000012000000130000001400000016000000170000001b0000001d0000002c0000002e0000002f000000310000003f000000c1000000c2000000c8000000
+  ExpandedWaapiItemIds: 01000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000e0000001100000012000000140000001500000016000000170000001b0000001d00000023000000260000002c0000002e0000002f000000310000003f00000087000000c1000000c2000000c8000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

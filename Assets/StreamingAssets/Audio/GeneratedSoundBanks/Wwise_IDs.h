@@ -15,14 +15,19 @@ namespace AK
     {
         static const AkUniqueID A2 = 1886858600U;
         static const AkUniqueID A3 = 1886858601U;
+        static const AkUniqueID A4 = 1886858606U;
         static const AkUniqueID B2 = 1870081013U;
         static const AkUniqueID B3 = 1870081012U;
+        static const AkUniqueID B4 = 1870081011U;
         static const AkUniqueID BEACONLOCK = 19930668U;
         static const AkUniqueID BEACONLR = 767190967U;
+        static const AkUniqueID C2 = 1853303302U;
         static const AkUniqueID C3 = 1853303303U;
         static const AkUniqueID C4 = 1853303296U;
         static const AkUniqueID CEABCEVENT = 2118505581U;
+        static const AkUniqueID D2 = 1836525715U;
         static const AkUniqueID D3 = 1836525714U;
+        static const AkUniqueID D4 = 1836525717U;
         static const AkUniqueID D10 = 3801406080U;
         static const AkUniqueID D20 = 3851738969U;
         static const AkUniqueID D30 = 3834961382U;
@@ -35,12 +40,17 @@ namespace AK
         static const AkUniqueID D100 = 810809264U;
         static const AkUniqueID DESTINATION_REACHED = 4069116836U;
         static const AkUniqueID DISTANCEC = 2982082363U;
+        static const AkUniqueID E2 = 1819748156U;
         static const AkUniqueID E3 = 1819748157U;
+        static const AkUniqueID E4 = 1819748154U;
+        static const AkUniqueID F2 = 1802970441U;
         static const AkUniqueID F3 = 1802970440U;
+        static const AkUniqueID F4 = 1802970447U;
         static const AkUniqueID FREQDISTANCEEVENT = 2218041646U;
+        static const AkUniqueID G2 = 1786192858U;
         static const AkUniqueID G3 = 1786192859U;
+        static const AkUniqueID G4 = 1786192860U;
         static const AkUniqueID PLAYERFOOT = 2664667690U;
-        static const AkUniqueID PLING = 652836727U;
         static const AkUniqueID PLINGFAIL = 2086503983U;
         static const AkUniqueID PLINGSUCCESS = 1212327680U;
         static const AkUniqueID WHITENOISEONTARGET = 1848491570U;
@@ -78,6 +88,23 @@ namespace AK
                 static const AkUniqueID TILE = 2637588553U;
             } // namespace SWITCH
         } // namespace MATERIALS
+
+        namespace NOTES
+        {
+            static const AkUniqueID GROUP = 201729212U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID A = 84696446U;
+                static const AkUniqueID B = 84696445U;
+                static const AkUniqueID C = 84696444U;
+                static const AkUniqueID D = 84696443U;
+                static const AkUniqueID E = 84696442U;
+                static const AkUniqueID ERRORDEFAULT = 1793348552U;
+                static const AkUniqueID F = 84696441U;
+                static const AkUniqueID G = 84696440U;
+            } // namespace SWITCH
+        } // namespace NOTES
 
     } // namespace SWITCHES
 

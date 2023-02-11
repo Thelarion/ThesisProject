@@ -10,10 +10,13 @@ public class RunInterval : MonoBehaviour
     private ArrayList _materialsAvailableString = new ArrayList();
     private Material[] _materialRenderer;
     private int _materialIndex;
-    private string _nameGameObject;
+    private string _nameGONoteAndOctave;
+    private string _nameGONote;
+    private string _nameGOOctave;
     [HideInInspector] public bool TapState;
     [HideInInspector] public PlayNoteOnTone PlayNoteOnTone;
     private string currentMaterialName;
+    private string constructedNote;
     private ParticleSystem noteParticles;
 
     void Start()
@@ -21,7 +24,9 @@ public class RunInterval : MonoBehaviour
         noteParticles = transform.GetChild(0).GetComponent<ParticleSystem>();
         PlayNoteOnTone = transform.parent.gameObject.GetComponent<PlayNoteOnTone>();
         LoadMaterialsFromResources();
-        _nameGameObject = transform.name;
+        _nameGONoteAndOctave = transform.name;
+        _nameGONote = _nameGONoteAndOctave[0].ToString();
+        _nameGOOctave = _nameGONoteAndOctave[1].ToString();
         _renderer = GetComponent<Renderer>();
         _materialRenderer = _renderer.materials;
         StartCoroutine(IntervalChangeTarget());
@@ -75,7 +80,7 @@ public class RunInterval : MonoBehaviour
         void GenerateMaterials(ArrayList fluentMaterialArray)
         {
             // Get correct material
-            correctMaterial = _materialsAvailable[_materialsAvailableString.IndexOf(_nameGameObject)] as Material;
+            correctMaterial = _materialsAvailable[_materialsAvailableString.IndexOf(_nameGONote)] as Material;
             // Remove the correct material from the fluent array
             fluentMaterialArray.Remove(correctMaterial);
             // print(correctMaterial);
@@ -111,7 +116,7 @@ public class RunInterval : MonoBehaviour
     {
         string[] splitArray = _renderer.material.name.Split(char.Parse(" "));
         string currentTargetName = splitArray[0];
-        TapState = currentTargetName == _nameGameObject ? true : false;
+        TapState = currentTargetName == _nameGONote ? true : false;
 
     }
 
@@ -120,13 +125,14 @@ public class RunInterval : MonoBehaviour
         ChangeMaterial();
         CheckTargetState();
         currentMaterialName = _materialRenderer[0].name;
+
         yield return new WaitForSeconds(3);
         StartCoroutine(IntervalChangeTarget());
     }
 
     IEnumerator IntervalNoteAndEffect()
     {
-        PlayNoteOnTone.PlayNote(currentMaterialName, transform.gameObject);
+        PlayNoteOnTone.PlayNote(currentMaterialName, _nameGOOctave, transform.gameObject);
         noteParticles.Play();
         yield return new WaitForSeconds(1);
         StartCoroutine(IntervalNoteAndEffect());

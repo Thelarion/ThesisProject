@@ -55,6 +55,18 @@
 				</StateGroup>
 			</StateGroups>
 			<SwitchGroups>
+				<SwitchGroup Id="201729212" Name="Notes">
+					<Switches>
+						<Switch Id="84696440" Name="G"/>
+						<Switch Id="84696441" Name="F"/>
+						<Switch Id="84696442" Name="E"/>
+						<Switch Id="84696443" Name="D"/>
+						<Switch Id="84696444" Name="C"/>
+						<Switch Id="84696445" Name="B"/>
+						<Switch Id="84696446" Name="A"/>
+						<Switch Id="1793348552" Name="ErrorDefault"/>
+					</Switches>
+				</SwitchGroup>
 				<SwitchGroup Id="4050929301" Name="Materials">
 					<Switches>
 						<Switch Id="841620460" Name="Concrete"/>
@@ -65,10 +77,14 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{C8698420-7668-8218-AC81-B9BDD59E9395}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{E6F1F7F7-E213-78BC-E2F9-5C4C997F7E85}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
+				<File Id="804718" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>O4\E4.wav</ShortName>
+					<CachePath>SFX/O4/E4_10C4C929.wem</CachePath>
+				</File>
 				<File Id="19019098" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Concrete\FS_Concrete_01.wav</ShortName>
 					<CachePath>SFX/Footsteps/Concrete/FS_Concrete_01_10C4C929.wem</CachePath>
@@ -76,6 +92,10 @@
 				<File Id="25687503" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Gravel\FS_Gravel_01.wav</ShortName>
 					<CachePath>SFX/Footsteps/Gravel/FS_Gravel_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="25952176" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>O4\D4.wav</ShortName>
+					<CachePath>SFX/O4/D4_10C4C929.wem</CachePath>
 				</File>
 				<File Id="33821008" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>PlingFail.wav</ShortName>
@@ -89,33 +109,49 @@
 					<ShortName>Footsteps\Tile\FS_Tile_03.wav</ShortName>
 					<CachePath>SFX/Footsteps/Tile/FS_Tile_03_10C4C929.wem</CachePath>
 				</File>
+				<File Id="145167046" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>O3\E3.wav</ShortName>
+					<CachePath>SFX/O3/E3_10C4C929.wem</CachePath>
+				</File>
 				<File Id="179996937" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>DistanceCount\30.wav</ShortName>
 					<CachePath>SFX/DistanceCount/30_10C4C929.wem</CachePath>
 				</File>
-				<File Id="188759417" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Notes\A3.wav</ShortName>
-					<CachePath>SFX/Notes/A3_10C4C929.wem</CachePath>
+				<File Id="181898422" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>O2\E2.wav</ShortName>
+					<CachePath>SFX/O2/E2_10C4C929.wem</CachePath>
 				</File>
 				<File Id="191538228" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>CEABC.wav</ShortName>
 					<CachePath>SFX/CEABC_D79FB2B7.wem</CachePath>
 				</File>
-				<File Id="214797377" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Notes\C3.wav</ShortName>
-					<CachePath>SFX/Notes/C3_10C4C929.wem</CachePath>
+				<File Id="206363750" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>O3\G3.wav</ShortName>
+					<CachePath>SFX/O3/G3_10C4C929.wem</CachePath>
 				</File>
 				<File Id="221568551" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>DistanceCount\10.wav</ShortName>
 					<CachePath>SFX/DistanceCount/10_10C4C929.wem</CachePath>
 				</File>
-				<File Id="313054933" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>balloon_hover.wav</ShortName>
-					<CachePath>SFX/balloon_hover_831E7B72.wem</CachePath>
+				<File Id="323227027" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>O3\A3.wav</ShortName>
+					<CachePath>SFX/O3/A3_10C4C929.wem</CachePath>
+				</File>
+				<File Id="332946074" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>O4\C4.wav</ShortName>
+					<CachePath>SFX/O4/C4_10C4C929.wem</CachePath>
 				</File>
 				<File Id="391679118" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Dirt\FS_Dirt_03.wav</ShortName>
 					<CachePath>SFX/Footsteps/Dirt/FS_Dirt_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="423178395" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>O2\F2.wav</ShortName>
+					<CachePath>SFX/O2/F2_10C4C929.wem</CachePath>
+				</File>
+				<File Id="427559518" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>O4\B4.wav</ShortName>
+					<CachePath>SFX/O4/B4_10C4C929.wem</CachePath>
 				</File>
 				<File Id="447603507" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>destination_reached.wav</ShortName>
@@ -153,29 +189,25 @@
 					<ShortName>Footsteps\Dirt\FS_Dirt_04.wav</ShortName>
 					<CachePath>SFX/Footsteps/Dirt/FS_Dirt_04_10C4C929.wem</CachePath>
 				</File>
-				<File Id="602516568" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Notes\B3.wav</ShortName>
-					<CachePath>SFX/Notes/B3_10C4C929.wem</CachePath>
-				</File>
 				<File Id="603105156" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>DistanceCount\100.wav</ShortName>
 					<CachePath>SFX/DistanceCount/100_10C4C929.wem</CachePath>
+				</File>
+				<File Id="624828506" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>O2\D2.wav</ShortName>
+					<CachePath>SFX/O2/D2_10C4C929.wem</CachePath>
 				</File>
 				<File Id="632144886" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BeaconSignal.wav</ShortName>
 					<CachePath>SFX/BeaconSignal_10C4C929.wem</CachePath>
 				</File>
-				<File Id="637238498" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Notes\D3.wav</ShortName>
-					<CachePath>SFX/Notes/D3_10C4C929.wem</CachePath>
-				</File>
-				<File Id="672687142" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Notes\C4.wav</ShortName>
-					<CachePath>SFX/Notes/C4_10C4C929.wem</CachePath>
-				</File>
 				<File Id="708823612" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Concrete\FS_Concrete_02.wav</ShortName>
 					<CachePath>SFX/Footsteps/Concrete/FS_Concrete_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="720284769" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>O4\A4.wav</ShortName>
+					<CachePath>SFX/O4/A4_10C4C929.wem</CachePath>
 				</File>
 				<File Id="732948850" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>DistanceCount\50.wav</ShortName>
@@ -185,41 +217,45 @@
 					<ShortName>Footsteps\Tile\FS_Tile_01.wav</ShortName>
 					<CachePath>SFX/Footsteps/Tile/FS_Tile_01_10C4C929.wem</CachePath>
 				</File>
-				<File Id="773820192" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Pling.wav</ShortName>
-					<CachePath>SFX/Pling_10C4C929.wem</CachePath>
+				<File Id="755696122" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>O4\F4.wav</ShortName>
+					<CachePath>SFX/O4/F4_10C4C929.wem</CachePath>
+				</File>
+				<File Id="782485844" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>O4\G4.wav</ShortName>
+					<CachePath>SFX/O4/G4_10C4C929.wem</CachePath>
 				</File>
 				<File Id="795254982" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Gravel\FS_Gravel_02.wav</ShortName>
 					<CachePath>SFX/Footsteps/Gravel/FS_Gravel_02_10C4C929.wem</CachePath>
 				</File>
+				<File Id="807706107" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>O2\G2.wav</ShortName>
+					<CachePath>SFX/O2/G2_10C4C929.wem</CachePath>
+				</File>
 				<File Id="843155914" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Tile\FS_Tile_02.wav</ShortName>
 					<CachePath>SFX/Footsteps/Tile/FS_Tile_02_10C4C929.wem</CachePath>
-				</File>
-				<File Id="869907179" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Notes\A2.wav</ShortName>
-					<CachePath>SFX/Notes/A2_10C4C929.wem</CachePath>
 				</File>
 				<File Id="885493880" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Gravel\FS_Gravel_04.wav</ShortName>
 					<CachePath>SFX/Footsteps/Gravel/FS_Gravel_04_10C4C929.wem</CachePath>
 				</File>
-				<File Id="886792696" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Notes\B2.wav</ShortName>
-					<CachePath>SFX/Notes/B2_10C4C929.wem</CachePath>
-				</File>
 				<File Id="893369011" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Tile\FS_Tile_04.wav</ShortName>
 					<CachePath>SFX/Footsteps/Tile/FS_Tile_04_10C4C929.wem</CachePath>
 				</File>
-				<File Id="900315779" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Notes\F3.wav</ShortName>
-					<CachePath>SFX/Notes/F3_10C4C929.wem</CachePath>
+				<File Id="918400394" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>O3\C3.wav</ShortName>
+					<CachePath>SFX/O3/C3_10C4C929.wem</CachePath>
 				</File>
-				<File Id="945492545" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Notes\E3.wav</ShortName>
-					<CachePath>SFX/Notes/E3_10C4C929.wem</CachePath>
+				<File Id="925483801" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>O2\A2.wav</ShortName>
+					<CachePath>SFX/O2/A2_10C4C929.wem</CachePath>
+				</File>
+				<File Id="927525782" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>O3\D3.wav</ShortName>
+					<CachePath>SFX/O3/D3_10C4C929.wem</CachePath>
 				</File>
 				<File Id="964224159" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>DistanceCount\60.wav</ShortName>
@@ -229,6 +265,14 @@
 					<ShortName>BeaconLock.wav</ShortName>
 					<CachePath>SFX/BeaconLock_10C4C929.wem</CachePath>
 				</File>
+				<File Id="980309991" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>O2\C2.wav</ShortName>
+					<CachePath>SFX/O2/C2_10C4C929.wem</CachePath>
+				</File>
+				<File Id="990206362" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>O3\B3.wav</ShortName>
+					<CachePath>SFX/O3/B3_10C4C929.wem</CachePath>
+				</File>
 				<File Id="1030614238" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Concrete\FS_Concrete_04.wav</ShortName>
 					<CachePath>SFX/Footsteps/Concrete/FS_Concrete_04_10C4C929.wem</CachePath>
@@ -237,9 +281,9 @@
 					<ShortName>DistanceCount\20.wav</ShortName>
 					<CachePath>SFX/DistanceCount/20_10C4C929.wem</CachePath>
 				</File>
-				<File Id="1065528809" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Notes\G3.wav</ShortName>
-					<CachePath>SFX/Notes/G3_10C4C929.wem</CachePath>
+				<File Id="1064747333" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>O3\F3.wav</ShortName>
+					<CachePath>SFX/O3/F3_10C4C929.wem</CachePath>
 				</File>
 				<File Id="1072872748" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>DistanceCount\40.wav</ShortName>
@@ -256,22 +300,28 @@
 			<Events>
 				<Event Id="1886858600" Name="A2" MaxAttenuation="10" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
-						<MediaRef Id="869907179"/>
+						<MediaRef Id="925483801"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1886858601" Name="A3" MaxAttenuation="10" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
-						<MediaRef Id="188759417"/>
+						<MediaRef Id="323227027"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1870081013" Name="B2" MaxAttenuation="10" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="1886858606" Name="A4" MaxAttenuation="10" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
-						<MediaRef Id="886792696"/>
+						<MediaRef Id="720284769"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1870081013" Name="B2" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1870081012" Name="B3" MaxAttenuation="10" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
-						<MediaRef Id="602516568"/>
+						<MediaRef Id="990206362"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1870081011" Name="B4" MaxAttenuation="10" DurationType="OneShot" DurationMin="2" DurationMax="2">
+					<MediaRefs>
+						<MediaRef Id="427559518"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="19930668" Name="BeaconLock" DurationType="OneShot" DurationMin="1.3" DurationMax="1.3">
@@ -289,14 +339,19 @@
 						</Custom>
 					</PluginRefs>
 				</Event>
+				<Event Id="1853303302" Name="C2" MaxAttenuation="10" DurationType="OneShot" DurationMin="2" DurationMax="2">
+					<MediaRefs>
+						<MediaRef Id="980309991"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1853303303" Name="C3" MaxAttenuation="10" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
-						<MediaRef Id="214797377"/>
+						<MediaRef Id="918400394"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1853303296" Name="C4" MaxAttenuation="10" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
-						<MediaRef Id="672687142"/>
+						<MediaRef Id="332946074"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="2118505581" Name="CEABCEvent" DurationType="OneShot" DurationMin="4" DurationMax="4">
@@ -314,6 +369,11 @@
 						<MediaRef Id="603105156"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1836525715" Name="D2" MaxAttenuation="10" DurationType="OneShot" DurationMin="2" DurationMax="2">
+					<MediaRefs>
+						<MediaRef Id="624828506"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3851738969" Name="d20" DurationType="OneShot" DurationMin="0.69852084" DurationMax="0.69852084">
 					<MediaRefs>
 						<MediaRef Id="1042648744"/>
@@ -321,12 +381,17 @@
 				</Event>
 				<Event Id="1836525714" Name="D3" MaxAttenuation="10" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
-						<MediaRef Id="637238498"/>
+						<MediaRef Id="927525782"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="3834961382" Name="d30" DurationType="OneShot" DurationMin="0.6155" DurationMax="0.6155">
 					<MediaRefs>
 						<MediaRef Id="179996937"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1836525717" Name="D4" MaxAttenuation="10" DurationType="OneShot" DurationMin="2" DurationMax="2">
+					<MediaRefs>
+						<MediaRef Id="25952176"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="3885294271" Name="d40" DurationType="OneShot" DurationMin="0.635125" DurationMax="0.635125">
@@ -365,14 +430,34 @@
 					</MediaRefs>
 				</Event>
 				<Event Id="2982082363" Name="distanceC" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1819748156" Name="E2" MaxAttenuation="10" DurationType="OneShot" DurationMin="2" DurationMax="2">
+					<MediaRefs>
+						<MediaRef Id="181898422"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1819748157" Name="E3" MaxAttenuation="10" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
-						<MediaRef Id="945492545"/>
+						<MediaRef Id="145167046"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1819748154" Name="E4" MaxAttenuation="10" DurationType="OneShot" DurationMin="2" DurationMax="2">
+					<MediaRefs>
+						<MediaRef Id="804718"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1802970441" Name="F2" MaxAttenuation="10" DurationType="OneShot" DurationMin="2" DurationMax="2">
+					<MediaRefs>
+						<MediaRef Id="423178395"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1802970440" Name="F3" MaxAttenuation="10" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
-						<MediaRef Id="900315779"/>
+						<MediaRef Id="1064747333"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1802970447" Name="F4" MaxAttenuation="10" DurationType="OneShot" DurationMin="2" DurationMax="2">
+					<MediaRefs>
+						<MediaRef Id="755696122"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="2218041646" Name="FreqDistanceEvent" DurationType="Infinite">
@@ -382,9 +467,19 @@
 						</Custom>
 					</PluginRefs>
 				</Event>
+				<Event Id="1786192858" Name="G2" MaxAttenuation="10" DurationType="OneShot" DurationMin="2" DurationMax="2">
+					<MediaRefs>
+						<MediaRef Id="807706107"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1786192859" Name="G3" MaxAttenuation="10" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
-						<MediaRef Id="1065528809"/>
+						<MediaRef Id="206363750"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1786192860" Name="G4" MaxAttenuation="10" DurationType="OneShot" DurationMin="2" DurationMax="2">
+					<MediaRefs>
+						<MediaRef Id="782485844"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="2664667690" Name="PlayerFoot" DurationType="OneShot" DurationMin="0.386644" DurationMax="0.8593651">
@@ -427,11 +522,6 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="652836727" Name="Pling" DurationType="OneShot" DurationMin="4" DurationMax="4">
-					<MediaRefs>
-						<MediaRef Id="773820192"/>
-					</MediaRefs>
-				</Event>
 				<Event Id="2086503983" Name="PlingFail" DurationType="OneShot" DurationMin="4" DurationMax="4">
 					<MediaRefs>
 						<MediaRef Id="33821008"/>
@@ -453,7 +543,6 @@
 			<GameParameters>
 				<GameParameter Id="189100965" Name="left_right"/>
 				<GameParameter Id="1440328639" Name="frequency_depth"/>
-				<GameParameter Id="2345103495" Name="wall_occlusion"/>
 				<GameParameter Id="2474654343" Name="beacon_lr_volume"/>
 				<GameParameter Id="3639684685" Name="distance_freq"/>
 				<GameParameter Id="4213591503" Name="synth_pwm_up_down"/>
@@ -470,5 +559,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{D80CDB2C-CA55-72EF-E401-5AACBBEF83AD}</FileHash>
+	<FileHash>{CD1720B3-0218-240E-7C55-607C91989EA0}</FileHash>
 </SoundBanksInfo>

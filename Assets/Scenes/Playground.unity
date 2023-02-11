@@ -25639,7 +25639,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 918ae7274dcabba42ad484baf3ff09e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _melodySequence: 0000000002000000050000000600000000000000
+  _melodySequence: 0700000009000000050000000600000007000000
   _listUI:
   - {fileID: 1232257025}
   - {fileID: 2023031806}
@@ -30879,45 +30879,110 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9dbdadbde4332ba489e128e00a1b0c34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  C:
+  C2:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: f46b51e0e74cbee4792ea802d5d41220,
+    WwiseObjectReference: {fileID: 11400000, guid: 3df75927914bfad4482754ffcde0c5b8,
       type: 2}
-  D:
+  D2:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 664b9a249bc341a4d9cc38b5c09fa008,
+    WwiseObjectReference: {fileID: 11400000, guid: 69a8d0eec5f624846a3eb67a7d844e9b,
       type: 2}
-  E:
+  E2:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: f29c49acdc9fe0347b874bb1c8cca129,
+    WwiseObjectReference: {fileID: 11400000, guid: 4dc32dd701ba6e14cb449c7a81d5c16c,
       type: 2}
-  F:
+  F2:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: d1017db48b3d41e42bcec491794c32ff,
+    WwiseObjectReference: {fileID: 11400000, guid: de4727a7dc8fab64599bed8c7dd798af,
       type: 2}
-  G:
+  G2:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 22b7c52e099fd624292c866ff4aa6011,
+    WwiseObjectReference: {fileID: 11400000, guid: da768bb3f3384e84abbabad270d83f5a,
       type: 2}
-  A:
+  A2:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: eaa5ec47a4e1ca64da81c397c3085044,
+    WwiseObjectReference: {fileID: 11400000, guid: df137571a9b45dd44a98193b5fcdf82a,
       type: 2}
-  B:
+  B2:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: a1b2747baef96dd448c714479ce060a6,
+    WwiseObjectReference: {fileID: 11400000, guid: 71c3105845a0b6c42884b8868603a92a,
       type: 2}
-  currentNote:
+  C3:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: f46b51e0e74cbee4792ea802d5d41220,
+    WwiseObjectReference: {fileID: 11400000, guid: ca007e5b5e2ac3446b9c4a76d1850339,
+      type: 2}
+  D3:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 70968fe7ac8e0fd4a8140557f1a7f4ac,
+      type: 2}
+  E3:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: d996bfcd1ed5ed7439021aa2d5a89275,
+      type: 2}
+  F3:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 171bf684af02e7e44b78f6871541fa11,
+      type: 2}
+  G3:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 177465d5c4294224d9df2542dada096e,
+      type: 2}
+  A3:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 25666537d0f23bc4a803b3d22c616533,
+      type: 2}
+  B3:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 989803ab37f4b634ca5879a89cd54371,
+      type: 2}
+  C4:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a1eb281f174b5d94884049aefe10186c,
+      type: 2}
+  D4:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 45e830d7c06d5494aad3478333ae04f2,
+      type: 2}
+  E4:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 99064e8234de0854c857f478d217b171,
+      type: 2}
+  F4:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: d5bf1ae5e4ef29545b07da91a3c8c632,
+      type: 2}
+  G4:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: e38345de71a9ea143890bc725408d19a,
+      type: 2}
+  A4:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 7b49e63fea58a72478cfde58743c34aa,
+      type: 2}
+  B4:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: e8d917873b237fe4a84af5f6381f6a7d,
       type: 2}
 --- !u!1 &1490444880
 GameObject:
