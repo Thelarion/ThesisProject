@@ -62,16 +62,6 @@ public class AimManager : MonoBehaviour
             float distanceFreq = (Mathf.Sqrt(lengthRayForwardPlusDistanceFromRayEndpoint - distanceCameraToObject));
 
             AkSoundEngine.SetRTPCValue("distance_freq", distanceFreq);
-
-            // Draw ray and lines
-            // Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * lengthCameraToGetPoint, Color.red);
-            // Debug.DrawLine(rayCameraForward.GetPoint(lengthCameraToGetPoint), currentTarget.transform.position, Color.green);
-            // Debug.DrawLine(transform.position, currentTarget.transform.position, Color.yellow);
-
-            // Outputs on UI
-            // rightRayToObject.text = lengthRayForwardPlusDistanceFromRayEndpoint.ToString();
-            // leftCameraToObject.text = distanceCameraToObject.ToString();
-            // topLeftDifference.text = (Mathf.Sqrt(lengthRayForwardPlusDistanceFromRayEndpoint - distanceCameraToObject)).ToString("F3");
         }
     }
 
@@ -161,36 +151,6 @@ public class AimManager : MonoBehaviour
         }
     }
 
-    // private void DetermineCurrentTarget()
-    // {
-    //     // Get the Instances from Target Controller
-    //     var targets = TargetController.Instances;
-
-    //     // Set the initial distance to infinity high
-    //     float distanceCameraNextTarget = Mathf.Infinity;
-
-    //     TargetController currentLoopObjectShortestDistance = null;
-
-    //     if (targets.Count > 0)
-    //     {
-    //         // Loop over all target in order to get the target with the lowest distance to the player
-    //         foreach (var target in targets)
-    //         {
-    //             // Get the distance value of the recent object
-    //             float compareValueTarget = Vector3.Distance(transform.position, target.transform.position);
-
-    //             // Compare the most recent value with the saved value 
-    //             if (compareValueTarget < distanceCameraNextTarget)
-    //             {
-    //                 distanceCameraNextTarget = compareValueTarget;
-    //                 currentLoopObjectShortestDistance = target;
-
-    //             };
-    //         }
-    //         SetUpNewTarget(currentLoopObjectShortestDistance);
-    //     }
-    // }
-
     private void DetermineCurrentTarget()
     {
         SetUpNewTarget(DistanceToTarget.ReturnClosestTarget());
@@ -233,26 +193,4 @@ public class AimManager : MonoBehaviour
             AkSoundEngine.SetRTPCValue("synth_pwm_up_down", 0f);
         }
     }
-
-    // public void Fire()
-    // {
-    //     if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hitTargetCheck, Mathf.Infinity, layerMask))
-    //     {
-    //         if (hitTargetCheck.transform.tag == "Target")
-    //         {
-    // Deal 25 int damage
-    // TargetController currentTargetController = hitTargetCheck.transform.GetComponent<TargetController>();
-    // currentTargetController.takeDamage(25);
-    // Check if health is above 0
-    // if (!currentTargetController.checkHasHealth())
-    // {
-    // hitOnTargetCheck.transform.GetComponent<AkAmbient>().Stop(0);
-    // Destroy(hitTargetCheck.transform.gameObject);
-    // audioManager.StopDistanceFrequency(gameObject);
-    // currentTarget.GetComponent<ChangeOutline>().DeactivateOutline();
-    // currentTarget = null;
-    // }
-    //         }
-    //     }
-    // }
 }

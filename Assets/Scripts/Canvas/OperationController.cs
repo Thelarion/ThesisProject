@@ -19,11 +19,14 @@ public class OperationController : MonoBehaviour
 
     [Header("General")]
     [SerializeField] private Transform[] _NoteDisplays;
-    private ArrayList _spritesUINotesFromMelodySequence;
-    private ArrayList _spritesUINotesFromMelodySequenceStrings = new ArrayList();
-    private ArrayList _backgroundColours;
-    private ArrayList _backgroundColoursStrings;
-    private List<int> _uI_sequenceIndex = new List<int>();
+    private ArrayList _uI_NotesFromMelodySequence;
+    private ArrayList _uI_NotesFromMelodySequenceStrings = new ArrayList();
+    private ArrayList _uI_backgroundColours;
+    private ArrayList _uI_backgroundColoursStrings;
+    private ArrayList _uI_octavesAll;
+    private ArrayList _uI_octavesStringsAll;
+    private List<int> _uI_NotesSequenceIndex = new List<int>();
+    private List<string> _uI_OctaveSequenceStringsSetInIdentity = new List<string>();
     [HideInInspector] public static bool ColourHelpOn = false;
     private TargetController currentClosestTarget;
     private Image currentFrameDistance = null;
@@ -43,8 +46,37 @@ public class OperationController : MonoBehaviour
     {
         LoadUINotesFromResources();
         InitializeSequence();
-        InitializeUI();
-        InitializeUIBackground();
+        InitializeUINotes();
+        InitializeUIBackgrounds();
+        InitializeUIOctaves();
+    }
+
+    private void InitializeUIOctaves()
+    {
+        var load = Resources.LoadAll("UI_Octaves", typeof(Sprite)).Cast<Sprite>();
+
+        _uI_octavesAll = new ArrayList();
+        _uI_octavesStringsAll = new ArrayList();
+
+        foreach (var item in load)
+        {
+            _uI_octavesAll.Add(item);
+            _uI_octavesStringsAll.Add(item.name);
+        }
+
+        foreach (Transform child in transform)
+        {
+            Transform noteDisplay = child.transform.GetChild(0);
+            string octave = noteDisplay.GetComponent<ListItemIdentity>().Octave;
+            int indexCurrentOctave = _uI_octavesStringsAll.IndexOf(octave);
+            Sprite spriteCurrentOctave = _uI_octavesAll[indexCurrentOctave] as Sprite;
+            noteDisplay.GetChild(3).GetComponent<Image>().sprite = spriteCurrentOctave;
+        }
+    }
+
+    public void ActivateColourMode()
+    {
+        ColourHelpOn = true;
     }
 
     public List<Transform> CheckIfTonesCompleted()
@@ -70,18 +102,23 @@ public class OperationController : MonoBehaviour
         LoadUIBackgroundsColourFromResources();
     }
 
-    private void InitializeUIBackground()
+    private void InitializeUIBackgrounds()
     {
         if (!ColourHelpOn)
         {
-            foreach (Transform item in transform)
-            {
-                item.GetComponent<Image>().sprite = UI_BackgroundGrey;
-            }
+            LoadUIBackgroundGrey();
         }
         else
         {
+            LoadUIBackgroundsColourFromResources();
+        }
+    }
 
+    private void LoadUIBackgroundGrey()
+    {
+        foreach (Transform item in transform)
+        {
+            item.GetComponent<Image>().sprite = UI_BackgroundGrey;
         }
     }
 
@@ -102,20 +139,30 @@ public class OperationController : MonoBehaviour
     {
         foreach (notes note in _melodySequence)
         {
-            string noteNameAsString = note.ToString();          // get rid of octave information
-            string noteName = noteNameAsString[0].ToString();   // get rid of octave information
+            string noteNameAsString = note.ToString();
+            string noteName = noteNameAsString[0].ToString();   // Name without octave information
+            string octave = noteNameAsString[1].ToString();     // Octave
+            int indexOfCurrentMelody = _uI_NotesFromMelodySequenceStrings.IndexOf(noteName);
 
-            _uI_sequenceIndex.Add(_spritesUINotesFromMelodySequenceStrings.IndexOf(noteName));
+            _uI_OctaveSequenceStringsSetInIdentity.Add(octave);
+            _uI_NotesSequenceIndex.Add(indexOfCurrentMelody);
         }
     }
 
-    private void InitializeUI()
+    private void InitializeUINotes()
     {
         int x = 0;
         foreach (Transform noteDisplay in _NoteDisplays)
         {
-            noteDisplay.GetComponent<Image>().sprite = _spritesUINotesFromMelodySequence[_uI_sequenceIndex[x]] as Sprite;
-            noteDisplay.GetComponent<ListItemIdentity>().toneName = _spritesUINotesFromMelodySequenceStrings[_uI_sequenceIndex[x++]].ToString();
+            int indexCurrentNote = _uI_NotesSequenceIndex[x];
+            Sprite currentNoteSprite = _uI_NotesFromMelodySequence[indexCurrentNote] as Sprite;
+            string currentNoteName = currentNoteSprite.ToString();
+            string currentOctave = _uI_OctaveSequenceStringsSetInIdentity[x];
+
+            noteDisplay.GetComponent<Image>().sprite = currentNoteSprite;
+            noteDisplay.GetComponent<ListItemIdentity>().ToneName = currentNoteName;
+            noteDisplay.GetComponent<ListItemIdentity>().Octave = currentOctave;
+            x++;
         }
     }
 
@@ -123,11 +170,11 @@ public class OperationController : MonoBehaviour
     {
         var load = Resources.LoadAll("UI_Notes", typeof(Sprite)).Cast<Sprite>();
 
-        _spritesUINotesFromMelodySequence = new ArrayList();
+        _uI_NotesFromMelodySequence = new ArrayList();
         foreach (var ui_notes in load)
         {
-            _spritesUINotesFromMelodySequence.Add(ui_notes);
-            _spritesUINotesFromMelodySequenceStrings.Add(ui_notes.name);
+            _uI_NotesFromMelodySequence.Add(ui_notes);
+            _uI_NotesFromMelodySequenceStrings.Add(ui_notes.name);
         }
     }
 
@@ -135,13 +182,13 @@ public class OperationController : MonoBehaviour
     {
         var load = Resources.LoadAll("UI_BackgroundColour", typeof(Sprite)).Cast<Sprite>();
 
-        _backgroundColours = new ArrayList();
-        _backgroundColoursStrings = new ArrayList();
+        _uI_backgroundColours = new ArrayList();
+        _uI_backgroundColoursStrings = new ArrayList();
 
         foreach (var colour in load)
         {
-            _backgroundColours.Add(colour);
-            _backgroundColoursStrings.Add(colour.name);
+            _uI_backgroundColours.Add(colour);
+            _uI_backgroundColoursStrings.Add(colour.name);
         }
 
         int x = 0;
@@ -150,9 +197,9 @@ public class OperationController : MonoBehaviour
             string melodyIterationAsString = _melodySequence[x++].ToString();          // get rid of octave information
             string melodyIterationName = melodyIterationAsString[0].ToString();
 
-            int _indexOfChild = _backgroundColoursStrings.IndexOf(melodyIterationName);
+            int _indexOfChild = _uI_backgroundColoursStrings.IndexOf(melodyIterationName);
 
-            child.GetComponent<Image>().sprite = _backgroundColours[_indexOfChild] as Sprite;
+            child.GetComponent<Image>().sprite = _uI_backgroundColours[_indexOfChild] as Sprite;
         }
 
     }

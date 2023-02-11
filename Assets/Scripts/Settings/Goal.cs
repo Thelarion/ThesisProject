@@ -28,7 +28,7 @@ public class Goal : MonoBehaviour
             {
                 foreach (var item in missingTones)
                 {
-                    print("Missing tone: " + item.GetComponent<ListItemIdentity>().toneName);
+                    print("Missing tone: " + item.GetComponent<ListItemIdentity>().ToneName);
                 }
             }
         }

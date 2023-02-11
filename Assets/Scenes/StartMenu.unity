@@ -16492,7 +16492,6 @@ MonoBehaviour:
   PlayerFollowCameraNoiseOff: {fileID: 1708806646}
   PlayerCameraRoot: {fileID: 5537444756744510049}
   TargetParent: {fileID: 1476551456}
-  IO: 0
 --- !u!1 &983408539
 GameObject:
   m_ObjectHideFlags: 0
@@ -19867,9 +19866,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 979614212}
-        m_TargetAssemblyTypeName: Inclusion, Assembly-CSharp
-        m_MethodName: SetInclusionState
+      - m_Target: {fileID: 1402407528}
+        m_TargetAssemblyTypeName: OperationController, Assembly-CSharp
+        m_MethodName: ActivateColourMode
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -20357,11 +20356,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _melodySequence: 000000000200000005000000
-  _listUI:
-  - {fileID: 1232257025}
-  - {fileID: 2023031806}
-  - {fileID: 1041743247}
-  ColourHelpOn: 0
+  _NoteDisplays: []
+  UI_BackgroundGrey: {fileID: 0}
 --- !u!1 &1434700608
 GameObject:
   m_ObjectHideFlags: 0
@@ -20737,46 +20733,90 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9dbdadbde4332ba489e128e00a1b0c34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  C:
+  C2:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: f46b51e0e74cbee4792ea802d5d41220,
-      type: 2}
-  D:
+    WwiseObjectReference: {fileID: 0}
+  D2:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 664b9a249bc341a4d9cc38b5c09fa008,
-      type: 2}
-  E:
+    WwiseObjectReference: {fileID: 0}
+  E2:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: f29c49acdc9fe0347b874bb1c8cca129,
-      type: 2}
-  F:
+    WwiseObjectReference: {fileID: 0}
+  F2:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: d1017db48b3d41e42bcec491794c32ff,
-      type: 2}
-  G:
+    WwiseObjectReference: {fileID: 0}
+  G2:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 22b7c52e099fd624292c866ff4aa6011,
-      type: 2}
-  A:
+    WwiseObjectReference: {fileID: 0}
+  A2:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: eaa5ec47a4e1ca64da81c397c3085044,
-      type: 2}
-  B:
+    WwiseObjectReference: {fileID: 0}
+  B2:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: a1b2747baef96dd448c714479ce060a6,
-      type: 2}
-  currentNote:
+    WwiseObjectReference: {fileID: 0}
+  C3:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: f46b51e0e74cbee4792ea802d5d41220,
-      type: 2}
+    WwiseObjectReference: {fileID: 0}
+  D3:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  E3:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  F3:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  G3:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  A3:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  B3:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  C4:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  D4:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  E4:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  F4:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  G4:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  A4:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  B4:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &1490444880
 GameObject:
   m_ObjectHideFlags: 0
