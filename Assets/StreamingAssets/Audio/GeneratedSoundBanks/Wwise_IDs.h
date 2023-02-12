@@ -33,10 +33,10 @@ namespace AK
         static const AkUniqueID C2 = 1853303302U;
         static const AkUniqueID C2S = 3952551681U;
         static const AkUniqueID C3 = 1853303303U;
+        static const AkUniqueID C3_E3_A2_B3_C3 = 3334410611U;
         static const AkUniqueID C3S = 3969329526U;
         static const AkUniqueID C4 = 1853303296U;
         static const AkUniqueID C4S = 3851886195U;
-        static const AkUniqueID CEABCEVENT = 2118505581U;
         static const AkUniqueID D2 = 1836525715U;
         static const AkUniqueID D2B = 3851738891U;
         static const AkUniqueID D2S = 3851738906U;

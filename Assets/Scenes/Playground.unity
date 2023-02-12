@@ -26625,7 +26625,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 918ae7274dcabba42ad484baf3ff09e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _melodySequence: 1900000009000000050000000600000007000000
+  _melodySequence: 11000000170000000d0000002100000011000000
   _uI_noteDisplays:
   - {fileID: 1232257025}
   - {fileID: 2023031806}

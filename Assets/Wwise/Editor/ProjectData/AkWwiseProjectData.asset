@@ -151,7 +151,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 43efb42f60dfb9479eefa2004292fbf9
     GuidInternal: 
-    m_lastTime: -8585254094168831200
+    m_lastTime: -8585254009381477906
     List:
     - name: A2
       guid: 1a1bb7ce8a6d3b40afeac51e10a01d36
@@ -633,6 +633,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: C3_E3_A2_B3_C3
+      guid: 4ee8ad68a59ec146968a9a3d04984ebd
+      id: 3334410611
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: Melodies
+        ObjectType: 4
+        guid: c85fbc328bf9ee4db1406f5a207dbd29
+      - ElementName: C3_E3_A2_B3_C3
+        ObjectType: 3
+        guid: 4ee8ad68a59ec146968a9a3d04984ebd
+      Path: Events\Default Work Unit\Melodies\C3_E3_A2_B3_C3
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: C3s
       guid: b7f6cc7882c0ad49838144012d3d327f
       id: 3969329526
@@ -699,26 +719,6 @@ MonoBehaviour:
         ObjectType: 3
         guid: 6566bebe749f1743a78a4961bcec6de8
       Path: Events\Default Work Unit\Notes\O4\C4s
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: CEABCEvent
-      guid: 4ee8ad68a59ec146968a9a3d04984ebd
-      id: 2118505581
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: Melodies
-        ObjectType: 4
-        guid: c85fbc328bf9ee4db1406f5a207dbd29
-      - ElementName: CEABCEvent
-        ObjectType: 3
-        guid: 4ee8ad68a59ec146968a9a3d04984ebd
-      Path: Events\Default Work Unit\Melodies\CEABCEvent
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1

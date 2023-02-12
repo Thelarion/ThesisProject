@@ -12,19 +12,13 @@ public class Inclusion : MonoBehaviour
     public GameObject PlayerFollowCameraNoiseOff;
     public GameObject PlayerCameraRoot;
     public GameObject TargetParent;
-    private static bool InclusionActive = false;
 
     private void Start()
     {
-        if (InclusionActive)
+        if (StartMenuManager.InclusionState == true)
         {
             InclusionIO();
         }
-    }
-
-    public void SetInclusionState()
-    {
-        InclusionActive = true;
     }
 
     private void InclusionIO()

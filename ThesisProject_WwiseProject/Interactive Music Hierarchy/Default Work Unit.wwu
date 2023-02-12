@@ -6,7 +6,7 @@
 				<Folder Name="Music" ID="{AA5460DF-1943-4B6E-9F91-598515FCA3BF}" ShortID="1028317850"/>
 				<Folder Name="Melodies" ID="{6B114A54-C074-4D2E-99CB-3E8F56A9E198}" ShortID="857658330">
 					<ChildrenList>
-						<MusicSegment Name="CEABC" ID="{0F381F0A-774E-4EBF-AE44-458D92245DA5}" ShortID="221000671">
+						<MusicSegment Name="C3_E3_A2_B3_C3" ID="{0F381F0A-774E-4EBF-AE44-458D92245DA5}" ShortID="221000671">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 							</PropertyList>
@@ -19,18 +19,18 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<MusicTrack Name="CEABC" ID="{97E18C46-F5AA-4517-8649-5F4B4F005FF6}" ShortID="329753352">
+								<MusicTrack Name="C3_E3_A2_B3_C3" ID="{97E18C46-F5AA-4517-8649-5F4B4F005FF6}" ShortID="329753352">
 									<ReferenceList>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="CEABC" ID="{14DF769D-84D3-4A17-8DD2-3B16A01A201E}">
+										<AudioFileSource Name="C3_E3_A2_B3_C3" ID="{6E15B6BF-5F0F-443C-91B0-A5FD4CFD1842}">
 											<Language>SFX</Language>
-											<AudioFile>CEABC.wav</AudioFile>
+											<AudioFile>C3_E3_A2_B3_C3.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="191538228"/>
+												<MediaID ID="170761103"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
@@ -51,13 +51,13 @@
 															<ObjectList Name="Clips">
 																<Reference>
 																	<Local>
-																		<MusicClip Name="CEABC" ID="{0F7CF6B4-0860-4459-81C2-6C1F13653643}">
+																		<MusicClip Name="C3_E3_A2_B3_C3" ID="{2636722F-94D1-442B-92D9-AC1A79CC610C}">
 																			<PropertyList>
 																				<Property Name="EndTrimOffset" Type="Real64" Value="4000"/>
 																				<Property Name="FadeInMode" Type="int16" Value="0"/>
 																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																			</PropertyList>
-																			<AudioSourceRef Name="CEABC" ID="{14DF769D-84D3-4A17-8DD2-3B16A01A201E}"/>
+																			<AudioSourceRef Name="C3_E3_A2_B3_C3" ID="{6E15B6BF-5F0F-443C-91B0-A5FD4CFD1842}"/>
 																		</MusicClip>
 																	</Local>
 																</Reference>

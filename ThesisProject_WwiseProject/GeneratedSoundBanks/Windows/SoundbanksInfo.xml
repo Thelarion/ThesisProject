@@ -77,7 +77,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{3A28B3C5-F682-B7FA-412A-B51A84E2976B}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{D036E5B1-9726-A83B-AE68-4CBDC2AB7D28}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -129,6 +129,10 @@
 					<ShortName>G4b.wav</ShortName>
 					<CachePath>SFX/G4b_10C4C929.wem</CachePath>
 				</File>
+				<File Id="170761103" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>C3_E3_A2_B3_C3.wav</ShortName>
+					<CachePath>SFX/C3_E3_A2_B3_C3_D79FB2B7.wem</CachePath>
+				</File>
 				<File Id="179996937" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>DistanceCount\30.wav</ShortName>
 					<CachePath>SFX/DistanceCount/30_10C4C929.wem</CachePath>
@@ -140,10 +144,6 @@
 				<File Id="189275940" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>D3#.wav</ShortName>
 					<CachePath>SFX/D3#_10C4C929.wem</CachePath>
-				</File>
-				<File Id="191538228" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>CEABC.wav</ShortName>
-					<CachePath>SFX/CEABC_D79FB2B7.wem</CachePath>
 				</File>
 				<File Id="206363750" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O3\G3.wav</ShortName>
@@ -527,6 +527,11 @@
 						<MediaRef Id="918400394"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3334410611" Name="C3_E3_A2_B3_C3" DurationType="OneShot" DurationMin="4" DurationMax="4">
+					<MediaRefs>
+						<MediaRef Id="170761103"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3969329526" Name="C3s" MaxAttenuation="15" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="868281298"/>
@@ -540,11 +545,6 @@
 				<Event Id="3851886195" Name="C4s" MaxAttenuation="15" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="757064969"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="2118505581" Name="CEABCEvent" DurationType="OneShot" DurationMin="4" DurationMax="4">
-					<MediaRefs>
-						<MediaRef Id="191538228"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="3801406080" Name="d10" DurationType="OneShot" DurationMin="0.40014583" DurationMax="0.40014583">
@@ -837,5 +837,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{15359C45-12A3-BA92-572A-83B93CA473A8}</FileHash>
+	<FileHash>{FDF6F306-8C3E-85D5-7F1E-C55B85FFA50C}</FileHash>
 </SoundBanksInfo>

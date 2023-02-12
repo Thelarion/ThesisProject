@@ -37,7 +37,7 @@ public class OperationController : MonoBehaviour
     private List<string> _uI_octaveSequenceStringsSetInIdentity = new List<string>();
     private List<string> _uI_accidentalSequenceStringsSetInIdentity = new List<string>();
     [Header("Misc")]
-    public static bool ColourHelpOn = false;
+    public static bool ColourHelpState = false;
     private TargetController _currentClosestTarget;
     private Image _currentFrameDistance = null;
     [Header("Sprites")]
@@ -45,6 +45,7 @@ public class OperationController : MonoBehaviour
 
     private void Start()
     {
+        ColourHelpState = StartMenuManager.ActivateColour;
         UpdateUI();
     }
 
@@ -120,10 +121,10 @@ public class OperationController : MonoBehaviour
         }
     }
 
-    public void ActivateColourMode()
-    {
-        ColourHelpOn = true;
-    }
+    // public void ActivateColourMode()
+    // {
+    //     ColourHelpState = true;
+    // }
 
     public List<Transform> CheckIfTonesCompleted()
     {
@@ -142,7 +143,7 @@ public class OperationController : MonoBehaviour
 
     public void ToggleListColourHelp()
     {
-        ColourHelpOn = ColourHelpOn == true ? false : true;
+        ColourHelpState = ColourHelpState == true ? false : true;
         UpdateUI();
         ToggleUIFrames();
         LoadUIBackgroundsColourFromResources();
@@ -150,7 +151,7 @@ public class OperationController : MonoBehaviour
 
     private void InitializeUIBackgrounds()
     {
-        if (!ColourHelpOn)
+        if (!ColourHelpState)
         {
             LoadUIBackgroundGrey();
         }
@@ -175,7 +176,7 @@ public class OperationController : MonoBehaviour
         {
             if (child.GetChild(0).GetComponent<ListItemIdentity>().LockState == true)
             {
-                StartCoroutine(DecreaseAlpha(GetModeAndImage(!ColourHelpOn, x)));
+                StartCoroutine(DecreaseAlpha(GetModeAndImage(!ColourHelpState, x)));
                 ActivateFrameSuccess(x++, child.name);
             }
         }
@@ -265,7 +266,7 @@ public class OperationController : MonoBehaviour
         // if checks null on game stop
         if (_uI_noteDisplays[tappedListItemIndex] != null)
         {
-            Image currentFrameSuccess = GetModeAndImage(ColourHelpOn, tappedListItemIndex);
+            Image currentFrameSuccess = GetModeAndImage(ColourHelpState, tappedListItemIndex);
             _uI_noteDisplays[tappedListItemIndex].GetComponent<ListItemIdentity>().LockState = true;
             StartCoroutine(IncreaseAlpha(currentFrameSuccess));
         }

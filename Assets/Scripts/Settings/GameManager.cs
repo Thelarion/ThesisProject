@@ -52,11 +52,6 @@ public class GameManager : MonoBehaviour
 
     }
 
-    public void StartGame()
-    {
-        SceneManager.LoadScene("Playground");
-    }
-
     public void Quit()
     {
         Application.Quit();

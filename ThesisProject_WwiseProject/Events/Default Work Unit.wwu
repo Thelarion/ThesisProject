@@ -38,12 +38,12 @@
 				</Event>
 				<Folder Name="Melodies" ID="{32BC5FC8-F98B-4DEE-B140-6F5A207DBD29}" ShortID="1010008833">
 					<ChildrenList>
-						<Event Name="CEABCEvent" ID="{68ADE84E-9EA5-46C1-968A-9A3D04984EBD}">
+						<Event Name="C3_E3_A2_B3_C3" ID="{68ADE84E-9EA5-46C1-968A-9A3D04984EBD}">
 							<ChildrenList>
 								<Action Name="" ID="{2223758A-803C-4D30-8BA4-4597E1C1C8DC}" ShortID="607530205">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="CEABC" ID="{0F381F0A-774E-4EBF-AE44-458D92245DA5}" WorkUnitID="{0C0D58AB-E33A-483F-9A09-970848D4441A}"/>
+											<ObjectRef Name="C3_E3_A2_B3_C3" ID="{0F381F0A-774E-4EBF-AE44-458D92245DA5}" WorkUnitID="{0C0D58AB-E33A-483F-9A09-970848D4441A}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
