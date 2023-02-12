@@ -59,7 +59,10 @@ public class TargetController : MonoBehaviour
         if (_tapState)
         {
             operationController.ActivateFrameSuccess(_indexInSequence, transform.name);
+            operationController.DelayDistanceFrameCoroutine();
         }
         _instances.Remove(this);
     }
+
+
 }

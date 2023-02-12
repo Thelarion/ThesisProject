@@ -39,9 +39,14 @@ public class OperationController : MonoBehaviour
     [Header("Misc")]
     public static bool ColourHelpState = false;
     private TargetController _currentClosestTarget;
+    private bool _distanceFrameDelayState = false;
     private Image _currentFrameDistance = null;
     [Header("Sprites")]
     public Sprite UI_BackgroundGrey;
+    [Header("Wwise")]
+    public AK.Wwise.Event DistanceFrameTransition;
+    public AK.Wwise.Event Cheering;
+    private bool blockInitialPost = false;
 
     private void Start()
     {
@@ -120,11 +125,6 @@ public class OperationController : MonoBehaviour
             noteDisplay.GetChild(3).GetComponent<Image>().sprite = spriteCurrentOctave;
         }
     }
-
-    // public void ActivateColourMode()
-    // {
-    //     ColourHelpState = true;
-    // }
 
     public List<Transform> CheckIfTonesCompleted()
     {
@@ -279,24 +279,45 @@ public class OperationController : MonoBehaviour
         return currentFrameSuccess;
     }
 
+    public void DelayDistanceFrameCoroutine()
+    {
+        StartCoroutine(DelayDistanceFrame());
+    }
+
+    public IEnumerator DelayDistanceFrame()
+    {
+        _distanceFrameDelayState = true;
+        yield return new WaitForSeconds(4.5f);
+        _distanceFrameDelayState = false;
+    }
+
     private void ActivateFrameDistance()
     {
-        TargetController closestTarget = DistanceToTarget.ReturnClosestTarget();
-
-        if (closestTarget != _currentClosestTarget)
+        if (!_distanceFrameDelayState)
         {
-            // Safety for less calculations
-            _currentClosestTarget = closestTarget;
+            TargetController closestTarget = DistanceToTarget.CurrentLoopObjectShortestDistance;
 
-            // Make 'old' frame invisible
-            if (_currentFrameDistance != null)
+            if (closestTarget != _currentClosestTarget)
             {
-                StartCoroutine(DecreaseAlpha(_currentFrameDistance));
+                // Safety for less calculations
+                _currentClosestTarget = closestTarget;
+
+                // Make 'old' frame invisible
+                if (_currentFrameDistance != null)
+                {
+                    StartCoroutine(DecreaseAlpha(_currentFrameDistance));
+                }
+                // Get new list frame
+                _currentFrameDistance = _uI_noteDisplays[_currentClosestTarget.getIndexInSequence()].GetChild(0).GetComponent<Image>();
+                // Make it visible
+                StartCoroutine(IncreaseAlpha(_currentFrameDistance));
+                // Play transition sound
+                if (blockInitialPost)
+                {
+                    DistanceFrameTransition.Post(gameObject);
+                }
+                blockInitialPost = true;
             }
-            // Get new list frame
-            _currentFrameDistance = _uI_noteDisplays[_currentClosestTarget.getIndexInSequence()].GetChild(0).GetComponent<Image>();
-            // Make it visible
-            StartCoroutine(IncreaseAlpha(_currentFrameDistance));
         }
     }
 

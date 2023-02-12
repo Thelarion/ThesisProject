@@ -153,7 +153,7 @@ public class AimManager : MonoBehaviour
 
     private void DetermineCurrentTarget()
     {
-        SetUpNewTarget(DistanceToTarget.ReturnClosestTarget());
+        SetUpNewTarget(DistanceToTarget.CurrentLoopObjectShortestDistance);
     }
 
     private void SetUpNewTarget(TargetController target)

@@ -630,28 +630,6 @@
 				</Folder>
 				<Folder Name="SFX" ID="{CDF93DC7-5004-462E-8B4B-7A815B229A25}" ShortID="194764734">
 					<ChildrenList>
-						<Event Name="PlingSuccess" ID="{E538B932-7A57-4413-B920-CE49A6A22A8E}">
-							<ChildrenList>
-								<Action Name="" ID="{ECD4A3C5-17FB-4C46-A5AD-E94011ED2AA4}" ShortID="369687403">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="PlingSuccess" ID="{0A0234D2-4DA0-45BF-808B-B4CDD098DED2}" WorkUnitID="{6B91872B-49A8-4BB8-A212-FBF7E77C3676}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="PlingFail" ID="{BDF1BCC3-3521-49FB-A33B-11B6D7B71982}">
-							<ChildrenList>
-								<Action Name="" ID="{BCABB629-8555-40D8-B755-6E1899F7B317}" ShortID="897588064">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="PlingFail" ID="{1468C59F-4E40-4EAB-AACF-353ECD971BFA}" WorkUnitID="{6B91872B-49A8-4BB8-A212-FBF7E77C3676}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="distanceC" ID="{5984D937-5639-462E-8E10-CF9F08A2920E}">
 							<ChildrenList>
 								<Action Name="" ID="{C6840651-BFFB-4159-9096-B983BB71E747}" ShortID="920693091">
@@ -815,6 +793,50 @@
 										</Event>
 									</ChildrenList>
 								</Folder>
+							</ChildrenList>
+						</Folder>
+						<Event Name="DistanceFrameTransition" ID="{69DA5BB7-C123-451A-B483-82C150B587A0}">
+							<ChildrenList>
+								<Action Name="" ID="{F304B334-6FAF-4D56-9611-C86BBF602D79}" ShortID="422786274">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="DistanceFrameTransition" ID="{9A6D3DAF-10A7-481F-AD73-6DDD86D47CE7}" WorkUnitID="{6B91872B-49A8-4BB8-A212-FBF7E77C3676}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Folder Name="Target" ID="{8F08555E-1956-40C1-BBE2-3D2584E7C2A0}" ShortID="465644335">
+							<ChildrenList>
+								<Event Name="Success" ID="{8F188FA1-3E5F-4115-AD6C-B05712663900}">
+									<ChildrenList>
+										<Action Name="" ID="{75611FAB-382C-4F9B-AA1A-4B03B9215840}" ShortID="771074364">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="PlingSuccess" ID="{0A0234D2-4DA0-45BF-808B-B4CDD098DED2}" WorkUnitID="{6B91872B-49A8-4BB8-A212-FBF7E77C3676}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{B47EC0C9-9C99-4FE8-829D-466907FA504E}" ShortID="500486104">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Cheering" ID="{5437CF2C-491C-487D-8131-6B2F0DA38C0E}" WorkUnitID="{6B91872B-49A8-4BB8-A212-FBF7E77C3676}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="PlingFail" ID="{BDF1BCC3-3521-49FB-A33B-11B6D7B71982}">
+									<ChildrenList>
+										<Action Name="" ID="{BCABB629-8555-40D8-B755-6E1899F7B317}" ShortID="897588064">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="PlingFail" ID="{1468C59F-4E40-4EAB-AACF-353ECD971BFA}" WorkUnitID="{6B91872B-49A8-4BB8-A212-FBF7E77C3676}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>

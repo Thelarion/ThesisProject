@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class DistanceToTarget : MonoBehaviour
 {
-    static TargetController currentLoopObjectShortestDistance = null;
+    private static TargetController currentLoopObjectShortestDistance = null;
+
+    public static TargetController CurrentLoopObjectShortestDistance
+    {
+        get { return currentLoopObjectShortestDistance; }
+    }
 
     private void Update()
     {
@@ -36,10 +41,5 @@ public class DistanceToTarget : MonoBehaviour
                 };
             }
         }
-    }
-
-    public static TargetController ReturnClosestTarget()
-    {
-        return currentLoopObjectShortestDistance;
     }
 }

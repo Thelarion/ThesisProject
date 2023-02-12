@@ -77,7 +77,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{32032BE8-A70F-BE10-0FC1-B3BC74BE0100}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{AAB57A8E-BF45-7DF5-7DBB-8BCE01448C39}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -156,6 +156,10 @@
 				<File Id="221568551" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>DistanceCount\10.wav</ShortName>
 					<CachePath>SFX/DistanceCount/10_10C4C929.wem</CachePath>
+				</File>
+				<File Id="242190809" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>DistanceFrameTransition.wav</ShortName>
+					<CachePath>SFX/DistanceFrameTransition_10C4C929.wem</CachePath>
 				</File>
 				<File Id="269103452" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>D2#.wav</ShortName>
@@ -300,6 +304,10 @@
 				<File Id="764134868" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>E2b.wav</ShortName>
 					<CachePath>SFX/E2b_10C4C929.wem</CachePath>
+				</File>
+				<File Id="778380301" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Cheering1.wav</ShortName>
+					<CachePath>SFX/Cheering1_52D27BF3.wem</CachePath>
 				</File>
 				<File Id="782485844" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O4\G4.wav</ShortName>
@@ -648,6 +656,11 @@
 					</MediaRefs>
 				</Event>
 				<Event Id="2982082363" Name="distanceC" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="293588534" Name="DistanceFrameTransition" DurationType="OneShot" DurationMin="2.53125" DurationMax="2.53125">
+					<MediaRefs>
+						<MediaRef Id="242190809"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1819748156" Name="E2" MaxAttenuation="20" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="181898422"/>
@@ -805,9 +818,10 @@
 						<MediaRef Id="33821008"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1212327680" Name="PlingSuccess" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="3625060726" Name="Success" DurationType="OneShot" DurationMin="5.4231367" DurationMax="5.4231367">
 					<MediaRefs>
 						<MediaRef Id="517302441"/>
+						<MediaRef Id="778380301"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1848491570" Name="WhiteNoiseOnTarget" DurationType="Infinite">
@@ -837,5 +851,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{D301BAE0-C35E-968E-91E2-8639D1ED8D02}</FileHash>
+	<FileHash>{1EE3E06A-4506-2614-2F0C-E0668682E1EE}</FileHash>
 </SoundBanksInfo>

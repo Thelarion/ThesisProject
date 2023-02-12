@@ -151,7 +151,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 43efb42f60dfb9479eefa2004292fbf9
     GuidInternal: 
-    m_lastTime: -8585254009381477906
+    m_lastTime: -8585253665265236260
     List:
     - name: A2
       guid: 1a1bb7ce8a6d3b40afeac51e10a01d36
@@ -1258,6 +1258,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: DistanceFrameTransition
+      guid: b75bda6923c11a45b48382c150b587a0
+      id: 293588534
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: SFX
+        ObjectType: 4
+        guid: c73df9cd04502e468b4b7a815b229a25
+      - ElementName: DistanceFrameTransition
+        ObjectType: 3
+        guid: b75bda6923c11a45b48382c150b587a0
+      Path: Events\Default Work Unit\SFX\DistanceFrameTransition
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: E2
       guid: e5e5c68aad8ff943b2f461e39e844f66
       id: 1819748156
@@ -1882,30 +1902,13 @@ MonoBehaviour:
       - ElementName: SFX
         ObjectType: 4
         guid: c73df9cd04502e468b4b7a815b229a25
+      - ElementName: Target
+        ObjectType: 4
+        guid: 5e55088f5619c140bbe23d2584e7c2a0
       - ElementName: PlingFail
         ObjectType: 3
         guid: c3bcf1bd2135fb49a33b11b6d7b71982
-      Path: Events\Default Work Unit\SFX\PlingFail
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: PlingSuccess
-      guid: 32b938e5577a1344b920ce49a6a22a8e
-      id: 1212327680
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SFX
-        ObjectType: 4
-        guid: c73df9cd04502e468b4b7a815b229a25
-      - ElementName: PlingSuccess
-        ObjectType: 3
-        guid: 32b938e5577a1344b920ce49a6a22a8e
-      Path: Events\Default Work Unit\SFX\PlingSuccess
+      Path: Events\Default Work Unit\SFX\Target\PlingFail
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1923,6 +1926,49 @@ MonoBehaviour:
         ObjectType: 4
         guid: c73df9cd04502e468b4b7a815b229a25
       Path: Events\Default Work Unit\SFX
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Success
+      guid: a18f188f5f3e1541ad6cb05712663900
+      id: 3625060726
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: SFX
+        ObjectType: 4
+        guid: c73df9cd04502e468b4b7a815b229a25
+      - ElementName: Target
+        ObjectType: 4
+        guid: 5e55088f5619c140bbe23d2584e7c2a0
+      - ElementName: Success
+        ObjectType: 3
+        guid: a18f188f5f3e1541ad6cb05712663900
+      Path: Events\Default Work Unit\SFX\Target\Success
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Target
+      guid: 5e55088f5619c140bbe23d2584e7c2a0
+      id: 3902528438
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: SFX
+        ObjectType: 4
+        guid: c73df9cd04502e468b4b7a815b229a25
+      - ElementName: Target
+        ObjectType: 4
+        guid: 5e55088f5619c140bbe23d2584e7c2a0
+      Path: Events\Default Work Unit\SFX\Target
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -2410,7 +2456,7 @@ MonoBehaviour:
     m_lastTime: -8585282545794215635
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 06000000070000000c000000290000002a0000002e0000002f00000034000000d2000000fa2f0000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

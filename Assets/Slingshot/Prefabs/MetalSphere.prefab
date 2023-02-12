@@ -128,10 +128,11 @@ MonoBehaviour:
   PlingSuccess:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: e13abed61ca479440a894ffc9a65bf9f,
+    WwiseObjectReference: {fileID: 11400000, guid: 313805e6c57b05a47b7208f21c3af2ab,
       type: 2}
   PlingFail:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: fe0e1646268b26f4e90873451f2a1967,
       type: 2}
+  targetSpawnPoints: {fileID: 0}

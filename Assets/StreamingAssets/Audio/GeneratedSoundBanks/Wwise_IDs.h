@@ -58,6 +58,7 @@ namespace AK
         static const AkUniqueID D100 = 810809264U;
         static const AkUniqueID DESTINATION_REACHED = 4069116836U;
         static const AkUniqueID DISTANCEC = 2982082363U;
+        static const AkUniqueID DISTANCEFRAMETRANSITION = 293588534U;
         static const AkUniqueID E2 = 1819748156U;
         static const AkUniqueID E2B = 4220699414U;
         static const AkUniqueID E3 = 1819748157U;
@@ -82,7 +83,7 @@ namespace AK
         static const AkUniqueID G4S = 1972204327U;
         static const AkUniqueID PLAYERFOOT = 2664667690U;
         static const AkUniqueID PLINGFAIL = 2086503983U;
-        static const AkUniqueID PLINGSUCCESS = 1212327680U;
+        static const AkUniqueID SUCCESS = 3625060726U;
         static const AkUniqueID WHITENOISEONTARGET = 1848491570U;
     } // namespace EVENTS
 
