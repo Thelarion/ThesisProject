@@ -9,9 +9,9 @@ public class TargetParent : MonoBehaviour
     public int _targetCount;
     private enum notes
     {
-        C2, D2, E2, F2, G2, A2, B2,
-        C3, D3, E3, F3, G3, A3, B3,
-        C4, D4, E4, F4, G4, A4, B4,
+        C2, C2s, D2b, D2, D2s, E2b, E2, F2, F2s, G2b, G2, G2s, A2b, A2, A2s, B2b, B2,
+        C3, C3s, D3b, D3, D3s, E3b, E3, F3, F3s, G3b, G3, G3s, A3b, A3, A3s, B3b, B3,
+        C4, C4s, D4b, D4, D4s, E4b, E4, F4, F4s, G4b, G4, G4s, A4b, A4, A4s, B4b, B4,
     }
 
     private void Update()

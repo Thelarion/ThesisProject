@@ -19,7 +19,6 @@ public class TargetSpawnPoints : MonoBehaviour
 
     static Transform[] currentSpawnContainerItems = null;
     static GameObject currentSpawnContainer;
-    // static int randomContainerTarget;
 
     void Awake()
     {

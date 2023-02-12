@@ -151,7 +151,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 43efb42f60dfb9479eefa2004292fbf9
     GuidInternal: 
-    m_lastTime: -8585254803947118782
+    m_lastTime: -8585254094168831200
     List:
     - name: A2
       guid: 1a1bb7ce8a6d3b40afeac51e10a01d36
@@ -173,6 +173,52 @@ MonoBehaviour:
         ObjectType: 3
         guid: 1a1bb7ce8a6d3b40afeac51e10a01d36
       Path: Events\Default Work Unit\Notes\O2\A2
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: A2b
+      guid: 5a8b60e597129d40bf1398d67cea210d
+      id: 1939634906
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: Notes
+        ObjectType: 4
+        guid: 46e888849a2f394280779b10a36ae81b
+      - ElementName: O2
+        ObjectType: 4
+        guid: aa786ab94d3a174d8a27fdcdc6e78643
+      - ElementName: A2b
+        ObjectType: 3
+        guid: 5a8b60e597129d40bf1398d67cea210d
+      Path: Events\Default Work Unit\Notes\O2\A2b
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: A2s
+      guid: c0db85f9d2f89541bf7b800625805ab2
+      id: 1939634891
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: Notes
+        ObjectType: 4
+        guid: 46e888849a2f394280779b10a36ae81b
+      - ElementName: O2
+        ObjectType: 4
+        guid: aa786ab94d3a174d8a27fdcdc6e78643
+      - ElementName: A2s
+        ObjectType: 3
+        guid: c0db85f9d2f89541bf7b800625805ab2
+      Path: Events\Default Work Unit\Notes\O2\A2s
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -199,6 +245,52 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: A3b
+      guid: cd01f1229f7f5241a497cae812482b11
+      id: 1956412457
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: Notes
+        ObjectType: 4
+        guid: 46e888849a2f394280779b10a36ae81b
+      - ElementName: O3
+        ObjectType: 4
+        guid: 927439f61147cf4988ccceee457f64b4
+      - ElementName: A3b
+        ObjectType: 3
+        guid: cd01f1229f7f5241a497cae812482b11
+      Path: Events\Default Work Unit\Notes\O3\A3b
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: A3s
+      guid: 5bee2d4a6ac0db46a066891fcab030e4
+      id: 1956412472
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: Notes
+        ObjectType: 4
+        guid: 46e888849a2f394280779b10a36ae81b
+      - ElementName: O3
+        ObjectType: 4
+        guid: 927439f61147cf4988ccceee457f64b4
+      - ElementName: A3s
+        ObjectType: 3
+        guid: 5bee2d4a6ac0db46a066891fcab030e4
+      Path: Events\Default Work Unit\Notes\O3\A3s
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: A4
       guid: bf5d52be04c4f64aab5948e04a932c4f
       id: 1886858606
@@ -219,6 +311,52 @@ MonoBehaviour:
         ObjectType: 3
         guid: bf5d52be04c4f64aab5948e04a932c4f
       Path: Events\Default Work Unit\Notes\O4\A4
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: A4b
+      guid: a22ef1459309cb41b10f458b39c2226e
+      id: 2040300616
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: Notes
+        ObjectType: 4
+        guid: 46e888849a2f394280779b10a36ae81b
+      - ElementName: O4
+        ObjectType: 4
+        guid: bf60ce8579469e49995fb894c981f37f
+      - ElementName: A4b
+        ObjectType: 3
+        guid: a22ef1459309cb41b10f458b39c2226e
+      Path: Events\Default Work Unit\Notes\O4\A4b
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: A4s
+      guid: 445a543578fa8f4483b7aa459091e5f9
+      id: 2040300633
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: Notes
+        ObjectType: 4
+        guid: 46e888849a2f394280779b10a36ae81b
+      - ElementName: O4
+        ObjectType: 4
+        guid: bf60ce8579469e49995fb894c981f37f
+      - ElementName: A4s
+        ObjectType: 3
+        guid: 445a543578fa8f4483b7aa459091e5f9
+      Path: Events\Default Work Unit\Notes\O4\A4s
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -245,6 +383,29 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: B2b
+      guid: 67d3011b7212f14abbffb3ba826f72bb
+      id: 1838822093
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: Notes
+        ObjectType: 4
+        guid: 46e888849a2f394280779b10a36ae81b
+      - ElementName: O2
+        ObjectType: 4
+        guid: aa786ab94d3a174d8a27fdcdc6e78643
+      - ElementName: B2b
+        ObjectType: 3
+        guid: 67d3011b7212f14abbffb3ba826f72bb
+      Path: Events\Default Work Unit\Notes\O2\B2b
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: B3
       guid: c5337ded39a001438e2fb23ca40c9356
       id: 1870081012
@@ -268,6 +429,29 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: B3b
+      guid: e0d0061bc308234e89687c6a699cffd3
+      id: 1822044542
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: Notes
+        ObjectType: 4
+        guid: 46e888849a2f394280779b10a36ae81b
+      - ElementName: O3
+        ObjectType: 4
+        guid: 927439f61147cf4988ccceee457f64b4
+      - ElementName: B3b
+        ObjectType: 3
+        guid: e0d0061bc308234e89687c6a699cffd3
+      Path: Events\Default Work Unit\Notes\O3\B3b
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: B4
       guid: 4ce11b8f8d43584ea952a1002d89c4fb
       id: 1870081011
@@ -288,6 +472,29 @@ MonoBehaviour:
         ObjectType: 3
         guid: 4ce11b8f8d43584ea952a1002d89c4fb
       Path: Events\Default Work Unit\Notes\O4\B4
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: B4b
+      guid: 38ec9ff06ec3e4488ac2d4549748a2e1
+      id: 1805266923
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: Notes
+        ObjectType: 4
+        guid: 46e888849a2f394280779b10a36ae81b
+      - ElementName: O4
+        ObjectType: 4
+        guid: bf60ce8579469e49995fb894c981f37f
+      - ElementName: B4b
+        ObjectType: 3
+        guid: 38ec9ff06ec3e4488ac2d4549748a2e1
+      Path: Events\Default Work Unit\Notes\O4\B4b
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -380,6 +587,29 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: C2s
+      guid: dc71a15ce10a5748a2441cca94e3aa67
+      id: 3952551681
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: Notes
+        ObjectType: 4
+        guid: 46e888849a2f394280779b10a36ae81b
+      - ElementName: O2
+        ObjectType: 4
+        guid: aa786ab94d3a174d8a27fdcdc6e78643
+      - ElementName: C2s
+        ObjectType: 3
+        guid: dc71a15ce10a5748a2441cca94e3aa67
+      Path: Events\Default Work Unit\Notes\O2\C2s
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: C3
       guid: 904198cc591f1f4f874c362358a2110d
       id: 1853303303
@@ -403,6 +633,29 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: C3s
+      guid: b7f6cc7882c0ad49838144012d3d327f
+      id: 3969329526
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: Notes
+        ObjectType: 4
+        guid: 46e888849a2f394280779b10a36ae81b
+      - ElementName: O3
+        ObjectType: 4
+        guid: 927439f61147cf4988ccceee457f64b4
+      - ElementName: C3s
+        ObjectType: 3
+        guid: b7f6cc7882c0ad49838144012d3d327f
+      Path: Events\Default Work Unit\Notes\O3\C3s
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: C4
       guid: 1dfe8918d48e1b4787e53438357e3af4
       id: 1853303296
@@ -423,6 +676,29 @@ MonoBehaviour:
         ObjectType: 3
         guid: 1dfe8918d48e1b4787e53438357e3af4
       Path: Events\Default Work Unit\Notes\O4\C4
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: C4s
+      guid: 6566bebe749f1743a78a4961bcec6de8
+      id: 3851886195
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: Notes
+        ObjectType: 4
+        guid: 46e888849a2f394280779b10a36ae81b
+      - ElementName: O4
+        ObjectType: 4
+        guid: bf60ce8579469e49995fb894c981f37f
+      - ElementName: C4s
+        ObjectType: 3
+        guid: 6566bebe749f1743a78a4961bcec6de8
+      Path: Events\Default Work Unit\Notes\O4\C4s
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -547,6 +823,52 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: D2b
+      guid: b3f684db5ab23841970575639828f7ed
+      id: 3851738891
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: Notes
+        ObjectType: 4
+        guid: 46e888849a2f394280779b10a36ae81b
+      - ElementName: O2
+        ObjectType: 4
+        guid: aa786ab94d3a174d8a27fdcdc6e78643
+      - ElementName: D2b
+        ObjectType: 3
+        guid: b3f684db5ab23841970575639828f7ed
+      Path: Events\Default Work Unit\Notes\O2\D2b
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: D2s
+      guid: 4d5215a4baa8fb4a803e3743cc66efea
+      id: 3851738906
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: Notes
+        ObjectType: 4
+        guid: 46e888849a2f394280779b10a36ae81b
+      - ElementName: O2
+        ObjectType: 4
+        guid: aa786ab94d3a174d8a27fdcdc6e78643
+      - ElementName: D2s
+        ObjectType: 3
+        guid: 4d5215a4baa8fb4a803e3743cc66efea
+      Path: Events\Default Work Unit\Notes\O2\D2s
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: D3
       guid: bdd7950e28509c459b49da5157ec8f91
       id: 1836525714
@@ -596,6 +918,52 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: D3b
+      guid: b27241d24d621c4fad42a0b4245a2733
+      id: 3834961332
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: Notes
+        ObjectType: 4
+        guid: 46e888849a2f394280779b10a36ae81b
+      - ElementName: O3
+        ObjectType: 4
+        guid: 927439f61147cf4988ccceee457f64b4
+      - ElementName: D3b
+        ObjectType: 3
+        guid: b27241d24d621c4fad42a0b4245a2733
+      Path: Events\Default Work Unit\Notes\O3\D3b
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: D3s
+      guid: 138a9ad35ab08e49bd76c79bc46b8bfc
+      id: 3834961317
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: Notes
+        ObjectType: 4
+        guid: 46e888849a2f394280779b10a36ae81b
+      - ElementName: O3
+        ObjectType: 4
+        guid: 927439f61147cf4988ccceee457f64b4
+      - ElementName: D3s
+        ObjectType: 3
+        guid: 138a9ad35ab08e49bd76c79bc46b8bfc
+      Path: Events\Default Work Unit\Notes\O3\D3s
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: D4
       guid: 08101eed92eebd48b9b3f091d7d8b690
       id: 1836525717
@@ -642,6 +1010,52 @@ MonoBehaviour:
         ObjectType: 3
         guid: 88b36135c20c6c4091a77064c5be7d7e
       Path: Events\Default Work Unit\SFX\Beacon\DistanceCount\d40
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: D4b
+      guid: 91507936ba0a7046a32abdc8104cb94a
+      id: 3885294317
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: Notes
+        ObjectType: 4
+        guid: 46e888849a2f394280779b10a36ae81b
+      - ElementName: O4
+        ObjectType: 4
+        guid: bf60ce8579469e49995fb894c981f37f
+      - ElementName: D4b
+        ObjectType: 3
+        guid: 91507936ba0a7046a32abdc8104cb94a
+      Path: Events\Default Work Unit\Notes\O4\D4b
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: D4s
+      guid: 6415082229fba94ab82688c69b5e5992
+      id: 3885294332
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: Notes
+        ObjectType: 4
+        guid: 46e888849a2f394280779b10a36ae81b
+      - ElementName: O4
+        ObjectType: 4
+        guid: bf60ce8579469e49995fb894c981f37f
+      - ElementName: D4s
+        ObjectType: 3
+        guid: 6415082229fba94ab82688c69b5e5992
+      Path: Events\Default Work Unit\Notes\O4\D4s
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -867,6 +1281,29 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: E2b
+      guid: 7d6080531373ab4bb8e1443c8fa608f6
+      id: 4220699414
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: Notes
+        ObjectType: 4
+        guid: 46e888849a2f394280779b10a36ae81b
+      - ElementName: O2
+        ObjectType: 4
+        guid: aa786ab94d3a174d8a27fdcdc6e78643
+      - ElementName: E2b
+        ObjectType: 3
+        guid: 7d6080531373ab4bb8e1443c8fa608f6
+      Path: Events\Default Work Unit\Notes\O2\E2b
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: E3
       guid: 2539aa7453921d45be64091cc9a7cd71
       id: 1819748157
@@ -887,6 +1324,29 @@ MonoBehaviour:
         ObjectType: 3
         guid: 2539aa7453921d45be64091cc9a7cd71
       Path: Events\Default Work Unit\Notes\O3\E3
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: E3b
+      guid: b4f767b87e554e42be71c804fef092a9
+      id: 4237477221
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: Notes
+        ObjectType: 4
+        guid: 46e888849a2f394280779b10a36ae81b
+      - ElementName: O3
+        ObjectType: 4
+        guid: 927439f61147cf4988ccceee457f64b4
+      - ElementName: E3b
+        ObjectType: 3
+        guid: b4f767b87e554e42be71c804fef092a9
+      Path: Events\Default Work Unit\Notes\O3\E3b
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -913,6 +1373,29 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: E4b
+      guid: 0f738beff4eb954caf0150e293d9f586
+      id: 4187144236
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: Notes
+        ObjectType: 4
+        guid: 46e888849a2f394280779b10a36ae81b
+      - ElementName: O4
+        ObjectType: 4
+        guid: bf60ce8579469e49995fb894c981f37f
+      - ElementName: E4b
+        ObjectType: 3
+        guid: 0f738beff4eb954caf0150e293d9f586
+      Path: Events\Default Work Unit\Notes\O4\E4b
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: F2
       guid: b993dfe863480b4f8128da23dac2888c
       id: 1802970441
@@ -933,6 +1416,29 @@ MonoBehaviour:
         ObjectType: 3
         guid: b993dfe863480b4f8128da23dac2888c
       Path: Events\Default Work Unit\Notes\O2\F2
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: F2s
+      guid: 73626af63474a94e852dc24f7beb9a5b
+      id: 1972351384
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: Notes
+        ObjectType: 4
+        guid: 46e888849a2f394280779b10a36ae81b
+      - ElementName: O2
+        ObjectType: 4
+        guid: aa786ab94d3a174d8a27fdcdc6e78643
+      - ElementName: F2s
+        ObjectType: 3
+        guid: 73626af63474a94e852dc24f7beb9a5b
+      Path: Events\Default Work Unit\Notes\O2\F2s
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -959,6 +1465,29 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: F3s
+      guid: 31d135494884cc4499cf5e705e0e6d0f
+      id: 1955573803
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: Notes
+        ObjectType: 4
+        guid: 46e888849a2f394280779b10a36ae81b
+      - ElementName: O3
+        ObjectType: 4
+        guid: 927439f61147cf4988ccceee457f64b4
+      - ElementName: F3s
+        ObjectType: 3
+        guid: 31d135494884cc4499cf5e705e0e6d0f
+      Path: Events\Default Work Unit\Notes\O3\F3s
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: F4
       guid: 22ba27abd42410409a3555ebd3365d93
       id: 1802970447
@@ -979,6 +1508,29 @@ MonoBehaviour:
         ObjectType: 3
         guid: 22ba27abd42410409a3555ebd3365d93
       Path: Events\Default Work Unit\Notes\O4\F4
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: F4s
+      guid: 90e0668cee3836498ee8895137ff473a
+      id: 2073017134
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: Notes
+        ObjectType: 4
+        guid: 46e888849a2f394280779b10a36ae81b
+      - ElementName: O4
+        ObjectType: 4
+        guid: bf60ce8579469e49995fb894c981f37f
+      - ElementName: F4s
+        ObjectType: 3
+        guid: 90e0668cee3836498ee8895137ff473a
+      Path: Events\Default Work Unit\Notes\O4\F4s
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1022,6 +1574,52 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: G2b
+      guid: c111418e49afcf43b9668dd363d77a24
+      id: 1938649164
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: Notes
+        ObjectType: 4
+        guid: 46e888849a2f394280779b10a36ae81b
+      - ElementName: O2
+        ObjectType: 4
+        guid: aa786ab94d3a174d8a27fdcdc6e78643
+      - ElementName: G2b
+        ObjectType: 3
+        guid: c111418e49afcf43b9668dd363d77a24
+      Path: Events\Default Work Unit\Notes\O2\G2b
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: G2s
+      guid: eb40906d1b75f9438bb23a25e220b161
+      id: 1938649181
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: Notes
+        ObjectType: 4
+        guid: 46e888849a2f394280779b10a36ae81b
+      - ElementName: O2
+        ObjectType: 4
+        guid: aa786ab94d3a174d8a27fdcdc6e78643
+      - ElementName: G2s
+        ObjectType: 3
+        guid: eb40906d1b75f9438bb23a25e220b161
+      Path: Events\Default Work Unit\Notes\O2\G2s
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: G3
       guid: 633cee41a78efd40b48a3f9d1d0083f0
       id: 1786192859
@@ -1045,6 +1643,52 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: G3b
+      guid: 1205ef0be33fd3449457d27cb55523d9
+      id: 1955426723
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: Notes
+        ObjectType: 4
+        guid: 46e888849a2f394280779b10a36ae81b
+      - ElementName: O3
+        ObjectType: 4
+        guid: 927439f61147cf4988ccceee457f64b4
+      - ElementName: G3b
+        ObjectType: 3
+        guid: 1205ef0be33fd3449457d27cb55523d9
+      Path: Events\Default Work Unit\Notes\O3\G3b
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: G3s
+      guid: d9330f8329cc374a9468f72eed03ef4e
+      id: 1955426738
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: Notes
+        ObjectType: 4
+        guid: 46e888849a2f394280779b10a36ae81b
+      - ElementName: O3
+        ObjectType: 4
+        guid: 927439f61147cf4988ccceee457f64b4
+      - ElementName: G3s
+        ObjectType: 3
+        guid: d9330f8329cc374a9468f72eed03ef4e
+      Path: Events\Default Work Unit\Notes\O3\G3s
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: G4
       guid: b3e7749e2389154dab503c5100e36a17
       id: 1786192860
@@ -1065,6 +1709,52 @@ MonoBehaviour:
         ObjectType: 3
         guid: b3e7749e2389154dab503c5100e36a17
       Path: Events\Default Work Unit\Notes\O4\G4
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: G4b
+      guid: 3f741f940bc0cf4d844d8cb18830cd16
+      id: 1972204342
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: Notes
+        ObjectType: 4
+        guid: 46e888849a2f394280779b10a36ae81b
+      - ElementName: O4
+        ObjectType: 4
+        guid: bf60ce8579469e49995fb894c981f37f
+      - ElementName: G4b
+        ObjectType: 3
+        guid: 3f741f940bc0cf4d844d8cb18830cd16
+      Path: Events\Default Work Unit\Notes\O4\G4b
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: G4s
+      guid: 965f0af1b7b0fb4db725b05fc7f9e02b
+      id: 1972204327
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 43efb42f60dfb9479eefa2004292fbf9
+      - ElementName: Notes
+        ObjectType: 4
+        guid: 46e888849a2f394280779b10a36ae81b
+      - ElementName: O4
+        ObjectType: 4
+        guid: bf60ce8579469e49995fb894c981f37f
+      - ElementName: G4s
+        ObjectType: 3
+        guid: 965f0af1b7b0fb4db725b05fc7f9e02b
+      Path: Events\Default Work Unit\Notes\O4\G4s
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1720,7 +2410,7 @@ MonoBehaviour:
     m_lastTime: -8585282545794215635
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 01000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000e0000001100000012000000140000001500000016000000170000001b0000001d00000023000000260000002c0000002e0000002f000000310000003f00000087000000c1000000c2000000c8000000
+  ExpandedWaapiItemIds: 01000000030000000400000005000000070000000a0000000c0000000e0000001100000012000000140000001500000016000000170000001b0000001d000000230000002c0000002e0000002f000000310000003f00000087000000c1000000c2000000c8000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

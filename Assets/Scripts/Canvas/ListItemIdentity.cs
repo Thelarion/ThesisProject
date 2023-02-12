@@ -7,6 +7,7 @@ public class ListItemIdentity : MonoBehaviour
     private bool lockState; // field
     private string toneName; // field
     [SerializeField] private string octave; // field
+    [SerializeField] private string accidental; // field
 
     [HideInInspector]
     public bool LockState   // property
@@ -27,5 +28,12 @@ public class ListItemIdentity : MonoBehaviour
     {
         get { return octave; }
         set { octave = value; }
+    }
+
+    [HideInInspector]
+    public string Accidental   // property
+    {
+        get { return accidental; }
+        set { accidental = value; }
     }
 }

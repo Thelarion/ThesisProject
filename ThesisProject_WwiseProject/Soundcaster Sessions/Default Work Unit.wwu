@@ -29,7 +29,7 @@
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Concrete" ID="{7624D16A-D815-43AD-A2F4-FF7B846EB163}"/>
-						<CurrentSwitchRef Name="B" ID="{2EB7549A-98A9-4DA8-906E-E0C3A2E5267B}"/>
+						<CurrentSwitchRef Name="A" ID="{69A2F832-DD04-48E8-A090-5AF674AE02FC}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

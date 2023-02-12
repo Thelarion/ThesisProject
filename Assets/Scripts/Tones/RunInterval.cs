@@ -13,6 +13,7 @@ public class RunInterval : MonoBehaviour
     private string _nameGONoteAndOctave;
     private string _nameGONote;
     private string _nameGOOctave;
+    private string _nameGOAccidental;
     [HideInInspector] public bool TapState;
     [HideInInspector] public PlayNoteOnTone PlayNoteOnTone;
     private string currentMaterialName;
@@ -24,13 +25,22 @@ public class RunInterval : MonoBehaviour
         noteParticles = transform.GetChild(0).GetComponent<ParticleSystem>();
         PlayNoteOnTone = transform.parent.gameObject.GetComponent<PlayNoteOnTone>();
         LoadMaterialsFromResources();
-        _nameGONoteAndOctave = transform.name;
-        _nameGONote = _nameGONoteAndOctave[0].ToString();
-        _nameGOOctave = _nameGONoteAndOctave[1].ToString();
+        SetNames();
         _renderer = GetComponent<Renderer>();
         _materialRenderer = _renderer.materials;
         StartCoroutine(IntervalChangeTarget());
         StartCoroutine(IntervalNoteAndEffect());
+    }
+
+    // Caution: Same as in OperationController, lean it down!
+    private void SetNames()
+    {
+        _nameGONoteAndOctave = transform.name;
+        _nameGONote = _nameGONoteAndOctave[0].ToString();
+        _nameGOOctave = _nameGONoteAndOctave[1].ToString();
+        int digitCountBeforeAccidental = 2; // e.g. A2 = 2, A2# = 3
+        string accidentalCheck = _nameGONoteAndOctave.Length > digitCountBeforeAccidental ? _nameGONoteAndOctave[2].ToString() : "null";
+        _nameGOAccidental = accidentalCheck; // Accidental or null 
     }
 
     private void LoadMaterialsFromResources()
@@ -131,7 +141,7 @@ public class RunInterval : MonoBehaviour
 
     IEnumerator IntervalNoteAndEffect()
     {
-        PlayNoteOnTone.PlayNote(currentMaterialName, _nameGOOctave, transform.gameObject);
+        PlayNoteOnTone.PlayNote(currentMaterialName, _nameGOOctave, _nameGOAccidental, transform.gameObject);
         noteParticles.Play();
         yield return new WaitForSeconds(1);
         StartCoroutine(IntervalNoteAndEffect());

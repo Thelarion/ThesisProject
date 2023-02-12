@@ -10,26 +10,37 @@ public class OperationController : MonoBehaviour
     [SerializeField]
     public enum notes
     {
-        C2, D2, E2, F2, G2, A2, B2,
-        C3, D3, E3, F3, G3, A3, B3,
-        C4, D4, E4, F4, G4, A4, B4,
+        C2, C2s, D2b, D2, D2s, E2b, E2, F2, F2s, G2b, G2, G2s, A2b, A2, A2s, B2b, B2,
+        C3, C3s, D3b, D3, D3s, E3b, E3, F3, F3s, G3b, G3, G3s, A3b, A3, A3s, B3b, B3,
+        C4, C4s, D4b, D4, D4s, E4b, E4, F4, F4s, G4b, G4, G4s, A4b, A4, A4s, B4b, B4,
     }
 
+    [Header("Melody")]
     [SerializeField] public notes[] _melodySequence;
 
     [Header("General")]
-    [SerializeField] private Transform[] _NoteDisplays;
-    private ArrayList _uI_NotesFromMelodySequence;
-    private ArrayList _uI_NotesFromMelodySequenceStrings = new ArrayList();
+    [SerializeField] private Transform[] _uI_noteDisplays;
+    [Header("Notes")]
+    private ArrayList _uI_notesFromMelodySequence;
+    private ArrayList _uI_notesFromMelodySequenceStrings = new ArrayList();
+    [Header("Background")]
     private ArrayList _uI_backgroundColours;
     private ArrayList _uI_backgroundColoursStrings;
+    [Header("Octaves")]
     private ArrayList _uI_octavesAll;
     private ArrayList _uI_octavesStringsAll;
-    private List<int> _uI_NotesSequenceIndex = new List<int>();
-    private List<string> _uI_OctaveSequenceStringsSetInIdentity = new List<string>();
-    [HideInInspector] public static bool ColourHelpOn = false;
-    private TargetController currentClosestTarget;
-    private Image currentFrameDistance = null;
+    [Header("Accidentals")]
+    private ArrayList _uI_accidentalsAll;
+    private ArrayList _uI_accidentalsStringsAll;
+    [Header("Sequences")]
+    private List<int> _uI_notesSequenceIndex = new List<int>();
+    private List<string> _uI_octaveSequenceStringsSetInIdentity = new List<string>();
+    private List<string> _uI_accidentalSequenceStringsSetInIdentity = new List<string>();
+    [Header("Misc")]
+    public static bool ColourHelpOn = false;
+    private TargetController _currentClosestTarget;
+    private Image _currentFrameDistance = null;
+    [Header("Sprites")]
     public Sprite UI_BackgroundGrey;
 
     private void Start()
@@ -45,10 +56,45 @@ public class OperationController : MonoBehaviour
     private void UpdateUI()
     {
         LoadUINotesFromResources();
-        InitializeSequence();
+        IterateSequences();
+
+        // UI Initialization
         InitializeUINotes();
         InitializeUIBackgrounds();
         InitializeUIOctaves();
+        InitializeAccidentals();
+
+        // SetSequencesToUI();
+    }
+
+    private void SetSequencesToUI()
+    {
+        foreach (Transform child in transform)
+        {
+            Transform noteDisplay = child.transform.GetChild(0);
+            string accidental = noteDisplay.GetComponent<ListItemIdentity>().Accidental;
+            int indexCurrentAccidental = _uI_accidentalsStringsAll.IndexOf(accidental);
+            Sprite spriteCurrentAccidental = _uI_accidentalsAll[indexCurrentAccidental] as Sprite;
+            Image accidentalObject = noteDisplay.GetChild(4).GetComponent<Image>();
+            accidentalObject.sprite = spriteCurrentAccidental;
+        }
+    }
+
+    private void InitializeAccidentals()
+    {
+        var load = Resources.LoadAll("UI_Accidentals", typeof(Sprite)).Cast<Sprite>();
+
+        _uI_accidentalsAll = new ArrayList();
+        _uI_accidentalsStringsAll = new ArrayList();
+
+        foreach (var item in load)
+        {
+            print(item);
+            _uI_accidentalsAll.Add(item);
+            _uI_accidentalsStringsAll.Add(item.name);
+        }
+        SetSequencesToUI();
+
     }
 
     private void InitializeUIOctaves()
@@ -135,33 +181,42 @@ public class OperationController : MonoBehaviour
         }
     }
 
-    private void InitializeSequence()
+    private void IterateSequences()
     {
         foreach (notes note in _melodySequence)
         {
-            string noteNameAsString = note.ToString();
-            string noteName = noteNameAsString[0].ToString();   // Name without octave information
-            string octave = noteNameAsString[1].ToString();     // Octave
-            int indexOfCurrentMelody = _uI_NotesFromMelodySequenceStrings.IndexOf(noteName);
+            string objectNameAsString = note.ToString();          // Convert object name to string
+            string noteName = objectNameAsString[0].ToString();   // Name
+            string octave = objectNameAsString[1].ToString();     // Octave
 
-            _uI_OctaveSequenceStringsSetInIdentity.Add(octave);
-            _uI_NotesSequenceIndex.Add(indexOfCurrentMelody);
+            int digitCountBeforeAccidental = 2; // e.g. A2 = 2, A2# = 3
+            string accidentalCheck = objectNameAsString.Length > digitCountBeforeAccidental ? objectNameAsString[2].ToString() : "null";
+            string accidental = accidentalCheck; // Accidental or null  
+
+            int indexOfCurrentMelody = _uI_notesFromMelodySequenceStrings.IndexOf(noteName); // Convert string back to object
+
+            _uI_accidentalSequenceStringsSetInIdentity.Add(accidental);
+            _uI_octaveSequenceStringsSetInIdentity.Add(octave);
+            _uI_notesSequenceIndex.Add(indexOfCurrentMelody);
         }
     }
 
     private void InitializeUINotes()
     {
         int x = 0;
-        foreach (Transform noteDisplay in _NoteDisplays)
+        foreach (Transform noteDisplay in _uI_noteDisplays)
         {
-            int indexCurrentNote = _uI_NotesSequenceIndex[x];
-            Sprite currentNoteSprite = _uI_NotesFromMelodySequence[indexCurrentNote] as Sprite;
+            int indexCurrentNote = _uI_notesSequenceIndex[x];
+            Sprite currentNoteSprite = _uI_notesFromMelodySequence[indexCurrentNote] as Sprite;
+
             string currentNoteName = currentNoteSprite.ToString();
-            string currentOctave = _uI_OctaveSequenceStringsSetInIdentity[x];
+            string currentOctave = _uI_octaveSequenceStringsSetInIdentity[x];
+            string currentAccidental = _uI_accidentalSequenceStringsSetInIdentity[x];
 
             noteDisplay.GetComponent<Image>().sprite = currentNoteSprite;
             noteDisplay.GetComponent<ListItemIdentity>().ToneName = currentNoteName;
             noteDisplay.GetComponent<ListItemIdentity>().Octave = currentOctave;
+            noteDisplay.GetComponent<ListItemIdentity>().Accidental = currentAccidental;
             x++;
         }
     }
@@ -170,11 +225,11 @@ public class OperationController : MonoBehaviour
     {
         var load = Resources.LoadAll("UI_Notes", typeof(Sprite)).Cast<Sprite>();
 
-        _uI_NotesFromMelodySequence = new ArrayList();
+        _uI_notesFromMelodySequence = new ArrayList();
         foreach (var ui_notes in load)
         {
-            _uI_NotesFromMelodySequence.Add(ui_notes);
-            _uI_NotesFromMelodySequenceStrings.Add(ui_notes.name);
+            _uI_notesFromMelodySequence.Add(ui_notes);
+            _uI_notesFromMelodySequenceStrings.Add(ui_notes.name);
         }
     }
 
@@ -208,10 +263,10 @@ public class OperationController : MonoBehaviour
     {
         // Set the sprite within the list UI
         // if checks null on game stop
-        if (_NoteDisplays[tappedListItemIndex] != null)
+        if (_uI_noteDisplays[tappedListItemIndex] != null)
         {
             Image currentFrameSuccess = GetModeAndImage(ColourHelpOn, tappedListItemIndex);
-            _NoteDisplays[tappedListItemIndex].GetComponent<ListItemIdentity>().LockState = true;
+            _uI_noteDisplays[tappedListItemIndex].GetComponent<ListItemIdentity>().LockState = true;
             StartCoroutine(IncreaseAlpha(currentFrameSuccess));
         }
     }
@@ -219,7 +274,7 @@ public class OperationController : MonoBehaviour
     private Image GetModeAndImage(bool ColourHelpOn, int index)
     {
         int mode = ColourHelpOn ? 2 : 1;
-        Image currentFrameSuccess = _NoteDisplays[index].GetChild(mode).GetComponent<Image>();
+        Image currentFrameSuccess = _uI_noteDisplays[index].GetChild(mode).GetComponent<Image>();
         return currentFrameSuccess;
     }
 
@@ -227,26 +282,26 @@ public class OperationController : MonoBehaviour
     {
         TargetController closestTarget = DistanceToTarget.ReturnClosestTarget();
 
-        if (closestTarget != currentClosestTarget)
+        if (closestTarget != _currentClosestTarget)
         {
             // Safety for less calculations
-            currentClosestTarget = closestTarget;
+            _currentClosestTarget = closestTarget;
 
             // Make 'old' frame invisible
-            if (currentFrameDistance != null)
+            if (_currentFrameDistance != null)
             {
-                StartCoroutine(DecreaseAlpha(currentFrameDistance));
+                StartCoroutine(DecreaseAlpha(_currentFrameDistance));
             }
             // Get new list frame
-            currentFrameDistance = _NoteDisplays[currentClosestTarget.getIndexInSequence()].GetChild(0).GetComponent<Image>();
+            _currentFrameDistance = _uI_noteDisplays[_currentClosestTarget.getIndexInSequence()].GetChild(0).GetComponent<Image>();
             // Make it visible
-            StartCoroutine(IncreaseAlpha(currentFrameDistance));
+            StartCoroutine(IncreaseAlpha(_currentFrameDistance));
         }
     }
 
     public void DecreaseAlphaIfZeroTargets()
     {
-        StartCoroutine(DecreaseAlpha(currentFrameDistance));
+        StartCoroutine(DecreaseAlpha(_currentFrameDistance));
     }
 
     IEnumerator DecreaseAlpha(Image currentFrame)
@@ -272,7 +327,7 @@ public class OperationController : MonoBehaviour
     }
 
     // https://gamedevbeginner.com/the-right-way-to-lerp-in-unity-with-examples/
-    IEnumerator IncreaseAlpha(Image currentFrame)
+    IEnumerator IncreaseAlpha(Image currentImageComponent)
     {
         float time = 0f;
         float duration = 1f;
@@ -281,16 +336,15 @@ public class OperationController : MonoBehaviour
 
         while (time < duration)
         {
-
-            Color newColor = currentFrame.color;
+            Color newColor = currentImageComponent.color;
             newColor.a = Mathf.Lerp(startValue, endValue, time / duration);
-            currentFrame.color = newColor;
+            currentImageComponent.color = newColor;
 
             time += Time.deltaTime;
             yield return null;
         }
-        Color newColorSafety = currentFrame.color;
+        Color newColorSafety = currentImageComponent.color;
         newColorSafety.a = endValue;
-        currentFrame.color = newColorSafety;
+        currentImageComponent.color = newColorSafety;
     }
 }
