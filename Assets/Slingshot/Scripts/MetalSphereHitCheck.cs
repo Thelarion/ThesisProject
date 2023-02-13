@@ -29,7 +29,7 @@ public class MetalSphereHitCheck : MonoBehaviour
         {
             other.transform.GetComponent<TargetMove>().StopMovementWhenMissOrInclusion();
 
-            int indexInSequence = other.transform.GetComponent<TargetController>().getIndexInSequence();
+            int indexInSequence = other.transform.GetComponent<TargetIdentity>().getIndexInSequence();
             other.transform.position = targetSpawnPoints.ReturnRandomSpawnTransform(indexInSequence).position;
             PlingFail.Post(gameObject);
 

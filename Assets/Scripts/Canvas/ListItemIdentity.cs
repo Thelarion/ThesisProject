@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class ListItemIdentity : MonoBehaviour
 {
-    private bool lockState; // field
-    private string toneName; // field
+    [SerializeField] private bool lockState; // field
+    [SerializeField] private string toneName; // field
     [SerializeField] private string octave; // field
     [SerializeField] private string accidental; // field
 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using StarterAssets;
+using System;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,10 +11,26 @@ public class GameManager : MonoBehaviour
     public GameObject menuAccessibility;
     private FirstPersonController firstPersonController;
     private bool menuActive;
+    private static List<string> paletteOptions = new List<string>();
+    private static string chosenPalette;
+
+
+    public static string ChosenPalette { get => chosenPalette; set => chosenPalette = value; }
+
+    private void Awake()
+    {
+        SetPaletteChoice();
+        ChooseRandomMaterialPalette();
+    }
 
     private void Start()
     {
         firstPersonController = GameObject.Find("Player").GetComponent<FirstPersonController>();
+    }
+    private void SetPaletteChoice()
+    {
+        paletteOptions.Add("Palette1");
+        paletteOptions.Add("Palette2");
     }
 
     private void Update()
@@ -34,6 +51,12 @@ public class GameManager : MonoBehaviour
             Cursor.visible = false;
             firstPersonController.MenuToggle = false;
         }
+    }
+
+    private static void ChooseRandomMaterialPalette()
+    {
+        int indexPalette = UnityEngine.Random.Range(0, paletteOptions.Count);
+        chosenPalette = paletteOptions[indexPalette];
     }
 
     public void ToggleMenu()

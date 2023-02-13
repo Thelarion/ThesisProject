@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Linq;
 
 public class RunInterval : MonoBehaviour
 {
@@ -9,8 +8,7 @@ public class RunInterval : MonoBehaviour
     private ArrayList _materialsAvailable = new ArrayList();
     private ArrayList _materialsAvailableString = new ArrayList();
     private Material[] _materialRenderer;
-    private int _materialIndex;
-    private string _nameGONoteAndOctave;
+    private string _nameGOFull;
     private string _nameGONote;
     private string _nameGOOctave;
     private string _nameGOAccidental;
@@ -22,36 +20,37 @@ public class RunInterval : MonoBehaviour
 
     void Start()
     {
-        noteParticles = transform.GetChild(0).GetComponent<ParticleSystem>();
-        PlayNoteOnTone = transform.parent.gameObject.GetComponent<PlayNoteOnTone>();
-        LoadMaterialsFromResources();
+        GetComponents();
         SetNames();
-        _renderer = GetComponent<Renderer>();
-        _materialRenderer = _renderer.materials;
+        SetRenderer();
+
         StartCoroutine(IntervalChangeTarget());
         StartCoroutine(IntervalNoteAndEffect());
+
+        void GetComponents()
+        {
+            noteParticles = transform.GetChild(0).GetComponent<ParticleSystem>();
+            PlayNoteOnTone = transform.parent.gameObject.GetComponent<PlayNoteOnTone>();
+        }
+
+        void SetRenderer()
+        {
+            _renderer = GetComponent<Renderer>();
+            _materialRenderer = _renderer.materials;
+        }
     }
 
     // Caution: Same as in OperationController, lean it down!
     private void SetNames()
     {
-        _nameGONoteAndOctave = transform.name;
-        _nameGONote = _nameGONoteAndOctave[0].ToString();
-        _nameGOOctave = _nameGONoteAndOctave[1].ToString();
+        _nameGOFull = transform.name;
+        _nameGONote = _nameGOFull[0].ToString();
+        _nameGOOctave = _nameGOFull[1].ToString();
         int digitCountBeforeAccidental = 2; // e.g. A2 = 2, A2# = 3
-        string accidentalCheck = _nameGONoteAndOctave.Length > digitCountBeforeAccidental ? _nameGONoteAndOctave[2].ToString() : "null";
+        string accidentalCheck = _nameGOFull.Length > digitCountBeforeAccidental ? _nameGOFull[2].ToString() : "null";
         _nameGOAccidental = accidentalCheck; // Accidental or null 
     }
 
-    private void LoadMaterialsFromResources()
-    {
-        var load = Resources.LoadAll("MaterialNotes", typeof(Material)).Cast<Material>();
-        foreach (var material in load)
-        {
-            _materialsAvailable.Add(material);
-            _materialsAvailableString.Add(material.name);
-        }
-    }
 
     void ChangeMaterial()
     {
@@ -66,10 +65,13 @@ public class RunInterval : MonoBehaviour
     Material randomMaterial3 = null;
     bool materialGenerated = false;
 
+    public ArrayList MaterialsAvailable { get => _materialsAvailable; set => _materialsAvailable = new ArrayList(value); }
+    public ArrayList MaterialsAvailableString { get => _materialsAvailableString; set => _materialsAvailableString = new ArrayList(value); }
+
     private Material ChooseNextMaterial()
     {
         // Copy the original array
-        ArrayList fluentMaterialArray = new ArrayList(_materialsAvailable);
+        ArrayList fluentMaterialArray = new ArrayList(MaterialsAvailable);
 
         if (!materialGenerated)
         {
@@ -89,7 +91,7 @@ public class RunInterval : MonoBehaviour
         void GenerateMaterials(ArrayList fluentMaterialArray)
         {
             // Get correct material
-            correctMaterial = _materialsAvailable[_materialsAvailableString.IndexOf(_nameGONote)] as Material;
+            correctMaterial = MaterialsAvailable[MaterialsAvailableString.IndexOf(_nameGONote)] as Material;
             // Remove the correct material from the fluent array
             fluentMaterialArray.Remove(correctMaterial);
             // print(correctMaterial);

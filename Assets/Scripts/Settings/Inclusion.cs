@@ -43,7 +43,7 @@ public class Inclusion : MonoBehaviour
         PlayerFollowCameraNoiseOff.SetActive(true);
 
         // Adjust behaviour of the targets
-        TargetParent TP = TargetParent.transform.GetComponent<TargetParent>();
+        TargetController TP = TargetParent.transform.GetComponent<TargetController>();
         TP.ToggleInclusionTargets();
         TP.ResetNotePositionToSpawnPoint();
     }

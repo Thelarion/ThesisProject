@@ -156,7 +156,7 @@ public class AimManager : MonoBehaviour
         SetUpNewTarget(DistanceToTarget.CurrentLoopObjectShortestDistance);
     }
 
-    private void SetUpNewTarget(TargetController target)
+    private void SetUpNewTarget(TargetIdentity target)
     {
         // Set the new target
         currentTarget = target.gameObject;

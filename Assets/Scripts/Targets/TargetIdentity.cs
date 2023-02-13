@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 // Put this component on your enemy prefabs / objects
-public class TargetController : MonoBehaviour
+public class TargetIdentity : MonoBehaviour
 {
     private static int targetCount;
     private int _indexInSequence;
@@ -14,10 +14,10 @@ public class TargetController : MonoBehaviour
     [HideInInspector] public TargetSpawnPoints targetSpawnPoints;
 
     // every instance registers to and removes itself from here
-    private static readonly HashSet<TargetController> _instances = new HashSet<TargetController>();
+    private static readonly HashSet<TargetIdentity> _instances = new HashSet<TargetIdentity>();
 
     // Readonly property, I would return a new HashSet so nobody on the outside can alter the content
-    public static HashSet<TargetController> Instances => new HashSet<TargetController>(_instances);
+    public static HashSet<TargetIdentity> Instances => new HashSet<TargetIdentity>(_instances);
 
     // Add target to instances
     private void Awake()
@@ -55,7 +55,6 @@ public class TargetController : MonoBehaviour
     // Remove target from instances when destroyed
     private void OnDestroy()
     {
-        // GetComponent<AkAmbient>().Stop(0);
         if (_tapState)
         {
             operationController.ActivateFrameSuccess(_indexInSequence, transform.name);

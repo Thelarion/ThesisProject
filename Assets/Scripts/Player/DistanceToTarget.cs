@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class DistanceToTarget : MonoBehaviour
 {
-    private static TargetController currentLoopObjectShortestDistance = null;
+    private static TargetIdentity currentLoopObjectShortestDistance = null;
 
-    public static TargetController CurrentLoopObjectShortestDistance
+    public static TargetIdentity CurrentLoopObjectShortestDistance
     {
         get { return currentLoopObjectShortestDistance; }
     }
@@ -19,7 +19,7 @@ public class DistanceToTarget : MonoBehaviour
     private void DetermineCurrentTarget()
     {
         // Get the Instances from Target Controller
-        var targets = TargetController.Instances;
+        var targets = TargetIdentity.Instances;
 
         // Set the initial distance to infinity high
         float distanceCameraNextTarget = Mathf.Infinity;
