@@ -40,7 +40,7 @@ public class AudioBeacon : MonoBehaviour
         bool tenthFound = ((roundedDistance / 10) % 1) == 0;
 
         int roundedDistanceDiv10 = (Mathf.RoundToInt(roundedDistance / 10));    // Divide the distance by 10
-
+        print(roundedDistanceDiv10);
         if (tenthFound)
         {
             if (roundedDistance != semaphoreDistance)
@@ -49,7 +49,7 @@ public class AudioBeacon : MonoBehaviour
 
                 int Div10Index = roundedDistanceDiv10 - 1;          // lowered by 1, as (10 / 10) = 1, but need element 0
 
-                print(roundedDistanceDiv10);                        // Distance as index
+                // print(roundedDistanceDiv10);                        // Distance as index
 
                 if (roundedDistanceDiv10 > 0 && roundedDistanceDiv10 < 10) // Safety, as for now only 0 - 9 exists
                 {

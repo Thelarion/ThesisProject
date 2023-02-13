@@ -77,7 +77,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{AAB57A8E-BF45-7DF5-7DBB-8BCE01448C39}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{47604F06-4BA2-9933-F31D-08BEF231451A}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -120,6 +120,10 @@
 				<File Id="145167046" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O3\E3.wav</ShortName>
 					<CachePath>SFX/O3/E3_10C4C929.wem</CachePath>
+				</File>
+				<File Id="158003658" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>CorrectNote.wav</ShortName>
+					<CachePath>SFX/CorrectNote_10C4C929.wem</CachePath>
 				</File>
 				<File Id="164636996" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>F4#.wav</ShortName>
@@ -820,6 +824,7 @@
 				</Event>
 				<Event Id="3625060726" Name="Success" DurationType="OneShot" DurationMin="5.4231367" DurationMax="5.4231367">
 					<MediaRefs>
+						<MediaRef Id="158003658"/>
 						<MediaRef Id="517302441"/>
 						<MediaRef Id="778380301"/>
 					</MediaRefs>
@@ -851,5 +856,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{64050874-C197-8218-31D9-59B0A1BC9C4F}</FileHash>
+	<FileHash>{8D21F9C7-98A2-B3C8-45BA-0989FA78D2A7}</FileHash>
 </SoundBanksInfo>

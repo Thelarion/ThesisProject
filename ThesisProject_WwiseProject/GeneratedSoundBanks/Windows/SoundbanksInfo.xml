@@ -77,7 +77,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{AAB57A8E-BF45-7DF5-7DBB-8BCE01448C39}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{E71929EF-931D-3375-4B05-031240FFAE4C}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -121,6 +121,10 @@
 					<ShortName>O3\E3.wav</ShortName>
 					<CachePath>SFX/O3/E3_10C4C929.wem</CachePath>
 				</File>
+				<File Id="158003658" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>CorrectNote.wav</ShortName>
+					<CachePath>SFX/CorrectNote_10C4C929.wem</CachePath>
+				</File>
 				<File Id="164636996" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>F4#.wav</ShortName>
 					<CachePath>SFX/F4#_10C4C929.wem</CachePath>
@@ -160,6 +164,10 @@
 				<File Id="242190809" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>DistanceFrameTransition.wav</ShortName>
 					<CachePath>SFX/DistanceFrameTransition_10C4C929.wem</CachePath>
+				</File>
+				<File Id="253861454" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>WrongNoteAgain.wav</ShortName>
+					<CachePath>SFX/WrongNoteAgain_10C4C929.wem</CachePath>
 				</File>
 				<File Id="269103452" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>D2#.wav</ShortName>
@@ -307,7 +315,7 @@
 				</File>
 				<File Id="778380301" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cheering1.wav</ShortName>
-					<CachePath>SFX/Cheering1_52D27BF3.wem</CachePath>
+					<CachePath>SFX/Cheering1_FD33EE18.wem</CachePath>
 				</File>
 				<File Id="782485844" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O4\G4.wav</ShortName>
@@ -773,6 +781,12 @@
 						<MediaRef Id="12077457"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3062523241" Name="Miss" DurationType="OneShot" DurationMin="7.5794787" DurationMax="7.5794787">
+					<MediaRefs>
+						<MediaRef Id="33821008"/>
+						<MediaRef Id="253861454"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2664667690" Name="PlayerFoot" DurationType="OneShot" DurationMin="0.386644" DurationMax="0.8593651">
 					<SwitchContainers>
 						<SwitchContainer>
@@ -813,13 +827,9 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="2086503983" Name="PlingFail" DurationType="OneShot" DurationMin="4" DurationMax="4">
-					<MediaRefs>
-						<MediaRef Id="33821008"/>
-					</MediaRefs>
-				</Event>
 				<Event Id="3625060726" Name="Success" DurationType="OneShot" DurationMin="5.4231367" DurationMax="5.4231367">
 					<MediaRefs>
+						<MediaRef Id="158003658"/>
 						<MediaRef Id="517302441"/>
 						<MediaRef Id="778380301"/>
 					</MediaRefs>
@@ -851,5 +861,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{1EE3E06A-4506-2614-2F0C-E0668682E1EE}</FileHash>
+	<FileHash>{84E37CD4-04DF-3B35-88AF-B8ED3B2CA626}</FileHash>
 </SoundBanksInfo>

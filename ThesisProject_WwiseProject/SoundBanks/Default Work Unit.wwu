@@ -6,7 +6,7 @@
 				<SoundBank Name="Main" ID="{E965A4AA-07EE-4611-8F19-203F9D710CE1}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Frequency Distance" ID="{99AC6BE6-146C-4182-9837-E7FB3AE78D80}" WorkUnitID="{6B91872B-49A8-4BB8-A212-FBF7E77C3676}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Notes" ID="{8488E846-2F9A-4239-8077-9B10A36AE81B}" WorkUnitID="{2FB4EF43-DF60-47B9-9EEF-A2004292FBF9}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="SingleNotes" ID="{8488E846-2F9A-4239-8077-9B10A36AE81B}" WorkUnitID="{2FB4EF43-DF60-47B9-9EEF-A2004292FBF9}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="SFX" ID="{CDF93DC7-5004-462E-8B4B-7A815B229A25}" WorkUnitID="{2FB4EF43-DF60-47B9-9EEF-A2004292FBF9}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="WhiteNoiseOnTarget" ID="{C1091B34-059C-49D2-BB23-3B4E3D366514}" WorkUnitID="{2FB4EF43-DF60-47B9-9EEF-A2004292FBF9}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PlayerFoot" ID="{082039E4-8A12-4A7E-8C3D-A3C8AF76EE16}" WorkUnitID="{2FB4EF43-DF60-47B9-9EEF-A2004292FBF9}" Origin="Manual" Filter="7"/>

@@ -81,8 +81,8 @@ namespace AK
         static const AkUniqueID G4 = 1786192860U;
         static const AkUniqueID G4B = 1972204342U;
         static const AkUniqueID G4S = 1972204327U;
+        static const AkUniqueID MISS = 3062523241U;
         static const AkUniqueID PLAYERFOOT = 2664667690U;
-        static const AkUniqueID PLINGFAIL = 2086503983U;
         static const AkUniqueID SUCCESS = 3625060726U;
         static const AkUniqueID WHITENOISEONTARGET = 1848491570U;
     } // namespace EVENTS

@@ -46,7 +46,6 @@ public class OperationController : MonoBehaviour
     public Sprite UI_BackgroundGrey;
     [Header("Wwise")]
     public AK.Wwise.Event DistanceFrameTransition;
-    public AK.Wwise.Event Cheering;
     private bool blockInitialPost = false;
 
     private void Start()

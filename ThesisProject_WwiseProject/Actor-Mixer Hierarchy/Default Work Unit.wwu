@@ -3,7 +3,7 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{6B91872B-49A8-4BB8-A212-FBF7E77C3676}" PersistMode="Standalone">
 			<ChildrenList>
-				<ActorMixer Name="Character" ID="{179042E6-5929-42E2-B89E-D3778BC0E220}" ShortID="330963427">
+				<ActorMixer Name="Player" ID="{179042E6-5929-42E2-B89E-D3778BC0E220}" ShortID="330963427">
 					<PropertyList>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
@@ -2099,9 +2099,56 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<Sound Name="WrongNoteTryAgain" ID="{49FE5778-A0B2-471F-B88D-4966FF41A239}" ShortID="660227625">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="WrongNoteAgain" ID="{97887DF0-AC79-46C1-AA24-192A3B77EC32}">
+									<Language>SFX</Language>
+									<AudioFile>WrongNoteAgain.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="253861454"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="WrongNoteAgain" ID="{97887DF0-AC79-46C1-AA24-192A3B77EC32}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="CorrectNote" ID="{070E9EE8-33DA-4067-A1ED-C34571720F4D}" ShortID="665106603">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="CorrectNote" ID="{72B77892-E732-44E0-8D73-883A1543F542}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>CorrectNote.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="158003658"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="CorrectNote" ID="{72B77892-E732-44E0-8D73-883A1543F542}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
-				<ActorMixer Name="Notes" ID="{69969035-408C-410B-AFC3-FBF9A354465F}" ShortID="991849679">
+				<ActorMixer Name="SingleNotes" ID="{69969035-408C-410B-AFC3-FBF9A354465F}" ShortID="991849679">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 					</PropertyList>
