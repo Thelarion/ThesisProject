@@ -79,7 +79,8 @@ namespace StarterAssets
         [HideInInspector] public GameManager gameManager;
         [HideInInspector] public MelodyManager melodyManager;
         [HideInInspector] public bool MenuToggle = false;
-        [HideInInspector] public Slingshot slingshot;
+        [HideInInspector] private Slingshot slingshot;
+        [HideInInspector] private ConductorBaton conductorBaton;
 
 
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
@@ -117,6 +118,7 @@ namespace StarterAssets
             melodyManager = GameObject.Find("List").GetComponent<MelodyManager>();
             gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
             slingshot = GameObject.Find("MasterSlingshot").GetComponent<Slingshot>();
+            // conductorBaton = GameObject.Find("ConductorBaton").GetComponent<ConductorBaton>();
             _controller = GetComponent<CharacterController>();
             _input = GetComponent<StarterAssetsInputs>();
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
@@ -150,6 +152,7 @@ namespace StarterAssets
             if (_input.fire)
             {
                 slingshot.FireSlingshot();
+                // conductorBaton.TriggerConductor();
                 _input.fire = false;
             }
         }

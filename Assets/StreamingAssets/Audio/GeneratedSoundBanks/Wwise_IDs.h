@@ -28,8 +28,6 @@ namespace AK
         static const AkUniqueID B3B = 1822044542U;
         static const AkUniqueID B4 = 1870081011U;
         static const AkUniqueID B4B = 1805266923U;
-        static const AkUniqueID BEACONLOCK = 19930668U;
-        static const AkUniqueID BEACONLR = 767190967U;
         static const AkUniqueID C2 = 1853303302U;
         static const AkUniqueID C2S = 3952551681U;
         static const AkUniqueID C3 = 1853303303U;
@@ -82,7 +80,9 @@ namespace AK
         static const AkUniqueID G4B = 1972204342U;
         static const AkUniqueID G4S = 1972204327U;
         static const AkUniqueID MISS = 3062523241U;
-        static const AkUniqueID PLAYERFOOT = 2664667690U;
+        static const AkUniqueID PLAY_BEACONLOCK = 3923622767U;
+        static const AkUniqueID PLAY_BEACONLR = 194014728U;
+        static const AkUniqueID PLAY_PLAYERFOOT = 3015844381U;
         static const AkUniqueID SUCCESS = 3625060726U;
         static const AkUniqueID WHITENOISEONTARGET = 1848491570U;
     } // namespace EVENTS
@@ -102,6 +102,18 @@ namespace AK
                 static const AkUniqueID NONE = 748895195U;
             } // namespace STATE
         } // namespace AIMDIRECTION
+
+        namespace GAMESTATE
+        {
+            static const AkUniqueID GROUP = 4091656514U;
+
+            namespace STATE
+            {
+                static const AkUniqueID INGAME = 984691642U;
+                static const AkUniqueID INMENU = 3374585465U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace GAMESTATE
 
     } // namespace STATES
 
@@ -141,12 +153,12 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
-        static const AkUniqueID BEACON_LR_VOLUME = 2474654343U;
-        static const AkUniqueID DISTANCE_FREQ = 3639684685U;
-        static const AkUniqueID FREQUENCY_DEPTH = 1440328639U;
-        static const AkUniqueID LEFT_RIGHT = 189100965U;
-        static const AkUniqueID SYNTH_PWM_UP_DOWN = 4213591503U;
-        static const AkUniqueID WALL_OCCLUSION = 2345103495U;
+        static const AkUniqueID RTPC_BEACON_LR_VOLUME = 4120900405U;
+        static const AkUniqueID RTPC_DISTANCE_FREQ = 1364189011U;
+        static const AkUniqueID RTPC_FREQUENCY_DEPTH = 1384204673U;
+        static const AkUniqueID RTPC_LEFT_RIGHT = 3707704703U;
+        static const AkUniqueID RTPC_SYNTH_PWM_UP_DOWN = 815616169U;
+        static const AkUniqueID RTPC_WALL_OCCLUSION = 872361937U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS

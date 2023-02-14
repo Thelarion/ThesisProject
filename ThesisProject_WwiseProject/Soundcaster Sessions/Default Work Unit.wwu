@@ -12,15 +12,15 @@
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
-							<GameParameterRef Name="beacon_lr_volume" ID="{445EB36B-D47E-4022-A599-348A4BA0D55B}"/>
+							<GameParameterRef Name="RTPC_beacon_lr_volume" ID="{445EB36B-D47E-4022-A599-348A4BA0D55B}"/>
 							<Value>1</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="wall_occlusion" ID="{CDBF976E-CA53-49B6-8C0C-5767DD5366F1}"/>
+							<GameParameterRef Name="RTPC_wall_occlusion" ID="{CDBF976E-CA53-49B6-8C0C-5767DD5366F1}"/>
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="left_right" ID="{60541B11-A5E4-4A1C-A022-D83ADF062581}"/>
+							<GameParameterRef Name="RTPC_left_right" ID="{60541B11-A5E4-4A1C-A022-D83ADF062581}"/>
 							<Value>-1</Value>
 						</RTPCValue>
 					</RTPCValueList>

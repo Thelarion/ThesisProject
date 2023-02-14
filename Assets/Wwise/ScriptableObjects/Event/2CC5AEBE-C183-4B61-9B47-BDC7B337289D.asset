@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2884db9baba48ae43abdd083adbd1799, type: 3}
   m_Name: 2CC5AEBE-C183-4B61-9B47-BDC7B337289D
   m_EditorClassIdentifier: 
-  objectName: BeaconLR
-  id: 767190967
+  objectName: Play_BeaconLR
+  id: 194014728
   guid: 2CC5AEBE-C183-4B61-9B47-BDC7B337289D

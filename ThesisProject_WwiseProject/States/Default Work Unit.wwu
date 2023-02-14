@@ -12,6 +12,13 @@
 						<State Name="AimRight" ID="{C692518E-69AC-46BF-B273-403A38F62808}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="GameState" ID="{2602B480-51E5-42C2-A66B-685E24B29528}">
+					<ChildrenList>
+						<State Name="None" ID="{774C6CBC-C129-4C8F-BD56-D5E99C9F83BB}"/>
+						<State Name="InGame" ID="{A52D536C-8595-4134-BE77-1C910180926B}"/>
+						<State Name="InMenu" ID="{AC4B901B-5A27-4C55-89BB-58FCE85F8991}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

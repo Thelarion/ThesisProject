@@ -1,5 +1,6 @@
 State Group	ID	Name			Wwise Object Path	Notes
 	3737870095	AimDirection			\Default Work Unit\AimDirection	
+	4091656514	GameState			\Default Work Unit\GameState	
 
 State	ID	Name	State Group			Notes
 	748895195	None	AimDirection			
@@ -7,6 +8,9 @@ State	ID	Name	State Group			Notes
 	2448668527	AimLeft	AimDirection			
 	3625632552	AimDown	AimDirection			
 	3959127275	AimUp	AimDirection			
+	748895195	None	GameState			
+	984691642	InGame	GameState			
+	3374585465	InMenu	GameState			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	393239870	SFX			\Default Work Unit\Master Audio Bus\Environment\SFX	

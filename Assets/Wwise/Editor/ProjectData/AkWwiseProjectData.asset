@@ -123,7 +123,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 36069028d9c6b149af9e7a7e2bc60423
     GuidInternal: 
-    m_lastTime: -8585253051594822204
+    m_lastTime: -8585252896662919974
     List:
     - name: Main
       guid: aaa465e9ee0711468f19203f9d710ce1
@@ -140,6 +140,307 @@ MonoBehaviour:
         guid: aaa465e9ee0711468f19203f9d710ce1
       Path: SoundBanks\Default Work Unit\Main
   EventWwu:
+  - PhysicalPath: Events\Beacon.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Beacon
+      ObjectType: 12
+      guid: 1caa8a9567812e44b92bee0e141e8819
+    ParentPath: Events\Beacon
+    guid: 1caa8a9567812e44b92bee0e141e8819
+    GuidInternal: 
+    m_lastTime: -8585252889380053623
+    List:
+    - name: d10
+      guid: 5e77bdad9013c54db57d3aab89596901
+      id: 3801406080
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Beacon
+        ObjectType: 12
+        guid: 1caa8a9567812e44b92bee0e141e8819
+      - ElementName: DistanceCount
+        ObjectType: 4
+        guid: 7b4ed62605ccc948971fb1776133d1ca
+      - ElementName: d10
+        ObjectType: 3
+        guid: 5e77bdad9013c54db57d3aab89596901
+      Path: Events\Beacon\DistanceCount\d10
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: d100
+      guid: d16e0e2407e5df4fad1362691e11b81f
+      id: 810809264
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Beacon
+        ObjectType: 12
+        guid: 1caa8a9567812e44b92bee0e141e8819
+      - ElementName: DistanceCount
+        ObjectType: 4
+        guid: 7b4ed62605ccc948971fb1776133d1ca
+      - ElementName: d100
+        ObjectType: 3
+        guid: d16e0e2407e5df4fad1362691e11b81f
+      Path: Events\Beacon\DistanceCount\d100
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: d20
+      guid: f93bea8499c41247994767a09f020673
+      id: 3851738969
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Beacon
+        ObjectType: 12
+        guid: 1caa8a9567812e44b92bee0e141e8819
+      - ElementName: DistanceCount
+        ObjectType: 4
+        guid: 7b4ed62605ccc948971fb1776133d1ca
+      - ElementName: d20
+        ObjectType: 3
+        guid: f93bea8499c41247994767a09f020673
+      Path: Events\Beacon\DistanceCount\d20
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: d30
+      guid: 959aa9fc7973b14dade8fbcc4f22241b
+      id: 3834961382
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Beacon
+        ObjectType: 12
+        guid: 1caa8a9567812e44b92bee0e141e8819
+      - ElementName: DistanceCount
+        ObjectType: 4
+        guid: 7b4ed62605ccc948971fb1776133d1ca
+      - ElementName: d30
+        ObjectType: 3
+        guid: 959aa9fc7973b14dade8fbcc4f22241b
+      Path: Events\Beacon\DistanceCount\d30
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: d40
+      guid: 88b36135c20c6c4091a77064c5be7d7e
+      id: 3885294271
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Beacon
+        ObjectType: 12
+        guid: 1caa8a9567812e44b92bee0e141e8819
+      - ElementName: DistanceCount
+        ObjectType: 4
+        guid: 7b4ed62605ccc948971fb1776133d1ca
+      - ElementName: d40
+        ObjectType: 3
+        guid: 88b36135c20c6c4091a77064c5be7d7e
+      Path: Events\Beacon\DistanceCount\d40
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: d50
+      guid: 157e1220582ce4468da57a0250a03b65
+      id: 3868516556
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Beacon
+        ObjectType: 12
+        guid: 1caa8a9567812e44b92bee0e141e8819
+      - ElementName: DistanceCount
+        ObjectType: 4
+        guid: 7b4ed62605ccc948971fb1776133d1ca
+      - ElementName: d50
+        ObjectType: 3
+        guid: 157e1220582ce4468da57a0250a03b65
+      Path: Events\Beacon\DistanceCount\d50
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: d60
+      guid: 0dee418af8eb2b4395cb759996a22fd6
+      id: 3918849413
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Beacon
+        ObjectType: 12
+        guid: 1caa8a9567812e44b92bee0e141e8819
+      - ElementName: DistanceCount
+        ObjectType: 4
+        guid: 7b4ed62605ccc948971fb1776133d1ca
+      - ElementName: d60
+        ObjectType: 3
+        guid: 0dee418af8eb2b4395cb759996a22fd6
+      Path: Events\Beacon\DistanceCount\d60
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: d70
+      guid: 1c230eb36eb4ab488e3f7e7308ff640e
+      id: 3902071826
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Beacon
+        ObjectType: 12
+        guid: 1caa8a9567812e44b92bee0e141e8819
+      - ElementName: DistanceCount
+        ObjectType: 4
+        guid: 7b4ed62605ccc948971fb1776133d1ca
+      - ElementName: d70
+        ObjectType: 3
+        guid: 1c230eb36eb4ab488e3f7e7308ff640e
+      Path: Events\Beacon\DistanceCount\d70
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: d80
+      guid: 7b4a315303de8f41ba8d5b89f1425b0c
+      id: 3952404715
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Beacon
+        ObjectType: 12
+        guid: 1caa8a9567812e44b92bee0e141e8819
+      - ElementName: DistanceCount
+        ObjectType: 4
+        guid: 7b4ed62605ccc948971fb1776133d1ca
+      - ElementName: d80
+        ObjectType: 3
+        guid: 7b4a315303de8f41ba8d5b89f1425b0c
+      Path: Events\Beacon\DistanceCount\d80
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: d90
+      guid: be63adf71394764fb510bbe862f7616e
+      id: 3935627128
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Beacon
+        ObjectType: 12
+        guid: 1caa8a9567812e44b92bee0e141e8819
+      - ElementName: DistanceCount
+        ObjectType: 4
+        guid: 7b4ed62605ccc948971fb1776133d1ca
+      - ElementName: d90
+        ObjectType: 3
+        guid: be63adf71394764fb510bbe862f7616e
+      Path: Events\Beacon\DistanceCount\d90
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: destination_reached
+      guid: 60509861cdadc9418721eff81467818e
+      id: 4069116836
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Beacon
+        ObjectType: 12
+        guid: 1caa8a9567812e44b92bee0e141e8819
+      - ElementName: DistanceCount
+        ObjectType: 4
+        guid: 7b4ed62605ccc948971fb1776133d1ca
+      - ElementName: destination_reached
+        ObjectType: 3
+        guid: 60509861cdadc9418721eff81467818e
+      Path: Events\Beacon\DistanceCount\destination_reached
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: distanceC
+      guid: 37d9845939562e468e10cf9f08a2920e
+      id: 2982082363
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Beacon
+        ObjectType: 12
+        guid: 1caa8a9567812e44b92bee0e141e8819
+      - ElementName: distanceC
+        ObjectType: 3
+        guid: 37d9845939562e468e10cf9f08a2920e
+      Path: Events\Beacon\distanceC
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: DistanceCount
+      guid: 7b4ed62605ccc948971fb1776133d1ca
+      id: 1258232269
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Beacon
+        ObjectType: 12
+        guid: 1caa8a9567812e44b92bee0e141e8819
+      - ElementName: DistanceCount
+        ObjectType: 4
+        guid: 7b4ed62605ccc948971fb1776133d1ca
+      Path: Events\Beacon\DistanceCount
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_BeaconLock
+      guid: 2bb7d26173335449a5a2a3e2d4cfd5ef
+      id: 3923622767
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Beacon
+        ObjectType: 12
+        guid: 1caa8a9567812e44b92bee0e141e8819
+      - ElementName: Play_BeaconLock
+        ObjectType: 3
+        guid: 2bb7d26173335449a5a2a3e2d4cfd5ef
+      Path: Events\Beacon\Play_BeaconLock
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_BeaconLR
+      guid: beaec52c83c1614b9b47bdc7b337289d
+      id: 194014728
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Beacon
+        ObjectType: 12
+        guid: 1caa8a9567812e44b92bee0e141e8819
+      - ElementName: Play_BeaconLR
+        ObjectType: 3
+        guid: beaec52c83c1614b9b47bdc7b337289d
+      Path: Events\Beacon\Play_BeaconLR
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Events
@@ -151,488 +452,21 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 43efb42f60dfb9479eefa2004292fbf9
     GuidInternal: 
-    m_lastTime: -8585253049676667105
+    m_lastTime: -8585252899336269808
+    List: []
+  - PhysicalPath: Events\Music.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Music
+      ObjectType: 12
+      guid: fea8c7414fd0b742bfa29828fe7796a2
+    ParentPath: Events\Music
+    guid: fea8c7414fd0b742bfa29828fe7796a2
+    GuidInternal: 
+    m_lastTime: -8585252897694279091
     List:
-    - name: A2
-      guid: 1a1bb7ce8a6d3b40afeac51e10a01d36
-      id: 1886858600
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: O2
-        ObjectType: 4
-        guid: aa786ab94d3a174d8a27fdcdc6e78643
-      - ElementName: A2
-        ObjectType: 3
-        guid: 1a1bb7ce8a6d3b40afeac51e10a01d36
-      Path: Events\Default Work Unit\SingleNotes\O2\A2
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: A2b
-      guid: 5a8b60e597129d40bf1398d67cea210d
-      id: 1939634906
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: O2
-        ObjectType: 4
-        guid: aa786ab94d3a174d8a27fdcdc6e78643
-      - ElementName: A2b
-        ObjectType: 3
-        guid: 5a8b60e597129d40bf1398d67cea210d
-      Path: Events\Default Work Unit\SingleNotes\O2\A2b
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: A2s
-      guid: c0db85f9d2f89541bf7b800625805ab2
-      id: 1939634891
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: O2
-        ObjectType: 4
-        guid: aa786ab94d3a174d8a27fdcdc6e78643
-      - ElementName: A2s
-        ObjectType: 3
-        guid: c0db85f9d2f89541bf7b800625805ab2
-      Path: Events\Default Work Unit\SingleNotes\O2\A2s
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: A3
-      guid: 46514b374ae67449b8af3951c3eebb64
-      id: 1886858601
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: O3
-        ObjectType: 4
-        guid: 927439f61147cf4988ccceee457f64b4
-      - ElementName: A3
-        ObjectType: 3
-        guid: 46514b374ae67449b8af3951c3eebb64
-      Path: Events\Default Work Unit\SingleNotes\O3\A3
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: A3b
-      guid: cd01f1229f7f5241a497cae812482b11
-      id: 1956412457
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: O3
-        ObjectType: 4
-        guid: 927439f61147cf4988ccceee457f64b4
-      - ElementName: A3b
-        ObjectType: 3
-        guid: cd01f1229f7f5241a497cae812482b11
-      Path: Events\Default Work Unit\SingleNotes\O3\A3b
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: A3s
-      guid: 5bee2d4a6ac0db46a066891fcab030e4
-      id: 1956412472
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: O3
-        ObjectType: 4
-        guid: 927439f61147cf4988ccceee457f64b4
-      - ElementName: A3s
-        ObjectType: 3
-        guid: 5bee2d4a6ac0db46a066891fcab030e4
-      Path: Events\Default Work Unit\SingleNotes\O3\A3s
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: A4
-      guid: bf5d52be04c4f64aab5948e04a932c4f
-      id: 1886858606
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: O4
-        ObjectType: 4
-        guid: bf60ce8579469e49995fb894c981f37f
-      - ElementName: A4
-        ObjectType: 3
-        guid: bf5d52be04c4f64aab5948e04a932c4f
-      Path: Events\Default Work Unit\SingleNotes\O4\A4
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: A4b
-      guid: a22ef1459309cb41b10f458b39c2226e
-      id: 2040300616
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: O4
-        ObjectType: 4
-        guid: bf60ce8579469e49995fb894c981f37f
-      - ElementName: A4b
-        ObjectType: 3
-        guid: a22ef1459309cb41b10f458b39c2226e
-      Path: Events\Default Work Unit\SingleNotes\O4\A4b
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: A4s
-      guid: 445a543578fa8f4483b7aa459091e5f9
-      id: 2040300633
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: O4
-        ObjectType: 4
-        guid: bf60ce8579469e49995fb894c981f37f
-      - ElementName: A4s
-        ObjectType: 3
-        guid: 445a543578fa8f4483b7aa459091e5f9
-      Path: Events\Default Work Unit\SingleNotes\O4\A4s
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: B2
-      guid: 64d0c64297f1a540904c058395b6a359
-      id: 1870081013
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: O2
-        ObjectType: 4
-        guid: aa786ab94d3a174d8a27fdcdc6e78643
-      - ElementName: B2
-        ObjectType: 3
-        guid: 64d0c64297f1a540904c058395b6a359
-      Path: Events\Default Work Unit\SingleNotes\O2\B2
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: B2b
-      guid: 67d3011b7212f14abbffb3ba826f72bb
-      id: 1838822093
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: O2
-        ObjectType: 4
-        guid: aa786ab94d3a174d8a27fdcdc6e78643
-      - ElementName: B2b
-        ObjectType: 3
-        guid: 67d3011b7212f14abbffb3ba826f72bb
-      Path: Events\Default Work Unit\SingleNotes\O2\B2b
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: B3
-      guid: c5337ded39a001438e2fb23ca40c9356
-      id: 1870081012
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: O3
-        ObjectType: 4
-        guid: 927439f61147cf4988ccceee457f64b4
-      - ElementName: B3
-        ObjectType: 3
-        guid: c5337ded39a001438e2fb23ca40c9356
-      Path: Events\Default Work Unit\SingleNotes\O3\B3
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: B3b
-      guid: e0d0061bc308234e89687c6a699cffd3
-      id: 1822044542
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: O3
-        ObjectType: 4
-        guid: 927439f61147cf4988ccceee457f64b4
-      - ElementName: B3b
-        ObjectType: 3
-        guid: e0d0061bc308234e89687c6a699cffd3
-      Path: Events\Default Work Unit\SingleNotes\O3\B3b
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: B4
-      guid: 4ce11b8f8d43584ea952a1002d89c4fb
-      id: 1870081011
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: O4
-        ObjectType: 4
-        guid: bf60ce8579469e49995fb894c981f37f
-      - ElementName: B4
-        ObjectType: 3
-        guid: 4ce11b8f8d43584ea952a1002d89c4fb
-      Path: Events\Default Work Unit\SingleNotes\O4\B4
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: B4b
-      guid: 38ec9ff06ec3e4488ac2d4549748a2e1
-      id: 1805266923
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: O4
-        ObjectType: 4
-        guid: bf60ce8579469e49995fb894c981f37f
-      - ElementName: B4b
-        ObjectType: 3
-        guid: 38ec9ff06ec3e4488ac2d4549748a2e1
-      Path: Events\Default Work Unit\SingleNotes\O4\B4b
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Beacon
-      guid: ed98b4f3cbb4cd45a62eb3dbe94f8e70
-      id: 3241852425
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SFX
-        ObjectType: 4
-        guid: c73df9cd04502e468b4b7a815b229a25
-      - ElementName: Beacon
-        ObjectType: 4
-        guid: ed98b4f3cbb4cd45a62eb3dbe94f8e70
-      Path: Events\Default Work Unit\SFX\Beacon
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: BeaconLock
-      guid: 2bb7d26173335449a5a2a3e2d4cfd5ef
-      id: 19930668
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SFX
-        ObjectType: 4
-        guid: c73df9cd04502e468b4b7a815b229a25
-      - ElementName: Beacon
-        ObjectType: 4
-        guid: ed98b4f3cbb4cd45a62eb3dbe94f8e70
-      - ElementName: BeaconLock
-        ObjectType: 3
-        guid: 2bb7d26173335449a5a2a3e2d4cfd5ef
-      Path: Events\Default Work Unit\SFX\Beacon\BeaconLock
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: BeaconLR
-      guid: beaec52c83c1614b9b47bdc7b337289d
-      id: 767190967
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SFX
-        ObjectType: 4
-        guid: c73df9cd04502e468b4b7a815b229a25
-      - ElementName: Beacon
-        ObjectType: 4
-        guid: ed98b4f3cbb4cd45a62eb3dbe94f8e70
-      - ElementName: BeaconLR
-        ObjectType: 3
-        guid: beaec52c83c1614b9b47bdc7b337289d
-      Path: Events\Default Work Unit\SFX\Beacon\BeaconLR
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: C2
-      guid: 8ef752e399de7343994f403d9cb9bf5d
-      id: 1853303302
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: O2
-        ObjectType: 4
-        guid: aa786ab94d3a174d8a27fdcdc6e78643
-      - ElementName: C2
-        ObjectType: 3
-        guid: 8ef752e399de7343994f403d9cb9bf5d
-      Path: Events\Default Work Unit\SingleNotes\O2\C2
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: C2s
-      guid: dc71a15ce10a5748a2441cca94e3aa67
-      id: 3952551681
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: O2
-        ObjectType: 4
-        guid: aa786ab94d3a174d8a27fdcdc6e78643
-      - ElementName: C2s
-        ObjectType: 3
-        guid: dc71a15ce10a5748a2441cca94e3aa67
-      Path: Events\Default Work Unit\SingleNotes\O2\C2s
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: C3
-      guid: 904198cc591f1f4f874c362358a2110d
-      id: 1853303303
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: O3
-        ObjectType: 4
-        guid: 927439f61147cf4988ccceee457f64b4
-      - ElementName: C3
-        ObjectType: 3
-        guid: 904198cc591f1f4f874c362358a2110d
-      Path: Events\Default Work Unit\SingleNotes\O3\C3
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: C3_E3_A2_B3_C3
       guid: 4ee8ad68a59ec146968a9a3d04984ebd
       id: 3334410611
@@ -640,1144 +474,16 @@ MonoBehaviour:
       - ElementName: Events
         ObjectType: 5
         guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
+      - ElementName: Music
         ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
+        guid: fea8c7414fd0b742bfa29828fe7796a2
       - ElementName: Melodies
         ObjectType: 4
         guid: c85fbc328bf9ee4db1406f5a207dbd29
       - ElementName: C3_E3_A2_B3_C3
         ObjectType: 3
         guid: 4ee8ad68a59ec146968a9a3d04984ebd
-      Path: Events\Default Work Unit\Melodies\C3_E3_A2_B3_C3
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: C3s
-      guid: b7f6cc7882c0ad49838144012d3d327f
-      id: 3969329526
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: O3
-        ObjectType: 4
-        guid: 927439f61147cf4988ccceee457f64b4
-      - ElementName: C3s
-        ObjectType: 3
-        guid: b7f6cc7882c0ad49838144012d3d327f
-      Path: Events\Default Work Unit\SingleNotes\O3\C3s
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: C4
-      guid: 1dfe8918d48e1b4787e53438357e3af4
-      id: 1853303296
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: O4
-        ObjectType: 4
-        guid: bf60ce8579469e49995fb894c981f37f
-      - ElementName: C4
-        ObjectType: 3
-        guid: 1dfe8918d48e1b4787e53438357e3af4
-      Path: Events\Default Work Unit\SingleNotes\O4\C4
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: C4s
-      guid: 6566bebe749f1743a78a4961bcec6de8
-      id: 3851886195
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: O4
-        ObjectType: 4
-        guid: bf60ce8579469e49995fb894c981f37f
-      - ElementName: C4s
-        ObjectType: 3
-        guid: 6566bebe749f1743a78a4961bcec6de8
-      Path: Events\Default Work Unit\SingleNotes\O4\C4s
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: d10
-      guid: 5e77bdad9013c54db57d3aab89596901
-      id: 3801406080
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SFX
-        ObjectType: 4
-        guid: c73df9cd04502e468b4b7a815b229a25
-      - ElementName: Beacon
-        ObjectType: 4
-        guid: ed98b4f3cbb4cd45a62eb3dbe94f8e70
-      - ElementName: DistanceCount
-        ObjectType: 4
-        guid: 7b4ed62605ccc948971fb1776133d1ca
-      - ElementName: d10
-        ObjectType: 3
-        guid: 5e77bdad9013c54db57d3aab89596901
-      Path: Events\Default Work Unit\SFX\Beacon\DistanceCount\d10
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: d100
-      guid: d16e0e2407e5df4fad1362691e11b81f
-      id: 810809264
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SFX
-        ObjectType: 4
-        guid: c73df9cd04502e468b4b7a815b229a25
-      - ElementName: Beacon
-        ObjectType: 4
-        guid: ed98b4f3cbb4cd45a62eb3dbe94f8e70
-      - ElementName: DistanceCount
-        ObjectType: 4
-        guid: 7b4ed62605ccc948971fb1776133d1ca
-      - ElementName: d100
-        ObjectType: 3
-        guid: d16e0e2407e5df4fad1362691e11b81f
-      Path: Events\Default Work Unit\SFX\Beacon\DistanceCount\d100
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: D2
-      guid: 06426b61367b444cb8d5873b3450ddfd
-      id: 1836525715
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: O2
-        ObjectType: 4
-        guid: aa786ab94d3a174d8a27fdcdc6e78643
-      - ElementName: D2
-        ObjectType: 3
-        guid: 06426b61367b444cb8d5873b3450ddfd
-      Path: Events\Default Work Unit\SingleNotes\O2\D2
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: d20
-      guid: f93bea8499c41247994767a09f020673
-      id: 3851738969
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SFX
-        ObjectType: 4
-        guid: c73df9cd04502e468b4b7a815b229a25
-      - ElementName: Beacon
-        ObjectType: 4
-        guid: ed98b4f3cbb4cd45a62eb3dbe94f8e70
-      - ElementName: DistanceCount
-        ObjectType: 4
-        guid: 7b4ed62605ccc948971fb1776133d1ca
-      - ElementName: d20
-        ObjectType: 3
-        guid: f93bea8499c41247994767a09f020673
-      Path: Events\Default Work Unit\SFX\Beacon\DistanceCount\d20
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: D2b
-      guid: b3f684db5ab23841970575639828f7ed
-      id: 3851738891
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: O2
-        ObjectType: 4
-        guid: aa786ab94d3a174d8a27fdcdc6e78643
-      - ElementName: D2b
-        ObjectType: 3
-        guid: b3f684db5ab23841970575639828f7ed
-      Path: Events\Default Work Unit\SingleNotes\O2\D2b
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: D2s
-      guid: 4d5215a4baa8fb4a803e3743cc66efea
-      id: 3851738906
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: O2
-        ObjectType: 4
-        guid: aa786ab94d3a174d8a27fdcdc6e78643
-      - ElementName: D2s
-        ObjectType: 3
-        guid: 4d5215a4baa8fb4a803e3743cc66efea
-      Path: Events\Default Work Unit\SingleNotes\O2\D2s
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: D3
-      guid: bdd7950e28509c459b49da5157ec8f91
-      id: 1836525714
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: O3
-        ObjectType: 4
-        guid: 927439f61147cf4988ccceee457f64b4
-      - ElementName: D3
-        ObjectType: 3
-        guid: bdd7950e28509c459b49da5157ec8f91
-      Path: Events\Default Work Unit\SingleNotes\O3\D3
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: d30
-      guid: 959aa9fc7973b14dade8fbcc4f22241b
-      id: 3834961382
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SFX
-        ObjectType: 4
-        guid: c73df9cd04502e468b4b7a815b229a25
-      - ElementName: Beacon
-        ObjectType: 4
-        guid: ed98b4f3cbb4cd45a62eb3dbe94f8e70
-      - ElementName: DistanceCount
-        ObjectType: 4
-        guid: 7b4ed62605ccc948971fb1776133d1ca
-      - ElementName: d30
-        ObjectType: 3
-        guid: 959aa9fc7973b14dade8fbcc4f22241b
-      Path: Events\Default Work Unit\SFX\Beacon\DistanceCount\d30
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: D3b
-      guid: b27241d24d621c4fad42a0b4245a2733
-      id: 3834961332
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: O3
-        ObjectType: 4
-        guid: 927439f61147cf4988ccceee457f64b4
-      - ElementName: D3b
-        ObjectType: 3
-        guid: b27241d24d621c4fad42a0b4245a2733
-      Path: Events\Default Work Unit\SingleNotes\O3\D3b
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: D3s
-      guid: 138a9ad35ab08e49bd76c79bc46b8bfc
-      id: 3834961317
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: O3
-        ObjectType: 4
-        guid: 927439f61147cf4988ccceee457f64b4
-      - ElementName: D3s
-        ObjectType: 3
-        guid: 138a9ad35ab08e49bd76c79bc46b8bfc
-      Path: Events\Default Work Unit\SingleNotes\O3\D3s
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: D4
-      guid: 08101eed92eebd48b9b3f091d7d8b690
-      id: 1836525717
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: O4
-        ObjectType: 4
-        guid: bf60ce8579469e49995fb894c981f37f
-      - ElementName: D4
-        ObjectType: 3
-        guid: 08101eed92eebd48b9b3f091d7d8b690
-      Path: Events\Default Work Unit\SingleNotes\O4\D4
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: d40
-      guid: 88b36135c20c6c4091a77064c5be7d7e
-      id: 3885294271
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SFX
-        ObjectType: 4
-        guid: c73df9cd04502e468b4b7a815b229a25
-      - ElementName: Beacon
-        ObjectType: 4
-        guid: ed98b4f3cbb4cd45a62eb3dbe94f8e70
-      - ElementName: DistanceCount
-        ObjectType: 4
-        guid: 7b4ed62605ccc948971fb1776133d1ca
-      - ElementName: d40
-        ObjectType: 3
-        guid: 88b36135c20c6c4091a77064c5be7d7e
-      Path: Events\Default Work Unit\SFX\Beacon\DistanceCount\d40
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: D4b
-      guid: 91507936ba0a7046a32abdc8104cb94a
-      id: 3885294317
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: O4
-        ObjectType: 4
-        guid: bf60ce8579469e49995fb894c981f37f
-      - ElementName: D4b
-        ObjectType: 3
-        guid: 91507936ba0a7046a32abdc8104cb94a
-      Path: Events\Default Work Unit\SingleNotes\O4\D4b
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: D4s
-      guid: 6415082229fba94ab82688c69b5e5992
-      id: 3885294332
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: O4
-        ObjectType: 4
-        guid: bf60ce8579469e49995fb894c981f37f
-      - ElementName: D4s
-        ObjectType: 3
-        guid: 6415082229fba94ab82688c69b5e5992
-      Path: Events\Default Work Unit\SingleNotes\O4\D4s
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: d50
-      guid: 157e1220582ce4468da57a0250a03b65
-      id: 3868516556
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SFX
-        ObjectType: 4
-        guid: c73df9cd04502e468b4b7a815b229a25
-      - ElementName: Beacon
-        ObjectType: 4
-        guid: ed98b4f3cbb4cd45a62eb3dbe94f8e70
-      - ElementName: DistanceCount
-        ObjectType: 4
-        guid: 7b4ed62605ccc948971fb1776133d1ca
-      - ElementName: d50
-        ObjectType: 3
-        guid: 157e1220582ce4468da57a0250a03b65
-      Path: Events\Default Work Unit\SFX\Beacon\DistanceCount\d50
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: d60
-      guid: 0dee418af8eb2b4395cb759996a22fd6
-      id: 3918849413
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SFX
-        ObjectType: 4
-        guid: c73df9cd04502e468b4b7a815b229a25
-      - ElementName: Beacon
-        ObjectType: 4
-        guid: ed98b4f3cbb4cd45a62eb3dbe94f8e70
-      - ElementName: DistanceCount
-        ObjectType: 4
-        guid: 7b4ed62605ccc948971fb1776133d1ca
-      - ElementName: d60
-        ObjectType: 3
-        guid: 0dee418af8eb2b4395cb759996a22fd6
-      Path: Events\Default Work Unit\SFX\Beacon\DistanceCount\d60
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: d70
-      guid: 1c230eb36eb4ab488e3f7e7308ff640e
-      id: 3902071826
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SFX
-        ObjectType: 4
-        guid: c73df9cd04502e468b4b7a815b229a25
-      - ElementName: Beacon
-        ObjectType: 4
-        guid: ed98b4f3cbb4cd45a62eb3dbe94f8e70
-      - ElementName: DistanceCount
-        ObjectType: 4
-        guid: 7b4ed62605ccc948971fb1776133d1ca
-      - ElementName: d70
-        ObjectType: 3
-        guid: 1c230eb36eb4ab488e3f7e7308ff640e
-      Path: Events\Default Work Unit\SFX\Beacon\DistanceCount\d70
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: d80
-      guid: 7b4a315303de8f41ba8d5b89f1425b0c
-      id: 3952404715
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SFX
-        ObjectType: 4
-        guid: c73df9cd04502e468b4b7a815b229a25
-      - ElementName: Beacon
-        ObjectType: 4
-        guid: ed98b4f3cbb4cd45a62eb3dbe94f8e70
-      - ElementName: DistanceCount
-        ObjectType: 4
-        guid: 7b4ed62605ccc948971fb1776133d1ca
-      - ElementName: d80
-        ObjectType: 3
-        guid: 7b4a315303de8f41ba8d5b89f1425b0c
-      Path: Events\Default Work Unit\SFX\Beacon\DistanceCount\d80
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: d90
-      guid: be63adf71394764fb510bbe862f7616e
-      id: 3935627128
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SFX
-        ObjectType: 4
-        guid: c73df9cd04502e468b4b7a815b229a25
-      - ElementName: Beacon
-        ObjectType: 4
-        guid: ed98b4f3cbb4cd45a62eb3dbe94f8e70
-      - ElementName: DistanceCount
-        ObjectType: 4
-        guid: 7b4ed62605ccc948971fb1776133d1ca
-      - ElementName: d90
-        ObjectType: 3
-        guid: be63adf71394764fb510bbe862f7616e
-      Path: Events\Default Work Unit\SFX\Beacon\DistanceCount\d90
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: destination_reached
-      guid: 60509861cdadc9418721eff81467818e
-      id: 4069116836
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SFX
-        ObjectType: 4
-        guid: c73df9cd04502e468b4b7a815b229a25
-      - ElementName: Beacon
-        ObjectType: 4
-        guid: ed98b4f3cbb4cd45a62eb3dbe94f8e70
-      - ElementName: DistanceCount
-        ObjectType: 4
-        guid: 7b4ed62605ccc948971fb1776133d1ca
-      - ElementName: destination_reached
-        ObjectType: 3
-        guid: 60509861cdadc9418721eff81467818e
-      Path: Events\Default Work Unit\SFX\Beacon\DistanceCount\destination_reached
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: distanceC
-      guid: 37d9845939562e468e10cf9f08a2920e
-      id: 2982082363
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SFX
-        ObjectType: 4
-        guid: c73df9cd04502e468b4b7a815b229a25
-      - ElementName: distanceC
-        ObjectType: 3
-        guid: 37d9845939562e468e10cf9f08a2920e
-      Path: Events\Default Work Unit\SFX\distanceC
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: DistanceCount
-      guid: 7b4ed62605ccc948971fb1776133d1ca
-      id: 1258232269
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SFX
-        ObjectType: 4
-        guid: c73df9cd04502e468b4b7a815b229a25
-      - ElementName: Beacon
-        ObjectType: 4
-        guid: ed98b4f3cbb4cd45a62eb3dbe94f8e70
-      - ElementName: DistanceCount
-        ObjectType: 4
-        guid: 7b4ed62605ccc948971fb1776133d1ca
-      Path: Events\Default Work Unit\SFX\Beacon\DistanceCount
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: DistanceFrameTransition
-      guid: b75bda6923c11a45b48382c150b587a0
-      id: 293588534
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SFX
-        ObjectType: 4
-        guid: c73df9cd04502e468b4b7a815b229a25
-      - ElementName: DistanceFrameTransition
-        ObjectType: 3
-        guid: b75bda6923c11a45b48382c150b587a0
-      Path: Events\Default Work Unit\SFX\DistanceFrameTransition
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: E2
-      guid: e5e5c68aad8ff943b2f461e39e844f66
-      id: 1819748156
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: O2
-        ObjectType: 4
-        guid: aa786ab94d3a174d8a27fdcdc6e78643
-      - ElementName: E2
-        ObjectType: 3
-        guid: e5e5c68aad8ff943b2f461e39e844f66
-      Path: Events\Default Work Unit\SingleNotes\O2\E2
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: E2b
-      guid: 7d6080531373ab4bb8e1443c8fa608f6
-      id: 4220699414
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: O2
-        ObjectType: 4
-        guid: aa786ab94d3a174d8a27fdcdc6e78643
-      - ElementName: E2b
-        ObjectType: 3
-        guid: 7d6080531373ab4bb8e1443c8fa608f6
-      Path: Events\Default Work Unit\SingleNotes\O2\E2b
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: E3
-      guid: 2539aa7453921d45be64091cc9a7cd71
-      id: 1819748157
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: O3
-        ObjectType: 4
-        guid: 927439f61147cf4988ccceee457f64b4
-      - ElementName: E3
-        ObjectType: 3
-        guid: 2539aa7453921d45be64091cc9a7cd71
-      Path: Events\Default Work Unit\SingleNotes\O3\E3
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: E3b
-      guid: b4f767b87e554e42be71c804fef092a9
-      id: 4237477221
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: O3
-        ObjectType: 4
-        guid: 927439f61147cf4988ccceee457f64b4
-      - ElementName: E3b
-        ObjectType: 3
-        guid: b4f767b87e554e42be71c804fef092a9
-      Path: Events\Default Work Unit\SingleNotes\O3\E3b
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: E4
-      guid: 495a91565fa6c849938be332db49ff6f
-      id: 1819748154
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: O4
-        ObjectType: 4
-        guid: bf60ce8579469e49995fb894c981f37f
-      - ElementName: E4
-        ObjectType: 3
-        guid: 495a91565fa6c849938be332db49ff6f
-      Path: Events\Default Work Unit\SingleNotes\O4\E4
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: E4b
-      guid: 0f738beff4eb954caf0150e293d9f586
-      id: 4187144236
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: O4
-        ObjectType: 4
-        guid: bf60ce8579469e49995fb894c981f37f
-      - ElementName: E4b
-        ObjectType: 3
-        guid: 0f738beff4eb954caf0150e293d9f586
-      Path: Events\Default Work Unit\SingleNotes\O4\E4b
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: F2
-      guid: b993dfe863480b4f8128da23dac2888c
-      id: 1802970441
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: O2
-        ObjectType: 4
-        guid: aa786ab94d3a174d8a27fdcdc6e78643
-      - ElementName: F2
-        ObjectType: 3
-        guid: b993dfe863480b4f8128da23dac2888c
-      Path: Events\Default Work Unit\SingleNotes\O2\F2
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: F2s
-      guid: 73626af63474a94e852dc24f7beb9a5b
-      id: 1972351384
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: O2
-        ObjectType: 4
-        guid: aa786ab94d3a174d8a27fdcdc6e78643
-      - ElementName: F2s
-        ObjectType: 3
-        guid: 73626af63474a94e852dc24f7beb9a5b
-      Path: Events\Default Work Unit\SingleNotes\O2\F2s
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: F3
-      guid: 22bc93dd1bb61347a75c8c701a46c5cc
-      id: 1802970440
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: O3
-        ObjectType: 4
-        guid: 927439f61147cf4988ccceee457f64b4
-      - ElementName: F3
-        ObjectType: 3
-        guid: 22bc93dd1bb61347a75c8c701a46c5cc
-      Path: Events\Default Work Unit\SingleNotes\O3\F3
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: F3s
-      guid: 31d135494884cc4499cf5e705e0e6d0f
-      id: 1955573803
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: O3
-        ObjectType: 4
-        guid: 927439f61147cf4988ccceee457f64b4
-      - ElementName: F3s
-        ObjectType: 3
-        guid: 31d135494884cc4499cf5e705e0e6d0f
-      Path: Events\Default Work Unit\SingleNotes\O3\F3s
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: F4
-      guid: 22ba27abd42410409a3555ebd3365d93
-      id: 1802970447
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: O4
-        ObjectType: 4
-        guid: bf60ce8579469e49995fb894c981f37f
-      - ElementName: F4
-        ObjectType: 3
-        guid: 22ba27abd42410409a3555ebd3365d93
-      Path: Events\Default Work Unit\SingleNotes\O4\F4
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: F4s
-      guid: 90e0668cee3836498ee8895137ff473a
-      id: 2073017134
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: O4
-        ObjectType: 4
-        guid: bf60ce8579469e49995fb894c981f37f
-      - ElementName: F4s
-        ObjectType: 3
-        guid: 90e0668cee3836498ee8895137ff473a
-      Path: Events\Default Work Unit\SingleNotes\O4\F4s
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: FreqDistanceEvent
-      guid: 74c402e6d7077340a734ccbd7b265c9e
-      id: 2218041646
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: Targets
-        ObjectType: 4
-        guid: f08f9d38fb48cd4d889ea9333380db86
-      - ElementName: FreqDistanceEvent
-        ObjectType: 3
-        guid: 74c402e6d7077340a734ccbd7b265c9e
-      Path: Events\Default Work Unit\Targets\FreqDistanceEvent
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: G2
-      guid: 0ebc6f74aa3f87488b126856690b7740
-      id: 1786192858
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: O2
-        ObjectType: 4
-        guid: aa786ab94d3a174d8a27fdcdc6e78643
-      - ElementName: G2
-        ObjectType: 3
-        guid: 0ebc6f74aa3f87488b126856690b7740
-      Path: Events\Default Work Unit\SingleNotes\O2\G2
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: G2b
-      guid: c111418e49afcf43b9668dd363d77a24
-      id: 1938649164
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: O2
-        ObjectType: 4
-        guid: aa786ab94d3a174d8a27fdcdc6e78643
-      - ElementName: G2b
-        ObjectType: 3
-        guid: c111418e49afcf43b9668dd363d77a24
-      Path: Events\Default Work Unit\SingleNotes\O2\G2b
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: G2s
-      guid: eb40906d1b75f9438bb23a25e220b161
-      id: 1938649181
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: O2
-        ObjectType: 4
-        guid: aa786ab94d3a174d8a27fdcdc6e78643
-      - ElementName: G2s
-        ObjectType: 3
-        guid: eb40906d1b75f9438bb23a25e220b161
-      Path: Events\Default Work Unit\SingleNotes\O2\G2s
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: G3
-      guid: 633cee41a78efd40b48a3f9d1d0083f0
-      id: 1786192859
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: O3
-        ObjectType: 4
-        guid: 927439f61147cf4988ccceee457f64b4
-      - ElementName: G3
-        ObjectType: 3
-        guid: 633cee41a78efd40b48a3f9d1d0083f0
-      Path: Events\Default Work Unit\SingleNotes\O3\G3
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: G3b
-      guid: 1205ef0be33fd3449457d27cb55523d9
-      id: 1955426723
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: O3
-        ObjectType: 4
-        guid: 927439f61147cf4988ccceee457f64b4
-      - ElementName: G3b
-        ObjectType: 3
-        guid: 1205ef0be33fd3449457d27cb55523d9
-      Path: Events\Default Work Unit\SingleNotes\O3\G3b
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: G3s
-      guid: d9330f8329cc374a9468f72eed03ef4e
-      id: 1955426738
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: O3
-        ObjectType: 4
-        guid: 927439f61147cf4988ccceee457f64b4
-      - ElementName: G3s
-        ObjectType: 3
-        guid: d9330f8329cc374a9468f72eed03ef4e
-      Path: Events\Default Work Unit\SingleNotes\O3\G3s
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: G4
-      guid: b3e7749e2389154dab503c5100e36a17
-      id: 1786192860
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: O4
-        ObjectType: 4
-        guid: bf60ce8579469e49995fb894c981f37f
-      - ElementName: G4
-        ObjectType: 3
-        guid: b3e7749e2389154dab503c5100e36a17
-      Path: Events\Default Work Unit\SingleNotes\O4\G4
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: G4b
-      guid: 3f741f940bc0cf4d844d8cb18830cd16
-      id: 1972204342
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: O4
-        ObjectType: 4
-        guid: bf60ce8579469e49995fb894c981f37f
-      - ElementName: G4b
-        ObjectType: 3
-        guid: 3f741f940bc0cf4d844d8cb18830cd16
-      Path: Events\Default Work Unit\SingleNotes\O4\G4b
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: G4s
-      guid: 965f0af1b7b0fb4db725b05fc7f9e02b
-      id: 1972204327
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      - ElementName: O4
-        ObjectType: 4
-        guid: bf60ce8579469e49995fb894c981f37f
-      - ElementName: G4s
-        ObjectType: 3
-        guid: 965f0af1b7b0fb4db725b05fc7f9e02b
-      Path: Events\Default Work Unit\SingleNotes\O4\G4s
+      Path: Events\Music\Melodies\C3_E3_A2_B3_C3
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1788,13 +494,1232 @@ MonoBehaviour:
       - ElementName: Events
         ObjectType: 5
         guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
+      - ElementName: Music
         ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
+        guid: fea8c7414fd0b742bfa29828fe7796a2
       - ElementName: Melodies
         ObjectType: 4
         guid: c85fbc328bf9ee4db1406f5a207dbd29
-      Path: Events\Default Work Unit\Melodies
+      Path: Events\Music\Melodies
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+  - PhysicalPath: Events\Player.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Player
+      ObjectType: 12
+      guid: a739f7e5ca298a44a84cf8243f0f273a
+    ParentPath: Events\Player
+    guid: a739f7e5ca298a44a84cf8243f0f273a
+    GuidInternal: 
+    m_lastTime: -8585252889531655394
+    List:
+    - name: Play_PlayerFoot
+      guid: e4392008128a7e4a8c3da3c8af76ee16
+      id: 3015844381
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: a739f7e5ca298a44a84cf8243f0f273a
+      - ElementName: Play_PlayerFoot
+        ObjectType: 3
+        guid: e4392008128a7e4a8c3da3c8af76ee16
+      Path: Events\Player\Play_PlayerFoot
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+  - PhysicalPath: Events\SingleNotes.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Music
+      ObjectType: 12
+      guid: fea8c7414fd0b742bfa29828fe7796a2
+    - ElementName: SingleNotes
+      ObjectType: 12
+      guid: c598acc2923ebb43a1f5081785b0db89
+    ParentPath: Events\Music\SingleNotes
+    guid: c598acc2923ebb43a1f5081785b0db89
+    GuidInternal: 
+    m_lastTime: -8585252897694438569
+    List:
+    - name: A2
+      guid: 1a1bb7ce8a6d3b40afeac51e10a01d36
+      id: 1886858600
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: SingleNotes
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
+      - ElementName: O2
+        ObjectType: 4
+        guid: aa786ab94d3a174d8a27fdcdc6e78643
+      - ElementName: A2
+        ObjectType: 3
+        guid: 1a1bb7ce8a6d3b40afeac51e10a01d36
+      Path: Events\Music\SingleNotes\O2\A2
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: A2b
+      guid: 5a8b60e597129d40bf1398d67cea210d
+      id: 1939634906
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: SingleNotes
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
+      - ElementName: O2
+        ObjectType: 4
+        guid: aa786ab94d3a174d8a27fdcdc6e78643
+      - ElementName: A2b
+        ObjectType: 3
+        guid: 5a8b60e597129d40bf1398d67cea210d
+      Path: Events\Music\SingleNotes\O2\A2b
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: A2s
+      guid: c0db85f9d2f89541bf7b800625805ab2
+      id: 1939634891
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: SingleNotes
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
+      - ElementName: O2
+        ObjectType: 4
+        guid: aa786ab94d3a174d8a27fdcdc6e78643
+      - ElementName: A2s
+        ObjectType: 3
+        guid: c0db85f9d2f89541bf7b800625805ab2
+      Path: Events\Music\SingleNotes\O2\A2s
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: A3
+      guid: 46514b374ae67449b8af3951c3eebb64
+      id: 1886858601
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: SingleNotes
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
+      - ElementName: O3
+        ObjectType: 4
+        guid: 927439f61147cf4988ccceee457f64b4
+      - ElementName: A3
+        ObjectType: 3
+        guid: 46514b374ae67449b8af3951c3eebb64
+      Path: Events\Music\SingleNotes\O3\A3
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: A3b
+      guid: cd01f1229f7f5241a497cae812482b11
+      id: 1956412457
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: SingleNotes
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
+      - ElementName: O3
+        ObjectType: 4
+        guid: 927439f61147cf4988ccceee457f64b4
+      - ElementName: A3b
+        ObjectType: 3
+        guid: cd01f1229f7f5241a497cae812482b11
+      Path: Events\Music\SingleNotes\O3\A3b
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: A3s
+      guid: 5bee2d4a6ac0db46a066891fcab030e4
+      id: 1956412472
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: SingleNotes
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
+      - ElementName: O3
+        ObjectType: 4
+        guid: 927439f61147cf4988ccceee457f64b4
+      - ElementName: A3s
+        ObjectType: 3
+        guid: 5bee2d4a6ac0db46a066891fcab030e4
+      Path: Events\Music\SingleNotes\O3\A3s
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: A4
+      guid: bf5d52be04c4f64aab5948e04a932c4f
+      id: 1886858606
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: SingleNotes
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
+      - ElementName: O4
+        ObjectType: 4
+        guid: bf60ce8579469e49995fb894c981f37f
+      - ElementName: A4
+        ObjectType: 3
+        guid: bf5d52be04c4f64aab5948e04a932c4f
+      Path: Events\Music\SingleNotes\O4\A4
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: A4b
+      guid: a22ef1459309cb41b10f458b39c2226e
+      id: 2040300616
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: SingleNotes
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
+      - ElementName: O4
+        ObjectType: 4
+        guid: bf60ce8579469e49995fb894c981f37f
+      - ElementName: A4b
+        ObjectType: 3
+        guid: a22ef1459309cb41b10f458b39c2226e
+      Path: Events\Music\SingleNotes\O4\A4b
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: A4s
+      guid: 445a543578fa8f4483b7aa459091e5f9
+      id: 2040300633
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: SingleNotes
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
+      - ElementName: O4
+        ObjectType: 4
+        guid: bf60ce8579469e49995fb894c981f37f
+      - ElementName: A4s
+        ObjectType: 3
+        guid: 445a543578fa8f4483b7aa459091e5f9
+      Path: Events\Music\SingleNotes\O4\A4s
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: B2
+      guid: 64d0c64297f1a540904c058395b6a359
+      id: 1870081013
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: SingleNotes
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
+      - ElementName: O2
+        ObjectType: 4
+        guid: aa786ab94d3a174d8a27fdcdc6e78643
+      - ElementName: B2
+        ObjectType: 3
+        guid: 64d0c64297f1a540904c058395b6a359
+      Path: Events\Music\SingleNotes\O2\B2
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: B2b
+      guid: 67d3011b7212f14abbffb3ba826f72bb
+      id: 1838822093
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: SingleNotes
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
+      - ElementName: O2
+        ObjectType: 4
+        guid: aa786ab94d3a174d8a27fdcdc6e78643
+      - ElementName: B2b
+        ObjectType: 3
+        guid: 67d3011b7212f14abbffb3ba826f72bb
+      Path: Events\Music\SingleNotes\O2\B2b
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: B3
+      guid: c5337ded39a001438e2fb23ca40c9356
+      id: 1870081012
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: SingleNotes
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
+      - ElementName: O3
+        ObjectType: 4
+        guid: 927439f61147cf4988ccceee457f64b4
+      - ElementName: B3
+        ObjectType: 3
+        guid: c5337ded39a001438e2fb23ca40c9356
+      Path: Events\Music\SingleNotes\O3\B3
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: B3b
+      guid: e0d0061bc308234e89687c6a699cffd3
+      id: 1822044542
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: SingleNotes
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
+      - ElementName: O3
+        ObjectType: 4
+        guid: 927439f61147cf4988ccceee457f64b4
+      - ElementName: B3b
+        ObjectType: 3
+        guid: e0d0061bc308234e89687c6a699cffd3
+      Path: Events\Music\SingleNotes\O3\B3b
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: B4
+      guid: 4ce11b8f8d43584ea952a1002d89c4fb
+      id: 1870081011
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: SingleNotes
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
+      - ElementName: O4
+        ObjectType: 4
+        guid: bf60ce8579469e49995fb894c981f37f
+      - ElementName: B4
+        ObjectType: 3
+        guid: 4ce11b8f8d43584ea952a1002d89c4fb
+      Path: Events\Music\SingleNotes\O4\B4
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: B4b
+      guid: 38ec9ff06ec3e4488ac2d4549748a2e1
+      id: 1805266923
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: SingleNotes
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
+      - ElementName: O4
+        ObjectType: 4
+        guid: bf60ce8579469e49995fb894c981f37f
+      - ElementName: B4b
+        ObjectType: 3
+        guid: 38ec9ff06ec3e4488ac2d4549748a2e1
+      Path: Events\Music\SingleNotes\O4\B4b
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: C2
+      guid: 8ef752e399de7343994f403d9cb9bf5d
+      id: 1853303302
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: SingleNotes
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
+      - ElementName: O2
+        ObjectType: 4
+        guid: aa786ab94d3a174d8a27fdcdc6e78643
+      - ElementName: C2
+        ObjectType: 3
+        guid: 8ef752e399de7343994f403d9cb9bf5d
+      Path: Events\Music\SingleNotes\O2\C2
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: C2s
+      guid: dc71a15ce10a5748a2441cca94e3aa67
+      id: 3952551681
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: SingleNotes
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
+      - ElementName: O2
+        ObjectType: 4
+        guid: aa786ab94d3a174d8a27fdcdc6e78643
+      - ElementName: C2s
+        ObjectType: 3
+        guid: dc71a15ce10a5748a2441cca94e3aa67
+      Path: Events\Music\SingleNotes\O2\C2s
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: C3
+      guid: 904198cc591f1f4f874c362358a2110d
+      id: 1853303303
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: SingleNotes
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
+      - ElementName: O3
+        ObjectType: 4
+        guid: 927439f61147cf4988ccceee457f64b4
+      - ElementName: C3
+        ObjectType: 3
+        guid: 904198cc591f1f4f874c362358a2110d
+      Path: Events\Music\SingleNotes\O3\C3
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: C3s
+      guid: b7f6cc7882c0ad49838144012d3d327f
+      id: 3969329526
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: SingleNotes
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
+      - ElementName: O3
+        ObjectType: 4
+        guid: 927439f61147cf4988ccceee457f64b4
+      - ElementName: C3s
+        ObjectType: 3
+        guid: b7f6cc7882c0ad49838144012d3d327f
+      Path: Events\Music\SingleNotes\O3\C3s
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: C4
+      guid: 1dfe8918d48e1b4787e53438357e3af4
+      id: 1853303296
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: SingleNotes
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
+      - ElementName: O4
+        ObjectType: 4
+        guid: bf60ce8579469e49995fb894c981f37f
+      - ElementName: C4
+        ObjectType: 3
+        guid: 1dfe8918d48e1b4787e53438357e3af4
+      Path: Events\Music\SingleNotes\O4\C4
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: C4s
+      guid: 6566bebe749f1743a78a4961bcec6de8
+      id: 3851886195
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: SingleNotes
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
+      - ElementName: O4
+        ObjectType: 4
+        guid: bf60ce8579469e49995fb894c981f37f
+      - ElementName: C4s
+        ObjectType: 3
+        guid: 6566bebe749f1743a78a4961bcec6de8
+      Path: Events\Music\SingleNotes\O4\C4s
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: D2
+      guid: 06426b61367b444cb8d5873b3450ddfd
+      id: 1836525715
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: SingleNotes
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
+      - ElementName: O2
+        ObjectType: 4
+        guid: aa786ab94d3a174d8a27fdcdc6e78643
+      - ElementName: D2
+        ObjectType: 3
+        guid: 06426b61367b444cb8d5873b3450ddfd
+      Path: Events\Music\SingleNotes\O2\D2
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: D2b
+      guid: b3f684db5ab23841970575639828f7ed
+      id: 3851738891
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: SingleNotes
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
+      - ElementName: O2
+        ObjectType: 4
+        guid: aa786ab94d3a174d8a27fdcdc6e78643
+      - ElementName: D2b
+        ObjectType: 3
+        guid: b3f684db5ab23841970575639828f7ed
+      Path: Events\Music\SingleNotes\O2\D2b
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: D2s
+      guid: 4d5215a4baa8fb4a803e3743cc66efea
+      id: 3851738906
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: SingleNotes
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
+      - ElementName: O2
+        ObjectType: 4
+        guid: aa786ab94d3a174d8a27fdcdc6e78643
+      - ElementName: D2s
+        ObjectType: 3
+        guid: 4d5215a4baa8fb4a803e3743cc66efea
+      Path: Events\Music\SingleNotes\O2\D2s
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: D3
+      guid: bdd7950e28509c459b49da5157ec8f91
+      id: 1836525714
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: SingleNotes
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
+      - ElementName: O3
+        ObjectType: 4
+        guid: 927439f61147cf4988ccceee457f64b4
+      - ElementName: D3
+        ObjectType: 3
+        guid: bdd7950e28509c459b49da5157ec8f91
+      Path: Events\Music\SingleNotes\O3\D3
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: D3b
+      guid: b27241d24d621c4fad42a0b4245a2733
+      id: 3834961332
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: SingleNotes
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
+      - ElementName: O3
+        ObjectType: 4
+        guid: 927439f61147cf4988ccceee457f64b4
+      - ElementName: D3b
+        ObjectType: 3
+        guid: b27241d24d621c4fad42a0b4245a2733
+      Path: Events\Music\SingleNotes\O3\D3b
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: D3s
+      guid: 138a9ad35ab08e49bd76c79bc46b8bfc
+      id: 3834961317
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: SingleNotes
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
+      - ElementName: O3
+        ObjectType: 4
+        guid: 927439f61147cf4988ccceee457f64b4
+      - ElementName: D3s
+        ObjectType: 3
+        guid: 138a9ad35ab08e49bd76c79bc46b8bfc
+      Path: Events\Music\SingleNotes\O3\D3s
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: D4
+      guid: 08101eed92eebd48b9b3f091d7d8b690
+      id: 1836525717
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: SingleNotes
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
+      - ElementName: O4
+        ObjectType: 4
+        guid: bf60ce8579469e49995fb894c981f37f
+      - ElementName: D4
+        ObjectType: 3
+        guid: 08101eed92eebd48b9b3f091d7d8b690
+      Path: Events\Music\SingleNotes\O4\D4
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: D4b
+      guid: 91507936ba0a7046a32abdc8104cb94a
+      id: 3885294317
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: SingleNotes
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
+      - ElementName: O4
+        ObjectType: 4
+        guid: bf60ce8579469e49995fb894c981f37f
+      - ElementName: D4b
+        ObjectType: 3
+        guid: 91507936ba0a7046a32abdc8104cb94a
+      Path: Events\Music\SingleNotes\O4\D4b
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: D4s
+      guid: 6415082229fba94ab82688c69b5e5992
+      id: 3885294332
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: SingleNotes
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
+      - ElementName: O4
+        ObjectType: 4
+        guid: bf60ce8579469e49995fb894c981f37f
+      - ElementName: D4s
+        ObjectType: 3
+        guid: 6415082229fba94ab82688c69b5e5992
+      Path: Events\Music\SingleNotes\O4\D4s
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: E2
+      guid: e5e5c68aad8ff943b2f461e39e844f66
+      id: 1819748156
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: SingleNotes
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
+      - ElementName: O2
+        ObjectType: 4
+        guid: aa786ab94d3a174d8a27fdcdc6e78643
+      - ElementName: E2
+        ObjectType: 3
+        guid: e5e5c68aad8ff943b2f461e39e844f66
+      Path: Events\Music\SingleNotes\O2\E2
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: E2b
+      guid: 7d6080531373ab4bb8e1443c8fa608f6
+      id: 4220699414
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: SingleNotes
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
+      - ElementName: O2
+        ObjectType: 4
+        guid: aa786ab94d3a174d8a27fdcdc6e78643
+      - ElementName: E2b
+        ObjectType: 3
+        guid: 7d6080531373ab4bb8e1443c8fa608f6
+      Path: Events\Music\SingleNotes\O2\E2b
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: E3
+      guid: 2539aa7453921d45be64091cc9a7cd71
+      id: 1819748157
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: SingleNotes
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
+      - ElementName: O3
+        ObjectType: 4
+        guid: 927439f61147cf4988ccceee457f64b4
+      - ElementName: E3
+        ObjectType: 3
+        guid: 2539aa7453921d45be64091cc9a7cd71
+      Path: Events\Music\SingleNotes\O3\E3
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: E3b
+      guid: b4f767b87e554e42be71c804fef092a9
+      id: 4237477221
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: SingleNotes
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
+      - ElementName: O3
+        ObjectType: 4
+        guid: 927439f61147cf4988ccceee457f64b4
+      - ElementName: E3b
+        ObjectType: 3
+        guid: b4f767b87e554e42be71c804fef092a9
+      Path: Events\Music\SingleNotes\O3\E3b
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: E4
+      guid: 495a91565fa6c849938be332db49ff6f
+      id: 1819748154
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: SingleNotes
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
+      - ElementName: O4
+        ObjectType: 4
+        guid: bf60ce8579469e49995fb894c981f37f
+      - ElementName: E4
+        ObjectType: 3
+        guid: 495a91565fa6c849938be332db49ff6f
+      Path: Events\Music\SingleNotes\O4\E4
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: E4b
+      guid: 0f738beff4eb954caf0150e293d9f586
+      id: 4187144236
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: SingleNotes
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
+      - ElementName: O4
+        ObjectType: 4
+        guid: bf60ce8579469e49995fb894c981f37f
+      - ElementName: E4b
+        ObjectType: 3
+        guid: 0f738beff4eb954caf0150e293d9f586
+      Path: Events\Music\SingleNotes\O4\E4b
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: F2
+      guid: b993dfe863480b4f8128da23dac2888c
+      id: 1802970441
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: SingleNotes
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
+      - ElementName: O2
+        ObjectType: 4
+        guid: aa786ab94d3a174d8a27fdcdc6e78643
+      - ElementName: F2
+        ObjectType: 3
+        guid: b993dfe863480b4f8128da23dac2888c
+      Path: Events\Music\SingleNotes\O2\F2
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: F2s
+      guid: 73626af63474a94e852dc24f7beb9a5b
+      id: 1972351384
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: SingleNotes
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
+      - ElementName: O2
+        ObjectType: 4
+        guid: aa786ab94d3a174d8a27fdcdc6e78643
+      - ElementName: F2s
+        ObjectType: 3
+        guid: 73626af63474a94e852dc24f7beb9a5b
+      Path: Events\Music\SingleNotes\O2\F2s
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: F3
+      guid: 22bc93dd1bb61347a75c8c701a46c5cc
+      id: 1802970440
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: SingleNotes
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
+      - ElementName: O3
+        ObjectType: 4
+        guid: 927439f61147cf4988ccceee457f64b4
+      - ElementName: F3
+        ObjectType: 3
+        guid: 22bc93dd1bb61347a75c8c701a46c5cc
+      Path: Events\Music\SingleNotes\O3\F3
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: F3s
+      guid: 31d135494884cc4499cf5e705e0e6d0f
+      id: 1955573803
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: SingleNotes
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
+      - ElementName: O3
+        ObjectType: 4
+        guid: 927439f61147cf4988ccceee457f64b4
+      - ElementName: F3s
+        ObjectType: 3
+        guid: 31d135494884cc4499cf5e705e0e6d0f
+      Path: Events\Music\SingleNotes\O3\F3s
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: F4
+      guid: 22ba27abd42410409a3555ebd3365d93
+      id: 1802970447
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: SingleNotes
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
+      - ElementName: O4
+        ObjectType: 4
+        guid: bf60ce8579469e49995fb894c981f37f
+      - ElementName: F4
+        ObjectType: 3
+        guid: 22ba27abd42410409a3555ebd3365d93
+      Path: Events\Music\SingleNotes\O4\F4
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: F4s
+      guid: 90e0668cee3836498ee8895137ff473a
+      id: 2073017134
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: SingleNotes
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
+      - ElementName: O4
+        ObjectType: 4
+        guid: bf60ce8579469e49995fb894c981f37f
+      - ElementName: F4s
+        ObjectType: 3
+        guid: 90e0668cee3836498ee8895137ff473a
+      Path: Events\Music\SingleNotes\O4\F4s
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: G2
+      guid: 0ebc6f74aa3f87488b126856690b7740
+      id: 1786192858
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: SingleNotes
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
+      - ElementName: O2
+        ObjectType: 4
+        guid: aa786ab94d3a174d8a27fdcdc6e78643
+      - ElementName: G2
+        ObjectType: 3
+        guid: 0ebc6f74aa3f87488b126856690b7740
+      Path: Events\Music\SingleNotes\O2\G2
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: G2b
+      guid: c111418e49afcf43b9668dd363d77a24
+      id: 1938649164
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: SingleNotes
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
+      - ElementName: O2
+        ObjectType: 4
+        guid: aa786ab94d3a174d8a27fdcdc6e78643
+      - ElementName: G2b
+        ObjectType: 3
+        guid: c111418e49afcf43b9668dd363d77a24
+      Path: Events\Music\SingleNotes\O2\G2b
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: G2s
+      guid: eb40906d1b75f9438bb23a25e220b161
+      id: 1938649181
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: SingleNotes
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
+      - ElementName: O2
+        ObjectType: 4
+        guid: aa786ab94d3a174d8a27fdcdc6e78643
+      - ElementName: G2s
+        ObjectType: 3
+        guid: eb40906d1b75f9438bb23a25e220b161
+      Path: Events\Music\SingleNotes\O2\G2s
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: G3
+      guid: 633cee41a78efd40b48a3f9d1d0083f0
+      id: 1786192859
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: SingleNotes
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
+      - ElementName: O3
+        ObjectType: 4
+        guid: 927439f61147cf4988ccceee457f64b4
+      - ElementName: G3
+        ObjectType: 3
+        guid: 633cee41a78efd40b48a3f9d1d0083f0
+      Path: Events\Music\SingleNotes\O3\G3
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: G3b
+      guid: 1205ef0be33fd3449457d27cb55523d9
+      id: 1955426723
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: SingleNotes
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
+      - ElementName: O3
+        ObjectType: 4
+        guid: 927439f61147cf4988ccceee457f64b4
+      - ElementName: G3b
+        ObjectType: 3
+        guid: 1205ef0be33fd3449457d27cb55523d9
+      Path: Events\Music\SingleNotes\O3\G3b
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: G3s
+      guid: d9330f8329cc374a9468f72eed03ef4e
+      id: 1955426738
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: SingleNotes
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
+      - ElementName: O3
+        ObjectType: 4
+        guid: 927439f61147cf4988ccceee457f64b4
+      - ElementName: G3s
+        ObjectType: 3
+        guid: d9330f8329cc374a9468f72eed03ef4e
+      Path: Events\Music\SingleNotes\O3\G3s
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: G4
+      guid: b3e7749e2389154dab503c5100e36a17
+      id: 1786192860
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: SingleNotes
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
+      - ElementName: O4
+        ObjectType: 4
+        guid: bf60ce8579469e49995fb894c981f37f
+      - ElementName: G4
+        ObjectType: 3
+        guid: b3e7749e2389154dab503c5100e36a17
+      Path: Events\Music\SingleNotes\O4\G4
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: G4b
+      guid: 3f741f940bc0cf4d844d8cb18830cd16
+      id: 1972204342
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: SingleNotes
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
+      - ElementName: O4
+        ObjectType: 4
+        guid: bf60ce8579469e49995fb894c981f37f
+      - ElementName: G4b
+        ObjectType: 3
+        guid: 3f741f940bc0cf4d844d8cb18830cd16
+      Path: Events\Music\SingleNotes\O4\G4b
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: G4s
+      guid: 965f0af1b7b0fb4db725b05fc7f9e02b
+      id: 1972204327
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: SingleNotes
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
+      - ElementName: O4
+        ObjectType: 4
+        guid: bf60ce8579469e49995fb894c981f37f
+      - ElementName: G4s
+        ObjectType: 3
+        guid: 965f0af1b7b0fb4db725b05fc7f9e02b
+      Path: Events\Music\SingleNotes\O4\G4s
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1805,16 +1730,16 @@ MonoBehaviour:
       - ElementName: Events
         ObjectType: 5
         guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
+      - ElementName: Music
         ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
+        guid: fea8c7414fd0b742bfa29828fe7796a2
       - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
       - ElementName: O2
         ObjectType: 4
         guid: aa786ab94d3a174d8a27fdcdc6e78643
-      Path: Events\Default Work Unit\SingleNotes\O2
+      Path: Events\Music\SingleNotes\O2
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1825,16 +1750,16 @@ MonoBehaviour:
       - ElementName: Events
         ObjectType: 5
         guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
+      - ElementName: Music
         ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
+        guid: fea8c7414fd0b742bfa29828fe7796a2
       - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
       - ElementName: O3
         ObjectType: 4
         guid: 927439f61147cf4988ccceee457f64b4
-      Path: Events\Default Work Unit\SingleNotes\O3
+      Path: Events\Music\SingleNotes\O3
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1845,110 +1770,63 @@ MonoBehaviour:
       - ElementName: Events
         ObjectType: 5
         guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
+      - ElementName: Music
         ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
+        guid: fea8c7414fd0b742bfa29828fe7796a2
       - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
+        ObjectType: 12
+        guid: c598acc2923ebb43a1f5081785b0db89
       - ElementName: O4
         ObjectType: 4
         guid: bf60ce8579469e49995fb894c981f37f
-      Path: Events\Default Work Unit\SingleNotes\O4
+      Path: Events\Music\SingleNotes\O4
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Player
-      guid: ef8c90b1f7dae1459062d3514d23f685
-      id: 1069431850
+  - PhysicalPath: Events\Targets.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Targets
+      ObjectType: 12
+      guid: a09cc86ac9a7bf4bb5edb78e39af6c44
+    ParentPath: Events\Targets
+    guid: a09cc86ac9a7bf4bb5edb78e39af6c44
+    GuidInternal: 
+    m_lastTime: -8585252900483874085
+    List:
+    - name: FreqDistanceEvent
+      guid: 74c402e6d7077340a734ccbd7b265c9e
+      id: 2218041646
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
         guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
+      - ElementName: Targets
         ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: Player
-        ObjectType: 4
-        guid: ef8c90b1f7dae1459062d3514d23f685
-      Path: Events\Default Work Unit\Player
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: PlayerFoot
-      guid: e4392008128a7e4a8c3da3c8af76ee16
-      id: 2664667690
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: Player
-        ObjectType: 4
-        guid: ef8c90b1f7dae1459062d3514d23f685
-      - ElementName: PlayerFoot
+        guid: a09cc86ac9a7bf4bb5edb78e39af6c44
+      - ElementName: FreqDistanceEvent
         ObjectType: 3
-        guid: e4392008128a7e4a8c3da3c8af76ee16
-      Path: Events\Default Work Unit\Player\PlayerFoot
+        guid: 74c402e6d7077340a734ccbd7b265c9e
+      Path: Events\Targets\FreqDistanceEvent
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: PlingFail
+    - name: Miss
       guid: c3bcf1bd2135fb49a33b11b6d7b71982
-      id: 2086503983
+      id: 3062523241
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
         guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
+      - ElementName: Targets
         ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SFX
-        ObjectType: 4
-        guid: c73df9cd04502e468b4b7a815b229a25
-      - ElementName: Target
-        ObjectType: 4
-        guid: 5e55088f5619c140bbe23d2584e7c2a0
-      - ElementName: PlingFail
+        guid: a09cc86ac9a7bf4bb5edb78e39af6c44
+      - ElementName: Miss
         ObjectType: 3
         guid: c3bcf1bd2135fb49a33b11b6d7b71982
-      Path: Events\Default Work Unit\SFX\Target\PlingFail
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: SFX
-      guid: c73df9cd04502e468b4b7a815b229a25
-      id: 393239870
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SFX
-        ObjectType: 4
-        guid: c73df9cd04502e468b4b7a815b229a25
-      Path: Events\Default Work Unit\SFX
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: SingleNotes
-      guid: 46e888849a2f394280779b10a36ae81b
-      id: 2593171924
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SingleNotes
-        ObjectType: 4
-        guid: 46e888849a2f394280779b10a36ae81b
-      Path: Events\Default Work Unit\SingleNotes
+      Path: Events\Targets\Miss
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1959,56 +1837,13 @@ MonoBehaviour:
       - ElementName: Events
         ObjectType: 5
         guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
+      - ElementName: Targets
         ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SFX
-        ObjectType: 4
-        guid: c73df9cd04502e468b4b7a815b229a25
-      - ElementName: Target
-        ObjectType: 4
-        guid: 5e55088f5619c140bbe23d2584e7c2a0
+        guid: a09cc86ac9a7bf4bb5edb78e39af6c44
       - ElementName: Success
         ObjectType: 3
         guid: a18f188f5f3e1541ad6cb05712663900
-      Path: Events\Default Work Unit\SFX\Target\Success
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Target
-      guid: 5e55088f5619c140bbe23d2584e7c2a0
-      id: 3902528438
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: SFX
-        ObjectType: 4
-        guid: c73df9cd04502e468b4b7a815b229a25
-      - ElementName: Target
-        ObjectType: 4
-        guid: 5e55088f5619c140bbe23d2584e7c2a0
-      Path: Events\Default Work Unit\SFX\Target
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Targets
-      guid: f08f9d38fb48cd4d889ea9333380db86
-      id: 3814383601
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
-      - ElementName: Targets
-        ObjectType: 4
-        guid: f08f9d38fb48cd4d889ea9333380db86
-      Path: Events\Default Work Unit\Targets
+      Path: Events\Targets\Success
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -2019,16 +1854,56 @@ MonoBehaviour:
       - ElementName: Events
         ObjectType: 5
         guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 43efb42f60dfb9479eefa2004292fbf9
       - ElementName: Targets
-        ObjectType: 4
-        guid: f08f9d38fb48cd4d889ea9333380db86
+        ObjectType: 12
+        guid: a09cc86ac9a7bf4bb5edb78e39af6c44
       - ElementName: WhiteNoiseOnTarget
         ObjectType: 3
         guid: 341b09c19c05d249bb233b4e3d366514
-      Path: Events\Default Work Unit\Targets\WhiteNoiseOnTarget
+      Path: Events\Targets\WhiteNoiseOnTarget
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+  - PhysicalPath: Events\Testing.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Testing
+      ObjectType: 12
+      guid: 91aa8a8db2bfc74895047f3f41bfb36e
+    ParentPath: Events\Testing
+    guid: 91aa8a8db2bfc74895047f3f41bfb36e
+    GuidInternal: 
+    m_lastTime: -8585252900244507556
+    List: []
+  - PhysicalPath: Events\UI.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: UI
+      ObjectType: 12
+      guid: 13ad265a32fe774b8e3372fc1241ceef
+    ParentPath: Events\UI
+    guid: 13ad265a32fe774b8e3372fc1241ceef
+    GuidInternal: 
+    m_lastTime: -8585252899765751612
+    List:
+    - name: DistanceFrameTransition
+      guid: b75bda6923c11a45b48382c150b587a0
+      id: 293588534
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: UI
+        ObjectType: 12
+        guid: 13ad265a32fe774b8e3372fc1241ceef
+      - ElementName: DistanceFrameTransition
+        ObjectType: 3
+        guid: b75bda6923c11a45b48382c150b587a0
+      Path: Events\UI\DistanceFrameTransition
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -2044,11 +1919,11 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: b620eed12b95f847963eed7bcbbaf028
     GuidInternal: 
-    m_lastTime: -8585257473508753377
+    m_lastTime: -8585252833590572459
     List:
-    - name: beacon_lr_volume
+    - name: RTPC_beacon_lr_volume
       guid: 6bb35e447ed42240a599348a4ba0d55b
-      id: 2474654343
+      id: 4120900405
       PathAndIcons:
       - ElementName: Game Parameters
         ObjectType: 5
@@ -2056,13 +1931,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: b620eed12b95f847963eed7bcbbaf028
-      - ElementName: beacon_lr_volume
+      - ElementName: RTPC_beacon_lr_volume
         ObjectType: 13
         guid: 6bb35e447ed42240a599348a4ba0d55b
-      Path: Game Parameters\Default Work Unit\beacon_lr_volume
-    - name: distance_freq
+      Path: Game Parameters\Default Work Unit\RTPC_beacon_lr_volume
+    - name: RTPC_distance_freq
       guid: fe80d52caaf1b548be6137f43f4af98d
-      id: 3639684685
+      id: 1364189011
       PathAndIcons:
       - ElementName: Game Parameters
         ObjectType: 5
@@ -2070,13 +1945,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: b620eed12b95f847963eed7bcbbaf028
-      - ElementName: distance_freq
+      - ElementName: RTPC_distance_freq
         ObjectType: 13
         guid: fe80d52caaf1b548be6137f43f4af98d
-      Path: Game Parameters\Default Work Unit\distance_freq
-    - name: frequency_depth
+      Path: Game Parameters\Default Work Unit\RTPC_distance_freq
+    - name: RTPC_frequency_depth
       guid: 17fe0f60ee1f174d901fc9f00c6592b8
-      id: 1440328639
+      id: 1384204673
       PathAndIcons:
       - ElementName: Game Parameters
         ObjectType: 5
@@ -2084,13 +1959,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: b620eed12b95f847963eed7bcbbaf028
-      - ElementName: frequency_depth
+      - ElementName: RTPC_frequency_depth
         ObjectType: 13
         guid: 17fe0f60ee1f174d901fc9f00c6592b8
-      Path: Game Parameters\Default Work Unit\frequency_depth
-    - name: left_right
+      Path: Game Parameters\Default Work Unit\RTPC_frequency_depth
+    - name: RTPC_left_right
       guid: 111b5460e4a51c4aa022d83adf062581
-      id: 189100965
+      id: 3707704703
       PathAndIcons:
       - ElementName: Game Parameters
         ObjectType: 5
@@ -2098,13 +1973,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: b620eed12b95f847963eed7bcbbaf028
-      - ElementName: left_right
+      - ElementName: RTPC_left_right
         ObjectType: 13
         guid: 111b5460e4a51c4aa022d83adf062581
-      Path: Game Parameters\Default Work Unit\left_right
-    - name: synth_pwm_up_down
+      Path: Game Parameters\Default Work Unit\RTPC_left_right
+    - name: RTPC_synth_pwm_up_down
       guid: 781943bc04d39040bec840c997d41550
-      id: 4213591503
+      id: 815616169
       PathAndIcons:
       - ElementName: Game Parameters
         ObjectType: 5
@@ -2112,13 +1987,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: b620eed12b95f847963eed7bcbbaf028
-      - ElementName: synth_pwm_up_down
+      - ElementName: RTPC_synth_pwm_up_down
         ObjectType: 13
         guid: 781943bc04d39040bec840c997d41550
-      Path: Game Parameters\Default Work Unit\synth_pwm_up_down
-    - name: wall_occlusion
+      Path: Game Parameters\Default Work Unit\RTPC_synth_pwm_up_down
+    - name: RTPC_wall_occlusion
       guid: 6e97bfcd53cab6498c0c5767dd5366f1
-      id: 2345103495
+      id: 872361937
       PathAndIcons:
       - ElementName: Game Parameters
         ObjectType: 5
@@ -2126,10 +2001,10 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: b620eed12b95f847963eed7bcbbaf028
-      - ElementName: wall_occlusion
+      - ElementName: RTPC_wall_occlusion
         ObjectType: 13
         guid: 6e97bfcd53cab6498c0c5767dd5366f1
-      Path: Game Parameters\Default Work Unit\wall_occlusion
+      Path: Game Parameters\Default Work Unit\RTPC_wall_occlusion
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -2142,7 +2017,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 7fb15f74f422ed4bad756627e85a9cb3
     GuidInternal: 
-    m_lastTime: -8585272225639727698
+    m_lastTime: -8585252833590462813
     List:
     - name: AimDirection
       guid: bdd2e6e80180014ab731b31c36909571
@@ -2239,6 +2114,72 @@ MonoBehaviour:
         - ElementName: None
           ObjectType: 8
           guid: 78a0b24ab3e88648a7ca0c8e3cb10d5e
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: GameState
+      guid: 80b40226e551c242a66b685e24b29528
+      id: 4091656514
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7fb15f74f422ed4bad756627e85a9cb3
+      - ElementName: GameState
+        ObjectType: 9
+        guid: 80b40226e551c242a66b685e24b29528
+      Path: States\Default Work Unit\GameState
+      values:
+      - name: InGame
+        guid: 6c532da595853441be771c910180926b
+        id: 984691642
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 7fb15f74f422ed4bad756627e85a9cb3
+        - ElementName: GameState
+          ObjectType: 9
+          guid: 80b40226e551c242a66b685e24b29528
+        - ElementName: InGame
+          ObjectType: 8
+          guid: 6c532da595853441be771c910180926b
+      - name: InMenu
+        guid: 1b904bac275a554c89bb58fce85f8991
+        id: 3374585465
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 7fb15f74f422ed4bad756627e85a9cb3
+        - ElementName: GameState
+          ObjectType: 9
+          guid: 80b40226e551c242a66b685e24b29528
+        - ElementName: InMenu
+          ObjectType: 8
+          guid: 1b904bac275a554c89bb58fce85f8991
+      - name: None
+        guid: bc6c4c7729c18f4cbd56d5e99c9f83bb
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 7fb15f74f422ed4bad756627e85a9cb3
+        - ElementName: GameState
+          ObjectType: 9
+          guid: 80b40226e551c242a66b685e24b29528
+        - ElementName: None
+          ObjectType: 8
+          guid: bc6c4c7729c18f4cbd56d5e99c9f83bb
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -2498,9 +2439,9 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585282545794215635
     List: []
-  ExpandedFileSystemItemIds: 02000000030000000500000006000000070000000a0000000c00000017000000270000002e0000002f00000034000000d2000000fa2f0000
-  ExpandedWaapiItemIds: 02000000030000000500000006000000070000000a0000000c00000017000000270000002e0000002f00000034000000d2000000fa2f0000
+  ExpandedFileSystemItemIds: 0200000003000000050000000600000007000000090000000a0000000c000000180000001e000000270000002e0000002f00000034000000530000007d000000d2000000fa2f0000
+  ExpandedWaapiItemIds: 010000000200000003000000050000000600000007000000090000000a0000000c0000000d0000000e0000000f000000180000001e000000270000002e0000002f000000340000003c0000003d0000003e000000530000007d000000d2000000fa2f0000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
-  currentDataSource: 1
+  currentDataSource: 0
   CurrentPluginConfig: 

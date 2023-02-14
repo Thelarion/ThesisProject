@@ -5,12 +5,12 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{E965A4AA-07EE-4611-8F19-203F9D710CE1}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Frequency Distance" ID="{99AC6BE6-146C-4182-9837-E7FB3AE78D80}" WorkUnitID="{6B91872B-49A8-4BB8-A212-FBF7E77C3676}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="SingleNotes" ID="{8488E846-2F9A-4239-8077-9B10A36AE81B}" WorkUnitID="{2FB4EF43-DF60-47B9-9EEF-A2004292FBF9}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="SFX" ID="{CDF93DC7-5004-462E-8B4B-7A815B229A25}" WorkUnitID="{2FB4EF43-DF60-47B9-9EEF-A2004292FBF9}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="WhiteNoiseOnTarget" ID="{C1091B34-059C-49D2-BB23-3B4E3D366514}" WorkUnitID="{2FB4EF43-DF60-47B9-9EEF-A2004292FBF9}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="PlayerFoot" ID="{082039E4-8A12-4A7E-8C3D-A3C8AF76EE16}" WorkUnitID="{2FB4EF43-DF60-47B9-9EEF-A2004292FBF9}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Melodies" ID="{32BC5FC8-F98B-4DEE-B140-6F5A207DBD29}" WorkUnitID="{2FB4EF43-DF60-47B9-9EEF-A2004292FBF9}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Music" ID="{41C7A8FE-D04F-42B7-BFA2-9828FE7796A2}" WorkUnitID="{41C7A8FE-D04F-42B7-BFA2-9828FE7796A2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Beacon" ID="{958AAA1C-8167-442E-B92B-EE0E141E8819}" WorkUnitID="{958AAA1C-8167-442E-B92B-EE0E141E8819}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Player" ID="{E5F739A7-29CA-448A-A84C-F8243F0F273A}" WorkUnitID="{E5F739A7-29CA-448A-A84C-F8243F0F273A}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Testing" ID="{8D8AAA91-BFB2-48C7-9504-7F3F41BFB36E}" WorkUnitID="{8D8AAA91-BFB2-48C7-9504-7F3F41BFB36E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="UI" ID="{5A26AD13-FE32-4B77-8E33-72FC1241CEEF}" WorkUnitID="{5A26AD13-FE32-4B77-8E33-72FC1241CEEF}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Targets" ID="{6AC89CA0-A7C9-4BBF-B5ED-B78E39AF6C44}" WorkUnitID="{6AC89CA0-A7C9-4BBF-B5ED-B78E39AF6C44}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

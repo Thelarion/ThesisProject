@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{8A014962-41A5-E49D-4D61-B112D846C66B}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{9D7AE716-A44F-4676-DC6D-AC3A9C62BC95}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -36,12 +36,12 @@
 				</AuxBus>
 			</AuxBusses>
 			<GameParameters>
-				<GameParameter Id="189100965" Name="left_right"/>
-				<GameParameter Id="1440328639" Name="frequency_depth"/>
-				<GameParameter Id="2345103495" Name="wall_occlusion"/>
-				<GameParameter Id="2474654343" Name="beacon_lr_volume"/>
-				<GameParameter Id="3639684685" Name="distance_freq"/>
-				<GameParameter Id="4213591503" Name="synth_pwm_up_down"/>
+				<GameParameter Id="815616169" Name="RTPC_synth_pwm_up_down"/>
+				<GameParameter Id="872361937" Name="RTPC_wall_occlusion"/>
+				<GameParameter Id="1364189011" Name="RTPC_distance_freq"/>
+				<GameParameter Id="1384204673" Name="RTPC_frequency_depth"/>
+				<GameParameter Id="3707704703" Name="RTPC_left_right"/>
+				<GameParameter Id="4120900405" Name="RTPC_beacon_lr_volume"/>
 			</GameParameters>
 			<StateGroups>
 				<StateGroup Id="3737870095" Name="AimDirection">
@@ -51,6 +51,13 @@
 						<State Id="2448668527" Name="AimLeft"/>
 						<State Id="3625632552" Name="AimDown"/>
 						<State Id="3959127275" Name="AimUp"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="4091656514" Name="GameState">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="984691642" Name="InGame"/>
+						<State Id="3374585465" Name="InMenu"/>
 					</States>
 				</StateGroup>
 			</StateGroups>
@@ -77,7 +84,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{E71929EF-931D-3375-4B05-031240FFAE4C}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{ECA4B17D-1840-138C-AC96-0B15C337B227}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -315,7 +322,7 @@
 				</File>
 				<File Id="778380301" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cheering1.wav</ShortName>
-					<CachePath>SFX/Cheering1_FD33EE18.wem</CachePath>
+					<CachePath>SFX/Cheering1_52D27BF3.wem</CachePath>
 				</File>
 				<File Id="782485844" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O4\G4.wav</ShortName>
@@ -512,21 +519,6 @@
 					<MediaRefs>
 						<MediaRef Id="815945255"/>
 					</MediaRefs>
-				</Event>
-				<Event Id="19930668" Name="BeaconLock" DurationType="OneShot" DurationMin="1.3" DurationMax="1.3">
-					<MediaRefs>
-						<MediaRef Id="966532559"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="767190967" Name="BeaconLR" DurationType="Infinite">
-					<MediaRefs>
-						<MediaRef Id="632144886"/>
-					</MediaRefs>
-					<PluginRefs>
-						<Custom>
-							<PluginRef Id="737587789"/>
-						</Custom>
-					</PluginRefs>
 				</Event>
 				<Event Id="1853303302" Name="C2" MaxAttenuation="20" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
@@ -787,7 +779,22 @@
 						<MediaRef Id="253861454"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2664667690" Name="PlayerFoot" DurationType="OneShot" DurationMin="0.386644" DurationMax="0.8593651">
+				<Event Id="3923622767" Name="Play_BeaconLock" DurationType="OneShot" DurationMin="1.3" DurationMax="1.3">
+					<MediaRefs>
+						<MediaRef Id="966532559"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="194014728" Name="Play_BeaconLR" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="632144886"/>
+					</MediaRefs>
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="737587789"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+				<Event Id="3015844381" Name="Play_PlayerFoot" DurationType="OneShot" DurationMin="0.386644" DurationMax="0.8593651">
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="4050929301" Id="841620460" Default="true"/>
@@ -843,11 +850,11 @@
 				</Event>
 			</Events>
 			<GameParameters>
-				<GameParameter Id="189100965" Name="left_right"/>
-				<GameParameter Id="1440328639" Name="frequency_depth"/>
-				<GameParameter Id="2474654343" Name="beacon_lr_volume"/>
-				<GameParameter Id="3639684685" Name="distance_freq"/>
-				<GameParameter Id="4213591503" Name="synth_pwm_up_down"/>
+				<GameParameter Id="815616169" Name="RTPC_synth_pwm_up_down"/>
+				<GameParameter Id="1364189011" Name="RTPC_distance_freq"/>
+				<GameParameter Id="1384204673" Name="RTPC_frequency_depth"/>
+				<GameParameter Id="3707704703" Name="RTPC_left_right"/>
+				<GameParameter Id="4120900405" Name="RTPC_beacon_lr_volume"/>
 			</GameParameters>
 			<SwitchGroups>
 				<SwitchGroup Id="4050929301" Name="Materials">
@@ -861,5 +868,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{84E37CD4-04DF-3B35-88AF-B8ED3B2CA626}</FileHash>
+	<FileHash>{D3372F4F-8835-3943-D743-7017D77998CB}</FileHash>
 </SoundBanksInfo>

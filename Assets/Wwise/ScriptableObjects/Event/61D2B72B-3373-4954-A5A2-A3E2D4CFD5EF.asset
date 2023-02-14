@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2884db9baba48ae43abdd083adbd1799, type: 3}
   m_Name: 61D2B72B-3373-4954-A5A2-A3E2D4CFD5EF
   m_EditorClassIdentifier: 
-  objectName: BeaconLock
-  id: 19930668
+  objectName: Play_BeaconLock
+  id: 3923622767
   guid: 61D2B72B-3373-4954-A5A2-A3E2D4CFD5EF

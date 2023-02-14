@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2884db9baba48ae43abdd083adbd1799, type: 3}
   m_Name: 082039E4-8A12-4A7E-8C3D-A3C8AF76EE16
   m_EditorClassIdentifier: 
-  objectName: PlayerFoot
-  id: 2664667690
+  objectName: Play_PlayerFoot
+  id: 3015844381
   guid: 082039E4-8A12-4A7E-8C3D-A3C8AF76EE16

@@ -3,36 +3,36 @@
 	<GameParameters>
 		<WorkUnit Name="Default Work Unit" ID="{D1EE20B6-952B-47F8-963E-ED7BCBBAF028}" PersistMode="Standalone">
 			<ChildrenList>
-				<GameParameter Name="distance_freq" ID="{2CD580FE-F1AA-48B5-BE61-37F43F4AF98D}">
+				<GameParameter Name="RTPC_distance_freq" ID="{2CD580FE-F1AA-48B5-BE61-37F43F4AF98D}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="10"/>
 						<Property Name="Max" Type="Real64" Value="10"/>
 					</PropertyList>
 				</GameParameter>
-				<GameParameter Name="frequency_depth" ID="{600FFE17-1FEE-4D17-901F-C9F00C6592B8}">
+				<GameParameter Name="RTPC_frequency_depth" ID="{600FFE17-1FEE-4D17-901F-C9F00C6592B8}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
 					</PropertyList>
 				</GameParameter>
-				<GameParameter Name="synth_pwm_up_down" ID="{BC431978-D304-4090-BEC8-40C997D41550}">
+				<GameParameter Name="RTPC_synth_pwm_up_down" ID="{BC431978-D304-4090-BEC8-40C997D41550}">
 					<PropertyList>
 						<Property Name="Max" Type="Real64" Value="50"/>
 					</PropertyList>
 				</GameParameter>
-				<GameParameter Name="wall_occlusion" ID="{CDBF976E-CA53-49B6-8C0C-5767DD5366F1}">
+				<GameParameter Name="RTPC_wall_occlusion" ID="{CDBF976E-CA53-49B6-8C0C-5767DD5366F1}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
 						<Property Name="Max" Type="Real64" Value="1"/>
 					</PropertyList>
 				</GameParameter>
-				<GameParameter Name="left_right" ID="{60541B11-A5E4-4A1C-A022-D83ADF062581}">
+				<GameParameter Name="RTPC_left_right" ID="{60541B11-A5E4-4A1C-A022-D83ADF062581}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
 						<Property Name="Max" Type="Real64" Value="1"/>
 						<Property Name="Min" Type="Real64" Value="-1"/>
 					</PropertyList>
 				</GameParameter>
-				<GameParameter Name="beacon_lr_volume" ID="{445EB36B-D47E-4022-A599-348A4BA0D55B}">
+				<GameParameter Name="RTPC_beacon_lr_volume" ID="{445EB36B-D47E-4022-A599-348A4BA0D55B}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="1"/>
 						<Property Name="Max" Type="Real64" Value="1"/>

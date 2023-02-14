@@ -5880,7 +5880,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5533231744789858607
 Transform:
   m_ObjectHideFlags: 0
@@ -7324,7 +7324,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveSpeed: 7
-  SprintSpeed: 60
+  SprintSpeed: 90
   RotationSpeed: 0.6
   SpeedChangeRate: 4
   JumpHeight: 1.2
@@ -7349,9 +7349,8 @@ MonoBehaviour:
   aimManager: {fileID: 9008879316150871804}
   blindfold: {fileID: 432477867329669193}
   gameManager: {fileID: 0}
-  playerAudio: {fileID: 0}
+  melodyManager: {fileID: 0}
   MenuToggle: 0
-  slingshot: {fileID: 0}
 --- !u!114 &2122472149014863827
 MonoBehaviour:
   m_ObjectHideFlags: 0
