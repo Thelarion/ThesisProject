@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{56C6A989-19A7-12DF-7C61-1EBC0E452AFE}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{AAA2A1FB-09A7-7845-DB3F-CDA29327211D}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -22,6 +22,7 @@
 				</AudioDevices>
 			</Plugins>
 			<Busses>
+				<Bus Id="201729212" Name="Notes"/>
 				<Bus Id="393239870" Name="SFX"/>
 				<Bus Id="1229948536" Name="Environment"/>
 				<Bus Id="2429736717" Name="Melodies"/>
@@ -38,12 +39,14 @@
 				</AuxBus>
 			</AuxBusses>
 			<GameParameters>
+				<GameParameter Id="257343836" Name="RTPC_MusicBusFade"/>
 				<GameParameter Id="815616169" Name="RTPC_synth_pwm_up_down"/>
 				<GameParameter Id="872361937" Name="RTPC_wall_occlusion"/>
 				<GameParameter Id="1364189011" Name="RTPC_distance_freq"/>
 				<GameParameter Id="1384204673" Name="RTPC_frequency_depth"/>
-				<GameParameter Id="2796181470" Name="MelodyOn"/>
+				<GameParameter Id="3170173318" Name="RTPC_GenOcclusion"/>
 				<GameParameter Id="3707704703" Name="RTPC_left_right"/>
+				<GameParameter Id="3726690316" Name="RTPC_MelodyOn"/>
 				<GameParameter Id="4120900405" Name="RTPC_beacon_lr_volume"/>
 			</GameParameters>
 			<StateGroups>
@@ -115,7 +118,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{DBDB6B12-50F7-25F3-B7D6-930BDBB43279}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{BA7E7AC0-6D23-3EE9-ECD9-CF87436515F6}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -848,9 +851,6 @@
 							</MediaRefs>
 						</SwitchContainer>
 					</SwitchContainers>
-					<ActionSetState>
-						<ActionSetStateEntry GroupId="1021618141" Id="3998479257" Name="MusicOn"/>
-					</ActionSetState>
 				</Event>
 				<Event Id="3015844381" Name="Play_PlayerFoot" DurationType="OneShot" DurationMin="0.386644" DurationMax="0.8593651">
 					<SwitchContainers>
@@ -909,19 +909,13 @@
 			</Events>
 			<GameParameters>
 				<GameParameter Id="815616169" Name="RTPC_synth_pwm_up_down"/>
+				<GameParameter Id="872361937" Name="RTPC_wall_occlusion"/>
 				<GameParameter Id="1364189011" Name="RTPC_distance_freq"/>
 				<GameParameter Id="1384204673" Name="RTPC_frequency_depth"/>
 				<GameParameter Id="3707704703" Name="RTPC_left_right"/>
 				<GameParameter Id="4120900405" Name="RTPC_beacon_lr_volume"/>
 			</GameParameters>
 			<StateGroups>
-				<StateGroup Id="1021618141" Name="MusicState">
-					<States>
-						<State Id="748895195" Name="None"/>
-						<State Id="3207097637" Name="MusicOff"/>
-						<State Id="3998479257" Name="MusicOn"/>
-					</States>
-				</StateGroup>
 				<StateGroup Id="3443944880" Name="MelodyState">
 					<States>
 						<State Id="748895195" Name="None"/>
@@ -949,5 +943,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{8BD15B13-46F4-16EC-1E37-B7301299B125}</FileHash>
+	<FileHash>{9387CD23-018C-9CD9-A5BE-D2F36CC580EB}</FileHash>
 </SoundBanksInfo>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{72267048-CC67-485E-A1E2-D5F272BBA672}" SchemaVersion="110">
+	<GameParameters>
+		<WorkUnit Name="Occlusion" ID="{72267048-CC67-485E-A1E2-D5F272BBA672}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="RTPC_wall_occlusion" ID="{CDBF976E-CA53-49B6-8C0C-5767DD5366F1}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="RTPC_GenOcclusion" ID="{07AD59E1-527F-42E0-A4E6-F30719E85712}">
+					<PropertyList>
+						<Property Name="BindToBuiltInParam" Type="int16" Value="6"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

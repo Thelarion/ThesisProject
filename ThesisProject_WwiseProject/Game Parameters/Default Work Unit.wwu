@@ -19,12 +19,6 @@
 						<Property Name="Max" Type="Real64" Value="50"/>
 					</PropertyList>
 				</GameParameter>
-				<GameParameter Name="RTPC_wall_occlusion" ID="{CDBF976E-CA53-49B6-8C0C-5767DD5366F1}">
-					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="0"/>
-						<Property Name="Max" Type="Real64" Value="1"/>
-					</PropertyList>
-				</GameParameter>
 				<GameParameter Name="RTPC_left_right" ID="{60541B11-A5E4-4A1C-A022-D83ADF062581}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
@@ -32,13 +26,6 @@
 						<Property Name="Min" Type="Real64" Value="-1"/>
 					</PropertyList>
 				</GameParameter>
-				<GameParameter Name="RTPC_beacon_lr_volume" ID="{445EB36B-D47E-4022-A599-348A4BA0D55B}">
-					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="1"/>
-						<Property Name="Max" Type="Real64" Value="1"/>
-					</PropertyList>
-				</GameParameter>
-				<GameParameter Name="MelodyOn" ID="{50D70D7B-B318-4541-B711-ACA439313934}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

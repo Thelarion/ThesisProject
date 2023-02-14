@@ -16,6 +16,7 @@
 						<MusicSegment Name="Track1_Em_90bpm_44_lp" ID="{8C7D9FF0-310C-4EF9-92D9-21B9CD5555CC}" ShortID="287675342">
 							<PropertyList>
 								<Property Name="EndPosition" Type="Real64" Value="64000"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="Tempo" Type="Real64" Value="90"/>
 							</PropertyList>
 							<ReferenceList>

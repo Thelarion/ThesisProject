@@ -15,4 +15,5 @@ MonoBehaviour:
   objectName: Track1
   id: 147423
   guid: DF0AB87B-7594-47E9-A09B-20EC64FAC28A
-  WwiseSwitchGroupReference: {fileID: 0}
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: 3dd5244481f6f424fb31bdb8076468e3,
+    type: 2}

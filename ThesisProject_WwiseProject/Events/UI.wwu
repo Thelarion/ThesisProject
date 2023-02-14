@@ -8,7 +8,7 @@
 						<Action Name="" ID="{F304B334-6FAF-4D56-9611-C86BBF602D79}" ShortID="422786274">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="DistanceFrameTransition" ID="{9A6D3DAF-10A7-481F-AD73-6DDD86D47CE7}" WorkUnitID="{6B91872B-49A8-4BB8-A212-FBF7E77C3676}"/>
+									<ObjectRef Name="DistanceFrameTransition" ID="{9A6D3DAF-10A7-481F-AD73-6DDD86D47CE7}" WorkUnitID="{690ABE9D-D445-44AA-AE0F-2C6B0F3C9C08}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 111a36df2b99a2459ec0d5f0605e9fb4
     GuidInternal: 
-    m_lastTime: -8585252234323008303
+    m_lastTime: -8585252154503318693
     List:
     - name: Environment
       guid: ae6f6b737fc0694c98d071093c86bcc7
@@ -105,6 +105,23 @@ MonoBehaviour:
         ObjectType: 2
         guid: 9888f38dc4d7dd4dbef8a875ef226eeb
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music
+    - name: Notes
+      guid: 0147c8aaf612ce4089a8d6d17c162967
+      id: 201729212
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 111a36df2b99a2459ec0d5f0605e9fb4
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Notes
+        ObjectType: 2
+        guid: 0147c8aaf612ce4089a8d6d17c162967
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Notes
     - name: Reverb
       guid: b7a92dbab4d5d8469f6a43b7cf3d38d1
       id: 348963605
@@ -185,7 +202,7 @@ MonoBehaviour:
     ParentPath: Events\Beacon
     guid: 1caa8a9567812e44b92bee0e141e8819
     GuidInternal: 
-    m_lastTime: -8585252254113190427
+    m_lastTime: -8585252205713004687
     List:
     - name: d10
       guid: 5e77bdad9013c54db57d3aab89596901
@@ -563,7 +580,7 @@ MonoBehaviour:
     ParentPath: Events\Music
     guid: fea8c7414fd0b742bfa29828fe7796a2
     GuidInternal: 
-    m_lastTime: -8585252226587821633
+    m_lastTime: -8585252216148601006
     List:
     - name: Play_Music
       guid: 641c615078e96f4b930ae0a615ed3d42
@@ -593,7 +610,7 @@ MonoBehaviour:
     ParentPath: Events\Notes
     guid: 603032bc1491bb409a3e58e3e9bec649
     GuidInternal: 
-    m_lastTime: -8585252231294889366
+    m_lastTime: -8585252205845773601
     List:
     - name: A2
       guid: 1a1bb7ce8a6d3b40afeac51e10a01d36
@@ -1707,7 +1724,7 @@ MonoBehaviour:
     ParentPath: Events\Targets
     guid: a09cc86ac9a7bf4bb5edb78e39af6c44
     GuidInternal: 
-    m_lastTime: -8585252900483874085
+    m_lastTime: -8585252205480034537
     List:
     - name: FreqDistanceEvent
       guid: 74c402e6d7077340a734ccbd7b265c9e
@@ -1801,7 +1818,7 @@ MonoBehaviour:
     ParentPath: Events\UI
     guid: 13ad265a32fe774b8e3372fc1241ceef
     GuidInternal: 
-    m_lastTime: -8585252899765751612
+    m_lastTime: -8585252205712670724
     List:
     - name: DistanceFrameTransition
       guid: b75bda6923c11a45b48382c150b587a0
@@ -1821,6 +1838,33 @@ MonoBehaviour:
       maxDuration: -1
       minDuration: -1
   RtpcWwu:
+  - PhysicalPath: Game Parameters\Beacon.wwu
+    PathAndIcons:
+    - ElementName: Game Parameters
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Beacon
+      ObjectType: 12
+      guid: ffae5964dcfd7647990489b8c9041794
+    ParentPath: Game Parameters\Beacon
+    guid: ffae5964dcfd7647990489b8c9041794
+    GuidInternal: 
+    m_lastTime: -8585252165808214885
+    List:
+    - name: RTPC_beacon_lr_volume
+      guid: 6bb35e447ed42240a599348a4ba0d55b
+      id: 4120900405
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Beacon
+        ObjectType: 12
+        guid: ffae5964dcfd7647990489b8c9041794
+      - ElementName: RTPC_beacon_lr_volume
+        ObjectType: 13
+        guid: 6bb35e447ed42240a599348a4ba0d55b
+      Path: Game Parameters\Beacon\RTPC_beacon_lr_volume
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Game Parameters
@@ -1832,36 +1876,8 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: b620eed12b95f847963eed7bcbbaf028
     GuidInternal: 
-    m_lastTime: -8585252247787235833
+    m_lastTime: -8585252151232276085
     List:
-    - name: MelodyOn
-      guid: 7b0dd75018b34145b711aca439313934
-      id: 2796181470
-      PathAndIcons:
-      - ElementName: Game Parameters
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: b620eed12b95f847963eed7bcbbaf028
-      - ElementName: MelodyOn
-        ObjectType: 13
-        guid: 7b0dd75018b34145b711aca439313934
-      Path: Game Parameters\Default Work Unit\MelodyOn
-    - name: RTPC_beacon_lr_volume
-      guid: 6bb35e447ed42240a599348a4ba0d55b
-      id: 4120900405
-      PathAndIcons:
-      - ElementName: Game Parameters
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: b620eed12b95f847963eed7bcbbaf028
-      - ElementName: RTPC_beacon_lr_volume
-        ObjectType: 13
-        guid: 6bb35e447ed42240a599348a4ba0d55b
-      Path: Game Parameters\Default Work Unit\RTPC_beacon_lr_volume
     - name: RTPC_distance_freq
       guid: fe80d52caaf1b548be6137f43f4af98d
       id: 1364189011
@@ -1918,6 +1934,87 @@ MonoBehaviour:
         ObjectType: 13
         guid: 781943bc04d39040bec840c997d41550
       Path: Game Parameters\Default Work Unit\RTPC_synth_pwm_up_down
+  - PhysicalPath: Game Parameters\Melody.wwu
+    PathAndIcons:
+    - ElementName: Game Parameters
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Melody
+      ObjectType: 12
+      guid: 547799af3829bd43928e2fb426c2f6c9
+    ParentPath: Game Parameters\Melody
+    guid: 547799af3829bd43928e2fb426c2f6c9
+    GuidInternal: 
+    m_lastTime: -8585252158480313869
+    List:
+    - name: RTPC_MelodyOn
+      guid: 7b0dd75018b34145b711aca439313934
+      id: 3726690316
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Melody
+        ObjectType: 12
+        guid: 547799af3829bd43928e2fb426c2f6c9
+      - ElementName: RTPC_MelodyOn
+        ObjectType: 13
+        guid: 7b0dd75018b34145b711aca439313934
+      Path: Game Parameters\Melody\RTPC_MelodyOn
+  - PhysicalPath: Game Parameters\Music.wwu
+    PathAndIcons:
+    - ElementName: Game Parameters
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Music
+      ObjectType: 12
+      guid: 6ff56679724c3549a743bafe6b0389ee
+    ParentPath: Game Parameters\Music
+    guid: 6ff56679724c3549a743bafe6b0389ee
+    GuidInternal: 
+    m_lastTime: -8585252157036681005
+    List:
+    - name: RTPC_MusicBusFade
+      guid: 9fd4c4d4a5fc5e4393830ce003094d2a
+      id: 257343836
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: 6ff56679724c3549a743bafe6b0389ee
+      - ElementName: RTPC_MusicBusFade
+        ObjectType: 13
+        guid: 9fd4c4d4a5fc5e4393830ce003094d2a
+      Path: Game Parameters\Music\RTPC_MusicBusFade
+  - PhysicalPath: Game Parameters\Occlusion.wwu
+    PathAndIcons:
+    - ElementName: Game Parameters
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Occlusion
+      ObjectType: 12
+      guid: 4870267267cc5e48a1e2d5f272bba672
+    ParentPath: Game Parameters\Occlusion
+    guid: 4870267267cc5e48a1e2d5f272bba672
+    GuidInternal: 
+    m_lastTime: -8585252130466471508
+    List:
+    - name: RTPC_GenOcclusion
+      guid: e159ad077f52e042a4e6f30719e85712
+      id: 3170173318
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Occlusion
+        ObjectType: 12
+        guid: 4870267267cc5e48a1e2d5f272bba672
+      - ElementName: RTPC_GenOcclusion
+        ObjectType: 13
+        guid: e159ad077f52e042a4e6f30719e85712
+      Path: Game Parameters\Occlusion\RTPC_GenOcclusion
     - name: RTPC_wall_occlusion
       guid: 6e97bfcd53cab6498c0c5767dd5366f1
       id: 872361937
@@ -1925,13 +2022,13 @@ MonoBehaviour:
       - ElementName: Game Parameters
         ObjectType: 5
         guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
+      - ElementName: Occlusion
         ObjectType: 12
-        guid: b620eed12b95f847963eed7bcbbaf028
+        guid: 4870267267cc5e48a1e2d5f272bba672
       - ElementName: RTPC_wall_occlusion
         ObjectType: 13
         guid: 6e97bfcd53cab6498c0c5767dd5366f1
-      Path: Game Parameters\Default Work Unit\RTPC_wall_occlusion
+      Path: Game Parameters\Occlusion\RTPC_wall_occlusion
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -1944,7 +2041,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 7fb15f74f422ed4bad756627e85a9cb3
     GuidInternal: 
-    m_lastTime: -8585252226587742052
+    m_lastTime: -8585252165808593621
     List:
     - name: AimDirection
       guid: bdd2e6e80180014ab731b31c36909571
@@ -2645,7 +2742,7 @@ MonoBehaviour:
         guid: da8eac4adff1a245a328ede5f79242d9
       Path: Triggers\Default Work Unit\New_Trigger
   ExpandedFileSystemItemIds: 0200000003000000050000000600000007000000090000000a0000000c000000180000001e000000270000002e0000002f00000034000000530000007d000000d2000000fa2f0000
-  ExpandedWaapiItemIds: 01000000020000000300000005000000060000000a0000000c0000000e00000011000000180000001e000000270000002e0000002f000000340000003c0000003d0000003e000000530000007d000000d2000000fa2f0000
+  ExpandedWaapiItemIds: 010000000200000003000000050000000a0000000c0000000e000000180000001e0000002100000022000000270000002a00000032000000340000003c0000003d0000003e000000530000007d000000d2000000fa2f0000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

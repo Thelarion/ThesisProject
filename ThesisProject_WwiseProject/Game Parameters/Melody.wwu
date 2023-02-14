@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{AF997754-2938-43BD-928E-2FB426C2F6C9}" SchemaVersion="110">
+	<GameParameters>
+		<WorkUnit Name="Melody" ID="{AF997754-2938-43BD-928E-2FB426C2F6C9}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="RTPC_MelodyOn" ID="{50D70D7B-B318-4541-B711-ACA439313934}"/>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

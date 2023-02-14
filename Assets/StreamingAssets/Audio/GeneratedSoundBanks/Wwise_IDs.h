@@ -204,11 +204,13 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
-        static const AkUniqueID MELODYON = 2796181470U;
         static const AkUniqueID RTPC_BEACON_LR_VOLUME = 4120900405U;
         static const AkUniqueID RTPC_DISTANCE_FREQ = 1364189011U;
         static const AkUniqueID RTPC_FREQUENCY_DEPTH = 1384204673U;
+        static const AkUniqueID RTPC_GENOCCLUSION = 3170173318U;
         static const AkUniqueID RTPC_LEFT_RIGHT = 3707704703U;
+        static const AkUniqueID RTPC_MELODYON = 3726690316U;
+        static const AkUniqueID RTPC_MUSICBUSFADE = 257343836U;
         static const AkUniqueID RTPC_SYNTH_PWM_UP_DOWN = 815616169U;
         static const AkUniqueID RTPC_WALL_OCCLUSION = 872361937U;
     } // namespace GAME_PARAMETERS
@@ -230,6 +232,7 @@ namespace AK
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID MELODIES = 2429736717U;
         static const AkUniqueID MUSIC = 3991942870U;
+        static const AkUniqueID NOTES = 201729212U;
         static const AkUniqueID SFX = 393239870U;
     } // namespace BUSSES
 

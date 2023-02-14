@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{B221DD66-3B10-5883-0A3C-097A155854AA}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{0AE4C5F3-51E0-C105-6F2B-9528613E2C01}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -22,6 +22,7 @@
 				</AudioDevices>
 			</Plugins>
 			<Busses>
+				<Bus Id="201729212" Name="Notes"/>
 				<Bus Id="393239870" Name="SFX"/>
 				<Bus Id="1229948536" Name="Environment"/>
 				<Bus Id="2429736717" Name="Melodies"/>
@@ -38,12 +39,14 @@
 				</AuxBus>
 			</AuxBusses>
 			<GameParameters>
+				<GameParameter Id="257343836" Name="RTPC_MusicBusFade"/>
 				<GameParameter Id="815616169" Name="RTPC_synth_pwm_up_down"/>
 				<GameParameter Id="872361937" Name="RTPC_wall_occlusion"/>
 				<GameParameter Id="1364189011" Name="RTPC_distance_freq"/>
 				<GameParameter Id="1384204673" Name="RTPC_frequency_depth"/>
-				<GameParameter Id="2796181470" Name="MelodyOn"/>
+				<GameParameter Id="3170173318" Name="RTPC_GenOcclusion"/>
 				<GameParameter Id="3707704703" Name="RTPC_left_right"/>
+				<GameParameter Id="3726690316" Name="RTPC_MelodyOn"/>
 				<GameParameter Id="4120900405" Name="RTPC_beacon_lr_volume"/>
 			</GameParameters>
 			<StateGroups>
@@ -115,7 +118,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{7887160A-B447-A14B-EA7D-0164CB7DDFDF}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{BA7E7AC0-6D23-3EE9-ECD9-CF87436515F6}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -906,6 +909,7 @@
 			</Events>
 			<GameParameters>
 				<GameParameter Id="815616169" Name="RTPC_synth_pwm_up_down"/>
+				<GameParameter Id="872361937" Name="RTPC_wall_occlusion"/>
 				<GameParameter Id="1364189011" Name="RTPC_distance_freq"/>
 				<GameParameter Id="1384204673" Name="RTPC_frequency_depth"/>
 				<GameParameter Id="3707704703" Name="RTPC_left_right"/>
@@ -939,5 +943,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{FEA8AA2C-7DD5-EB14-3E95-73D2A475BF53}</FileHash>
+	<FileHash>{9BB928E5-99D9-FEF2-82CE-701D9C4E6530}</FileHash>
 </SoundBanksInfo>

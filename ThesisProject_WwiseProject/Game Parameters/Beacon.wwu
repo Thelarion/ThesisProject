@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6459AEFF-FDDC-4776-9904-89B8C9041794}" SchemaVersion="110">
+	<GameParameters>
+		<WorkUnit Name="Beacon" ID="{6459AEFF-FDDC-4776-9904-89B8C9041794}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="RTPC_beacon_lr_volume" ID="{445EB36B-D47E-4022-A599-348A4BA0D55B}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

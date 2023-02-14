@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{7966F56F-4C72-4935-A743-BAFE6B0389EE}" SchemaVersion="110">
+	<GameParameters>
+		<WorkUnit Name="Music" ID="{7966F56F-4C72-4935-A743-BAFE6B0389EE}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="RTPC_MusicBusFade" ID="{D4C4D49F-FCA5-435E-9383-0CE003094D2A}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="25"/>
+						<Property Name="Max" Type="Real64" Value="25"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>
