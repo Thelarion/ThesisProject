@@ -1,85 +1,107 @@
 Event	ID	Name			Wwise Object Path	Notes
 	194014728	Play_BeaconLR			\Beacon\Play_BeaconLR	
 	293588534	DistanceFrameTransition			\UI\DistanceFrameTransition	
+	747211651	MelodyStateOn			\Melodies\MelodyStateOn	
 	810809264	d100			\Beacon\DistanceCount\d100	
-	1786192858	G2			\Music\SingleNotes\O2\G2	
-	1786192859	G3			\Music\SingleNotes\O3\G3	
-	1786192860	G4			\Music\SingleNotes\O4\G4	
-	1802970440	F3			\Music\SingleNotes\O3\F3	
-	1802970441	F2			\Music\SingleNotes\O2\F2	
-	1802970447	F4			\Music\SingleNotes\O4\F4	
-	1805266923	B4b			\Music\SingleNotes\O4\B4b	
-	1819748154	E4			\Music\SingleNotes\O4\E4	
-	1819748156	E2			\Music\SingleNotes\O2\E2	
-	1819748157	E3			\Music\SingleNotes\O3\E3	
-	1822044542	B3b			\Music\SingleNotes\O3\B3b	
-	1836525714	D3			\Music\SingleNotes\O3\D3	
-	1836525715	D2			\Music\SingleNotes\O2\D2	
-	1836525717	D4			\Music\SingleNotes\O4\D4	
-	1838822093	B2b			\Music\SingleNotes\O2\B2b	
+	1786192858	G2			\Notes\O2\G2	
+	1786192859	G3			\Notes\O3\G3	
+	1786192860	G4			\Notes\O4\G4	
+	1802970440	F3			\Notes\O3\F3	
+	1802970441	F2			\Notes\O2\F2	
+	1802970447	F4			\Notes\O4\F4	
+	1805266923	B4b			\Notes\O4\B4b	
+	1819748154	E4			\Notes\O4\E4	
+	1819748156	E2			\Notes\O2\E2	
+	1819748157	E3			\Notes\O3\E3	
+	1822044542	B3b			\Notes\O3\B3b	
+	1836525714	D3			\Notes\O3\D3	
+	1836525715	D2			\Notes\O2\D2	
+	1836525717	D4			\Notes\O4\D4	
+	1838822093	B2b			\Notes\O2\B2b	
 	1848491570	WhiteNoiseOnTarget			\Targets\WhiteNoiseOnTarget	
-	1853303296	C4			\Music\SingleNotes\O4\C4	
-	1853303302	C2			\Music\SingleNotes\O2\C2	
-	1853303303	C3			\Music\SingleNotes\O3\C3	
-	1870081011	B4			\Music\SingleNotes\O4\B4	
-	1870081012	B3			\Music\SingleNotes\O3\B3	
-	1870081013	B2			\Music\SingleNotes\O2\B2	
-	1886858600	A2			\Music\SingleNotes\O2\A2	
-	1886858601	A3			\Music\SingleNotes\O3\A3	
-	1886858606	A4			\Music\SingleNotes\O4\A4	
-	1938649164	G2b			\Music\SingleNotes\O2\G2b	
-	1938649181	G2s			\Music\SingleNotes\O2\G2s	
-	1939634891	A2s			\Music\SingleNotes\O2\A2s	
-	1939634906	A2b			\Music\SingleNotes\O2\A2b	
-	1955426723	G3b			\Music\SingleNotes\O3\G3b	
-	1955426738	G3s			\Music\SingleNotes\O3\G3s	
-	1955573803	F3s			\Music\SingleNotes\O3\F3s	
-	1956412457	A3b			\Music\SingleNotes\O3\A3b	
-	1956412472	A3s			\Music\SingleNotes\O3\A3s	
-	1972204327	G4s			\Music\SingleNotes\O4\G4s	
-	1972204342	G4b			\Music\SingleNotes\O4\G4b	
-	1972351384	F2s			\Music\SingleNotes\O2\F2s	
-	2040300616	A4b			\Music\SingleNotes\O4\A4b	
-	2040300633	A4s			\Music\SingleNotes\O4\A4s	
-	2073017134	F4s			\Music\SingleNotes\O4\F4s	
+	1853303296	C4			\Notes\O4\C4	
+	1853303302	C2			\Notes\O2\C2	
+	1853303303	C3			\Notes\O3\C3	
+	1870081011	B4			\Notes\O4\B4	
+	1870081012	B3			\Notes\O3\B3	
+	1870081013	B2			\Notes\O2\B2	
+	1886858600	A2			\Notes\O2\A2	
+	1886858601	A3			\Notes\O3\A3	
+	1886858606	A4			\Notes\O4\A4	
+	1938649164	G2b			\Notes\O2\G2b	
+	1938649181	G2s			\Notes\O2\G2s	
+	1939634891	A2s			\Notes\O2\A2s	
+	1939634906	A2b			\Notes\O2\A2b	
+	1955426723	G3b			\Notes\O3\G3b	
+	1955426738	G3s			\Notes\O3\G3s	
+	1955573803	F3s			\Notes\O3\F3s	
+	1956412457	A3b			\Notes\O3\A3b	
+	1956412472	A3s			\Notes\O3\A3s	
+	1972204327	G4s			\Notes\O4\G4s	
+	1972204342	G4b			\Notes\O4\G4b	
+	1972351384	F2s			\Notes\O2\F2s	
+	2040300616	A4b			\Notes\O4\A4b	
+	2040300633	A4s			\Notes\O4\A4s	
+	2073017134	F4s			\Notes\O4\F4s	
 	2218041646	FreqDistanceEvent			\Targets\FreqDistanceEvent	
+	2810620855	MelodyStateOff			\Melodies\MelodyStateOff	
+	2932040671	Play_Music			\Music\Play_Music	
 	2982082363	distanceC			\Beacon\distanceC	
 	3015844381	Play_PlayerFoot			\Player\Play_PlayerFoot	
 	3062523241	Miss			\Targets\Miss	
-	3334410611	C3_E3_A2_B3_C3			\Music\Melodies\C3_E3_A2_B3_C3	
+	3334410611	C3_E3_A2_B3_C3			\Melodies\C3_E3_A2_B3_C3	
 	3625060726	Success			\Targets\Success	
 	3801406080	d10			\Beacon\DistanceCount\d10	
-	3834961317	D3s			\Music\SingleNotes\O3\D3s	
-	3834961332	D3b			\Music\SingleNotes\O3\D3b	
+	3834961317	D3s			\Notes\O3\D3s	
+	3834961332	D3b			\Notes\O3\D3b	
 	3834961382	d30			\Beacon\DistanceCount\d30	
-	3851738891	D2b			\Music\SingleNotes\O2\D2b	
-	3851738906	D2s			\Music\SingleNotes\O2\D2s	
+	3851738891	D2b			\Notes\O2\D2b	
+	3851738906	D2s			\Notes\O2\D2s	
 	3851738969	d20			\Beacon\DistanceCount\d20	
-	3851886195	C4s			\Music\SingleNotes\O4\C4s	
+	3851886195	C4s			\Notes\O4\C4s	
 	3868516556	d50			\Beacon\DistanceCount\d50	
 	3885294271	d40			\Beacon\DistanceCount\d40	
-	3885294317	D4b			\Music\SingleNotes\O4\D4b	
-	3885294332	D4s			\Music\SingleNotes\O4\D4s	
+	3885294317	D4b			\Notes\O4\D4b	
+	3885294332	D4s			\Notes\O4\D4s	
 	3902071826	d70			\Beacon\DistanceCount\d70	
 	3918849413	d60			\Beacon\DistanceCount\d60	
 	3923622767	Play_BeaconLock			\Beacon\Play_BeaconLock	
 	3935627128	d90			\Beacon\DistanceCount\d90	
 	3952404715	d80			\Beacon\DistanceCount\d80	
-	3952551681	C2s			\Music\SingleNotes\O2\C2s	
-	3969329526	C3s			\Music\SingleNotes\O3\C3s	
+	3952551681	C2s			\Notes\O2\C2s	
+	3969329526	C3s			\Notes\O3\C3s	
 	4069116836	destination_reached			\Beacon\DistanceCount\destination_reached	
-	4187144236	E4b			\Music\SingleNotes\O4\E4b	
-	4220699414	E2b			\Music\SingleNotes\O2\E2b	
-	4237477221	E3b			\Music\SingleNotes\O3\E3b	
+	4187144236	E4b			\Notes\O4\E4b	
+	4220699414	E2b			\Notes\O2\E2b	
+	4237477221	E3b			\Notes\O3\E3b	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
+	1419421502	TrackNames			\Default Work Unit\TrackNames	
+	2429736717	Melodies			\Default Work Unit\Melodies	
 	4050929301	Materials			\Default Work Unit\Materials	
 
 Switch	ID	Name	Switch Group			Notes
+	147420	Track2	TrackNames			
+	147421	Track3	TrackNames			
+	147423	Track1	TrackNames			
+	1685527108	M2	Melodies			
+	1685527109	M3	Melodies			
+	1685527111	M1	Melodies			
 	841620460	Concrete	Materials			
 	2185786256	Gravel	Materials			
 	2195636714	Dirt	Materials			
 	2637588553	Tile	Materials			
+
+State Group	ID	Name			Wwise Object Path	Notes
+	1021618141	MusicState			\Default Work Unit\MusicState	
+
+State	ID	Name	State Group			Notes
+	748895195	None	MusicState			
+	3207097637	MusicOff	MusicState			
+	3998479257	MusicOn	MusicState			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	765910813	MusicOff	MusicState	\Interactive Music Hierarchy\Melodies\Melodies\C3_E3_A2_B3_C3\C3_E3_A2_B3_C3		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	815616169	RTPC_synth_pwm_up_down			\Default Work Unit\RTPC_synth_pwm_up_down	
@@ -111,7 +133,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	158003658	CorrectNote	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\CorrectNote_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\CorrectNote		714848
 	164636996	F4#	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\F4#_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SingleNotes\O4\F4#		384096
 	164737119	G4b	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\G4b_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SingleNotes\O4\G4b		384096
-	170761103	C3_E3_A2_B3_C3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\C3_E3_A2_B3_C3_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Melodies\C3_E3_A2_B3_C3\C3_E3_A2_B3_C3		768096
+	170761103	C3_E3_A2_B3_C3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\C3_E3_A2_B3_C3_D79FB2B7.wem		\Interactive Music Hierarchy\Melodies\Melodies\C3_E3_A2_B3_C3\C3_E3_A2_B3_C3		768096
 	179996937	30	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\DistanceCount\30_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Beacon\DistanceCount\30		118272
 	181898422	E2	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O2\E2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SingleNotes\O2\E2		384096
 	189275940	D3#	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\D3#_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SingleNotes\O3\D3#		384096
@@ -176,6 +198,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	927525782	D3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O3\D3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SingleNotes\O3\D3		384096
 	964224159	60	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\DistanceCount\60_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Beacon\DistanceCount\60		144096
 	966532559	BeaconLock	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\BeaconLock_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Beacon\BeaconLock		249696
+	967319205	Track1_Em_90bpm_44_lp	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Track1_Em_90bpm_44_lp_D79FB2B7.wem		\Interactive Music Hierarchy\BGM\Tracks\Track1_Em_90bpm_44_lp\Track1_Em_90bpm_44_lp		12288096
 	969926389	F2#	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\F2#_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SingleNotes\O2\F2#		384096
 	980309991	C2	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O2\C2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SingleNotes\O2\C2		384096
 	990206362	B3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O3\B3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SingleNotes\O3\B3		384096

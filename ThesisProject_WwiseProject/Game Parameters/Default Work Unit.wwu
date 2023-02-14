@@ -38,6 +38,7 @@
 						<Property Name="Max" Type="Real64" Value="1"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="MelodyOn" ID="{50D70D7B-B318-4541-B711-ACA439313934}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{21869866-3E35-3F2F-A4AC-85B2A0A9A501}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{56C6A989-19A7-12DF-7C61-1EBC0E452AFE}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -24,7 +24,9 @@
 			<Busses>
 				<Bus Id="393239870" Name="SFX"/>
 				<Bus Id="1229948536" Name="Environment"/>
+				<Bus Id="2429736717" Name="Melodies"/>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
+				<Bus Id="3991942870" Name="Music"/>
 			</Busses>
 			<AuxBusses>
 				<AuxBus Id="348963605" Name="Reverb">
@@ -40,10 +42,25 @@
 				<GameParameter Id="872361937" Name="RTPC_wall_occlusion"/>
 				<GameParameter Id="1364189011" Name="RTPC_distance_freq"/>
 				<GameParameter Id="1384204673" Name="RTPC_frequency_depth"/>
+				<GameParameter Id="2796181470" Name="MelodyOn"/>
 				<GameParameter Id="3707704703" Name="RTPC_left_right"/>
 				<GameParameter Id="4120900405" Name="RTPC_beacon_lr_volume"/>
 			</GameParameters>
 			<StateGroups>
+				<StateGroup Id="1021618141" Name="MusicState">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="3207097637" Name="MusicOff"/>
+						<State Id="3998479257" Name="MusicOn"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="3443944880" Name="MelodyState">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="875054468" Name="MelodyOff"/>
+						<State Id="2796181470" Name="MelodyOn"/>
+					</States>
+				</StateGroup>
 				<StateGroup Id="3737870095" Name="AimDirection">
 					<States>
 						<State Id="748895195" Name="None"/>
@@ -74,6 +91,20 @@
 						<Switch Id="1793348552" Name="ErrorDefault"/>
 					</Switches>
 				</SwitchGroup>
+				<SwitchGroup Id="1419421502" Name="TrackNames">
+					<Switches>
+						<Switch Id="147420" Name="Track2"/>
+						<Switch Id="147421" Name="Track3"/>
+						<Switch Id="147423" Name="Track1"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="2429736717" Name="Melodies">
+					<Switches>
+						<Switch Id="1685527108" Name="M2"/>
+						<Switch Id="1685527109" Name="M3"/>
+						<Switch Id="1685527111" Name="M1"/>
+					</Switches>
+				</SwitchGroup>
 				<SwitchGroup Id="4050929301" Name="Materials">
 					<Switches>
 						<Switch Id="841620460" Name="Concrete"/>
@@ -84,7 +115,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{ECA4B17D-1840-138C-AC96-0B15C337B227}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{DBDB6B12-50F7-25F3-B7D6-930BDBB43279}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -400,6 +431,10 @@
 					<ShortName>BeaconLock.wav</ShortName>
 					<CachePath>SFX/BeaconLock_10C4C929.wem</CachePath>
 				</File>
+				<File Id="967319205" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Track1_Em_90bpm_44_lp.wav</ShortName>
+					<CachePath>SFX/Track1_Em_90bpm_44_lp_D79FB2B7.wem</CachePath>
+				</File>
 				<File Id="969926389" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>F2#.wav</ShortName>
 					<CachePath>SFX/F2#_10C4C929.wem</CachePath>
@@ -535,7 +570,7 @@
 						<MediaRef Id="918400394"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3334410611" Name="C3_E3_A2_B3_C3" DurationType="OneShot" DurationMin="4" DurationMax="4">
+				<Event Id="3334410611" Name="C3_E3_A2_B3_C3" DurationType="OneShot" DurationMin="4.501665" DurationMax="4.501665">
 					<MediaRefs>
 						<MediaRef Id="170761103"/>
 					</MediaRefs>
@@ -773,6 +808,16 @@
 						<MediaRef Id="12077457"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2810620855" Name="MelodyStateOff" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="3443944880" Id="875054468" Name="MelodyOff"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="747211651" Name="MelodyStateOn" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="3443944880" Id="2796181470" Name="MelodyOn"/>
+					</ActionSetState>
+				</Event>
 				<Event Id="3062523241" Name="Miss" DurationType="OneShot" DurationMin="7.5794787" DurationMax="7.5794787">
 					<MediaRefs>
 						<MediaRef Id="33821008"/>
@@ -793,6 +838,19 @@
 							<PluginRef Id="737587789"/>
 						</Custom>
 					</PluginRefs>
+				</Event>
+				<Event Id="2932040671" Name="Play_Music" DurationType="Infinite">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="1419421502" Id="147423"/>
+							<MediaRefs>
+								<MediaRef Id="967319205"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="1021618141" Id="3998479257" Name="MusicOn"/>
+					</ActionSetState>
 				</Event>
 				<Event Id="3015844381" Name="Play_PlayerFoot" DurationType="OneShot" DurationMin="0.386644" DurationMax="0.8593651">
 					<SwitchContainers>
@@ -856,7 +914,30 @@
 				<GameParameter Id="3707704703" Name="RTPC_left_right"/>
 				<GameParameter Id="4120900405" Name="RTPC_beacon_lr_volume"/>
 			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="1021618141" Name="MusicState">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="3207097637" Name="MusicOff"/>
+						<State Id="3998479257" Name="MusicOn"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="3443944880" Name="MelodyState">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="875054468" Name="MelodyOff"/>
+						<State Id="2796181470" Name="MelodyOn"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 			<SwitchGroups>
+				<SwitchGroup Id="1419421502" Name="TrackNames">
+					<Switches>
+						<Switch Id="147420" Name="Track2"/>
+						<Switch Id="147421" Name="Track3"/>
+						<Switch Id="147423" Name="Track1"/>
+					</Switches>
+				</SwitchGroup>
 				<SwitchGroup Id="4050929301" Name="Materials">
 					<Switches>
 						<Switch Id="841620460" Name="Concrete"/>
@@ -868,5 +949,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{C8B1FD3B-50B7-92EA-19DE-45ABB898AF10}</FileHash>
+	<FileHash>{8BD15B13-46F4-16EC-1E37-B7301299B125}</FileHash>
 </SoundBanksInfo>

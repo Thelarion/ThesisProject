@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{7FF9B866-2F47-47D7-9128-7FBB4E712395}" SchemaVersion="110">
+	<Events>
+		<WorkUnit Name="Melodies" ID="{7FF9B866-2F47-47D7-9128-7FBB4E712395}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="C3_E3_A2_B3_C3" ID="{68ADE84E-9EA5-46C1-968A-9A3D04984EBD}">
+					<ChildrenList>
+						<Action Name="" ID="{2223758A-803C-4D30-8BA4-4597E1C1C8DC}" ShortID="607530205">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="C3_E3_A2_B3_C3" ID="{0F381F0A-774E-4EBF-AE44-458D92245DA5}" WorkUnitID="{E5F10FC4-A206-4CEE-8C77-3A46AC386FCD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="MelodyStateOn" ID="{BDE770CE-500D-4C71-A1BC-CE0F4264B374}">
+					<ChildrenList>
+						<Action Name="" ID="{2F0CDD4C-11B7-4123-8788-8CA8AADF6357}" ShortID="544653935">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MelodyOn" ID="{F2682156-742A-4F80-BE35-96DAC416F8A4}" WorkUnitID="{745FB17F-22F4-4BED-AD75-6627E85A9CB3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="MelodyStateOff" ID="{72A7FEA8-B087-48F3-AD21-0B6ACB17E0E4}">
+					<ChildrenList>
+						<Action Name="" ID="{32B6FFC2-E54B-4FDF-8A4E-5A31EAB4CF16}" ShortID="810906307">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MelodyOff" ID="{FDE21147-AC5C-4161-9DC2-29B3B77D8C7C}" WorkUnitID="{745FB17F-22F4-4BED-AD75-6627E85A9CB3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

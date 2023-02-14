@@ -19,6 +19,42 @@
 						<State Name="InMenu" ID="{AC4B901B-5A27-4C55-89BB-58FCE85F8991}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="MelodyState" ID="{5173BC1C-7720-4ED7-8BAD-15399663BD6F}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="1.5"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{F2F41ECF-6FDA-4788-A397-D7909B863089}"/>
+						<State Name="MelodyOn" ID="{F2682156-742A-4F80-BE35-96DAC416F8A4}"/>
+						<State Name="MelodyOff" ID="{FDE21147-AC5C-4161-9DC2-29B3B77D8C7C}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="MelodyOn" ID="{F2682156-742A-4F80-BE35-96DAC416F8A4}"/>
+							<EndState Name="MelodyOff" ID="{FDE21147-AC5C-4161-9DC2-29B3B77D8C7C}"/>
+							<Time>1.5</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="MusicState" ID="{9AF80DCE-116D-4FC8-91F7-EF46A7B59A9D}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="5"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{4DF8E2CD-ACA4-4042-B8B1-0AF765FA3B11}"/>
+						<State Name="MusicOn" ID="{7FF6E16F-8C75-484B-84D5-198D93F6B909}"/>
+						<State Name="MusicOff" ID="{1CF7B1E5-3F40-43BA-AFDB-2BAC8F44672E}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="MusicOff" ID="{1CF7B1E5-3F40-43BA-AFDB-2BAC8F44672E}"/>
+							<EndState Name="MusicOn" ID="{7FF6E16F-8C75-484B-84D5-198D93F6B909}"/>
+							<Time>5</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

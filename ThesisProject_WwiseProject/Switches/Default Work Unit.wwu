@@ -23,6 +23,20 @@
 						<Switch Name="ErrorDefault" ID="{1F290698-C25B-44C1-AA17-891CAC401169}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="Melodies" ID="{CE0E2E8C-41A5-417D-BB6A-65A8F9341662}">
+					<ChildrenList>
+						<Switch Name="M1" ID="{EE148B74-339E-4862-B987-D0463480A443}"/>
+						<Switch Name="M2" ID="{D8266A40-0C85-4ADF-8B29-7A14181177F2}"/>
+						<Switch Name="M3" ID="{0EEB4C13-47FD-4362-9769-3700FF4DE60B}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="TrackNames" ID="{82168F3C-9064-42EE-9648-37AED21CFE8F}">
+					<ChildrenList>
+						<Switch Name="Track1" ID="{DF0AB87B-7594-47E9-A09B-20EC64FAC28A}"/>
+						<Switch Name="Track2" ID="{CBD45E06-C14A-464D-9947-2791685FF011}"/>
+						<Switch Name="Track3" ID="{55176C9F-53B0-44F4-843F-199D5BA6DBDC}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

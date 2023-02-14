@@ -22,6 +22,45 @@
 								</AuxBus>
 							</ChildrenList>
 						</Bus>
+						<Bus Name="Music" ID="{8DF38898-D7C4-4DDD-BEF8-A875EF226EEB}">
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="MelodyState" ID="{5173BC1C-7720-4ED7-8BAD-15399663BD6F}"/>
+									</StateGroupInfo>
+									<StateGroupInfo>
+										<StateGroupRef Name="MusicState" ID="{9AF80DCE-116D-4FC8-91F7-EF46A7B59A9D}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="MelodyOff" ID="{FDE21147-AC5C-4161-9DC2-29B3B77D8C7C}"/>
+										<CustomState Name="" ID="{8D906592-7C30-4BFB-90DA-C97858530685}" ShortID="959276269"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="MusicOff" ID="{1CF7B1E5-3F40-43BA-AFDB-2BAC8F44672E}"/>
+										<CustomState Name="" ID="{1486C32C-5E40-44C9-8F00-D5BD82778DE5}" ShortID="238640854">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="MusicOn" ID="{7FF6E16F-8C75-484B-84D5-198D93F6B909}"/>
+										<CustomState Name="" ID="{6E7F6961-F790-49DC-868B-B7DC54211D15}" ShortID="99454493"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="MelodyOn" ID="{F2682156-742A-4F80-BE35-96DAC416F8A4}"/>
+										<CustomState Name="" ID="{B2137703-1DB2-4AE2-AC87-1798981E20A4}" ShortID="267445440">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64" Value="-20"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+						</Bus>
+						<Bus Name="Melodies" ID="{39301A31-C005-4173-9F99-CE07F05182A8}"/>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>
