@@ -10,19 +10,11 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Bus Name="Environment" ID="{736B6FAE-C07F-4C69-98D0-71093C86BCC7}">
-							<ChildrenList>
-								<Bus Name="SFX" ID="{C5B628E2-30E6-49C9-B054-12444DCE2ACC}"/>
-								<AuxBus Name="Reverb" ID="{BA2DA9B7-D5B4-46D8-9F6A-43B7CF3D38D1}">
-									<ReferenceList>
-										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-											<ObjectRef Name="Room_Large" ID="{AD8EFAFC-7121-4D5F-BE4D-B13FBD6CEBAE}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
-										</Reference>
-									</ReferenceList>
-								</AuxBus>
-							</ChildrenList>
-						</Bus>
 						<Bus Name="Music" ID="{8DF38898-D7C4-4DDD-BEF8-A875EF226EEB}">
+							<ChildrenList>
+								<Bus Name="Melodies" ID="{39301A31-C005-4173-9F99-CE07F05182A8}"/>
+								<Bus Name="Notes" ID="{AAC84701-12F6-40CE-89A8-D6D17C162967}"/>
+							</ChildrenList>
 							<StateInfo>
 								<StateGroupList>
 									<StateGroupInfo>
@@ -136,11 +128,57 @@
 											</RTPC>
 										</Local>
 									</Reference>
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{10006710-AD9C-476C-8AC3-C3EBCAF32D9F}" ShortID="229837513">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="RTPC_MusicVolumeSettings" ID="{4AACEBAC-274E-444E-B31E-C3D3FCBF4951}" WorkUnitID="{28E032A7-F230-4046-B70A-9B378FBF00AD}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{F08096CD-D5CE-408C-9718-CEC7EACBC919}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>10</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
 								</ObjectList>
 							</ObjectLists>
 						</Bus>
-						<Bus Name="Melodies" ID="{39301A31-C005-4173-9F99-CE07F05182A8}"/>
-						<Bus Name="Notes" ID="{AAC84701-12F6-40CE-89A8-D6D17C162967}"/>
+						<Bus Name="AudioMenu" ID="{3DBC73E6-F4B8-4EC1-AFFB-601995CE92AE}"/>
+						<Bus Name="SFX" ID="{C5B628E2-30E6-49C9-B054-12444DCE2ACC}">
+							<ChildrenList>
+								<AuxBus Name="Reverb" ID="{BA2DA9B7-D5B4-46D8-9F6A-43B7CF3D38D1}">
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Room_Large" ID="{AD8EFAFC-7121-4D5F-BE4D-B13FBD6CEBAE}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+									</ReferenceList>
+								</AuxBus>
+								<Bus Name="Environment" ID="{736B6FAE-C07F-4C69-98D0-71093C86BCC7}"/>
+							</ChildrenList>
+						</Bus>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>

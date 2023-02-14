@@ -86,6 +86,7 @@ namespace AK
         static const AkUniqueID PLAY_BEACONLR = 194014728U;
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
         static const AkUniqueID PLAY_PLAYERFOOT = 3015844381U;
+        static const AkUniqueID PLAY_VOLUMECHECK = 1569887440U;
         static const AkUniqueID SUCCESS = 3625060726U;
         static const AkUniqueID WHITENOISEONTARGET = 1848491570U;
     } // namespace EVENTS
@@ -200,6 +201,18 @@ namespace AK
             } // namespace SWITCH
         } // namespace TRACKNAMES
 
+        namespace VOLUMECHECK
+        {
+            static const AkUniqueID GROUP = 360641673U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID AUDIOMENU = 3105667492U;
+                static const AkUniqueID EFFECTS = 1942696649U;
+                static const AkUniqueID MUSIC = 3991942870U;
+            } // namespace SWITCH
+        } // namespace VOLUMECHECK
+
     } // namespace SWITCHES
 
     namespace GAME_PARAMETERS
@@ -211,6 +224,7 @@ namespace AK
         static const AkUniqueID RTPC_LEFT_RIGHT = 3707704703U;
         static const AkUniqueID RTPC_MELODYON = 3726690316U;
         static const AkUniqueID RTPC_MUSICBUSFADE = 257343836U;
+        static const AkUniqueID RTPC_MUSICVOLUMESETTINGS = 3453464353U;
         static const AkUniqueID RTPC_SYNTH_PWM_UP_DOWN = 815616169U;
         static const AkUniqueID RTPC_WALL_OCCLUSION = 872361937U;
     } // namespace GAME_PARAMETERS
@@ -228,6 +242,7 @@ namespace AK
 
     namespace BUSSES
     {
+        static const AkUniqueID AUDIOMENU = 3105667492U;
         static const AkUniqueID ENVIRONMENT = 1229948536U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID MELODIES = 2429736717U;

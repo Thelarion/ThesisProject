@@ -24,6 +24,10 @@
 							<Value>25</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="RTPC_MusicVolumeSettings" ID="{4AACEBAC-274E-444E-B31E-C3D3FCBF4951}"/>
+							<Value>10</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="RTPC_MelodyOn" ID="{50D70D7B-B318-4541-B711-ACA439313934}"/>
 							<Value>0</Value>
 						</RTPCValue>
@@ -43,6 +47,7 @@
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Concrete" ID="{7624D16A-D815-43AD-A2F4-FF7B846EB163}"/>
+						<CurrentSwitchRef Name="Music" ID="{F13C23BB-13DD-4E8A-9806-97B18ED58E1A}"/>
 						<CurrentSwitchRef Name="M1" ID="{EE148B74-339E-4862-B987-D0463480A443}"/>
 						<CurrentSwitchRef Name="Track1" ID="{DF0AB87B-7594-47E9-A09B-20EC64FAC28A}"/>
 						<CurrentSwitchRef Name="A" ID="{69A2F832-DD04-48E8-A090-5AF674AE02FC}"/>

@@ -37,6 +37,13 @@
 						<Switch Name="Track3" ID="{55176C9F-53B0-44F4-843F-199D5BA6DBDC}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="VolumeCheck" ID="{B721CC1C-C675-40E2-BB01-39BD8C6097EC}">
+					<ChildrenList>
+						<Switch Name="Music" ID="{F13C23BB-13DD-4E8A-9806-97B18ED58E1A}"/>
+						<Switch Name="Effects" ID="{DF101DDA-99A3-4826-BB05-82E4347BC0B5}"/>
+						<Switch Name="AudioMenu" ID="{864E68C8-6ECE-4112-8817-8444D5318D98}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{90F6AD7A-8278-4286-AB5B-57631446068A}" SchemaVersion="110">
+	<AudioObjects>
+		<WorkUnit Name="UI" ID="{90F6AD7A-8278-4286-AB5B-57631446068A}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchContainer Name="VolumeCheck" ID="{2384CCE4-AD13-45B7-A6D1-2892CE75B5DC}" ShortID="777173862">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="Music" ID="{F13C23BB-13DD-4E8A-9806-97B18ED58E1A}" WorkUnitID="{3366C92C-EFE1-45C7-A10A-B3FAD73419FC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="VolumeCheck" ID="{B721CC1C-C675-40E2-BB01-39BD8C6097EC}" WorkUnitID="{3366C92C-EFE1-45C7-A10A-B3FAD73419FC}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="MusicVolumeCheck" ID="{1B754A1C-9CED-4087-8885-215ADD8AB165}" ShortID="404832074">
+							<PropertyList>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Music" ID="{8DF38898-D7C4-4DDD-BEF8-A875EF226EEB}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MusicVolumeTest" ID="{1B36604B-015D-4E34-A3CA-6DD8A321A949}">
+									<Language>SFX</Language>
+									<AudioFile>MusicVolumeTest.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="213534083"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MusicVolumeTest" ID="{1B36604B-015D-4E34-A3CA-6DD8A321A949}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="MusicVolumeCheck" ID="{1B754A1C-9CED-4087-8885-215ADD8AB165}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Music" ID="{F13C23BB-13DD-4E8A-9806-97B18ED58E1A}"/>
+								<ItemList>
+									<ItemRef Name="MusicVolumeCheck" ID="{1B754A1C-9CED-4087-8885-215ADD8AB165}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

@@ -9,8 +9,8 @@ public class TargetController : MonoBehaviour
     private OperationController _operationController;
     public int _targetCount;
     public string chosenPalette;
-    Transform targetCheckStateForDistance = null;
-    Transform currentShortestDistance = null;
+    private Transform targetCheckStateForDistance;
+    private Transform currentShortestDistance;
     private enum notes
     {
         C2, C2s, D2b, D2, D2s, E2b, E2, F2, F2s, G2b, G2, G2s, A2b, A2, A2s, B2b, B2,
@@ -19,6 +19,7 @@ public class TargetController : MonoBehaviour
     }
     private ArrayList _materialsAvailable = new ArrayList();
     private ArrayList _materialsAvailableString = new ArrayList();
+    private bool initializationState = false;
 
     void Awake()
     {
@@ -34,17 +35,24 @@ public class TargetController : MonoBehaviour
         InitializeMaterials();
     }
 
-    private void Start()
-    {
-        currentShortestDistance = DistanceToTarget.CurrentLoopObjectShortestDistance.transform;
-        targetCheckStateForDistance = currentShortestDistance;
-        currentShortestDistance.GetComponent<CheckOcclusion>().enabled = true;
-    }
-
     private void Update()
     {
+
+        InitializeDistanceTarget();
+
         CheckTargetCount();
         GetTargetWithShortestDistance();
+    }
+
+    private void InitializeDistanceTarget()
+    {
+        if (!initializationState)
+        {
+            currentShortestDistance = DistanceToTarget.CurrentLoopObjectShortestDistance.transform;
+            targetCheckStateForDistance = currentShortestDistance;
+            currentShortestDistance.GetComponent<CheckOcclusion>().enabled = true;
+            initializationState = true;
+        }
     }
 
     private void GetTargetWithShortestDistance()

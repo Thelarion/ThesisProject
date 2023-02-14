@@ -14,6 +14,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_VolumeCheck" ID="{DC6676A9-EE5D-4299-952B-3ED8EF11A306}">
+					<ChildrenList>
+						<Action Name="" ID="{90CA9E17-24B5-4562-8247-FAEAAD3DBEC6}" ShortID="649912769">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="VolumeCheck" ID="{2384CCE4-AD13-45B7-A6D1-2892CE75B5DC}" WorkUnitID="{90F6AD7A-8278-4286-AB5B-57631446068A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

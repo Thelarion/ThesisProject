@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{AAA2A1FB-09A7-7845-DB3F-CDA29327211D}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{D580D590-A3FF-CD00-C4DC-FA0471BFB370}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -26,6 +26,7 @@
 				<Bus Id="393239870" Name="SFX"/>
 				<Bus Id="1229948536" Name="Environment"/>
 				<Bus Id="2429736717" Name="Melodies"/>
+				<Bus Id="3105667492" Name="AudioMenu"/>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 				<Bus Id="3991942870" Name="Music"/>
 			</Busses>
@@ -45,6 +46,7 @@
 				<GameParameter Id="1364189011" Name="RTPC_distance_freq"/>
 				<GameParameter Id="1384204673" Name="RTPC_frequency_depth"/>
 				<GameParameter Id="3170173318" Name="RTPC_GenOcclusion"/>
+				<GameParameter Id="3453464353" Name="RTPC_MusicVolumeSettings"/>
 				<GameParameter Id="3707704703" Name="RTPC_left_right"/>
 				<GameParameter Id="3726690316" Name="RTPC_MelodyOn"/>
 				<GameParameter Id="4120900405" Name="RTPC_beacon_lr_volume"/>
@@ -94,6 +96,13 @@
 						<Switch Id="1793348552" Name="ErrorDefault"/>
 					</Switches>
 				</SwitchGroup>
+				<SwitchGroup Id="360641673" Name="VolumeCheck">
+					<Switches>
+						<Switch Id="1942696649" Name="Effects"/>
+						<Switch Id="3105667492" Name="AudioMenu"/>
+						<Switch Id="3991942870" Name="Music"/>
+					</Switches>
+				</SwitchGroup>
 				<SwitchGroup Id="1419421502" Name="TrackNames">
 					<Switches>
 						<Switch Id="147420" Name="Track2"/>
@@ -118,7 +127,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{BA7E7AC0-6D23-3EE9-ECD9-CF87436515F6}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{C3E8A619-F5D9-F3B6-6032-8F98305A2583}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -193,6 +202,10 @@
 				<File Id="206363750" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O3\G3.wav</ShortName>
 					<CachePath>SFX/O3/G3_10C4C929.wem</CachePath>
+				</File>
+				<File Id="213534083" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MusicVolumeTest.wav</ShortName>
+					<CachePath>SFX/MusicVolumeTest_10C4C929.wem</CachePath>
 				</File>
 				<File Id="216779373" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>A3#.wav</ShortName>
@@ -892,6 +905,16 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="1569887440" Name="Play_VolumeCheck" DurationType="OneShot" DurationMin="2" DurationMax="2">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="360641673" Id="3991942870" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="213534083"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
 				<Event Id="3625060726" Name="Success" DurationType="OneShot" DurationMin="5.4231367" DurationMax="5.4231367">
 					<MediaRefs>
 						<MediaRef Id="158003658"/>
@@ -925,6 +948,13 @@
 				</StateGroup>
 			</StateGroups>
 			<SwitchGroups>
+				<SwitchGroup Id="360641673" Name="VolumeCheck">
+					<Switches>
+						<Switch Id="1942696649" Name="Effects"/>
+						<Switch Id="3105667492" Name="AudioMenu"/>
+						<Switch Id="3991942870" Name="Music"/>
+					</Switches>
+				</SwitchGroup>
 				<SwitchGroup Id="1419421502" Name="TrackNames">
 					<Switches>
 						<Switch Id="147420" Name="Track2"/>
@@ -943,5 +973,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{9387CD23-018C-9CD9-A5BE-D2F36CC580EB}</FileHash>
+	<FileHash>{301C99E4-D49D-F732-5760-D3D9A2D56DAF}</FileHash>
 </SoundBanksInfo>
