@@ -3,62 +3,57 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Linq;
 
 public class ScoreManager : MonoBehaviour
 {
     private int _currentScore = 0;
-    // private int _currentMaxPoints = 5;
-    // private IEnumerator coroutine;
+    public Image DigitScore;
+    private ArrayList digitSprites = new ArrayList();
+    private ArrayList digitSpritesStrings = new ArrayList();
+    private Sprite spriteIndex;
 
-    public Text UI_CountDisplay;
-
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        // coroutine = CountThreeMinutes();
-        // StartCoroutine(coroutine);
+        var load = Resources.LoadAll("UI_DigitsScore", typeof(Sprite)).Cast<Sprite>();
+
+        foreach (var item in load)
+        {
+            digitSprites.Add(item);
+            digitSpritesStrings.Add(item.name);
+        }
     }
 
-    public void AddPoint()
+    private void Update()
     {
-        _currentScore++;
-
-        print("CURRENT SCORE: " + _currentScore);
-        UI_CountDisplay.text = _currentScore.ToString();
+        print(_currentScore);
     }
 
-    public void SubtractPoint()
+    public void AddPoints()
     {
-        if ((_currentScore - 1) <= 0)
+        _currentScore += 5;
+        SetToSprite();
+    }
+
+    public void SubtractPoints()
+    {
+        if ((_currentScore - 5) <= 0)
         {
             _currentScore = 0;
         }
         else
         {
-            _currentScore--;
+            _currentScore -= 5;
         }
 
-        print("CURRENT SCORE: " + _currentScore);
-        UI_CountDisplay.text = _currentScore.ToString();
+        SetToSprite();
     }
 
+    private void SetToSprite()
+    {
+        int indexOfDigit = digitSpritesStrings.IndexOf(_currentScore.ToString());
+        Sprite currentScoreDigitSprite = digitSprites[indexOfDigit] as Sprite;
 
-    // IEnumerator CountThreeMinutes()
-    // {
-    //     while (true)
-    //     {
-    //         yield return new WaitForSeconds(10);
-
-    //         if ((_currentMaxPoints - 1) <= 0)
-    //         {
-    //             _currentMaxPoints = 0;
-    //             StopCoroutine(coroutine);
-    //         }
-    //         else
-    //         {
-    //             _currentMaxPoints--;
-    //         }
-    //         print(_currentMaxPoints);
-    //     }
-    // }
+        DigitScore.sprite = currentScoreDigitSprite;
+    }
 }

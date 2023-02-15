@@ -24,7 +24,7 @@ public class MetalSphereHitCheck : MonoBehaviour
         if (other.transform.tag == "Target" && other.transform.GetComponent<RunInterval>().TapState)
         {
             Destroy(other.transform.gameObject);
-            scoreManager.AddPoint();
+            scoreManager.AddPoints();
             PlingSuccess.Post(gameObject);
         }
 
@@ -38,7 +38,7 @@ public class MetalSphereHitCheck : MonoBehaviour
             PlingFail.Post(gameObject);
 
             other.transform.GetComponent<TargetMove>().InitializeMovementAfterMissOrInclusion();
-            scoreManager.SubtractPoint();
+            scoreManager.SubtractPoints();
         }
 
         // Destroy the sphere if it hits a target
