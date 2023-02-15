@@ -6,20 +6,44 @@ using UnityEngine.UI;
 
 public class AudioMenu : MonoBehaviour
 {
-    public Button[] buttons;
-    private Button chosenButton;
+    public Toggle[] toggles;
+    private Toggle chosenToggle;
     private int selection = 0;
 
-    private void Start()
-    {
-        // buttons[selection].Select();
-    }
+
     void Update()
     {
-        buttons[selection].Select();
+        toggles[selection].Select();
         GetArrowDown();
         GetArrowUp();
-        GetEnterKey();
+        GetArrowLeft();
+        GetArrowRight();
+        GetReturnKey();
+        GetSpaceKey();
+    }
+
+    private void GetArrowRight()
+    {
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            if (toggles[selection].name == "AudioMenuVolume" || toggles[selection].name == "MusicVolume" || toggles[selection].name == "EffectsVolume")
+            {
+                Slider slider = toggles[selection].transform.GetChild(1).GetComponent<Slider>();
+                slider.value = slider.value + 1;
+            }
+        }
+    }
+
+    private void GetArrowLeft()
+    {
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            if (toggles[selection].name == "AudioMenuVolume" || toggles[selection].name == "MusicVolume" || toggles[selection].name == "EffectsVolume")
+            {
+                Slider slider = toggles[selection].transform.GetChild(1).GetComponent<Slider>();
+                slider.value = slider.value - 1;
+            }
+        }
     }
 
     private void GetArrowUp()
@@ -28,13 +52,13 @@ public class AudioMenu : MonoBehaviour
         {
             if ((selection - 1) < 0)
             {
-                selection = (buttons.Length - 1);
+                selection = (toggles.Length - 1);
             }
             else
             {
                 selection--;
             }
-            print(buttons[selection].name);
+            // print(toggles[selection].name);
             // buttons[selection].Select();
         }
     }
@@ -43,29 +67,37 @@ public class AudioMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.DownArrow))
         {
-            if ((selection + 1) > (buttons.Length - 1))
+            if ((selection + 1) > (toggles.Length - 1))
             {
                 selection = 0;
             }
             else
             {
                 selection++;
-                print(selection);
-                print(buttons.Length);
+                // print(selection);
+                // print(toggles.Length);
 
             }
-            print(buttons[selection].name);
+            // print(toggles[selection].name);
             // buttons[selection].Select();
         }
     }
 
-    private void GetEnterKey()
+    private void GetReturnKey()
     {
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            print(buttons[selection].name);
-            // buttons[selection].Select();
-            // buttons[selection].onClick.Invoke();
+            print("Return");
+        }
+    }
+
+    private void GetSpaceKey()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            toggles[selection].isOn = !toggles[selection].isOn;
         }
     }
 }
+
+

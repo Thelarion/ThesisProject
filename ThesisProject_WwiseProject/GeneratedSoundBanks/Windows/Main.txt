@@ -143,6 +143,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	179996937	30	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\DistanceCount\30_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SFX\Beacon\DistanceCount\30		118272
 	181898422	E2	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O2\E2_10C4C929.wem		\Actor-Mixer Hierarchy\Notes\NotesMixer\O2\E2		384096
 	189275940	D3#	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\D3#_10C4C929.wem		\Actor-Mixer Hierarchy\Notes\NotesMixer\O3\D3#		384096
+	197696890	EffectsVolumeCheck	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\EffectsVolumeTest_10C4C929.wem		\Actor-Mixer Hierarchy\UI\VolumeCheck\EffectsVolumeCheck		384096
 	206363750	G3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O3\G3_10C4C929.wem		\Actor-Mixer Hierarchy\Notes\NotesMixer\O3\G3		384096
 	213534083	MusicVolumeCheck	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\MusicVolumeTest_10C4C929.wem		\Actor-Mixer Hierarchy\UI\VolumeCheck\MusicVolumeCheck		384096
 	216779373	A3#	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\A3#_10C4C929.wem		\Actor-Mixer Hierarchy\Notes\NotesMixer\O3\A3#		384096
@@ -203,6 +204,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	925483801	A2	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O2\A2_10C4C929.wem		\Actor-Mixer Hierarchy\Notes\NotesMixer\O2\A2		384096
 	926129158	G2#	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\G2#_10C4C929.wem		\Actor-Mixer Hierarchy\Notes\NotesMixer\O2\G2#		384096
 	927525782	D3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O3\D3_10C4C929.wem		\Actor-Mixer Hierarchy\Notes\NotesMixer\O3\D3		384096
+	959719736	AudioMenuVolumeCheck	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Check_10C4C929.wem		\Actor-Mixer Hierarchy\UI\VolumeCheck\AudioMenuVolumeCheck		124668
 	964224159	60	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\DistanceCount\60_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SFX\Beacon\DistanceCount\60		144096
 	966532559	BeaconLock	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\BeaconLock_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SFX\Beacon\BeaconLock		249696
 	967319205	Track1_Em_90bpm_44_lp	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Track1_Em_90bpm_44_lp_D79FB2B7.wem		\Interactive Music Hierarchy\BGM\Tracks\Track1_Em_90bpm_44_lp\Track1_Em_90bpm_44_lp		12288096

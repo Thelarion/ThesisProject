@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 111a36df2b99a2459ec0d5f0605e9fb4
     GuidInternal: 
-    m_lastTime: -8585251963627688685
+    m_lastTime: -8585251893150322875
     List:
     - name: AudioMenu
       guid: e673bc3db8f4c14eaffb601995ce92ae
@@ -2080,10 +2080,38 @@ MonoBehaviour:
     ParentPath: Game Parameters\UI
     guid: a732e02830f24640b70a9b378fbf00ad
     GuidInternal: 
-    m_lastTime: -8585251963627499407
+    m_lastTime: -8585251895039485528
     List:
-    - name: RTPC_MusicVolumeSettings
+    - name: RTPC_AudioMenuVolumeSettings
       guid: acebac4a4e274e44b31ec3d3fcbf4951
+      id: 1923019727
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: UI
+        ObjectType: 12
+        guid: a732e02830f24640b70a9b378fbf00ad
+      - ElementName: RTPC_AudioMenuVolumeSettings
+        ObjectType: 13
+        guid: acebac4a4e274e44b31ec3d3fcbf4951
+      Path: Game Parameters\UI\RTPC_AudioMenuVolumeSettings
+    - name: RTPC_EffectsVolumeSettings
+      guid: 556716ca2207d14a8a374e715c54b2e7
+      id: 1574311894
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: UI
+        ObjectType: 12
+        guid: a732e02830f24640b70a9b378fbf00ad
+      - ElementName: RTPC_EffectsVolumeSettings
+        ObjectType: 13
+        guid: 556716ca2207d14a8a374e715c54b2e7
+      Path: Game Parameters\UI\RTPC_EffectsVolumeSettings
+    - name: RTPC_MusicVolumeSettings
+      guid: 2fe6573098cf5542bd17b97f194e600f
       id: 3453464353
       PathAndIcons:
       - ElementName: Game Parameters
@@ -2094,7 +2122,7 @@ MonoBehaviour:
         guid: a732e02830f24640b70a9b378fbf00ad
       - ElementName: RTPC_MusicVolumeSettings
         ObjectType: 13
-        guid: acebac4a4e274e44b31ec3d3fcbf4951
+        guid: 2fe6573098cf5542bd17b97f194e600f
       Path: Game Parameters\UI\RTPC_MusicVolumeSettings
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu

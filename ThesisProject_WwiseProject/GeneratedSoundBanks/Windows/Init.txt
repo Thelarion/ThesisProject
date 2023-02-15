@@ -25,7 +25,9 @@ Custom State	ID	Name	State Group	Owner		Notes
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	257343836	RTPC_MusicBusFade			\Music\RTPC_MusicBusFade	
-	3453464353	RTPC_MusicVolumeSettings			\Music\RTPC_MusicVolumeSettings	
+	1574311894	RTPC_EffectsVolumeSettings			\UI\RTPC_EffectsVolumeSettings	
+	1923019727	RTPC_AudioMenuVolumeSettings			\UI\RTPC_AudioMenuVolumeSettings	
+	3453464353	RTPC_MusicVolumeSettings			\UI\RTPC_MusicVolumeSettings	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	201729212	Notes			\Default Work Unit\Master Audio Bus\Music\Notes	

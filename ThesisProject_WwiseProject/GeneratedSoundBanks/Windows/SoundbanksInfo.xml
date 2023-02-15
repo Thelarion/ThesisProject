@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{F1E1BFF3-3843-6AFC-35AC-3CC68D9794EA}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{CB098C70-9167-245B-0D16-8D18A5A3B3EF}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -45,6 +45,8 @@
 				<GameParameter Id="872361937" Name="RTPC_wall_occlusion"/>
 				<GameParameter Id="1364189011" Name="RTPC_distance_freq"/>
 				<GameParameter Id="1384204673" Name="RTPC_frequency_depth"/>
+				<GameParameter Id="1574311894" Name="RTPC_EffectsVolumeSettings"/>
+				<GameParameter Id="1923019727" Name="RTPC_AudioMenuVolumeSettings"/>
 				<GameParameter Id="3170173318" Name="RTPC_GenOcclusion"/>
 				<GameParameter Id="3453464353" Name="RTPC_MusicVolumeSettings"/>
 				<GameParameter Id="3707704703" Name="RTPC_left_right"/>
@@ -127,7 +129,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{C3E8A619-F5D9-F3B6-6032-8F98305A2583}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{E4B71162-ABE0-7C81-61FB-D5B9C81E2682}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -198,6 +200,10 @@
 				<File Id="189275940" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>D3#.wav</ShortName>
 					<CachePath>SFX/D3#_10C4C929.wem</CachePath>
+				</File>
+				<File Id="197696890" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>EffectsVolumeTest.wav</ShortName>
+					<CachePath>SFX/EffectsVolumeTest_10C4C929.wem</CachePath>
 				</File>
 				<File Id="206363750" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O3\G3.wav</ShortName>
@@ -438,6 +444,10 @@
 				<File Id="927525782" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O3\D3.wav</ShortName>
 					<CachePath>SFX/O3/D3_10C4C929.wem</CachePath>
+				</File>
+				<File Id="959719736" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Check.wav</ShortName>
+					<CachePath>SFX/Check_10C4C929.wem</CachePath>
 				</File>
 				<File Id="964224159" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>DistanceCount\60.wav</ShortName>
@@ -905,12 +915,24 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="1569887440" Name="Play_VolumeCheck" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="1569887440" Name="Play_VolumeCheck" DurationType="OneShot" DurationMin="0.70619047" DurationMax="2">
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="360641673" Id="3991942870" Default="true"/>
 							<MediaRefs>
 								<MediaRef Id="213534083"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="360641673" Id="3105667492"/>
+							<MediaRefs>
+								<MediaRef Id="959719736"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="360641673" Id="1942696649"/>
+							<MediaRefs>
+								<MediaRef Id="197696890"/>
 							</MediaRefs>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -973,5 +995,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{03B2AFC4-E0E1-9628-C05B-74FB49B304CD}</FileHash>
+	<FileHash>{1D8CF204-5257-94AC-65C8-5835C003E721}</FileHash>
 </SoundBanksInfo>

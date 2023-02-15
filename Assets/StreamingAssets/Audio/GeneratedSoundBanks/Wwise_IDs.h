@@ -217,8 +217,10 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID RTPC_AUDIOMENUVOLUMESETTINGS = 1923019727U;
         static const AkUniqueID RTPC_BEACON_LR_VOLUME = 4120900405U;
         static const AkUniqueID RTPC_DISTANCE_FREQ = 1364189011U;
+        static const AkUniqueID RTPC_EFFECTSVOLUMESETTINGS = 1574311894U;
         static const AkUniqueID RTPC_FREQUENCY_DEPTH = 1384204673U;
         static const AkUniqueID RTPC_GENOCCLUSION = 3170173318U;
         static const AkUniqueID RTPC_LEFT_RIGHT = 3707704703U;
