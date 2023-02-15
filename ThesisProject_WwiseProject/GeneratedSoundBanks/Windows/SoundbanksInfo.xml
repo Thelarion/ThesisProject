@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{9C7C3B94-971C-5AEB-D1CC-FE09ADC9A447}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{40C608B5-26BD-65A1-7236-5FA9F5D0BF8D}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -24,6 +24,7 @@
 			<Busses>
 				<Bus Id="201729212" Name="Notes"/>
 				<Bus Id="393239870" Name="SFX"/>
+				<Bus Id="412724365" Name="BGM"/>
 				<Bus Id="1229948536" Name="Environment"/>
 				<Bus Id="2429736717" Name="Melodies"/>
 				<Bus Id="3105667492" Name="AudioMenu"/>
@@ -162,7 +163,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{212628B7-474F-E093-1F1F-83966E8C1B30}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{A67F0B9D-F40C-39C8-2B14-AD0D35B8F0D7}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -673,7 +674,7 @@
 						<MediaRef Id="918400394"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3334410611" Name="C3_E3_A2_B3_C3" DurationType="OneShot" DurationMin="4.501665" DurationMax="4.501665">
+				<Event Id="3334410611" Name="C3_E3_A2_B3_C3" DurationType="OneShot" DurationMin="3.904981" DurationMax="3.904981">
 					<MediaRefs>
 						<MediaRef Id="170761103"/>
 					</MediaRefs>
@@ -1179,5 +1180,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{6F953AB8-7FB3-ACD8-0F9C-CE61979DA7CF}</FileHash>
+	<FileHash>{54D4B3B4-C71A-5342-8338-A0760E536395}</FileHash>
 </SoundBanksInfo>

@@ -300,6 +300,7 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID AUDIOMENU = 3105667492U;
+        static const AkUniqueID BGM = 412724365U;
         static const AkUniqueID ENVIRONMENT = 1229948536U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID MELODIES = 2429736717U;

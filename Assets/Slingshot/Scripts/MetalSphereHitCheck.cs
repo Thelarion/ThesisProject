@@ -4,12 +4,15 @@ public class MetalSphereHitCheck : MonoBehaviour
 {
     public AK.Wwise.Event PlingSuccess;
     public AK.Wwise.Event PlingFail;
+    private ScoreManager scoreManager;
+
 
     [HideInInspector] public TargetSpawnPoints targetSpawnPoints;
 
     private void Start()
     {
         targetSpawnPoints = GameObject.Find("SpawnPoints").GetComponent<TargetSpawnPoints>();
+        scoreManager = GameObject.Find("ScoreSystem").GetComponent<ScoreManager>();
     }
 
     private void OnCollisionEnter(Collision other)
@@ -21,6 +24,7 @@ public class MetalSphereHitCheck : MonoBehaviour
         if (other.transform.tag == "Target" && other.transform.GetComponent<RunInterval>().TapState)
         {
             Destroy(other.transform.gameObject);
+            scoreManager.AddPoint();
             PlingSuccess.Post(gameObject);
         }
 
@@ -34,6 +38,7 @@ public class MetalSphereHitCheck : MonoBehaviour
             PlingFail.Post(gameObject);
 
             other.transform.GetComponent<TargetMove>().InitializeMovementAfterMissOrInclusion();
+            scoreManager.SubtractPoint();
         }
 
         // Destroy the sphere if it hits a target

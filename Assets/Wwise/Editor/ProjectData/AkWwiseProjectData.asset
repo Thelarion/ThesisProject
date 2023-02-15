@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 111a36df2b99a2459ec0d5f0605e9fb4
     GuidInternal: 
-    m_lastTime: -8585251337520102999
+    m_lastTime: -8585251288639385672
     List:
     - name: AudioMenu
       guid: e673bc3db8f4c14eaffb601995ce92ae
@@ -60,6 +60,26 @@ MonoBehaviour:
         ObjectType: 2
         guid: e673bc3db8f4c14eaffb601995ce92ae
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Voice\AudioMenu
+    - name: BGM
+      guid: 4d57f0088e0e3145ac863ab93912b969
+      id: 412724365
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 111a36df2b99a2459ec0d5f0605e9fb4
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Music
+        ObjectType: 2
+        guid: 9888f38dc4d7dd4dbef8a875ef226eeb
+      - ElementName: BGM
+        ObjectType: 2
+        guid: 4d57f0088e0e3145ac863ab93912b969
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music\BGM
     - name: Environment
       guid: ae6f6b737fc0694c98d071093c86bcc7
       id: 1229948536
@@ -623,7 +643,7 @@ MonoBehaviour:
     ParentPath: Events\Music
     guid: fea8c7414fd0b742bfa29828fe7796a2
     GuidInternal: 
-    m_lastTime: -8585252216148601006
+    m_lastTime: -8585251296125824867
     List:
     - name: Play_Music
       guid: 641c615078e96f4b930ae0a615ed3d42

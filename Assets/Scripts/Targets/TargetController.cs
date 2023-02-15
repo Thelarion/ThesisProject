@@ -11,6 +11,7 @@ public class TargetController : MonoBehaviour
     public string chosenPalette;
     private Transform targetCheckStateForDistance;
     private Transform currentShortestDistance;
+    private ScoreManager scoreManager;
     private enum notes
     {
         C2, C2s, D2b, D2, D2s, E2b, E2, F2, F2s, G2b, G2, G2s, A2b, A2, A2s, B2b, B2,
@@ -23,6 +24,7 @@ public class TargetController : MonoBehaviour
 
     void Awake()
     {
+        scoreManager = GameObject.Find("ScoreSystem").GetComponent<ScoreManager>();
         _operationController = GameObject.Find("List").GetComponent<OperationController>();
         int x = 0;
         foreach (notes note in _operationController._melodySequence)
@@ -57,14 +59,22 @@ public class TargetController : MonoBehaviour
 
     private void GetTargetWithShortestDistance()
     {
-        currentShortestDistance = DistanceToTarget.CurrentLoopObjectShortestDistance.transform;
-
-        if (currentShortestDistance != targetCheckStateForDistance)
+        if (DistanceToTarget.CurrentLoopObjectShortestDistance != null)
         {
-            targetCheckStateForDistance.GetComponent<CheckOcclusion>().enabled = false;
-            currentShortestDistance.GetComponent<CheckOcclusion>().enabled = true;
-            targetCheckStateForDistance = currentShortestDistance;
+            currentShortestDistance = DistanceToTarget.CurrentLoopObjectShortestDistance.transform;
+
+            if (currentShortestDistance != targetCheckStateForDistance)
+            {
+                if (targetCheckStateForDistance != null)
+                {
+                    targetCheckStateForDistance.GetComponent<CheckOcclusion>().enabled = false;
+                }
+                currentShortestDistance.GetComponent<CheckOcclusion>().enabled = true;
+                targetCheckStateForDistance = currentShortestDistance;
+            }
         }
+
+
     }
 
     private void InitializeMaterials()
@@ -100,11 +110,10 @@ public class TargetController : MonoBehaviour
         }
     }
 
-    public void InitializeMovement()
+    public void InitializeMovementAfterStopped()
     {
         foreach (Transform child in transform)
         {
-
             child.GetComponent<TargetMove>().InitializeMovementAfterMissOrInclusion();
         }
     }

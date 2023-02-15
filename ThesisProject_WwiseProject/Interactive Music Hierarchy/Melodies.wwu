@@ -42,28 +42,6 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
-									<StateInfo>
-										<StateGroupList>
-											<StateGroupInfo>
-												<StateGroupRef Name="MusicState" ID="{9AF80DCE-116D-4FC8-91F7-EF46A7B59A9D}"/>
-											</StateGroupInfo>
-										</StateGroupList>
-										<CustomStateList>
-											<CustomState>
-												<StateRef Name="MusicOff" ID="{1CF7B1E5-3F40-43BA-AFDB-2BAC8F44672E}"/>
-												<CustomState Name="" ID="{0D44178F-9A42-4101-9D2C-66BE888C79BD}" ShortID="765910813">
-													<PropertyList>
-														<Property Name="Highpass" Type="int16" Value="-50"/>
-														<Property Name="Volume" Type="Real64" Value="-50"/>
-													</PropertyList>
-												</CustomState>
-											</CustomState>
-											<CustomState>
-												<StateRef Name="MusicOn" ID="{7FF6E16F-8C75-484B-84D5-198D93F6B909}"/>
-												<CustomState Name="" ID="{1F6FAA30-B7EE-4215-89E8-A7303DBE80C7}" ShortID="133131895"/>
-											</CustomState>
-										</CustomStateList>
-									</StateInfo>
 									<TransitionList>
 										<MusicTransition Name="Root" ID="{29F9216C-B298-4839-B0DF-D07AFC80A4D0}">
 											<PropertyList>
@@ -86,7 +64,7 @@
 																				<Property Name="EndTrimOffset" Type="Real64" Value="2899.00110987795"/>
 																				<Property Name="FadeInMode" Type="int16" Value="0"/>
 																				<Property Name="FadeOutDuration" Type="Real64" Value="568.257491675916"/>
-																				<Property Name="PlayAt" Type="Real64" Value="1602.66370699223"/>
+																				<Property Name="PlayAt" Type="Real64" Value="1005.97994056826"/>
 																			</PropertyList>
 																			<AudioSourceRef Name="C3_E3_A2_B3_C3" ID="{6E15B6BF-5F0F-443C-91B0-A5FD4CFD1842}"/>
 																			<PropertyCurveList>
@@ -166,7 +144,7 @@
 																	<Local>
 																		<MusicEventCue Name="" ID="{688AF8F2-F926-41CF-95C0-E3FE512FC0E6}" ShortID="437205635">
 																			<PropertyList>
-																				<Property Name="PlayAt" Type="Real64" Value="3391.78690344062"/>
+																				<Property Name="PlayAt" Type="Real64" Value="3161.48790587347"/>
 																			</PropertyList>
 																			<ReferenceList>
 																				<Reference Name="PostEventTarget">

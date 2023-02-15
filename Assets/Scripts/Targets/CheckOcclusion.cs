@@ -23,7 +23,7 @@ public class CheckOcclusion : MonoBehaviour
         {
             if (playerOcclusionCheck.transform.gameObject.tag != "Player")
             {
-                print(playerOcclusionCheck.transform.gameObject.name);
+                // print(playerOcclusionCheck.transform.gameObject.name);
                 AkSoundEngine.SetRTPCValue("RTPC_wall_occlusion", 1);
                 // print("1");
             }

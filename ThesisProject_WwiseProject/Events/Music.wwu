@@ -12,7 +12,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Tracks" ID="{FA175E77-C23F-4F20-9E66-BA97D9647278}" WorkUnitID="{E97775FD-0D3D-405F-9E19-353A7C2D06C9}"/>
+									<ObjectRef Name="BGM" ID="{FA175E77-C23F-4F20-9E66-BA97D9647278}" WorkUnitID="{E97775FD-0D3D-405F-9E19-353A7C2D06C9}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

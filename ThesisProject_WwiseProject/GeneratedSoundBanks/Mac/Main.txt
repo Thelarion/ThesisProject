@@ -116,17 +116,6 @@ Switch	ID	Name	Switch Group			Notes
 	2195636714	Dirt	Materials			
 	2637588553	Tile	Materials			
 
-State Group	ID	Name			Wwise Object Path	Notes
-	1021618141	MusicState			\Default Work Unit\MusicState	
-
-State	ID	Name	State Group			Notes
-	748895195	None	MusicState			
-	3207097637	MusicOff	MusicState			
-	3998479257	MusicOn	MusicState			
-
-Custom State	ID	Name	State Group	Owner		Notes
-	765910813	MusicOff	MusicState	\Interactive Music Hierarchy\Melodies\Melodies\C3_E3_A2_B3_C3\C3_E3_A2_B3_C3		
-
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	815616169	RTPC_synth_pwm_up_down			\Default Work Unit\RTPC_synth_pwm_up_down	
 	872361937	RTPC_wall_occlusion			\Occlusion\RTPC_wall_occlusion	
@@ -237,7 +226,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	959719736	VoiceVolumeCheck	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\Check_10C4C929.wem		\Actor-Mixer Hierarchy\UI\VolumeCheck\VoiceVolumeCheck		124668
 	964224159	60	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\DistanceCount\60_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SFX\Beacon\DistanceCount\60		144096
 	966532559	BeaconLock	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\BeaconLock_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SFX\Beacon\BeaconLock		249696
-	967319205	Track1_Em_90bpm_44_lp	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\Track1_Em_90bpm_44_lp_D79FB2B7.wem		\Interactive Music Hierarchy\BGM\Tracks\Track1_Em_90bpm_44_lp\Track1_Em_90bpm_44_lp		12288096
+	967319205	Track1_Em_90bpm_44_lp	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\Track1_Em_90bpm_44_lp_D79FB2B7.wem		\Interactive Music Hierarchy\BGM\BGM\Track1_Em_90bpm_44_lp\Track1_Em_90bpm_44_lp		12288096
 	969926389	F2#	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\F2#_10C4C929.wem		\Actor-Mixer Hierarchy\Notes\NotesMixer\O2\F2#		384096
 	980309991	C2	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\O2\C2_10C4C929.wem		\Actor-Mixer Hierarchy\Notes\NotesMixer\O2\C2		384096
 	990206362	B3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\O3\B3_10C4C929.wem		\Actor-Mixer Hierarchy\Notes\NotesMixer\O3\B3		384096

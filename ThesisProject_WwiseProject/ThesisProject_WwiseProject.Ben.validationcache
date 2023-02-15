@@ -6,7 +6,7 @@
 	<ValidationCacheItem File="C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\ThesisProject_WwiseProject.Ben.wsettings" DateLow="1676419709" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1676472181" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\States\Default Work Unit.wwu" DateLow="1676471581" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1676473133" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1676478040" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1676384099" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\Queries\Factory Queries.wwu" DateLow="1672914174" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1673352306" DateHigh="0"/>
@@ -15,10 +15,10 @@
 	<ValidationCacheItem File="C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\Modulators\Default Work Unit.wwu" DateLow="1676323526" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="1673352306" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\Metadata\Default Work Unit.wwu" DateLow="1673352306" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1676473133" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\Interactive Music Hierarchy\Melodies.wwu" DateLow="1676410183" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1676478021" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\Interactive Music Hierarchy\Melodies.wwu" DateLow="1676478040" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1676379930" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\Interactive Music Hierarchy\BGM.wwu" DateLow="1676390304" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\Interactive Music Hierarchy\BGM.wwu" DateLow="1676477279" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\Game Parameters\UI.wwu" DateLow="1676473133" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\Game Parameters\Occlusion.wwu" DateLow="1676393838" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\Game Parameters\Music.wwu" DateLow="1676410522" DateHigh="0"/>
@@ -31,7 +31,7 @@
 	<ValidationCacheItem File="C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\Events\SingleNotes.wwu" DateLow="1676317116" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\Events\Player.wwu" DateLow="1676317932" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\Events\Notes.wwu" DateLow="1676386300" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\Events\Music.wwu" DateLow="1676385270" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\Events\Music.wwu" DateLow="1676477272" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\Events\Melodies.wwu" DateLow="1676382858" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\Events\Default Work Unit.wwu" DateLow="1676316951" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\Events\Beacon.wwu" DateLow="1676386314" DateHigh="0"/>
@@ -47,7 +47,7 @@
 	<ValidationCacheItem File="C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\Actor-Mixer Hierarchy\UI.wwu" DateLow="1676473133" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\Actor-Mixer Hierarchy\SFX.wwu" DateLow="1676390304" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\Actor-Mixer Hierarchy\Player.wwu" DateLow="1676316236" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\Actor-Mixer Hierarchy\Notes.wwu" DateLow="1676465579" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\Actor-Mixer Hierarchy\Notes.wwu" DateLow="1676477272" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1676386337" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\Actor-Mixer Hierarchy\Aiming.wwu" DateLow="1676386337" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Ben\Documents\GitHub\FPS Template Unity\ThesisProject_WwiseIntegrationTemp\ThesisProject_WwiseProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="1673352306" DateHigh="0"/>

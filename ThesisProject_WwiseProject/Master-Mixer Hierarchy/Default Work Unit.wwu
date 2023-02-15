@@ -14,120 +14,161 @@
 							<ChildrenList>
 								<Bus Name="Melodies" ID="{39301A31-C005-4173-9F99-CE07F05182A8}"/>
 								<Bus Name="Notes" ID="{AAC84701-12F6-40CE-89A8-D6D17C162967}"/>
+								<Bus Name="BGM" ID="{08F0574D-0E8E-4531-AC86-3AB93912B969}">
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="MelodyState" ID="{5173BC1C-7720-4ED7-8BAD-15399663BD6F}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="MelodyOff" ID="{FDE21147-AC5C-4161-9DC2-29B3B77D8C7C}"/>
+												<CustomState Name="" ID="{F57E2CD1-3D1D-4616-AA0C-B52972D6418F}" ShortID="733669824"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="MelodyOn" ID="{F2682156-742A-4F80-BE35-96DAC416F8A4}"/>
+												<CustomState Name="" ID="{8CF32D2A-540E-4998-B781-D3727244A776}" ShortID="320107736">
+													<PropertyList>
+														<Property Name="BusVolume" Type="Real64" Value="-20"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{A24D32E5-CDA3-42CB-90F9-F23336FF71DF}" ShortID="108675637">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Lowpass"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="RTPC_MusicBusFade" ID="{D4C4D49F-FCA5-435E-9383-0CE003094D2A}" WorkUnitID="{7966F56F-4C72-4935-A743-BAFE6B0389EE}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{01A20988-F65F-4DE7-9C89-6F7AF7A21738}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="65537"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>100</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>8.5265</XPos>
+																				<YPos>100</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>19.95033</XPos>
+																				<YPos>72</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>25</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{D834BDB5-E25B-4871-85F2-C3337CFA4465}" ShortID="31476244">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Volume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="RTPC_MusicBusFade" ID="{D4C4D49F-FCA5-435E-9383-0CE003094D2A}" WorkUnitID="{7966F56F-4C72-4935-A743-BAFE6B0389EE}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{4AB0EC37-215D-4113-ACBD-0889E2C59071}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>15.97682</XPos>
+																				<YPos>-15.64308</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>22.01987</XPos>
+																				<YPos>-7.49337</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>25</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{5FA832B3-9AF7-4B4B-A298-C84939909EEE}" ShortID="171162403">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Volume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="RTPC_MusicVolumeSettings" ID="{4AACEBAC-274E-444E-B31E-C3D3FCBF4951}" WorkUnitID="{28E032A7-F230-4046-B70A-9B378FBF00AD}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{6ACCAEAD-9D3F-4056-AAC4-6693AA562757}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>10</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</Bus>
 							</ChildrenList>
-							<StateInfo>
-								<StateGroupList>
-									<StateGroupInfo>
-										<StateGroupRef Name="MelodyState" ID="{5173BC1C-7720-4ED7-8BAD-15399663BD6F}"/>
-									</StateGroupInfo>
-								</StateGroupList>
-								<CustomStateList>
-									<CustomState>
-										<StateRef Name="MelodyOff" ID="{FDE21147-AC5C-4161-9DC2-29B3B77D8C7C}"/>
-										<CustomState Name="" ID="{8D906592-7C30-4BFB-90DA-C97858530685}" ShortID="959276269"/>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="MelodyOn" ID="{F2682156-742A-4F80-BE35-96DAC416F8A4}"/>
-										<CustomState Name="" ID="{B2137703-1DB2-4AE2-AC87-1798981E20A4}" ShortID="267445440">
-											<PropertyList>
-												<Property Name="BusVolume" Type="Real64" Value="-20"/>
-											</PropertyList>
-										</CustomState>
-									</CustomState>
-								</CustomStateList>
-							</StateInfo>
 							<ObjectLists>
 								<ObjectList Name="RTPC">
-									<Reference>
-										<Local>
-											<RTPC Name="" ID="{88DFBD1E-A4B6-49BF-A40D-D2902D4EF57A}" ShortID="605481140">
-												<PropertyList>
-													<Property Name="PropertyName" Type="string" Value="Lowpass"/>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="ControlInput">
-														<ObjectRef Name="RTPC_MusicBusFade" ID="{D4C4D49F-FCA5-435E-9383-0CE003094D2A}" WorkUnitID="{7966F56F-4C72-4935-A743-BAFE6B0389EE}"/>
-													</Reference>
-													<Reference Name="Curve">
-														<Custom>
-															<Curve Name="" ID="{4DB425F1-8D43-46B8-B903-778B2D86DFD9}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="65537"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>100</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>8.5265</XPos>
-																		<YPos>100</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>19.95033</XPos>
-																		<YPos>72</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>25</XPos>
-																		<YPos>0</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</Custom>
-													</Reference>
-												</ReferenceList>
-											</RTPC>
-										</Local>
-									</Reference>
-									<Reference>
-										<Local>
-											<RTPC Name="" ID="{01B292FA-33D6-469A-8A8D-D85127E32CAF}" ShortID="981409210">
-												<PropertyList>
-													<Property Name="PropertyName" Type="string" Value="Volume"/>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="ControlInput">
-														<ObjectRef Name="RTPC_MusicBusFade" ID="{D4C4D49F-FCA5-435E-9383-0CE003094D2A}" WorkUnitID="{7966F56F-4C72-4935-A743-BAFE6B0389EE}"/>
-													</Reference>
-													<Reference Name="Curve">
-														<Custom>
-															<Curve Name="" ID="{4A0CAAE7-76EF-4B3E-ADDA-68508DDB1A55}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="3"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>15.97682</XPos>
-																		<YPos>-15.64308</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>22.01987</XPos>
-																		<YPos>-7.49337</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>25</XPos>
-																		<YPos>0</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</Custom>
-													</Reference>
-												</ReferenceList>
-											</RTPC>
-										</Local>
-									</Reference>
 									<Reference>
 										<Local>
 											<RTPC Name="" ID="{10006710-AD9C-476C-8AC3-C3EBCAF32D9F}" ShortID="229837513">

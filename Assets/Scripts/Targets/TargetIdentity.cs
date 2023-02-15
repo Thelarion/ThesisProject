@@ -62,6 +62,4 @@ public class TargetIdentity : MonoBehaviour
         }
         _instances.Remove(this);
     }
-
-
 }

@@ -50,7 +50,7 @@
 						<CurrentStateRef Name="MusicOn" ID="{7FF6E16F-8C75-484B-84D5-198D93F6B909}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Default" ID="{0FB83FEE-1C52-4BF0-A15E-7B3DE3DB8952}"/>
+						<CurrentSwitchRef Name="AudioMenuToggle" ID="{28CC68B0-C06B-4396-B605-BBC0D1315C54}"/>
 						<CurrentSwitchRef Name="Concrete" ID="{7624D16A-D815-43AD-A2F4-FF7B846EB163}"/>
 						<CurrentSwitchRef Name="Voice" ID="{864E68C8-6ECE-4112-8817-8444D5318D98}"/>
 						<CurrentSwitchRef Name="M1" ID="{EE148B74-339E-4862-B987-D0463480A443}"/>

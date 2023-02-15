@@ -9,7 +9,7 @@ public class MelodyManager : MonoBehaviour
 
     private void Update()
     {
-        print(isSoundPlaying);
+        // print(isSoundPlaying);
     }
 
     public void PlayMelody()

@@ -25,7 +25,7 @@ State	ID	Name	State Group			Notes
 	3374585465	InMenu	GameState			
 
 Custom State	ID	Name	State Group	Owner		Notes
-	267445440	MelodyOn	MelodyState	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music		
+	320107736	MelodyOn	MelodyState	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music\BGM		
 	467346323	AudioMenuOff	AudioMenuState	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Voice\AudioMenu		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
@@ -37,6 +37,7 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	201729212	Notes			\Default Work Unit\Master Audio Bus\Music\Notes	
 	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
+	412724365	BGM			\Default Work Unit\Master Audio Bus\Music\BGM	
 	1229948536	Environment			\Default Work Unit\Master Audio Bus\SFX\Environment	
 	2429736717	Melodies			\Default Work Unit\Master Audio Bus\Music\Melodies	
 	3105667492	AudioMenu			\Default Work Unit\Master Audio Bus\Voice\AudioMenu	
