@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{CB098C70-9167-245B-0D16-8D18A5A3B3EF}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{9C7C3B94-971C-5AEB-D1CC-FE09ADC9A447}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -27,6 +27,7 @@
 				<Bus Id="1229948536" Name="Environment"/>
 				<Bus Id="2429736717" Name="Melodies"/>
 				<Bus Id="3105667492" Name="AudioMenu"/>
+				<Bus Id="3170124113" Name="Voice"/>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 				<Bus Id="3991942870" Name="Music"/>
 			</Busses>
@@ -46,7 +47,7 @@
 				<GameParameter Id="1364189011" Name="RTPC_distance_freq"/>
 				<GameParameter Id="1384204673" Name="RTPC_frequency_depth"/>
 				<GameParameter Id="1574311894" Name="RTPC_EffectsVolumeSettings"/>
-				<GameParameter Id="1923019727" Name="RTPC_AudioMenuVolumeSettings"/>
+				<GameParameter Id="2118858538" Name="RTPC_VoiceVolumeSettings"/>
 				<GameParameter Id="3170173318" Name="RTPC_GenOcclusion"/>
 				<GameParameter Id="3453464353" Name="RTPC_MusicVolumeSettings"/>
 				<GameParameter Id="3707704703" Name="RTPC_left_right"/>
@@ -59,6 +60,13 @@
 						<State Id="748895195" Name="None"/>
 						<State Id="3207097637" Name="MusicOff"/>
 						<State Id="3998479257" Name="MusicOn"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="2978820491" Name="AudioMenuState">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="2139648023" Name="AudioMenuOn"/>
+						<State Id="3804790955" Name="AudioMenuOff"/>
 					</States>
 				</StateGroup>
 				<StateGroup Id="3443944880" Name="MelodyState">
@@ -101,7 +109,7 @@
 				<SwitchGroup Id="360641673" Name="VolumeCheck">
 					<Switches>
 						<Switch Id="1942696649" Name="Effects"/>
-						<Switch Id="3105667492" Name="AudioMenu"/>
+						<Switch Id="3170124113" Name="Voice"/>
 						<Switch Id="3991942870" Name="Music"/>
 					</Switches>
 				</SwitchGroup>
@@ -127,10 +135,11 @@
 				</SwitchGroup>
 				<SwitchGroup Id="3099313910" Name="ButtonReadAloud">
 					<Switches>
+						<Switch Id="414646191" Name="VoiceVolume"/>
 						<Switch Id="640585335" Name="EffectsVolume"/>
 						<Switch Id="782826392" Name="Default"/>
 						<Switch Id="1238775560" Name="AudioMenuToggle"/>
-						<Switch Id="1379827610" Name="AudioMenuVolume"/>
+						<Switch Id="1281810935" Name="Start"/>
 						<Switch Id="2346531308" Name="MusicVolume"/>
 						<Switch Id="2734938552" Name="ArrowKeys"/>
 						<Switch Id="3569097980" Name="AudioVisualiserToggle"/>
@@ -153,7 +162,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{7272A1BE-02A8-DEFB-2FA4-6D0D7131E5C1}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{212628B7-474F-E093-1F1F-83966E8C1B30}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -181,6 +190,10 @@
 					<ShortName>PlingFail.wav</ShortName>
 					<CachePath>SFX/PlingFail_10C4C929.wem</CachePath>
 				</File>
+				<File Id="71396143" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>StartTheGame.wav</ShortName>
+					<CachePath>SFX/StartTheGame_10C4C929.wem</CachePath>
+				</File>
 				<File Id="99426326" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ButtonReadAloud\EffectsVolume.wav</ShortName>
 					<CachePath>SFX/ButtonReadAloud/EffectsVolume_10C4C929.wem</CachePath>
@@ -204,10 +217,6 @@
 				<File Id="145167046" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O3\E3.wav</ShortName>
 					<CachePath>SFX/O3/E3_10C4C929.wem</CachePath>
-				</File>
-				<File Id="152830020" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>ButtonReadAloud\AudioMenuVolume.wav</ShortName>
-					<CachePath>SFX/ButtonReadAloud/AudioMenuVolume_10C4C929.wem</CachePath>
 				</File>
 				<File Id="158003658" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>CorrectNote.wav</ShortName>
@@ -264,6 +273,10 @@
 				<File Id="253861454" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WrongNoteAgain.wav</ShortName>
 					<CachePath>SFX/WrongNoteAgain_10C4C929.wem</CachePath>
+				</File>
+				<File Id="263546721" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>VoiceVolume.wav</ShortName>
+					<CachePath>SFX/VoiceVolume_10C4C929.wem</CachePath>
 				</File>
 				<File Id="269103452" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>D2#.wav</ShortName>
@@ -938,9 +951,9 @@
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
-							<SwitchValue GroupType="Switch" GroupId="3099313910" Id="1379827610"/>
+							<SwitchValue GroupType="Switch" GroupId="3099313910" Id="414646191"/>
 							<MediaRefs>
-								<MediaRef Id="152830020"/>
+								<MediaRef Id="263546721"/>
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
@@ -971,6 +984,12 @@
 									</MediaRefs>
 								</SwitchContainer>
 							</Children>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3099313910" Id="1281810935"/>
+							<MediaRefs>
+								<MediaRef Id="71396143"/>
+							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="3099313910" Id="1238775560"/>
@@ -1062,7 +1081,7 @@
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
-							<SwitchValue GroupType="Switch" GroupId="360641673" Id="3105667492"/>
+							<SwitchValue GroupType="Switch" GroupId="360641673" Id="3170124113"/>
 							<MediaRefs>
 								<MediaRef Id="959719736"/>
 							</MediaRefs>
@@ -1113,7 +1132,7 @@
 				<SwitchGroup Id="360641673" Name="VolumeCheck">
 					<Switches>
 						<Switch Id="1942696649" Name="Effects"/>
-						<Switch Id="3105667492" Name="AudioMenu"/>
+						<Switch Id="3170124113" Name="Voice"/>
 						<Switch Id="3991942870" Name="Music"/>
 					</Switches>
 				</SwitchGroup>
@@ -1132,10 +1151,11 @@
 				</SwitchGroup>
 				<SwitchGroup Id="3099313910" Name="ButtonReadAloud">
 					<Switches>
+						<Switch Id="414646191" Name="VoiceVolume"/>
 						<Switch Id="640585335" Name="EffectsVolume"/>
 						<Switch Id="782826392" Name="Default"/>
 						<Switch Id="1238775560" Name="AudioMenuToggle"/>
-						<Switch Id="1379827610" Name="AudioMenuVolume"/>
+						<Switch Id="1281810935" Name="Start"/>
 						<Switch Id="2346531308" Name="MusicVolume"/>
 						<Switch Id="2734938552" Name="ArrowKeys"/>
 						<Switch Id="3569097980" Name="AudioVisualiserToggle"/>
@@ -1159,5 +1179,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{90E1A144-C0E1-9F76-F450-DC2B089B0248}</FileHash>
+	<FileHash>{6F953AB8-7FB3-ACD8-0F9C-CE61979DA7CF}</FileHash>
 </SoundBanksInfo>

@@ -44,7 +44,7 @@
 								<ActiveSource Name="MusicVolumeTest" ID="{1B36604B-015D-4E34-A3CA-6DD8A321A949}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="AudioMenuVolumeCheck" ID="{3946D1C4-EA79-42BD-826E-1216ABA7D2BB}" ShortID="39502337">
+						<Sound Name="VoiceVolumeCheck" ID="{3946D1C4-EA79-42BD-826E-1216ABA7D2BB}" ShortID="39502337">
 							<PropertyList>
 								<Property Name="OverrideOutput" Type="bool" Value="True"/>
 							</PropertyList>
@@ -53,7 +53,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="AudioMenu" ID="{3DBC73E6-F4B8-4EC1-AFFB-601995CE92AE}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+									<ObjectRef Name="Voice" ID="{14CBD258-C063-4F5F-8620-F1CD9A64E84F}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -104,7 +104,7 @@
 								<ItemRef Name="EffectsVolumeCheck" ID="{4B610A36-1D1B-41AF-BDD9-17A5B3FB69BD}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
-								<ItemRef Name="AudioMenuVolumeCheck" ID="{3946D1C4-EA79-42BD-826E-1216ABA7D2BB}"/>
+								<ItemRef Name="VoiceVolumeCheck" ID="{3946D1C4-EA79-42BD-826E-1216ABA7D2BB}"/>
 							</GroupingBehavior>
 						</GroupingBehaviorList>
 						<GroupingList>
@@ -115,9 +115,9 @@
 								</ItemList>
 							</Grouping>
 							<Grouping>
-								<SwitchRef Name="AudioMenu" ID="{864E68C8-6ECE-4112-8817-8444D5318D98}"/>
+								<SwitchRef Name="Voice" ID="{864E68C8-6ECE-4112-8817-8444D5318D98}"/>
 								<ItemList>
-									<ItemRef Name="AudioMenuVolumeCheck" ID="{3946D1C4-EA79-42BD-826E-1216ABA7D2BB}"/>
+									<ItemRef Name="VoiceVolumeCheck" ID="{3946D1C4-EA79-42BD-826E-1216ABA7D2BB}"/>
 								</ItemList>
 							</Grouping>
 							<Grouping>
@@ -138,7 +138,7 @@
 							<ObjectRef Name="Default" ID="{0FB83FEE-1C52-4BF0-A15E-7B3DE3DB8952}" WorkUnitID="{3366C92C-EFE1-45C7-A10A-B3FAD73419FC}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+							<ObjectRef Name="AudioMenu" ID="{3DBC73E6-F4B8-4EC1-AFFB-601995CE92AE}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
 						</Reference>
 						<Reference Name="SwitchGroupOrStateGroup">
 							<ObjectRef Name="ButtonReadAloud" ID="{BF942F16-41D1-400B-B3FE-4E5F7E856000}" WorkUnitID="{3366C92C-EFE1-45C7-A10A-B3FAD73419FC}"/>
@@ -167,7 +167,7 @@
 								<ActiveSource Name="PressReturnOrSpaceToTurnOn" ID="{95F386A4-2628-4A83-B68C-6DBEC145E5C2}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="AudioMenuVolume" ID="{9AF95C02-F1AA-4E52-90EC-CEFC8B47C123}" ShortID="62953938">
+						<Sound Name="VoiceVolume" ID="{9AF95C02-F1AA-4E52-90EC-CEFC8B47C123}" ShortID="62953938">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
@@ -177,16 +177,16 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="AudioMenuVolume" ID="{05472385-81B4-4AC3-9795-590DAC83EA45}">
+								<AudioFileSource Name="VoiceVolume" ID="{3B94D7FD-49B7-4558-A2C4-85C598777F23}">
 									<Language>SFX</Language>
-									<AudioFile>ButtonReadAloud\AudioMenuVolume.wav</AudioFile>
+									<AudioFile>VoiceVolume.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="152830020"/>
+										<MediaID ID="263546721"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="AudioMenuVolume" ID="{05472385-81B4-4AC3-9795-590DAC83EA45}" Platform="Linked"/>
+								<ActiveSource Name="VoiceVolume" ID="{3B94D7FD-49B7-4558-A2C4-85C598777F23}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="ArrowKeys" ID="{60A84A7E-BFE2-489B-B83D-9BAB95FAA65D}" ShortID="3860267">
@@ -256,6 +256,9 @@
 							</ActiveSourceList>
 						</Sound>
 						<SwitchContainer Name="AudioMenuToggle" ID="{2596980C-E422-4D60-9BCD-F9EFC0D4A6A4}" ShortID="734465596">
+							<PropertyList>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
@@ -264,7 +267,7 @@
 									<ObjectRef Name="AudioMenuOff" ID="{B8BF384A-A71B-41B5-B967-6E8389C3EB50}" WorkUnitID="{3366C92C-EFE1-45C7-A10A-B3FAD73419FC}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+									<ObjectRef Name="Voice" ID="{14CBD258-C063-4F5F-8620-F1CD9A64E84F}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
 								</Reference>
 								<Reference Name="SwitchGroupOrStateGroup">
 									<ObjectRef Name="AudioMenuToggle" ID="{295A64D3-6D0F-4BEC-9654-5A33B7D556FD}" WorkUnitID="{3366C92C-EFE1-45C7-A10A-B3FAD73419FC}"/>
@@ -455,14 +458,39 @@
 								<ActiveSource Name="ErrorDefault" ID="{96FC9854-F6DD-484D-A1D4-51C4F30DD54F}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="Start" ID="{CC60D629-1AD4-4AB5-B923-0414C9035C48}" ShortID="787821792">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="StartTheGame" ID="{2CD78CF1-8BE9-481D-8CF3-F54A9C6AB560}">
+									<Language>SFX</Language>
+									<AudioFile>StartTheGame.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="71396143"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="StartTheGame" ID="{2CD78CF1-8BE9-481D-8CF3-F54A9C6AB560}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 					<GroupingInfo>
 						<GroupingBehaviorList>
 							<GroupingBehavior>
-								<ItemRef Name="AudioMenuVolume" ID="{9AF95C02-F1AA-4E52-90EC-CEFC8B47C123}"/>
+								<ItemRef Name="VoiceVolume" ID="{9AF95C02-F1AA-4E52-90EC-CEFC8B47C123}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="AudioMenuToggle" ID="{2596980C-E422-4D60-9BCD-F9EFC0D4A6A4}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Start" ID="{CC60D629-1AD4-4AB5-B923-0414C9035C48}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="EffectsVolume" ID="{45A64B2A-0579-4C59-9B42-FA8AC4DB0215}"/>
@@ -491,9 +519,9 @@
 								</ItemList>
 							</Grouping>
 							<Grouping>
-								<SwitchRef Name="AudioMenuVolume" ID="{1F5EF52F-1820-4724-904A-F35F843CB394}"/>
+								<SwitchRef Name="VoiceVolume" ID="{1F5EF52F-1820-4724-904A-F35F843CB394}"/>
 								<ItemList>
-									<ItemRef Name="AudioMenuVolume" ID="{9AF95C02-F1AA-4E52-90EC-CEFC8B47C123}"/>
+									<ItemRef Name="VoiceVolume" ID="{9AF95C02-F1AA-4E52-90EC-CEFC8B47C123}"/>
 								</ItemList>
 							</Grouping>
 							<Grouping>
@@ -512,6 +540,12 @@
 								<SwitchRef Name="AudioVisualiserToggle" ID="{CD65CC85-0C5C-43B8-82FE-DF817609E0D7}"/>
 								<ItemList>
 									<ItemRef Name="AudioVisualiserToggle" ID="{6EDED0C8-C302-480A-9E0B-82DB4F268842}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Start" ID="{63C6BB87-BF1D-4807-89D3-3D27DD0A40C2}"/>
+								<ItemList>
+									<ItemRef Name="Start" ID="{CC60D629-1AD4-4AB5-B923-0414C9035C48}"/>
 								</ItemList>
 							</Grouping>
 							<Grouping>

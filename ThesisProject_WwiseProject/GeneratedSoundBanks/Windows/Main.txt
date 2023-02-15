@@ -90,7 +90,7 @@ Switch Group	ID	Name			Wwise Object Path	Notes
 
 Switch	ID	Name	Switch Group			Notes
 	1942696649	Effects	VolumeCheck			
-	3105667492	AudioMenu	VolumeCheck			
+	3170124113	Voice	VolumeCheck			
 	3991942870	Music	VolumeCheck			
 	2139648023	AudioMenuOn	AudioMenuToggle			
 	3804790955	AudioMenuOff	AudioMenuToggle			
@@ -100,10 +100,11 @@ Switch	ID	Name	Switch Group			Notes
 	1685527108	M2	Melodies			
 	1685527109	M3	Melodies			
 	1685527111	M1	Melodies			
+	414646191	VoiceVolume	ButtonReadAloud			
 	640585335	EffectsVolume	ButtonReadAloud			
 	782826392	Default	ButtonReadAloud			
 	1238775560	AudioMenuToggle	ButtonReadAloud			
-	1379827610	AudioMenuVolume	ButtonReadAloud			
+	1281810935	Start	ButtonReadAloud			
 	2346531308	MusicVolume	ButtonReadAloud			
 	2734938552	ArrowKeys	ButtonReadAloud			
 	3569097980	AudioVisualiserToggle	ButtonReadAloud			
@@ -150,13 +151,13 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	25687503	FS_Gravel_01	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Footsteps\Gravel\FS_Gravel_01_10C4C929.wem		\Actor-Mixer Hierarchy\Player\Footsteps\Gravel\FS_Gravel_01		43006
 	25952176	D4	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O4\D4_10C4C929.wem		\Actor-Mixer Hierarchy\Notes\NotesMixer\O4\D4		384096
 	33821008	PlingFail	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\PlingFail_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SFX\PlingFail		768096
+	71396143	Start	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\StartTheGame_10C4C929.wem		\Actor-Mixer Hierarchy\UI\ButtonReadAloud\Start		268384
 	99426326	EffectsVolume	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\ButtonReadAloud\EffectsVolume_10C4C929.wem		\Actor-Mixer Hierarchy\UI\ButtonReadAloud\EffectsVolume		219228
 	104649299	AudioMenuOn	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\ButtonReadAloud\AudioMenuOn_10C4C929.wem		\Actor-Mixer Hierarchy\UI\ButtonReadAloud\AudioMenuToggle\AudioMenuOn		368732
 	106854697	80	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\DistanceCount\80_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SFX\Beacon\DistanceCount\80		94456
 	119593203	D2b	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\D2b_10C4C929.wem		\Actor-Mixer Hierarchy\Notes\NotesMixer\O2\D2b		384096
 	136132481	FS_Tile_03	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Footsteps\Tile\FS_Tile_03_10C4C929.wem		\Actor-Mixer Hierarchy\Player\Footsteps\Tile\FS_Tile_03		58572
 	145167046	E3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O3\E3_10C4C929.wem		\Actor-Mixer Hierarchy\Notes\NotesMixer\O3\E3		384096
-	152830020	AudioMenuVolume	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\ButtonReadAloud\AudioMenuVolume_10C4C929.wem		\Actor-Mixer Hierarchy\UI\ButtonReadAloud\AudioMenuVolume		381020
 	158003658	CorrectNote	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\CorrectNote_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SFX\CorrectNote		714848
 	164636996	F4#	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\F4#_10C4C929.wem		\Actor-Mixer Hierarchy\Notes\NotesMixer\O4\F4#		384096
 	164737119	G4b	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\G4b_10C4C929.wem		\Actor-Mixer Hierarchy\Notes\NotesMixer\O4\G4b		384096
@@ -171,6 +172,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	221568551	10	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\DistanceCount\10_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SFX\Beacon\DistanceCount\10		76924
 	242190809	DistanceFrameTransition	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\DistanceFrameTransition_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SFX\DistanceFrameTransition		486096
 	253861454	WrongNoteTryAgain	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\WrongNoteAgain_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SFX\WrongNoteTryAgain		1284196
+	263546721	VoiceVolume	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\VoiceVolume_10C4C929.wem		\Actor-Mixer Hierarchy\UI\ButtonReadAloud\VoiceVolume		221280
 	269103452	D2#	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\D2#_10C4C929.wem		\Actor-Mixer Hierarchy\Notes\NotesMixer\O2\D2#		384096
 	271194032	F3#	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\F3#_10C4C929.wem		\Actor-Mixer Hierarchy\Notes\NotesMixer\O3\F3#		384096
 	291629109	D3b	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\D3b_10C4C929.wem		\Actor-Mixer Hierarchy\Notes\NotesMixer\O3\D3b		384096
@@ -232,7 +234,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	925483801	A2	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O2\A2_10C4C929.wem		\Actor-Mixer Hierarchy\Notes\NotesMixer\O2\A2		384096
 	926129158	G2#	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\G2#_10C4C929.wem		\Actor-Mixer Hierarchy\Notes\NotesMixer\O2\G2#		384096
 	927525782	D3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O3\D3_10C4C929.wem		\Actor-Mixer Hierarchy\Notes\NotesMixer\O3\D3		384096
-	959719736	AudioMenuVolumeCheck	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Check_10C4C929.wem		\Actor-Mixer Hierarchy\UI\VolumeCheck\AudioMenuVolumeCheck		124668
+	959719736	VoiceVolumeCheck	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Check_10C4C929.wem		\Actor-Mixer Hierarchy\UI\VolumeCheck\VoiceVolumeCheck		124668
 	964224159	60	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\DistanceCount\60_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SFX\Beacon\DistanceCount\60		144096
 	966532559	BeaconLock	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\BeaconLock_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SFX\Beacon\BeaconLock		249696
 	967319205	Track1_Em_90bpm_44_lp	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Track1_Em_90bpm_44_lp_D79FB2B7.wem		\Interactive Music Hierarchy\BGM\Tracks\Track1_Em_90bpm_44_lp\Track1_Em_90bpm_44_lp		12288096

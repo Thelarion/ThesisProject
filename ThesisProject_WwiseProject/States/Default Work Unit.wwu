@@ -55,6 +55,13 @@
 						</Transition>
 					</TransitionList>
 				</StateGroup>
+				<StateGroup Name="AudioMenuState" ID="{C9A564C7-02A6-44CC-852F-5D30AC0FB07C}">
+					<ChildrenList>
+						<State Name="None" ID="{E6ED0892-1458-4E2F-8165-28520A23CE6D}"/>
+						<State Name="AudioMenuOn" ID="{883C9309-0C02-496F-8A07-01BB766396A1}"/>
+						<State Name="AudioMenuOff" ID="{2B5FCBCB-4223-4FE1-8D67-511A190CEB25}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

@@ -16,6 +16,10 @@
 							<Value>1</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="RTPC_VoiceVolumeSettings" ID="{3057E62F-CF98-4255-BD17-B97F194E600F}"/>
+							<Value>7.45938074800736</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="RTPC_GenOcclusion" ID="{07AD59E1-527F-42E0-A4E6-F30719E85712}"/>
 							<Value>100</Value>
 						</RTPCValue>
@@ -24,7 +28,7 @@
 							<Value>25</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="RTPC_AudioMenuVolumeSettings" ID="{4AACEBAC-274E-444E-B31E-C3D3FCBF4951}"/>
+							<GameParameterRef Name="RTPC_MusicVolumeSettings" ID="{4AACEBAC-274E-444E-B31E-C3D3FCBF4951}"/>
 							<Value>10</Value>
 						</RTPCValue>
 						<RTPCValue>
@@ -48,7 +52,7 @@
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Default" ID="{0FB83FEE-1C52-4BF0-A15E-7B3DE3DB8952}"/>
 						<CurrentSwitchRef Name="Concrete" ID="{7624D16A-D815-43AD-A2F4-FF7B846EB163}"/>
-						<CurrentSwitchRef Name="AudioMenu" ID="{864E68C8-6ECE-4112-8817-8444D5318D98}"/>
+						<CurrentSwitchRef Name="Voice" ID="{864E68C8-6ECE-4112-8817-8444D5318D98}"/>
 						<CurrentSwitchRef Name="M1" ID="{EE148B74-339E-4862-B987-D0463480A443}"/>
 						<CurrentSwitchRef Name="Track1" ID="{DF0AB87B-7594-47E9-A09B-20EC64FAC28A}"/>
 						<CurrentSwitchRef Name="A" ID="{69A2F832-DD04-48E8-A090-5AF674AE02FC}"/>

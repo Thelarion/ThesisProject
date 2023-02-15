@@ -13,10 +13,10 @@ public class SliderController : MonoBehaviour
         Stop_VolumeCheck.Post(gameObject);
         Play_VolumeCheck.Post(gameObject);
     }
-    public void OnAudioMenuVolumeSliderChanged(float value)
+    public void OnVoiceSliderChanged(float value)
     {
-        AkSoundEngine.SetSwitch("VolumeCheck", "AudioMenu", gameObject);
-        AkSoundEngine.SetRTPCValue("RTPC_AudioMenuVolumeSettings", value);
+        AkSoundEngine.SetSwitch("VolumeCheck", "Voice", gameObject);
+        AkSoundEngine.SetRTPCValue("RTPC_VoiceVolumeSettings", value);
         PostEvents();
     }
 

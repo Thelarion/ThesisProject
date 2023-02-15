@@ -136,52 +136,11 @@
 												</PropertyList>
 												<ReferenceList>
 													<Reference Name="ControlInput">
-														<ObjectRef Name="RTPC_MusicVolumeSettings" ID="{3057E62F-CF98-4255-BD17-B97F194E600F}" WorkUnitID="{28E032A7-F230-4046-B70A-9B378FBF00AD}"/>
+														<ObjectRef Name="RTPC_MusicVolumeSettings" ID="{4AACEBAC-274E-444E-B31E-C3D3FCBF4951}" WorkUnitID="{28E032A7-F230-4046-B70A-9B378FBF00AD}"/>
 													</Reference>
 													<Reference Name="Curve">
 														<Custom>
 															<Curve Name="" ID="{F08096CD-D5CE-408C-9718-CEC7EACBC919}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="3"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>10</XPos>
-																		<YPos>0</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</Custom>
-													</Reference>
-												</ReferenceList>
-											</RTPC>
-										</Local>
-									</Reference>
-								</ObjectList>
-							</ObjectLists>
-						</Bus>
-						<Bus Name="AudioMenu" ID="{3DBC73E6-F4B8-4EC1-AFFB-601995CE92AE}">
-							<ObjectLists>
-								<ObjectList Name="RTPC">
-									<Reference>
-										<Local>
-											<RTPC Name="" ID="{1D70B745-83E7-4E81-B089-64A1DC473998}" ShortID="865119580">
-												<PropertyList>
-													<Property Name="PropertyName" Type="string" Value="Volume"/>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="ControlInput">
-														<ObjectRef Name="RTPC_AudioMenuVolumeSettings" ID="{4AACEBAC-274E-444E-B31E-C3D3FCBF4951}" WorkUnitID="{28E032A7-F230-4046-B70A-9B378FBF00AD}"/>
-													</Reference>
-													<Reference Name="Curve">
-														<Custom>
-															<Curve Name="" ID="{3288343A-D8DA-4448-A198-FEAE6E95B4D0}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="3"/>
 																</PropertyList>
@@ -233,6 +192,72 @@
 													<Reference Name="Curve">
 														<Custom>
 															<Curve Name="" ID="{5F9AA2C9-40EE-4EB0-A97C-24150EFF2DE4}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>10</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</Bus>
+						<Bus Name="Voice" ID="{14CBD258-C063-4F5F-8620-F1CD9A64E84F}">
+							<ChildrenList>
+								<Bus Name="AudioMenu" ID="{3DBC73E6-F4B8-4EC1-AFFB-601995CE92AE}">
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="AudioMenuState" ID="{C9A564C7-02A6-44CC-852F-5D30AC0FB07C}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="AudioMenuOn" ID="{883C9309-0C02-496F-8A07-01BB766396A1}"/>
+												<CustomState Name="" ID="{FB5AB5D0-5A84-4D50-A65D-0C117DAD81AF}" ShortID="541344132"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="AudioMenuOff" ID="{2B5FCBCB-4223-4FE1-8D67-511A190CEB25}"/>
+												<CustomState Name="" ID="{FB297EDC-534A-42BE-A5C7-E48E98367933}" ShortID="467346323">
+													<PropertyList>
+														<Property Name="BusVolume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+								</Bus>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{C3519AC5-56B3-4615-BE9A-208A367F9E36}" ShortID="836187085">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="RTPC_VoiceVolumeSettings" ID="{3057E62F-CF98-4255-BD17-B97F194E600F}" WorkUnitID="{28E032A7-F230-4046-B70A-9B378FBF00AD}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{D6B0A023-86C9-4480-866E-E9904B259F2D}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="3"/>
 																</PropertyList>

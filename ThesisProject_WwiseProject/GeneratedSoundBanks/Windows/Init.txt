@@ -1,5 +1,6 @@
 State Group	ID	Name			Wwise Object Path	Notes
 	1021618141	MusicState			\Default Work Unit\MusicState	
+	2978820491	AudioMenuState			\Default Work Unit\AudioMenuState	
 	3443944880	MelodyState			\Default Work Unit\MelodyState	
 	3737870095	AimDirection			\Default Work Unit\AimDirection	
 	4091656514	GameState			\Default Work Unit\GameState	
@@ -8,6 +9,9 @@ State	ID	Name	State Group			Notes
 	748895195	None	MusicState			
 	3207097637	MusicOff	MusicState			
 	3998479257	MusicOn	MusicState			
+	748895195	None	AudioMenuState			
+	2139648023	AudioMenuOn	AudioMenuState			
+	3804790955	AudioMenuOff	AudioMenuState			
 	748895195	None	MelodyState			
 	875054468	MelodyOff	MelodyState			
 	2796181470	MelodyOn	MelodyState			
@@ -22,11 +26,12 @@ State	ID	Name	State Group			Notes
 
 Custom State	ID	Name	State Group	Owner		Notes
 	267445440	MelodyOn	MelodyState	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music		
+	467346323	AudioMenuOff	AudioMenuState	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Voice\AudioMenu		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	257343836	RTPC_MusicBusFade			\Music\RTPC_MusicBusFade	
 	1574311894	RTPC_EffectsVolumeSettings			\UI\RTPC_EffectsVolumeSettings	
-	1923019727	RTPC_AudioMenuVolumeSettings			\UI\RTPC_AudioMenuVolumeSettings	
+	2118858538	RTPC_VoiceVolumeSettings			\UI\RTPC_VoiceVolumeSettings	
 	3453464353	RTPC_MusicVolumeSettings			\UI\RTPC_MusicVolumeSettings	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
@@ -34,7 +39,8 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
 	1229948536	Environment			\Default Work Unit\Master Audio Bus\SFX\Environment	
 	2429736717	Melodies			\Default Work Unit\Master Audio Bus\Music\Melodies	
-	3105667492	AudioMenu			\Default Work Unit\Master Audio Bus\AudioMenu	
+	3105667492	AudioMenu			\Default Work Unit\Master Audio Bus\Voice\AudioMenu	
+	3170124113	Voice			\Default Work Unit\Master Audio Bus\Voice	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
 

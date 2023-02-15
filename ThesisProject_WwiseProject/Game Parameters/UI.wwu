@@ -3,7 +3,7 @@
 	<GameParameters>
 		<WorkUnit Name="UI" ID="{28E032A7-F230-4046-B70A-9B378FBF00AD}" PersistMode="Standalone">
 			<ChildrenList>
-				<GameParameter Name="RTPC_AudioMenuVolumeSettings" ID="{4AACEBAC-274E-444E-B31E-C3D3FCBF4951}">
+				<GameParameter Name="RTPC_MusicVolumeSettings" ID="{4AACEBAC-274E-444E-B31E-C3D3FCBF4951}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="10"/>
 						<Property Name="Max" Type="Real64" Value="10"/>
@@ -15,7 +15,7 @@
 						<Property Name="Max" Type="Real64" Value="10"/>
 					</PropertyList>
 				</GameParameter>
-				<GameParameter Name="RTPC_MusicVolumeSettings" ID="{3057E62F-CF98-4255-BD17-B97F194E600F}">
+				<GameParameter Name="RTPC_VoiceVolumeSettings" ID="{3057E62F-CF98-4255-BD17-B97F194E600F}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="10"/>
 						<Property Name="Max" Type="Real64" Value="10"/>

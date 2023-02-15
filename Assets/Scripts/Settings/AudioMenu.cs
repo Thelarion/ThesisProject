@@ -15,6 +15,18 @@ public class AudioMenu : MonoBehaviour
 
     public int Selection { get { return selection; } set { selection = value; ButtonReadAloud(); } }
 
+    public void AudioMenuToggle(bool value)
+    {
+        if (value)
+        {
+            AkSoundEngine.SetState("AudioMenuState", "AudioMenuOn");
+        }
+        else
+        {
+            AkSoundEngine.SetState("AudioMenuState", "AudioMenuOff");
+        }
+    }
+
     public void SwitchToggleAndReadAloud(GameObject switchGO, string subSwitchValue)
     {
         AkSoundEngine.SetSwitch("ButtonReadAloud", switchGO.name, gameObject);
@@ -51,6 +63,7 @@ public class AudioMenu : MonoBehaviour
 
     private void Start()
     {
+        AkSoundEngine.SetState("AudioMenuState", "AudioMenuOff");
         print(toggles[Selection].name);
         ButtonReadAloud();
     }
@@ -79,7 +92,7 @@ public class AudioMenu : MonoBehaviour
         {
             string toggleName = toggles[Selection].name;
 
-            if (toggleName == "AudioMenuVolume" || toggleName == "MusicVolume" || toggleName == "EffectsVolume")
+            if (toggleName == "VoiceVolume" || toggleName == "MusicVolume" || toggleName == "EffectsVolume")
             {
                 Slider slider = toggles[Selection].transform.GetChild(1).GetComponent<Slider>();
                 slider.value = slider.value + 1;
@@ -97,7 +110,7 @@ public class AudioMenu : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            if (toggleName == "AudioMenuVolume" || toggleName == "MusicVolume" || toggleName == "EffectsVolume")
+            if (toggleName == "VoiceVolume" || toggleName == "MusicVolume" || toggleName == "EffectsVolume")
             {
                 Slider slider = toggles[Selection].transform.GetChild(1).GetComponent<Slider>();
                 slider.value = slider.value - 1;

@@ -41,19 +41,20 @@
 					<ChildrenList>
 						<Switch Name="Music" ID="{F13C23BB-13DD-4E8A-9806-97B18ED58E1A}"/>
 						<Switch Name="Effects" ID="{DF101DDA-99A3-4826-BB05-82E4347BC0B5}"/>
-						<Switch Name="AudioMenu" ID="{864E68C8-6ECE-4112-8817-8444D5318D98}"/>
+						<Switch Name="Voice" ID="{864E68C8-6ECE-4112-8817-8444D5318D98}"/>
 					</ChildrenList>
 				</SwitchGroup>
 				<SwitchGroup Name="ButtonReadAloud" ID="{BF942F16-41D1-400B-B3FE-4E5F7E856000}">
 					<ChildrenList>
 						<Switch Name="AudioMenuToggle" ID="{28CC68B0-C06B-4396-B605-BBC0D1315C54}"/>
-						<Switch Name="AudioMenuVolume" ID="{1F5EF52F-1820-4724-904A-F35F843CB394}"/>
+						<Switch Name="VoiceVolume" ID="{1F5EF52F-1820-4724-904A-F35F843CB394}"/>
 						<Switch Name="MusicVolume" ID="{BDB9E247-8D23-47FD-80FE-8CBB86033547}"/>
 						<Switch Name="EffectsVolume" ID="{F4D6FD0C-AEB8-4F81-999F-6A4AB1F2B280}"/>
 						<Switch Name="ReturnSpace" ID="{F41FCCD7-DEA9-4635-893E-DEC7FA5FF3D7}"/>
 						<Switch Name="ArrowKeys" ID="{BB50126F-D323-4400-B86E-B2AA2D1BEDDA}"/>
 						<Switch Name="AudioVisualiserToggle" ID="{CD65CC85-0C5C-43B8-82FE-DF817609E0D7}"/>
 						<Switch Name="Default" ID="{0FB83FEE-1C52-4BF0-A15E-7B3DE3DB8952}"/>
+						<Switch Name="Start" ID="{63C6BB87-BF1D-4807-89D3-3D27DD0A40C2}"/>
 					</ChildrenList>
 				</SwitchGroup>
 				<SwitchGroup Name="AudioMenuToggle" ID="{295A64D3-6D0F-4BEC-9654-5A33B7D556FD}">

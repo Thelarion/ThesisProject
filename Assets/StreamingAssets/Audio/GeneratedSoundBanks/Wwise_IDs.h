@@ -110,6 +110,18 @@ namespace AK
             } // namespace STATE
         } // namespace AIMDIRECTION
 
+        namespace AUDIOMENUSTATE
+        {
+            static const AkUniqueID GROUP = 2978820491U;
+
+            namespace STATE
+            {
+                static const AkUniqueID AUDIOMENUOFF = 3804790955U;
+                static const AkUniqueID AUDIOMENUON = 2139648023U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace AUDIOMENUSTATE
+
         namespace GAMESTATE
         {
             static const AkUniqueID GROUP = 4091656514U;
@@ -180,12 +192,13 @@ namespace AK
             {
                 static const AkUniqueID ARROWKEYS = 2734938552U;
                 static const AkUniqueID AUDIOMENUTOGGLE = 1238775560U;
-                static const AkUniqueID AUDIOMENUVOLUME = 1379827610U;
                 static const AkUniqueID AUDIOVISUALISERTOGGLE = 3569097980U;
                 static const AkUniqueID DEFAULT = 782826392U;
                 static const AkUniqueID EFFECTSVOLUME = 640585335U;
                 static const AkUniqueID MUSICVOLUME = 2346531308U;
                 static const AkUniqueID RETURNSPACE = 4024813983U;
+                static const AkUniqueID START = 1281810935U;
+                static const AkUniqueID VOICEVOLUME = 414646191U;
             } // namespace SWITCH
         } // namespace BUTTONREADALOUD
 
@@ -249,9 +262,9 @@ namespace AK
 
             namespace SWITCH
             {
-                static const AkUniqueID AUDIOMENU = 3105667492U;
                 static const AkUniqueID EFFECTS = 1942696649U;
                 static const AkUniqueID MUSIC = 3991942870U;
+                static const AkUniqueID VOICE = 3170124113U;
             } // namespace SWITCH
         } // namespace VOLUMECHECK
 
@@ -259,7 +272,6 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
-        static const AkUniqueID RTPC_AUDIOMENUVOLUMESETTINGS = 1923019727U;
         static const AkUniqueID RTPC_BEACON_LR_VOLUME = 4120900405U;
         static const AkUniqueID RTPC_DISTANCE_FREQ = 1364189011U;
         static const AkUniqueID RTPC_EFFECTSVOLUMESETTINGS = 1574311894U;
@@ -270,6 +282,7 @@ namespace AK
         static const AkUniqueID RTPC_MUSICBUSFADE = 257343836U;
         static const AkUniqueID RTPC_MUSICVOLUMESETTINGS = 3453464353U;
         static const AkUniqueID RTPC_SYNTH_PWM_UP_DOWN = 815616169U;
+        static const AkUniqueID RTPC_VOICEVOLUMESETTINGS = 2118858538U;
         static const AkUniqueID RTPC_WALL_OCCLUSION = 872361937U;
     } // namespace GAME_PARAMETERS
 
@@ -293,6 +306,7 @@ namespace AK
         static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID NOTES = 201729212U;
         static const AkUniqueID SFX = 393239870U;
+        static const AkUniqueID VOICE = 3170124113U;
     } // namespace BUSSES
 
     namespace AUX_BUSSES

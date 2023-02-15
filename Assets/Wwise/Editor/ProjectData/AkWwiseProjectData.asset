@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 111a36df2b99a2459ec0d5f0605e9fb4
     GuidInternal: 
-    m_lastTime: -8585251893150322875
+    m_lastTime: -8585251337520102999
     List:
     - name: AudioMenu
       guid: e673bc3db8f4c14eaffb601995ce92ae
@@ -53,10 +53,13 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Voice
+        ObjectType: 2
+        guid: 58d2cb1463c05f4f8620f1cd9a64e84f
       - ElementName: AudioMenu
         ObjectType: 2
         guid: e673bc3db8f4c14eaffb601995ce92ae
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AudioMenu
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Voice\AudioMenu
     - name: Environment
       guid: ae6f6b737fc0694c98d071093c86bcc7
       id: 1229948536
@@ -185,6 +188,23 @@ MonoBehaviour:
         ObjectType: 2
         guid: e228b6c5e630c949b05412444dce2acc
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX
+    - name: Voice
+      guid: 58d2cb1463c05f4f8620f1cd9a64e84f
+      id: 3170124113
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 111a36df2b99a2459ec0d5f0605e9fb4
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Voice
+        ObjectType: 2
+        guid: 58d2cb1463c05f4f8620f1cd9a64e84f
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Voice
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -2131,22 +2151,8 @@ MonoBehaviour:
     ParentPath: Game Parameters\UI
     guid: a732e02830f24640b70a9b378fbf00ad
     GuidInternal: 
-    m_lastTime: -8585251895039485528
+    m_lastTime: -8585251337519873790
     List:
-    - name: RTPC_AudioMenuVolumeSettings
-      guid: acebac4a4e274e44b31ec3d3fcbf4951
-      id: 1923019727
-      PathAndIcons:
-      - ElementName: Game Parameters
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: UI
-        ObjectType: 12
-        guid: a732e02830f24640b70a9b378fbf00ad
-      - ElementName: RTPC_AudioMenuVolumeSettings
-        ObjectType: 13
-        guid: acebac4a4e274e44b31ec3d3fcbf4951
-      Path: Game Parameters\UI\RTPC_AudioMenuVolumeSettings
     - name: RTPC_EffectsVolumeSettings
       guid: 556716ca2207d14a8a374e715c54b2e7
       id: 1574311894
@@ -2162,7 +2168,7 @@ MonoBehaviour:
         guid: 556716ca2207d14a8a374e715c54b2e7
       Path: Game Parameters\UI\RTPC_EffectsVolumeSettings
     - name: RTPC_MusicVolumeSettings
-      guid: 2fe6573098cf5542bd17b97f194e600f
+      guid: acebac4a4e274e44b31ec3d3fcbf4951
       id: 3453464353
       PathAndIcons:
       - ElementName: Game Parameters
@@ -2173,8 +2179,22 @@ MonoBehaviour:
         guid: a732e02830f24640b70a9b378fbf00ad
       - ElementName: RTPC_MusicVolumeSettings
         ObjectType: 13
-        guid: 2fe6573098cf5542bd17b97f194e600f
+        guid: acebac4a4e274e44b31ec3d3fcbf4951
       Path: Game Parameters\UI\RTPC_MusicVolumeSettings
+    - name: RTPC_VoiceVolumeSettings
+      guid: 2fe6573098cf5542bd17b97f194e600f
+      id: 2118858538
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: UI
+        ObjectType: 12
+        guid: a732e02830f24640b70a9b378fbf00ad
+      - ElementName: RTPC_VoiceVolumeSettings
+        ObjectType: 13
+        guid: 2fe6573098cf5542bd17b97f194e600f
+      Path: Game Parameters\UI\RTPC_VoiceVolumeSettings
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -2187,7 +2207,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 7fb15f74f422ed4bad756627e85a9cb3
     GuidInternal: 
-    m_lastTime: -8585252165808593621
+    m_lastTime: -8585251353044230909
     List:
     - name: AimDirection
       guid: bdd2e6e80180014ab731b31c36909571
@@ -2284,6 +2304,72 @@ MonoBehaviour:
         - ElementName: None
           ObjectType: 8
           guid: 78a0b24ab3e88648a7ca0c8e3cb10d5e
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: AudioMenuState
+      guid: c764a5c9a602cc44852f5d30ac0fb07c
+      id: 2978820491
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7fb15f74f422ed4bad756627e85a9cb3
+      - ElementName: AudioMenuState
+        ObjectType: 9
+        guid: c764a5c9a602cc44852f5d30ac0fb07c
+      Path: States\Default Work Unit\AudioMenuState
+      values:
+      - name: AudioMenuOff
+        guid: cbcb5f2b2342e14f8d67511a190ceb25
+        id: 3804790955
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 7fb15f74f422ed4bad756627e85a9cb3
+        - ElementName: AudioMenuState
+          ObjectType: 9
+          guid: c764a5c9a602cc44852f5d30ac0fb07c
+        - ElementName: AudioMenuOff
+          ObjectType: 8
+          guid: cbcb5f2b2342e14f8d67511a190ceb25
+      - name: AudioMenuOn
+        guid: 09933c88020c6f498a0701bb766396a1
+        id: 2139648023
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 7fb15f74f422ed4bad756627e85a9cb3
+        - ElementName: AudioMenuState
+          ObjectType: 9
+          guid: c764a5c9a602cc44852f5d30ac0fb07c
+        - ElementName: AudioMenuOn
+          ObjectType: 8
+          guid: 09933c88020c6f498a0701bb766396a1
+      - name: None
+        guid: 9208ede658142f4e816528520a23ce6d
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 7fb15f74f422ed4bad756627e85a9cb3
+        - ElementName: AudioMenuState
+          ObjectType: 9
+          guid: c764a5c9a602cc44852f5d30ac0fb07c
+        - ElementName: None
+          ObjectType: 8
+          guid: 9208ede658142f4e816528520a23ce6d
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -2497,7 +2583,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 2cc96633e1efc745a10ab3fad73419fc
     GuidInternal: 
-    m_lastTime: -8585251413056532567
+    m_lastTime: -8585251347034815736
     List:
     - name: AudioMenuToggle
       guid: d3645a290f6dec4b96545a33b7d556fd
@@ -2646,22 +2732,6 @@ MonoBehaviour:
         - ElementName: AudioMenuToggle
           ObjectType: 10
           guid: b068cc286bc09643b605bbc0d1315c54
-      - name: AudioMenuVolume
-        guid: 2ff55e1f20182447904af35f843cb394
-        id: 1379827610
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 2cc96633e1efc745a10ab3fad73419fc
-        - ElementName: ButtonReadAloud
-          ObjectType: 11
-          guid: 162f94bfd1410b40b3fe4e5f7e856000
-        - ElementName: AudioMenuVolume
-          ObjectType: 10
-          guid: 2ff55e1f20182447904af35f843cb394
       - name: AudioVisualiserToggle
         guid: 85cc65cd5c0cb84382fedf817609e0d7
         id: 3569097980
@@ -2742,6 +2812,38 @@ MonoBehaviour:
         - ElementName: ReturnSpace
           ObjectType: 10
           guid: d7cc1ff4a9de3546893edec7fa5ff3d7
+      - name: Start
+        guid: 87bbc6631dbf074889d33d27dd0a40c2
+        id: 1281810935
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 2cc96633e1efc745a10ab3fad73419fc
+        - ElementName: ButtonReadAloud
+          ObjectType: 11
+          guid: 162f94bfd1410b40b3fe4e5f7e856000
+        - ElementName: Start
+          ObjectType: 10
+          guid: 87bbc6631dbf074889d33d27dd0a40c2
+      - name: VoiceVolume
+        guid: 2ff55e1f20182447904af35f843cb394
+        id: 414646191
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 2cc96633e1efc745a10ab3fad73419fc
+        - ElementName: ButtonReadAloud
+          ObjectType: 11
+          guid: 162f94bfd1410b40b3fe4e5f7e856000
+        - ElementName: VoiceVolume
+          ObjectType: 10
+          guid: 2ff55e1f20182447904af35f843cb394
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -3120,22 +3222,6 @@ MonoBehaviour:
         guid: 1ccc21b775c6e240bb0139bd8c6097ec
       Path: Switches\Default Work Unit\VolumeCheck
       values:
-      - name: AudioMenu
-        guid: c8684e86ce6e124188178444d5318d98
-        id: 3105667492
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 2cc96633e1efc745a10ab3fad73419fc
-        - ElementName: VolumeCheck
-          ObjectType: 11
-          guid: 1ccc21b775c6e240bb0139bd8c6097ec
-        - ElementName: AudioMenu
-          ObjectType: 10
-          guid: c8684e86ce6e124188178444d5318d98
       - name: Effects
         guid: da1d10dfa3992648bb0582e4347bc0b5
         id: 1942696649
@@ -3168,6 +3254,22 @@ MonoBehaviour:
         - ElementName: Music
           ObjectType: 10
           guid: bb233cf1dd138a4e980697b18ed58e1a
+      - name: Voice
+        guid: c8684e86ce6e124188178444d5318d98
+        id: 3170124113
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 2cc96633e1efc745a10ab3fad73419fc
+        - ElementName: VolumeCheck
+          ObjectType: 11
+          guid: 1ccc21b775c6e240bb0139bd8c6097ec
+        - ElementName: Voice
+          ObjectType: 10
+          guid: c8684e86ce6e124188178444d5318d98
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
