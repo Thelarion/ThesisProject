@@ -97,7 +97,7 @@ public class AudioMenu : MonoBehaviour
                 Slider slider = toggles[Selection].transform.GetChild(1).GetComponent<Slider>();
                 slider.value = slider.value + 1;
             }
-            else
+            else if (toggleName != "Start")
             {
                 toggles[Selection].isOn = !toggles[Selection].isOn;
             }
@@ -110,12 +110,16 @@ public class AudioMenu : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
+            if (toggleName == "Start")
+            {
+                print("return");
+            }
             if (toggleName == "VoiceVolume" || toggleName == "MusicVolume" || toggleName == "EffectsVolume")
             {
                 Slider slider = toggles[Selection].transform.GetChild(1).GetComponent<Slider>();
                 slider.value = slider.value - 1;
             }
-            else
+            else if (toggleName != "Start")
             {
                 toggles[Selection].isOn = !toggles[Selection].isOn;
             }

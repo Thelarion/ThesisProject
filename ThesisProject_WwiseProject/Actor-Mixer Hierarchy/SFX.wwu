@@ -9,7 +9,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+							<ObjectRef Name="SFX" ID="{C5B628E2-30E6-49C9-B054-12444DCE2ACC}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -583,7 +583,7 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
-						<Sound Name="WrongNoteTryAgain" ID="{49FE5778-A0B2-471F-B88D-4966FF41A239}" ShortID="660227625">
+						<ActorMixer Name="Slingshot" ID="{09F6AA8A-F61B-43D2-8474-3CD94CDDA081}" ShortID="553427863">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
@@ -593,45 +593,120 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="WrongNoteAgain" ID="{97887DF0-AC79-46C1-AA24-192A3B77EC32}">
-									<Language>SFX</Language>
-									<AudioFile>WrongNoteAgain.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="253861454"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="WrongNoteAgain" ID="{97887DF0-AC79-46C1-AA24-192A3B77EC32}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="CorrectNote" ID="{070E9EE8-33DA-4067-A1ED-C34571720F4D}" ShortID="665106603">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="CorrectNote" ID="{72B77892-E732-44E0-8D73-883A1543F542}">
+								<RandomSequenceContainer Name="Release" ID="{8B03A719-79DB-44C5-BAF0-B699AC8CF739}" ShortID="1062446864">
 									<PropertyList>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>CorrectNote.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="158003658"/>
-									</MediaIDList>
-								</AudioFileSource>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="SRelease1" ID="{B7D3CBEF-A8D2-425F-802C-4BDB717BF923}" ShortID="674323734">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SRelease1" ID="{CE93CF54-F34E-4E44-B72C-AD07352EEC9F}">
+													<Language>SFX</Language>
+													<AudioFile>SRelease1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="985489907"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SRelease1" ID="{CE93CF54-F34E-4E44-B72C-AD07352EEC9F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SRelease2" ID="{F20E04D3-D047-488E-868B-67D5E58A5B48}" ShortID="580347830">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SRelease2" ID="{0D8C4372-F981-42CC-B0DD-5DD5A9896A6B}">
+													<Language>SFX</Language>
+													<AudioFile>SRelease2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="904983868"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SRelease2" ID="{0D8C4372-F981-42CC-B0DD-5DD5A9896A6B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SRelease3" ID="{72164652-D3AC-4A96-BCB9-2E63E53476CB}" ShortID="852727443">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SRelease3" ID="{89C988E5-26C2-451F-93C7-DED066041BF8}">
+													<Language>SFX</Language>
+													<AudioFile>SRelease3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="185344975"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SRelease3" ID="{89C988E5-26C2-451F-93C7-DED066041BF8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SRelease4" ID="{9F9B34AA-FCBE-4DED-9F97-85BADA5FDDA9}" ShortID="225118530">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SRelease4" ID="{1343DD54-FF3D-4854-84A0-E5F96254A4C9}">
+													<Language>SFX</Language>
+													<AudioFile>SRelease4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="62582298"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SRelease4" ID="{1343DD54-FF3D-4854-84A0-E5F96254A4C9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
 							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="CorrectNote" ID="{72B77892-E732-44E0-8D73-883A1543F542}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
+						</ActorMixer>
 					</ChildrenList>
 				</ActorMixer>
+				<WorkUnit Name="Player" ID="{CD2E3D8D-DD30-490B-B0DD-3436B5C8830B}" PersistMode="Reference"/>
+				<WorkUnit Name="UI" ID="{90F6AD7A-8278-4286-AB5B-57631446068A}" PersistMode="Reference"/>
+				<WorkUnit Name="Aiming" ID="{B75879FE-481B-4EE0-8FD5-29339933BA93}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

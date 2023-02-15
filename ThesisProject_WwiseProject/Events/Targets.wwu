@@ -14,11 +14,11 @@
 						</Action>
 						<Action Name="" ID="{5991E875-0CB5-44C4-BB75-A1A976860132}" ShortID="17604382">
 							<PropertyList>
-								<Property Name="Delay" Type="Real64" Value="0.3"/>
+								<Property Name="Delay" Type="Real64" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="WrongNoteTryAgain" ID="{49FE5778-A0B2-471F-B88D-4966FF41A239}" WorkUnitID="{690ABE9D-D445-44AA-AE0F-2C6B0F3C9C08}"/>
+									<ObjectRef Name="WrongNoteTryAgain" ID="{49FE5778-A0B2-471F-B88D-4966FF41A239}" WorkUnitID="{14E6A00B-1C33-466E-9627-FBDE77EDBF18}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -46,7 +46,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="CorrectNote" ID="{070E9EE8-33DA-4067-A1ED-C34571720F4D}" WorkUnitID="{690ABE9D-D445-44AA-AE0F-2C6B0F3C9C08}"/>
+									<ObjectRef Name="CorrectNote" ID="{070E9EE8-33DA-4067-A1ED-C34571720F4D}" WorkUnitID="{14E6A00B-1C33-466E-9627-FBDE77EDBF18}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

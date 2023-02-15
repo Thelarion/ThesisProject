@@ -8,6 +8,13 @@ public class SliderController : MonoBehaviour
     public AK.Wwise.Event Play_VolumeCheck;
     public AK.Wwise.Event Stop_VolumeCheck;
 
+    private void Start()
+    {
+        AkSoundEngine.SetRTPCValue("RTPC_MusicVolumeSettings", 5);
+        AkSoundEngine.SetRTPCValue("RTPC_VoiceVolumeSettings", 5);
+        AkSoundEngine.SetRTPCValue("RTPC_EffectsVolumeSettings", 5);
+    }
+
     private void PostEvents()
     {
         Stop_VolumeCheck.Post(gameObject);

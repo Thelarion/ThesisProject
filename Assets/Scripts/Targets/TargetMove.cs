@@ -16,7 +16,7 @@ public class TargetMove : MonoBehaviour
     float randomYPrev = 0f;
     float randomZPrev = 0f;
 
-    private void Start()
+    private void Awake()
     {
         StartCoroutine(WaitForPositionInitialization());
     }
@@ -34,7 +34,7 @@ public class TargetMove : MonoBehaviour
 
     IEnumerator WaitForPositionInitialization()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0f);
         startingPosition = transform.position;
         positionIsSet = true;
     }

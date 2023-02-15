@@ -11,7 +11,7 @@ public class DistanceToTarget : MonoBehaviour
         get { return currentLoopObjectShortestDistance; }
     }
 
-    private void Awake()
+    private void Start()
     {
         DetermineCurrentTarget();
     }
@@ -42,7 +42,6 @@ public class DistanceToTarget : MonoBehaviour
                 {
                     distanceCameraNextTarget = compareValueTarget;
                     currentLoopObjectShortestDistance = target;
-
                 };
             }
         }

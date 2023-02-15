@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{B75879FE-481B-4EE0-8FD5-29339933BA93}" SchemaVersion="110">
+<WwiseDocument Type="WorkUnit" ID="{B75879FE-481B-4EE0-8FD5-29339933BA93}" SchemaVersion="110" RootDocumentID="{690ABE9D-D445-44AA-AE0F-2C6B0F3C9C08}" ParentDocumentID="{690ABE9D-D445-44AA-AE0F-2C6B0F3C9C08}">
 	<AudioObjects>
-		<WorkUnit Name="Aiming" ID="{B75879FE-481B-4EE0-8FD5-29339933BA93}" PersistMode="Standalone">
+		<WorkUnit Name="Aiming" ID="{B75879FE-481B-4EE0-8FD5-29339933BA93}" OwnerID="{690ABE9D-D445-44AA-AE0F-2C6B0F3C9C08}" PersistMode="Nested">
 			<ChildrenList>
 				<ActorMixer Name="Aiming" ID="{B8BC739B-FB4B-48E8-AFC6-BE301E66D8CA}" ShortID="66461499">
 					<ReferenceList>

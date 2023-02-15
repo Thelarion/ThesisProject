@@ -6,9 +6,10 @@
 				<SoundBank Name="Main" ID="{E965A4AA-07EE-4611-8F19-203F9D710CE1}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Notes" ID="{BC323060-9114-40BB-9A3E-58E3E9BEC649}" WorkUnitID="{BC323060-9114-40BB-9A3E-58E3E9BEC649}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Music" ID="{41C7A8FE-D04F-42B7-BFA2-9828FE7796A2}" WorkUnitID="{41C7A8FE-D04F-42B7-BFA2-9828FE7796A2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="BGM" ID="{41C7A8FE-D04F-42B7-BFA2-9828FE7796A2}" WorkUnitID="{41C7A8FE-D04F-42B7-BFA2-9828FE7796A2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Beacon" ID="{958AAA1C-8167-442E-B92B-EE0E141E8819}" WorkUnitID="{958AAA1C-8167-442E-B92B-EE0E141E8819}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Player" ID="{E5F739A7-29CA-448A-A84C-F8243F0F273A}" WorkUnitID="{E5F739A7-29CA-448A-A84C-F8243F0F273A}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Slingshot" ID="{37F260BF-1198-47C8-8DFC-5634426ACD5E}" WorkUnitID="{37F260BF-1198-47C8-8DFC-5634426ACD5E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Melodies" ID="{7FF9B866-2F47-47D7-9128-7FBB4E712395}" WorkUnitID="{7FF9B866-2F47-47D7-9128-7FBB4E712395}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Testing" ID="{8D8AAA91-BFB2-48C7-9504-7F3F41BFB36E}" WorkUnitID="{8D8AAA91-BFB2-48C7-9504-7F3F41BFB36E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="UI" ID="{5A26AD13-FE32-4B77-8E33-72FC1241CEEF}" WorkUnitID="{5A26AD13-FE32-4B77-8E33-72FC1241CEEF}" Origin="Manual" Filter="7"/>

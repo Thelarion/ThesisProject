@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{35658988-EBE6-42AB-BE13-CC3667F51DCE}" SchemaVersion="110">
+<WwiseDocument Type="WorkUnit" ID="{35658988-EBE6-42AB-BE13-CC3667F51DCE}" SchemaVersion="110" RootDocumentID="{B3AD5ED7-432B-47B3-8DD5-2A3ACC408D05}" ParentDocumentID="{B3AD5ED7-432B-47B3-8DD5-2A3ACC408D05}">
 	<AudioObjects>
-		<WorkUnit Name="Notes" ID="{35658988-EBE6-42AB-BE13-CC3667F51DCE}" PersistMode="Standalone">
+		<WorkUnit Name="Notes" ID="{35658988-EBE6-42AB-BE13-CC3667F51DCE}" OwnerID="{B3AD5ED7-432B-47B3-8DD5-2A3ACC408D05}" PersistMode="Nested">
 			<ChildrenList>
 				<ActorMixer Name="NotesMixer" ID="{69969035-408C-410B-AFC3-FBF9A354465F}" ShortID="991849679">
 					<PropertyList>

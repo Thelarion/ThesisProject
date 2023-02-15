@@ -19,7 +19,7 @@
 						<Action Name="" ID="{90CA9E17-24B5-4562-8247-FAEAAD3DBEC6}" ShortID="649912769">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="VolumeCheck" ID="{2384CCE4-AD13-45B7-A6D1-2892CE75B5DC}" WorkUnitID="{90F6AD7A-8278-4286-AB5B-57631446068A}"/>
+									<ObjectRef Name="VolumeCheck" ID="{2384CCE4-AD13-45B7-A6D1-2892CE75B5DC}" WorkUnitID="{14E6A00B-1C33-466E-9627-FBDE77EDBF18}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -62,9 +62,19 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="VolumeCheck" ID="{2384CCE4-AD13-45B7-A6D1-2892CE75B5DC}" WorkUnitID="{90F6AD7A-8278-4286-AB5B-57631446068A}"/>
+									<ObjectRef Name="VolumeCheck" ID="{2384CCE4-AD13-45B7-A6D1-2892CE75B5DC}" WorkUnitID="{14E6A00B-1C33-466E-9627-FBDE77EDBF18}"/>
 								</Reference>
 							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_AllEvents" ID="{021021FD-1998-44F7-8357-4092D2BCD243}">
+					<ChildrenList>
+						<Action Name="" ID="{F06F6C31-89CB-44C1-84E8-E387AFB92D3E}" ShortID="167697818">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+							</PropertyList>
+							<ReferenceList/>
 						</Action>
 					</ChildrenList>
 				</Event>

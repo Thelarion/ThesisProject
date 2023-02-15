@@ -24,6 +24,7 @@ public class AudioController : MonoBehaviour
         {
             Transform closestTarget = DistanceToTarget.CurrentLoopObjectShortestDistance.transform;
             float currentDistance = Vector3.Distance(player.transform.position, closestTarget.transform.position);
+            // print(currentDistance);
             AkSoundEngine.SetRTPCValue("RTPC_MusicBusFade", currentDistance);
         }
         else

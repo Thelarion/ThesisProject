@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{E5F10FC4-A206-4CEE-8C77-3A46AC386FCD}" SchemaVersion="110">
+<WwiseDocument Type="WorkUnit" ID="{E5F10FC4-A206-4CEE-8C77-3A46AC386FCD}" SchemaVersion="110" RootDocumentID="{834F9D6A-2FA4-4401-8C17-0B7E3D377947}" ParentDocumentID="{834F9D6A-2FA4-4401-8C17-0B7E3D377947}">
 	<InteractiveMusic>
-		<WorkUnit Name="Melodies" ID="{E5F10FC4-A206-4CEE-8C77-3A46AC386FCD}" PersistMode="Standalone">
+		<WorkUnit Name="Melodies" ID="{E5F10FC4-A206-4CEE-8C77-3A46AC386FCD}" OwnerID="{834F9D6A-2FA4-4401-8C17-0B7E3D377947}" PersistMode="Nested">
 			<ChildrenList>
 				<MusicSwitchContainer Name="Melodies" ID="{C6F14BA1-D298-4772-8DD2-8457CA9DF44A}" ShortID="949471318">
 					<ReferenceList>
@@ -13,7 +13,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<MusicSegment Name="C3_E3_A2_B3_C3" ID="{0F381F0A-774E-4EBF-AE44-458D92245DA5}" ShortID="221000671">
+						<MusicSegment Name="C3_E3_A2_B2_C3" ID="{0F381F0A-774E-4EBF-AE44-458D92245DA5}" ShortID="221000671">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="EndPosition" Type="Real64" Value="5926.74805771368"/>
@@ -27,7 +27,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<MusicTrack Name="C3_E3_A2_B3_C3" ID="{97E18C46-F5AA-4517-8649-5F4B4F005FF6}" ShortID="329753352">
+								<MusicTrack Name="C3_E3_A2_B2_C3" ID="{97E18C46-F5AA-4517-8649-5F4B4F005FF6}" ShortID="329753352">
 									<ReferenceList>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
@@ -240,7 +240,7 @@
 								<PathElementRef Name="Melodies" ID="{CE0E2E8C-41A5-417D-BB6A-65A8F9341662}"/>
 							</Path>
 							<AudioNodeInfo>
-								<AudioNodeRef Name="C3_E3_A2_B3_C3" ID="{0F381F0A-774E-4EBF-AE44-458D92245DA5}" WorkUnitID="{E5F10FC4-A206-4CEE-8C77-3A46AC386FCD}" Platform="Linked"/>
+								<AudioNodeRef Name="C3_E3_A2_B2_C3" ID="{0F381F0A-774E-4EBF-AE44-458D92245DA5}" WorkUnitID="{E5F10FC4-A206-4CEE-8C77-3A46AC386FCD}" Platform="Linked"/>
 							</AudioNodeInfo>
 						</Entry>
 						<Entry>
@@ -248,7 +248,7 @@
 								<PathElementRef Name="M1" ID="{EE148B74-339E-4862-B987-D0463480A443}"/>
 							</Path>
 							<AudioNodeInfo>
-								<AudioNodeRef Name="C3_E3_A2_B3_C3" ID="{0F381F0A-774E-4EBF-AE44-458D92245DA5}" WorkUnitID="{E5F10FC4-A206-4CEE-8C77-3A46AC386FCD}" Platform="Linked"/>
+								<AudioNodeRef Name="C3_E3_A2_B2_C3" ID="{0F381F0A-774E-4EBF-AE44-458D92245DA5}" WorkUnitID="{E5F10FC4-A206-4CEE-8C77-3A46AC386FCD}" Platform="Linked"/>
 							</AudioNodeInfo>
 						</Entry>
 					</EntryList>

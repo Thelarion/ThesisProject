@@ -72,6 +72,7 @@ namespace StarterAssets
         // bool isRunning;
         public float FootstepDelayTime = 0.3f;
         public AK.Wwise.Event FootstepSound;
+        public AK.Wwise.Event Play_Slingshot_Release;
 
         [Header("Misc")]
         public AimManager aimManager;
@@ -117,8 +118,8 @@ namespace StarterAssets
         {
             melodyManager = GameObject.Find("List").GetComponent<MelodyManager>();
             gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-            slingshot = GameObject.Find("MasterSlingshot").GetComponent<Slingshot>();
-            // conductorBaton = GameObject.Find("ConductorBaton").GetComponent<ConductorBaton>();
+            // slingshot = GameObject.Find("MasterSlingshot").GetComponent<Slingshot>();
+            conductorBaton = GameObject.Find("ConductorBaton").GetComponent<ConductorBaton>();
             _controller = GetComponent<CharacterController>();
             _input = GetComponent<StarterAssetsInputs>();
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
@@ -151,8 +152,9 @@ namespace StarterAssets
         {
             if (_input.fire)
             {
-                slingshot.FireSlingshot();
-                // conductorBaton.TriggerConductor();
+                // slingshot.FireSlingshot();
+                Play_Slingshot_Release.Post(gameObject);
+                conductorBaton.TriggerConductor();
                 _input.fire = false;
             }
         }

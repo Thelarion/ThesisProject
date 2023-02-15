@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{E97775FD-0D3D-405F-9E19-353A7C2D06C9}" SchemaVersion="110">
+<WwiseDocument Type="WorkUnit" ID="{E97775FD-0D3D-405F-9E19-353A7C2D06C9}" SchemaVersion="110" RootDocumentID="{834F9D6A-2FA4-4401-8C17-0B7E3D377947}" ParentDocumentID="{834F9D6A-2FA4-4401-8C17-0B7E3D377947}">
 	<InteractiveMusic>
-		<WorkUnit Name="BGM" ID="{E97775FD-0D3D-405F-9E19-353A7C2D06C9}" PersistMode="Standalone">
+		<WorkUnit Name="BGM" ID="{E97775FD-0D3D-405F-9E19-353A7C2D06C9}" OwnerID="{834F9D6A-2FA4-4401-8C17-0B7E3D377947}" PersistMode="Nested">
 			<ChildrenList>
 				<MusicSwitchContainer Name="BGM" ID="{FA175E77-C23F-4F20-9E66-BA97D9647278}" ShortID="898640166">
 					<ReferenceList>

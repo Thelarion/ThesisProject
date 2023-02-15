@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{37F260BF-1198-47C8-8DFC-5634426ACD5E}" SchemaVersion="110">
+	<Events>
+		<WorkUnit Name="Slingshot" ID="{37F260BF-1198-47C8-8DFC-5634426ACD5E}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Slingshot_Release" ID="{5F13ECA2-6C4F-49A3-9AF1-9AB5FA1A79D1}">
+					<ChildrenList>
+						<Action Name="" ID="{9F6D9147-8CE0-496C-89EC-5ED393151011}" ShortID="140937071">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Release" ID="{8B03A719-79DB-44C5-BAF0-B699AC8CF739}" WorkUnitID="{690ABE9D-D445-44AA-AE0F-2C6B0F3C9C08}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

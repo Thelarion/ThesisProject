@@ -20,7 +20,6 @@ public class ConductorBaton : MonoBehaviour
     {
         m_Animator.ResetTrigger("OnConduct");
         m_Animator.SetTrigger("OnConduct");
-        Debug.Log("Animation called");
     }
 
     public void FireConductor()

@@ -11,13 +11,13 @@ public class StartMenuManager : MonoBehaviour
     public static bool InclusionState
     {
         get { return _inclusionState; }
-        set { _inclusionState = true; }
+        set { _inclusionState = value; }
     }
 
     public static bool ActivateColour
     {
         get { return _activateColour; }
-        set { _activateColour = true; }
+        set { _activateColour = value; }
     }
 
     public void StartGame()

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{CD2E3D8D-DD30-490B-B0DD-3436B5C8830B}" SchemaVersion="110">
+<WwiseDocument Type="WorkUnit" ID="{CD2E3D8D-DD30-490B-B0DD-3436B5C8830B}" SchemaVersion="110" RootDocumentID="{690ABE9D-D445-44AA-AE0F-2C6B0F3C9C08}" ParentDocumentID="{690ABE9D-D445-44AA-AE0F-2C6B0F3C9C08}">
 	<AudioObjects>
-		<WorkUnit Name="Player" ID="{CD2E3D8D-DD30-490B-B0DD-3436B5C8830B}" PersistMode="Standalone">
+		<WorkUnit Name="Player" ID="{CD2E3D8D-DD30-490B-B0DD-3436B5C8830B}" OwnerID="{690ABE9D-D445-44AA-AE0F-2C6B0F3C9C08}" PersistMode="Nested">
 			<ChildrenList>
 				<SwitchContainer Name="Footsteps" ID="{ADCDE20A-314C-4B47-9238-F38198157E67}" ShortID="932374936">
 					<PropertyList>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-11</Value>
+								<Value>-20</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -20,7 +20,7 @@
 							<ObjectRef Name="Concrete" ID="{7624D16A-D815-43AD-A2F4-FF7B846EB163}" WorkUnitID="{3366C92C-EFE1-45C7-A10A-B3FAD73419FC}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+							<ObjectRef Name="SFX" ID="{C5B628E2-30E6-49C9-B054-12444DCE2ACC}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
 						</Reference>
 						<Reference Name="SwitchGroupOrStateGroup">
 							<ObjectRef Name="Materials" ID="{3142096C-87A8-404F-8FD7-B315FB91A6A9}" WorkUnitID="{3366C92C-EFE1-45C7-A10A-B3FAD73419FC}"/>

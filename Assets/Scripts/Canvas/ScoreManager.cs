@@ -24,11 +24,6 @@ public class ScoreManager : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-        print(_currentScore);
-    }
-
     public void AddPoints()
     {
         _currentScore += 5;

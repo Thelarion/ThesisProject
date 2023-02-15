@@ -237,7 +237,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 36069028d9c6b149af9e7a7e2bc60423
     GuidInternal: 
-    m_lastTime: -8585252227859085333
+    m_lastTime: -8585251199920206331
     List:
     - name: Main
       guid: aaa465e9ee0711468f19203f9d710ce1
@@ -555,6 +555,53 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+  - PhysicalPath: Events\BGM.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: BGM
+      ObjectType: 12
+      guid: fea8c7414fd0b742bfa29828fe7796a2
+    ParentPath: Events\BGM
+    guid: fea8c7414fd0b742bfa29828fe7796a2
+    GuidInternal: 
+    m_lastTime: -8585251113319001448
+    List:
+    - name: Play_BGM
+      guid: 641c615078e96f4b930ae0a615ed3d42
+      id: 3126765036
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: BGM
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: Play_BGM
+        ObjectType: 3
+        guid: 641c615078e96f4b930ae0a615ed3d42
+      Path: Events\BGM\Play_BGM
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_BGM
+      guid: 35e7df37b1bd394ea80e2bf0f81a02d7
+      id: 1073466678
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: BGM
+        ObjectType: 12
+        guid: fea8c7414fd0b742bfa29828fe7796a2
+      - ElementName: Stop_BGM
+        ObjectType: 3
+        guid: 35e7df37b1bd394ea80e2bf0f81a02d7
+      Path: Events\BGM\Stop_BGM
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Events
@@ -579,25 +626,8 @@ MonoBehaviour:
     ParentPath: Events\Melodies
     guid: 66b8f97f472fd74791287fbb4e712395
     GuidInternal: 
-    m_lastTime: -8585252240269708594
+    m_lastTime: -8585251113318951600
     List:
-    - name: C3_E3_A2_B3_C3
-      guid: 4ee8ad68a59ec146968a9a3d04984ebd
-      id: 3334410611
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Melodies
-        ObjectType: 12
-        guid: 66b8f97f472fd74791287fbb4e712395
-      - ElementName: C3_E3_A2_B3_C3
-        ObjectType: 3
-        guid: 4ee8ad68a59ec146968a9a3d04984ebd
-      Path: Events\Melodies\C3_E3_A2_B3_C3
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: MelodyStateOff
       guid: a8fea77287b0f348ad210b6acb17e0e4
       id: 2810620855
@@ -632,33 +662,20 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-  - PhysicalPath: Events\Music.wwu
-    PathAndIcons:
-    - ElementName: Events
-      ObjectType: 5
-      guid: 00000000000000000000000000000000
-    - ElementName: Music
-      ObjectType: 12
-      guid: fea8c7414fd0b742bfa29828fe7796a2
-    ParentPath: Events\Music
-    guid: fea8c7414fd0b742bfa29828fe7796a2
-    GuidInternal: 
-    m_lastTime: -8585251296125824867
-    List:
-    - name: Play_Music
-      guid: 641c615078e96f4b930ae0a615ed3d42
-      id: 2932040671
+    - name: Play_C3_E3_A2_B2_C3
+      guid: 4ee8ad68a59ec146968a9a3d04984ebd
+      id: 1668314063
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
         guid: 00000000000000000000000000000000
-      - ElementName: Music
+      - ElementName: Melodies
         ObjectType: 12
-        guid: fea8c7414fd0b742bfa29828fe7796a2
-      - ElementName: Play_Music
+        guid: 66b8f97f472fd74791287fbb4e712395
+      - ElementName: Play_C3_E3_A2_B2_C3
         ObjectType: 3
-        guid: 641c615078e96f4b930ae0a615ed3d42
-      Path: Events\Music\Play_Music
+        guid: 4ee8ad68a59ec146968a9a3d04984ebd
+      Path: Events\Melodies\Play_C3_E3_A2_B2_C3
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -673,7 +690,7 @@ MonoBehaviour:
     ParentPath: Events\Notes
     guid: 603032bc1491bb409a3e58e3e9bec649
     GuidInternal: 
-    m_lastTime: -8585252205845773601
+    m_lastTime: -8585251127474672573
     List:
     - name: A2
       guid: 1a1bb7ce8a6d3b40afeac51e10a01d36
@@ -1757,7 +1774,7 @@ MonoBehaviour:
     ParentPath: Events\Player
     guid: a739f7e5ca298a44a84cf8243f0f273a
     GuidInternal: 
-    m_lastTime: -8585252889531655394
+    m_lastTime: -8585251126210352275
     List:
     - name: Play_PlayerFoot
       guid: e4392008128a7e4a8c3da3c8af76ee16
@@ -1776,6 +1793,36 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+  - PhysicalPath: Events\Slingshot.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Slingshot
+      ObjectType: 12
+      guid: bf60f2379811c8478dfc5634426acd5e
+    ParentPath: Events\Slingshot
+    guid: bf60f2379811c8478dfc5634426acd5e
+    GuidInternal: 
+    m_lastTime: -8585251204067309426
+    List:
+    - name: Play_Slingshot_Release
+      guid: a2ec135f4f6ca3499af19ab5fa1a79d1
+      id: 3074787511
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Slingshot
+        ObjectType: 12
+        guid: bf60f2379811c8478dfc5634426acd5e
+      - ElementName: Play_Slingshot_Release
+        ObjectType: 3
+        guid: a2ec135f4f6ca3499af19ab5fa1a79d1
+      Path: Events\Slingshot\Play_Slingshot_Release
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\Targets.wwu
     PathAndIcons:
     - ElementName: Events
@@ -1787,7 +1834,7 @@ MonoBehaviour:
     ParentPath: Events\Targets
     guid: a09cc86ac9a7bf4bb5edb78e39af6c44
     GuidInternal: 
-    m_lastTime: -8585252205480034537
+    m_lastTime: -8585251126210840641
     List:
     - name: FreqDistanceEvent
       guid: 74c402e6d7077340a734ccbd7b265c9e
@@ -1881,7 +1928,7 @@ MonoBehaviour:
     ParentPath: Events\UI
     guid: 13ad265a32fe774b8e3372fc1241ceef
     GuidInternal: 
-    m_lastTime: -8585251391002622905
+    m_lastTime: -8585251126210133010
     List:
     - name: DistanceFrameTransition
       guid: b75bda6923c11a45b48382c150b587a0
@@ -1931,6 +1978,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: a97666dc5dee9942952b3ed8ef11a306
       Path: Events\UI\Play_VolumeCheck
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_AllEvents
+      guid: fd2110029819f74483574092d2bcd243
+      id: 2371377610
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: UI
+        ObjectType: 12
+        guid: 13ad265a32fe774b8e3372fc1241ceef
+      - ElementName: Stop_AllEvents
+        ObjectType: 3
+        guid: fd2110029819f74483574092d2bcd243
+      Path: Events\UI\Stop_AllEvents
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -3322,7 +3386,7 @@ MonoBehaviour:
         guid: da8eac4adff1a245a328ede5f79242d9
       Path: Triggers\Default Work Unit\New_Trigger
   ExpandedFileSystemItemIds: 0200000003000000050000000600000007000000090000000a0000000c000000180000001e000000270000002e0000002f00000034000000530000007d000000d2000000fa2f0000
-  ExpandedWaapiItemIds: 010000000200000005000000060000000a0000000c0000000e000000180000001e0000001f00000021000000270000002a000000320000003c0000003d0000003e000000530000007d000000d2000000fa2f0000
+  ExpandedWaapiItemIds: 0100000002000000050000000a0000000c0000000e0000001a0000001e0000001f00000021000000270000002a0000002f00000032000000350000003c0000003d000000530000007d000000d2000000fa2f0000b6f60000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

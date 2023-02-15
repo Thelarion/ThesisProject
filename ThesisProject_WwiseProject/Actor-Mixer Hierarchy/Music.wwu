@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B3AD5ED7-432B-47B3-8DD5-2A3ACC408D05}" SchemaVersion="110">
+	<AudioObjects>
+		<WorkUnit Name="Music" ID="{B3AD5ED7-432B-47B3-8DD5-2A3ACC408D05}" PersistMode="Standalone">
+			<ChildrenList>
+				<WorkUnit Name="Notes" ID="{35658988-EBE6-42AB-BE13-CC3667F51DCE}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

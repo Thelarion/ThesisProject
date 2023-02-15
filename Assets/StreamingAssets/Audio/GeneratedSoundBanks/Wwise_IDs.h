@@ -31,7 +31,6 @@ namespace AK
         static const AkUniqueID C2 = 1853303302U;
         static const AkUniqueID C2S = 3952551681U;
         static const AkUniqueID C3 = 1853303303U;
-        static const AkUniqueID C3_E3_A2_B3_C3 = 3334410611U;
         static const AkUniqueID C3S = 3969329526U;
         static const AkUniqueID C4 = 1853303296U;
         static const AkUniqueID C4S = 3851886195U;
@@ -84,10 +83,14 @@ namespace AK
         static const AkUniqueID MISS = 3062523241U;
         static const AkUniqueID PLAY_BEACONLOCK = 3923622767U;
         static const AkUniqueID PLAY_BEACONLR = 194014728U;
+        static const AkUniqueID PLAY_BGM = 3126765036U;
         static const AkUniqueID PLAY_BUTTONREADALOUD = 2262911975U;
-        static const AkUniqueID PLAY_MUSIC = 2932040671U;
+        static const AkUniqueID PLAY_C3_E3_A2_B2_C3 = 1668314063U;
         static const AkUniqueID PLAY_PLAYERFOOT = 3015844381U;
+        static const AkUniqueID PLAY_SLINGSHOT_RELEASE = 3074787511U;
         static const AkUniqueID PLAY_VOLUMECHECK = 1569887440U;
+        static const AkUniqueID STOP_ALLEVENTS = 2371377610U;
+        static const AkUniqueID STOP_BGM = 1073466678U;
         static const AkUniqueID STOP_BUTTONREADALOUD = 632677629U;
         static const AkUniqueID STOP_VOLUMECHECK = 3712676862U;
         static const AkUniqueID SUCCESS = 3625060726U;

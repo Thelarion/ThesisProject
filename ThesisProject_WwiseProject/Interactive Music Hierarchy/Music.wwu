@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{834F9D6A-2FA4-4401-8C17-0B7E3D377947}" SchemaVersion="110">
+	<InteractiveMusic>
+		<WorkUnit Name="Music" ID="{834F9D6A-2FA4-4401-8C17-0B7E3D377947}" PersistMode="Standalone">
+			<ChildrenList>
+				<WorkUnit Name="BGM" ID="{E97775FD-0D3D-405F-9E19-353A7C2D06C9}" PersistMode="Reference"/>
+				<WorkUnit Name="Melodies" ID="{E5F10FC4-A206-4CEE-8C77-3A46AC386FCD}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</InteractiveMusic>
+</WwiseDocument>

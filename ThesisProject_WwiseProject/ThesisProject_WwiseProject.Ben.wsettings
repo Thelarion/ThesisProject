@@ -3,8 +3,9 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{5DF15E22-79C8-425A-9EC6-9CF4CCC5F5C2}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="G:\My Drive\02_KTH\00. Master Thesis\7. Project Files\Music\"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="G:\My Drive\02_KTH\00. Master Thesis\7. Project Files\SFX\Slingshot\"/>
 				<Property Name="EffectsView\MeteringObject\{87BE3270-3D27-45BB-9E46-7F2D9380F523}" Type="string" Value="{99AC6BE6-146C-4182-9837-E7FB3AE78D80}"/>
+				<Property Name="Event Action List\{021021FD-1998-44F7-8357-4092D2BCD243}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{0523050A-55C0-406C-80B1-19A8C935E44A}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{082039E4-8A12-4A7E-8C3D-A3C8AF76EE16}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{098CC34C-C345-45E8-A62A-05E464C9D7B2}\x64_Expand States" Type="string" Value=""/>
@@ -23,6 +24,7 @@
 				<Property Name="Event Action List\{3561B388-0CC2-406C-91A7-7064C5BE7D7E}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{36795091-0ABA-4670-A32A-BDC8104CB94A}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{374B5146-E64A-4974-B8AF-3951C3EEBB64}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{37DFE735-BDB1-4E39-A80E-2BF0F81A02D7}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{3AB1EEBD-001C-4B4D-BB83-C89F30542A22}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{3ED95E17-02C4-45DC-B219-8BA7925BF0EA}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{41EE3C63-8EA7-40FD-B48A-3F9D1D0083F0}\x64_Expand States" Type="string" Value=""/>
@@ -39,6 +41,7 @@
 				<Property Name="Event Action List\{5984D937-5639-462E-8E10-CF9F08A2920E}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{5AE7319E-8CCD-4FE0-8608-5259DB97D8C0}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{5CA171DC-0AE1-4857-A244-1CCA94E3AA67}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{5F13ECA2-6C4F-49A3-9AF1-9AB5FA1A79D1}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{616B4206-7B36-4C44-B8D5-873B3450DDFD}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{61985060-ADCD-41C9-8721-EFF81467818E}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{61D2B72B-3373-4954-A5A2-A3E2D4CFD5EF}\x64_Expand States" Type="string" Value=""/>
@@ -133,7 +136,7 @@
 				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="qqRl6e4HEUaPGSA/nXEM4Q=="/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups_v2" Type="string" Value="tfVtPWF/iU+tQ3bBpYD7GwEACMn+AQAAAQEAAAAAAAABAgAAAAAAAAjqbwxSAAAAAQAAAAAAAAAAAACAAAAAAAAAAAAAzJJAAAAAAAAAAAAAAAAAAAA1QAAAAAAAADVAYgkDAAAAAAAVAgAAAAAAAAAAAAAAAAAA7SWoNft/AADQBAAAHAAAAAEAAABSAAAAAAAAABkiEWC0c4lBnFm+PJWvyWIBAAjJ/gEAAAEBAAAAAAAAAQIAAAAAAAAI6m8MUgAAAAEAAAAAAAAAAAAAgAAAAAAAAAAAAMySQAAAAAAAAAAAAAAAAAAANUAAAAAAAAA1QGIJAwAAAAAAFQIAAAAAAAAAAAAAAAAAAO0lqDX7fwAA0AQAABwAAAABAAAAUgAAAAAAAAA="/>
-				<Property Name="Interactive Music\x64_{0F381F0A-774E-4EBF-AE44-458D92245DA5} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwPwAAAAAAKGxAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
+				<Property Name="Interactive Music\x64_{0F381F0A-774E-4EBF-AE44-458D92245DA5} - SegmentEditorZoomInfo" Type="string" Value="9ClOVmok2z8AAAAAAADwPwAAAAAAKGxAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="Interactive Music\x64_{8C7D9FF0-310C-4EF9-92D9-21B9CD5555CC} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwPwAAAAAAuCpAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="Interactive Music\x64_{EC7A077F-5664-40B9-A7CF-FFEA87AFD018} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwPwAAAAAA2CZAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="ListView\SearchText" Type="string" Value=""/>

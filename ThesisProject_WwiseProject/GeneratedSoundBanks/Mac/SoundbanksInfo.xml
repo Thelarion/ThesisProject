@@ -163,7 +163,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{A67F0B9D-F40C-39C8-2B14-AD0D35B8F0D7}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{69AE3746-0E80-F9CE-52E1-4A0E0ECFDE9C}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -191,6 +191,10 @@
 					<ShortName>PlingFail.wav</ShortName>
 					<CachePath>SFX/PlingFail_10C4C929.wem</CachePath>
 				</File>
+				<File Id="62582298" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SRelease4.wav</ShortName>
+					<CachePath>SFX/SRelease4_10C4C929.wem</CachePath>
+				</File>
 				<File Id="71396143" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>StartTheGame.wav</ShortName>
 					<CachePath>SFX/StartTheGame_10C4C929.wem</CachePath>
@@ -211,6 +215,10 @@
 					<ShortName>D2b.wav</ShortName>
 					<CachePath>SFX/D2b_10C4C929.wem</CachePath>
 				</File>
+				<File Id="125970113" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GreatYouTappedCorrectNote.wav</ShortName>
+					<CachePath>SFX/GreatYouTappedCorrectNote_10C4C929.wem</CachePath>
+				</File>
 				<File Id="136132481" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Tile\FS_Tile_03.wav</ShortName>
 					<CachePath>SFX/Footsteps/Tile/FS_Tile_03_10C4C929.wem</CachePath>
@@ -218,10 +226,6 @@
 				<File Id="145167046" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O3\E3.wav</ShortName>
 					<CachePath>SFX/O3/E3_10C4C929.wem</CachePath>
-				</File>
-				<File Id="158003658" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>CorrectNote.wav</ShortName>
-					<CachePath>SFX/CorrectNote_10C4C929.wem</CachePath>
 				</File>
 				<File Id="164636996" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>F4#.wav</ShortName>
@@ -242,6 +246,10 @@
 				<File Id="181898422" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O2\E2.wav</ShortName>
 					<CachePath>SFX/O2/E2_10C4C929.wem</CachePath>
+				</File>
+				<File Id="185344975" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SRelease3.wav</ShortName>
+					<CachePath>SFX/SRelease3_10C4C929.wem</CachePath>
 				</File>
 				<File Id="189275940" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>D3#.wav</ShortName>
@@ -270,10 +278,6 @@
 				<File Id="242190809" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>DistanceFrameTransition.wav</ShortName>
 					<CachePath>SFX/DistanceFrameTransition_10C4C929.wem</CachePath>
-				</File>
-				<File Id="253861454" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>WrongNoteAgain.wav</ShortName>
-					<CachePath>SFX/WrongNoteAgain_10C4C929.wem</CachePath>
 				</File>
 				<File Id="263546721" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>VoiceVolume.wav</ShortName>
@@ -322,6 +326,10 @@
 				<File Id="427559518" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O4\B4.wav</ShortName>
 					<CachePath>SFX/O4/B4_10C4C929.wem</CachePath>
+				</File>
+				<File Id="431263045" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>WrongNoteTryAgain.wav</ShortName>
+					<CachePath>SFX/WrongNoteTryAgain_10C4C929.wem</CachePath>
 				</File>
 				<File Id="444589169" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ErrorDefault.wav</ShortName>
@@ -499,6 +507,10 @@
 					<ShortName>Footsteps\Tile\FS_Tile_04.wav</ShortName>
 					<CachePath>SFX/Footsteps/Tile/FS_Tile_04_10C4C929.wem</CachePath>
 				</File>
+				<File Id="904983868" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SRelease2.wav</ShortName>
+					<CachePath>SFX/SRelease2_10C4C929.wem</CachePath>
+				</File>
 				<File Id="915905125" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>E4b.wav</ShortName>
 					<CachePath>SFX/E4b_10C4C929.wem</CachePath>
@@ -546,6 +558,10 @@
 				<File Id="980309991" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O2\C2.wav</ShortName>
 					<CachePath>SFX/O2/C2_10C4C929.wem</CachePath>
+				</File>
+				<File Id="985489907" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SRelease1.wav</ShortName>
+					<CachePath>SFX/SRelease1_10C4C929.wem</CachePath>
 				</File>
 				<File Id="990206362" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O3\B3.wav</ShortName>
@@ -672,11 +688,6 @@
 				<Event Id="1853303303" Name="C3" MaxAttenuation="20" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="918400394"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="3334410611" Name="C3_E3_A2_B3_C3" DurationType="OneShot" DurationMin="3.904981" DurationMax="3.904981">
-					<MediaRefs>
-						<MediaRef Id="170761103"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="3969329526" Name="C3s" MaxAttenuation="20" DurationType="OneShot" DurationMin="2" DurationMax="2">
@@ -922,10 +933,10 @@
 						<ActionSetStateEntry GroupId="3443944880" Id="2796181470" Name="MelodyOn"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="3062523241" Name="Miss" DurationType="OneShot" DurationMin="7.5794787" DurationMax="7.5794787">
+				<Event Id="3062523241" Name="Miss" DurationType="OneShot" DurationMin="7.3738775" DurationMax="7.3738775">
 					<MediaRefs>
 						<MediaRef Id="33821008"/>
-						<MediaRef Id="253861454"/>
+						<MediaRef Id="431263045"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="3923622767" Name="Play_BeaconLock" DurationType="OneShot" DurationMin="1.3" DurationMax="1.3">
@@ -942,6 +953,16 @@
 							<PluginRef Id="737587789"/>
 						</Custom>
 					</PluginRefs>
+				</Event>
+				<Event Id="3126765036" Name="Play_BGM" DurationType="Infinite">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="1419421502" Id="147423"/>
+							<MediaRefs>
+								<MediaRef Id="967319205"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
 				<Event Id="2262911975" Name="Play_ButtonReadAloud" DurationType="OneShot" DurationMin="1.2422448" DurationMax="3.2391837">
 					<SwitchContainers>
@@ -1023,15 +1044,10 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="2932040671" Name="Play_Music" DurationType="Infinite">
-					<SwitchContainers>
-						<SwitchContainer>
-							<SwitchValue GroupType="Switch" GroupId="1419421502" Id="147423"/>
-							<MediaRefs>
-								<MediaRef Id="967319205"/>
-							</MediaRefs>
-						</SwitchContainer>
-					</SwitchContainers>
+				<Event Id="1668314063" Name="Play_C3_E3_A2_B2_C3" DurationType="OneShot" DurationMin="3.904981" DurationMax="3.904981">
+					<MediaRefs>
+						<MediaRef Id="170761103"/>
+					</MediaRefs>
 				</Event>
 				<Event Id="3015844381" Name="Play_PlayerFoot" DurationType="OneShot" DurationMin="0.386644" DurationMax="0.8593651">
 					<SwitchContainers>
@@ -1073,6 +1089,14 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="3074787511" Name="Play_Slingshot_Release" DurationType="OneShot" DurationMin="1.5" DurationMax="2">
+					<MediaRefs>
+						<MediaRef Id="62582298"/>
+						<MediaRef Id="185344975"/>
+						<MediaRef Id="904983868"/>
+						<MediaRef Id="985489907"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1569887440" Name="Play_VolumeCheck" DurationType="OneShot" DurationMin="0.70619047" DurationMax="2">
 					<SwitchContainers>
 						<SwitchContainer>
@@ -1095,11 +1119,13 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="2371377610" Name="Stop_AllEvents" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1073466678" Name="Stop_BGM" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="632677629" Name="Stop_ButtonReadAloud" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3712676862" Name="Stop_VolumeCheck" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3625060726" Name="Success" DurationType="OneShot" DurationMin="5.4231367" DurationMax="5.4231367">
 					<MediaRefs>
-						<MediaRef Id="158003658"/>
+						<MediaRef Id="125970113"/>
 						<MediaRef Id="517302441"/>
 						<MediaRef Id="778380301"/>
 					</MediaRefs>
@@ -1180,5 +1206,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{4411F2A1-4F71-EA75-E6A4-7DA0DA8C3587}</FileHash>
+	<FileHash>{6B79EB21-E3DE-65D6-473B-9D5B5D33B3D3}</FileHash>
 </SoundBanksInfo>
