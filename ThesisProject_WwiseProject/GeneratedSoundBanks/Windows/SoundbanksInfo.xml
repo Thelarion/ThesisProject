@@ -105,6 +105,12 @@
 						<Switch Id="3991942870" Name="Music"/>
 					</Switches>
 				</SwitchGroup>
+				<SwitchGroup Id="1238775560" Name="AudioMenuToggle">
+					<Switches>
+						<Switch Id="2139648023" Name="AudioMenuOn"/>
+						<Switch Id="3804790955" Name="AudioMenuOff"/>
+					</Switches>
+				</SwitchGroup>
 				<SwitchGroup Id="1419421502" Name="TrackNames">
 					<Switches>
 						<Switch Id="147420" Name="Track2"/>
@@ -119,6 +125,24 @@
 						<Switch Id="1685527111" Name="M1"/>
 					</Switches>
 				</SwitchGroup>
+				<SwitchGroup Id="3099313910" Name="ButtonReadAloud">
+					<Switches>
+						<Switch Id="640585335" Name="EffectsVolume"/>
+						<Switch Id="782826392" Name="Default"/>
+						<Switch Id="1238775560" Name="AudioMenuToggle"/>
+						<Switch Id="1379827610" Name="AudioMenuVolume"/>
+						<Switch Id="2346531308" Name="MusicVolume"/>
+						<Switch Id="2734938552" Name="ArrowKeys"/>
+						<Switch Id="3569097980" Name="AudioVisualiserToggle"/>
+						<Switch Id="4024813983" Name="ReturnSpace"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="3569097980" Name="AudioVisualiserToggle">
+					<Switches>
+						<Switch Id="353986027" Name="AudioVisualiserOn"/>
+						<Switch Id="435905599" Name="AudioVisualiserOff"/>
+					</Switches>
+				</SwitchGroup>
 				<SwitchGroup Id="4050929301" Name="Materials">
 					<Switches>
 						<Switch Id="841620460" Name="Concrete"/>
@@ -129,7 +153,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{E4B71162-ABE0-7C81-61FB-D5B9C81E2682}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{7272A1BE-02A8-DEFB-2FA4-6D0D7131E5C1}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -157,6 +181,14 @@
 					<ShortName>PlingFail.wav</ShortName>
 					<CachePath>SFX/PlingFail_10C4C929.wem</CachePath>
 				</File>
+				<File Id="99426326" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ButtonReadAloud\EffectsVolume.wav</ShortName>
+					<CachePath>SFX/ButtonReadAloud/EffectsVolume_10C4C929.wem</CachePath>
+				</File>
+				<File Id="104649299" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ButtonReadAloud\AudioMenuOn.wav</ShortName>
+					<CachePath>SFX/ButtonReadAloud/AudioMenuOn_10C4C929.wem</CachePath>
+				</File>
 				<File Id="106854697" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>DistanceCount\80.wav</ShortName>
 					<CachePath>SFX/DistanceCount/80_10C4C929.wem</CachePath>
@@ -172,6 +204,10 @@
 				<File Id="145167046" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O3\E3.wav</ShortName>
 					<CachePath>SFX/O3/E3_10C4C929.wem</CachePath>
+				</File>
+				<File Id="152830020" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ButtonReadAloud\AudioMenuVolume.wav</ShortName>
+					<CachePath>SFX/ButtonReadAloud/AudioMenuVolume_10C4C929.wem</CachePath>
 				</File>
 				<File Id="158003658" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>CorrectNote.wav</ShortName>
@@ -241,6 +277,14 @@
 					<ShortName>D3b.wav</ShortName>
 					<CachePath>SFX/D3b_10C4C929.wem</CachePath>
 				</File>
+				<File Id="296305150" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ButtonReadAloud\AudioMenuOff.wav</ShortName>
+					<CachePath>SFX/ButtonReadAloud/AudioMenuOff_10C4C929.wem</CachePath>
+				</File>
+				<File Id="320309339" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ButtonReadAloud\PressRightOrLeftArrowKeyToChange.wav</ShortName>
+					<CachePath>SFX/ButtonReadAloud/PressRightOrLeftArrowKeyToChange_10C4C929.wem</CachePath>
+				</File>
 				<File Id="323227027" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O3\A3.wav</ShortName>
 					<CachePath>SFX/O3/A3_10C4C929.wem</CachePath>
@@ -248,6 +292,10 @@
 				<File Id="332946074" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O4\C4.wav</ShortName>
 					<CachePath>SFX/O4/C4_10C4C929.wem</CachePath>
+				</File>
+				<File Id="370788259" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ButtonReadAloud\PressReturnOrSpaceToTurnOn.wav</ShortName>
+					<CachePath>SFX/ButtonReadAloud/PressReturnOrSpaceToTurnOn_10C4C929.wem</CachePath>
 				</File>
 				<File Id="391679118" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Dirt\FS_Dirt_03.wav</ShortName>
@@ -260,6 +308,10 @@
 				<File Id="427559518" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O4\B4.wav</ShortName>
 					<CachePath>SFX/O4/B4_10C4C929.wem</CachePath>
+				</File>
+				<File Id="444589169" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ErrorDefault.wav</ShortName>
+					<CachePath>SFX/ErrorDefault_10C4C929.wem</CachePath>
 				</File>
 				<File Id="447603507" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>destination_reached.wav</ShortName>
@@ -289,6 +341,10 @@
 					<ShortName>G2b.wav</ShortName>
 					<CachePath>SFX/G2b_10C4C929.wem</CachePath>
 				</File>
+				<File Id="497910407" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ButtonReadAloud\AudioVisualiserOn.wav</ShortName>
+					<CachePath>SFX/ButtonReadAloud/AudioVisualiserOn_10C4C929.wem</CachePath>
+				</File>
 				<File Id="509973139" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>DistanceCount\70.wav</ShortName>
 					<CachePath>SFX/DistanceCount/70_10C4C929.wem</CachePath>
@@ -316,6 +372,14 @@
 				<File Id="564419961" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Dirt\FS_Dirt_04.wav</ShortName>
 					<CachePath>SFX/Footsteps/Dirt/FS_Dirt_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="565812533" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ButtonReadAloud\AudioVisualiserOff.wav</ShortName>
+					<CachePath>SFX/ButtonReadAloud/AudioVisualiserOff_10C4C929.wem</CachePath>
+				</File>
+				<File Id="584492099" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ButtonReadAloud\MusicVolume.wav</ShortName>
+					<CachePath>SFX/ButtonReadAloud/MusicVolume_10C4C929.wem</CachePath>
 				</File>
 				<File Id="599950730" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>D4#.wav</ShortName>
@@ -865,6 +929,80 @@
 						</Custom>
 					</PluginRefs>
 				</Event>
+				<Event Id="2262911975" Name="Play_ButtonReadAloud" DurationType="OneShot" DurationMin="1.2422448" DurationMax="3.2391837">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3099313910" Id="640585335"/>
+							<MediaRefs>
+								<MediaRef Id="99426326"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3099313910" Id="1379827610"/>
+							<MediaRefs>
+								<MediaRef Id="152830020"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3099313910" Id="2346531308"/>
+							<MediaRefs>
+								<MediaRef Id="584492099"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3099313910" Id="2734938552"/>
+							<MediaRefs>
+								<MediaRef Id="320309339"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3099313910" Id="3569097980"/>
+							<Children>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="3569097980" Id="353986027"/>
+									<MediaRefs>
+										<MediaRef Id="497910407"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="3569097980" Id="435905599" Default="true"/>
+									<MediaRefs>
+										<MediaRef Id="565812533"/>
+									</MediaRefs>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3099313910" Id="1238775560"/>
+							<Children>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="1238775560" Id="3804790955" Default="true"/>
+									<MediaRefs>
+										<MediaRef Id="296305150"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="1238775560" Id="2139648023"/>
+									<MediaRefs>
+										<MediaRef Id="104649299"/>
+									</MediaRefs>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3099313910" Id="4024813983"/>
+							<MediaRefs>
+								<MediaRef Id="370788259"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3099313910" Id="782826392" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="444589169"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
 				<Event Id="2932040671" Name="Play_Music" DurationType="Infinite">
 					<SwitchContainers>
 						<SwitchContainer>
@@ -937,6 +1075,8 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="632677629" Name="Stop_ButtonReadAloud" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3712676862" Name="Stop_VolumeCheck" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3625060726" Name="Success" DurationType="OneShot" DurationMin="5.4231367" DurationMax="5.4231367">
 					<MediaRefs>
 						<MediaRef Id="158003658"/>
@@ -977,11 +1117,35 @@
 						<Switch Id="3991942870" Name="Music"/>
 					</Switches>
 				</SwitchGroup>
+				<SwitchGroup Id="1238775560" Name="AudioMenuToggle">
+					<Switches>
+						<Switch Id="2139648023" Name="AudioMenuOn"/>
+						<Switch Id="3804790955" Name="AudioMenuOff"/>
+					</Switches>
+				</SwitchGroup>
 				<SwitchGroup Id="1419421502" Name="TrackNames">
 					<Switches>
 						<Switch Id="147420" Name="Track2"/>
 						<Switch Id="147421" Name="Track3"/>
 						<Switch Id="147423" Name="Track1"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="3099313910" Name="ButtonReadAloud">
+					<Switches>
+						<Switch Id="640585335" Name="EffectsVolume"/>
+						<Switch Id="782826392" Name="Default"/>
+						<Switch Id="1238775560" Name="AudioMenuToggle"/>
+						<Switch Id="1379827610" Name="AudioMenuVolume"/>
+						<Switch Id="2346531308" Name="MusicVolume"/>
+						<Switch Id="2734938552" Name="ArrowKeys"/>
+						<Switch Id="3569097980" Name="AudioVisualiserToggle"/>
+						<Switch Id="4024813983" Name="ReturnSpace"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="3569097980" Name="AudioVisualiserToggle">
+					<Switches>
+						<Switch Id="353986027" Name="AudioVisualiserOn"/>
+						<Switch Id="435905599" Name="AudioVisualiserOff"/>
 					</Switches>
 				</SwitchGroup>
 				<SwitchGroup Id="4050929301" Name="Materials">
@@ -995,5 +1159,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{1D8CF204-5257-94AC-65C8-5835C003E721}</FileHash>
+	<FileHash>{90E1A144-C0E1-9F76-F450-DC2B089B0248}</FileHash>
 </SoundBanksInfo>

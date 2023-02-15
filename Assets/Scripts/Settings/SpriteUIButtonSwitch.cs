@@ -8,15 +8,21 @@ public class SpriteUIButtonSwitch : MonoBehaviour
     public Sprite[] Sprites;
     private bool currentSpriteState;
 
-    public void ToggleSprite(bool value)
+    public void ToggleState(bool value)
     {
+        // [0] = false = Off
+        // [1] = true = On
         if (value)
         {
-            transform.GetChild(0).GetComponent<Image>().sprite = Sprites[1];
+            Sprite OnSprite = Sprites[1];
+            transform.GetChild(0).GetComponent<Image>().sprite = OnSprite;
+            gameObject.GetComponentInParent<AudioMenu>().SwitchToggleAndReadAloud(gameObject, OnSprite.name);
         }
         else
         {
-            transform.GetChild(0).GetComponent<Image>().sprite = Sprites[0];
+            Sprite OffSprite = Sprites[0];
+            transform.GetChild(0).GetComponent<Image>().sprite = OffSprite;
+            gameObject.GetComponentInParent<AudioMenu>().SwitchToggleAndReadAloud(gameObject, OffSprite.name);
         }
 
     }

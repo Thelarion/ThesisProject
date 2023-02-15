@@ -25,6 +25,49 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_ButtonReadAloud" ID="{8C5D6D24-5E89-4BF7-8AC7-820FE4BF5966}">
+					<ChildrenList>
+						<Action Name="" ID="{BC30C0F7-CBB9-4F84-974B-A1A84AF7F7CE}" ShortID="950557519">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ButtonReadAloud" ID="{167BCFFC-09B8-4343-9234-2955A1E0A23C}" WorkUnitID="{90F6AD7A-8278-4286-AB5B-57631446068A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_ButtonReadAloud" ID="{6E5FFEA8-8BAC-441B-A837-F1FE071592BB}">
+					<ChildrenList>
+						<Action Name="" ID="{21895DAF-5913-45E7-BD59-231C3A951A60}" ShortID="356790899">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.3"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ButtonReadAloud" ID="{167BCFFC-09B8-4343-9234-2955A1E0A23C}" WorkUnitID="{90F6AD7A-8278-4286-AB5B-57631446068A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_VolumeCheck" ID="{A9B33915-01D5-49B7-A000-0B4ABF6522B6}">
+					<ChildrenList>
+						<Action Name="" ID="{4215DFEE-5539-4A2A-A6FA-BB34F529B015}" ShortID="914872987">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="7"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="VolumeCheck" ID="{2384CCE4-AD13-45B7-A6D1-2892CE75B5DC}" WorkUnitID="{90F6AD7A-8278-4286-AB5B-57631446068A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -84,9 +84,12 @@ namespace AK
         static const AkUniqueID MISS = 3062523241U;
         static const AkUniqueID PLAY_BEACONLOCK = 3923622767U;
         static const AkUniqueID PLAY_BEACONLR = 194014728U;
+        static const AkUniqueID PLAY_BUTTONREADALOUD = 2262911975U;
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
         static const AkUniqueID PLAY_PLAYERFOOT = 3015844381U;
         static const AkUniqueID PLAY_VOLUMECHECK = 1569887440U;
+        static const AkUniqueID STOP_BUTTONREADALOUD = 632677629U;
+        static const AkUniqueID STOP_VOLUMECHECK = 3712676862U;
         static const AkUniqueID SUCCESS = 3625060726U;
         static const AkUniqueID WHITENOISEONTARGET = 1848491570U;
     } // namespace EVENTS
@@ -147,6 +150,45 @@ namespace AK
 
     namespace SWITCHES
     {
+        namespace AUDIOMENUTOGGLE
+        {
+            static const AkUniqueID GROUP = 1238775560U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID AUDIOMENUOFF = 3804790955U;
+                static const AkUniqueID AUDIOMENUON = 2139648023U;
+            } // namespace SWITCH
+        } // namespace AUDIOMENUTOGGLE
+
+        namespace AUDIOVISUALISERTOGGLE
+        {
+            static const AkUniqueID GROUP = 3569097980U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID AUDIOVISUALISEROFF = 435905599U;
+                static const AkUniqueID AUDIOVISUALISERON = 353986027U;
+            } // namespace SWITCH
+        } // namespace AUDIOVISUALISERTOGGLE
+
+        namespace BUTTONREADALOUD
+        {
+            static const AkUniqueID GROUP = 3099313910U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID ARROWKEYS = 2734938552U;
+                static const AkUniqueID AUDIOMENUTOGGLE = 1238775560U;
+                static const AkUniqueID AUDIOMENUVOLUME = 1379827610U;
+                static const AkUniqueID AUDIOVISUALISERTOGGLE = 3569097980U;
+                static const AkUniqueID DEFAULT = 782826392U;
+                static const AkUniqueID EFFECTSVOLUME = 640585335U;
+                static const AkUniqueID MUSICVOLUME = 2346531308U;
+                static const AkUniqueID RETURNSPACE = 4024813983U;
+            } // namespace SWITCH
+        } // namespace BUTTONREADALOUD
+
         namespace MATERIALS
         {
             static const AkUniqueID GROUP = 4050929301U;

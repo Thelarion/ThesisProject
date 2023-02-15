@@ -1841,7 +1841,7 @@ MonoBehaviour:
     ParentPath: Events\UI
     guid: 13ad265a32fe774b8e3372fc1241ceef
     GuidInternal: 
-    m_lastTime: -8585251965500167907
+    m_lastTime: -8585251391002622905
     List:
     - name: DistanceFrameTransition
       guid: b75bda6923c11a45b48382c150b587a0
@@ -1860,6 +1860,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_ButtonReadAloud
+      guid: 246d5d8c895ef74b8ac7820fe4bf5966
+      id: 2262911975
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: UI
+        ObjectType: 12
+        guid: 13ad265a32fe774b8e3372fc1241ceef
+      - ElementName: Play_ButtonReadAloud
+        ObjectType: 3
+        guid: 246d5d8c895ef74b8ac7820fe4bf5966
+      Path: Events\UI\Play_ButtonReadAloud
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_VolumeCheck
       guid: a97666dc5dee9942952b3ed8ef11a306
       id: 1569887440
@@ -1874,6 +1891,40 @@ MonoBehaviour:
         ObjectType: 3
         guid: a97666dc5dee9942952b3ed8ef11a306
       Path: Events\UI\Play_VolumeCheck
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_ButtonReadAloud
+      guid: a8fe5f6eac8b1b44a837f1fe071592bb
+      id: 632677629
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: UI
+        ObjectType: 12
+        guid: 13ad265a32fe774b8e3372fc1241ceef
+      - ElementName: Stop_ButtonReadAloud
+        ObjectType: 3
+        guid: a8fe5f6eac8b1b44a837f1fe071592bb
+      Path: Events\UI\Stop_ButtonReadAloud
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_VolumeCheck
+      guid: 1539b3a9d501b749a0000b4abf6522b6
+      id: 3712676862
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: UI
+        ObjectType: 12
+        guid: 13ad265a32fe774b8e3372fc1241ceef
+      - ElementName: Stop_VolumeCheck
+        ObjectType: 3
+        guid: 1539b3a9d501b749a0000b4abf6522b6
+      Path: Events\UI\Stop_VolumeCheck
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -2446,8 +2497,254 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 2cc96633e1efc745a10ab3fad73419fc
     GuidInternal: 
-    m_lastTime: -8585251967021196821
+    m_lastTime: -8585251413056532567
     List:
+    - name: AudioMenuToggle
+      guid: d3645a290f6dec4b96545a33b7d556fd
+      id: 1238775560
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2cc96633e1efc745a10ab3fad73419fc
+      - ElementName: AudioMenuToggle
+        ObjectType: 11
+        guid: d3645a290f6dec4b96545a33b7d556fd
+      Path: Switches\Default Work Unit\AudioMenuToggle
+      values:
+      - name: AudioMenuOff
+        guid: 4a38bfb81ba7b541b9676e8389c3eb50
+        id: 3804790955
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 2cc96633e1efc745a10ab3fad73419fc
+        - ElementName: AudioMenuToggle
+          ObjectType: 11
+          guid: d3645a290f6dec4b96545a33b7d556fd
+        - ElementName: AudioMenuOff
+          ObjectType: 10
+          guid: 4a38bfb81ba7b541b9676e8389c3eb50
+      - name: AudioMenuOn
+        guid: 820cb3fb4ceb0645ab69932a32da0848
+        id: 2139648023
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 2cc96633e1efc745a10ab3fad73419fc
+        - ElementName: AudioMenuToggle
+          ObjectType: 11
+          guid: d3645a290f6dec4b96545a33b7d556fd
+        - ElementName: AudioMenuOn
+          ObjectType: 10
+          guid: 820cb3fb4ceb0645ab69932a32da0848
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: AudioVisualiserToggle
+      guid: 0824f5ddd468214c94ef683183e4ed2a
+      id: 3569097980
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2cc96633e1efc745a10ab3fad73419fc
+      - ElementName: AudioVisualiserToggle
+        ObjectType: 11
+        guid: 0824f5ddd468214c94ef683183e4ed2a
+      Path: Switches\Default Work Unit\AudioVisualiserToggle
+      values:
+      - name: AudioVisualiserOff
+        guid: f612b0f9aabb504ba8390ac95fd06728
+        id: 435905599
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 2cc96633e1efc745a10ab3fad73419fc
+        - ElementName: AudioVisualiserToggle
+          ObjectType: 11
+          guid: 0824f5ddd468214c94ef683183e4ed2a
+        - ElementName: AudioVisualiserOff
+          ObjectType: 10
+          guid: f612b0f9aabb504ba8390ac95fd06728
+      - name: AudioVisualiserOn
+        guid: 79b2127e17fbde43bdd43b2e12d33e04
+        id: 353986027
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 2cc96633e1efc745a10ab3fad73419fc
+        - ElementName: AudioVisualiserToggle
+          ObjectType: 11
+          guid: 0824f5ddd468214c94ef683183e4ed2a
+        - ElementName: AudioVisualiserOn
+          ObjectType: 10
+          guid: 79b2127e17fbde43bdd43b2e12d33e04
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: ButtonReadAloud
+      guid: 162f94bfd1410b40b3fe4e5f7e856000
+      id: 3099313910
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2cc96633e1efc745a10ab3fad73419fc
+      - ElementName: ButtonReadAloud
+        ObjectType: 11
+        guid: 162f94bfd1410b40b3fe4e5f7e856000
+      Path: Switches\Default Work Unit\ButtonReadAloud
+      values:
+      - name: ArrowKeys
+        guid: 6f1250bb23d30044b86eb2aa2d1bedda
+        id: 2734938552
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 2cc96633e1efc745a10ab3fad73419fc
+        - ElementName: ButtonReadAloud
+          ObjectType: 11
+          guid: 162f94bfd1410b40b3fe4e5f7e856000
+        - ElementName: ArrowKeys
+          ObjectType: 10
+          guid: 6f1250bb23d30044b86eb2aa2d1bedda
+      - name: AudioMenuToggle
+        guid: b068cc286bc09643b605bbc0d1315c54
+        id: 1238775560
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 2cc96633e1efc745a10ab3fad73419fc
+        - ElementName: ButtonReadAloud
+          ObjectType: 11
+          guid: 162f94bfd1410b40b3fe4e5f7e856000
+        - ElementName: AudioMenuToggle
+          ObjectType: 10
+          guid: b068cc286bc09643b605bbc0d1315c54
+      - name: AudioMenuVolume
+        guid: 2ff55e1f20182447904af35f843cb394
+        id: 1379827610
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 2cc96633e1efc745a10ab3fad73419fc
+        - ElementName: ButtonReadAloud
+          ObjectType: 11
+          guid: 162f94bfd1410b40b3fe4e5f7e856000
+        - ElementName: AudioMenuVolume
+          ObjectType: 10
+          guid: 2ff55e1f20182447904af35f843cb394
+      - name: AudioVisualiserToggle
+        guid: 85cc65cd5c0cb84382fedf817609e0d7
+        id: 3569097980
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 2cc96633e1efc745a10ab3fad73419fc
+        - ElementName: ButtonReadAloud
+          ObjectType: 11
+          guid: 162f94bfd1410b40b3fe4e5f7e856000
+        - ElementName: AudioVisualiserToggle
+          ObjectType: 10
+          guid: 85cc65cd5c0cb84382fedf817609e0d7
+      - name: Default
+        guid: ee3fb80f521cf04ba15e7b3de3db8952
+        id: 782826392
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 2cc96633e1efc745a10ab3fad73419fc
+        - ElementName: ButtonReadAloud
+          ObjectType: 11
+          guid: 162f94bfd1410b40b3fe4e5f7e856000
+        - ElementName: Default
+          ObjectType: 10
+          guid: ee3fb80f521cf04ba15e7b3de3db8952
+      - name: EffectsVolume
+        guid: 0cfdd6f4b8ae814f999f6a4ab1f2b280
+        id: 640585335
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 2cc96633e1efc745a10ab3fad73419fc
+        - ElementName: ButtonReadAloud
+          ObjectType: 11
+          guid: 162f94bfd1410b40b3fe4e5f7e856000
+        - ElementName: EffectsVolume
+          ObjectType: 10
+          guid: 0cfdd6f4b8ae814f999f6a4ab1f2b280
+      - name: MusicVolume
+        guid: 47e2b9bd238dfd4780fe8cbb86033547
+        id: 2346531308
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 2cc96633e1efc745a10ab3fad73419fc
+        - ElementName: ButtonReadAloud
+          ObjectType: 11
+          guid: 162f94bfd1410b40b3fe4e5f7e856000
+        - ElementName: MusicVolume
+          ObjectType: 10
+          guid: 47e2b9bd238dfd4780fe8cbb86033547
+      - name: ReturnSpace
+        guid: d7cc1ff4a9de3546893edec7fa5ff3d7
+        id: 4024813983
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 2cc96633e1efc745a10ab3fad73419fc
+        - ElementName: ButtonReadAloud
+          ObjectType: 11
+          guid: 162f94bfd1410b40b3fe4e5f7e856000
+        - ElementName: ReturnSpace
+          ObjectType: 10
+          guid: d7cc1ff4a9de3546893edec7fa5ff3d7
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
     - name: Materials
       guid: 6c094231a8874f408fd7b315fb91a6a9
       id: 4050929301

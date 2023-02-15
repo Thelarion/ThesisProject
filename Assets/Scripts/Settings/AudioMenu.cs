@@ -9,11 +9,56 @@ public class AudioMenu : MonoBehaviour
     public Toggle[] toggles;
     private Toggle chosenToggle;
     private int selection = 0;
+    public AK.Wwise.Event Play_ButtonReadAloud;
+    public AK.Wwise.Event Stop_ButtonReadAloud;
 
+
+    public int Selection { get { return selection; } set { selection = value; ButtonReadAloud(); } }
+
+    public void SwitchToggleAndReadAloud(GameObject switchGO, string subSwitchValue)
+    {
+        AkSoundEngine.SetSwitch("ButtonReadAloud", switchGO.name, gameObject);
+        AkSoundEngine.SetSwitch(switchGO.name, subSwitchValue, gameObject);
+        PostEvents();
+    }
+
+    public void ToggleReadAloud(GameObject switchGO)
+    {
+        AkSoundEngine.SetSwitch("ButtonReadAloud", switchGO.name, gameObject);
+
+        int x = 0;
+        foreach (Transform item in transform)
+        {
+            if (item.name != switchGO.name)
+            {
+                x++;
+            }
+            else
+            {
+                break;
+            }
+        }
+        print(x);
+        Selection = x;
+        PostEvents();
+    }
+
+    private void PostEvents()
+    {
+        Stop_ButtonReadAloud.Post(gameObject);
+        Play_ButtonReadAloud.Post(gameObject);
+    }
+
+    private void Start()
+    {
+        print(toggles[Selection].name);
+        ButtonReadAloud();
+    }
 
     void Update()
     {
-        toggles[selection].Select();
+        toggles[Selection].Select(); // Always highlight the selected button
+
         GetArrowDown();
         GetArrowUp();
         GetArrowLeft();
@@ -22,26 +67,44 @@ public class AudioMenu : MonoBehaviour
         GetSpaceKey();
     }
 
+    private void ButtonReadAloud()
+    {
+        AkSoundEngine.SetSwitch("ButtonReadAloud", toggles[Selection].name, gameObject);
+        PostEvents();
+    }
+
     private void GetArrowRight()
     {
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
-            if (toggles[selection].name == "AudioMenuVolume" || toggles[selection].name == "MusicVolume" || toggles[selection].name == "EffectsVolume")
+            string toggleName = toggles[Selection].name;
+
+            if (toggleName == "AudioMenuVolume" || toggleName == "MusicVolume" || toggleName == "EffectsVolume")
             {
-                Slider slider = toggles[selection].transform.GetChild(1).GetComponent<Slider>();
+                Slider slider = toggles[Selection].transform.GetChild(1).GetComponent<Slider>();
                 slider.value = slider.value + 1;
+            }
+            else
+            {
+                toggles[Selection].isOn = !toggles[Selection].isOn;
             }
         }
     }
 
     private void GetArrowLeft()
     {
+        string toggleName = toggles[Selection].name;
+
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            if (toggles[selection].name == "AudioMenuVolume" || toggles[selection].name == "MusicVolume" || toggles[selection].name == "EffectsVolume")
+            if (toggleName == "AudioMenuVolume" || toggleName == "MusicVolume" || toggleName == "EffectsVolume")
             {
-                Slider slider = toggles[selection].transform.GetChild(1).GetComponent<Slider>();
+                Slider slider = toggles[Selection].transform.GetChild(1).GetComponent<Slider>();
                 slider.value = slider.value - 1;
+            }
+            else
+            {
+                toggles[Selection].isOn = !toggles[Selection].isOn;
             }
         }
     }
@@ -50,13 +113,13 @@ public class AudioMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            if ((selection - 1) < 0)
+            if ((Selection - 1) < 0)
             {
-                selection = (toggles.Length - 1);
+                Selection = (toggles.Length - 1);
             }
             else
             {
-                selection--;
+                Selection--;
             }
             // print(toggles[selection].name);
             // buttons[selection].Select();
@@ -67,13 +130,13 @@ public class AudioMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.DownArrow))
         {
-            if ((selection + 1) > (toggles.Length - 1))
+            if ((Selection + 1) > (toggles.Length - 1))
             {
-                selection = 0;
+                Selection = 0;
             }
             else
             {
-                selection++;
+                Selection++;
                 // print(selection);
                 // print(toggles.Length);
 
@@ -95,7 +158,7 @@ public class AudioMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            toggles[selection].isOn = !toggles[selection].isOn;
+            toggles[Selection].isOn = !toggles[Selection].isOn;
         }
     }
 }
