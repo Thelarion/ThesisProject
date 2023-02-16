@@ -55,6 +55,7 @@
 						<Switch Name="AudioVisualiserToggle" ID="{CD65CC85-0C5C-43B8-82FE-DF817609E0D7}"/>
 						<Switch Name="Default" ID="{0FB83FEE-1C52-4BF0-A15E-7B3DE3DB8952}"/>
 						<Switch Name="Start" ID="{63C6BB87-BF1D-4807-89D3-3D27DD0A40C2}"/>
+						<Switch Name="Quit" ID="{75D0E5F5-D20C-419A-A557-788E00F73A93}"/>
 					</ChildrenList>
 				</SwitchGroup>
 				<SwitchGroup Name="AudioMenuToggle" ID="{295A64D3-6D0F-4BEC-9654-5A33B7D556FD}">

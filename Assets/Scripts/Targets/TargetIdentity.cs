@@ -55,10 +55,10 @@ public class TargetIdentity : MonoBehaviour
     // Remove target from instances when destroyed
     private void OnDestroy()
     {
-        if (_tapState)
+        if (_tapState && operationController != null)
         {
             operationController.ActivateFrameSuccess(_indexInSequence, transform.name);
-            operationController.DelayDistanceFrameCoroutine();
+            operationController.DelayDistanceFrameCoroutine(4.5f);
         }
         _instances.Remove(this);
     }

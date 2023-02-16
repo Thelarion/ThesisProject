@@ -92,7 +92,7 @@ public class AudioBeacon : MonoBehaviour
         if (directionFace > 0.99f)
         {
             // Debug.Log("FRONT");
-            AkSoundEngine.SetRTPCValue("beacon_lr_volume", 0);
+            AkSoundEngine.SetRTPCValue("RTPC_beacon_lr_volume", 0);
 
             if (!_beaconLock_hasPlayed && _beaconActive)
             {
@@ -117,8 +117,8 @@ public class AudioBeacon : MonoBehaviour
     private void SetRTPCAndVolume(float LR)
     {
         _panning = LR;
-        AkSoundEngine.SetRTPCValue("left_right", _panning);
-        AkSoundEngine.SetRTPCValue("beacon_lr_volume", 1);
+        AkSoundEngine.SetRTPCValue("RTPC_left_right", _panning);
+        AkSoundEngine.SetRTPCValue("RTPC_beacon_lr_volume", 1);
     }
 
     private void ResetLRAndLock()

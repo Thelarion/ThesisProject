@@ -144,6 +144,7 @@
 						<Switch Id="2346531308" Name="MusicVolume"/>
 						<Switch Id="2734938552" Name="ArrowKeys"/>
 						<Switch Id="3569097980" Name="AudioVisualiserToggle"/>
+						<Switch Id="3930794392" Name="Quit"/>
 						<Switch Id="4024813983" Name="ReturnSpace"/>
 					</Switches>
 				</SwitchGroup>
@@ -163,7 +164,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{69AE3746-0E80-F9CE-52E1-4A0E0ECFDE9C}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{40FAB02D-5725-DD0B-7AD0-43D090340DAC}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -390,6 +391,10 @@
 				<File Id="545185951" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>A2b.wav</ShortName>
 					<CachePath>SFX/A2b_10C4C929.wem</CachePath>
+				</File>
+				<File Id="561107131" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>QuitTheGame.wav</ShortName>
+					<CachePath>SFX/QuitTheGame_10C4C929.wem</CachePath>
 				</File>
 				<File Id="564419961" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Dirt\FS_Dirt_04.wav</ShortName>
@@ -964,7 +969,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="2262911975" Name="Play_ButtonReadAloud" DurationType="OneShot" DurationMin="1.2422448" DurationMax="3.2391837">
+				<Event Id="2262911975" Name="Play_ButtonReadAloud" DurationType="OneShot" DurationMin="1.1958277" DurationMax="3.2391837">
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="3099313910" Id="640585335"/>
@@ -1040,6 +1045,12 @@
 							<SwitchValue GroupType="Switch" GroupId="3099313910" Id="782826392" Default="true"/>
 							<MediaRefs>
 								<MediaRef Id="444589169"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3099313910" Id="3930794392"/>
+							<MediaRefs>
+								<MediaRef Id="561107131"/>
 							</MediaRefs>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -1186,6 +1197,7 @@
 						<Switch Id="2346531308" Name="MusicVolume"/>
 						<Switch Id="2734938552" Name="ArrowKeys"/>
 						<Switch Id="3569097980" Name="AudioVisualiserToggle"/>
+						<Switch Id="3930794392" Name="Quit"/>
 						<Switch Id="4024813983" Name="ReturnSpace"/>
 					</Switches>
 				</SwitchGroup>
@@ -1206,5 +1218,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{23E5729E-9A1E-A98A-B834-7C2B5DE08E68}</FileHash>
+	<FileHash>{16A436FE-3429-DDDF-38DE-707EE5DC141B}</FileHash>
 </SoundBanksInfo>

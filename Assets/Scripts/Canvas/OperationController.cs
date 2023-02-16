@@ -182,9 +182,9 @@ public class OperationController : MonoBehaviour
 
         foreach (Transform child in transform)
         {
-            if (child.GetComponent<ListItemIdentity>().LockState == false)
+            if (child.GetChild(0).GetComponent<ListItemIdentity>().LockState == false)
             {
-                missingTones.Add(child);
+                missingTones.Add(child.GetChild(0));
             }
         }
 
@@ -278,12 +278,12 @@ public class OperationController : MonoBehaviour
         return currentFrameSuccess;
     }
 
-    public void DelayDistanceFrameCoroutine()
+    public void DelayDistanceFrameCoroutine(float value)
     {
-        StartCoroutine(DelayDistanceFrame());
+        StartCoroutine(DelayDistanceFrame(value));
     }
 
-    public IEnumerator DelayDistanceFrame()
+    public IEnumerator DelayDistanceFrame(float value)
     {
         _distanceFrameDelayState = true;
         yield return new WaitForSeconds(4.5f);

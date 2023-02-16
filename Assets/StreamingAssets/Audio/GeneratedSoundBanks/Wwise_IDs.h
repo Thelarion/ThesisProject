@@ -199,6 +199,7 @@ namespace AK
                 static const AkUniqueID DEFAULT = 782826392U;
                 static const AkUniqueID EFFECTSVOLUME = 640585335U;
                 static const AkUniqueID MUSICVOLUME = 2346531308U;
+                static const AkUniqueID QUIT = 3930794392U;
                 static const AkUniqueID RETURNSPACE = 4024813983U;
                 static const AkUniqueID START = 1281810935U;
                 static const AkUniqueID VOICEVOLUME = 414646191U;

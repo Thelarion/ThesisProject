@@ -65,7 +65,7 @@ public class AudioMenu : MonoBehaviour
     {
         AkSoundEngine.SetState("AudioMenuState", "AudioMenuOff");
         print(toggles[Selection].name);
-        ButtonReadAloud();
+        Invoke("ButtonReadAloud", 1);
     }
 
     void Update()
@@ -97,7 +97,7 @@ public class AudioMenu : MonoBehaviour
                 Slider slider = toggles[Selection].transform.GetChild(1).GetComponent<Slider>();
                 slider.value = slider.value + 1;
             }
-            else if (toggleName != "Start")
+            else if (toggleName != "Start" && toggleName != "Quit")
             {
                 toggles[Selection].isOn = !toggles[Selection].isOn;
             }
@@ -110,17 +110,14 @@ public class AudioMenu : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            if (toggleName == "Start")
-            {
-                print("return");
-            }
             if (toggleName == "VoiceVolume" || toggleName == "MusicVolume" || toggleName == "EffectsVolume")
             {
                 Slider slider = toggles[Selection].transform.GetChild(1).GetComponent<Slider>();
                 slider.value = slider.value - 1;
             }
-            else if (toggleName != "Start")
+            else if (toggleName != "Start" && toggleName != "Quit")
             {
+                print("Left");
                 toggles[Selection].isOn = !toggles[Selection].isOn;
             }
         }

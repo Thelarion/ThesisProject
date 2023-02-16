@@ -354,6 +354,28 @@
 								<ActiveSource Name="StartTheGame" ID="{2CD78CF1-8BE9-481D-8CF3-F54A9C6AB560}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="Quit" ID="{2B781C7C-5F98-4760-BC85-014C954B9D49}" ShortID="402869824">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="QuitTheGame" ID="{BFD89B2F-CCFC-4DB2-99DA-39ADA0F93CD2}">
+									<Language>SFX</Language>
+									<AudioFile>QuitTheGame.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="561107131"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="QuitTheGame" ID="{BFD89B2F-CCFC-4DB2-99DA-39ADA0F93CD2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 					<GroupingInfo>
 						<GroupingBehaviorList>
@@ -368,6 +390,9 @@
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="EffectsVolume" ID="{45A64B2A-0579-4C59-9B42-FA8AC4DB0215}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Quit" ID="{2B781C7C-5F98-4760-BC85-014C954B9D49}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="ArrowKeys" ID="{60A84A7E-BFE2-489B-B83D-9BAB95FAA65D}"/>
@@ -438,6 +463,12 @@
 								<SwitchRef Name="Default" ID="{0FB83FEE-1C52-4BF0-A15E-7B3DE3DB8952}"/>
 								<ItemList>
 									<ItemRef Name="ErrorDefault" ID="{261E5BB6-1B44-4788-8F42-46DF01FD2EBD}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Quit" ID="{75D0E5F5-D20C-419A-A557-788E00F73A93}"/>
+								<ItemList>
+									<ItemRef Name="Quit" ID="{2B781C7C-5F98-4760-BC85-014C954B9D49}"/>
 								</ItemList>
 							</Grouping>
 						</GroupingList>

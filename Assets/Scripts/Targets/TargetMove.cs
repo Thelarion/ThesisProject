@@ -34,7 +34,7 @@ public class TargetMove : MonoBehaviour
 
     IEnumerator WaitForPositionInitialization()
     {
-        yield return new WaitForSeconds(0f);
+        yield return new WaitForSeconds(0.2f);
         startingPosition = transform.position;
         positionIsSet = true;
     }

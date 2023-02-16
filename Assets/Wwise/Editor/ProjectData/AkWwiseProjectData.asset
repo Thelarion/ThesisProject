@@ -2667,7 +2667,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 2cc96633e1efc745a10ab3fad73419fc
     GuidInternal: 
-    m_lastTime: -8585251347034815736
+    m_lastTime: -8585251081556119628
     List:
     - name: AudioMenuToggle
       guid: d3645a290f6dec4b96545a33b7d556fd
@@ -2880,6 +2880,22 @@ MonoBehaviour:
         - ElementName: MusicVolume
           ObjectType: 10
           guid: 47e2b9bd238dfd4780fe8cbb86033547
+      - name: Quit
+        guid: f5e5d0750cd29a41a557788e00f73a93
+        id: 3930794392
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 2cc96633e1efc745a10ab3fad73419fc
+        - ElementName: ButtonReadAloud
+          ObjectType: 11
+          guid: 162f94bfd1410b40b3fe4e5f7e856000
+        - ElementName: Quit
+          ObjectType: 10
+          guid: f5e5d0750cd29a41a557788e00f73a93
       - name: ReturnSpace
         guid: d7cc1ff4a9de3546893edec7fa5ff3d7
         id: 4024813983

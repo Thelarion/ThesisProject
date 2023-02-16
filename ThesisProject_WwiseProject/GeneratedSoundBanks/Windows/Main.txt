@@ -111,6 +111,7 @@ Switch	ID	Name	Switch Group			Notes
 	2346531308	MusicVolume	ButtonReadAloud			
 	2734938552	ArrowKeys	ButtonReadAloud			
 	3569097980	AudioVisualiserToggle	ButtonReadAloud			
+	3930794392	Quit	ButtonReadAloud			
 	4024813983	ReturnSpace	ButtonReadAloud			
 	353986027	AudioVisualiserOn	AudioVisualiserToggle			
 	435905599	AudioVisualiserOff	AudioVisualiserToggle			
@@ -193,6 +194,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	530408079	G3b	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\G3b_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O3\G3b		384096
 	538381605	90	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\DistanceCount\90_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SFX\Beacon\DistanceCount\90		120096
 	545185951	A2b	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\A2b_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O2\A2b		384096
+	561107131	Quit	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\QuitTheGame_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\UI\ButtonReadAloud\Quit		211040
 	564419961	FS_Dirt_04	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Footsteps\Dirt\FS_Dirt_04_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\Footsteps\Dirt\FS_Dirt_04		54372
 	565812533	AudioVisualiserOff	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\ButtonReadAloud\AudioVisualiserOff_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\UI\ButtonReadAloud\AudioVisualiserToggle\AudioVisualiserOff		417888
 	584492099	MusicVolume	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\ButtonReadAloud\MusicVolume_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\UI\ButtonReadAloud\MusicVolume		239712
