@@ -9,10 +9,10 @@ EditorBuildSettings:
     path: Assets/Scenes/StartSettings.unity
     guid: 08324372e2dd04d4592c24e80d3eb656
   - enabled: 0
-    path: Assets/Scenes/StartMenu.unity
+    path: Assets/Scenes/Deprecate/StartMenu.unity
     guid: dbc1dd7e0ba3aec40b9e93584f277dfb
   - enabled: 1
-    path: Assets/Scenes/Playground.unity
+    path: Assets/Scenes/Playground/Playground.unity
     guid: 707acc8dffb72b144bb1ffbe1c965f3d
   - enabled: 1
     path: Assets/Scenes/Goal.unity
