@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/Scenes/Playground/Playground.unity
+    path: Assets/Scenes/Playground/QuickTesting.unity
     guid: 707acc8dffb72b144bb1ffbe1c965f3d
   - enabled: 0
     path: Assets/Scenes/Goal.unity

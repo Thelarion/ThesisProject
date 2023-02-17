@@ -38,11 +38,11 @@ public class ScoreManager : MonoBehaviour
             case 0:
                 return 10;
             case 1:
-                return missedTaps * 8;
+                return 8;
             case 2:
-                return missedTaps * 4;
+                return 4;
             default:
-                return missedTaps * 0;
+                return 0;
         }
     }
 
