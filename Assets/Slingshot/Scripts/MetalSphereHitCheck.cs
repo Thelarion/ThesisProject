@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class MetalSphereHitCheck : MonoBehaviour
@@ -17,35 +18,37 @@ public class MetalSphereHitCheck : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        // Check the target state: does it play the correct note?
-        // bool tonePlaysCorrectNote = other.transform.GetComponent<RunInterval>().TapState;
-
-        // Case when the tone plays the correct note
+        // CASE CORRECT NOTE
         if (other.transform.tag == "Target" && other.transform.GetComponent<RunInterval>().TapState)
         {
-            Destroy(other.transform.gameObject);
-            scoreManager.AddPoints();
             PlingSuccess.Post(gameObject);
+            scoreManager.CalculatePoints(other.transform.GetComponent<TargetIdentity>().MissedTaps);
+            Destroy(other.transform.gameObject);
         }
 
-        // Case when the tone plays the wrong note
+        // CASE WRONG NOTE
         if (other.transform.tag == "Target" && !other.transform.GetComponent<RunInterval>().TapState)
         {
-            other.transform.GetComponent<TargetMove>().StopMovementWhenMissOrInclusion();
+
+            other.transform.GetComponent<TargetIdentity>().MissedTaps++;
+            TargetMove targetMove = other.transform.GetComponent<TargetMove>();
+
+            targetMove.StopMovementWhenMissOrInclusion();
 
             int indexInSequence = other.transform.GetComponent<TargetIdentity>().getIndexInSequence();
+
             other.transform.position = targetSpawnPoints.ReturnRandomSpawnTransform(indexInSequence).position;
+
             PlingFail.Post(gameObject);
 
-            other.transform.GetComponent<TargetMove>().InitializeMovementAfterMissOrInclusion();
-            scoreManager.SubtractPoints();
+            targetMove.InitializeMovementAfterMissOrInclusion();
+
         }
 
-        // Destroy the sphere if it hits a target
-        if (other.transform.tag == "Target")
+        // DESTROY SPHERE CASE TARGET
+        if (other.transform.tag == "Target") // Destroy the sphere if it hits a target
         {
-            Destroy(transform.gameObject);
-            // Destroy(other.transform.gameObject);
+            Destroy(transform.gameObject); // Destroy(other.transform.gameObject);
         }
     }
 }

@@ -10,6 +10,7 @@ public class TargetIdentity : MonoBehaviour
     private static int targetCount;
     private int _indexInSequence;
     private bool _tapState;
+    [SerializeField] private int missedTaps = 0;
     private static OperationController operationController;
     [HideInInspector] public TargetSpawnPoints targetSpawnPoints;
 
@@ -19,12 +20,15 @@ public class TargetIdentity : MonoBehaviour
     // Readonly property, I would return a new HashSet so nobody on the outside can alter the content
     public static HashSet<TargetIdentity> Instances => new HashSet<TargetIdentity>(_instances);
 
+    public int MissedTaps { get => missedTaps; set => missedTaps = value; }
+
     // Add target to instances
     private void Awake()
     {
         _instances.Add(this);
         operationController = GameObject.Find("List").GetComponent<OperationController>();
         targetSpawnPoints = GameObject.Find("SpawnPoints").GetComponent<TargetSpawnPoints>();
+
     }
 
     private void Start()

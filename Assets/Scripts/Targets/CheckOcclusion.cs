@@ -17,7 +17,7 @@ public class CheckOcclusion : MonoBehaviour
 
     private void CheckIfPlayerBehindWall()
     {
-        Debug.DrawLine(transform.position, player.transform.position, Color.red);
+        // Debug.DrawLine(transform.position, player.transform.position, Color.red);
         // layermask 9 = ignore Ground (applied to reverb zones, slingshot and ground)
         if (Physics.Linecast(transform.position, player.transform.position, out playerOcclusionCheck, layerMask))
         {

@@ -8,7 +8,8 @@ using System.Linq;
 public class ScoreManager : MonoBehaviour
 {
     private int _currentScore = 0;
-    public Image DigitScore;
+    public Image FirstDigitScore;
+    public Image SecondDigitScore;
     private ArrayList digitSprites = new ArrayList();
     private ArrayList digitSpritesStrings = new ArrayList();
     private Sprite spriteIndex;
@@ -24,31 +25,52 @@ public class ScoreManager : MonoBehaviour
         }
     }
 
-    public void AddPoints()
+    public void CalculatePoints(int missedTaps)
     {
-        _currentScore += 5;
+        _currentScore = _currentScore + getScoreSystem(missedTaps);
         SetToSprite();
     }
 
-    public void SubtractPoints()
+    private int getScoreSystem(int missedTaps)
     {
-        if ((_currentScore - 5) <= 0)
+        switch (missedTaps)
         {
-            _currentScore = 0;
+            case 0:
+                return 10;
+            case 1:
+                return missedTaps * 8;
+            case 2:
+                return missedTaps * 4;
+            default:
+                return missedTaps * 0;
         }
-        else
-        {
-            _currentScore -= 5;
-        }
-
-        SetToSprite();
     }
 
     private void SetToSprite()
     {
-        int indexOfDigit = digitSpritesStrings.IndexOf(_currentScore.ToString());
-        Sprite currentScoreDigitSprite = digitSprites[indexOfDigit] as Sprite;
+        string scoreToString = _currentScore.ToString();
+        string firstDigit;
+        string secondDigit;
 
-        DigitScore.sprite = currentScoreDigitSprite;
+        if (scoreToString.Length < 2)
+        {
+
+            firstDigit = "0";
+            secondDigit = scoreToString[0].ToString();
+        }
+        else
+        {
+            firstDigit = scoreToString[0].ToString();
+            secondDigit = scoreToString[1].ToString();
+        }
+
+        int indexOfFirstDigit = digitSpritesStrings.IndexOf(firstDigit);
+        int indexOfSecondDigit = digitSpritesStrings.IndexOf(secondDigit);
+
+        Sprite currentScoreFirstDigitSprite = digitSprites[indexOfFirstDigit] as Sprite;
+        Sprite currentScoreSecondDigitSprite = digitSprites[indexOfSecondDigit] as Sprite;
+
+        FirstDigitScore.sprite = currentScoreFirstDigitSprite;
+        SecondDigitScore.sprite = currentScoreSecondDigitSprite;
     }
 }

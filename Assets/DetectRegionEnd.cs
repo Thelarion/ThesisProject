@@ -11,41 +11,25 @@ public class DetectRegionEnd : MonoBehaviour
     Vector3 rayDirectionRight;
     Vector3 rayDirectionBack;
     RaycastHit detectionRay;
-    float targetValue = 1f;
-    float value = 0f;
-    bool regionEndState = false;
-
-    Material memoryMaterial;
+    int rayLengthMeters = 2;
+    [SerializeField] bool regionEndState = false;
+    ArrayList triggeredRegionEndIDs = new ArrayList();
+    ArrayList triggeredRegionEnds = new ArrayList();
 
     private void Update()
     {
         CheckForRegionEndCollision();
-        CheckForRegionOK();
-    }
 
-    private void CheckForRegionOK()
-    {
-        if (memoryMaterial != null && !regionEndState)
+        // print(triggeredRegionEnds.Count);
+        if (triggeredRegionEnds.Count > 0)
         {
-            TransitionAlertOver();
+            foreach (GameObject item in triggeredRegionEnds)
+            {
+                print(item.name);
+            }
         }
-    }
 
-    private void TransitionAlertOver()
-    {
-        targetValue = 0f;
-        if (value > targetValue)
-        {
-            value -= 0.1f * Time.deltaTime;
-            memoryMaterial.SetFloat("Vector1_8ec0b323bcf242c6b66b93c8c9a3b7bc", value);
-        }
-        if (value <= 0)
-        {
-            memoryMaterial = null;
-        }
     }
-
-    int rayLengthMeters = 2;
 
     public void CheckForRegionEndCollision()
     {
@@ -62,28 +46,29 @@ public class DetectRegionEnd : MonoBehaviour
         Physics.Raycast(myPosition, rayDirectionBack, out detectionRay, rayLengthMeters)
         )
         {
-            regionEndState = true;
-
             if (detectionRay.collider.gameObject.name == "RegionEnd")
             {
-                TransitionToAlert();
+                regionEndState = true;
+                GameObject triggeredGO = detectionRay.collider.gameObject.GetComponentInParent<Transform>().gameObject;
+
+                if (triggeredRegionEndIDs.IndexOf(triggeredGO.GetInstanceID()) == -1)
+                {
+                    triggeredRegionEndIDs.Add(triggeredGO.GetInstanceID());
+                    triggeredRegionEnds.Add(triggeredGO);
+                }
+                detectionRay.collider.gameObject.GetComponent<RegionEndIdentity>().TransitionToAlert();
             }
         }
         else
         {
-            regionEndState = false;
-        }
-    }
-
-    private void TransitionToAlert()
-    {
-        targetValue = 1f;
-        if (value < targetValue)
-        {
-            value += 0.1f * (Time.deltaTime * 1.5f);
-            print(value);
-            memoryMaterial = detectionRay.collider.gameObject.GetComponent<Renderer>().material;
-            memoryMaterial.SetFloat("Vector1_8ec0b323bcf242c6b66b93c8c9a3b7bc", value);
+            if (regionEndState == true)
+            {
+                foreach (GameObject regionEnd in triggeredRegionEnds)
+                {
+                    regionEnd.transform.gameObject.GetComponent<RegionEndIdentity>().TransitionAlertOver();
+                }
+                regionEndState = false;
+            }
         }
     }
 }

@@ -109,7 +109,7 @@ public class RunInterval : MonoBehaviour
             // Get third random Material
             randomMaterial3 = fluentMaterialArray[Random.Range(0, fluentMaterialArray.Count)] as Material;
             // Remove this Material
-            fluentMaterialArray.Remove(randomMaterial2);
+            fluentMaterialArray.Remove(randomMaterial3);
         }
 
         void CheckMaterialNotTwice()

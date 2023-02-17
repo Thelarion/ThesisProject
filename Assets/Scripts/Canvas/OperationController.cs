@@ -292,6 +292,7 @@ public class OperationController : MonoBehaviour
 
     private void ActivateFrameDistance()
     {
+
         if (!_distanceFrameDelayState)
         {
             TargetIdentity closestTarget = DistanceToTarget.CurrentLoopObjectShortestDistance;
@@ -318,6 +319,7 @@ public class OperationController : MonoBehaviour
                 blockInitialPost = true;
             }
         }
+
     }
 
     public void DecreaseAlphaIfZeroTargets()
