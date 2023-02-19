@@ -67,6 +67,9 @@ public class DetectRegionEnd : MonoBehaviour
                 {
                     regionEnd.transform.gameObject.GetComponent<RegionEndIdentity>().TransitionAlertOver();
                 }
+
+                triggeredRegionEnds.Clear();
+                triggeredRegionEndIDs.Clear();
                 regionEndState = false;
             }
         }

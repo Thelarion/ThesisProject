@@ -7,7 +7,6 @@ public class StartMenuManager : MonoBehaviour
 {
     private static bool _inclusionState;
     private static bool _activateColour;
-
     public static bool InclusionState
     {
         get { return _inclusionState; }
@@ -22,11 +21,12 @@ public class StartMenuManager : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("Playground");
+        SceneManager.LoadScene("Forest");
     }
 
     public void Quit()
     {
         Application.Quit();
     }
+
 }

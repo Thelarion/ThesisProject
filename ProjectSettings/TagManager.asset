@@ -8,6 +8,7 @@ TagManager:
   - Target
   - Wall
   - Sphere
+  - Tree
   layers:
   - Default
   - TransparentFX

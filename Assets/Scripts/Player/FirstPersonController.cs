@@ -92,6 +92,7 @@ namespace StarterAssets
         private GameObject _mainCamera;
 
         private const float _threshold = 0.01f;
+        public StartMenuManager startMenuManager;
 
         private bool IsCurrentDeviceMouse
         {

@@ -43,3 +43,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f840b5eebbb99647860e3abdb83d5dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MenuInGameSettings: {fileID: 0}
+  Slider: {fileID: 0}
+  audioMenuInGame: {fileID: 0}
