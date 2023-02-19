@@ -1,18 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using StarterAssets;
 using System;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject menuPanel;
-    public GameObject menuAccessibility;
+    public GameObject MenuInGameSettings;
+    public GameObject Slider;
+    // public GameObject menuAccessibility;
     private FirstPersonController firstPersonController;
     private bool menuActive;
     private static List<string> paletteOptions = new List<string>();
     private static string chosenPalette;
+    public AudioMenu audioMenu;
 
 
     public static string ChosenPalette { get => chosenPalette; set => chosenPalette = value; }
@@ -39,7 +42,8 @@ public class GameManager : MonoBehaviour
     }
     void CheckCursorLockState()
     {
-        if (menuPanel.activeSelf || menuAccessibility.activeSelf)
+        // if (menuPanel.activeSelf || menuAccessibility.activeSelf)
+        if (MenuInGameSettings.activeSelf)
         {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
@@ -63,13 +67,16 @@ public class GameManager : MonoBehaviour
     {
         if (!menuActive)
         {
-            menuPanel.SetActive(true);
+            MenuInGameSettings.SetActive(true);
+            Slider.SetActive(true);
+            audioMenu.ButtonReadAloud();
             menuActive = true;
         }
         else
         {
-            menuPanel.SetActive(false);
-            menuAccessibility.SetActive(false);
+            MenuInGameSettings.SetActive(false);
+            Slider.SetActive(false);
+            // menuAccessibility.SetActive(false);
             menuActive = false;
         }
 

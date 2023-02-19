@@ -196,10 +196,12 @@ namespace AK
                 static const AkUniqueID ARROWKEYS = 2734938552U;
                 static const AkUniqueID AUDIOMENUTOGGLE = 1238775560U;
                 static const AkUniqueID AUDIOVISUALISERTOGGLE = 3569097980U;
+                static const AkUniqueID BACKTOMAINMENU = 3490598729U;
                 static const AkUniqueID DEFAULT = 782826392U;
                 static const AkUniqueID EFFECTSVOLUME = 640585335U;
                 static const AkUniqueID MUSICVOLUME = 2346531308U;
                 static const AkUniqueID QUIT = 3930794392U;
+                static const AkUniqueID RESUME = 953277036U;
                 static const AkUniqueID RETURNSPACE = 4024813983U;
                 static const AkUniqueID START = 1281810935U;
                 static const AkUniqueID VOICEVOLUME = 414646191U;
@@ -311,6 +313,7 @@ namespace AK
         static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID NOTES = 201729212U;
         static const AkUniqueID SFX = 393239870U;
+        static const AkUniqueID UNDEFINED = 2532820111U;
         static const AkUniqueID VOICE = 3170124113U;
     } // namespace BUSSES
 

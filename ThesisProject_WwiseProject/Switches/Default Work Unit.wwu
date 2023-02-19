@@ -56,6 +56,8 @@
 						<Switch Name="Default" ID="{0FB83FEE-1C52-4BF0-A15E-7B3DE3DB8952}"/>
 						<Switch Name="Start" ID="{63C6BB87-BF1D-4807-89D3-3D27DD0A40C2}"/>
 						<Switch Name="Quit" ID="{75D0E5F5-D20C-419A-A557-788E00F73A93}"/>
+						<Switch Name="BackToMainMenu" ID="{26A0D7B1-489E-4495-837C-92B980A5AE04}"/>
+						<Switch Name="Resume" ID="{E69F7961-A05B-41B1-836E-4C8BFF89428D}"/>
 					</ChildrenList>
 				</SwitchGroup>
 				<SwitchGroup Name="AudioMenuToggle" ID="{295A64D3-6D0F-4BEC-9654-5A33B7D556FD}">

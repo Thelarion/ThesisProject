@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f91c7ba501169b042be967fb95f972fd, type: 3}
+  m_Name: 445EB36B-D47E-4022-A599-348A4BA0D55B
+  m_EditorClassIdentifier: 
+  objectName: RTPC_beacon_lr_volume
+  id: 4120900405
+  guid: 445EB36B-D47E-4022-A599-348A4BA0D55B

@@ -17,7 +17,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="RTPC_VoiceVolumeSettings" ID="{3057E62F-CF98-4255-BD17-B97F194E600F}"/>
-							<Value>7.45938074800736</Value>
+							<Value>10</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="RTPC_GenOcclusion" ID="{07AD59E1-527F-42E0-A4E6-F30719E85712}"/>
@@ -29,7 +29,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="RTPC_MusicVolumeSettings" ID="{4AACEBAC-274E-444E-B31E-C3D3FCBF4951}"/>
-							<Value>10</Value>
+							<Value>5.35382504442495</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="RTPC_MelodyOn" ID="{50D70D7B-B318-4541-B711-ACA439313934}"/>
@@ -45,14 +45,16 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="None" ID="{774C6CBC-C129-4C8F-BD56-D5E99C9F83BB}"/>
+						<CurrentStateRef Name="AudioMenuOff" ID="{2B5FCBCB-4223-4FE1-8D67-511A190CEB25}"/>
 						<CurrentStateRef Name="None" ID="{4AB2A078-E8B3-4886-A7CA-0C8E3CB10D5E}"/>
-						<CurrentStateRef Name="MelodyOff" ID="{FDE21147-AC5C-4161-9DC2-29B3B77D8C7C}"/>
-						<CurrentStateRef Name="MusicOn" ID="{7FF6E16F-8C75-484B-84D5-198D93F6B909}"/>
+						<CurrentStateRef Name="None" ID="{F2F41ECF-6FDA-4788-A397-D7909B863089}"/>
+						<CurrentStateRef Name="None" ID="{4DF8E2CD-ACA4-4042-B8B1-0AF765FA3B11}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="AudioMenuToggle" ID="{28CC68B0-C06B-4396-B605-BBC0D1315C54}"/>
+						<CurrentSwitchRef Name="ArrowKeys" ID="{BB50126F-D323-4400-B86E-B2AA2D1BEDDA}"/>
 						<CurrentSwitchRef Name="Concrete" ID="{7624D16A-D815-43AD-A2F4-FF7B846EB163}"/>
-						<CurrentSwitchRef Name="Voice" ID="{864E68C8-6ECE-4112-8817-8444D5318D98}"/>
+						<CurrentSwitchRef Name="Effects" ID="{DF101DDA-99A3-4826-BB05-82E4347BC0B5}"/>
 						<CurrentSwitchRef Name="M1" ID="{EE148B74-339E-4862-B987-D0463480A443}"/>
 						<CurrentSwitchRef Name="Track1" ID="{DF0AB87B-7594-47E9-A09B-20EC64FAC28A}"/>
 						<CurrentSwitchRef Name="A" ID="{69A2F832-DD04-48E8-A090-5AF674AE02FC}"/>

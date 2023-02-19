@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{90F6AD7A-8278-4286-AB5B-57631446068A}" SchemaVersion="110" RootDocumentID="{690ABE9D-D445-44AA-AE0F-2C6B0F3C9C08}" ParentDocumentID="{690ABE9D-D445-44AA-AE0F-2C6B0F3C9C08}">
+<WwiseDocument Type="WorkUnit" ID="{90F6AD7A-8278-4286-AB5B-57631446068A}" SchemaVersion="110" RootDocumentID="{14E6A00B-1C33-466E-9627-FBDE77EDBF18}" ParentDocumentID="{14E6A00B-1C33-466E-9627-FBDE77EDBF18}">
 	<AudioObjects>
-		<WorkUnit Name="UI" ID="{90F6AD7A-8278-4286-AB5B-57631446068A}" OwnerID="{690ABE9D-D445-44AA-AE0F-2C6B0F3C9C08}" PersistMode="Nested">
+		<WorkUnit Name="UI" ID="{90F6AD7A-8278-4286-AB5B-57631446068A}" OwnerID="{14E6A00B-1C33-466E-9627-FBDE77EDBF18}" PersistMode="Nested">
 			<ChildrenList>
 				<SwitchContainer Name="ButtonReadAloud" ID="{167BCFFC-09B8-4343-9234-2955A1E0A23C}" ShortID="311647369">
 					<ReferenceList>
@@ -376,6 +376,57 @@
 								<ActiveSource Name="QuitTheGame" ID="{BFD89B2F-CCFC-4DB2-99DA-39ADA0F93CD2}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="BackToMainMenu" ID="{BA2B7555-A6E0-4ECD-B7AC-DAC77EB833E8}" ShortID="314455605">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="BackToMainMenu" ID="{766F434C-BEF1-4817-8AC8-949DA33C46EB}">
+									<Language>SFX</Language>
+									<AudioFile>BackToMainMenu.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="628185303"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="BackToMainMenu" ID="{766F434C-BEF1-4817-8AC8-949DA33C46EB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Resume" ID="{6F9AED4A-E72E-4316-93F2-FDC476248D5B}" ShortID="833515847">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Resume" ID="{8B10D748-34B2-45F4-836C-F7DD372818E0}">
+									<Language>SFX</Language>
+									<AudioFile>Resume.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="38162977"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Resume" ID="{8B10D748-34B2-45F4-836C-F7DD372818E0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 					<GroupingInfo>
 						<GroupingBehaviorList>
@@ -390,6 +441,12 @@
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="EffectsVolume" ID="{45A64B2A-0579-4C59-9B42-FA8AC4DB0215}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Resume" ID="{6F9AED4A-E72E-4316-93F2-FDC476248D5B}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="BackToMainMenu" ID="{BA2B7555-A6E0-4ECD-B7AC-DAC77EB833E8}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="Quit" ID="{2B781C7C-5F98-4760-BC85-014C954B9D49}"/>
@@ -430,6 +487,12 @@
 								</ItemList>
 							</Grouping>
 							<Grouping>
+								<SwitchRef Name="Resume" ID="{E69F7961-A05B-41B1-836E-4C8BFF89428D}"/>
+								<ItemList>
+									<ItemRef Name="Resume" ID="{6F9AED4A-E72E-4316-93F2-FDC476248D5B}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
 								<SwitchRef Name="ArrowKeys" ID="{BB50126F-D323-4400-B86E-B2AA2D1BEDDA}"/>
 								<ItemList>
 									<ItemRef Name="ArrowKeys" ID="{60A84A7E-BFE2-489B-B83D-9BAB95FAA65D}"/>
@@ -451,6 +514,12 @@
 								<SwitchRef Name="AudioMenuToggle" ID="{28CC68B0-C06B-4396-B605-BBC0D1315C54}"/>
 								<ItemList>
 									<ItemRef Name="AudioMenuToggle" ID="{2596980C-E422-4D60-9BCD-F9EFC0D4A6A4}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="BackToMainMenu" ID="{26A0D7B1-489E-4495-837C-92B980A5AE04}"/>
+								<ItemList>
+									<ItemRef Name="BackToMainMenu" ID="{BA2B7555-A6E0-4ECD-B7AC-DAC77EB833E8}"/>
 								</ItemList>
 							</Grouping>
 							<Grouping>

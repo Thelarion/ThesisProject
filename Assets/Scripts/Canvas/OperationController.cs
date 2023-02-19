@@ -52,6 +52,7 @@ public class OperationController : MonoBehaviour
     {
         ColourHelpState = StartMenuManager.ActivateColour;
         UpdateUI();
+        // ActivateFrameDistance();
     }
 
     private void Update()
@@ -286,7 +287,7 @@ public class OperationController : MonoBehaviour
     public IEnumerator DelayDistanceFrame(float value)
     {
         _distanceFrameDelayState = true;
-        yield return new WaitForSeconds(4.5f);
+        yield return new WaitForSeconds(value);
         _distanceFrameDelayState = false;
     }
 
@@ -295,6 +296,7 @@ public class OperationController : MonoBehaviour
 
         if (!_distanceFrameDelayState)
         {
+            StartCoroutine(DelayDistanceFrame(2.5f));
             TargetIdentity closestTarget = DistanceToTarget.CurrentLoopObjectShortestDistance;
 
             if (closestTarget != _currentClosestTarget)

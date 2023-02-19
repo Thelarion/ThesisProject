@@ -19,7 +19,7 @@
 						<Action Name="" ID="{90CA9E17-24B5-4562-8247-FAEAAD3DBEC6}" ShortID="649912769">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="VolumeCheck" ID="{2384CCE4-AD13-45B7-A6D1-2892CE75B5DC}" WorkUnitID="{14E6A00B-1C33-466E-9627-FBDE77EDBF18}"/>
+									<ObjectRef Name="VolumeCheck" ID="{2384CCE4-AD13-45B7-A6D1-2892CE75B5DC}" WorkUnitID="{690ABE9D-D445-44AA-AE0F-2C6B0F3C9C08}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -41,8 +41,8 @@
 						<Action Name="" ID="{21895DAF-5913-45E7-BD59-231C3A951A60}" ShortID="356790899">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="FadeOutCurve" Type="int16" Value="6"/>
-								<Property Name="FadeTime" Type="Real64" Value="0.3"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="7"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.2"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -62,7 +62,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="VolumeCheck" ID="{2384CCE4-AD13-45B7-A6D1-2892CE75B5DC}" WorkUnitID="{14E6A00B-1C33-466E-9627-FBDE77EDBF18}"/>
+									<ObjectRef Name="VolumeCheck" ID="{2384CCE4-AD13-45B7-A6D1-2892CE75B5DC}" WorkUnitID="{690ABE9D-D445-44AA-AE0F-2C6B0F3C9C08}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

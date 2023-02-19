@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 111a36df2b99a2459ec0d5f0605e9fb4
     GuidInternal: 
-    m_lastTime: -8585251288639385672
+    m_lastTime: -8585247951482529705
     List:
     - name: AudioMenu
       guid: e673bc3db8f4c14eaffb601995ce92ae
@@ -208,6 +208,23 @@ MonoBehaviour:
         ObjectType: 2
         guid: e228b6c5e630c949b05412444dce2acc
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX
+    - name: Undefined
+      guid: 6f96bec0d593a84b93f62ced7b2652d6
+      id: 2532820111
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 111a36df2b99a2459ec0d5f0605e9fb4
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Undefined
+        ObjectType: 2
+        guid: 6f96bec0d593a84b93f62ced7b2652d6
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Undefined
     - name: Voice
       guid: 58d2cb1463c05f4f8620f1cd9a64e84f
       id: 3170124113
@@ -1928,7 +1945,7 @@ MonoBehaviour:
     ParentPath: Events\UI
     guid: 13ad265a32fe774b8e3372fc1241ceef
     GuidInternal: 
-    m_lastTime: -8585251126210133010
+    m_lastTime: -8585247953165067452
     List:
     - name: DistanceFrameTransition
       guid: b75bda6923c11a45b48382c150b587a0
@@ -2667,7 +2684,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 2cc96633e1efc745a10ab3fad73419fc
     GuidInternal: 
-    m_lastTime: -8585251081556119628
+    m_lastTime: -8585248525392669357
     List:
     - name: AudioMenuToggle
       guid: d3645a290f6dec4b96545a33b7d556fd
@@ -2832,6 +2849,22 @@ MonoBehaviour:
         - ElementName: AudioVisualiserToggle
           ObjectType: 10
           guid: 85cc65cd5c0cb84382fedf817609e0d7
+      - name: BackToMainMenu
+        guid: b1d7a0269e489544837c92b980a5ae04
+        id: 3490598729
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 2cc96633e1efc745a10ab3fad73419fc
+        - ElementName: ButtonReadAloud
+          ObjectType: 11
+          guid: 162f94bfd1410b40b3fe4e5f7e856000
+        - ElementName: BackToMainMenu
+          ObjectType: 10
+          guid: b1d7a0269e489544837c92b980a5ae04
       - name: Default
         guid: ee3fb80f521cf04ba15e7b3de3db8952
         id: 782826392
@@ -2896,6 +2929,22 @@ MonoBehaviour:
         - ElementName: Quit
           ObjectType: 10
           guid: f5e5d0750cd29a41a557788e00f73a93
+      - name: Resume
+        guid: 61799fe65ba0b141836e4c8bff89428d
+        id: 953277036
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 2cc96633e1efc745a10ab3fad73419fc
+        - ElementName: ButtonReadAloud
+          ObjectType: 11
+          guid: 162f94bfd1410b40b3fe4e5f7e856000
+        - ElementName: Resume
+          ObjectType: 10
+          guid: 61799fe65ba0b141836e4c8bff89428d
       - name: ReturnSpace
         guid: d7cc1ff4a9de3546893edec7fa5ff3d7
         id: 4024813983
@@ -3402,7 +3451,7 @@ MonoBehaviour:
         guid: da8eac4adff1a245a328ede5f79242d9
       Path: Triggers\Default Work Unit\New_Trigger
   ExpandedFileSystemItemIds: 0200000003000000050000000600000007000000090000000a0000000c000000180000001e000000270000002e0000002f00000034000000530000007d000000d2000000fa2f0000
-  ExpandedWaapiItemIds: 0100000002000000050000000a0000000c0000000e0000001a0000001e0000001f00000021000000270000002a0000002f00000032000000350000003c0000003d000000530000007d000000d2000000fa2f0000b6f60000
+  ExpandedWaapiItemIds: 010000000200000005000000060000000a0000000c0000000e0000001a0000001e0000001f000000270000002a0000002f00000032000000350000003c0000003d0000003e0000003f00000040000000470000004d0000004e000000530000007d000000d2000000fa2f0000b6f60000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

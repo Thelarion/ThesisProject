@@ -40,6 +40,7 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	412724365	BGM			\Default Work Unit\Master Audio Bus\Music\BGM	
 	1229948536	Environment			\Default Work Unit\Master Audio Bus\SFX\Environment	
 	2429736717	Melodies			\Default Work Unit\Master Audio Bus\Music\Melodies	
+	2532820111	Undefined			\Default Work Unit\Master Audio Bus\Undefined	
 	3105667492	AudioMenu			\Default Work Unit\Master Audio Bus\Voice\AudioMenu	
 	3170124113	Voice			\Default Work Unit\Master Audio Bus\Voice	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	

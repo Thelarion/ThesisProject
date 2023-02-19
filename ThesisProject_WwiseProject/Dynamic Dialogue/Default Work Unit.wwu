@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{8F4D8A68-1EFE-421E-8136-4EF7C4315C3C}" SchemaVersion="110">
 	<DynamicDialogue>
-		<WorkUnit Name="Default Work Unit" ID="{8F4D8A68-1EFE-421E-8136-4EF7C4315C3C}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{8F4D8A68-1EFE-421E-8136-4EF7C4315C3C}" PersistMode="Standalone">
+			<ChildrenList>
+				<DialogueEvent Name="New_Dialogue_Event" ID="{4DA28591-763A-48A8-A3BB-330CB112E021}"/>
+			</ChildrenList>
+		</WorkUnit>
 	</DynamicDialogue>
 </WwiseDocument>

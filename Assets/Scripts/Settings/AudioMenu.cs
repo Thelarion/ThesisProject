@@ -11,9 +11,12 @@ public class AudioMenu : MonoBehaviour
     private int selection = 0;
     public AK.Wwise.Event Play_ButtonReadAloud;
     public AK.Wwise.Event Stop_ButtonReadAloud;
+    private static bool menuInitializedState = false;
 
 
     public int Selection { get { return selection; } set { selection = value; ButtonReadAloud(); } }
+
+    public static bool MenuInitializedState { get => menuInitializedState; set => menuInitializedState = value; }
 
     public void AudioMenuToggle(bool value)
     {
@@ -63,9 +66,12 @@ public class AudioMenu : MonoBehaviour
 
     private void Start()
     {
-        AkSoundEngine.SetState("AudioMenuState", "AudioMenuOff");
-        print(toggles[Selection].name);
-        Invoke("ButtonReadAloud", 1);
+        if (!MenuInitializedState)
+        {
+            AkSoundEngine.SetState("AudioMenuState", "AudioMenuOff");
+            Invoke("ButtonReadAloud", 1);
+            MenuInitializedState = true;
+        }
     }
 
     void Update()
@@ -80,7 +86,7 @@ public class AudioMenu : MonoBehaviour
         GetSpaceKey();
     }
 
-    private void ButtonReadAloud()
+    public void ButtonReadAloud()
     {
         AkSoundEngine.SetSwitch("ButtonReadAloud", toggles[Selection].name, gameObject);
         PostEvents();
