@@ -17,7 +17,7 @@ public class TreeOscillation : MonoBehaviour
     void OnEnable()
     {
         from = transform.eulerAngles;
-        to = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y + 2f, transform.eulerAngles.z + 3f);
+        to = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y + 1f, transform.eulerAngles.z + 1f);
     }
 
     private void OnDisable()

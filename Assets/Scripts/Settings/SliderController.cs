@@ -20,9 +20,14 @@ public class SliderController : MonoBehaviour
     public static float EffectsRTPCValue { get => effectsRTPCValue; set => effectsRTPCValue = value; }
     public static bool VolumeInitialized { get => volumeInitialized; set => volumeInitialized = value; }
 
-    public Slider MusicSlider;
-    public Slider EffectsSlider;
-    public Slider VoiceSlider;
+    public Slider MusicSliderStartSettings;
+    public Slider EffectsSliderStartSettings;
+    public Slider VoiceSliderStartSettings;
+
+    public Slider MusicSliderInGameSettings;
+    public Slider EffectsSliderInGameSettings;
+    public Slider VoiceSliderInGameSettings;
+
     float initializeValue = 5f;
     private bool ignoreSliderChange = false;
 
@@ -49,9 +54,15 @@ public class SliderController : MonoBehaviour
         else
         {
             ignoreSliderChange = true;
-            MusicSlider.value = MusicRTPCValue;
-            VoiceSlider.value = VoiceRTPCValue;
-            EffectsSlider.value = EffectsRTPCValue;
+
+            MusicSliderStartSettings.value = MusicRTPCValue;
+            VoiceSliderStartSettings.value = VoiceRTPCValue;
+            EffectsSliderStartSettings.value = EffectsRTPCValue;
+
+            MusicSliderInGameSettings.value = MusicRTPCValue;
+            VoiceSliderInGameSettings.value = VoiceRTPCValue;
+            EffectsSliderInGameSettings.value = EffectsRTPCValue;
+
             ignoreSliderChange = false;
         }
     }
