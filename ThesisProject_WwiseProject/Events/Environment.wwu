@@ -25,6 +25,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Ambience" ID="{305534FA-8793-43FB-9B0C-79717ED08820}">
+					<ChildrenList>
+						<Action Name="" ID="{A8CBB7D5-A894-4A45-9968-6AE8A9CDDE7B}" ShortID="326650245">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="4"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ambience" ID="{A93C3375-098D-4C30-9F04-5D606126CAD5}" WorkUnitID="{C9AE1A60-1F64-439A-AD46-9C53EF882DCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

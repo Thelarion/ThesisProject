@@ -9,6 +9,10 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
+		<SoundBank Id="1229948536" Type="User" Language="SFX" Hash="{FFBFDB9F-145F-9859-F85E-F50EB255A1E8}">
+			<ShortName>Environment</ShortName>
+			<Path>Environment.bnk</Path>
+		</SoundBank>
 		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{46B74181-6F21-784A-0B34-EC72094D1754}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -167,9 +171,9 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{28E2F424-3103-42C4-D575-807085E136D5}">
+		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{7957CE86-DB45-5B1E-4673-A3657BAE3D0C}">
 			<ShortName>Main</ShortName>
-			<Path>Main.bnk</Path>
+			<Path>English(US)/Main.bnk</Path>
 			<Media>
 				<File Id="804718" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O4\E4.wav</ShortName>
@@ -226,10 +230,6 @@
 				<File Id="119593203" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>D2b.wav</ShortName>
 					<CachePath>SFX/D2b_10C4C929.wem</CachePath>
-				</File>
-				<File Id="125970113" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>GreatYouTappedCorrectNote.wav</ShortName>
-					<CachePath>SFX/GreatYouTappedCorrectNote_10C4C929.wem</CachePath>
 				</File>
 				<File Id="136132481" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Tile\FS_Tile_03.wav</ShortName>
@@ -499,6 +499,10 @@
 					<ShortName>StoneBump\StoneBump5.wav</ShortName>
 					<CachePath>SFX/StoneBump/StoneBump5_10C4C929.wem</CachePath>
 				</File>
+				<File Id="655126732" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>26211 Silence in woods loop-full.wav</ShortName>
+					<CachePath>SFX/26211 Silence in woods loop-full_D79FB2B7.wem</CachePath>
+				</File>
 				<File Id="673892171" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>G3#.wav</ShortName>
 					<CachePath>SFX/G3#_10C4C929.wem</CachePath>
@@ -678,6 +682,10 @@
 				<File Id="1001418475" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TreeBump\Dropping Wood 01.wav</ShortName>
 					<CachePath>SFX/TreeBump/Dropping Wood 01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1018730739" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>GreatYouTappedCorrectNote.wav</ShortName>
+					<CachePath>Voices/English(US)/GreatYouTappedCorrectNote_10C4C929.wem</CachePath>
 				</File>
 				<File Id="1030614238" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Concrete\FS_Concrete_04.wav</ShortName>
@@ -1059,6 +1067,11 @@
 						<MediaRef Id="431263045"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="278617630" Name="Play_Ambience" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="655126732"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3923622767" Name="Play_BeaconLock" DurationType="OneShot" DurationMin="1.3" DurationMax="1.3">
 					<MediaRefs>
 						<MediaRef Id="966532559"/>
@@ -1301,9 +1314,9 @@
 				<Event Id="3712676862" Name="Stop_VolumeCheck" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3625060726" Name="Success" DurationType="OneShot" DurationMin="5.4231367" DurationMax="5.4231367">
 					<MediaRefs>
-						<MediaRef Id="125970113"/>
 						<MediaRef Id="517302441"/>
 						<MediaRef Id="778380301"/>
+						<MediaRef Id="1018730739"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1848491570" Name="WhiteNoiseOnTarget" DurationType="Infinite">
@@ -1385,5 +1398,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{F424F271-3879-B259-8EFA-F3B60CEA0981}</FileHash>
+	<FileHash>{581B5A17-2256-D541-6873-4D931D014652}</FileHash>
 </SoundBanksInfo>

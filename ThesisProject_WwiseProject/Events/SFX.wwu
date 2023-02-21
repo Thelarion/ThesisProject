@@ -212,13 +212,13 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
-								<Action Name="" ID="{7A9552A6-F30B-407C-BA40-378DCC9CD14E}" ShortID="632447981">
+								<Action Name="" ID="{9641E70E-6F81-4B09-A8D9-7DD0E723F8C9}" ShortID="881015617">
 									<PropertyList>
-										<Property Name="Delay" Type="Real64" Value="1"/>
+										<Property Name="Delay" Type="Real64" Value="0.5"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="CorrectNote" ID="{070E9EE8-33DA-4067-A1ED-C34571720F4D}" WorkUnitID="{14E6A00B-1C33-466E-9627-FBDE77EDBF18}"/>
+											<ObjectRef Name="CorrectNote" ID="{3D35ED9D-6ECA-4C59-9BA1-49776D1D1C97}" WorkUnitID="{14E6A00B-1C33-466E-9627-FBDE77EDBF18}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

@@ -81,6 +81,7 @@ namespace AK
         static const AkUniqueID MELODYSTATEOFF = 2810620855U;
         static const AkUniqueID MELODYSTATEON = 747211651U;
         static const AkUniqueID MISS = 3062523241U;
+        static const AkUniqueID PLAY_AMBIENCE = 278617630U;
         static const AkUniqueID PLAY_BEACONLOCK = 3923622767U;
         static const AkUniqueID PLAY_BEACONLR = 194014728U;
         static const AkUniqueID PLAY_BGM = 3126765036U;
@@ -303,6 +304,7 @@ namespace AK
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
+        static const AkUniqueID ENVIRONMENT = 1229948536U;
         static const AkUniqueID MAIN = 3161908922U;
     } // namespace BANKS
 

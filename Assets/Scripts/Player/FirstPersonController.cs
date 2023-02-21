@@ -69,6 +69,7 @@ namespace StarterAssets
         // footsteps
         bool isFootstepCycleOn;
         bool isJumping;
+        bool facesObject = false;
         // bool isRunning;
         public float FootstepDelayTime = 0.3f;
         public AK.Wwise.Event FootstepSound;
@@ -93,6 +94,7 @@ namespace StarterAssets
 
         private const float _threshold = 0.01f;
         public StartMenuManager startMenuManager;
+
 
         private bool IsCurrentDeviceMouse
         {
@@ -274,7 +276,17 @@ namespace StarterAssets
             // move the player
             _controller.Move(inputDirection.normalized * (_speed * Time.deltaTime) + new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
 
-            if (_input.move != Vector2.zero && !isFootstepCycleOn && !isJumping)
+            print(_controller.velocity.magnitude);
+            if (_controller.velocity.magnitude <= 0.6)
+            {
+                facesObject = true;
+            }
+            else
+            {
+                facesObject = false;
+            }
+
+            if (_input.move != Vector2.zero && !isFootstepCycleOn && !isJumping && !facesObject)
             {
                 StartCoroutine(PlayFootsteps());
             }

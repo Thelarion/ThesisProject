@@ -254,8 +254,22 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 36069028d9c6b149af9e7a7e2bc60423
     GuidInternal: 
-    m_lastTime: -8585246267958761343
+    m_lastTime: -8585246107301845052
     List:
+    - name: Environment
+      guid: 135c8a3e13c69e49a9b11b2c65adc926
+      id: 1229948536
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 36069028d9c6b149af9e7a7e2bc60423
+      - ElementName: Environment
+        ObjectType: 7
+        guid: 135c8a3e13c69e49a9b11b2c65adc926
+      Path: SoundBanks\Default Work Unit\Environment
     - name: Main
       guid: aaa465e9ee0711468f19203f9d710ce1
       id: 3161908922
@@ -342,8 +356,25 @@ MonoBehaviour:
     ParentPath: Events\Environment
     guid: 6b6ecfb2ce1fa94d909b1661ebea4ead
     GuidInternal: 
-    m_lastTime: -8585246205342561591
+    m_lastTime: -8585246106502046694
     List:
+    - name: Play_Ambience
+      guid: fa3455309387fb439b0c79717ed08820
+      id: 278617630
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Environment
+        ObjectType: 12
+        guid: 6b6ecfb2ce1fa94d909b1661ebea4ead
+      - ElementName: Play_Ambience
+        ObjectType: 3
+        guid: fa3455309387fb439b0c79717ed08820
+      Path: Events\Environment\Play_Ambience
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_StoneBump
       guid: f25d2dde1034d842b0d26da16867c046
       id: 3385122965
@@ -1567,7 +1598,7 @@ MonoBehaviour:
     ParentPath: Events\SFX
     guid: 25bc135fc28aee46b33f4240d933cdbd
     GuidInternal: 
-    m_lastTime: -8585246268583727564
+    m_lastTime: -8585246114322878771
     List:
     - name: Beacon
       guid: bbc8b6179a41b343bca8b3cfc8a7a553
@@ -3600,7 +3631,7 @@ MonoBehaviour:
         guid: da8eac4adff1a245a328ede5f79242d9
       Path: Triggers\Default Work Unit\New_Trigger
   ExpandedFileSystemItemIds: 0200000003000000050000000600000007000000090000000a0000000c000000180000001e000000270000002e0000002f00000034000000530000007d000000d2000000fa2f0000
-  ExpandedWaapiItemIds: 01000000020000000300000004000000050000000600000008000000090000000b0000000c0000000d0000001500000017000000190000001b0000001e0000001f000000270000002a0000002f00000032000000350000003c0000003d0000003e0000003f00000040000000470000004d0000004e00000051000000530000007d000000d2000000fa2f0000b6f60000
+  ExpandedWaapiItemIds: 010000000200000003000000040000000600000008000000090000000b0000000c000000150000001b0000001e00000027000000290000002a0000002d0000002e0000002f00000032000000350000003c0000003d0000003e0000003f00000040000000470000004d0000004e000000510000005300000072000000770000007d0000009200000097000000d20000004201000043010000b6010000fa2f0000b6f60000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

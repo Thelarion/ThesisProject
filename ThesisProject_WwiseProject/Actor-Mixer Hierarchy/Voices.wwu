@@ -35,29 +35,7 @@
 								<ActiveSource Name="WrongNoteTryAgain" ID="{DA207972-60A7-453A-82D4-47FD21D58388}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="CorrectNote" ID="{070E9EE8-33DA-4067-A1ED-C34571720F4D}" ShortID="665106603">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="GreatYouTappedCorrectNote" ID="{0F548F86-AC23-4CAF-9835-17910967D6D5}">
-									<Language>SFX</Language>
-									<AudioFile>GreatYouTappedCorrectNote.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="125970113"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="GreatYouTappedCorrectNote" ID="{0F548F86-AC23-4CAF-9835-17910967D6D5}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="CorNote" ID="{3D35ED9D-6ECA-4C59-9BA1-49776D1D1C97}" ShortID="90194245">
+						<Sound Name="CorrectNote" ID="{3D35ED9D-6ECA-4C59-9BA1-49776D1D1C97}" ShortID="90194245">
 							<PropertyList>
 								<Property Name="IsVoice" Type="bool" Value="True"/>
 							</PropertyList>
@@ -69,6 +47,18 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="GreatYouTappedCorrectNote" ID="{C2A0CBFF-5887-450B-8812-0145A4039573}">
+									<Language>English(US)</Language>
+									<AudioFile>GreatYouTappedCorrectNote.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1018730739"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="GreatYouTappedCorrectNote" ID="{C2A0CBFF-5887-450B-8812-0145A4039573}" Platform="Linked"/>
+							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
 				</ActorMixer>
