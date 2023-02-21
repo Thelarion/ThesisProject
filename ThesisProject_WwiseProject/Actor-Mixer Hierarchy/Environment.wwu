@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C9AE1A60-1F64-439A-AD46-9C53EF882DCA}" SchemaVersion="110">
+	<AudioObjects>
+		<WorkUnit Name="Environment" ID="{C9AE1A60-1F64-439A-AD46-9C53EF882DCA}" PersistMode="Standalone">
+			<ChildrenList>
+				<RandomSequenceContainer Name="TreeBump" ID="{C54B2015-7CA2-49C1-8290-970AE409AC59}" ShortID="705708982">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Environment" ID="{736B6FAE-C07F-4C69-98D0-71093C86BCC7}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Dropping Wood 08" ID="{93AB4E8C-674A-46DB-A9CF-66823C7B4EA6}" ShortID="662016257">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Dropping Wood 08" ID="{C15184CF-0A25-47A6-8070-ECC661008DDA}">
+									<Language>SFX</Language>
+									<AudioFile>TreeBump\Dropping Wood 08.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="523980979"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Dropping Wood 08" ID="{C15184CF-0A25-47A6-8070-ECC661008DDA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dropping Wood 09" ID="{08D789B0-FD13-4F15-994C-5F736F5D8B5F}" ShortID="729549654">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Dropping Wood 09" ID="{BDEE0E13-F010-4487-AD29-8142ED9057E5}">
+									<Language>SFX</Language>
+									<AudioFile>TreeBump\Dropping Wood 09.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="812700246"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Dropping Wood 09" ID="{BDEE0E13-F010-4487-AD29-8142ED9057E5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dropping Wood 10" ID="{1AA22E3B-B53E-44AB-A568-7E3C01D651D6}" ShortID="568050663">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Dropping Wood 10" ID="{EDC75AB8-7573-4F30-8B29-25DC08432358}">
+									<Language>SFX</Language>
+									<AudioFile>TreeBump\Dropping Wood 10.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1048145014"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Dropping Wood 10" ID="{EDC75AB8-7573-4F30-8B29-25DC08432358}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dropping Wood 11" ID="{DE395A85-7F4B-4A79-B9BB-92B9A4DC1EF7}" ShortID="704892925">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Dropping Wood 11" ID="{F5C78450-130D-4ECB-B6EF-5874497FA0BB}">
+									<Language>SFX</Language>
+									<AudioFile>TreeBump\Dropping Wood 11.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="597020867"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Dropping Wood 11" ID="{F5C78450-130D-4ECB-B6EF-5874497FA0BB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dropping Wood 12" ID="{E144FD0C-9B6F-4698-8B1E-505501DBB5D0}" ShortID="185657238">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Dropping Wood 12" ID="{06831AAD-5EED-4D8F-B8A8-89FF79312E9B}">
+									<Language>SFX</Language>
+									<AudioFile>TreeBump\Dropping Wood 12.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="580739463"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Dropping Wood 12" ID="{06831AAD-5EED-4D8F-B8A8-89FF79312E9B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dropping Wood 13" ID="{D458982A-A149-40F0-9A76-D9EAC3FE2EC3}" ShortID="210096761">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Dropping Wood 13" ID="{9EC3B1F5-A01F-4874-9299-5781D8CE9E4B}">
+									<Language>SFX</Language>
+									<AudioFile>TreeBump\Dropping Wood 13.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="167049895"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Dropping Wood 13" ID="{9EC3B1F5-A01F-4874-9299-5781D8CE9E4B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dropping Wood 14" ID="{7997E375-F9A7-4EA6-8A87-4266AD60CA7D}" ShortID="396437155">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Dropping Wood 14" ID="{54BAD999-D9E2-4576-83F0-4160FE6FEA9C}">
+									<Language>SFX</Language>
+									<AudioFile>TreeBump\Dropping Wood 14.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="823778671"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Dropping Wood 14" ID="{54BAD999-D9E2-4576-83F0-4160FE6FEA9C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dropping Wood 15" ID="{384E78A7-28E7-47C1-BCA2-E8D6DA125958}" ShortID="124590892">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Dropping Wood 15" ID="{D8964682-3A24-4165-8BEB-F74BFC193664}">
+									<Language>SFX</Language>
+									<AudioFile>TreeBump\Dropping Wood 15.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="828653254"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Dropping Wood 15" ID="{D8964682-3A24-4165-8BEB-F74BFC193664}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dropping Wood 01" ID="{02A37793-3AF8-434F-919F-C4DAFA85BB86}" ShortID="917319506">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Dropping Wood 01" ID="{8D10F049-E162-4002-9C81-5E9B7CF6CB73}">
+									<Language>SFX</Language>
+									<AudioFile>TreeBump\Dropping Wood 01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1001418475"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Dropping Wood 01" ID="{8D10F049-E162-4002-9C81-5E9B7CF6CB73}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dropping Wood 02" ID="{5A858FF2-C5C2-4AC5-B959-4E4C388E4A6F}" ShortID="20539971">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Dropping Wood 02" ID="{4B9DA51C-3F21-4E2F-9647-84F5B0AEF845}">
+									<Language>SFX</Language>
+									<AudioFile>TreeBump\Dropping Wood 02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="412796382"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Dropping Wood 02" ID="{4B9DA51C-3F21-4E2F-9647-84F5B0AEF845}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dropping Wood 03" ID="{F274D274-BAD6-4F50-8449-EBD3C5B15853}" ShortID="741316964">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Dropping Wood 03" ID="{F4FBE3FC-69AD-4F69-AA39-AD0C50C2F47B}">
+									<Language>SFX</Language>
+									<AudioFile>TreeBump\Dropping Wood 03.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="393765428"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Dropping Wood 03" ID="{F4FBE3FC-69AD-4F69-AA39-AD0C50C2F47B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dropping Wood 04" ID="{5D6463B4-E08C-47DC-BCE3-4CC770B2C18F}" ShortID="48742427">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Dropping Wood 04" ID="{4AC9C399-8049-41DD-9FE1-BC9B9C249529}">
+									<Language>SFX</Language>
+									<AudioFile>TreeBump\Dropping Wood 04.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="338616897"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Dropping Wood 04" ID="{4AC9C399-8049-41DD-9FE1-BC9B9C249529}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dropping Wood 05" ID="{31A1AEF6-9684-4A5B-AB03-4B30E952A625}" ShortID="1068239903">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Dropping Wood 05" ID="{8A21CC6C-2361-4CD5-BC6B-F94A3F85002C}">
+									<Language>SFX</Language>
+									<AudioFile>TreeBump\Dropping Wood 05.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="199504774"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Dropping Wood 05" ID="{8A21CC6C-2361-4CD5-BC6B-F94A3F85002C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dropping Wood 06" ID="{F7FFC35A-431F-4D2B-B6CF-5AFCDA838AE3}" ShortID="546936895">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Dropping Wood 06" ID="{DB534E27-FA00-4237-870D-2B631D25BF53}">
+									<Language>SFX</Language>
+									<AudioFile>TreeBump\Dropping Wood 06.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="604609623"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Dropping Wood 06" ID="{DB534E27-FA00-4237-870D-2B631D25BF53}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dropping Wood 07" ID="{5063FBEB-F114-462E-8D0A-B7870CDB0AAD}" ShortID="144056669">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Dropping Wood 07" ID="{1B8128AA-B2CC-4111-B776-8C02887352E2}">
+									<Language>SFX</Language>
+									<AudioFile>TreeBump\Dropping Wood 07.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="924306492"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Dropping Wood 07" ID="{1B8128AA-B2CC-4111-B776-8C02887352E2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="StoneBump" ID="{0C926A54-7E63-4D8E-8953-B825DB5E4115}" ShortID="339384956">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="StoneBump10" ID="{40A51D5A-1504-4CE6-8129-5AC1D0E37406}" ShortID="232032671">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="StoneBump10" ID="{1A2819AA-CC87-4DAD-B01A-1E61A0D8618B}">
+									<Language>SFX</Language>
+									<AudioFile>StoneBump\StoneBump10.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1053882955"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="StoneBump10" ID="{1A2819AA-CC87-4DAD-B01A-1E61A0D8618B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="StoneBump1" ID="{477003E6-23DA-4B79-9006-4F00856AEDBA}" ShortID="609836087">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="StoneBump1" ID="{A54015B2-6FC0-4A3A-B482-A9840584BE28}">
+									<Language>SFX</Language>
+									<AudioFile>StoneBump\StoneBump1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="429045180"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="StoneBump1" ID="{A54015B2-6FC0-4A3A-B482-A9840584BE28}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="StoneBump2" ID="{F4A159CC-7752-4B1D-9A4F-4B7EE030D8FE}" ShortID="979342303">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="StoneBump2" ID="{BED5B75F-D8FA-478A-AE76-9D464C6C3172}">
+									<Language>SFX</Language>
+									<AudioFile>StoneBump\StoneBump2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="418019861"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="StoneBump2" ID="{BED5B75F-D8FA-478A-AE76-9D464C6C3172}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="StoneBump3" ID="{6DD00E41-636A-4A5D-9C48-D198DD4DB53C}" ShortID="281397170">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="StoneBump3" ID="{C1404009-2F0F-4B7A-8571-85A523AEEA91}">
+									<Language>SFX</Language>
+									<AudioFile>StoneBump\StoneBump3.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="675839683"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="StoneBump3" ID="{C1404009-2F0F-4B7A-8571-85A523AEEA91}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="StoneBump4" ID="{CF781333-08F8-4305-AEFF-D880D21F387C}" ShortID="828236000">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="StoneBump4" ID="{0849ADDC-20A1-4B14-87C2-E29A470C0EAF}">
+									<Language>SFX</Language>
+									<AudioFile>StoneBump\StoneBump4.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="45056509"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="StoneBump4" ID="{0849ADDC-20A1-4B14-87C2-E29A470C0EAF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="StoneBump5" ID="{54EA90C4-28B6-4036-A887-E237F1D1297D}" ShortID="988271337">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="StoneBump5" ID="{71CBD448-02D1-461B-AB1C-6EC90F6DA2F6}">
+									<Language>SFX</Language>
+									<AudioFile>StoneBump\StoneBump5.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="646510716"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="StoneBump5" ID="{71CBD448-02D1-461B-AB1C-6EC90F6DA2F6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="StoneBump6" ID="{B145FC9E-0810-4CE7-A3DB-13DA1BEC0E71}" ShortID="156452019">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="StoneBump6" ID="{5EDCB0EA-402D-4D51-944B-6FDC3C8C6BAF}">
+									<Language>SFX</Language>
+									<AudioFile>StoneBump\StoneBump6.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="462856247"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="StoneBump6" ID="{5EDCB0EA-402D-4D51-944B-6FDC3C8C6BAF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="StoneBump7" ID="{DF91F60D-822B-4FD6-962D-C3CA63768283}" ShortID="446773915">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="StoneBump7" ID="{1437360C-45FD-4CF1-9662-99D89FE45669}">
+									<Language>SFX</Language>
+									<AudioFile>StoneBump\StoneBump7.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="889111003"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="StoneBump7" ID="{1437360C-45FD-4CF1-9662-99D89FE45669}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="StoneBump8" ID="{39146B10-3F1D-4EBB-B8BC-8E7B3B0C79BA}" ShortID="198183640">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="StoneBump8" ID="{F91A98CC-3DC1-403F-A178-D0D50C18FB51}">
+									<Language>SFX</Language>
+									<AudioFile>StoneBump\StoneBump8.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1055002628"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="StoneBump8" ID="{F91A98CC-3DC1-403F-A178-D0D50C18FB51}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="StoneBump9" ID="{8CA385DA-8B26-4989-8AFC-01BB74733CB4}" ShortID="616447328">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="StoneBump9" ID="{E4204097-0109-4880-AF7E-63F517A135F2}">
+									<Language>SFX</Language>
+									<AudioFile>StoneBump\StoneBump9.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="970609161"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="StoneBump9" ID="{E4204097-0109-4880-AF7E-63F517A135F2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

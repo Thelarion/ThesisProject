@@ -254,7 +254,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 36069028d9c6b149af9e7a7e2bc60423
     GuidInternal: 
-    m_lastTime: -8585251199920206331
+    m_lastTime: -8585246267958761343
     List:
     - name: Main
       guid: aaa465e9ee0711468f19203f9d710ce1
@@ -271,307 +271,6 @@ MonoBehaviour:
         guid: aaa465e9ee0711468f19203f9d710ce1
       Path: SoundBanks\Default Work Unit\Main
   EventWwu:
-  - PhysicalPath: Events\Beacon.wwu
-    PathAndIcons:
-    - ElementName: Events
-      ObjectType: 5
-      guid: 00000000000000000000000000000000
-    - ElementName: Beacon
-      ObjectType: 12
-      guid: 1caa8a9567812e44b92bee0e141e8819
-    ParentPath: Events\Beacon
-    guid: 1caa8a9567812e44b92bee0e141e8819
-    GuidInternal: 
-    m_lastTime: -8585252205713004687
-    List:
-    - name: d10
-      guid: 5e77bdad9013c54db57d3aab89596901
-      id: 3801406080
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Beacon
-        ObjectType: 12
-        guid: 1caa8a9567812e44b92bee0e141e8819
-      - ElementName: DistanceCount
-        ObjectType: 4
-        guid: 7b4ed62605ccc948971fb1776133d1ca
-      - ElementName: d10
-        ObjectType: 3
-        guid: 5e77bdad9013c54db57d3aab89596901
-      Path: Events\Beacon\DistanceCount\d10
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: d100
-      guid: d16e0e2407e5df4fad1362691e11b81f
-      id: 810809264
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Beacon
-        ObjectType: 12
-        guid: 1caa8a9567812e44b92bee0e141e8819
-      - ElementName: DistanceCount
-        ObjectType: 4
-        guid: 7b4ed62605ccc948971fb1776133d1ca
-      - ElementName: d100
-        ObjectType: 3
-        guid: d16e0e2407e5df4fad1362691e11b81f
-      Path: Events\Beacon\DistanceCount\d100
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: d20
-      guid: f93bea8499c41247994767a09f020673
-      id: 3851738969
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Beacon
-        ObjectType: 12
-        guid: 1caa8a9567812e44b92bee0e141e8819
-      - ElementName: DistanceCount
-        ObjectType: 4
-        guid: 7b4ed62605ccc948971fb1776133d1ca
-      - ElementName: d20
-        ObjectType: 3
-        guid: f93bea8499c41247994767a09f020673
-      Path: Events\Beacon\DistanceCount\d20
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: d30
-      guid: 959aa9fc7973b14dade8fbcc4f22241b
-      id: 3834961382
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Beacon
-        ObjectType: 12
-        guid: 1caa8a9567812e44b92bee0e141e8819
-      - ElementName: DistanceCount
-        ObjectType: 4
-        guid: 7b4ed62605ccc948971fb1776133d1ca
-      - ElementName: d30
-        ObjectType: 3
-        guid: 959aa9fc7973b14dade8fbcc4f22241b
-      Path: Events\Beacon\DistanceCount\d30
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: d40
-      guid: 88b36135c20c6c4091a77064c5be7d7e
-      id: 3885294271
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Beacon
-        ObjectType: 12
-        guid: 1caa8a9567812e44b92bee0e141e8819
-      - ElementName: DistanceCount
-        ObjectType: 4
-        guid: 7b4ed62605ccc948971fb1776133d1ca
-      - ElementName: d40
-        ObjectType: 3
-        guid: 88b36135c20c6c4091a77064c5be7d7e
-      Path: Events\Beacon\DistanceCount\d40
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: d50
-      guid: 157e1220582ce4468da57a0250a03b65
-      id: 3868516556
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Beacon
-        ObjectType: 12
-        guid: 1caa8a9567812e44b92bee0e141e8819
-      - ElementName: DistanceCount
-        ObjectType: 4
-        guid: 7b4ed62605ccc948971fb1776133d1ca
-      - ElementName: d50
-        ObjectType: 3
-        guid: 157e1220582ce4468da57a0250a03b65
-      Path: Events\Beacon\DistanceCount\d50
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: d60
-      guid: 0dee418af8eb2b4395cb759996a22fd6
-      id: 3918849413
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Beacon
-        ObjectType: 12
-        guid: 1caa8a9567812e44b92bee0e141e8819
-      - ElementName: DistanceCount
-        ObjectType: 4
-        guid: 7b4ed62605ccc948971fb1776133d1ca
-      - ElementName: d60
-        ObjectType: 3
-        guid: 0dee418af8eb2b4395cb759996a22fd6
-      Path: Events\Beacon\DistanceCount\d60
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: d70
-      guid: 1c230eb36eb4ab488e3f7e7308ff640e
-      id: 3902071826
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Beacon
-        ObjectType: 12
-        guid: 1caa8a9567812e44b92bee0e141e8819
-      - ElementName: DistanceCount
-        ObjectType: 4
-        guid: 7b4ed62605ccc948971fb1776133d1ca
-      - ElementName: d70
-        ObjectType: 3
-        guid: 1c230eb36eb4ab488e3f7e7308ff640e
-      Path: Events\Beacon\DistanceCount\d70
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: d80
-      guid: 7b4a315303de8f41ba8d5b89f1425b0c
-      id: 3952404715
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Beacon
-        ObjectType: 12
-        guid: 1caa8a9567812e44b92bee0e141e8819
-      - ElementName: DistanceCount
-        ObjectType: 4
-        guid: 7b4ed62605ccc948971fb1776133d1ca
-      - ElementName: d80
-        ObjectType: 3
-        guid: 7b4a315303de8f41ba8d5b89f1425b0c
-      Path: Events\Beacon\DistanceCount\d80
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: d90
-      guid: be63adf71394764fb510bbe862f7616e
-      id: 3935627128
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Beacon
-        ObjectType: 12
-        guid: 1caa8a9567812e44b92bee0e141e8819
-      - ElementName: DistanceCount
-        ObjectType: 4
-        guid: 7b4ed62605ccc948971fb1776133d1ca
-      - ElementName: d90
-        ObjectType: 3
-        guid: be63adf71394764fb510bbe862f7616e
-      Path: Events\Beacon\DistanceCount\d90
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: destination_reached
-      guid: 60509861cdadc9418721eff81467818e
-      id: 4069116836
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Beacon
-        ObjectType: 12
-        guid: 1caa8a9567812e44b92bee0e141e8819
-      - ElementName: DistanceCount
-        ObjectType: 4
-        guid: 7b4ed62605ccc948971fb1776133d1ca
-      - ElementName: destination_reached
-        ObjectType: 3
-        guid: 60509861cdadc9418721eff81467818e
-      Path: Events\Beacon\DistanceCount\destination_reached
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: distanceC
-      guid: 37d9845939562e468e10cf9f08a2920e
-      id: 2982082363
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Beacon
-        ObjectType: 12
-        guid: 1caa8a9567812e44b92bee0e141e8819
-      - ElementName: distanceC
-        ObjectType: 3
-        guid: 37d9845939562e468e10cf9f08a2920e
-      Path: Events\Beacon\distanceC
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: DistanceCount
-      guid: 7b4ed62605ccc948971fb1776133d1ca
-      id: 1258232269
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Beacon
-        ObjectType: 12
-        guid: 1caa8a9567812e44b92bee0e141e8819
-      - ElementName: DistanceCount
-        ObjectType: 4
-        guid: 7b4ed62605ccc948971fb1776133d1ca
-      Path: Events\Beacon\DistanceCount
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Play_BeaconLock
-      guid: 2bb7d26173335449a5a2a3e2d4cfd5ef
-      id: 3923622767
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Beacon
-        ObjectType: 12
-        guid: 1caa8a9567812e44b92bee0e141e8819
-      - ElementName: Play_BeaconLock
-        ObjectType: 3
-        guid: 2bb7d26173335449a5a2a3e2d4cfd5ef
-      Path: Events\Beacon\Play_BeaconLock
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Play_BeaconLR
-      guid: beaec52c83c1614b9b47bdc7b337289d
-      id: 194014728
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Beacon
-        ObjectType: 12
-        guid: 1caa8a9567812e44b92bee0e141e8819
-      - ElementName: Play_BeaconLR
-        ObjectType: 3
-        guid: beaec52c83c1614b9b47bdc7b337289d
-      Path: Events\Beacon\Play_BeaconLR
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
   - PhysicalPath: Events\BGM.wwu
     PathAndIcons:
     - ElementName: Events
@@ -632,6 +331,53 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585252899336269808
     List: []
+  - PhysicalPath: Events\Environment.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Environment
+      ObjectType: 12
+      guid: 6b6ecfb2ce1fa94d909b1661ebea4ead
+    ParentPath: Events\Environment
+    guid: 6b6ecfb2ce1fa94d909b1661ebea4ead
+    GuidInternal: 
+    m_lastTime: -8585246205342561591
+    List:
+    - name: Play_StoneBump
+      guid: f25d2dde1034d842b0d26da16867c046
+      id: 3385122965
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Environment
+        ObjectType: 12
+        guid: 6b6ecfb2ce1fa94d909b1661ebea4ead
+      - ElementName: Play_StoneBump
+        ObjectType: 3
+        guid: f25d2dde1034d842b0d26da16867c046
+      Path: Events\Environment\Play_StoneBump
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_TreeBump
+      guid: 016670f013beeb46bc38090f68e1645b
+      id: 3793308878
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Environment
+        ObjectType: 12
+        guid: 6b6ecfb2ce1fa94d909b1661ebea4ead
+      - ElementName: Play_TreeBump
+        ObjectType: 3
+        guid: 016670f013beeb46bc38090f68e1645b
+      Path: Events\Environment\Play_TreeBump
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\Melodies.wwu
     PathAndIcons:
     - ElementName: Events
@@ -1791,7 +1537,7 @@ MonoBehaviour:
     ParentPath: Events\Player
     guid: a739f7e5ca298a44a84cf8243f0f273a
     GuidInternal: 
-    m_lastTime: -8585251126210352275
+    m_lastTime: -8585246284154898178
     List:
     - name: Play_PlayerFoot
       guid: e4392008128a7e4a8c3da3c8af76ee16
@@ -1810,49 +1556,329 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-  - PhysicalPath: Events\Slingshot.wwu
+  - PhysicalPath: Events\SFX.wwu
     PathAndIcons:
     - ElementName: Events
       ObjectType: 5
       guid: 00000000000000000000000000000000
-    - ElementName: Slingshot
+    - ElementName: SFX
       ObjectType: 12
-      guid: bf60f2379811c8478dfc5634426acd5e
-    ParentPath: Events\Slingshot
-    guid: bf60f2379811c8478dfc5634426acd5e
+      guid: 25bc135fc28aee46b33f4240d933cdbd
+    ParentPath: Events\SFX
+    guid: 25bc135fc28aee46b33f4240d933cdbd
     GuidInternal: 
-    m_lastTime: -8585251204067309426
+    m_lastTime: -8585246268583727564
     List:
-    - name: Play_Slingshot_Release
-      guid: a2ec135f4f6ca3499af19ab5fa1a79d1
-      id: 3074787511
+    - name: Beacon
+      guid: bbc8b6179a41b343bca8b3cfc8a7a553
+      id: 3241852425
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
         guid: 00000000000000000000000000000000
-      - ElementName: Slingshot
+      - ElementName: SFX
         ObjectType: 12
-        guid: bf60f2379811c8478dfc5634426acd5e
-      - ElementName: Play_Slingshot_Release
-        ObjectType: 3
-        guid: a2ec135f4f6ca3499af19ab5fa1a79d1
-      Path: Events\Slingshot\Play_Slingshot_Release
+        guid: 25bc135fc28aee46b33f4240d933cdbd
+      - ElementName: Beacon
+        ObjectType: 4
+        guid: bbc8b6179a41b343bca8b3cfc8a7a553
+      Path: Events\SFX\Beacon
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-  - PhysicalPath: Events\Targets.wwu
-    PathAndIcons:
-    - ElementName: Events
-      ObjectType: 5
-      guid: 00000000000000000000000000000000
-    - ElementName: Targets
-      ObjectType: 12
-      guid: a09cc86ac9a7bf4bb5edb78e39af6c44
-    ParentPath: Events\Targets
-    guid: a09cc86ac9a7bf4bb5edb78e39af6c44
-    GuidInternal: 
-    m_lastTime: -8585251126210840641
-    List:
+    - name: d10
+      guid: 5e77bdad9013c54db57d3aab89596901
+      id: 3801406080
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: SFX
+        ObjectType: 12
+        guid: 25bc135fc28aee46b33f4240d933cdbd
+      - ElementName: Beacon
+        ObjectType: 4
+        guid: bbc8b6179a41b343bca8b3cfc8a7a553
+      - ElementName: DistanceCount
+        ObjectType: 4
+        guid: 7b4ed62605ccc948971fb1776133d1ca
+      - ElementName: d10
+        ObjectType: 3
+        guid: 5e77bdad9013c54db57d3aab89596901
+      Path: Events\SFX\Beacon\DistanceCount\d10
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: d100
+      guid: d16e0e2407e5df4fad1362691e11b81f
+      id: 810809264
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: SFX
+        ObjectType: 12
+        guid: 25bc135fc28aee46b33f4240d933cdbd
+      - ElementName: Beacon
+        ObjectType: 4
+        guid: bbc8b6179a41b343bca8b3cfc8a7a553
+      - ElementName: DistanceCount
+        ObjectType: 4
+        guid: 7b4ed62605ccc948971fb1776133d1ca
+      - ElementName: d100
+        ObjectType: 3
+        guid: d16e0e2407e5df4fad1362691e11b81f
+      Path: Events\SFX\Beacon\DistanceCount\d100
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: d20
+      guid: f93bea8499c41247994767a09f020673
+      id: 3851738969
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: SFX
+        ObjectType: 12
+        guid: 25bc135fc28aee46b33f4240d933cdbd
+      - ElementName: Beacon
+        ObjectType: 4
+        guid: bbc8b6179a41b343bca8b3cfc8a7a553
+      - ElementName: DistanceCount
+        ObjectType: 4
+        guid: 7b4ed62605ccc948971fb1776133d1ca
+      - ElementName: d20
+        ObjectType: 3
+        guid: f93bea8499c41247994767a09f020673
+      Path: Events\SFX\Beacon\DistanceCount\d20
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: d30
+      guid: 959aa9fc7973b14dade8fbcc4f22241b
+      id: 3834961382
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: SFX
+        ObjectType: 12
+        guid: 25bc135fc28aee46b33f4240d933cdbd
+      - ElementName: Beacon
+        ObjectType: 4
+        guid: bbc8b6179a41b343bca8b3cfc8a7a553
+      - ElementName: DistanceCount
+        ObjectType: 4
+        guid: 7b4ed62605ccc948971fb1776133d1ca
+      - ElementName: d30
+        ObjectType: 3
+        guid: 959aa9fc7973b14dade8fbcc4f22241b
+      Path: Events\SFX\Beacon\DistanceCount\d30
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: d40
+      guid: 88b36135c20c6c4091a77064c5be7d7e
+      id: 3885294271
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: SFX
+        ObjectType: 12
+        guid: 25bc135fc28aee46b33f4240d933cdbd
+      - ElementName: Beacon
+        ObjectType: 4
+        guid: bbc8b6179a41b343bca8b3cfc8a7a553
+      - ElementName: DistanceCount
+        ObjectType: 4
+        guid: 7b4ed62605ccc948971fb1776133d1ca
+      - ElementName: d40
+        ObjectType: 3
+        guid: 88b36135c20c6c4091a77064c5be7d7e
+      Path: Events\SFX\Beacon\DistanceCount\d40
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: d50
+      guid: 157e1220582ce4468da57a0250a03b65
+      id: 3868516556
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: SFX
+        ObjectType: 12
+        guid: 25bc135fc28aee46b33f4240d933cdbd
+      - ElementName: Beacon
+        ObjectType: 4
+        guid: bbc8b6179a41b343bca8b3cfc8a7a553
+      - ElementName: DistanceCount
+        ObjectType: 4
+        guid: 7b4ed62605ccc948971fb1776133d1ca
+      - ElementName: d50
+        ObjectType: 3
+        guid: 157e1220582ce4468da57a0250a03b65
+      Path: Events\SFX\Beacon\DistanceCount\d50
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: d60
+      guid: 0dee418af8eb2b4395cb759996a22fd6
+      id: 3918849413
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: SFX
+        ObjectType: 12
+        guid: 25bc135fc28aee46b33f4240d933cdbd
+      - ElementName: Beacon
+        ObjectType: 4
+        guid: bbc8b6179a41b343bca8b3cfc8a7a553
+      - ElementName: DistanceCount
+        ObjectType: 4
+        guid: 7b4ed62605ccc948971fb1776133d1ca
+      - ElementName: d60
+        ObjectType: 3
+        guid: 0dee418af8eb2b4395cb759996a22fd6
+      Path: Events\SFX\Beacon\DistanceCount\d60
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: d70
+      guid: 1c230eb36eb4ab488e3f7e7308ff640e
+      id: 3902071826
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: SFX
+        ObjectType: 12
+        guid: 25bc135fc28aee46b33f4240d933cdbd
+      - ElementName: Beacon
+        ObjectType: 4
+        guid: bbc8b6179a41b343bca8b3cfc8a7a553
+      - ElementName: DistanceCount
+        ObjectType: 4
+        guid: 7b4ed62605ccc948971fb1776133d1ca
+      - ElementName: d70
+        ObjectType: 3
+        guid: 1c230eb36eb4ab488e3f7e7308ff640e
+      Path: Events\SFX\Beacon\DistanceCount\d70
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: d80
+      guid: 7b4a315303de8f41ba8d5b89f1425b0c
+      id: 3952404715
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: SFX
+        ObjectType: 12
+        guid: 25bc135fc28aee46b33f4240d933cdbd
+      - ElementName: Beacon
+        ObjectType: 4
+        guid: bbc8b6179a41b343bca8b3cfc8a7a553
+      - ElementName: DistanceCount
+        ObjectType: 4
+        guid: 7b4ed62605ccc948971fb1776133d1ca
+      - ElementName: d80
+        ObjectType: 3
+        guid: 7b4a315303de8f41ba8d5b89f1425b0c
+      Path: Events\SFX\Beacon\DistanceCount\d80
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: d90
+      guid: be63adf71394764fb510bbe862f7616e
+      id: 3935627128
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: SFX
+        ObjectType: 12
+        guid: 25bc135fc28aee46b33f4240d933cdbd
+      - ElementName: Beacon
+        ObjectType: 4
+        guid: bbc8b6179a41b343bca8b3cfc8a7a553
+      - ElementName: DistanceCount
+        ObjectType: 4
+        guid: 7b4ed62605ccc948971fb1776133d1ca
+      - ElementName: d90
+        ObjectType: 3
+        guid: be63adf71394764fb510bbe862f7616e
+      Path: Events\SFX\Beacon\DistanceCount\d90
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: destination_reached
+      guid: 60509861cdadc9418721eff81467818e
+      id: 4069116836
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: SFX
+        ObjectType: 12
+        guid: 25bc135fc28aee46b33f4240d933cdbd
+      - ElementName: Beacon
+        ObjectType: 4
+        guid: bbc8b6179a41b343bca8b3cfc8a7a553
+      - ElementName: DistanceCount
+        ObjectType: 4
+        guid: 7b4ed62605ccc948971fb1776133d1ca
+      - ElementName: destination_reached
+        ObjectType: 3
+        guid: 60509861cdadc9418721eff81467818e
+      Path: Events\SFX\Beacon\DistanceCount\destination_reached
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: distanceC
+      guid: 37d9845939562e468e10cf9f08a2920e
+      id: 2982082363
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: SFX
+        ObjectType: 12
+        guid: 25bc135fc28aee46b33f4240d933cdbd
+      - ElementName: Beacon
+        ObjectType: 4
+        guid: bbc8b6179a41b343bca8b3cfc8a7a553
+      - ElementName: distanceC
+        ObjectType: 3
+        guid: 37d9845939562e468e10cf9f08a2920e
+      Path: Events\SFX\Beacon\distanceC
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: DistanceCount
+      guid: 7b4ed62605ccc948971fb1776133d1ca
+      id: 1258232269
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: SFX
+        ObjectType: 12
+        guid: 25bc135fc28aee46b33f4240d933cdbd
+      - ElementName: Beacon
+        ObjectType: 4
+        guid: bbc8b6179a41b343bca8b3cfc8a7a553
+      - ElementName: DistanceCount
+        ObjectType: 4
+        guid: 7b4ed62605ccc948971fb1776133d1ca
+      Path: Events\SFX\Beacon\DistanceCount
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: FreqDistanceEvent
       guid: 74c402e6d7077340a734ccbd7b265c9e
       id: 2218041646
@@ -1860,13 +1886,16 @@ MonoBehaviour:
       - ElementName: Events
         ObjectType: 5
         guid: 00000000000000000000000000000000
-      - ElementName: Targets
+      - ElementName: SFX
         ObjectType: 12
-        guid: a09cc86ac9a7bf4bb5edb78e39af6c44
+        guid: 25bc135fc28aee46b33f4240d933cdbd
+      - ElementName: Targets
+        ObjectType: 4
+        guid: be282630ab9e824c8957e45eb0ab286f
       - ElementName: FreqDistanceEvent
         ObjectType: 3
         guid: 74c402e6d7077340a734ccbd7b265c9e
-      Path: Events\Targets\FreqDistanceEvent
+      Path: Events\SFX\Targets\FreqDistanceEvent
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1877,13 +1906,110 @@ MonoBehaviour:
       - ElementName: Events
         ObjectType: 5
         guid: 00000000000000000000000000000000
-      - ElementName: Targets
+      - ElementName: SFX
         ObjectType: 12
-        guid: a09cc86ac9a7bf4bb5edb78e39af6c44
+        guid: 25bc135fc28aee46b33f4240d933cdbd
+      - ElementName: Targets
+        ObjectType: 4
+        guid: be282630ab9e824c8957e45eb0ab286f
       - ElementName: Miss
         ObjectType: 3
         guid: c3bcf1bd2135fb49a33b11b6d7b71982
-      Path: Events\Targets\Miss
+      Path: Events\SFX\Targets\Miss
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_BeaconLock
+      guid: 2bb7d26173335449a5a2a3e2d4cfd5ef
+      id: 3923622767
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: SFX
+        ObjectType: 12
+        guid: 25bc135fc28aee46b33f4240d933cdbd
+      - ElementName: Beacon
+        ObjectType: 4
+        guid: bbc8b6179a41b343bca8b3cfc8a7a553
+      - ElementName: Play_BeaconLock
+        ObjectType: 3
+        guid: 2bb7d26173335449a5a2a3e2d4cfd5ef
+      Path: Events\SFX\Beacon\Play_BeaconLock
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_BeaconLR
+      guid: beaec52c83c1614b9b47bdc7b337289d
+      id: 194014728
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: SFX
+        ObjectType: 12
+        guid: 25bc135fc28aee46b33f4240d933cdbd
+      - ElementName: Beacon
+        ObjectType: 4
+        guid: bbc8b6179a41b343bca8b3cfc8a7a553
+      - ElementName: Play_BeaconLR
+        ObjectType: 3
+        guid: beaec52c83c1614b9b47bdc7b337289d
+      Path: Events\SFX\Beacon\Play_BeaconLR
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Slingshot_Release
+      guid: a2ec135f4f6ca3499af19ab5fa1a79d1
+      id: 3074787511
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: SFX
+        ObjectType: 12
+        guid: 25bc135fc28aee46b33f4240d933cdbd
+      - ElementName: Slingshot
+        ObjectType: 4
+        guid: 553041d93fe00c4183b476deb70813e7
+      - ElementName: Play_Slingshot_Release
+        ObjectType: 3
+        guid: a2ec135f4f6ca3499af19ab5fa1a79d1
+      Path: Events\SFX\Slingshot\Play_Slingshot_Release
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_TreeCreak
+      guid: db73aa0d60fa364f82d902a968575862
+      id: 3353040410
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: SFX
+        ObjectType: 12
+        guid: 25bc135fc28aee46b33f4240d933cdbd
+      - ElementName: Play_TreeCreak
+        ObjectType: 3
+        guid: db73aa0d60fa364f82d902a968575862
+      Path: Events\SFX\Play_TreeCreak
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Slingshot
+      guid: 553041d93fe00c4183b476deb70813e7
+      id: 3235795600
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: SFX
+        ObjectType: 12
+        guid: 25bc135fc28aee46b33f4240d933cdbd
+      - ElementName: Slingshot
+        ObjectType: 4
+        guid: 553041d93fe00c4183b476deb70813e7
+      Path: Events\SFX\Slingshot
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1894,13 +2020,33 @@ MonoBehaviour:
       - ElementName: Events
         ObjectType: 5
         guid: 00000000000000000000000000000000
-      - ElementName: Targets
+      - ElementName: SFX
         ObjectType: 12
-        guid: a09cc86ac9a7bf4bb5edb78e39af6c44
+        guid: 25bc135fc28aee46b33f4240d933cdbd
+      - ElementName: Targets
+        ObjectType: 4
+        guid: be282630ab9e824c8957e45eb0ab286f
       - ElementName: Success
         ObjectType: 3
         guid: a18f188f5f3e1541ad6cb05712663900
-      Path: Events\Targets\Success
+      Path: Events\SFX\Targets\Success
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Targets
+      guid: be282630ab9e824c8957e45eb0ab286f
+      id: 3814383601
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: SFX
+        ObjectType: 12
+        guid: 25bc135fc28aee46b33f4240d933cdbd
+      - ElementName: Targets
+        ObjectType: 4
+        guid: be282630ab9e824c8957e45eb0ab286f
+      Path: Events\SFX\Targets
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1911,13 +2057,16 @@ MonoBehaviour:
       - ElementName: Events
         ObjectType: 5
         guid: 00000000000000000000000000000000
-      - ElementName: Targets
+      - ElementName: SFX
         ObjectType: 12
-        guid: a09cc86ac9a7bf4bb5edb78e39af6c44
+        guid: 25bc135fc28aee46b33f4240d933cdbd
+      - ElementName: Targets
+        ObjectType: 4
+        guid: be282630ab9e824c8957e45eb0ab286f
       - ElementName: WhiteNoiseOnTarget
         ObjectType: 3
         guid: 341b09c19c05d249bb233b4e3d366514
-      Path: Events\Targets\WhiteNoiseOnTarget
+      Path: Events\SFX\Targets\WhiteNoiseOnTarget
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1945,7 +2094,7 @@ MonoBehaviour:
     ParentPath: Events\UI
     guid: 13ad265a32fe774b8e3372fc1241ceef
     GuidInternal: 
-    m_lastTime: -8585247953165067452
+    m_lastTime: -8585246280673573288
     List:
     - name: DistanceFrameTransition
       guid: b75bda6923c11a45b48382c150b587a0
@@ -3451,7 +3600,7 @@ MonoBehaviour:
         guid: da8eac4adff1a245a328ede5f79242d9
       Path: Triggers\Default Work Unit\New_Trigger
   ExpandedFileSystemItemIds: 0200000003000000050000000600000007000000090000000a0000000c000000180000001e000000270000002e0000002f00000034000000530000007d000000d2000000fa2f0000
-  ExpandedWaapiItemIds: 010000000200000005000000060000000a0000000c0000000e0000001a0000001e0000001f000000270000002a0000002f00000032000000350000003c0000003d0000003e0000003f00000040000000470000004d0000004e000000530000007d000000d2000000fa2f0000b6f60000
+  ExpandedWaapiItemIds: 01000000020000000300000004000000050000000600000008000000090000000b0000000c0000000d0000001500000017000000190000001b0000001e0000001f000000270000002a0000002f00000032000000350000003c0000003d0000003e0000003f00000040000000470000004d0000004e00000051000000530000007d000000d2000000fa2f0000b6f60000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

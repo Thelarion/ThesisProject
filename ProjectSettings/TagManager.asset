@@ -9,6 +9,7 @@ TagManager:
   - Wall
   - Sphere
   - Tree
+  - Stone
   layers:
   - Default
   - TransparentFX

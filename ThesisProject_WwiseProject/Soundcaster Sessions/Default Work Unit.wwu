@@ -6,7 +6,7 @@
 				<SoundcasterSession Name="New Soundcaster Session" ID="{5718D2AD-D52F-4502-BB4B-87BB6BF4C51C}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="Frequency Distance" ID="{99AC6BE6-146C-4182-9837-E7FB3AE78D80}" WorkUnitID="{B75879FE-481B-4EE0-8FD5-29339933BA93}"/>
+							<ObjectRef Name="TreeBump" ID="{C54B2015-7CA2-49C1-8290-970AE409AC59}" WorkUnitID="{C9AE1A60-1F64-439A-AD46-9C53EF882DCA}"/>
 							<Position X="0" Y="0"/>
 						</Module>
 					</ModuleList>

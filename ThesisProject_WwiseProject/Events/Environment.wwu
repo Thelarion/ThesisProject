@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B2CF6E6B-1FCE-4DA9-909B-1661EBEA4EAD}" SchemaVersion="110">
+	<Events>
+		<WorkUnit Name="Environment" ID="{B2CF6E6B-1FCE-4DA9-909B-1661EBEA4EAD}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_TreeBump" ID="{F0706601-BE13-46EB-BC38-090F68E1645B}">
+					<ChildrenList>
+						<Action Name="" ID="{2A201B03-0488-42EC-A802-EE78F3AB9CFC}" ShortID="276419054">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TreeBump" ID="{C54B2015-7CA2-49C1-8290-970AE409AC59}" WorkUnitID="{C9AE1A60-1F64-439A-AD46-9C53EF882DCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_StoneBump" ID="{DE2D5DF2-3410-42D8-B0D2-6DA16867C046}">
+					<ChildrenList>
+						<Action Name="" ID="{BDBB102F-4013-474D-ADD2-91ED54FE7053}" ShortID="668237087">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="StoneBump" ID="{0C926A54-7E63-4D8E-8953-B825DB5E4115}" WorkUnitID="{C9AE1A60-1F64-439A-AD46-9C53EF882DCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
