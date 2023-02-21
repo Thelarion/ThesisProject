@@ -216,7 +216,19 @@
 										</Reference>
 									</ReferenceList>
 								</AuxBus>
-								<Bus Name="Environment" ID="{736B6FAE-C07F-4C69-98D0-71093C86BCC7}"/>
+								<Bus Name="Environment" ID="{736B6FAE-C07F-4C69-98D0-71093C86BCC7}">
+									<ChildrenList>
+										<Bus Name="Trees" ID="{6492E321-F36A-40F7-9D82-1E46B3A139B5}">
+											<PropertyList>
+												<Property Name="BusChannelConfig" Type="int32">
+													<ValueList>
+														<Value>768</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+										</Bus>
+									</ChildrenList>
+								</Bus>
 							</ChildrenList>
 							<ObjectLists>
 								<ObjectList Name="RTPC">

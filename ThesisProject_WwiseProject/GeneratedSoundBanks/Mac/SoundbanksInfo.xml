@@ -13,7 +13,7 @@
 			<ShortName>Environment</ShortName>
 			<Path>Environment.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{004B7B0F-58CC-EFF8-CD32-97D0434C161D}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{2F2BB1AC-D51B-D318-03F7-0B1273F9821E}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -35,6 +35,7 @@
 				<Bus Id="3105667492" Name="AudioMenu"/>
 				<Bus Id="3170124113" Name="Voice"/>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
+				<Bus Id="3882419280" Name="Trees"/>
 				<Bus Id="3991942870" Name="Music"/>
 			</Busses>
 			<AuxBusses>
@@ -171,7 +172,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{7957CE86-DB45-5B1E-4673-A3657BAE3D0C}">
+		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{C0BE6A94-CB56-BC11-1B83-AB2589051E7A}">
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
 			<Media>
@@ -330,6 +331,10 @@
 				<File Id="323227027" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O3\A3.wav</ShortName>
 					<CachePath>SFX/O3/A3_10C4C929.wem</CachePath>
+				</File>
+				<File Id="331737057" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>TestClick.wav</ShortName>
+					<CachePath>SFX/TestClick_10C4C929.wem</CachePath>
 				</File>
 				<File Id="332946074" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O4\C4.wav</ShortName>
@@ -1262,6 +1267,11 @@
 						<MediaRef Id="1055002628"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="83581882" Name="Play_TestClick" DurationType="OneShot" DurationMin="1" DurationMax="1">
+					<MediaRefs>
+						<MediaRef Id="331737057"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3793308878" Name="Play_TreeBump" DurationType="OneShot" DurationMin="1.2030386" DurationMax="2.301678">
 					<MediaRefs>
 						<MediaRef Id="167049895"/>
@@ -1398,5 +1408,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{3001E3C4-764F-4EF8-DB34-8834BA6EEE9F}</FileHash>
+	<FileHash>{0123A46E-5D76-D492-98F7-FE12995806FD}</FileHash>
 </SoundBanksInfo>

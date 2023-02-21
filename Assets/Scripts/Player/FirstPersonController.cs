@@ -276,7 +276,6 @@ namespace StarterAssets
             // move the player
             _controller.Move(inputDirection.normalized * (_speed * Time.deltaTime) + new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
 
-            print(_controller.velocity.magnitude);
             if (_controller.velocity.magnitude <= 0.6)
             {
                 facesObject = true;

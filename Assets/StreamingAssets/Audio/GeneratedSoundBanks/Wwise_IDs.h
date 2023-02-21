@@ -90,6 +90,7 @@ namespace AK
         static const AkUniqueID PLAY_PLAYERFOOT = 3015844381U;
         static const AkUniqueID PLAY_SLINGSHOT_RELEASE = 3074787511U;
         static const AkUniqueID PLAY_STONEBUMP = 3385122965U;
+        static const AkUniqueID PLAY_TESTCLICK = 83581882U;
         static const AkUniqueID PLAY_TREEBUMP = 3793308878U;
         static const AkUniqueID PLAY_TREECREAK = 3353040410U;
         static const AkUniqueID PLAY_VOLUMECHECK = 1569887440U;
@@ -318,6 +319,7 @@ namespace AK
         static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID NOTES = 201729212U;
         static const AkUniqueID SFX = 393239870U;
+        static const AkUniqueID TREES = 3882419280U;
         static const AkUniqueID UNDEFINED = 2532820111U;
         static const AkUniqueID VOICE = 3170124113U;
     } // namespace BUSSES

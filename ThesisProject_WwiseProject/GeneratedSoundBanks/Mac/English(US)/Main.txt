@@ -1,4 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
+	83581882	Play_TestClick			\Testing\Play_TestClick	
 	194014728	Play_BeaconLR			\SFX\Beacon\Play_BeaconLR	
 	278617630	Play_Ambience			\Environment\Play_Ambience	
 	293588534	DistanceFrameTransition			\UI\DistanceFrameTransition	
@@ -183,6 +184,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	296305150	AudioMenuOff	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\ButtonReadAloud\AudioMenuOff_10C4C929.wem		\Actor-Mixer Hierarchy\AudioMenu\ButtonReadAloud\AudioMenuToggle\AudioMenuOff		367708
 	320309339	ArrowKeys	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\ButtonReadAloud\PressRightOrLeftArrowKeyToChange_10C4C929.wem		\Actor-Mixer Hierarchy\AudioMenu\ButtonReadAloud\ArrowKeys		571488
 	323227027	A3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\O3\A3_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O3\A3		384096
+	331737057	TestClick_lp	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\TestClick_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\TestClick_lp		192096
 	332946074	C4	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\O4\C4_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O4\C4		384096
 	338616897	Dropping Wood 04	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\TreeBump\Dropping Wood 04_10C4C929.wem		\Actor-Mixer Hierarchy\Environment\TreeBump\Dropping Wood 04		252832
 	370788259	ReturnSpace	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\ButtonReadAloud\PressReturnOrSpaceToTurnOn_10C4C929.wem		\Actor-Mixer Hierarchy\AudioMenu\ButtonReadAloud\ReturnSpace		438364
