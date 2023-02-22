@@ -46,7 +46,7 @@
 				</SwitchGroup>
 				<SwitchGroup Name="ButtonReadAloud" ID="{BF942F16-41D1-400B-B3FE-4E5F7E856000}">
 					<ChildrenList>
-						<Switch Name="AudioMenuToggle" ID="{28CC68B0-C06B-4396-B605-BBC0D1315C54}"/>
+						<Switch Name="InclusionModeToggle" ID="{28CC68B0-C06B-4396-B605-BBC0D1315C54}"/>
 						<Switch Name="VoiceVolume" ID="{1F5EF52F-1820-4724-904A-F35F843CB394}"/>
 						<Switch Name="MusicVolume" ID="{BDB9E247-8D23-47FD-80FE-8CBB86033547}"/>
 						<Switch Name="EffectsVolume" ID="{F4D6FD0C-AEB8-4F81-999F-6A4AB1F2B280}"/>
@@ -58,12 +58,13 @@
 						<Switch Name="Quit" ID="{75D0E5F5-D20C-419A-A557-788E00F73A93}"/>
 						<Switch Name="BackToMainMenu" ID="{26A0D7B1-489E-4495-837C-92B980A5AE04}"/>
 						<Switch Name="Resume" ID="{E69F7961-A05B-41B1-836E-4C8BFF89428D}"/>
+						<Switch Name="WelcomeInclusion" ID="{66B7A692-9AD3-4E15-B4B2-8A055BFA3CBF}"/>
 					</ChildrenList>
 				</SwitchGroup>
-				<SwitchGroup Name="AudioMenuToggle" ID="{295A64D3-6D0F-4BEC-9654-5A33B7D556FD}">
+				<SwitchGroup Name="InclusionModeToggle" ID="{295A64D3-6D0F-4BEC-9654-5A33B7D556FD}">
 					<ChildrenList>
-						<Switch Name="AudioMenuOn" ID="{FBB30C82-EB4C-4506-AB69-932A32DA0848}"/>
-						<Switch Name="AudioMenuOff" ID="{B8BF384A-A71B-41B5-B967-6E8389C3EB50}"/>
+						<Switch Name="InclusionModeOn" ID="{FBB30C82-EB4C-4506-AB69-932A32DA0848}"/>
+						<Switch Name="InclusionModeOff" ID="{B8BF384A-A71B-41B5-B967-6E8389C3EB50}"/>
 					</ChildrenList>
 				</SwitchGroup>
 				<SwitchGroup Name="AudioVisualiserToggle" ID="{DDF52408-68D4-4C21-94EF-683183E4ED2A}">

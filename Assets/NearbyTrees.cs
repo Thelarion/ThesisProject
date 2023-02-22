@@ -37,11 +37,11 @@ public class NearbyTrees : MonoBehaviour
         {
             if (hitCollider.tag == "Tree")
             {
-                print("tree");
+                // print("tree");
                 GameObject colliderGO = hitCollider.gameObject;
                 float compareDistance = Vector3.Distance(colliderGO.transform.position, currentTargetTone.transform.position);
 
-                print(compareDistance);
+                // print(compareDistance);
                 // Compare the most recent value with the saved value 
                 if (compareDistance < shortestDistanceTreeToTarget)
                 {

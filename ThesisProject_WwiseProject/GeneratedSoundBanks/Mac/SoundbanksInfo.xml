@@ -9,11 +9,11 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1229948536" Type="User" Language="SFX" Hash="{FFBFDB9F-145F-9859-F85E-F50EB255A1E8}">
+		<SoundBank Id="1229948536" Type="User" Language="SFX" Hash="{7C09EAE0-05CB-9B95-38C9-8258AA7B9EE6}">
 			<ShortName>Environment</ShortName>
 			<Path>Environment.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{2F2BB1AC-D51B-D318-03F7-0B1273F9821E}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{FF625D87-2BE6-4320-472F-A5EB9BA283B4}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -120,10 +120,10 @@
 						<Switch Id="3991942870" Name="Music"/>
 					</Switches>
 				</SwitchGroup>
-				<SwitchGroup Id="1238775560" Name="AudioMenuToggle">
+				<SwitchGroup Id="1343002924" Name="InclusionModeToggle">
 					<Switches>
-						<Switch Id="2139648023" Name="AudioMenuOn"/>
-						<Switch Id="3804790955" Name="AudioMenuOff"/>
+						<Switch Id="948478191" Name="InclusionModeOff"/>
+						<Switch Id="3050936059" Name="InclusionModeOn"/>
 					</Switches>
 				</SwitchGroup>
 				<SwitchGroup Id="1419421502" Name="TrackNames">
@@ -146,8 +146,9 @@
 						<Switch Id="640585335" Name="EffectsVolume"/>
 						<Switch Id="782826392" Name="Default"/>
 						<Switch Id="953277036" Name="Resume"/>
-						<Switch Id="1238775560" Name="AudioMenuToggle"/>
+						<Switch Id="984851287" Name="WelcomeInclusion"/>
 						<Switch Id="1281810935" Name="Start"/>
+						<Switch Id="1343002924" Name="InclusionModeToggle"/>
 						<Switch Id="2346531308" Name="MusicVolume"/>
 						<Switch Id="2734938552" Name="ArrowKeys"/>
 						<Switch Id="3490598729" Name="BackToMainMenu"/>
@@ -172,7 +173,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{C0BE6A94-CB56-BC11-1B83-AB2589051E7A}">
+		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{DC9AD383-772C-2A85-4A85-A9F2BA093C8B}">
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
 			<Media>
@@ -220,10 +221,6 @@
 					<ShortName>ButtonReadAloud\EffectsVolume.wav</ShortName>
 					<CachePath>SFX/ButtonReadAloud/EffectsVolume_10C4C929.wem</CachePath>
 				</File>
-				<File Id="104649299" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>ButtonReadAloud\AudioMenuOn.wav</ShortName>
-					<CachePath>SFX/ButtonReadAloud/AudioMenuOn_10C4C929.wem</CachePath>
-				</File>
 				<File Id="106854697" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>DistanceCount\80.wav</ShortName>
 					<CachePath>SFX/DistanceCount/80_10C4C929.wem</CachePath>
@@ -240,9 +237,17 @@
 					<ShortName>O3\E3.wav</ShortName>
 					<CachePath>SFX/O3/E3_10C4C929.wem</CachePath>
 				</File>
+				<File Id="145978936" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Inclusionmode Off.wav</ShortName>
+					<CachePath>Voices/English(US)/Inclusionmode Off_10C4C929.wem</CachePath>
+				</File>
 				<File Id="154148883" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TreeCreak_02.wav</ShortName>
 					<CachePath>SFX/TreeCreak_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="160436766" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>WelcomeInclusionmode.wav</ShortName>
+					<CachePath>Voices/English(US)/WelcomeInclusionmode_10C4C929.wem</CachePath>
 				</File>
 				<File Id="164636996" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>F4#.wav</ShortName>
@@ -319,10 +324,6 @@
 				<File Id="291629109" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>D3b.wav</ShortName>
 					<CachePath>SFX/D3b_10C4C929.wem</CachePath>
-				</File>
-				<File Id="296305150" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>ButtonReadAloud\AudioMenuOff.wav</ShortName>
-					<CachePath>SFX/ButtonReadAloud/AudioMenuOff_10C4C929.wem</CachePath>
 				</File>
 				<File Id="320309339" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ButtonReadAloud\PressRightOrLeftArrowKeyToChange.wav</ShortName>
@@ -687,6 +688,10 @@
 				<File Id="1001418475" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TreeBump\Dropping Wood 01.wav</ShortName>
 					<CachePath>SFX/TreeBump/Dropping Wood 01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1003304545" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Inclusionmode On.wav</ShortName>
+					<CachePath>Voices/English(US)/Inclusionmode On_10C4C929.wem</CachePath>
 				</File>
 				<File Id="1018730739" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>GreatYouTappedCorrectNote.wav</ShortName>
@@ -1102,7 +1107,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="2262911975" Name="Play_ButtonReadAloud" DurationType="OneShot" DurationMin="0.9056009" DurationMax="3.2391837">
+				<Event Id="2262911975" Name="Play_ButtonReadAloud" DurationType="OneShot" DurationMin="0.9056009" DurationMax="4.4349885">
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="3099313910" Id="640585335"/>
@@ -1158,18 +1163,24 @@
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
-							<SwitchValue GroupType="Switch" GroupId="3099313910" Id="1238775560"/>
+							<SwitchValue GroupType="Switch" GroupId="3099313910" Id="984851287"/>
+							<MediaRefs>
+								<MediaRef Id="160436766"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3099313910" Id="1343002924"/>
 							<Children>
 								<SwitchContainer>
-									<SwitchValue GroupType="Switch" GroupId="1238775560" Id="3804790955" Default="true"/>
+									<SwitchValue GroupType="Switch" GroupId="1343002924" Id="948478191" Default="true"/>
 									<MediaRefs>
-										<MediaRef Id="296305150"/>
+										<MediaRef Id="145978936"/>
 									</MediaRefs>
 								</SwitchContainer>
 								<SwitchContainer>
-									<SwitchValue GroupType="Switch" GroupId="1238775560" Id="2139648023"/>
+									<SwitchValue GroupType="Switch" GroupId="1343002924" Id="3050936059"/>
 									<MediaRefs>
-										<MediaRef Id="104649299"/>
+										<MediaRef Id="1003304545"/>
 									</MediaRefs>
 								</SwitchContainer>
 							</Children>
@@ -1362,10 +1373,10 @@
 						<Switch Id="3991942870" Name="Music"/>
 					</Switches>
 				</SwitchGroup>
-				<SwitchGroup Id="1238775560" Name="AudioMenuToggle">
+				<SwitchGroup Id="1343002924" Name="InclusionModeToggle">
 					<Switches>
-						<Switch Id="2139648023" Name="AudioMenuOn"/>
-						<Switch Id="3804790955" Name="AudioMenuOff"/>
+						<Switch Id="948478191" Name="InclusionModeOff"/>
+						<Switch Id="3050936059" Name="InclusionModeOn"/>
 					</Switches>
 				</SwitchGroup>
 				<SwitchGroup Id="1419421502" Name="TrackNames">
@@ -1381,8 +1392,9 @@
 						<Switch Id="640585335" Name="EffectsVolume"/>
 						<Switch Id="782826392" Name="Default"/>
 						<Switch Id="953277036" Name="Resume"/>
-						<Switch Id="1238775560" Name="AudioMenuToggle"/>
+						<Switch Id="984851287" Name="WelcomeInclusion"/>
 						<Switch Id="1281810935" Name="Start"/>
+						<Switch Id="1343002924" Name="InclusionModeToggle"/>
 						<Switch Id="2346531308" Name="MusicVolume"/>
 						<Switch Id="2734938552" Name="ArrowKeys"/>
 						<Switch Id="3490598729" Name="BackToMainMenu"/>
@@ -1408,5 +1420,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{0123A46E-5D76-D492-98F7-FE12995806FD}</FileHash>
+	<FileHash>{4CD762E1-07CC-782B-3CEE-041C9459953C}</FileHash>
 </SoundBanksInfo>

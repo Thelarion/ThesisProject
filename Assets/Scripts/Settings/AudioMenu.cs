@@ -69,9 +69,15 @@ public class AudioMenu : MonoBehaviour
         if (!MenuInitializedState)
         {
             AkSoundEngine.SetState("AudioMenuState", "AudioMenuOff");
-            Invoke("ButtonReadAloud", 1);
+            Invoke("ReadInclusionWelcome", 1);
             MenuInitializedState = true;
         }
+    }
+
+    private void ReadInclusionWelcome()
+    {
+        AkSoundEngine.SetSwitch("ButtonReadAloud", "WelcomeInclusion", gameObject);
+        PostEvents();
     }
 
     void Update()

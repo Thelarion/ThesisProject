@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 111a36df2b99a2459ec0d5f0605e9fb4
     GuidInternal: 
-    m_lastTime: -8585246083070817771
+    m_lastTime: -8585245351987486133
     List:
     - name: AudioMenu
       guid: e673bc3db8f4c14eaffb601995ce92ae
@@ -443,7 +443,7 @@ MonoBehaviour:
     ParentPath: Events\Melodies
     guid: 66b8f97f472fd74791287fbb4e712395
     GuidInternal: 
-    m_lastTime: -8585251113318951600
+    m_lastTime: -8585245344484912512
     List:
     - name: MelodyStateOff
       guid: a8fea77287b0f348ad210b6acb17e0e4
@@ -493,6 +493,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: 4ee8ad68a59ec146968a9a3d04984ebd
       Path: Events\Melodies\Play_C3_E3_A2_B2_C3
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_C3_E3_A2_B2_C3_versions
+      guid: 4b94e49f91777e45af5ec0a9fc46b188
+      id: 1946610009
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Melodies
+        ObjectType: 12
+        guid: 66b8f97f472fd74791287fbb4e712395
+      - ElementName: Play_C3_E3_A2_B2_C3_versions
+        ObjectType: 3
+        guid: 4b94e49f91777e45af5ec0a9fc46b188
+      Path: Events\Melodies\Play_C3_E3_A2_B2_C3_versions
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -2165,7 +2182,7 @@ MonoBehaviour:
     ParentPath: Events\UI
     guid: 13ad265a32fe774b8e3372fc1241ceef
     GuidInternal: 
-    m_lastTime: -8585246280673573288
+    m_lastTime: -8585245421187594298
     List:
     - name: DistanceFrameTransition
       guid: b75bda6923c11a45b48382c150b587a0
@@ -2904,58 +2921,8 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 2cc96633e1efc745a10ab3fad73419fc
     GuidInternal: 
-    m_lastTime: -8585248525392669357
+    m_lastTime: -8585245397572967101
     List:
-    - name: AudioMenuToggle
-      guid: d3645a290f6dec4b96545a33b7d556fd
-      id: 1238775560
-      PathAndIcons:
-      - ElementName: Switches
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 2cc96633e1efc745a10ab3fad73419fc
-      - ElementName: AudioMenuToggle
-        ObjectType: 11
-        guid: d3645a290f6dec4b96545a33b7d556fd
-      Path: Switches\Default Work Unit\AudioMenuToggle
-      values:
-      - name: AudioMenuOff
-        guid: 4a38bfb81ba7b541b9676e8389c3eb50
-        id: 3804790955
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 2cc96633e1efc745a10ab3fad73419fc
-        - ElementName: AudioMenuToggle
-          ObjectType: 11
-          guid: d3645a290f6dec4b96545a33b7d556fd
-        - ElementName: AudioMenuOff
-          ObjectType: 10
-          guid: 4a38bfb81ba7b541b9676e8389c3eb50
-      - name: AudioMenuOn
-        guid: 820cb3fb4ceb0645ab69932a32da0848
-        id: 2139648023
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 2cc96633e1efc745a10ab3fad73419fc
-        - ElementName: AudioMenuToggle
-          ObjectType: 11
-          guid: d3645a290f6dec4b96545a33b7d556fd
-        - ElementName: AudioMenuOn
-          ObjectType: 10
-          guid: 820cb3fb4ceb0645ab69932a32da0848
-      ValueGuids: []
-      ValueIcons: []
-      valuesInternal: []
     - name: AudioVisualiserToggle
       guid: 0824f5ddd468214c94ef683183e4ed2a
       id: 3569097980
@@ -3037,22 +3004,6 @@ MonoBehaviour:
         - ElementName: ArrowKeys
           ObjectType: 10
           guid: 6f1250bb23d30044b86eb2aa2d1bedda
-      - name: AudioMenuToggle
-        guid: b068cc286bc09643b605bbc0d1315c54
-        id: 1238775560
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 2cc96633e1efc745a10ab3fad73419fc
-        - ElementName: ButtonReadAloud
-          ObjectType: 11
-          guid: 162f94bfd1410b40b3fe4e5f7e856000
-        - ElementName: AudioMenuToggle
-          ObjectType: 10
-          guid: b068cc286bc09643b605bbc0d1315c54
       - name: AudioVisualiserToggle
         guid: 85cc65cd5c0cb84382fedf817609e0d7
         id: 3569097980
@@ -3117,6 +3068,22 @@ MonoBehaviour:
         - ElementName: EffectsVolume
           ObjectType: 10
           guid: 0cfdd6f4b8ae814f999f6a4ab1f2b280
+      - name: InclusionModeToggle
+        guid: b068cc286bc09643b605bbc0d1315c54
+        id: 1343002924
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 2cc96633e1efc745a10ab3fad73419fc
+        - ElementName: ButtonReadAloud
+          ObjectType: 11
+          guid: 162f94bfd1410b40b3fe4e5f7e856000
+        - ElementName: InclusionModeToggle
+          ObjectType: 10
+          guid: b068cc286bc09643b605bbc0d1315c54
       - name: MusicVolume
         guid: 47e2b9bd238dfd4780fe8cbb86033547
         id: 2346531308
@@ -3213,6 +3180,72 @@ MonoBehaviour:
         - ElementName: VoiceVolume
           ObjectType: 10
           guid: 2ff55e1f20182447904af35f843cb394
+      - name: WelcomeInclusion
+        guid: 92a6b766d39a154eb4b28a055bfa3cbf
+        id: 984851287
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 2cc96633e1efc745a10ab3fad73419fc
+        - ElementName: ButtonReadAloud
+          ObjectType: 11
+          guid: 162f94bfd1410b40b3fe4e5f7e856000
+        - ElementName: WelcomeInclusion
+          ObjectType: 10
+          guid: 92a6b766d39a154eb4b28a055bfa3cbf
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: InclusionModeToggle
+      guid: d3645a290f6dec4b96545a33b7d556fd
+      id: 1343002924
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2cc96633e1efc745a10ab3fad73419fc
+      - ElementName: InclusionModeToggle
+        ObjectType: 11
+        guid: d3645a290f6dec4b96545a33b7d556fd
+      Path: Switches\Default Work Unit\InclusionModeToggle
+      values:
+      - name: InclusionModeOff
+        guid: 4a38bfb81ba7b541b9676e8389c3eb50
+        id: 948478191
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 2cc96633e1efc745a10ab3fad73419fc
+        - ElementName: InclusionModeToggle
+          ObjectType: 11
+          guid: d3645a290f6dec4b96545a33b7d556fd
+        - ElementName: InclusionModeOff
+          ObjectType: 10
+          guid: 4a38bfb81ba7b541b9676e8389c3eb50
+      - name: InclusionModeOn
+        guid: 820cb3fb4ceb0645ab69932a32da0848
+        id: 3050936059
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 2cc96633e1efc745a10ab3fad73419fc
+        - ElementName: InclusionModeToggle
+          ObjectType: 11
+          guid: d3645a290f6dec4b96545a33b7d556fd
+        - ElementName: InclusionModeOn
+          ObjectType: 10
+          guid: 820cb3fb4ceb0645ab69932a32da0848
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -3671,7 +3704,7 @@ MonoBehaviour:
         guid: da8eac4adff1a245a328ede5f79242d9
       Path: Triggers\Default Work Unit\New_Trigger
   ExpandedFileSystemItemIds: 0200000003000000050000000600000007000000090000000a0000000c000000180000001e000000270000002e0000002f00000034000000530000007d000000d2000000fa2f0000
-  ExpandedWaapiItemIds: 010000000200000003000000040000000600000008000000090000000b0000000c000000150000001b0000001e00000027000000290000002a0000002d0000002e0000002f00000032000000350000003c0000003d0000003e0000003f00000040000000470000004d0000004e000000510000005300000072000000770000007d0000009200000097000000d20000004201000043010000b6010000fa2f0000b6f60000
+  ExpandedWaapiItemIds: 01000000020000000300000004000000050000000600000008000000090000000b0000000c0000000e000000150000001b0000001e0000001f00000027000000290000002a0000002d0000002e0000002f00000032000000350000003c0000003d0000003e0000003f00000040000000470000004d0000004e000000510000005300000072000000770000007d0000009200000097000000d20000004201000043010000b6010000fa2f0000b6f60000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

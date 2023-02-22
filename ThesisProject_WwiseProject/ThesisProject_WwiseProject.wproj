@@ -25,6 +25,7 @@
 						<Value Platform="Windows">GeneratedSoundBanks\Windows</Value>
 					</ValueList>
 				</Property>
+				<Property Name="LicenseKey" Type="string" Value="PHByb2plY3QgaWQ9IjE0NDM3IiBtYXNrPSJWTEtQNDIxNyIgZW5jPSIwIj48bGljZW5zZSBpZD0iMSIgbmFtZT0iV3dpc2UiIHR5cGU9IjMiIHBsYXRmb3Jtcz0iNCwxMCIgZXhwaXJlcz0iMjAyMy0wOS0wMSIgIC8+PGxpY2Vuc2UgaWQ9IjIxIiBuYW1lPSJNYWludGVuYW5jZSIgdHlwZT0iMyIgcGxhdGZvcm1zPSI0LDEwIiBleHBpcmVzPSIyMDIzLTA5LTAxIiAgLz48bGljZW5zZSBpZD0iNzAiIG5hbWU9IkluZGllIExpY2Vuc2UiIHR5cGU9IjMiIHBsYXRmb3Jtcz0iNCwxMCIgZXhwaXJlcz0iMjAyMy0wOS0wMSIgIC8+PC9wcm9qZWN0Pg==|HUNsWwfDEnvqTA3h8lg/U7Z6BEfmwmwkS71aTBZAUk+SHlIoEyXtt92l0Bng6yPFadivFUSH3mxsupt+Tk0UnAnWT9sjLnyLE2Ukx1AK6bNylEEqLbVNA5v7cWNt5g80BYpR97DRh7/uom96bb1r2Nbvk+Lz1x+RLs2hNm4sByhBZxJKgb4xUBgWhe5z39gQ/rwT3hiK5TNWF1TaFfniwsBNuxKDjgkrBCCrrQ9VfEeSgoVlFGfEyUttZ197BvQ/1/ZEkgo0I6HzbudY75rUMzqCgOXy4APLjz2QwvC3G2RYOx39GWSr7EwbsvkGEP/rV6XS686FDFwmyhHrh5drEA=="/>
 				<Property Name="SoundBankGenerateEstimatedDuration" Type="bool" Value="True"/>
 				<Property Name="SoundBankGenerateHeaderFile" Type="bool" Value="True"/>
 				<Property Name="SoundBankGenerateMaxAttenuationInfo" Type="bool" Value="True"/>

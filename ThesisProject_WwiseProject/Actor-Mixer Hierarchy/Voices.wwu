@@ -3,7 +3,7 @@
 	<AudioObjects>
 		<WorkUnit Name="Voices" ID="{14E6A00B-1C33-466E-9627-FBDE77EDBF18}" PersistMode="Standalone">
 			<ChildrenList>
-				<ActorMixer Name="Voices" ID="{7FEEAA74-13F2-4347-AC71-D624B905E932}" ShortID="716491535">
+				<ActorMixer Name="InGame" ID="{7FEEAA74-13F2-4347-AC71-D624B905E932}" ShortID="716491535">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
@@ -62,6 +62,597 @@
 						</Sound>
 					</ChildrenList>
 				</ActorMixer>
+				<ActorMixer Name="Menu" ID="{AFB7E0F1-93C9-4FD3-93DA-D1AC469EC3FE}" ShortID="795071208">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+						</Reference>
+					</ReferenceList>
+				</ActorMixer>
+				<SwitchContainer Name="ButtonReadAloud" ID="{167BCFFC-09B8-4343-9234-2955A1E0A23C}" ShortID="311647369">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="Default" ID="{0FB83FEE-1C52-4BF0-A15E-7B3DE3DB8952}" WorkUnitID="{3366C92C-EFE1-45C7-A10A-B3FAD73419FC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="AudioMenu" ID="{3DBC73E6-F4B8-4EC1-AFFB-601995CE92AE}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="ButtonReadAloud" ID="{BF942F16-41D1-400B-B3FE-4E5F7E856000}" WorkUnitID="{3366C92C-EFE1-45C7-A10A-B3FAD73419FC}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="ReturnSpace" ID="{A212E786-E4B0-4635-9296-7635394A680E}" ShortID="8253690">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="PressReturnOrSpaceToTurnOn" ID="{95F386A4-2628-4A83-B68C-6DBEC145E5C2}">
+									<Language>SFX</Language>
+									<AudioFile>ButtonReadAloud\PressReturnOrSpaceToTurnOn.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="370788259"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="PressReturnOrSpaceToTurnOn" ID="{95F386A4-2628-4A83-B68C-6DBEC145E5C2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="VoiceVolume" ID="{9AF95C02-F1AA-4E52-90EC-CEFC8B47C123}" ShortID="62953938">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="VoiceVolume" ID="{3B94D7FD-49B7-4558-A2C4-85C598777F23}">
+									<Language>SFX</Language>
+									<AudioFile>VoiceVolume.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="263546721"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="VoiceVolume" ID="{3B94D7FD-49B7-4558-A2C4-85C598777F23}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="ArrowKeys" ID="{60A84A7E-BFE2-489B-B83D-9BAB95FAA65D}" ShortID="3860267">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="PressRightOrLeftArrowKeyToChange" ID="{3325EBC7-EFCE-497C-9F72-A111C269CFC1}">
+									<Language>SFX</Language>
+									<AudioFile>ButtonReadAloud\PressRightOrLeftArrowKeyToChange.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="320309339"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="PressRightOrLeftArrowKeyToChange" ID="{3325EBC7-EFCE-497C-9F72-A111C269CFC1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="MusicVolume" ID="{4E2A8887-02CC-4D5A-813E-425A4470F3A1}" ShortID="140463157">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MusicVolume" ID="{723B8135-5DD2-4028-B262-246B1F31D77D}">
+									<Language>SFX</Language>
+									<AudioFile>ButtonReadAloud\MusicVolume.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="584492099"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MusicVolume" ID="{723B8135-5DD2-4028-B262-246B1F31D77D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="EffectsVolume" ID="{45A64B2A-0579-4C59-9B42-FA8AC4DB0215}" ShortID="737307143">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="EffectsVolume" ID="{F6922E7B-986D-45A5-BEE0-AF74B9B371AD}">
+									<Language>SFX</Language>
+									<AudioFile>ButtonReadAloud\EffectsVolume.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="99426326"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="EffectsVolume" ID="{F6922E7B-986D-45A5-BEE0-AF74B9B371AD}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<SwitchContainer Name="InclusionModeToggle" ID="{2596980C-E422-4D60-9BCD-F9EFC0D4A6A4}" ShortID="734465596">
+							<PropertyList>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="InclusionModeOff" ID="{B8BF384A-A71B-41B5-B967-6E8389C3EB50}" WorkUnitID="{3366C92C-EFE1-45C7-A10A-B3FAD73419FC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Voice" ID="{14CBD258-C063-4F5F-8620-F1CD9A64E84F}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="InclusionModeToggle" ID="{295A64D3-6D0F-4BEC-9654-5A33B7D556FD}" WorkUnitID="{3366C92C-EFE1-45C7-A10A-B3FAD73419FC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="InclusionMode On" ID="{90BECE52-9756-4A52-A5E0-EE40F42327A3}" ShortID="1039290373">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="AudioMenu" ID="{3DBC73E6-F4B8-4EC1-AFFB-601995CE92AE}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Inclusionmode On" ID="{BECEE03B-65BB-4680-A44B-2A41CBCF5E84}">
+											<Language>English(US)</Language>
+											<AudioFile>Inclusionmode On.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1003304545"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Inclusionmode On" ID="{BECEE03B-65BB-4680-A44B-2A41CBCF5E84}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="InclusionMode Off" ID="{262BF726-E33B-4D19-816E-A2C6CFE926EC}" ShortID="1045764518">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="AudioMenu" ID="{3DBC73E6-F4B8-4EC1-AFFB-601995CE92AE}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Inclusionmode Off" ID="{61645BBF-EECA-47A8-B4AA-E00C9A3F1ED6}">
+											<Language>English(US)</Language>
+											<AudioFile>Inclusionmode Off.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="145978936"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Inclusionmode Off" ID="{61645BBF-EECA-47A8-B4AA-E00C9A3F1ED6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="InclusionMode Off" ID="{262BF726-E33B-4D19-816E-A2C6CFE926EC}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="InclusionMode On" ID="{90BECE52-9756-4A52-A5E0-EE40F42327A3}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="InclusionModeOff" ID="{B8BF384A-A71B-41B5-B967-6E8389C3EB50}"/>
+										<ItemList>
+											<ItemRef Name="InclusionMode Off" ID="{262BF726-E33B-4D19-816E-A2C6CFE926EC}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="InclusionModeOn" ID="{FBB30C82-EB4C-4506-AB69-932A32DA0848}"/>
+										<ItemList>
+											<ItemRef Name="InclusionMode On" ID="{90BECE52-9756-4A52-A5E0-EE40F42327A3}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+						<SwitchContainer Name="AudioVisualiserToggle" ID="{6EDED0C8-C302-480A-9E0B-82DB4F268842}" ShortID="824965909">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="AudioVisualiserOff" ID="{F9B012F6-BBAA-4B50-A839-0AC95FD06728}" WorkUnitID="{3366C92C-EFE1-45C7-A10A-B3FAD73419FC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="AudioVisualiserToggle" ID="{DDF52408-68D4-4C21-94EF-683183E4ED2A}" WorkUnitID="{3366C92C-EFE1-45C7-A10A-B3FAD73419FC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="AudioVisualiserOff" ID="{DC00D3A3-1ED0-425C-A67B-1146C2866661}" ShortID="1013393231">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AudioVisualiserOff" ID="{2BCA14DF-581F-4F70-9AC9-763532E05C84}">
+											<Language>SFX</Language>
+											<AudioFile>ButtonReadAloud\AudioVisualiserOff.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="565812533"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="AudioVisualiserOff" ID="{2BCA14DF-581F-4F70-9AC9-763532E05C84}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="AudioVisualiserOn" ID="{A2ECD97E-92ED-46F3-BDB6-3721B986E3BE}" ShortID="432451583">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AudioVisualiserOn" ID="{6C5104E6-6A1D-4979-AC26-8C32DF75C856}">
+											<Language>SFX</Language>
+											<AudioFile>ButtonReadAloud\AudioVisualiserOn.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="497910407"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="AudioVisualiserOn" ID="{6C5104E6-6A1D-4979-AC26-8C32DF75C856}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="AudioVisualiserOn" ID="{A2ECD97E-92ED-46F3-BDB6-3721B986E3BE}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="AudioVisualiserOff" ID="{DC00D3A3-1ED0-425C-A67B-1146C2866661}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="AudioVisualiserOn" ID="{7E12B279-FB17-43DE-BDD4-3B2E12D33E04}"/>
+										<ItemList>
+											<ItemRef Name="AudioVisualiserOn" ID="{A2ECD97E-92ED-46F3-BDB6-3721B986E3BE}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="AudioVisualiserOff" ID="{F9B012F6-BBAA-4B50-A839-0AC95FD06728}"/>
+										<ItemList>
+											<ItemRef Name="AudioVisualiserOff" ID="{DC00D3A3-1ED0-425C-A67B-1146C2866661}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+						<Sound Name="ErrorDefault" ID="{261E5BB6-1B44-4788-8F42-46DF01FD2EBD}" ShortID="532823468">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Note_Attenuation" ID="{30B6C5D9-94C7-4A5C-A5C6-1A69B4CC9AC3}" WorkUnitID="{C9FCE274-C323-40BD-AB1C-73C657FFB12B}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ErrorDefault" ID="{96FC9854-F6DD-484D-A1D4-51C4F30DD54F}">
+									<Language>SFX</Language>
+									<AudioFile>ErrorDefault.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="444589169"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ErrorDefault" ID="{96FC9854-F6DD-484D-A1D4-51C4F30DD54F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Start" ID="{CC60D629-1AD4-4AB5-B923-0414C9035C48}" ShortID="787821792">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="StartTheGame" ID="{2CD78CF1-8BE9-481D-8CF3-F54A9C6AB560}">
+									<Language>SFX</Language>
+									<AudioFile>StartTheGame.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="71396143"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="StartTheGame" ID="{2CD78CF1-8BE9-481D-8CF3-F54A9C6AB560}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Quit" ID="{2B781C7C-5F98-4760-BC85-014C954B9D49}" ShortID="402869824">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="QuitTheGame" ID="{BFD89B2F-CCFC-4DB2-99DA-39ADA0F93CD2}">
+									<Language>SFX</Language>
+									<AudioFile>QuitTheGame.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="561107131"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="QuitTheGame" ID="{BFD89B2F-CCFC-4DB2-99DA-39ADA0F93CD2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="BackToMainMenu" ID="{BA2B7555-A6E0-4ECD-B7AC-DAC77EB833E8}" ShortID="314455605">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="BackToMainMenu" ID="{766F434C-BEF1-4817-8AC8-949DA33C46EB}">
+									<Language>SFX</Language>
+									<AudioFile>BackToMainMenu.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="628185303"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="BackToMainMenu" ID="{766F434C-BEF1-4817-8AC8-949DA33C46EB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Resume" ID="{6F9AED4A-E72E-4316-93F2-FDC476248D5B}" ShortID="833515847">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Resume" ID="{8B10D748-34B2-45F4-836C-F7DD372818E0}">
+									<Language>SFX</Language>
+									<AudioFile>Resume.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="38162977"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Resume" ID="{8B10D748-34B2-45F4-836C-F7DD372818E0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="WelcomeInclusion" ID="{7A1D539D-EC3B-466A-8F0B-9C74C4D48EF8}" ShortID="28997847">
+							<PropertyList>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Voice" ID="{14CBD258-C063-4F5F-8620-F1CD9A64E84F}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="WelcomeInclusionmode" ID="{F9375E27-F07A-4F5C-B733-6CCCF24527FB}">
+									<Language>English(US)</Language>
+									<AudioFile>WelcomeInclusionmode.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="160436766"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="WelcomeInclusionmode" ID="{F9375E27-F07A-4F5C-B733-6CCCF24527FB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="VoiceVolume" ID="{9AF95C02-F1AA-4E52-90EC-CEFC8B47C123}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="InclusionModeToggle" ID="{2596980C-E422-4D60-9BCD-F9EFC0D4A6A4}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Start" ID="{CC60D629-1AD4-4AB5-B923-0414C9035C48}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="EffectsVolume" ID="{45A64B2A-0579-4C59-9B42-FA8AC4DB0215}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Resume" ID="{6F9AED4A-E72E-4316-93F2-FDC476248D5B}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="BackToMainMenu" ID="{BA2B7555-A6E0-4ECD-B7AC-DAC77EB833E8}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Quit" ID="{2B781C7C-5F98-4760-BC85-014C954B9D49}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="ArrowKeys" ID="{60A84A7E-BFE2-489B-B83D-9BAB95FAA65D}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="ReturnSpace" ID="{A212E786-E4B0-4635-9296-7635394A680E}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="MusicVolume" ID="{4E2A8887-02CC-4D5A-813E-425A4470F3A1}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="WelcomeInclusion" ID="{7A1D539D-EC3B-466A-8F0B-9C74C4D48EF8}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="ErrorDefault" ID="{261E5BB6-1B44-4788-8F42-46DF01FD2EBD}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="AudioVisualiserToggle" ID="{6EDED0C8-C302-480A-9E0B-82DB4F268842}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="EffectsVolume" ID="{F4D6FD0C-AEB8-4F81-999F-6A4AB1F2B280}"/>
+								<ItemList>
+									<ItemRef Name="EffectsVolume" ID="{45A64B2A-0579-4C59-9B42-FA8AC4DB0215}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="VoiceVolume" ID="{1F5EF52F-1820-4724-904A-F35F843CB394}"/>
+								<ItemList>
+									<ItemRef Name="VoiceVolume" ID="{9AF95C02-F1AA-4E52-90EC-CEFC8B47C123}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="MusicVolume" ID="{BDB9E247-8D23-47FD-80FE-8CBB86033547}"/>
+								<ItemList>
+									<ItemRef Name="MusicVolume" ID="{4E2A8887-02CC-4D5A-813E-425A4470F3A1}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Resume" ID="{E69F7961-A05B-41B1-836E-4C8BFF89428D}"/>
+								<ItemList>
+									<ItemRef Name="Resume" ID="{6F9AED4A-E72E-4316-93F2-FDC476248D5B}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="ArrowKeys" ID="{BB50126F-D323-4400-B86E-B2AA2D1BEDDA}"/>
+								<ItemList>
+									<ItemRef Name="ArrowKeys" ID="{60A84A7E-BFE2-489B-B83D-9BAB95FAA65D}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="AudioVisualiserToggle" ID="{CD65CC85-0C5C-43B8-82FE-DF817609E0D7}"/>
+								<ItemList>
+									<ItemRef Name="AudioVisualiserToggle" ID="{6EDED0C8-C302-480A-9E0B-82DB4F268842}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Start" ID="{63C6BB87-BF1D-4807-89D3-3D27DD0A40C2}"/>
+								<ItemList>
+									<ItemRef Name="Start" ID="{CC60D629-1AD4-4AB5-B923-0414C9035C48}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="WelcomeInclusion" ID="{66B7A692-9AD3-4E15-B4B2-8A055BFA3CBF}"/>
+								<ItemList>
+									<ItemRef Name="WelcomeInclusion" ID="{7A1D539D-EC3B-466A-8F0B-9C74C4D48EF8}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="InclusionModeToggle" ID="{28CC68B0-C06B-4396-B605-BBC0D1315C54}"/>
+								<ItemList>
+									<ItemRef Name="InclusionModeToggle" ID="{2596980C-E422-4D60-9BCD-F9EFC0D4A6A4}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="BackToMainMenu" ID="{26A0D7B1-489E-4495-837C-92B980A5AE04}"/>
+								<ItemList>
+									<ItemRef Name="BackToMainMenu" ID="{BA2B7555-A6E0-4ECD-B7AC-DAC77EB833E8}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="ReturnSpace" ID="{F41FCCD7-DEA9-4635-893E-DEC7FA5FF3D7}"/>
+								<ItemList>
+									<ItemRef Name="ReturnSpace" ID="{A212E786-E4B0-4635-9296-7635394A680E}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Default" ID="{0FB83FEE-1C52-4BF0-A15E-7B3DE3DB8952}"/>
+								<ItemList>
+									<ItemRef Name="ErrorDefault" ID="{261E5BB6-1B44-4788-8F42-46DF01FD2EBD}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Quit" ID="{75D0E5F5-D20C-419A-A557-788E00F73A93}"/>
+								<ItemList>
+									<ItemRef Name="Quit" ID="{2B781C7C-5F98-4760-BC85-014C954B9D49}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

@@ -30,7 +30,7 @@
 						<Action Name="" ID="{BC30C0F7-CBB9-4F84-974B-A1A84AF7F7CE}" ShortID="950557519">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="ButtonReadAloud" ID="{167BCFFC-09B8-4343-9234-2955A1E0A23C}" WorkUnitID="{B4755AF8-6562-49AA-BD36-13E06FF53D37}"/>
+									<ObjectRef Name="ButtonReadAloud" ID="{167BCFFC-09B8-4343-9234-2955A1E0A23C}" WorkUnitID="{14E6A00B-1C33-466E-9627-FBDE77EDBF18}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -46,7 +46,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="ButtonReadAloud" ID="{167BCFFC-09B8-4343-9234-2955A1E0A23C}" WorkUnitID="{B4755AF8-6562-49AA-BD36-13E06FF53D37}"/>
+									<ObjectRef Name="ButtonReadAloud" ID="{167BCFFC-09B8-4343-9234-2955A1E0A23C}" WorkUnitID="{14E6A00B-1C33-466E-9627-FBDE77EDBF18}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

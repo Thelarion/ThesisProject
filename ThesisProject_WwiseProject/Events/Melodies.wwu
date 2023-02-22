@@ -42,6 +42,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_C3_E3_A2_B2_C3_versions" ID="{9FE4944B-7791-457E-AF5E-C0A9FC46B188}">
+					<ChildrenList>
+						<Action Name="" ID="{8976CBF9-AC8C-4693-B6FD-0D815272BB71}" ShortID="938321208">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="C3_E3_A2_B2_C3_versions" ID="{61B4E31A-EA12-49D5-AD6C-B1E5D383A282}" WorkUnitID="{E5F10FC4-A206-4CEE-8C77-3A46AC386FCD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

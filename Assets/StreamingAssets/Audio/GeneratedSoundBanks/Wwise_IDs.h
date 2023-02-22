@@ -87,6 +87,7 @@ namespace AK
         static const AkUniqueID PLAY_BGM = 3126765036U;
         static const AkUniqueID PLAY_BUTTONREADALOUD = 2262911975U;
         static const AkUniqueID PLAY_C3_E3_A2_B2_C3 = 1668314063U;
+        static const AkUniqueID PLAY_C3_E3_A2_B2_C3_VERSIONS = 1946610009U;
         static const AkUniqueID PLAY_PLAYERFOOT = 3015844381U;
         static const AkUniqueID PLAY_SLINGSHOT_RELEASE = 3074787511U;
         static const AkUniqueID PLAY_STONEBUMP = 3385122965U;
@@ -170,17 +171,6 @@ namespace AK
 
     namespace SWITCHES
     {
-        namespace AUDIOMENUTOGGLE
-        {
-            static const AkUniqueID GROUP = 1238775560U;
-
-            namespace SWITCH
-            {
-                static const AkUniqueID AUDIOMENUOFF = 3804790955U;
-                static const AkUniqueID AUDIOMENUON = 2139648023U;
-            } // namespace SWITCH
-        } // namespace AUDIOMENUTOGGLE
-
         namespace AUDIOVISUALISERTOGGLE
         {
             static const AkUniqueID GROUP = 3569097980U;
@@ -199,19 +189,31 @@ namespace AK
             namespace SWITCH
             {
                 static const AkUniqueID ARROWKEYS = 2734938552U;
-                static const AkUniqueID AUDIOMENUTOGGLE = 1238775560U;
                 static const AkUniqueID AUDIOVISUALISERTOGGLE = 3569097980U;
                 static const AkUniqueID BACKTOMAINMENU = 3490598729U;
                 static const AkUniqueID DEFAULT = 782826392U;
                 static const AkUniqueID EFFECTSVOLUME = 640585335U;
+                static const AkUniqueID INCLUSIONMODETOGGLE = 1343002924U;
                 static const AkUniqueID MUSICVOLUME = 2346531308U;
                 static const AkUniqueID QUIT = 3930794392U;
                 static const AkUniqueID RESUME = 953277036U;
                 static const AkUniqueID RETURNSPACE = 4024813983U;
                 static const AkUniqueID START = 1281810935U;
                 static const AkUniqueID VOICEVOLUME = 414646191U;
+                static const AkUniqueID WELCOMEINCLUSION = 984851287U;
             } // namespace SWITCH
         } // namespace BUTTONREADALOUD
+
+        namespace INCLUSIONMODETOGGLE
+        {
+            static const AkUniqueID GROUP = 1343002924U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID INCLUSIONMODEOFF = 948478191U;
+                static const AkUniqueID INCLUSIONMODEON = 3050936059U;
+            } // namespace SWITCH
+        } // namespace INCLUSIONMODETOGGLE
 
         namespace MATERIALS
         {
