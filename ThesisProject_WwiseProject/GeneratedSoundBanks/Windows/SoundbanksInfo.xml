@@ -173,7 +173,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{EEB7307F-B399-5D37-28AD-A92BCC5E72E7}">
+		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{90EF65C9-BDD6-B8CC-E2A5-5AA640FB5EDB}">
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
 			<Media>
@@ -1335,7 +1335,7 @@
 						<MediaRef Id="1048145014"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3900353054" Name="Play_TreeBumpPrevention" MaxAttenuation="10" DurationType="Infinite">
+				<Event Id="3900353054" Name="Play_TreeBumpPrevention" MaxAttenuation="15" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="1002045619"/>
 					</MediaRefs>
@@ -1458,5 +1458,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{0AFB36D5-FF99-E824-EB75-D5D0BC980E5E}</FileHash>
+	<FileHash>{EACC8672-7B8C-17E4-C545-CA7AC7067C1F}</FileHash>
 </SoundBanksInfo>
