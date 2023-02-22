@@ -173,7 +173,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{5BF909B1-D29F-47B7-0EF3-4FDA173269C5}">
+		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{EEB7307F-B399-5D37-28AD-A92BCC5E72E7}">
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
 			<Media>
@@ -704,6 +704,10 @@
 				<File Id="1001418475" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TreeBump\Dropping Wood 01.wav</ShortName>
 					<CachePath>SFX/TreeBump/Dropping Wood 01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1002045619" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>TreeBumpPrevention.wav</ShortName>
+					<CachePath>SFX/TreeBumpPrevention_D79FB2B7.wem</CachePath>
 				</File>
 				<File Id="1003304545" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>Inclusionmode On.wav</ShortName>
@@ -1331,6 +1335,11 @@
 						<MediaRef Id="1048145014"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3900353054" Name="Play_TreeBumpPrevention" MaxAttenuation="10" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="1002045619"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3353040410" Name="Play_TreeCreak" MaxAttenuation="10" DurationType="OneShot" DurationMin="44.991997" DurationMax="44.991997">
 					<MediaRefs>
 						<MediaRef Id="154148883"/>
@@ -1449,5 +1458,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{E31E59B4-E304-B9EE-01FD-638FAEC08DA0}</FileHash>
+	<FileHash>{0AFB36D5-FF99-E824-EB75-D5D0BC980E5E}</FileHash>
 </SoundBanksInfo>

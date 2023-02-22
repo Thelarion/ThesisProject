@@ -38,6 +38,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1938649181	G2s			\Notes\O2\G2s	
 	1939634891	A2s			\Notes\O2\A2s	
 	1939634906	A2b			\Notes\O2\A2b	
+	1946610009	Play_C3_E3_A2_B2_C3_versions			\Melodies\Play_C3_E3_A2_B2_C3_versions	
 	1955426723	G3b			\Notes\O3\G3b	
 	1955426738	G3s			\Notes\O3\G3s	
 	1955573803	F3s			\Notes\O3\F3s	
@@ -75,6 +76,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3885294271	d40			\SFX\Beacon\DistanceCount\d40	
 	3885294317	D4b			\Notes\O4\D4b	
 	3885294332	D4s			\Notes\O4\D4s	
+	3900353054	Play_TreeBumpPrevention			\Environment\Play_TreeBumpPrevention	
 	3902071826	d70			\SFX\Beacon\DistanceCount\d70	
 	3918849413	d60			\SFX\Beacon\DistanceCount\d60	
 	3923622767	Play_BeaconLock			\SFX\Beacon\Play_BeaconLock	
@@ -159,6 +161,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	99426326	EffectsVolume	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\ButtonReadAloud\EffectsVolume_10C4C929.wem		\Actor-Mixer Hierarchy\Voices\ButtonReadAloud\EffectsVolume		219228
 	106854697	80	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\DistanceCount\80_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SortOut\Beacon\DistanceCount\80		94456
 	119593203	D2b	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\D2b_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O2\D2b		384096
+	128521936	C3_E3_A2_B3_C3_v6	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\C3_E3_A2_B3_C3_v6_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Melodies\C3_E3_A2_B2_C3_versions\C3_E3_A2_B3_C3_v6\C3_E3_A2_B3_C3_v6		768096
 	136132481	FS_Tile_03	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\Footsteps\Tile\FS_Tile_03_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\Footsteps\Tile\FS_Tile_03		58572
 	145167046	E3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\O3\E3_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O3\E3		384096
 	145978936	InclusionMode Off	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\Voices\English(US)\Inclusionmode Off_10C4C929.wem		\Actor-Mixer Hierarchy\Voices\ButtonReadAloud\InclusionModeToggle\InclusionMode Off		348260
@@ -219,8 +222,10 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	565812533	AudioVisualiserOff	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\ButtonReadAloud\AudioVisualiserOff_10C4C929.wem		\Actor-Mixer Hierarchy\Voices\ButtonReadAloud\AudioVisualiserToggle\AudioVisualiserOff		417888
 	580739463	Dropping Wood 12	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\TreeBump\Dropping Wood 12_10C4C929.wem		\Actor-Mixer Hierarchy\Environment\TreeBump\Dropping Wood 12		260720
 	584492099	MusicVolume	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\ButtonReadAloud\MusicVolume_10C4C929.wem		\Actor-Mixer Hierarchy\Voices\ButtonReadAloud\MusicVolume		239712
+	592682436	C3_E3_A2_B3_C3_v5	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\C3_E3_A2_B3_C3_v5_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Melodies\C3_E3_A2_B2_C3_versions\C3_E3_A2_B3_C3_v5\C3_E3_A2_B3_C3_v5		768096
 	597020867	Dropping Wood 11	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\TreeBump\Dropping Wood 11_10C4C929.wem		\Actor-Mixer Hierarchy\Environment\TreeBump\Dropping Wood 11		264808
 	599950730	D4#	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\D4#_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O4\D4#		384096
+	601310814	C3_E3_A2_B3_C3_v2	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\C3_E3_A2_B3_C3_v2_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Melodies\C3_E3_A2_B2_C3_versions\C3_E3_A2_B3_C3_v2\C3_E3_A2_B3_C3_v2		768096
 	603105156	100	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\DistanceCount\100_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SortOut\Beacon\DistanceCount\100		170352
 	604609623	Dropping Wood 06	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\TreeBump\Dropping Wood 06_10C4C929.wem		\Actor-Mixer Hierarchy\Environment\TreeBump\Dropping Wood 06		401888
 	618258995	D4b	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\D4b_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O4\D4b		384096
@@ -252,6 +257,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	828653254	Dropping Wood 15	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\TreeBump\Dropping Wood 15_10C4C929.wem		\Actor-Mixer Hierarchy\Environment\TreeBump\Dropping Wood 15		309408
 	843155914	FS_Tile_02	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\Footsteps\Tile\FS_Tile_02_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\Footsteps\Tile\FS_Tile_02		53700
 	868281298	C3#	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\C3#_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O3\C3#		384096
+	872404735	C3_E3_A2_B3_C3_v3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\C3_E3_A2_B3_C3_v3_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Melodies\C3_E3_A2_B2_C3_versions\C3_E3_A2_B3_C3_v3\C3_E3_A2_B3_C3_v3		768096
 	885493880	FS_Gravel_04	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\Footsteps\Gravel\FS_Gravel_04_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\Footsteps\Gravel\FS_Gravel_04		35250
 	889111003	StoneBump7	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\StoneBump\StoneBump7_10C4C929.wem		\Actor-Mixer Hierarchy\Environment\StoneBump\StoneBump7		333496
 	893369011	FS_Tile_04	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\Footsteps\Tile\FS_Tile_04_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\Footsteps\Tile\FS_Tile_04		34826
@@ -274,6 +280,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	990206362	B3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\O3\B3_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O3\B3		384096
 	996453454	A3b	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\A3b_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O3\A3b		384096
 	1001418475	Dropping Wood 01	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\TreeBump\Dropping Wood 01_10C4C929.wem		\Actor-Mixer Hierarchy\Environment\TreeBump\Dropping Wood 01		280072
+	1002045619	TreeBumpPrevention	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\TreeBumpPrevention_10C4C929.wem		\Actor-Mixer Hierarchy\Environment\TreeBumpPrevention\TreeBumpPrevention		4128096
 	1003304545	InclusionMode On	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\Voices\English(US)\Inclusionmode On_10C4C929.wem		\Actor-Mixer Hierarchy\Voices\ButtonReadAloud\InclusionModeToggle\InclusionMode On		340060
 	1018730739	CorrectNote	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\Voices\English(US)\GreatYouTappedCorrectNote_10C4C929.wem		\Actor-Mixer Hierarchy\Voices\InGame\CorrectNote		432220
 	1030614238	FS_Concrete_04	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\Footsteps\Concrete\FS_Concrete_04_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\Footsteps\Concrete\FS_Concrete_04		39220
@@ -283,5 +290,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	1053882955	StoneBump10	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\StoneBump\StoneBump10_10C4C929.wem		\Actor-Mixer Hierarchy\Environment\StoneBump\StoneBump10		185528
 	1055002628	StoneBump8	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\StoneBump\StoneBump8_10C4C929.wem		\Actor-Mixer Hierarchy\Environment\StoneBump\StoneBump8		166796
 	1064747333	F3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\O3\F3_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O3\F3		384096
+	1071148732	C3_E3_A2_B3_C3_v4	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\C3_E3_A2_B3_C3_v4_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Melodies\C3_E3_A2_B2_C3_versions\C3_E3_A2_B3_C3_v4\C3_E3_A2_B3_C3_v4		768096
 	1072872748	40	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\DistanceCount\40_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SortOut\Beacon\DistanceCount\40		122040
 

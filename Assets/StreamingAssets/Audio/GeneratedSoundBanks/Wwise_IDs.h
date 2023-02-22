@@ -93,6 +93,7 @@ namespace AK
         static const AkUniqueID PLAY_STONEBUMP = 3385122965U;
         static const AkUniqueID PLAY_TESTCLICK = 83581882U;
         static const AkUniqueID PLAY_TREEBUMP = 3793308878U;
+        static const AkUniqueID PLAY_TREEBUMPPREVENTION = 3900353054U;
         static const AkUniqueID PLAY_TREECREAK = 3353040410U;
         static const AkUniqueID PLAY_VOLUMECHECK = 1569887440U;
         static const AkUniqueID STOP_ALLEVENTS = 2371377610U;

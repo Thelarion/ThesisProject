@@ -76,6 +76,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3885294271	d40			\SFX\Beacon\DistanceCount\d40	
 	3885294317	D4b			\Notes\O4\D4b	
 	3885294332	D4s			\Notes\O4\D4s	
+	3900353054	Play_TreeBumpPrevention			\Environment\Play_TreeBumpPrevention	
 	3902071826	d70			\SFX\Beacon\DistanceCount\d70	
 	3918849413	d60			\SFX\Beacon\DistanceCount\d60	
 	3923622767	Play_BeaconLock			\SFX\Beacon\Play_BeaconLock	
@@ -279,6 +280,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	990206362	B3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O3\B3_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O3\B3		384096
 	996453454	A3b	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\A3b_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O3\A3b		384096
 	1001418475	Dropping Wood 01	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\TreeBump\Dropping Wood 01_10C4C929.wem		\Actor-Mixer Hierarchy\Environment\TreeBump\Dropping Wood 01		280072
+	1002045619	TreeBumpPrevention	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\TreeBumpPrevention_D79FB2B7.wem		\Actor-Mixer Hierarchy\Environment\TreeBumpPrevention\TreeBumpPrevention		4128096
 	1003304545	InclusionMode On	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\Voices\English(US)\Inclusionmode On_10C4C929.wem		\Actor-Mixer Hierarchy\Voices\ButtonReadAloud\InclusionModeToggle\InclusionMode On		340060
 	1018730739	CorrectNote	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\Voices\English(US)\GreatYouTappedCorrectNote_10C4C929.wem		\Actor-Mixer Hierarchy\Voices\InGame\CorrectNote		432220
 	1030614238	FS_Concrete_04	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Footsteps\Concrete\FS_Concrete_04_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\Footsteps\Concrete\FS_Concrete_04		39220

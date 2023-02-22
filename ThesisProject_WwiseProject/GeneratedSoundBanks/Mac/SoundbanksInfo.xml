@@ -173,7 +173,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{DC9AD383-772C-2A85-4A85-A9F2BA093C8B}">
+		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{654FB8D6-FB76-FAAC-D438-8D4708740990}">
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
 			<Media>
@@ -228,6 +228,10 @@
 				<File Id="119593203" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>D2b.wav</ShortName>
 					<CachePath>SFX/D2b_10C4C929.wem</CachePath>
+				</File>
+				<File Id="128521936" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>C3_E3_A2_B3_C3_v6.wav</ShortName>
+					<CachePath>SFX/C3_E3_A2_B3_C3_v6_D79FB2B7.wem</CachePath>
 				</File>
 				<File Id="136132481" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Tile\FS_Tile_03.wav</ShortName>
@@ -469,6 +473,10 @@
 					<ShortName>ButtonReadAloud\MusicVolume.wav</ShortName>
 					<CachePath>SFX/ButtonReadAloud/MusicVolume_10C4C929.wem</CachePath>
 				</File>
+				<File Id="592682436" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>C3_E3_A2_B3_C3_v5.wav</ShortName>
+					<CachePath>SFX/C3_E3_A2_B3_C3_v5_D79FB2B7.wem</CachePath>
+				</File>
 				<File Id="597020867" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TreeBump\Dropping Wood 11.wav</ShortName>
 					<CachePath>SFX/TreeBump/Dropping Wood 11_10C4C929.wem</CachePath>
@@ -476,6 +484,10 @@
 				<File Id="599950730" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>D4#.wav</ShortName>
 					<CachePath>SFX/D4#_10C4C929.wem</CachePath>
+				</File>
+				<File Id="601310814" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>C3_E3_A2_B3_C3_v2.wav</ShortName>
+					<CachePath>SFX/C3_E3_A2_B3_C3_v2_D79FB2B7.wem</CachePath>
 				</File>
 				<File Id="603105156" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>DistanceCount\100.wav</ShortName>
@@ -601,6 +613,10 @@
 					<ShortName>C3#.wav</ShortName>
 					<CachePath>SFX/C3#_10C4C929.wem</CachePath>
 				</File>
+				<File Id="872404735" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>C3_E3_A2_B3_C3_v3.wav</ShortName>
+					<CachePath>SFX/C3_E3_A2_B3_C3_v3_D79FB2B7.wem</CachePath>
+				</File>
 				<File Id="885493880" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Gravel\FS_Gravel_04.wav</ShortName>
 					<CachePath>SFX/Footsteps/Gravel/FS_Gravel_04_10C4C929.wem</CachePath>
@@ -689,6 +705,10 @@
 					<ShortName>TreeBump\Dropping Wood 01.wav</ShortName>
 					<CachePath>SFX/TreeBump/Dropping Wood 01_10C4C929.wem</CachePath>
 				</File>
+				<File Id="1002045619" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>TreeBumpPrevention.wav</ShortName>
+					<CachePath>SFX/TreeBumpPrevention_10C4C929.wem</CachePath>
+				</File>
 				<File Id="1003304545" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>Inclusionmode On.wav</ShortName>
 					<CachePath>Voices/English(US)/Inclusionmode On_10C4C929.wem</CachePath>
@@ -724,6 +744,10 @@
 				<File Id="1064747333" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O3\F3.wav</ShortName>
 					<CachePath>SFX/O3/F3_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1071148732" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>C3_E3_A2_B3_C3_v4.wav</ShortName>
+					<CachePath>SFX/C3_E3_A2_B3_C3_v4_D79FB2B7.wem</CachePath>
 				</File>
 				<File Id="1072872748" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>DistanceCount\40.wav</ShortName>
@@ -1216,6 +1240,15 @@
 						<MediaRef Id="170761103"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1946610009" Name="Play_C3_E3_A2_B2_C3_versions" DurationType="OneShot" DurationMin="4" DurationMax="4">
+					<MediaRefs>
+						<MediaRef Id="128521936"/>
+						<MediaRef Id="592682436"/>
+						<MediaRef Id="601310814"/>
+						<MediaRef Id="872404735"/>
+						<MediaRef Id="1071148732"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3015844381" Name="Play_PlayerFoot" DurationType="OneShot" DurationMin="0.386644" DurationMax="0.8593651">
 					<SwitchContainers>
 						<SwitchContainer>
@@ -1300,6 +1333,11 @@
 						<MediaRef Id="924306492"/>
 						<MediaRef Id="1001418475"/>
 						<MediaRef Id="1048145014"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3900353054" Name="Play_TreeBumpPrevention" MaxAttenuation="5" DurationType="OneShot" DurationMin="21.5" DurationMax="21.5">
+					<MediaRefs>
+						<MediaRef Id="1002045619"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="3353040410" Name="Play_TreeCreak" MaxAttenuation="10" DurationType="OneShot" DurationMin="44.991997" DurationMax="44.991997">
@@ -1420,5 +1458,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{4CD762E1-07CC-782B-3CEE-041C9459953C}</FileHash>
+	<FileHash>{C31C282A-8B39-5B5D-A7F2-F0F61ACA4C28}</FileHash>
 </SoundBanksInfo>

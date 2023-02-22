@@ -379,7 +379,7 @@ MonoBehaviour:
     ParentPath: Events\Environment
     guid: 6b6ecfb2ce1fa94d909b1661ebea4ead
     GuidInternal: 
-    m_lastTime: -8585246106502046694
+    m_lastTime: -8585245158118662488
     List:
     - name: Play_Ambience
       guid: fa3455309387fb439b0c79717ed08820
@@ -432,6 +432,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_TreeBumpPrevention
+      guid: 827a4c558cdcb84381d6b7ddacd05a96
+      id: 3900353054
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Environment
+        ObjectType: 12
+        guid: 6b6ecfb2ce1fa94d909b1661ebea4ead
+      - ElementName: Play_TreeBumpPrevention
+        ObjectType: 3
+        guid: 827a4c558cdcb84381d6b7ddacd05a96
+      Path: Events\Environment\Play_TreeBumpPrevention
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\Melodies.wwu
     PathAndIcons:
     - ElementName: Events
@@ -443,7 +460,7 @@ MonoBehaviour:
     ParentPath: Events\Melodies
     guid: 66b8f97f472fd74791287fbb4e712395
     GuidInternal: 
-    m_lastTime: -8585245344484912512
+    m_lastTime: -8585245226531158793
     List:
     - name: MelodyStateOff
       guid: a8fea77287b0f348ad210b6acb17e0e4
@@ -3704,7 +3721,7 @@ MonoBehaviour:
         guid: da8eac4adff1a245a328ede5f79242d9
       Path: Triggers\Default Work Unit\New_Trigger
   ExpandedFileSystemItemIds: 0200000003000000050000000600000007000000090000000a0000000c000000180000001e000000270000002e0000002f00000034000000530000007d000000d2000000fa2f0000
-  ExpandedWaapiItemIds: 01000000020000000300000004000000050000000600000008000000090000000b0000000c0000000e000000150000001b0000001e0000001f00000027000000290000002a0000002d0000002e0000002f00000032000000350000003c0000003d0000003e0000003f00000040000000470000004d0000004e000000510000005300000072000000770000007d0000009200000097000000d20000004201000043010000b6010000fa2f0000b6f60000
+  ExpandedWaapiItemIds: 01000000020000000300000004000000050000000600000008000000090000000a0000000b0000000c0000000e000000150000001b0000001e0000001f00000027000000290000002a0000002d0000002e0000002f00000032000000350000003c0000003d0000003e0000003f00000040000000470000004d0000004e0000005100000053000000720000007400000077000000790000007d0000009200000097000000d20000004201000043010000b6010000fa2f0000b6f60000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

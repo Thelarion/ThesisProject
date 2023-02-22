@@ -6,6 +6,8 @@ public class TriggerStartMelody : MonoBehaviour
 {
     public Animator FirstMelodyTilt;
     public Animator SecondMelodyTilt;
+    public Animator ThirdMelodyTilt;
+    public Animator FourthMelodyTilt;
 
     public AK.Wwise.Event Melody_versions;
 
@@ -34,8 +36,26 @@ public class TriggerStartMelody : MonoBehaviour
     IEnumerator SecondTrigger()
     {
         print("Second");
-        SecondMelodyTilt.SetTrigger("SecondBush");
+        SecondMelodyTilt.SetTrigger("FirstDaffodil");
         Melody_versions.Post(SecondMelodyTilt.transform.gameObject);
         yield return new WaitForSeconds(5f);
+        // StartCoroutine(ThirdTrigger());
     }
+
+    // IEnumerator ThirdTrigger()
+    // {
+    //     print("Third");
+    //     ThirdMelodyTilt.SetTrigger("ThirdBush");
+    //     Melody_versions.Post(ThirdMelodyTilt.transform.gameObject);
+    //     yield return new WaitForSeconds(5f);
+    //     StartCoroutine(FourthTrigger());
+    // }
+
+    // IEnumerator FourthTrigger()
+    // {
+    //     print("Fourth");
+    //     FourthMelodyTilt.SetTrigger("FourthBush");
+    //     Melody_versions.Post(FourthMelodyTilt.transform.gameObject);
+    //     yield return new WaitForSeconds(0f);
+    // }
 }
