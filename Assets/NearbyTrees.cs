@@ -53,7 +53,7 @@ public class NearbyTrees : MonoBehaviour
             }
         }
 
-        print(treeWithShortestDistance);
+        // print(treeWithShortestDistance);
         if (treeWithShortestDistance != null)
         {
             TestClick.Post(treeWithShortestDistance.gameObject);

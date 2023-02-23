@@ -10,6 +10,8 @@ TagManager:
   - Sphere
   - Tree
   - Stone
+  - Dirt
+  - Grass
   layers:
   - Default
   - TransparentFX
