@@ -53,6 +53,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2218041646	FreqDistanceEvent			\SFX\Targets\FreqDistanceEvent	
 	2262911975	Play_ButtonReadAloud			\UI\Play_ButtonReadAloud	
 	2371377610	Stop_AllEvents			\UI\Stop_AllEvents	
+	2787390506	Play_NoteWrangle			\SFX\Play_NoteWrangle	
 	2810620855	MelodyStateOff			\Melodies\MelodyStateOff	
 	2982082363	distanceC			\SFX\Beacon\distanceC	
 	3015844381	Play_PlayerFoot			\Player\Play_PlayerFoot	
@@ -129,6 +130,7 @@ Switch	ID	Name	Switch Group			Notes
 	2185786256	Gravel	Materials			
 	2195636714	Dirt	Materials			
 	2637588553	Tile	Materials			
+	4248645337	Grass	Materials			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	815616169	RTPC_synth_pwm_up_down			\Default Work Unit\RTPC_synth_pwm_up_down	
@@ -161,6 +163,8 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	99426326	EffectsVolume	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\ButtonReadAloud\EffectsVolume_10C4C929.wem		\Actor-Mixer Hierarchy\Voices\ButtonReadAloud\EffectsVolume		219228
 	106854697	80	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\DistanceCount\80_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SortOut\Beacon\DistanceCount\80		94456
 	119593203	D2b	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\D2b_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O2\D2b		384096
+	121037009	Plyr_Fstps_Grass_06	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Grass\Plyr_Fstps_Grass_06_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\Footsteps\Grass\Plyr_Fstps_Grass_06		138716
+	124046553	Plyr_Fstps_Grass_01	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Grass\Plyr_Fstps_Grass_01_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\Footsteps\Grass\Plyr_Fstps_Grass_01		138716
 	128521936	C3_E3_A2_B3_C3_v6	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\C3_E3_A2_B3_C3_v6_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Melodies\C3_E3_A2_B2_C3_versions\C3_E3_A2_B3_C3_v6\C3_E3_A2_B3_C3_v6		768096
 	136132481	FS_Tile_03	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Footsteps\Tile\FS_Tile_03_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\Footsteps\Tile\FS_Tile_03		58572
 	145167046	E3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O3\E3_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O3\E3		384096
@@ -186,6 +190,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	269103452	D2#	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\D2#_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O2\D2#		384096
 	271194032	F3#	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\F3#_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O3\F3#		384096
 	291629109	D3b	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\D3b_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O3\D3b		384096
+	318186197	Plyr_Fstps_Grass_07	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Grass\Plyr_Fstps_Grass_07_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\Footsteps\Grass\Plyr_Fstps_Grass_07		138716
 	320309339	ArrowKeys	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\ButtonReadAloud\PressRightOrLeftArrowKeyToChange_10C4C929.wem		\Actor-Mixer Hierarchy\Voices\ButtonReadAloud\ArrowKeys		571488
 	323227027	A3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O3\A3_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O3\A3		384096
 	331737057	TestClick_lp	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\TestClick_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\TestClick_lp		192096
@@ -204,6 +209,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	447603507	destination_reached	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\destination_reached_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SortOut\Beacon\DistanceCount\destination_reached		264096
 	454928087	FS_Concrete_03	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Footsteps\Concrete\FS_Concrete_03_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\Footsteps\Concrete\FS_Concrete_03		63518
 	456569173	C2#	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\C2#_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O2\C2#		384096
+	458198719	Plyr_Fstps_Grass_04	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Grass\Plyr_Fstps_Grass_04_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\Footsteps\Grass\Plyr_Fstps_Grass_04		138716
 	462856247	StoneBump6	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\StoneBump\StoneBump6_10C4C929.wem		\Actor-Mixer Hierarchy\Environment\StoneBump\StoneBump6		333496
 	473231221	FS_Gravel_03	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Footsteps\Gravel\FS_Gravel_03_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\Footsteps\Gravel\FS_Gravel_03		48248
 	476919538	B3b	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\B3b_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O3\B3b		384096
@@ -221,6 +227,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	564419961	FS_Dirt_04	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Footsteps\Dirt\FS_Dirt_04_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\Footsteps\Dirt\FS_Dirt_04		54372
 	565812533	AudioVisualiserOff	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\ButtonReadAloud\AudioVisualiserOff_10C4C929.wem		\Actor-Mixer Hierarchy\Voices\ButtonReadAloud\AudioVisualiserToggle\AudioVisualiserOff		417888
 	580739463	Dropping Wood 12	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\TreeBump\Dropping Wood 12_10C4C929.wem		\Actor-Mixer Hierarchy\Environment\TreeBump\Dropping Wood 12		260720
+	583150438	Plyr_Fstps_Grass_08	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Grass\Plyr_Fstps_Grass_08_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\Footsteps\Grass\Plyr_Fstps_Grass_08		157316
 	584492099	MusicVolume	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\ButtonReadAloud\MusicVolume_10C4C929.wem		\Actor-Mixer Hierarchy\Voices\ButtonReadAloud\MusicVolume		239712
 	592682436	C3_E3_A2_B3_C3_v5	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\C3_E3_A2_B3_C3_v5_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Melodies\C3_E3_A2_B2_C3_versions\C3_E3_A2_B3_C3_v5\C3_E3_A2_B3_C3_v5		768096
 	597020867	Dropping Wood 11	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\TreeBump\Dropping Wood 11_10C4C929.wem		\Actor-Mixer Hierarchy\Environment\TreeBump\Dropping Wood 11		264808
@@ -246,6 +253,8 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	764134868	E2b	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\E2b_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O2\E2b		384096
 	778380301	Cheering1	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Cheering1_52D27BF3.wem		\Actor-Mixer Hierarchy\SFX\SortOut\Cheering\Cheering1		1041340
 	782485844	G4	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O4\G4_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O4\G4		384096
+	782675017	FoxNoteWrangle_01	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\FoxNoteWrangle\FoxNoteWrangle_01_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\NoteWrangle\FoxNoteWrangle_01		1920096
+	790540168	Plyr_Fstps_Grass_05	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Grass\Plyr_Fstps_Grass_05_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\Footsteps\Grass\Plyr_Fstps_Grass_05		138716
 	792301897	A2#	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\A2#_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O2\A2#		384096
 	795254982	FS_Gravel_02	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Footsteps\Gravel\FS_Gravel_02_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\Footsteps\Gravel\FS_Gravel_02		34198
 	807706107	G2	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O2\G2_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O2\G2		384096
@@ -258,6 +267,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	843155914	FS_Tile_02	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Footsteps\Tile\FS_Tile_02_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\Footsteps\Tile\FS_Tile_02		53700
 	868281298	C3#	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\C3#_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O3\C3#		384096
 	872404735	C3_E3_A2_B3_C3_v3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\C3_E3_A2_B3_C3_v3_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Melodies\C3_E3_A2_B2_C3_versions\C3_E3_A2_B3_C3_v3\C3_E3_A2_B3_C3_v3		768096
+	880038709	Plyr_Fstps_Grass_09	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Grass\Plyr_Fstps_Grass_09_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\Footsteps\Grass\Plyr_Fstps_Grass_09		138716
 	885493880	FS_Gravel_04	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Footsteps\Gravel\FS_Gravel_04_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\Footsteps\Gravel\FS_Gravel_04		35250
 	889111003	StoneBump7	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\StoneBump\StoneBump7_10C4C929.wem		\Actor-Mixer Hierarchy\Environment\StoneBump\StoneBump7		333496
 	893369011	FS_Tile_04	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Footsteps\Tile\FS_Tile_04_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\Footsteps\Tile\FS_Tile_04		34826
@@ -265,10 +275,12 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	915905125	E4b	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\E4b_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O4\E4b		384096
 	917889763	B2	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O2\B2_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O2\B2		384096
 	918400394	C3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O3\C3_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O3\C3		384096
+	920490969	Plyr_Fstps_Grass_03	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Grass\Plyr_Fstps_Grass_03_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\Footsteps\Grass\Plyr_Fstps_Grass_03		138716
 	924306492	Dropping Wood 07	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\TreeBump\Dropping Wood 07_10C4C929.wem		\Actor-Mixer Hierarchy\Environment\TreeBump\Dropping Wood 07		212312
 	925483801	A2	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O2\A2_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O2\A2		384096
 	926129158	G2#	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\G2#_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O2\G2#		384096
 	927525782	D3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O3\D3_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O3\D3		384096
+	932724716	Plyr_Fstps_Grass_02	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Grass\Plyr_Fstps_Grass_02_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\Footsteps\Grass\Plyr_Fstps_Grass_02		138716
 	959719736	VoiceVolumeCheck	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Check_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SortOut\VolumeCheck\VoiceVolumeCheck		124668
 	964224159	60	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\DistanceCount\60_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SortOut\Beacon\DistanceCount\60		144096
 	966532559	BeaconLock	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\BeaconLock_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SortOut\Beacon\BeaconLock		249696

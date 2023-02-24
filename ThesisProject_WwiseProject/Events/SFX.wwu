@@ -269,6 +269,17 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Play_NoteWrangle" ID="{7FF30FE3-7A31-4BEB-A7BF-34886F1F15C5}">
+					<ChildrenList>
+						<Action Name="" ID="{47C83615-97A4-445F-AA3C-31876F2723DF}" ShortID="293387476">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FoxNoteWrangle_01" ID="{7EB51B30-44A4-4166-B5C2-14202ADA4693}" WorkUnitID="{690ABE9D-D445-44AA-AE0F-2C6B0F3C9C08}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

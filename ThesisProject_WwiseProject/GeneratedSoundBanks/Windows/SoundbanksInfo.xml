@@ -169,11 +169,12 @@
 						<Switch Id="2185786256" Name="Gravel"/>
 						<Switch Id="2195636714" Name="Dirt"/>
 						<Switch Id="2637588553" Name="Tile"/>
+						<Switch Id="4248645337" Name="Grass"/>
 					</Switches>
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{90EF65C9-BDD6-B8CC-E2A5-5AA640FB5EDB}">
+		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{B17EE302-72BE-6F2C-EF95-42AF437665D2}">
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
 			<Media>
@@ -228,6 +229,14 @@
 				<File Id="119593203" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>D2b.wav</ShortName>
 					<CachePath>SFX/D2b_10C4C929.wem</CachePath>
+				</File>
+				<File Id="121037009" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass\Plyr_Fstps_Grass_06.wav</ShortName>
+					<CachePath>SFX/Grass/Plyr_Fstps_Grass_06_10C4C929.wem</CachePath>
+				</File>
+				<File Id="124046553" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass\Plyr_Fstps_Grass_01.wav</ShortName>
+					<CachePath>SFX/Grass/Plyr_Fstps_Grass_01_10C4C929.wem</CachePath>
 				</File>
 				<File Id="128521936" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>C3_E3_A2_B3_C3_v6.wav</ShortName>
@@ -329,6 +338,10 @@
 					<ShortName>D3b.wav</ShortName>
 					<CachePath>SFX/D3b_10C4C929.wem</CachePath>
 				</File>
+				<File Id="318186197" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass\Plyr_Fstps_Grass_07.wav</ShortName>
+					<CachePath>SFX/Grass/Plyr_Fstps_Grass_07_10C4C929.wem</CachePath>
+				</File>
 				<File Id="320309339" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ButtonReadAloud\PressRightOrLeftArrowKeyToChange.wav</ShortName>
 					<CachePath>SFX/ButtonReadAloud/PressRightOrLeftArrowKeyToChange_10C4C929.wem</CachePath>
@@ -401,6 +414,10 @@
 					<ShortName>C2#.wav</ShortName>
 					<CachePath>SFX/C2#_10C4C929.wem</CachePath>
 				</File>
+				<File Id="458198719" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass\Plyr_Fstps_Grass_04.wav</ShortName>
+					<CachePath>SFX/Grass/Plyr_Fstps_Grass_04_10C4C929.wem</CachePath>
+				</File>
 				<File Id="462856247" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>StoneBump\StoneBump6.wav</ShortName>
 					<CachePath>SFX/StoneBump/StoneBump6_10C4C929.wem</CachePath>
@@ -468,6 +485,10 @@
 				<File Id="580739463" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TreeBump\Dropping Wood 12.wav</ShortName>
 					<CachePath>SFX/TreeBump/Dropping Wood 12_10C4C929.wem</CachePath>
+				</File>
+				<File Id="583150438" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass\Plyr_Fstps_Grass_08.wav</ShortName>
+					<CachePath>SFX/Grass/Plyr_Fstps_Grass_08_10C4C929.wem</CachePath>
 				</File>
 				<File Id="584492099" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ButtonReadAloud\MusicVolume.wav</ShortName>
@@ -569,6 +590,14 @@
 					<ShortName>O4\G4.wav</ShortName>
 					<CachePath>SFX/O4/G4_10C4C929.wem</CachePath>
 				</File>
+				<File Id="782675017" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FoxNoteWrangle\FoxNoteWrangle_01.wav</ShortName>
+					<CachePath>SFX/FoxNoteWrangle/FoxNoteWrangle_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="790540168" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass\Plyr_Fstps_Grass_05.wav</ShortName>
+					<CachePath>SFX/Grass/Plyr_Fstps_Grass_05_10C4C929.wem</CachePath>
+				</File>
 				<File Id="792301897" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>A2#.wav</ShortName>
 					<CachePath>SFX/A2#_10C4C929.wem</CachePath>
@@ -617,6 +646,10 @@
 					<ShortName>C3_E3_A2_B3_C3_v3.wav</ShortName>
 					<CachePath>SFX/C3_E3_A2_B3_C3_v3_D79FB2B7.wem</CachePath>
 				</File>
+				<File Id="880038709" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass\Plyr_Fstps_Grass_09.wav</ShortName>
+					<CachePath>SFX/Grass/Plyr_Fstps_Grass_09_10C4C929.wem</CachePath>
+				</File>
 				<File Id="885493880" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Gravel\FS_Gravel_04.wav</ShortName>
 					<CachePath>SFX/Footsteps/Gravel/FS_Gravel_04_10C4C929.wem</CachePath>
@@ -645,6 +678,10 @@
 					<ShortName>O3\C3.wav</ShortName>
 					<CachePath>SFX/O3/C3_10C4C929.wem</CachePath>
 				</File>
+				<File Id="920490969" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass\Plyr_Fstps_Grass_03.wav</ShortName>
+					<CachePath>SFX/Grass/Plyr_Fstps_Grass_03_10C4C929.wem</CachePath>
+				</File>
 				<File Id="924306492" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TreeBump\Dropping Wood 07.wav</ShortName>
 					<CachePath>SFX/TreeBump/Dropping Wood 07_10C4C929.wem</CachePath>
@@ -660,6 +697,10 @@
 				<File Id="927525782" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O3\D3.wav</ShortName>
 					<CachePath>SFX/O3/D3_10C4C929.wem</CachePath>
+				</File>
+				<File Id="932724716" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass\Plyr_Fstps_Grass_02.wav</ShortName>
+					<CachePath>SFX/Grass/Plyr_Fstps_Grass_02_10C4C929.wem</CachePath>
 				</File>
 				<File Id="959719736" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Check.wav</ShortName>
@@ -1240,13 +1281,18 @@
 						<MediaRef Id="170761103"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1946610009" Name="Play_C3_E3_A2_B2_C3_versions" DurationType="OneShot" DurationMin="4" DurationMax="4">
+				<Event Id="1946610009" Name="Play_C3_E3_A2_B2_C3_versions" MaxAttenuation="100" DurationType="OneShot" DurationMin="4" DurationMax="4">
 					<MediaRefs>
 						<MediaRef Id="128521936"/>
 						<MediaRef Id="592682436"/>
 						<MediaRef Id="601310814"/>
 						<MediaRef Id="872404735"/>
 						<MediaRef Id="1071148732"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2787390506" Name="Play_NoteWrangle" MaxAttenuation="100" DurationType="OneShot" DurationMin="10" DurationMax="10">
+					<MediaRefs>
+						<MediaRef Id="782675017"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="3015844381" Name="Play_PlayerFoot" DurationType="OneShot" DurationMin="0.386644" DurationMax="0.8593651">
@@ -1267,6 +1313,20 @@
 								<MediaRef Id="742077720"/>
 								<MediaRef Id="843155914"/>
 								<MediaRef Id="893369011"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4050929301" Id="4248645337"/>
+							<MediaRefs>
+								<MediaRef Id="121037009"/>
+								<MediaRef Id="124046553"/>
+								<MediaRef Id="318186197"/>
+								<MediaRef Id="458198719"/>
+								<MediaRef Id="583150438"/>
+								<MediaRef Id="790540168"/>
+								<MediaRef Id="880038709"/>
+								<MediaRef Id="920490969"/>
+								<MediaRef Id="932724716"/>
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
@@ -1453,10 +1513,11 @@
 						<Switch Id="2185786256" Name="Gravel"/>
 						<Switch Id="2195636714" Name="Dirt"/>
 						<Switch Id="2637588553" Name="Tile"/>
+						<Switch Id="4248645337" Name="Grass"/>
 					</Switches>
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{EACC8672-7B8C-17E4-C545-CA7AC7067C1F}</FileHash>
+	<FileHash>{CFCA7101-6715-38CD-3053-34AA8601FD22}</FileHash>
 </SoundBanksInfo>

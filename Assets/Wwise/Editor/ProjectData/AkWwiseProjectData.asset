@@ -1655,7 +1655,7 @@ MonoBehaviour:
     ParentPath: Events\SFX
     guid: 25bc135fc28aee46b33f4240d933cdbd
     GuidInternal: 
-    m_lastTime: -8585246114322878771
+    m_lastTime: -8585243690475126683
     List:
     - name: Beacon
       guid: bbc8b6179a41b343bca8b3cfc8a7a553
@@ -2044,6 +2044,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: beaec52c83c1614b9b47bdc7b337289d
       Path: Events\SFX\Beacon\Play_BeaconLR
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_FroxNoteWrangle
+      guid: e30ff37f317aeb4ba7bf34886f1f15c5
+      id: 618738257
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: SFX
+        ObjectType: 12
+        guid: 25bc135fc28aee46b33f4240d933cdbd
+      - ElementName: Play_FroxNoteWrangle
+        ObjectType: 3
+        guid: e30ff37f317aeb4ba7bf34886f1f15c5
+      Path: Events\SFX\Play_FroxNoteWrangle
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -2938,7 +2955,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 2cc96633e1efc745a10ab3fad73419fc
     GuidInternal: 
-    m_lastTime: -8585244487963083042
+    m_lastTime: -8585244342888244229
     List:
     - name: AudioVisualiserToggle
       guid: 0824f5ddd468214c94ef683183e4ed2a
@@ -3313,6 +3330,22 @@ MonoBehaviour:
         - ElementName: Dirt
           ObjectType: 10
           guid: e15939076518174f9788648a4c857e18
+      - name: Grass
+        guid: 8655785edffe3e4d98095dd745d3c336
+        id: 4248645337
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 2cc96633e1efc745a10ab3fad73419fc
+        - ElementName: Materials
+          ObjectType: 11
+          guid: 6c094231a8874f408fd7b315fb91a6a9
+        - ElementName: Grass
+          ObjectType: 10
+          guid: 8655785edffe3e4d98095dd745d3c336
       - name: Gravel
         guid: 8a244f9fc6d890488dd39aaf8c877f44
         id: 2185786256
@@ -3721,7 +3754,7 @@ MonoBehaviour:
         guid: da8eac4adff1a245a328ede5f79242d9
       Path: Triggers\Default Work Unit\New_Trigger
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 050000000a000000
+  ExpandedWaapiItemIds: 05000000060000000a0000001b000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

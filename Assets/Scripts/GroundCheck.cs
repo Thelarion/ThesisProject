@@ -30,8 +30,5 @@ public class GroundCheck : MonoBehaviour
                     AkSoundEngine.SetSwitch("Materials", ground.transform.tag, gameObject);
                 }
             }
-
-
-
     }
 }

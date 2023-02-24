@@ -5,11 +5,11 @@ using UnityEngine;
 public class NearbyTrees : MonoBehaviour
 {
 
-    public AK.Wwise.Event TestClick;
+    public AK.Wwise.Event Wrangle;
     public float radius = 30f;
     private void Start()
     {
-        Invoke("DelayedStart", 1f);
+        Invoke("DelayedStart", 20f);
     }
 
     private void DelayedStart()
@@ -56,10 +56,10 @@ public class NearbyTrees : MonoBehaviour
         // print(treeWithShortestDistance);
         if (treeWithShortestDistance != null)
         {
-            TestClick.Post(treeWithShortestDistance.gameObject);
+            Wrangle.Post(treeWithShortestDistance.gameObject);
         }
 
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(40f);
 
         StartCoroutine(SonifyTrees());
     }

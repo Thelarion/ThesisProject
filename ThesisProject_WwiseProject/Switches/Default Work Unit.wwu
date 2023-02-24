@@ -9,6 +9,7 @@
 						<Switch Name="Gravel" ID="{9F4F248A-D8C6-4890-8DD3-9AAF8C877F44}"/>
 						<Switch Name="Tile" ID="{274A977F-8EAD-4B6C-8967-B2494B0914CE}"/>
 						<Switch Name="Concrete" ID="{7624D16A-D815-43AD-A2F4-FF7B846EB163}"/>
+						<Switch Name="Grass" ID="{5E785586-FEDF-4D3E-9809-5DD745D3C336}"/>
 					</ChildrenList>
 				</SwitchGroup>
 				<SwitchGroup Name="Notes" ID="{E1C91F62-C821-4B46-9883-DD73BF311742}">

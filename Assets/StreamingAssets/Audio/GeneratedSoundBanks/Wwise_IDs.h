@@ -88,6 +88,7 @@ namespace AK
         static const AkUniqueID PLAY_BUTTONREADALOUD = 2262911975U;
         static const AkUniqueID PLAY_C3_E3_A2_B2_C3 = 1668314063U;
         static const AkUniqueID PLAY_C3_E3_A2_B2_C3_VERSIONS = 1946610009U;
+        static const AkUniqueID PLAY_NOTEWRANGLE = 2787390506U;
         static const AkUniqueID PLAY_PLAYERFOOT = 3015844381U;
         static const AkUniqueID PLAY_SLINGSHOT_RELEASE = 3074787511U;
         static const AkUniqueID PLAY_STONEBUMP = 3385122965U;
@@ -224,6 +225,7 @@ namespace AK
             {
                 static const AkUniqueID CONCRETE = 841620460U;
                 static const AkUniqueID DIRT = 2195636714U;
+                static const AkUniqueID GRASS = 4248645337U;
                 static const AkUniqueID GRAVEL = 2185786256U;
                 static const AkUniqueID TILE = 2637588553U;
             } // namespace SWITCH
