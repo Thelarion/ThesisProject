@@ -2233,6 +2233,74 @@
 					</ChildrenList>
 				</RandomSequenceContainer>
 				<WorkUnit Name="Environment" ID="{C9AE1A60-1F64-439A-AD46-9C53EF882DCA}" PersistMode="Reference"/>
+				<ActorMixer Name="UI" ID="{F674EE08-FDB2-4F1F-85F5-E58B2859BC1D}" ShortID="73720434">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{C5B628E2-30E6-49C9-B054-12444DCE2ACC}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Folder Name="Buttons" ID="{293A8648-38D1-4A63-BE11-159225E293CA}" ShortID="828997639">
+							<ChildrenList>
+								<Sound Name="Button_Selection" ID="{B7BB3F87-05AA-45D1-B2B4-118B80149A01}" ShortID="39204349">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Button_Selection" ID="{D69A888E-0172-453B-B5FE-5E6432D0186B}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.885268517734155"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Buttons\Button_Selection.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="813247547"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Button_Selection" ID="{D69A888E-0172-453B-B5FE-5E6432D0186B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Button_OnClick" ID="{5314662D-E12F-4F08-ACB5-E7E55ACE7016}" ShortID="906859483">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Button_OnClick" ID="{27F467B1-AAD4-4BA6-82E3-C0A623B800D2}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.11738955581517"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Button_OnClick.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="277153547"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Button_OnClick" ID="{27F467B1-AAD4-4BA6-82E3-C0A623B800D2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

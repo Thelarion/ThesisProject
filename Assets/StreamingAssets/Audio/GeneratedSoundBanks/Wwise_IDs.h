@@ -85,6 +85,8 @@ namespace AK
         static const AkUniqueID PLAY_BEACONLOCK = 3923622767U;
         static const AkUniqueID PLAY_BEACONLR = 194014728U;
         static const AkUniqueID PLAY_BGM = 3126765036U;
+        static const AkUniqueID PLAY_BUTTON_ONCLICK = 283810802U;
+        static const AkUniqueID PLAY_BUTTON_SELECTION = 2964789125U;
         static const AkUniqueID PLAY_BUTTONREADALOUD = 2262911975U;
         static const AkUniqueID PLAY_C3_E3_A2_B2_C3 = 1668314063U;
         static const AkUniqueID PLAY_C3_E3_A2_B2_C3_VERSIONS = 1946610009U;

@@ -11,6 +11,8 @@ public class AudioMenu : MonoBehaviour
     private int selection = 0;
     public AK.Wwise.Event Play_ButtonReadAloud;
     public AK.Wwise.Event Stop_ButtonReadAloud;
+    public AK.Wwise.Event Play_Button_OnClick;
+    public AK.Wwise.Event Play_Button_Selection;
     private static bool menuInitializedState = false;
 
 
@@ -62,6 +64,7 @@ public class AudioMenu : MonoBehaviour
     {
         Stop_ButtonReadAloud.Post(gameObject);
         Play_ButtonReadAloud.Post(gameObject);
+        Play_Button_Selection.Post(gameObject);
     }
 
     private void Start()
@@ -77,7 +80,8 @@ public class AudioMenu : MonoBehaviour
     private void ReadInclusionWelcome()
     {
         AkSoundEngine.SetSwitch("ButtonReadAloud", "WelcomeInclusion", gameObject);
-        PostEvents();
+        Stop_ButtonReadAloud.Post(gameObject);
+        Play_ButtonReadAloud.Post(gameObject);
     }
 
     void Update()
@@ -187,6 +191,12 @@ public class AudioMenu : MonoBehaviour
             toggles[Selection].isOn = !toggles[Selection].isOn;
         }
     }
+
+    public void OnClickSound()
+    {
+        Play_Button_OnClick.Post(gameObject);
+    }
+
 }
 
 

@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 111a36df2b99a2459ec0d5f0605e9fb4
     GuidInternal: 
-    m_lastTime: -8585245351987486133
+    m_lastTime: -8585242593830720048
     List:
     - name: AudioMenu
       guid: e673bc3db8f4c14eaffb601995ce92ae
@@ -231,23 +231,6 @@ MonoBehaviour:
         ObjectType: 2
         guid: 21e392646af3f7409d821e46b3a139b5
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\Environment\Trees
-    - name: Undefined
-      guid: 6f96bec0d593a84b93f62ced7b2652d6
-      id: 2532820111
-      PathAndIcons:
-      - ElementName: Master-Mixer Hierarchy
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 111a36df2b99a2459ec0d5f0605e9fb4
-      - ElementName: Master Audio Bus
-        ObjectType: 2
-        guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Undefined
-        ObjectType: 2
-        guid: 6f96bec0d593a84b93f62ced7b2652d6
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Undefined
     - name: Voice
       guid: 58d2cb1463c05f4f8620f1cd9a64e84f
       id: 3170124113
@@ -379,7 +362,7 @@ MonoBehaviour:
     ParentPath: Events\Environment
     guid: 6b6ecfb2ce1fa94d909b1661ebea4ead
     GuidInternal: 
-    m_lastTime: -8585245158118662488
+    m_lastTime: -8585242593830191965
     List:
     - name: Play_Ambience
       guid: fa3455309387fb439b0c79717ed08820
@@ -1655,7 +1638,7 @@ MonoBehaviour:
     ParentPath: Events\SFX
     guid: 25bc135fc28aee46b33f4240d933cdbd
     GuidInternal: 
-    m_lastTime: -8585242685128074507
+    m_lastTime: -8585242516263577112
     List:
     - name: Beacon
       guid: bbc8b6179a41b343bca8b3cfc8a7a553
@@ -1671,6 +1654,23 @@ MonoBehaviour:
         ObjectType: 4
         guid: bbc8b6179a41b343bca8b3cfc8a7a553
       Path: Events\SFX\Beacon
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Buttons
+      guid: 915a1fa62164bf479898f4874cd56c88
+      id: 203100604
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: SFX
+        ObjectType: 12
+        guid: 25bc135fc28aee46b33f4240d933cdbd
+      - ElementName: Buttons
+        ObjectType: 4
+        guid: 915a1fa62164bf479898f4874cd56c88
+      Path: Events\SFX\Buttons
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -2044,6 +2044,46 @@ MonoBehaviour:
         ObjectType: 3
         guid: beaec52c83c1614b9b47bdc7b337289d
       Path: Events\SFX\Beacon\Play_BeaconLR
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Button_OnClick
+      guid: bd8b88d306b93742a50eda05eb13a157
+      id: 283810802
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: SFX
+        ObjectType: 12
+        guid: 25bc135fc28aee46b33f4240d933cdbd
+      - ElementName: Buttons
+        ObjectType: 4
+        guid: 915a1fa62164bf479898f4874cd56c88
+      - ElementName: Play_Button_OnClick
+        ObjectType: 3
+        guid: bd8b88d306b93742a50eda05eb13a157
+      Path: Events\SFX\Buttons\Play_Button_OnClick
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Button_Selection
+      guid: f9ebb45caf01bd4e8c1ab55247bfb390
+      id: 2964789125
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: SFX
+        ObjectType: 12
+        guid: 25bc135fc28aee46b33f4240d933cdbd
+      - ElementName: Buttons
+        ObjectType: 4
+        guid: 915a1fa62164bf479898f4874cd56c88
+      - ElementName: Play_Button_Selection
+        ObjectType: 3
+        guid: f9ebb45caf01bd4e8c1ab55247bfb390
+      Path: Events\SFX\Buttons\Play_Button_Selection
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -3801,7 +3841,7 @@ MonoBehaviour:
         guid: da8eac4adff1a245a328ede5f79242d9
       Path: Triggers\Default Work Unit\New_Trigger
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000a0000000b0000001a000000
+  ExpandedWaapiItemIds: 05000000060000000b0000001a0000001c0000008b000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

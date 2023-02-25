@@ -291,6 +291,32 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="Buttons" ID="{A61F5A91-6421-47BF-9898-F4874CD56C88}" ShortID="695828232">
+					<ChildrenList>
+						<Event Name="Play_Button_OnClick" ID="{D3888BBD-B906-4237-A50E-DA05EB13A157}">
+							<ChildrenList>
+								<Action Name="" ID="{BB8453D4-08CA-4655-9520-13821B289991}" ShortID="485654474">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Button_OnClick" ID="{5314662D-E12F-4F08-ACB5-E7E55ACE7016}" WorkUnitID="{690ABE9D-D445-44AA-AE0F-2C6B0F3C9C08}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Button_Selection" ID="{5CB4EBF9-01AF-4EBD-8C1A-B55247BFB390}">
+							<ChildrenList>
+								<Action Name="" ID="{FCE06DB2-B393-4D7F-B7BD-3A9272568EBF}" ShortID="38064992">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Button_Selection" ID="{B7BB3F87-05AA-45D1-B2B4-118B80149A01}" WorkUnitID="{690ABE9D-D445-44AA-AE0F-2C6B0F3C9C08}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
