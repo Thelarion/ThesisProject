@@ -761,7 +761,7 @@
 									<ObjectRef Name="Music" ID="{F13C23BB-13DD-4E8A-9806-97B18ED58E1A}" WorkUnitID="{3366C92C-EFE1-45C7-A10A-B3FAD73419FC}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Undefined" ID="{C0BE966F-93D5-4BA8-93F6-2CED7B2652D6}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
 								</Reference>
 								<Reference Name="SwitchGroupOrStateGroup">
 									<ObjectRef Name="VolumeCheck" ID="{B721CC1C-C675-40E2-BB01-39BD8C6097EC}" WorkUnitID="{3366C92C-EFE1-45C7-A10A-B3FAD73419FC}"/>
@@ -2232,6 +2232,7 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
+				<WorkUnit Name="Environment" ID="{C9AE1A60-1F64-439A-AD46-9C53EF882DCA}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

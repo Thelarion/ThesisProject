@@ -52,7 +52,7 @@
 						<CurrentStateRef Name="None" ID="{774C6CBC-C129-4C8F-BD56-D5E99C9F83BB}"/>
 						<CurrentStateRef Name="AudioMenuOff" ID="{2B5FCBCB-4223-4FE1-8D67-511A190CEB25}"/>
 						<CurrentStateRef Name="None" ID="{4AB2A078-E8B3-4886-A7CA-0C8E3CB10D5E}"/>
-						<CurrentStateRef Name="MelodyOff" ID="{FDE21147-AC5C-4161-9DC2-29B3B77D8C7C}"/>
+						<CurrentStateRef Name="MelodyOn" ID="{F2682156-742A-4F80-BE35-96DAC416F8A4}"/>
 						<CurrentStateRef Name="None" ID="{4DF8E2CD-ACA4-4042-B8B1-0AF765FA3B11}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">

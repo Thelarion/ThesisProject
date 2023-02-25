@@ -26,7 +26,7 @@ public class GroundCheck : MonoBehaviour
                 {
                     hit = true;
                     currentHitObjectTag = ground.transform.tag;
-                    print(ground.transform.tag);
+                    // print(ground.transform.tag);
                     AkSoundEngine.SetSwitch("Materials", ground.transform.tag, gameObject);
                 }
             }

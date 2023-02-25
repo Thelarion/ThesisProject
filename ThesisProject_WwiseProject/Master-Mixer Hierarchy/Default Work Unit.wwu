@@ -336,7 +336,6 @@
 								</ObjectList>
 							</ObjectLists>
 						</Bus>
-						<Bus Name="Undefined" ID="{C0BE966F-93D5-4BA8-93F6-2CED7B2652D6}"/>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>

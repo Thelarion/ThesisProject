@@ -18,8 +18,8 @@ public class WrangleIdentication : MonoBehaviour
         yield return new WaitForSeconds(randInterval);
 
         float distanceToPlayer = Vector3.Distance(gameObject.transform.position, player.position);
-        print(distanceToPlayer);
-        if (distanceToPlayer >= 20f)
+
+        if (distanceToPlayer >= 50f)
         {
             AkSoundEngine.PostEvent("Play_NoteWrangle", gameObject);
         }

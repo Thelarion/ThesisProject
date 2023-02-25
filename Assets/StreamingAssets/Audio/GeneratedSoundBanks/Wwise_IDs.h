@@ -328,7 +328,6 @@ namespace AK
         static const AkUniqueID NOTES = 201729212U;
         static const AkUniqueID SFX = 393239870U;
         static const AkUniqueID TREES = 3882419280U;
-        static const AkUniqueID UNDEFINED = 2532820111U;
         static const AkUniqueID VOICE = 3170124113U;
     } // namespace BUSSES
 

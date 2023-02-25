@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{C9AE1A60-1F64-439A-AD46-9C53EF882DCA}" SchemaVersion="110">
+<WwiseDocument Type="WorkUnit" ID="{C9AE1A60-1F64-439A-AD46-9C53EF882DCA}" SchemaVersion="110" RootDocumentID="{690ABE9D-D445-44AA-AE0F-2C6B0F3C9C08}" ParentDocumentID="{690ABE9D-D445-44AA-AE0F-2C6B0F3C9C08}">
 	<AudioObjects>
-		<WorkUnit Name="Environment" ID="{C9AE1A60-1F64-439A-AD46-9C53EF882DCA}" PersistMode="Standalone">
+		<WorkUnit Name="Environment" ID="{C9AE1A60-1F64-439A-AD46-9C53EF882DCA}" OwnerID="{690ABE9D-D445-44AA-AE0F-2C6B0F3C9C08}" PersistMode="Nested">
 			<ChildrenList>
 				<RandomSequenceContainer Name="TreeBump" ID="{C54B2015-7CA2-49C1-8290-970AE409AC59}" ShortID="705708982">
 					<PropertyList>

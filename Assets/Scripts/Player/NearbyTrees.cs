@@ -6,7 +6,8 @@ public class NearbyTrees : MonoBehaviour
 {
 
     public AK.Wwise.Event LeavesRustling;
-    public float radius = 30f;
+    private float radius = 50f;
+    private bool stopLeaves = false;
     private void Start()
     {
         Invoke("DelayedStart", 20f);
@@ -53,14 +54,21 @@ public class NearbyTrees : MonoBehaviour
             }
         }
 
-        if (shortestDistanceTreeToTarget >= 20f)
+        if (shortestDistanceTreeToTarget <= 40f)
         {
-            // print(treeWithShortestDistance);
-            if (treeWithShortestDistance != null)
-            {
-                LeavesRustling.Post(treeWithShortestDistance.gameObject);
-            }
+            stopLeaves = true;
         }
+        else
+        {
+            stopLeaves = false;
+        }
+
+        if (!stopLeaves && treeWithShortestDistance != null)
+        {
+            print(shortestDistanceTreeToTarget);
+            LeavesRustling.Post(treeWithShortestDistance.gameObject);
+        }
+
         yield return new WaitForSeconds(20f);
 
         StartCoroutine(SonifyTrees());
