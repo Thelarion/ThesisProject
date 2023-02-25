@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2884db9baba48ae43abdd083adbd1799, type: 3}
   m_Name: 7FF30FE3-7A31-4BEB-A7BF-34886F1F15C5
   m_EditorClassIdentifier: 
-  objectName: Play_FroxNoteWrangle
-  id: 618738257
+  objectName: Play_NoteWrangle
+  id: 2787390506
   guid: 7FF30FE3-7A31-4BEB-A7BF-34886F1F15C5

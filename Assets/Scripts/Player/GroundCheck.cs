@@ -9,7 +9,7 @@ public class GroundCheck : MonoBehaviour
     public LayerMask layerMask;
     public Transform origin;
     public bool hit = false;
-    private string currentHitObject;
+    private string currentHitObjectTag;
 
     void Update()
     {
@@ -17,7 +17,7 @@ public class GroundCheck : MonoBehaviour
 
             if (ground.transform != null)
             {
-                if (ground.transform.name != currentHitObject)
+                if (ground.transform.tag != currentHitObjectTag)
                 {
                     hit = false;
                 }
@@ -25,8 +25,8 @@ public class GroundCheck : MonoBehaviour
                 if (!hit)
                 {
                     hit = true;
-                    currentHitObject = ground.transform.name;
-                    print(ground.transform.name);
+                    currentHitObjectTag = ground.transform.tag;
+                    print(ground.transform.tag);
                     AkSoundEngine.SetSwitch("Materials", ground.transform.tag, gameObject);
                 }
             }

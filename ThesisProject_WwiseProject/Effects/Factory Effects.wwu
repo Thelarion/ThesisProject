@@ -1467,8 +1467,8 @@
 										<Property Name="DecayTime" Type="Real32" Value="5.8"/>
 										<Property Name="Density" Type="Real32" Value="100"/>
 										<Property Name="Diffusion" Type="Real32" Value="53"/>
-										<Property Name="DryLevel" Type="Real32" Value="-96"/>
-										<Property Name="ERLevel" Type="Real32" Value="-6"/>
+										<Property Name="DryLevel" Type="Real32" Value="0"/>
+										<Property Name="ERLevel" Type="Real32" Value="-12"/>
 										<Property Name="ERPattern" Type="int32" Value="29"/>
 										<Property Name="Filter1Freq" Type="Real32" Value="490"/>
 										<Property Name="Filter1Gain" Type="Real32" Value="-11"/>
@@ -1485,6 +1485,20 @@
 										<Property Name="RoomSize" Type="Real32" Value="100"/>
 										<Property Name="StereoWidth" Type="Real32" Value="120"/>
 									</PropertyList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{9108D735-7F04-4A82-A20B-310F393ACD20}" ShortID="393799291">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="DryLevel"/>
+														</PropertyList>
+														<ReferenceList/>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
 								</Effect>
 								<Effect Name="Space_Garage" ID="{1AF92D84-49DD-4BBC-8F29-6C6D10082B6E}" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 									<PropertyList>

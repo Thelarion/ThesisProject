@@ -153,4 +153,12 @@ public class TargetController : MonoBehaviour
         }
         return k;
     }
+
+    public void ActivateNextTone()
+    {
+        if (transform.GetChild(1) != null)
+        {
+            transform.GetChild(1).transform.gameObject.SetActive(true);
+        }
+    }
 }

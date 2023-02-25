@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 477962506}
   - component: {fileID: 477962507}
   m_Layer: 8
-  m_Name: SurroundSphere
+  m_Name: DirectionIndicationOnTree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c69a7851719a5841b0f2eaab670a4fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TestClick:
+  Wrangle:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 3ed7afffad4cd8342bf5ec9063e7a91b,
@@ -7903,6 +7903,7 @@ GameObject:
   - component: {fileID: 2122472149014863827}
   - component: {fileID: 5564964080774408543}
   - component: {fileID: 8184419809200125231}
+  - component: {fileID: 4416926083347132234}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -8136,6 +8137,23 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &4416926083347132234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8184419809200125219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81c503c2d5f121343a3e1cf27ae7a566, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 512
+  origin: {fileID: 3528674100898286628}
+  hit: 0
 --- !u!1 &8521080352847614049
 GameObject:
   m_ObjectHideFlags: 0

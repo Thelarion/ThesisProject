@@ -69,12 +69,6 @@ public class GameManager : MonoBehaviour
         Application.Quit();
     }
 
-    public void BackToStartMenu()
-    {
-        AkSoundEngine.StopAll();
-        SceneManager.LoadScene("StartSettings");
-    }
-
     public void ToggleMenu()
     {
         if (!menuActive)
@@ -88,6 +82,5 @@ public class GameManager : MonoBehaviour
             MenuInGameSettings.SetActive(false);
             menuActive = false;
         }
-
     }
 }

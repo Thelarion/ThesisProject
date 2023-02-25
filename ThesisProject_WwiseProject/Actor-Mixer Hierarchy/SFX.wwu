@@ -880,23 +880,13 @@
 						</SwitchContainer>
 					</ChildrenList>
 				</ActorMixer>
-				<ActorMixer Name="New Actor-Mixer" ID="{AA4EDC2E-7624-4316-945A-24249EE40976}" ShortID="914939288">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
-						</Reference>
-					</ReferenceList>
-				</ActorMixer>
 				<ActorMixer Name="Aiming" ID="{B8BC739B-FB4B-48E8-AFC6-BE301E66D8CA}" ShortID="66461499">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+							<ObjectRef Name="SFX" ID="{C5B628E2-30E6-49C9-B054-12444DCE2ACC}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -1085,7 +1075,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+							<ObjectRef Name="SFX" ID="{C5B628E2-30E6-49C9-B054-12444DCE2ACC}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -1723,6 +1713,179 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Water" ID="{F9D06F97-E8F6-4B22-BBFA-5849F9BB6AE9}" ShortID="124753322">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Plyr_Fstps_Water_07" ID="{0FFDF52F-368F-4533-B510-A3B3582BE8A2}" ShortID="328249194">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Plyr_Fstps_Water_07" ID="{EC87A3DC-F1B0-4DEF-ABAD-B7D7F12AE5B7}">
+													<Language>SFX</Language>
+													<AudioFile>Water\Plyr_Fstps_Water_07.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="351284602"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Plyr_Fstps_Water_07" ID="{EC87A3DC-F1B0-4DEF-ABAD-B7D7F12AE5B7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Plyr_Fstps_Water_01" ID="{6A04D99B-14A6-4400-B530-CC77084F969D}" ShortID="288416717">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Plyr_Fstps_Water_01" ID="{EE18EBBF-31CC-4A17-9F75-7D1F8B5185B1}">
+													<Language>SFX</Language>
+													<AudioFile>Water\Plyr_Fstps_Water_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="557735401"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Plyr_Fstps_Water_01" ID="{EE18EBBF-31CC-4A17-9F75-7D1F8B5185B1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Plyr_Fstps_Water_02" ID="{69BBB9A2-CA97-411A-AE66-29E0E9264AB9}" ShortID="1049246444">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Plyr_Fstps_Water_02" ID="{03310A16-520F-4654-970A-BB8E8EC1FEB5}">
+													<Language>SFX</Language>
+													<AudioFile>Water\Plyr_Fstps_Water_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="288447565"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Plyr_Fstps_Water_02" ID="{03310A16-520F-4654-970A-BB8E8EC1FEB5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Plyr_Fstps_Water_03" ID="{81BF0EA0-BE04-449E-96D5-2069708A05CB}" ShortID="616888676">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Plyr_Fstps_Water_03" ID="{FBA9B444-535C-45B9-8E3D-850C93B83209}">
+													<Language>SFX</Language>
+													<AudioFile>Water\Plyr_Fstps_Water_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="332098808"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Plyr_Fstps_Water_03" ID="{FBA9B444-535C-45B9-8E3D-850C93B83209}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Plyr_Fstps_Water_04" ID="{DBA2979A-A15B-4715-A8BF-26A5EBC9F515}" ShortID="186110631">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Plyr_Fstps_Water_04" ID="{69462C9A-82E8-4BB0-95EA-47577A52F5AD}">
+													<Language>SFX</Language>
+													<AudioFile>Water\Plyr_Fstps_Water_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="291559068"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Plyr_Fstps_Water_04" ID="{69462C9A-82E8-4BB0-95EA-47577A52F5AD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Plyr_Fstps_Water_05" ID="{8A21BBEB-13A7-497C-B0DE-9DF049432BF2}" ShortID="617153378">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Plyr_Fstps_Water_05" ID="{FAABF9A0-C924-4981-82A7-4BDD2BC07DE1}">
+													<Language>SFX</Language>
+													<AudioFile>Water\Plyr_Fstps_Water_05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="188859037"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Plyr_Fstps_Water_05" ID="{FAABF9A0-C924-4981-82A7-4BDD2BC07DE1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Plyr_Fstps_Water_06" ID="{C2F3762B-C6E8-497E-B507-6E4E55A1E01C}" ShortID="969997337">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Plyr_Fstps_Water_06" ID="{C4118ED5-2439-4BBD-919B-204C5C3EEA65}">
+													<Language>SFX</Language>
+													<AudioFile>Water\Plyr_Fstps_Water_06.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="360094241"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Plyr_Fstps_Water_06" ID="{C4118ED5-2439-4BBD-919B-204C5C3EEA65}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
 							</ChildrenList>
 							<GroupingInfo>
 								<GroupingBehaviorList>
@@ -1741,8 +1904,17 @@
 									<GroupingBehavior>
 										<ItemRef Name="Concrete" ID="{FE95DB7A-125F-4A6C-8465-69313A90150D}"/>
 									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Water" ID="{F9D06F97-E8F6-4B22-BBFA-5849F9BB6AE9}"/>
+									</GroupingBehavior>
 								</GroupingBehaviorList>
 								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Water" ID="{AA98095F-C61F-41A4-8FBD-52493CD6CD91}"/>
+										<ItemList>
+											<ItemRef Name="Water" ID="{F9D06F97-E8F6-4B22-BBFA-5849F9BB6AE9}"/>
+										</ItemList>
+									</Grouping>
 									<Grouping>
 										<SwitchRef Name="Concrete" ID="{7624D16A-D815-43AD-A2F4-FF7B846EB163}"/>
 										<ItemList>
@@ -1810,13 +1982,13 @@
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
-							<ObjectRef Name="att_generic_100m" ID="{B36EDA9D-C2F6-41CD-B9ED-1F624606F5D8}" WorkUnitID="{7E47D77D-8D3A-4543-85B4-6FEFA09A4121}"/>
+							<ObjectRef Name="att_NoteWrangle" ID="{C1894F2F-7AD0-4DCC-90CE-4D2C615661A6}" WorkUnitID="{C9FCE274-C323-40BD-AB1C-73C657FFB12B}"/>
 						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+							<ObjectRef Name="SFX" ID="{C5B628E2-30E6-49C9-B054-12444DCE2ACC}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -1906,6 +2078,156 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="RacoonNoteWrangle_01" ID="{FB26F6CA-16F2-4076-AF95-707382AF6D36}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="LeavesRustlingIndicator" ID="{8338778B-ACCB-4F35-880E-F88BB15FC159}" ShortID="910905298">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="att_LeavesRustling" ID="{8FB6E4C5-66DC-459C-AFCD-2064D11C7B50}" WorkUnitID="{C9FCE274-C323-40BD-AB1C-73C657FFB12B}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{C5B628E2-30E6-49C9-B054-12444DCE2ACC}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Leaves_Rustling_06" ID="{C1857AE0-8015-4EA5-B3C2-AD7C1C6E5DA4}" ShortID="414700740">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Leaves_Rustling_06" ID="{76849B10-870F-4B14-93C0-F1E2E72E6E9C}">
+									<Language>SFX</Language>
+									<AudioFile>LeavesRustlingIndicator\Leaves_Rustling_06.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="74676487"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Leaves_Rustling_06" ID="{76849B10-870F-4B14-93C0-F1E2E72E6E9C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Leaves_Rustling_01" ID="{40F6CD1D-205C-4A23-8D49-B3A04D15E018}" ShortID="886837438">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Leaves_Rustling_01" ID="{939E8795-17E9-4C43-B508-B41F0316DB10}">
+									<Language>SFX</Language>
+									<AudioFile>LeavesRustlingIndicator\Leaves_Rustling_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="737434286"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Leaves_Rustling_01" ID="{939E8795-17E9-4C43-B508-B41F0316DB10}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Leaves_Rustling_02" ID="{3CF72C1D-03A1-48F4-9D0F-9302BD24EB3D}" ShortID="728701901">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Leaves_Rustling_02" ID="{68FDF44B-C78E-48E2-AFD1-FECEDD4C1C89}">
+									<Language>SFX</Language>
+									<AudioFile>LeavesRustlingIndicator\Leaves_Rustling_02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="295788518"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Leaves_Rustling_02" ID="{68FDF44B-C78E-48E2-AFD1-FECEDD4C1C89}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Leaves_Rustling_03" ID="{15477D5C-6658-42AF-8515-8637AD8C21C5}" ShortID="105043642">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Leaves_Rustling_03" ID="{A7ABA235-8478-4449-BF7E-C07B3FC540F9}">
+									<Language>SFX</Language>
+									<AudioFile>LeavesRustlingIndicator\Leaves_Rustling_03.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="162125142"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Leaves_Rustling_03" ID="{A7ABA235-8478-4449-BF7E-C07B3FC540F9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Leaves_Rustling_04" ID="{963F5991-677A-4BDA-9296-F578BB8F25B4}" ShortID="707906646">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Leaves_Rustling_04" ID="{E43FD5AB-90AF-4553-B1BF-089EC8A4CE52}">
+									<Language>SFX</Language>
+									<AudioFile>LeavesRustlingIndicator\Leaves_Rustling_04.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="852969047"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Leaves_Rustling_04" ID="{E43FD5AB-90AF-4553-B1BF-089EC8A4CE52}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Leaves_Rustling_05" ID="{0A521332-27D7-4F21-BA15-8CDCEA0B1E06}" ShortID="431519844">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Leaves_Rustling_05" ID="{CE8B842B-915F-4871-A6FA-0F3A1AF57111}">
+									<Language>SFX</Language>
+									<AudioFile>LeavesRustlingIndicator\Leaves_Rustling_05.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="855718662"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Leaves_Rustling_05" ID="{CE8B842B-915F-4871-A6FA-0F3A1AF57111}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

@@ -271,10 +271,21 @@
 				</Folder>
 				<Event Name="Play_NoteWrangle" ID="{7FF30FE3-7A31-4BEB-A7BF-34886F1F15C5}">
 					<ChildrenList>
-						<Action Name="" ID="{47C83615-97A4-445F-AA3C-31876F2723DF}" ShortID="293387476">
+						<Action Name="" ID="{3BD0D802-6769-4F39-A816-A78F8A9C0F74}" ShortID="197264921">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="FoxNoteWrangle_01" ID="{7EB51B30-44A4-4166-B5C2-14202ADA4693}" WorkUnitID="{690ABE9D-D445-44AA-AE0F-2C6B0F3C9C08}"/>
+									<ObjectRef Name="NoteWrangle" ID="{8F4B8749-C72E-487D-9CE7-905F4FA8EF31}" WorkUnitID="{690ABE9D-D445-44AA-AE0F-2C6B0F3C9C08}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_LeavesRustling" ID="{5AE08E4F-CCC1-4E60-9901-FF153602FADD}">
+					<ChildrenList>
+						<Action Name="" ID="{23102930-CC94-4808-9074-225D16CEFA44}" ShortID="36656744">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="LeavesRustlingIndicator" ID="{8338778B-ACCB-4F35-880E-F88BB15FC159}" WorkUnitID="{690ABE9D-D445-44AA-AE0F-2C6B0F3C9C08}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

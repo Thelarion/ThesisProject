@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 2427516570700943668}
   - component: {fileID: 1594167481865215633}
   - component: {fileID: 3601588501836917339}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Meadow_Path_Edited_Lifted
-  m_TagString: Untagged
+  m_TagString: Dirt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

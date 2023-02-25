@@ -28,7 +28,6 @@ public class TargetIdentity : MonoBehaviour
         _instances.Add(this);
         operationController = GameObject.Find("List").GetComponent<OperationController>();
         targetSpawnPoints = GameObject.Find("SpawnPoints").GetComponent<TargetSpawnPoints>();
-
     }
 
     private void Start()
@@ -63,6 +62,10 @@ public class TargetIdentity : MonoBehaviour
         {
             operationController.ActivateFrameSuccess(_indexInSequence, transform.name);
             operationController.DelayDistanceFrameCoroutine(4.5f);
+        }
+        if (transform.GetComponentInParent<TargetController>() != null)
+        {
+            transform.GetComponentInParent<TargetController>().ActivateNextTone();
         }
         _instances.Remove(this);
     }

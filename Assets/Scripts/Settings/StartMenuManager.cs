@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class StartMenuManager : MonoBehaviour
 {
-    private static bool _inclusionState;
+    private static bool _inclusionState = false;
     private static bool _activateColour;
     public static bool InclusionState
     {

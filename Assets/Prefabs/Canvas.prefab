@@ -5236,8 +5236,8 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 110781855}
+        m_TargetAssemblyTypeName: CanvasController, Assembly-CSharp
         m_MethodName: BackToStartMenu
         m_Mode: 1
         m_Arguments:
@@ -9093,6 +9093,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameUI: {fileID: 7727133314106660384}
   MenuStartSettings: {fileID: 8951460255645217341}
+  InclusionModeToggle: {fileID: 8951460255740204661}
+  InclusionModeOnSprite: {fileID: 21300000, guid: 7f35eec2959e3af408559d755bb09cde,
+    type: 3}
+  MenuStartSettingsAudioMenu: {fileID: 8951460255645217337}
 --- !u!1 &8951460254279483288
 GameObject:
   m_ObjectHideFlags: 0

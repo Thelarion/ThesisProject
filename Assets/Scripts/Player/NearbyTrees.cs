@@ -5,7 +5,7 @@ using UnityEngine;
 public class NearbyTrees : MonoBehaviour
 {
 
-    public AK.Wwise.Event Wrangle;
+    public AK.Wwise.Event LeavesRustling;
     public float radius = 30f;
     private void Start()
     {
@@ -17,12 +17,12 @@ public class NearbyTrees : MonoBehaviour
         StartCoroutine(SonifyTrees());
     }
 
-    void OnDrawGizmosSelected()
-    {
-        // Draw a yellow sphere at the transform's position
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawSphere(transform.position, 30);
-    }
+    // void OnDrawGizmosSelected()
+    // {
+    //     // Draw a yellow sphere at the transform's position
+    //     Gizmos.color = Color.yellow;
+    //     Gizmos.DrawSphere(transform.position, 30);
+    // }
 
     IEnumerator SonifyTrees()
     {
@@ -53,13 +53,15 @@ public class NearbyTrees : MonoBehaviour
             }
         }
 
-        // print(treeWithShortestDistance);
-        if (treeWithShortestDistance != null)
+        if (shortestDistanceTreeToTarget >= 20f)
         {
-            Wrangle.Post(treeWithShortestDistance.gameObject);
+            // print(treeWithShortestDistance);
+            if (treeWithShortestDistance != null)
+            {
+                LeavesRustling.Post(treeWithShortestDistance.gameObject);
+            }
         }
-
-        yield return new WaitForSeconds(40f);
+        yield return new WaitForSeconds(20f);
 
         StartCoroutine(SonifyTrees());
     }

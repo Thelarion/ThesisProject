@@ -24,6 +24,5 @@ public class SpriteUIButtonSwitch : MonoBehaviour
             transform.GetChild(0).GetComponent<Image>().sprite = OffSprite;
             gameObject.GetComponentInParent<AudioMenu>().SwitchToggleAndReadAloud(gameObject, OffSprite.name);
         }
-
     }
 }
