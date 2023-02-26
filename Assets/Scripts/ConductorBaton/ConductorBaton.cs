@@ -10,7 +10,7 @@ public class ConductorBaton : MonoBehaviour
     private GameObject conductSphere;
     public Transform ConductSphereSpawn;
     private Rigidbody rb;
-    public float launchVelocity = 1000f;
+    public float launchVelocity = 1200f;
 
     private void Start()
     {
@@ -26,8 +26,10 @@ public class ConductorBaton : MonoBehaviour
     {
         conductSphere = Instantiate(ConductSpherePrefab, ConductSphereSpawn.position, ConductSphereSpawn.rotation);
 
-        conductSphere.GetComponent<Rigidbody>().AddRelativeForce(new Vector3(0, launchVelocity * 2, 0));
+        conductSphere.transform.localRotation = Quaternion.identity;
 
-        Destroy(conductSphere, 3f);
+        conductSphere.GetComponent<Rigidbody>().AddRelativeForce(new Vector3(0, launchVelocity * 3, 0));
+
+        Destroy(conductSphere, 10f);
     }
 }

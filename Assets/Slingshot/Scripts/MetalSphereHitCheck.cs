@@ -6,6 +6,7 @@ public class MetalSphereHitCheck : MonoBehaviour
     public AK.Wwise.Event PlingSuccess;
     public AK.Wwise.Event PlingFail;
     private ScoreManager scoreManager;
+    public ParticleSystem hitParticles;
 
 
     [HideInInspector] public TargetSpawnPoints targetSpawnPoints;
@@ -23,7 +24,7 @@ public class MetalSphereHitCheck : MonoBehaviour
         {
             PlingSuccess.Post(gameObject);
             scoreManager.CalculatePoints(other.transform.GetComponent<TargetIdentity>().MissedTaps);
-            Destroy(other.transform.gameObject);
+            // Destroy(other.transform.gameObject);
         }
 
         // CASE WRONG NOTE
@@ -45,10 +46,11 @@ public class MetalSphereHitCheck : MonoBehaviour
 
         }
 
-        // DESTROY SPHERE CASE TARGET
-        if (other.transform.tag == "Target") // Destroy the sphere if it hits a target
-        {
-            Destroy(transform.gameObject); // Destroy(other.transform.gameObject);
-        }
+        // // DESTROY SPHERE CASE TARGET
+        // if (other.transform.tag == "Target") // Destroy the sphere if it hits a target
+        // {
+        Destroy(transform.gameObject); // Destroy(other.transform.gameObject);
+        hitParticles.Play();
+        // }
     }
 }

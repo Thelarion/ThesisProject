@@ -11,10 +11,10 @@ public class DistanceToTarget : MonoBehaviour
         get { return currentLoopObjectShortestDistance; }
     }
 
-    // private void Awake()
-    // {
-    //     DetermineCurrentTarget();
-    // }
+    private void Start()
+    {
+        DetermineCurrentTarget();
+    }
 
     private void Update()
     {
