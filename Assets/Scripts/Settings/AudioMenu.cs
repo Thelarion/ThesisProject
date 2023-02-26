@@ -133,7 +133,7 @@ public class AudioMenu : MonoBehaviour
             }
             else if (toggleName != "Start" && toggleName != "Quit")
             {
-                print("Left");
+                // print("Left");
                 toggles[Selection].isOn = !toggles[Selection].isOn;
             }
         }

@@ -80,6 +80,7 @@ public class GameManager : MonoBehaviour
         else
         {
             MenuInGameSettings.SetActive(false);
+            AkSoundEngine.PostEvent("Play_Button_Selection", gameObject);
             menuActive = false;
         }
     }

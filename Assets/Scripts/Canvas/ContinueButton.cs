@@ -10,6 +10,7 @@ public class ContinueButton : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space))
         {
+            AkSoundEngine.PostEvent("Play_Button_OnClick", gameObject);
             Continue.onClick.Invoke();
         }
     }
