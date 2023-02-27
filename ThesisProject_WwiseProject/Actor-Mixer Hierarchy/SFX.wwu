@@ -1082,11 +1082,6 @@
 						<SwitchContainer Name="Footsteps" ID="{ADCDE20A-314C-4B47-9238-F38198157E67}" ShortID="932374936">
 							<PropertyList>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-20</Value>
-									</ValueList>
-								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">

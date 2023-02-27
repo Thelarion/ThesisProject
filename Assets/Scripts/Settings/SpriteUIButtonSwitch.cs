@@ -18,7 +18,7 @@ public class SpriteUIButtonSwitch : MonoBehaviour
         {
             Sprite OnSprite;
 
-            OnSprite = StartMenuManager.InclusionState ? SpritesContrast[1] : SpritesContrast[1];
+            OnSprite = StartMenuManager.InclusionState ? SpritesContrast[1] : Sprites[1];
 
             transform.GetChild(0).GetComponent<Image>().sprite = OnSprite;
             gameObject.GetComponentInParent<AudioMenu>().SwitchToggleAndReadAloud(gameObject, OnSprite.name);
@@ -27,7 +27,7 @@ public class SpriteUIButtonSwitch : MonoBehaviour
         {
             Sprite OffSprite;
 
-            OffSprite = StartMenuManager.InclusionState ? SpritesContrast[0] : SpritesContrast[0];
+            OffSprite = StartMenuManager.InclusionState ? SpritesContrast[0] : Sprites[0];
 
             transform.GetChild(0).GetComponent<Image>().sprite = OffSprite;
             gameObject.GetComponentInParent<AudioMenu>().SwitchToggleAndReadAloud(gameObject, OffSprite.name);

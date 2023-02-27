@@ -173,9 +173,19 @@
 						<Switch Id="4248645337" Name="Grass"/>
 					</Switches>
 				</SwitchGroup>
+				<SwitchGroup Id="4273002286" Name="Instructions">
+					<Switches>
+						<Switch Id="1752637680" Name="I2"/>
+						<Switch Id="1752637681" Name="I3"/>
+						<Switch Id="1752637683" Name="I1"/>
+						<Switch Id="1752637684" Name="I6"/>
+						<Switch Id="1752637686" Name="I4"/>
+						<Switch Id="1752637687" Name="I5"/>
+					</Switches>
+				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{E598B57B-F3A8-A70C-A350-BD1096EA42CE}">
+		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{494BA57D-8D17-4AEC-5D70-9CCC05C36E79}">
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
 			<Media>
@@ -349,7 +359,7 @@
 				</File>
 				<File Id="277153547" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Button_OnClick.wav</ShortName>
-					<CachePath>SFX/Button_OnClick_10C4C929.wem</CachePath>
+					<CachePath>SFX/Button_OnClick_8D9412BA.wem</CachePath>
 				</File>
 				<File Id="288447565" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Water\Plyr_Fstps_Water_02.wav</ShortName>
@@ -402,6 +412,10 @@
 				<File Id="360094241" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Water\Plyr_Fstps_Water_06.wav</ShortName>
 					<CachePath>SFX/Water/Plyr_Fstps_Water_06_10C4C929.wem</CachePath>
+				</File>
+				<File Id="368822499" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>InstructionPlaceholder3.wav</ShortName>
+					<CachePath>Voices/English(US)/InstructionPlaceholder3_10C4C929.wem</CachePath>
 				</File>
 				<File Id="370788259" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ButtonReadAloud\PressReturnOrSpaceToTurnOn.wav</ShortName>
@@ -511,6 +525,10 @@
 					<ShortName>A2b.wav</ShortName>
 					<CachePath>SFX/A2b_10C4C929.wem</CachePath>
 				</File>
+				<File Id="548481294" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>InstructionPlaceholder5.wav</ShortName>
+					<CachePath>Voices/English(US)/InstructionPlaceholder5_10C4C929.wem</CachePath>
+				</File>
 				<File Id="557735401" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Water\Plyr_Fstps_Water_01.wav</ShortName>
 					<CachePath>SFX/Water/Plyr_Fstps_Water_01_10C4C929.wem</CachePath>
@@ -526,6 +544,10 @@
 				<File Id="565812533" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ButtonReadAloud\AudioVisualiserOff.wav</ShortName>
 					<CachePath>SFX/ButtonReadAloud/AudioVisualiserOff_10C4C929.wem</CachePath>
+				</File>
+				<File Id="577693576" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>InstructionPlaceholder1.wav</ShortName>
+					<CachePath>Voices/English(US)/InstructionPlaceholder1_10C4C929.wem</CachePath>
 				</File>
 				<File Id="580739463" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TreeBump\Dropping Wood 12.wav</ShortName>
@@ -586,6 +608,10 @@
 				<File Id="655126732" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>26211 Silence in woods loop-full.wav</ShortName>
 					<CachePath>SFX/26211 Silence in woods loop-full_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="664643821" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>InstructionPlaceholder2.wav</ShortName>
+					<CachePath>Voices/English(US)/InstructionPlaceholder2_10C4C929.wem</CachePath>
 				</File>
 				<File Id="673892171" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>G3#.wav</ShortName>
@@ -669,7 +695,7 @@
 				</File>
 				<File Id="813247547" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Buttons\Button_Selection.wav</ShortName>
-					<CachePath>SFX/Buttons/Button_Selection_5DDC8FD4.wem</CachePath>
+					<CachePath>SFX/Buttons/Button_Selection_5EA6993C.wem</CachePath>
 				</File>
 				<File Id="815486264" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>E3b.wav</ShortName>
@@ -714,6 +740,10 @@
 				<File Id="880038709" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grass\Plyr_Fstps_Grass_09.wav</ShortName>
 					<CachePath>SFX/Grass/Plyr_Fstps_Grass_09_10C4C929.wem</CachePath>
+				</File>
+				<File Id="883726677" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>InstructionPlaceholder6.wav</ShortName>
+					<CachePath>Voices/English(US)/InstructionPlaceholder6_10C4C929.wem</CachePath>
 				</File>
 				<File Id="885493880" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Gravel\FS_Gravel_04.wav</ShortName>
@@ -770,6 +800,10 @@
 				<File Id="959719736" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Check.wav</ShortName>
 					<CachePath>SFX/Check_10C4C929.wem</CachePath>
+				</File>
+				<File Id="962278064" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>InstructionPlaceholder4.wav</ShortName>
+					<CachePath>Voices/English(US)/InstructionPlaceholder4_10C4C929.wem</CachePath>
 				</File>
 				<File Id="964224159" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>DistanceCount\60.wav</ShortName>
@@ -1245,12 +1279,12 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="283810802" Name="Play_Button_OnClick" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="283810802" Name="Play_Button_OnClick" DurationType="OneShot" DurationMin="1.8826104" DurationMax="1.8826104">
 					<MediaRefs>
 						<MediaRef Id="277153547"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2964789125" Name="Play_Button_Selection" DurationType="OneShot" DurationMin="1.6643564" DurationMax="1.6643564">
+				<Event Id="2964789125" Name="Play_Button_Selection" DurationType="OneShot" DurationMin="1.6493982" DurationMax="1.6493982">
 					<MediaRefs>
 						<MediaRef Id="813247547"/>
 					</MediaRefs>
@@ -1372,6 +1406,46 @@
 						<MediaRef Id="872404735"/>
 						<MediaRef Id="1071148732"/>
 					</MediaRefs>
+				</Event>
+				<Event Id="1184431001" Name="Play_Instructions" DurationType="OneShot" DurationMin="2.5425622" DurationMax="2.9140816">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4273002286" Id="1752637680"/>
+							<MediaRefs>
+								<MediaRef Id="664643821"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4273002286" Id="1752637686"/>
+							<MediaRefs>
+								<MediaRef Id="962278064"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4273002286" Id="1752637681"/>
+							<MediaRefs>
+								<MediaRef Id="368822499"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4273002286" Id="1752637683" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="577693576"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4273002286" Id="1752637684"/>
+							<MediaRefs>
+								<MediaRef Id="883726677"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4273002286" Id="1752637687"/>
+							<MediaRefs>
+								<MediaRef Id="548481294"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
 				<Event Id="636081116" Name="Play_LeavesRustling" MaxAttenuation="55" DurationType="OneShot" DurationMin="2.75" DurationMax="3.4598334">
 					<MediaRefs>
@@ -1625,8 +1699,18 @@
 						<Switch Id="4248645337" Name="Grass"/>
 					</Switches>
 				</SwitchGroup>
+				<SwitchGroup Id="4273002286" Name="Instructions">
+					<Switches>
+						<Switch Id="1752637680" Name="I2"/>
+						<Switch Id="1752637681" Name="I3"/>
+						<Switch Id="1752637683" Name="I1"/>
+						<Switch Id="1752637684" Name="I6"/>
+						<Switch Id="1752637686" Name="I4"/>
+						<Switch Id="1752637687" Name="I5"/>
+					</Switches>
+				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{A6E5C7C2-3DD6-DB9E-5636-2E4898A212A2}</FileHash>
+	<FileHash>{BA6D8F48-7B02-0312-F4C3-AE2D06720699}</FileHash>
 </SoundBanksInfo>

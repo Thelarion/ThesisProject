@@ -9236,7 +9236,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameUI: {fileID: 7727133314106660384}
   MenuStartSettings: {fileID: 8951460255645217341}
-  InclusionModeToggle: {fileID: 8951460255740204661}
+  InclusionModeToggle: {fileID: 8951460255740204659}
   InclusionModeOnSprite: {fileID: 21300000, guid: d2770db29aef36e49bb4a15199a85d4e,
     type: 3}
   MenuStartSettingsAudioMenu: {fileID: 8951460255645217337}

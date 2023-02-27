@@ -8,7 +8,7 @@ public class CanvasController : MonoBehaviour
 {
     public GameObject GameUI;
     public GameObject MenuStartSettings;
-    public GameObject InclusionModeToggle;
+    public Toggle InclusionModeToggle;
     public Sprite InclusionModeOnSprite;
     public AudioMenu MenuStartSettingsAudioMenu;
 
@@ -38,7 +38,9 @@ public class CanvasController : MonoBehaviour
             Image InclusionImage = InclusionModeToggle.transform.GetChild(0).GetComponent<Image>();
 
             InclusionImage.sprite = InclusionModeOnSprite;
-            MenuStartSettingsAudioMenu.SwitchToggleAndReadAloud(InclusionModeToggle, InclusionModeOnSprite.name);
+            MenuStartSettingsAudioMenu.SwitchToggleAndReadAloud(InclusionModeToggle.gameObject, InclusionModeOnSprite.name);
+
+            InclusionModeToggle.isOn = true;
         }
     }
 
