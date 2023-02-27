@@ -56,14 +56,15 @@
 						<CurrentStateRef Name="None" ID="{4DF8E2CD-ACA4-4042-B8B1-0AF765FA3B11}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="WelcomeInclusion" ID="{66B7A692-9AD3-4E15-B4B2-8A055BFA3CBF}"/>
+						<CurrentSwitchRef Name="ArrowKeys" ID="{BB50126F-D323-4400-B86E-B2AA2D1BEDDA}"/>
 						<CurrentSwitchRef Name="Water" ID="{AA98095F-C61F-41A4-8FBD-52493CD6CD91}"/>
 						<CurrentSwitchRef Name="Effects" ID="{DF101DDA-99A3-4826-BB05-82E4347BC0B5}"/>
 						<CurrentSwitchRef Name="M1" ID="{EE148B74-339E-4862-B987-D0463480A443}"/>
 						<CurrentSwitchRef Name="Track1" ID="{DF0AB87B-7594-47E9-A09B-20EC64FAC28A}"/>
 						<CurrentSwitchRef Name="A" ID="{69A2F832-DD04-48E8-A090-5AF674AE02FC}"/>
-						<CurrentSwitchRef Name="InclusionModeOn" ID="{FBB30C82-EB4C-4506-AB69-932A32DA0848}"/>
+						<CurrentSwitchRef Name="InclusionModeOff" ID="{B8BF384A-A71B-41B5-B967-6E8389C3EB50}"/>
 						<CurrentSwitchRef Name="AudioVisualiserOff" ID="{F9B012F6-BBAA-4B50-A839-0AC95FD06728}"/>
+						<CurrentSwitchRef Name="I1" ID="{09CB61C6-C18C-42E1-A5DB-434A12AC2284}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

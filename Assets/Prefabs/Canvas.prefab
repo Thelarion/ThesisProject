@@ -10432,6 +10432,9 @@ MonoBehaviour:
   Sprites:
   - {fileID: 21300000, guid: fe4581cf7210d03488e7a5fd69dcfee2, type: 3}
   - {fileID: 21300000, guid: 980b564c0dddbfa48bd84593a9d2692e, type: 3}
+  SpritesContrast:
+  - {fileID: 21300000, guid: d09dd8b7df63df34a81d2c3e5c37a4a0, type: 3}
+  - {fileID: 21300000, guid: 3b993acd223037b4982e640836a9dafd, type: 3}
 --- !u!1 &8951460254997789961
 GameObject:
   m_ObjectHideFlags: 0
@@ -11569,6 +11572,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Sprites:
+  - {fileID: 21300000, guid: 98c4840906730fe49b426f64eb391702, type: 3}
+  - {fileID: 21300000, guid: d2770db29aef36e49bb4a15199a85d4e, type: 3}
+  SpritesContrast:
   - {fileID: 21300000, guid: 98c4840906730fe49b426f64eb391702, type: 3}
   - {fileID: 21300000, guid: d2770db29aef36e49bb4a15199a85d4e, type: 3}
 --- !u!1 &8951460255749538725

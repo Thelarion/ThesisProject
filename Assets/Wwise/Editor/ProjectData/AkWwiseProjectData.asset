@@ -2273,7 +2273,7 @@ MonoBehaviour:
     ParentPath: Events\UI
     guid: 13ad265a32fe774b8e3372fc1241ceef
     GuidInternal: 
-    m_lastTime: -8585245421187594298
+    m_lastTime: -8585240882315898207
     List:
     - name: DistanceFrameTransition
       guid: b75bda6923c11a45b48382c150b587a0
@@ -2306,6 +2306,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: 246d5d8c895ef74b8ac7820fe4bf5966
       Path: Events\UI\Play_ButtonReadAloud
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Instructions
+      guid: 9f41563665b06943bcb9981cfdd56fb4
+      id: 1184431001
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: UI
+        ObjectType: 12
+        guid: 13ad265a32fe774b8e3372fc1241ceef
+      - ElementName: Play_Instructions
+        ObjectType: 3
+        guid: 9f41563665b06943bcb9981cfdd56fb4
+      Path: Events\UI\Play_Instructions
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -3026,7 +3043,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 2cc96633e1efc745a10ab3fad73419fc
     GuidInternal: 
-    m_lastTime: -8585242758174926057
+    m_lastTime: -8585240882315818629
     List:
     - name: AudioVisualiserToggle
       guid: 0824f5ddd468214c94ef683183e4ed2a
@@ -3351,6 +3368,120 @@ MonoBehaviour:
         - ElementName: InclusionModeOn
           ObjectType: 10
           guid: 820cb3fb4ceb0645ab69932a32da0848
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Instructions
+      guid: a0624e04d6c1994f9b9bfd4ad209c804
+      id: 4273002286
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2cc96633e1efc745a10ab3fad73419fc
+      - ElementName: Instructions
+        ObjectType: 11
+        guid: a0624e04d6c1994f9b9bfd4ad209c804
+      Path: Switches\Default Work Unit\Instructions
+      values:
+      - name: I1
+        guid: c661cb098cc1e142a5db434a12ac2284
+        id: 1752637683
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 2cc96633e1efc745a10ab3fad73419fc
+        - ElementName: Instructions
+          ObjectType: 11
+          guid: a0624e04d6c1994f9b9bfd4ad209c804
+        - ElementName: I1
+          ObjectType: 10
+          guid: c661cb098cc1e142a5db434a12ac2284
+      - name: I2
+        guid: 21736bccda06b2478596002f7b668602
+        id: 1752637680
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 2cc96633e1efc745a10ab3fad73419fc
+        - ElementName: Instructions
+          ObjectType: 11
+          guid: a0624e04d6c1994f9b9bfd4ad209c804
+        - ElementName: I2
+          ObjectType: 10
+          guid: 21736bccda06b2478596002f7b668602
+      - name: I3
+        guid: 53f4278a7745204bab6a2178bc33286a
+        id: 1752637681
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 2cc96633e1efc745a10ab3fad73419fc
+        - ElementName: Instructions
+          ObjectType: 11
+          guid: a0624e04d6c1994f9b9bfd4ad209c804
+        - ElementName: I3
+          ObjectType: 10
+          guid: 53f4278a7745204bab6a2178bc33286a
+      - name: I4
+        guid: 4233620c89cf7141b082b2a568fe756d
+        id: 1752637686
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 2cc96633e1efc745a10ab3fad73419fc
+        - ElementName: Instructions
+          ObjectType: 11
+          guid: a0624e04d6c1994f9b9bfd4ad209c804
+        - ElementName: I4
+          ObjectType: 10
+          guid: 4233620c89cf7141b082b2a568fe756d
+      - name: I5
+        guid: fc6c4ead50db954f87315ff4b862b597
+        id: 1752637687
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 2cc96633e1efc745a10ab3fad73419fc
+        - ElementName: Instructions
+          ObjectType: 11
+          guid: a0624e04d6c1994f9b9bfd4ad209c804
+        - ElementName: I5
+          ObjectType: 10
+          guid: fc6c4ead50db954f87315ff4b862b597
+      - name: I6
+        guid: e9f9c09d52e6f84da19bb95a0ebd911d
+        id: 1752637684
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 2cc96633e1efc745a10ab3fad73419fc
+        - ElementName: Instructions
+          ObjectType: 11
+          guid: a0624e04d6c1994f9b9bfd4ad209c804
+        - ElementName: I6
+          ObjectType: 10
+          guid: e9f9c09d52e6f84da19bb95a0ebd911d
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []

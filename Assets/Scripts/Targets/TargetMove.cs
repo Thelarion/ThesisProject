@@ -35,7 +35,7 @@ public class TargetMove : MonoBehaviour
     IEnumerator WaitForPositionInitialization()
     {
         yield return new WaitForSeconds(0.2f);
-        startingPosition = transform.position;
+        startingPosition = transform.position; // Just save the original position
         positionIsSet = true;
     }
 
@@ -56,11 +56,11 @@ public class TargetMove : MonoBehaviour
 
         if (!interpolate)
         {
-            if (!InclusionIO)
+            if (InclusionIO == false)
             {
                 StartCoroutine(InterpolateRandomMovementXYZ(rawSinWave, interpolateX, interpolateY, interpolateZ));
             }
-            else
+            else if (InclusionIO == true)
             {
                 StartCoroutine(InterpolateRandomMovementXZ(rawSinWave, interpolateX, interpolateZ));
             }
@@ -73,8 +73,8 @@ public class TargetMove : MonoBehaviour
     {
         interpolate = true;
 
-        float randomXNew = UnityEngine.Random.Range(-3f, 4f);
-        float randomZNew = UnityEngine.Random.Range(-2f, 3f);
+        float randomXNew = UnityEngine.Random.Range(-1f, 2f);
+        float randomZNew = UnityEngine.Random.Range(-1f, 2f);
 
         // randomXNew = CheckUnwantedAccelerationX(randomXNew);
 

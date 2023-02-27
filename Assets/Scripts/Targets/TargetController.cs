@@ -126,13 +126,13 @@ public class TargetController : MonoBehaviour
         }
     }
 
-    public void ResetNotePositionToSpawnPoint()
-    {
-        foreach (Transform child in transform)
-        {
-            child.transform.GetComponent<TargetIdentity>().ResetPositionToSpawnPoint();
-        }
-    }
+    // public void ResetNotePositionToSpawnPoint()
+    // {
+    //     foreach (Transform child in transform)
+    //     {
+    //         child.transform.GetComponent<TargetIdentity>().ResetPositionToSpawnPoint();
+    //     }
+    // }
 
     private void CheckTargetCount()
     {

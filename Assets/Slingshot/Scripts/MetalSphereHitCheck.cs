@@ -24,7 +24,7 @@ public class MetalSphereHitCheck : MonoBehaviour
         {
             PlingSuccess.Post(gameObject);
             scoreManager.CalculatePoints(other.transform.GetComponent<TargetIdentity>().MissedTaps);
-            // Destroy(other.transform.gameObject);
+            Destroy(other.transform.gameObject);
         }
 
         // CASE WRONG NOTE

@@ -90,6 +90,7 @@ namespace AK
         static const AkUniqueID PLAY_BUTTONREADALOUD = 2262911975U;
         static const AkUniqueID PLAY_C3_E3_A2_B2_C3 = 1668314063U;
         static const AkUniqueID PLAY_C3_E3_A2_B2_C3_VERSIONS = 1946610009U;
+        static const AkUniqueID PLAY_INSTRUCTIONS = 1184431001U;
         static const AkUniqueID PLAY_LEAVESRUSTLING = 636081116U;
         static const AkUniqueID PLAY_NOTEWRANGLE = 2787390506U;
         static const AkUniqueID PLAY_PLAYERFOOT = 3015844381U;
@@ -219,6 +220,21 @@ namespace AK
                 static const AkUniqueID INCLUSIONMODEON = 3050936059U;
             } // namespace SWITCH
         } // namespace INCLUSIONMODETOGGLE
+
+        namespace INSTRUCTIONS
+        {
+            static const AkUniqueID GROUP = 4273002286U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID I1 = 1752637683U;
+                static const AkUniqueID I2 = 1752637680U;
+                static const AkUniqueID I3 = 1752637681U;
+                static const AkUniqueID I4 = 1752637686U;
+                static const AkUniqueID I5 = 1752637687U;
+                static const AkUniqueID I6 = 1752637684U;
+            } // namespace SWITCH
+        } // namespace INSTRUCTIONS
 
         namespace MATERIALS
         {

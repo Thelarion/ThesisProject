@@ -33,7 +33,17 @@ public class TargetIdentity : MonoBehaviour
     private void Start()
     {
         gameObject.transform.position = targetSpawnPoints.ReturnRandomSpawnTransform(_indexInSequence).position;
+        IncreaseSizeOnInclusion();
     }
+
+    private void IncreaseSizeOnInclusion()
+    {
+        if (StartMenuManager.InclusionState == true)
+        {
+            transform.localScale = new Vector3(70f, 70f, 70);
+        }
+    }
+
     private void Update()
     {
         _tapState = GetComponent<RunInterval>().TapState;
@@ -47,12 +57,6 @@ public class TargetIdentity : MonoBehaviour
     public int getIndexInSequence()
     {
         return _indexInSequence;
-    }
-
-    public void ResetPositionToSpawnPoint()
-    {
-        // transform.position = targetSpawnPoints.GetActiveSpawnPointFromSpawnContainer(_indexInSequence).position;
-        gameObject.transform.position = targetSpawnPoints.ReturnRandomSpawnTransform(_indexInSequence).position;
     }
 
     // Remove target from instances when destroyed

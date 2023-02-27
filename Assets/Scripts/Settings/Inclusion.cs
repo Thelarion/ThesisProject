@@ -33,7 +33,6 @@ public class Inclusion : MonoBehaviour
         // Switch the current action map from "Player" to "PlayerInclusion"
         PlayerInput PI = Player.transform.GetComponent<PlayerInput>();
         PI.SwitchCurrentActionMap("PlayerInclusion");
-        print(PI.currentActionMap);
 
         // Fix camera rotation without skip
         PlayerCameraRoot.transform.localRotation = Quaternion.Euler(-5.0f, 0.0f, 0.0f);
@@ -44,7 +43,8 @@ public class Inclusion : MonoBehaviour
 
         // Adjust behaviour of the targets
         TargetController TP = TargetParent.transform.GetComponent<TargetController>();
-        TP.ToggleInclusionTargets();
-        TP.ResetNotePositionToSpawnPoint();
+        TP.ToggleInclusionTargets();    // Set the inclusion mode flag in each single target
+        // TP.ResetNotePositionToSpawnPoint();
+        // TP.DeactivateMovement();
     }
 }

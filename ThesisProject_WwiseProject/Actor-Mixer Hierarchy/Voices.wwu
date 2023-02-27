@@ -653,6 +653,234 @@
 						</GroupingList>
 					</GroupingInfo>
 				</SwitchContainer>
+				<SwitchContainer Name="Instructions" ID="{ACD8B23A-16A2-42F5-A9E8-2EC2B268DB8C}" ShortID="450390820">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="I1" ID="{09CB61C6-C18C-42E1-A5DB-434A12AC2284}" WorkUnitID="{3366C92C-EFE1-45C7-A10A-B3FAD73419FC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="Instructions" ID="{044E62A0-C1D6-4F99-9B9B-FD4AD209C804}" WorkUnitID="{3366C92C-EFE1-45C7-A10A-B3FAD73419FC}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Instruction3" ID="{D70F6752-B5F0-4FDD-AE8D-248905729242}" ShortID="394667092">
+							<PropertyList>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="InstructionPlaceholder3" ID="{B8229426-E2CF-469C-92E4-81F2E58C2AD2}">
+									<Language>English(US)</Language>
+									<AudioFile>InstructionPlaceholder3.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="368822499"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="InstructionPlaceholder3" ID="{B8229426-E2CF-469C-92E4-81F2E58C2AD2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Instruction4" ID="{7AF6D23A-73A8-4558-AC85-F643B35F1625}" ShortID="287989670">
+							<PropertyList>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="InstructionPlaceholder4" ID="{91FAFD5B-766B-4ABB-A1FF-1EBBE28BD10E}">
+									<Language>English(US)</Language>
+									<AudioFile>InstructionPlaceholder4.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="962278064"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="InstructionPlaceholder4" ID="{91FAFD5B-766B-4ABB-A1FF-1EBBE28BD10E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Instruction1" ID="{0D42BFA2-4DAF-4B76-8FCB-CE2CCC24D00E}" ShortID="596224026">
+							<PropertyList>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="InstructionPlaceholder1" ID="{54CB1BD9-0711-4340-9869-6245127B7EAB}">
+									<Language>English(US)</Language>
+									<AudioFile>InstructionPlaceholder1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="577693576"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="InstructionPlaceholder1" ID="{54CB1BD9-0711-4340-9869-6245127B7EAB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Instruction5" ID="{74C027E4-297B-4ED9-9FD6-A4AF8E9B5935}" ShortID="287484790">
+							<PropertyList>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="InstructionPlaceholder5" ID="{1C40B9D1-FEFA-448C-B4AC-CD90DE4047EA}">
+									<Language>English(US)</Language>
+									<AudioFile>InstructionPlaceholder5.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="548481294"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="InstructionPlaceholder5" ID="{1C40B9D1-FEFA-448C-B4AC-CD90DE4047EA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Instruction2" ID="{14260CB7-76E0-4F2F-A42E-0859AF2FD185}" ShortID="56319458">
+							<PropertyList>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="InstructionPlaceholder2" ID="{E0C2CB4D-DF11-453B-8DE1-B825FCAB5D1F}">
+									<Language>English(US)</Language>
+									<AudioFile>InstructionPlaceholder2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="664643821"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="InstructionPlaceholder2" ID="{E0C2CB4D-DF11-453B-8DE1-B825FCAB5D1F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Instruction6" ID="{6C208374-CA6C-47F7-89B1-4A6B25F4F6D4}" ShortID="183881665">
+							<PropertyList>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="InstructionPlaceholder6" ID="{F5FD8341-20D6-4571-B834-DDEF720EC295}">
+									<Language>English(US)</Language>
+									<AudioFile>InstructionPlaceholder6.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="883726677"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="InstructionPlaceholder6" ID="{F5FD8341-20D6-4571-B834-DDEF720EC295}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="Instruction4" ID="{7AF6D23A-73A8-4558-AC85-F643B35F1625}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Instruction3" ID="{D70F6752-B5F0-4FDD-AE8D-248905729242}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Instruction6" ID="{6C208374-CA6C-47F7-89B1-4A6B25F4F6D4}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Instruction1" ID="{0D42BFA2-4DAF-4B76-8FCB-CE2CCC24D00E}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Instruction2" ID="{14260CB7-76E0-4F2F-A42E-0859AF2FD185}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Instruction5" ID="{74C027E4-297B-4ED9-9FD6-A4AF8E9B5935}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="I2" ID="{CC6B7321-06DA-47B2-8596-002F7B668602}"/>
+								<ItemList>
+									<ItemRef Name="Instruction2" ID="{14260CB7-76E0-4F2F-A42E-0859AF2FD185}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="I4" ID="{0C623342-CF89-4171-B082-B2A568FE756D}"/>
+								<ItemList>
+									<ItemRef Name="Instruction4" ID="{7AF6D23A-73A8-4558-AC85-F643B35F1625}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="I3" ID="{8A27F453-4577-4B20-AB6A-2178BC33286A}"/>
+								<ItemList>
+									<ItemRef Name="Instruction3" ID="{D70F6752-B5F0-4FDD-AE8D-248905729242}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="I1" ID="{09CB61C6-C18C-42E1-A5DB-434A12AC2284}"/>
+								<ItemList>
+									<ItemRef Name="Instruction1" ID="{0D42BFA2-4DAF-4B76-8FCB-CE2CCC24D00E}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="I6" ID="{9DC0F9E9-E652-4DF8-A19B-B95A0EBD911D}"/>
+								<ItemList>
+									<ItemRef Name="Instruction6" ID="{6C208374-CA6C-47F7-89B1-4A6B25F4F6D4}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="I5" ID="{AD4E6CFC-DB50-4F95-8731-5FF4B862B597}"/>
+								<ItemList>
+									<ItemRef Name="Instruction5" ID="{74C027E4-297B-4ED9-9FD6-A4AF8E9B5935}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

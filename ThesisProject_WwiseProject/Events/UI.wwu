@@ -78,6 +78,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Instructions" ID="{3656419F-B065-4369-BCB9-981CFDD56FB4}">
+					<ChildrenList>
+						<Action Name="" ID="{620DB548-103D-44AC-B55B-9C279D12C38F}" ShortID="12392619">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Instructions" ID="{ACD8B23A-16A2-42F5-A9E8-2EC2B268DB8C}" WorkUnitID="{14E6A00B-1C33-466E-9627-FBDE77EDBF18}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

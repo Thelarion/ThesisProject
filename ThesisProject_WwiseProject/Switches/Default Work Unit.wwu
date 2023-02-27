@@ -75,6 +75,16 @@
 						<Switch Name="AudioVisualiserOff" ID="{F9B012F6-BBAA-4B50-A839-0AC95FD06728}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="Instructions" ID="{044E62A0-C1D6-4F99-9B9B-FD4AD209C804}">
+					<ChildrenList>
+						<Switch Name="I1" ID="{09CB61C6-C18C-42E1-A5DB-434A12AC2284}"/>
+						<Switch Name="I2" ID="{CC6B7321-06DA-47B2-8596-002F7B668602}"/>
+						<Switch Name="I3" ID="{8A27F453-4577-4B20-AB6A-2178BC33286A}"/>
+						<Switch Name="I4" ID="{0C623342-CF89-4171-B082-B2A568FE756D}"/>
+						<Switch Name="I5" ID="{AD4E6CFC-DB50-4F95-8731-5FF4B862B597}"/>
+						<Switch Name="I6" ID="{9DC0F9E9-E652-4DF8-A19B-B95A0EBD911D}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>
