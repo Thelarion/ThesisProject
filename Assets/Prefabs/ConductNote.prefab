@@ -135,4 +135,5 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: fe0e1646268b26f4e90873451f2a1967,
       type: 2}
+  hitParticles: {fileID: 19800000, guid: 979632a27455af442bd2d8f36eb0ffce, type: 3}
   targetSpawnPoints: {fileID: 0}

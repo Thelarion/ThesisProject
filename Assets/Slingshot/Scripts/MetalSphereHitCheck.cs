@@ -49,8 +49,17 @@ public class MetalSphereHitCheck : MonoBehaviour
         // // DESTROY SPHERE CASE TARGET
         // if (other.transform.tag == "Target") // Destroy the sphere if it hits a target
         // {
+        Instantiate(hitParticles, transform.position, Quaternion.identity);
         Destroy(transform.gameObject); // Destroy(other.transform.gameObject);
-        hitParticles.Play();
         // }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.transform.tag == "Environment")
+        {
+            Instantiate(hitParticles, transform.position, Quaternion.identity);
+            Destroy(transform.gameObject);
+        }
     }
 }

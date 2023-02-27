@@ -13,6 +13,8 @@ TagManager:
   - Dirt
   - Grass
   - Water
+  - FxTemporaire
+  - Environment
   layers:
   - Default
   - TransparentFX
