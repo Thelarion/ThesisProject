@@ -43,7 +43,8 @@ public class OperationController : MonoBehaviour
     private Image _currentFrameDistance = null;
     private bool _initializationDone = false;
     [Header("Sprites")]
-    public Sprite UI_BackgroundGrey;
+    public Sprite UI_ListBackground;
+    public Sprite UI_ListBackground_Contrast;
     [Header("Wwise")]
     public AK.Wwise.Event DistanceFrameTransition;
     private bool blockInitialPost = false;
@@ -196,7 +197,14 @@ public class OperationController : MonoBehaviour
     {
         if (!ColourHelpState)
         {
-            SetBackgroundGrey();
+            if (StartMenuManager.InclusionState == false)
+            {
+                SetListBackground();
+            }
+            else if (StartMenuManager.InclusionState == true)
+            {
+                SetListBackgroundContrast();
+            }
         }
         else
         {
@@ -204,11 +212,19 @@ public class OperationController : MonoBehaviour
             UpdateBackgroundsToColour();
         }
 
-        void SetBackgroundGrey()
+        void SetListBackground()
         {
             foreach (Transform item in transform)
             {
-                item.GetComponent<Image>().sprite = UI_BackgroundGrey;
+                item.GetComponent<Image>().sprite = UI_ListBackground;
+            }
+        }
+
+        void SetListBackgroundContrast()
+        {
+            foreach (Transform item in transform)
+            {
+                item.GetComponent<Image>().sprite = UI_ListBackground_Contrast;
             }
         }
 
