@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1229948536" Type="User" Language="SFX" Hash="{7C09EAE0-05CB-9B95-38C9-8258AA7B9EE6}">
+		<SoundBank Id="1229948536" Type="User" Language="SFX">
 			<ShortName>Environment</ShortName>
 			<Path>Environment.bnk</Path>
 		</SoundBank>
@@ -185,7 +185,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{87DC69F6-844C-AA0B-F51B-B2C5E700ABA2}">
+		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{7CDBAE6A-3C30-4D85-D5D7-011769D9C6E8}">
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
 			<Media>
@@ -223,7 +223,7 @@
 				</File>
 				<File Id="45056509" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>StoneBump\StoneBump4.wav</ShortName>
-					<CachePath>SFX/StoneBump/StoneBump4_10C4C929.wem</CachePath>
+					<CachePath>SFX/StoneBump/StoneBump4_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="62582298" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SRelease4.wav</ShortName>
@@ -235,7 +235,7 @@
 				</File>
 				<File Id="74676487" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>LeavesRustlingIndicator\Leaves_Rustling_06.wav</ShortName>
-					<CachePath>SFX/LeavesRustlingIndicator/Leaves_Rustling_06_10C4C929.wem</CachePath>
+					<CachePath>SFX/LeavesRustlingIndicator/Leaves_Rustling_06_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="99426326" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ButtonReadAloud\EffectsVolume.wav</ShortName>
@@ -283,7 +283,7 @@
 				</File>
 				<File Id="162125142" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>LeavesRustlingIndicator\Leaves_Rustling_03.wav</ShortName>
-					<CachePath>SFX/LeavesRustlingIndicator/Leaves_Rustling_03_10C4C929.wem</CachePath>
+					<CachePath>SFX/LeavesRustlingIndicator/Leaves_Rustling_03_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="164636996" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>F4#.wav</ShortName>
@@ -295,7 +295,7 @@
 				</File>
 				<File Id="167049895" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TreeBump\Dropping Wood 13.wav</ShortName>
-					<CachePath>SFX/TreeBump/Dropping Wood 13_10C4C929.wem</CachePath>
+					<CachePath>SFX/TreeBump/Dropping Wood 13_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="170761103" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>C3_E3_A2_B3_C3.wav</ShortName>
@@ -331,7 +331,7 @@
 				</File>
 				<File Id="199504774" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TreeBump\Dropping Wood 05.wav</ShortName>
-					<CachePath>SFX/TreeBump/Dropping Wood 05_10C4C929.wem</CachePath>
+					<CachePath>SFX/TreeBump/Dropping Wood 05_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="206363750" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O3\G3.wav</ShortName>
@@ -387,7 +387,7 @@
 				</File>
 				<File Id="295788518" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>LeavesRustlingIndicator\Leaves_Rustling_02.wav</ShortName>
-					<CachePath>SFX/LeavesRustlingIndicator/Leaves_Rustling_02_10C4C929.wem</CachePath>
+					<CachePath>SFX/LeavesRustlingIndicator/Leaves_Rustling_02_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="308599422" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Plyr_Grunt_05.wav</ShortName>
@@ -419,7 +419,7 @@
 				</File>
 				<File Id="338616897" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TreeBump\Dropping Wood 04.wav</ShortName>
-					<CachePath>SFX/TreeBump/Dropping Wood 04_10C4C929.wem</CachePath>
+					<CachePath>SFX/TreeBump/Dropping Wood 04_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="351284602" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Water\Plyr_Fstps_Water_07.wav</ShortName>
@@ -451,15 +451,15 @@
 				</File>
 				<File Id="393765428" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TreeBump\Dropping Wood 03.wav</ShortName>
-					<CachePath>SFX/TreeBump/Dropping Wood 03_10C4C929.wem</CachePath>
+					<CachePath>SFX/TreeBump/Dropping Wood 03_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="412796382" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TreeBump\Dropping Wood 02.wav</ShortName>
-					<CachePath>SFX/TreeBump/Dropping Wood 02_10C4C929.wem</CachePath>
+					<CachePath>SFX/TreeBump/Dropping Wood 02_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="418019861" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>StoneBump\StoneBump2.wav</ShortName>
-					<CachePath>SFX/StoneBump/StoneBump2_10C4C929.wem</CachePath>
+					<CachePath>SFX/StoneBump/StoneBump2_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="423178395" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O2\F2.wav</ShortName>
@@ -471,7 +471,7 @@
 				</File>
 				<File Id="429045180" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>StoneBump\StoneBump1.wav</ShortName>
-					<CachePath>SFX/StoneBump/StoneBump1_10C4C929.wem</CachePath>
+					<CachePath>SFX/StoneBump/StoneBump1_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="431263045" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WrongNoteTryAgain.wav</ShortName>
@@ -499,7 +499,7 @@
 				</File>
 				<File Id="462856247" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>StoneBump\StoneBump6.wav</ShortName>
-					<CachePath>SFX/StoneBump/StoneBump6_10C4C929.wem</CachePath>
+					<CachePath>SFX/StoneBump/StoneBump6_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="473231221" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Gravel\FS_Gravel_03.wav</ShortName>
@@ -535,7 +535,7 @@
 				</File>
 				<File Id="523980979" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TreeBump\Dropping Wood 08.wav</ShortName>
-					<CachePath>SFX/TreeBump/Dropping Wood 08_10C4C929.wem</CachePath>
+					<CachePath>SFX/TreeBump/Dropping Wood 08_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="530408079" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>G3b.wav</ShortName>
@@ -575,7 +575,7 @@
 				</File>
 				<File Id="580739463" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TreeBump\Dropping Wood 12.wav</ShortName>
-					<CachePath>SFX/TreeBump/Dropping Wood 12_10C4C929.wem</CachePath>
+					<CachePath>SFX/TreeBump/Dropping Wood 12_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="582434824" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Plyr_Grunt_07.wav</ShortName>
@@ -595,7 +595,7 @@
 				</File>
 				<File Id="597020867" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TreeBump\Dropping Wood 11.wav</ShortName>
-					<CachePath>SFX/TreeBump/Dropping Wood 11_10C4C929.wem</CachePath>
+					<CachePath>SFX/TreeBump/Dropping Wood 11_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="599950730" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>D4#.wav</ShortName>
@@ -611,7 +611,11 @@
 				</File>
 				<File Id="604609623" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TreeBump\Dropping Wood 06.wav</ShortName>
-					<CachePath>SFX/TreeBump/Dropping Wood 06_10C4C929.wem</CachePath>
+					<CachePath>SFX/TreeBump/Dropping Wood 06_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="604891812" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Reflections.wav</ShortName>
+					<CachePath>SFX/Reflections_9EDFC787.wem</CachePath>
 				</File>
 				<File Id="618258995" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>D4b.wav</ShortName>
@@ -631,7 +635,7 @@
 				</File>
 				<File Id="646510716" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>StoneBump\StoneBump5.wav</ShortName>
-					<CachePath>SFX/StoneBump/StoneBump5_10C4C929.wem</CachePath>
+					<CachePath>SFX/StoneBump/StoneBump5_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="647086168" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>M1_B2_P4.wav</ShortName>
@@ -639,7 +643,7 @@
 				</File>
 				<File Id="655126732" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>26211 Silence in woods loop-full.wav</ShortName>
-					<CachePath>SFX/26211 Silence in woods loop-full_D79FB2B7.wem</CachePath>
+					<CachePath>SFX/26211 Silence in woods loop-full_9EDFC787.wem</CachePath>
 				</File>
 				<File Id="664643821" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>InstructionPlaceholder2.wav</ShortName>
@@ -655,7 +659,7 @@
 				</File>
 				<File Id="675839683" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>StoneBump\StoneBump3.wav</ShortName>
-					<CachePath>SFX/StoneBump/StoneBump3_10C4C929.wem</CachePath>
+					<CachePath>SFX/StoneBump/StoneBump3_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="686006542" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>A4#.wav</ShortName>
@@ -675,7 +679,7 @@
 				</File>
 				<File Id="737434286" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>LeavesRustlingIndicator\Leaves_Rustling_01.wav</ShortName>
-					<CachePath>SFX/LeavesRustlingIndicator/Leaves_Rustling_01_10C4C929.wem</CachePath>
+					<CachePath>SFX/LeavesRustlingIndicator/Leaves_Rustling_01_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="742077720" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Tile\FS_Tile_01.wav</ShortName>
@@ -707,7 +711,7 @@
 				</File>
 				<File Id="782675017" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FoxNoteWrangle\FoxNoteWrangle_01.wav</ShortName>
-					<CachePath>SFX/FoxNoteWrangle/FoxNoteWrangle_01_10C4C929.wem</CachePath>
+					<CachePath>SFX/FoxNoteWrangle/FoxNoteWrangle_01_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="790540168" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grass\Plyr_Fstps_Grass_05.wav</ShortName>
@@ -731,7 +735,7 @@
 				</File>
 				<File Id="812700246" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TreeBump\Dropping Wood 09.wav</ShortName>
-					<CachePath>SFX/TreeBump/Dropping Wood 09_10C4C929.wem</CachePath>
+					<CachePath>SFX/TreeBump/Dropping Wood 09_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="813247547" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Buttons\Button_Selection.wav</ShortName>
@@ -747,11 +751,11 @@
 				</File>
 				<File Id="823778671" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TreeBump\Dropping Wood 14.wav</ShortName>
-					<CachePath>SFX/TreeBump/Dropping Wood 14_10C4C929.wem</CachePath>
+					<CachePath>SFX/TreeBump/Dropping Wood 14_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="828653254" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TreeBump\Dropping Wood 15.wav</ShortName>
-					<CachePath>SFX/TreeBump/Dropping Wood 15_10C4C929.wem</CachePath>
+					<CachePath>SFX/TreeBump/Dropping Wood 15_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="843155914" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Tile\FS_Tile_02.wav</ShortName>
@@ -759,11 +763,11 @@
 				</File>
 				<File Id="852969047" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>LeavesRustlingIndicator\Leaves_Rustling_04.wav</ShortName>
-					<CachePath>SFX/LeavesRustlingIndicator/Leaves_Rustling_04_10C4C929.wem</CachePath>
+					<CachePath>SFX/LeavesRustlingIndicator/Leaves_Rustling_04_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="855718662" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>LeavesRustlingIndicator\Leaves_Rustling_05.wav</ShortName>
-					<CachePath>SFX/LeavesRustlingIndicator/Leaves_Rustling_05_10C4C929.wem</CachePath>
+					<CachePath>SFX/LeavesRustlingIndicator/Leaves_Rustling_05_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="857896596" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Plyr_Grunt_06.wav</ShortName>
@@ -771,7 +775,7 @@
 				</File>
 				<File Id="859968386" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FoxNoteWrangle_02.wav</ShortName>
-					<CachePath>SFX/FoxNoteWrangle_02_10C4C929.wem</CachePath>
+					<CachePath>SFX/FoxNoteWrangle_02_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="868281298" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>C3#.wav</ShortName>
@@ -795,7 +799,7 @@
 				</File>
 				<File Id="889111003" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>StoneBump\StoneBump7.wav</ShortName>
-					<CachePath>SFX/StoneBump/StoneBump7_10C4C929.wem</CachePath>
+					<CachePath>SFX/StoneBump/StoneBump7_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="893369011" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Tile\FS_Tile_04.wav</ShortName>
@@ -827,7 +831,7 @@
 				</File>
 				<File Id="924306492" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TreeBump\Dropping Wood 07.wav</ShortName>
-					<CachePath>SFX/TreeBump/Dropping Wood 07_10C4C929.wem</CachePath>
+					<CachePath>SFX/TreeBump/Dropping Wood 07_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="925483801" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O2\A2.wav</ShortName>
@@ -871,11 +875,11 @@
 				</File>
 				<File Id="970609161" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>StoneBump\StoneBump9.wav</ShortName>
-					<CachePath>SFX/StoneBump/StoneBump9_10C4C929.wem</CachePath>
+					<CachePath>SFX/StoneBump/StoneBump9_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="973849493" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>RacoonNoteWrangle_01.wav</ShortName>
-					<CachePath>SFX/RacoonNoteWrangle_01_10C4C929.wem</CachePath>
+					<CachePath>SFX/RacoonNoteWrangle_01_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="980309991" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O2\C2.wav</ShortName>
@@ -899,11 +903,11 @@
 				</File>
 				<File Id="1001418475" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TreeBump\Dropping Wood 01.wav</ShortName>
-					<CachePath>SFX/TreeBump/Dropping Wood 01_10C4C929.wem</CachePath>
+					<CachePath>SFX/TreeBump/Dropping Wood 01_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="1002045619" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TreeBumpPrevention.wav</ShortName>
-					<CachePath>SFX/TreeBumpPrevention_D79FB2B7.wem</CachePath>
+					<CachePath>SFX/TreeBumpPrevention_9EDFC787.wem</CachePath>
 				</File>
 				<File Id="1003304545" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>Inclusionmode On.wav</ShortName>
@@ -923,7 +927,7 @@
 				</File>
 				<File Id="1045015971" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SquirrelNoteWrangle_02.wav</ShortName>
-					<CachePath>SFX/SquirrelNoteWrangle_02_10C4C929.wem</CachePath>
+					<CachePath>SFX/SquirrelNoteWrangle_02_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="1048071603" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>B2b.wav</ShortName>
@@ -931,15 +935,15 @@
 				</File>
 				<File Id="1048145014" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TreeBump\Dropping Wood 10.wav</ShortName>
-					<CachePath>SFX/TreeBump/Dropping Wood 10_10C4C929.wem</CachePath>
+					<CachePath>SFX/TreeBump/Dropping Wood 10_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="1053882955" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>StoneBump\StoneBump10.wav</ShortName>
-					<CachePath>SFX/StoneBump/StoneBump10_10C4C929.wem</CachePath>
+					<CachePath>SFX/StoneBump/StoneBump10_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="1055002628" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>StoneBump\StoneBump8.wav</ShortName>
-					<CachePath>SFX/StoneBump/StoneBump8_10C4C929.wem</CachePath>
+					<CachePath>SFX/StoneBump/StoneBump8_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="1064747333" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O3\F3.wav</ShortName>
@@ -1609,6 +1613,11 @@
 						<MediaRef Id="992939571"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="988427829" Name="Play_ReflectionBumpPrevention" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="604891812"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3074787511" Name="Play_Slingshot_Release" DurationType="OneShot" DurationMin="1.5" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="62582298"/>
@@ -1655,7 +1664,7 @@
 						<MediaRef Id="1048145014"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3900353054" Name="Play_TreeBumpPrevention" MaxAttenuation="15" DurationType="Infinite">
+				<Event Id="3900353054" Name="Play_TreeBumpPrevention" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="1002045619"/>
 					</MediaRefs>
@@ -1787,5 +1796,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{BADEE347-89AB-757C-CECB-E292DB49F2F7}</FileHash>
+	<FileHash>{A88A7B8B-3230-AD82-7BB9-E5BDA8E39C7F}</FileHash>
 </SoundBanksInfo>

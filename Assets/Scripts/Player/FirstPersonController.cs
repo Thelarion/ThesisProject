@@ -68,14 +68,15 @@ namespace StarterAssets
 
         // footsteps
         bool isFootstepCycleOn;
-        bool isGruntCycleOn;
+        bool isGruntCycleOn = false;
         bool isJumping;
         private bool facesObject = false;
         // bool isRunning;
-        public float FootstepDelayTime = 0.3f;
-        public AK.Wwise.Event FootstepSound;
+        // public float FootstepDelayTime = 0.3f;
+        public AK.Wwise.Event Play_Plyr_Fstp;
         public AK.Wwise.Event Play_Slingshot_Release;
         public AK.Wwise.Event Play_Plyr_Grunts;
+
 
         [Header("Misc")]
         public AimManager aimManager;
@@ -89,6 +90,7 @@ namespace StarterAssets
         private RaycastHit raycastHit;
         private Transform bumpDetection;
         bool firstGruntOverState = false;
+        float plyr_fstp_duration;
 
 
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
@@ -157,15 +159,8 @@ namespace StarterAssets
                 Fire();
                 Blindfold();
                 Melody();
-                CheckObstacle();
             }
         }
-
-        private void CheckObstacle()
-        {
-
-        }
-
 
         private void Fire()
         {
@@ -292,9 +287,12 @@ namespace StarterAssets
             // move the player
             _controller.Move(inputDirection.normalized * (_speed * Time.deltaTime) + new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
 
+            if (_input.move.magnitude <= _threshold) firstGruntOverState = false;
+            print(_input.move.magnitude);
+
             if (_controller.velocity.magnitude <= 0.6f)
             {
-
+                // GruntIsResetState = false;
                 PlayerVelocityZeroDefineState = true;
 
                 if (!isGruntCycleOn && _input.move != Vector2.zero)
@@ -306,11 +304,22 @@ namespace StarterAssets
             {
                 PlayerVelocityZeroDefineState = false;
                 firstGruntOverState = false;
+
             }
 
-            if (_input.move != Vector2.zero && !isFootstepCycleOn && !isJumping && !PlayerVelocityZeroDefineState)
+            if (((_input.move != Vector2.zero && !PlayerVelocityZeroDefineState) || _input.look.sqrMagnitude >= _threshold) && !isFootstepCycleOn && !isJumping)
             {
-                StartCoroutine(PlayFootsteps());
+
+                if (_input.move != Vector2.zero)
+                {
+                    plyr_fstp_duration = 0.5f;
+                }
+                if (_input.look.sqrMagnitude >= _threshold && _input.move.sqrMagnitude <= _threshold)
+                {
+                    plyr_fstp_duration = 0.3f;
+                }
+
+                StartCoroutine(PlayFootsteps(plyr_fstp_duration));
             }
         }
 
@@ -323,10 +332,11 @@ namespace StarterAssets
                 Play_Plyr_Grunts.Post(gameObject);
             }
 
-            yield return new WaitForSeconds(FootstepDelayTime); //delay for a period of time
+            yield return new WaitForSeconds(0.5f); //delay for a period of time
 
-            isGruntCycleOn = false;
             firstGruntOverState = true;
+            isGruntCycleOn = false;
+
         }
 
         private void JumpAndGravity()
@@ -396,11 +406,11 @@ namespace StarterAssets
             Gizmos.DrawSphere(new Vector3(transform.position.x, transform.position.y - GroundedOffset, transform.position.z), GroundedRadius);
         }
 
-        IEnumerator PlayFootsteps()
+        IEnumerator PlayFootsteps(float value)
         {
             isFootstepCycleOn = true;
-            FootstepSound.Post(gameObject);
-            yield return new WaitForSeconds(FootstepDelayTime); //delay for a period of time
+            Play_Plyr_Fstp.Post(gameObject);
+            yield return new WaitForSeconds(value); //delay for a period of time
             isFootstepCycleOn = false;
         }
     }

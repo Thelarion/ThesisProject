@@ -97,6 +97,7 @@ namespace AK
         static const AkUniqueID PLAY_NOTEWRANGLE = 2787390506U;
         static const AkUniqueID PLAY_PLAYERFOOT = 3015844381U;
         static const AkUniqueID PLAY_PLYR_GRUNTS = 2481654591U;
+        static const AkUniqueID PLAY_REFLECTIONBUMPPREVENTION = 988427829U;
         static const AkUniqueID PLAY_SLINGSHOT_RELEASE = 3074787511U;
         static const AkUniqueID PLAY_STONEBUMP = 3385122965U;
         static const AkUniqueID PLAY_TESTCLICK = 83581882U;
