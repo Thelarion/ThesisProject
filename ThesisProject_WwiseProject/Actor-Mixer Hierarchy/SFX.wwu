@@ -1943,6 +1943,194 @@
 								</GroupingList>
 							</GroupingInfo>
 						</SwitchContainer>
+						<RandomSequenceContainer Name="Grunts" ID="{606A43CD-A125-46C1-A644-FD07D71C5D5E}" ShortID="482370606">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Plyr_Grunt_01" ID="{2C34E9F7-BB21-489F-A95E-D4A7984210A4}" ShortID="194550099">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Plyr_Grunt_01" ID="{615DFECC-E81E-47CC-963A-5FCDD7D8D60C}">
+											<Language>SFX</Language>
+											<AudioFile>Plyr_Grunt_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="198455538"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Plyr_Grunt_01" ID="{615DFECC-E81E-47CC-963A-5FCDD7D8D60C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Plyr_Grunt_02" ID="{BD55EE7C-3EB2-4F09-8569-DF269401966A}" ShortID="541993365">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Plyr_Grunt_02" ID="{5BB105FD-5D73-4C4E-A7AE-204026E6BE6D}">
+											<Language>SFX</Language>
+											<AudioFile>Plyr_Grunt_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="992939571"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Plyr_Grunt_02" ID="{5BB105FD-5D73-4C4E-A7AE-204026E6BE6D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Plyr_Grunt_03" ID="{270FE26B-F8BC-4369-85FC-18EABC96CE75}" ShortID="278346766">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Plyr_Grunt_03" ID="{7ECDF5AF-6145-4B22-A408-FC549F94BA67}">
+											<Language>SFX</Language>
+											<AudioFile>Plyr_Grunt_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="672218961"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Plyr_Grunt_03" ID="{7ECDF5AF-6145-4B22-A408-FC549F94BA67}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Plyr_Grunt_04" ID="{2B4B64A6-607A-4F16-A4CB-F45768FCE6EA}" ShortID="576085425">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Plyr_Grunt_04" ID="{0BD90E5C-6620-4259-917D-3B35F2049246}">
+											<Language>SFX</Language>
+											<AudioFile>Plyr_Grunt_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="357122905"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Plyr_Grunt_04" ID="{0BD90E5C-6620-4259-917D-3B35F2049246}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Plyr_Grunt_05" ID="{86F85E85-2F47-46FE-BA0A-D4709A2C7C84}" ShortID="77386951">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Plyr_Grunt_05" ID="{4843F004-88EF-45E1-B780-7C8E0CE551F5}">
+											<Language>SFX</Language>
+											<AudioFile>Plyr_Grunt_05.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="308599422"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Plyr_Grunt_05" ID="{4843F004-88EF-45E1-B780-7C8E0CE551F5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Plyr_Grunt_06" ID="{82FA91B1-F7AB-43F7-B9D5-08E99954B317}" ShortID="1015076063">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Plyr_Grunt_06" ID="{934E0B06-4061-4B27-A0EC-903AAFEBABDD}">
+											<Language>SFX</Language>
+											<AudioFile>Plyr_Grunt_06.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="857896596"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Plyr_Grunt_06" ID="{934E0B06-4061-4B27-A0EC-903AAFEBABDD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Plyr_Grunt_07" ID="{9092B59C-72FE-487A-9EF0-ACB310DCF2BB}" ShortID="352092726">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Plyr_Grunt_07" ID="{95B24398-396E-4026-9AE8-40535D49781F}">
+											<Language>SFX</Language>
+											<AudioFile>Plyr_Grunt_07.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="582434824"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Plyr_Grunt_07" ID="{95B24398-396E-4026-9AE8-40535D49781F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Plyr_Grunt_08" ID="{D36C9696-F509-47FD-A2B0-504AE817BAB1}" ShortID="94734578">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Plyr_Grunt_08" ID="{38D53AFE-3C6E-49DD-A32B-E6852649EC89}">
+											<Language>SFX</Language>
+											<AudioFile>Plyr_Grunt_08.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="765385419"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Plyr_Grunt_08" ID="{38D53AFE-3C6E-49DD-A32B-E6852649EC89}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</ActorMixer>
 				<Sound Name="TestClick_lp" ID="{91E440D7-AD63-4168-962A-B94663B6D26F}" ShortID="242125386">

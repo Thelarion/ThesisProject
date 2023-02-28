@@ -55,10 +55,25 @@
 				</Event>
 				<Event Name="Play_M1_Seq" ID="{3E2A3D82-5EBD-4665-8356-59839DF25576}">
 					<ChildrenList>
-						<Action Name="" ID="{3C07C529-845F-4647-870D-91ECE0CF031E}" ShortID="1037756212">
+						<Action Name="" ID="{C48A77D7-3BAA-433B-B33A-FC1B51C9B3CF}" ShortID="342238475">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="M1_Seq_Long" ID="{8CDCF10A-0DF4-42C5-81F5-4B0DF554FB9B}" WorkUnitID="{35658988-EBE6-42AB-BE13-CC3667F51DCE}"/>
+									<ObjectRef Name="NotesRadius" ID="{EAB6EB1A-2072-498E-A464-93416743FDE7}" WorkUnitID="{35658988-EBE6-42AB-BE13-CC3667F51DCE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Reset_M1_Seq" ID="{A2B1915A-4FD1-4E75-AAF4-D9DCCDF89832}">
+					<ChildrenList>
+						<Action Name="" ID="{AE7148FD-CB68-4A0D-B187-B60180040157}" ShortID="340659410">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="42"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="NotesRadius" ID="{EAB6EB1A-2072-498E-A464-93416743FDE7}" WorkUnitID="{35658988-EBE6-42AB-BE13-CC3667F51DCE}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

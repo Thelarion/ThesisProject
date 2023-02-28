@@ -68,12 +68,14 @@ namespace StarterAssets
 
         // footsteps
         bool isFootstepCycleOn;
+        bool isGruntCycleOn;
         bool isJumping;
-        bool facesObject = false;
+        private bool facesObject = false;
         // bool isRunning;
         public float FootstepDelayTime = 0.3f;
         public AK.Wwise.Event FootstepSound;
         public AK.Wwise.Event Play_Slingshot_Release;
+        public AK.Wwise.Event Play_Plyr_Grunts;
 
         [Header("Misc")]
         public AimManager aimManager;
@@ -81,8 +83,12 @@ namespace StarterAssets
         [HideInInspector] public GameManager gameManager;
         [HideInInspector] public MelodyManager melodyManager;
         [HideInInspector] public bool MenuToggle = false;
-        [HideInInspector] private Slingshot slingshot;
+        // [HideInInspector] private Slingshot slingshot;
         [HideInInspector] private ConductorBaton conductorBaton;
+        public LayerMask layerMask;
+        private RaycastHit raycastHit;
+        private Transform bumpDetection;
+        bool firstGruntOverState = false;
 
 
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
@@ -108,6 +114,8 @@ namespace StarterAssets
             }
         }
 
+        public bool PlayerVelocityZeroDefineState { get => facesObject; set => facesObject = value; }
+
         private void Awake()
         {
             // get a reference to our main camera
@@ -123,6 +131,7 @@ namespace StarterAssets
             gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
             // slingshot = GameObject.Find("MasterSlingshot").GetComponent<Slingshot>();
             conductorBaton = GameObject.Find("ConductorBaton").GetComponent<ConductorBaton>();
+            bumpDetection = GameObject.Find("BumpDetection").transform;
             _controller = GetComponent<CharacterController>();
             _input = GetComponent<StarterAssetsInputs>();
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
@@ -148,8 +157,15 @@ namespace StarterAssets
                 Fire();
                 Blindfold();
                 Melody();
+                CheckObstacle();
             }
         }
+
+        private void CheckObstacle()
+        {
+
+        }
+
 
         private void Fire()
         {
@@ -276,19 +292,41 @@ namespace StarterAssets
             // move the player
             _controller.Move(inputDirection.normalized * (_speed * Time.deltaTime) + new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
 
-            if (_controller.velocity.magnitude <= 0.6)
+            if (_controller.velocity.magnitude <= 0.6f)
             {
-                facesObject = true;
+
+                PlayerVelocityZeroDefineState = true;
+
+                if (!isGruntCycleOn && _input.move != Vector2.zero)
+                {
+                    StartCoroutine(PlayPlayerGrunts());
+                }
             }
             else
             {
-                facesObject = false;
+                PlayerVelocityZeroDefineState = false;
+                firstGruntOverState = false;
             }
 
-            if (_input.move != Vector2.zero && !isFootstepCycleOn && !isJumping && !facesObject)
+            if (_input.move != Vector2.zero && !isFootstepCycleOn && !isJumping && !PlayerVelocityZeroDefineState)
             {
                 StartCoroutine(PlayFootsteps());
             }
+        }
+
+        IEnumerator PlayPlayerGrunts()
+        {
+            isGruntCycleOn = true;
+
+            if (firstGruntOverState)
+            {
+                Play_Plyr_Grunts.Post(gameObject);
+            }
+
+            yield return new WaitForSeconds(FootstepDelayTime); //delay for a period of time
+
+            isGruntCycleOn = false;
+            firstGruntOverState = true;
         }
 
         private void JumpAndGravity()

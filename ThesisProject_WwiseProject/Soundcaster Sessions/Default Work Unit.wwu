@@ -29,7 +29,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="RTPC_MusicVolumeSettings" ID="{4AACEBAC-274E-444E-B31E-C3D3FCBF4951}"/>
-							<Value>5.35382504442495</Value>
+							<Value>10</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="RTPC_Plyr_Distance" ID="{DED68C3B-4AA3-44D8-9DD4-3B94D0E800FB}"/>
@@ -57,14 +57,13 @@
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="ArrowKeys" ID="{BB50126F-D323-4400-B86E-B2AA2D1BEDDA}"/>
-						<CurrentSwitchRef Name="Concrete" ID="{7624D16A-D815-43AD-A2F4-FF7B846EB163}"/>
+						<CurrentSwitchRef Name="Water" ID="{AA98095F-C61F-41A4-8FBD-52493CD6CD91}"/>
 						<CurrentSwitchRef Name="Effects" ID="{DF101DDA-99A3-4826-BB05-82E4347BC0B5}"/>
 						<CurrentSwitchRef Name="M1" ID="{EE148B74-339E-4862-B987-D0463480A443}"/>
 						<CurrentSwitchRef Name="Track1" ID="{DF0AB87B-7594-47E9-A09B-20EC64FAC28A}"/>
 						<CurrentSwitchRef Name="A" ID="{69A2F832-DD04-48E8-A090-5AF674AE02FC}"/>
 						<CurrentSwitchRef Name="InclusionModeOff" ID="{B8BF384A-A71B-41B5-B967-6E8389C3EB50}"/>
 						<CurrentSwitchRef Name="AudioVisualiserOff" ID="{F9B012F6-BBAA-4B50-A839-0AC95FD06728}"/>
-						<CurrentSwitchRef Name="M1_P1" ID="{374CE651-666F-4F10-B390-BAEAE83F99AB}"/>
 						<CurrentSwitchRef Name="I1" ID="{09CB61C6-C18C-42E1-A5DB-434A12AC2284}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>

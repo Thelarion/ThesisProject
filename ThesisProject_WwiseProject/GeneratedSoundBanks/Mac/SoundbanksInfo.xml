@@ -185,13 +185,17 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{0375B817-4026-A42E-6283-FC3B87A4D14E}">
+		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{87DC69F6-844C-AA0B-F51B-B2C5E700ABA2}">
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
 			<Media>
 				<File Id="804718" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O4\E4.wav</ShortName>
 					<CachePath>SFX/O4/E4_10C4C929.wem</CachePath>
+				</File>
+				<File Id="4722660" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>M1_C3_P1.wav</ShortName>
+					<CachePath>SFX/M1_C3_P1_10C4C929.wem</CachePath>
 				</File>
 				<File Id="12077457" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>G4#.wav</ShortName>
@@ -252,6 +256,10 @@
 				<File Id="124046553" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grass\Plyr_Fstps_Grass_01.wav</ShortName>
 					<CachePath>SFX/Grass/Plyr_Fstps_Grass_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="126090513" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>M1_E3_P2.wav</ShortName>
+					<CachePath>SFX/M1_E3_P2_10C4C929.wem</CachePath>
 				</File>
 				<File Id="128521936" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>C3_E3_A2_B3_C3_v6.wav</ShortName>
@@ -317,6 +325,10 @@
 					<ShortName>EffectsVolumeTest.wav</ShortName>
 					<CachePath>SFX/EffectsVolumeTest_10C4C929.wem</CachePath>
 				</File>
+				<File Id="198455538" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Plyr_Grunt_01.wav</ShortName>
+					<CachePath>SFX/Plyr_Grunt_01_10C4C929.wem</CachePath>
+				</File>
 				<File Id="199504774" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TreeBump\Dropping Wood 05.wav</ShortName>
 					<CachePath>SFX/TreeBump/Dropping Wood 05_10C4C929.wem</CachePath>
@@ -336,6 +348,10 @@
 				<File Id="221568551" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>DistanceCount\10.wav</ShortName>
 					<CachePath>SFX/DistanceCount/10_10C4C929.wem</CachePath>
+				</File>
+				<File Id="232226852" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>M1_C3_P5.wav</ShortName>
+					<CachePath>SFX/M1_C3_P5_10C4C929.wem</CachePath>
 				</File>
 				<File Id="242190809" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>DistanceFrameTransition.wav</ShortName>
@@ -373,6 +389,10 @@
 					<ShortName>LeavesRustlingIndicator\Leaves_Rustling_02.wav</ShortName>
 					<CachePath>SFX/LeavesRustlingIndicator/Leaves_Rustling_02_10C4C929.wem</CachePath>
 				</File>
+				<File Id="308599422" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Plyr_Grunt_05.wav</ShortName>
+					<CachePath>SFX/Plyr_Grunt_05_10C4C929.wem</CachePath>
+				</File>
 				<File Id="318186197" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grass\Plyr_Fstps_Grass_07.wav</ShortName>
 					<CachePath>SFX/Grass/Plyr_Fstps_Grass_07_10C4C929.wem</CachePath>
@@ -405,9 +425,17 @@
 					<ShortName>Water\Plyr_Fstps_Water_07.wav</ShortName>
 					<CachePath>SFX/Water/Plyr_Fstps_Water_07_10C4C929.wem</CachePath>
 				</File>
+				<File Id="357122905" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Plyr_Grunt_04.wav</ShortName>
+					<CachePath>SFX/Plyr_Grunt_04_10C4C929.wem</CachePath>
+				</File>
 				<File Id="360094241" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Water\Plyr_Fstps_Water_06.wav</ShortName>
 					<CachePath>SFX/Water/Plyr_Fstps_Water_06_10C4C929.wem</CachePath>
+				</File>
+				<File Id="364578896" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>M1_A2_P3.wav</ShortName>
+					<CachePath>SFX/M1_A2_P3_10C4C929.wem</CachePath>
 				</File>
 				<File Id="368822499" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>InstructionPlaceholder3.wav</ShortName>
@@ -549,6 +577,10 @@
 					<ShortName>TreeBump\Dropping Wood 12.wav</ShortName>
 					<CachePath>SFX/TreeBump/Dropping Wood 12_10C4C929.wem</CachePath>
 				</File>
+				<File Id="582434824" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Plyr_Grunt_07.wav</ShortName>
+					<CachePath>SFX/Plyr_Grunt_07_10C4C929.wem</CachePath>
+				</File>
 				<File Id="583150438" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grass\Plyr_Fstps_Grass_08.wav</ShortName>
 					<CachePath>SFX/Grass/Plyr_Fstps_Grass_08_10C4C929.wem</CachePath>
@@ -601,6 +633,10 @@
 					<ShortName>StoneBump\StoneBump5.wav</ShortName>
 					<CachePath>SFX/StoneBump/StoneBump5_10C4C929.wem</CachePath>
 				</File>
+				<File Id="647086168" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>M1_B2_P4.wav</ShortName>
+					<CachePath>SFX/M1_B2_P4_10C4C929.wem</CachePath>
+				</File>
 				<File Id="655126732" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>26211 Silence in woods loop-full.wav</ShortName>
 					<CachePath>SFX/26211 Silence in woods loop-full_D79FB2B7.wem</CachePath>
@@ -608,6 +644,10 @@
 				<File Id="664643821" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>InstructionPlaceholder2.wav</ShortName>
 					<CachePath>Voices/English(US)/InstructionPlaceholder2_10C4C929.wem</CachePath>
+				</File>
+				<File Id="672218961" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Plyr_Grunt_03.wav</ShortName>
+					<CachePath>SFX/Plyr_Grunt_03_10C4C929.wem</CachePath>
 				</File>
 				<File Id="673892171" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>G3#.wav</ShortName>
@@ -652,6 +692,10 @@
 				<File Id="764134868" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>E2b.wav</ShortName>
 					<CachePath>SFX/E2b_10C4C929.wem</CachePath>
+				</File>
+				<File Id="765385419" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Plyr_Grunt_08.wav</ShortName>
+					<CachePath>SFX/Plyr_Grunt_08_10C4C929.wem</CachePath>
 				</File>
 				<File Id="778380301" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cheering1.wav</ShortName>
@@ -720,6 +764,10 @@
 				<File Id="855718662" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>LeavesRustlingIndicator\Leaves_Rustling_05.wav</ShortName>
 					<CachePath>SFX/LeavesRustlingIndicator/Leaves_Rustling_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="857896596" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Plyr_Grunt_06.wav</ShortName>
+					<CachePath>SFX/Plyr_Grunt_06_10C4C929.wem</CachePath>
 				</File>
 				<File Id="859968386" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FoxNoteWrangle_02.wav</ShortName>
@@ -840,6 +888,10 @@
 				<File Id="990206362" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O3\B3.wav</ShortName>
 					<CachePath>SFX/O3/B3_10C4C929.wem</CachePath>
+				</File>
+				<File Id="992939571" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Plyr_Grunt_02.wav</ShortName>
+					<CachePath>SFX/Plyr_Grunt_02_10C4C929.wem</CachePath>
 				</File>
 				<File Id="996453454" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>A3b.wav</ShortName>
@@ -1462,6 +1514,15 @@
 						<MediaRef Id="855718662"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3827381996" Name="Play_M1_Seq" MaxAttenuation="30" DurationType="OneShot" DurationMin="1" DurationMax="1">
+					<MediaRefs>
+						<MediaRef Id="4722660"/>
+						<MediaRef Id="126090513"/>
+						<MediaRef Id="232226852"/>
+						<MediaRef Id="364578896"/>
+						<MediaRef Id="647086168"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2787390506" Name="Play_NoteWrangle" MaxAttenuation="200" DurationType="OneShot" DurationMin="10" DurationMax="11">
 					<MediaRefs>
 						<MediaRef Id="782675017"/>
@@ -1536,6 +1597,18 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="2481654591" Name="Play_Plyr_Grunts" DurationType="OneShot" DurationMin="0.17708333" DurationMax="0.875">
+					<MediaRefs>
+						<MediaRef Id="198455538"/>
+						<MediaRef Id="308599422"/>
+						<MediaRef Id="357122905"/>
+						<MediaRef Id="582434824"/>
+						<MediaRef Id="672218961"/>
+						<MediaRef Id="765385419"/>
+						<MediaRef Id="857896596"/>
+						<MediaRef Id="992939571"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3074787511" Name="Play_Slingshot_Release" DurationType="OneShot" DurationMin="1.5" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="62582298"/>
@@ -1609,6 +1682,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="39386235" Name="Reset_M1_Seq" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2371377610" Name="Stop_AllEvents" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1073466678" Name="Stop_BGM" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2842046910" Name="Stop_BGM_Menu_Placeholder" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
@@ -1713,5 +1787,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{BBF6D78F-7599-D0B7-3990-05E3AE9A0802}</FileHash>
+	<FileHash>{FA1CD51D-BA52-28C9-F2DA-62FED9B0E71C}</FileHash>
 </SoundBanksInfo>

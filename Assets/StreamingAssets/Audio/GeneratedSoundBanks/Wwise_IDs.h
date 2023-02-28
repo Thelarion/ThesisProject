@@ -96,12 +96,14 @@ namespace AK
         static const AkUniqueID PLAY_M1_SEQ = 3827381996U;
         static const AkUniqueID PLAY_NOTEWRANGLE = 2787390506U;
         static const AkUniqueID PLAY_PLAYERFOOT = 3015844381U;
+        static const AkUniqueID PLAY_PLYR_GRUNTS = 2481654591U;
         static const AkUniqueID PLAY_SLINGSHOT_RELEASE = 3074787511U;
         static const AkUniqueID PLAY_STONEBUMP = 3385122965U;
         static const AkUniqueID PLAY_TESTCLICK = 83581882U;
         static const AkUniqueID PLAY_TREEBUMP = 3793308878U;
         static const AkUniqueID PLAY_TREEBUMPPREVENTION = 3900353054U;
         static const AkUniqueID PLAY_VOLUMECHECK = 1569887440U;
+        static const AkUniqueID RESET_M1_SEQ = 39386235U;
         static const AkUniqueID STOP_ALLEVENTS = 2371377610U;
         static const AkUniqueID STOP_BGM = 1073466678U;
         static const AkUniqueID STOP_BGM_MENU_PLACEHOLDER = 2842046910U;

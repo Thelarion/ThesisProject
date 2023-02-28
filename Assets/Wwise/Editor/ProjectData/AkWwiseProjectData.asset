@@ -477,7 +477,7 @@ MonoBehaviour:
     ParentPath: Events\Melodies
     guid: 66b8f97f472fd74791287fbb4e712395
     GuidInternal: 
-    m_lastTime: -8585240226420202092
+    m_lastTime: -8585240055238261130
     List:
     - name: MelodyStateOff
       guid: a8fea77287b0f348ad210b6acb17e0e4
@@ -561,6 +561,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: 823d2a3ebd5e6546835659839df25576
       Path: Events\Melodies\Play_M1_Seq
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Reset_M1_Seq
+      guid: 5a91b1a2d14f754eaaf4d9dccdf89832
+      id: 39386235
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Melodies
+        ObjectType: 12
+        guid: 66b8f97f472fd74791287fbb4e712395
+      - ElementName: Reset_M1_Seq
+        ObjectType: 3
+        guid: 5a91b1a2d14f754eaaf4d9dccdf89832
+      Path: Events\Melodies\Reset_M1_Seq
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1659,7 +1676,7 @@ MonoBehaviour:
     ParentPath: Events\Player
     guid: a739f7e5ca298a44a84cf8243f0f273a
     GuidInternal: 
-    m_lastTime: -8585246284154898178
+    m_lastTime: -8585240044319624346
     List:
     - name: Play_PlayerFoot
       guid: e4392008128a7e4a8c3da3c8af76ee16
@@ -1675,6 +1692,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: e4392008128a7e4a8c3da3c8af76ee16
       Path: Events\Player\Play_PlayerFoot
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Plyr_Grunts
+      guid: cb01f02b64b61f4c90aa8257c1ccc361
+      id: 2481654591
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: a739f7e5ca298a44a84cf8243f0f273a
+      - ElementName: Play_Plyr_Grunts
+        ObjectType: 3
+        guid: cb01f02b64b61f4c90aa8257c1ccc361
+      Path: Events\Player\Play_Plyr_Grunts
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -2467,7 +2501,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: b620eed12b95f847963eed7bcbbaf028
     GuidInternal: 
-    m_lastTime: -8585242699195968958
+    m_lastTime: -8585240071344273279
     List:
     - name: RTPC_distance_freq
       guid: fe80d52caaf1b548be6137f43f4af98d
@@ -2550,7 +2584,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Melody
     guid: 547799af3829bd43928e2fb426c2f6c9
     GuidInternal: 
-    m_lastTime: -8585252158480313869
+    m_lastTime: -8585240053967148801
     List:
     - name: RTPC_MelodyOn
       guid: 7b0dd75018b34145b711aca439313934
@@ -3077,7 +3111,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 2cc96633e1efc745a10ab3fad73419fc
     GuidInternal: 
-    m_lastTime: -8585240882315818629
+    m_lastTime: -8585240054022556488
     List:
     - name: AudioVisualiserToggle
       guid: 0824f5ddd468214c94ef683183e4ed2a
@@ -4006,7 +4040,7 @@ MonoBehaviour:
         guid: da8eac4adff1a245a328ede5f79242d9
       Path: Triggers\Default Work Unit\New_Trigger
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000200000003000000040000000500000006000000070000000a0000000b0000000f000000110000001400000016000000180000001a0000001b0000001c0000001d000000200000002100000022000000240000002b0000002c0000002d0000002e0000002f00000030000000310000003200000033000000360000003700000038000000390000003a0000003b0000003c0000003d0000003e0000003f000000400000004200000043000000450000004b0000004d0000004f000000520000008b0000008c000000a4000000a5000000a6000000e4000000
+  ExpandedWaapiItemIds: 010000000200000003000000040000000500000006000000070000000a0000000b0000000f00000014000000160000001a0000001b0000001c0000001d000000200000002100000022000000240000002b0000002c0000002d0000002e0000002f00000030000000310000003200000033000000360000003700000038000000390000003a0000003b0000003c0000003d0000003e0000003f000000400000004200000043000000450000004b0000004d0000004f000000520000008b0000008c000000a4000000a5000000a6000000e4000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

@@ -7,6 +7,7 @@ public class MelodyTrigger : MonoBehaviour
     public LayerMask layerMask;
     private float[] objectDistances;
     public AK.Wwise.Event Play_Melody_Seq;
+    public AK.Wwise.Event Reset_Melody_Seq;
 
     public void PlayMelodyRadius()
     {
@@ -71,5 +72,7 @@ public class MelodyTrigger : MonoBehaviour
 
             yield return new WaitForSeconds(1f);
         }
+
+        Reset_Melody_Seq.Post(gameObject);
     }
 }

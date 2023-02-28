@@ -14,6 +14,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Plyr_Grunts" ID="{2BF001CB-B664-4C1F-90AA-8257C1CCC361}">
+					<ChildrenList>
+						<Action Name="" ID="{1996BB55-4C1C-4BEA-841E-F66068385023}" ShortID="429580027">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Grunts" ID="{606A43CD-A125-46C1-A644-FD07D71C5D5E}" WorkUnitID="{690ABE9D-D445-44AA-AE0F-2C6B0F3C9C08}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
