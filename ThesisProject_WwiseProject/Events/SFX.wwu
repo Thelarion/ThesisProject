@@ -3,17 +3,6 @@
 	<Events>
 		<WorkUnit Name="SFX" ID="{5F13BC25-8AC2-46EE-B33F-4240D933CDBD}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Play_TreeCreak" ID="{0DAA73DB-FA60-4F36-82D9-02A968575862}">
-					<ChildrenList>
-						<Action Name="" ID="{F34AAE0D-994D-482F-BE79-4420B49CF954}" ShortID="63236530">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="TreeCreak" ID="{88D66D75-1799-452D-95C4-3DC2DF9AAEB7}" WorkUnitID="{690ABE9D-D445-44AA-AE0F-2C6B0F3C9C08}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Folder Name="Beacon" ID="{17B6C8BB-419A-43B3-BCA8-B3CFC8A7A553}" ShortID="939076297">
 					<ChildrenList>
 						<Folder Name="DistanceCount" ID="{26D64E7B-CC05-48C9-971F-B1776133D1CA}" ShortID="294189445">

@@ -185,7 +185,7 @@ namespace StarterAssets
         {
             if (_input.melody)
             {
-                melodyManager.PlayMelody();
+                GetComponent<MelodyTrigger>().PlayMelodyRadius();
                 _input.melody = false;
             }
         }

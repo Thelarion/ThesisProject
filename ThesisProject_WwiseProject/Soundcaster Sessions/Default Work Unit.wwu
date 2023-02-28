@@ -64,6 +64,7 @@
 						<CurrentSwitchRef Name="A" ID="{69A2F832-DD04-48E8-A090-5AF674AE02FC}"/>
 						<CurrentSwitchRef Name="InclusionModeOff" ID="{B8BF384A-A71B-41B5-B967-6E8389C3EB50}"/>
 						<CurrentSwitchRef Name="AudioVisualiserOff" ID="{F9B012F6-BBAA-4B50-A839-0AC95FD06728}"/>
+						<CurrentSwitchRef Name="M1_P1" ID="{374CE651-666F-4F10-B390-BAEAE83F99AB}"/>
 						<CurrentSwitchRef Name="I1" ID="{09CB61C6-C18C-42E1-A5DB-434A12AC2284}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>

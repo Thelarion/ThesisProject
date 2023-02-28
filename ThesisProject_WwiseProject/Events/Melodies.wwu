@@ -53,6 +53,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_M1_Seq" ID="{3E2A3D82-5EBD-4665-8356-59839DF25576}">
+					<ChildrenList>
+						<Action Name="" ID="{3C07C529-845F-4647-870D-91ECE0CF031E}" ShortID="1037756212">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="M1_Seq_Long" ID="{8CDCF10A-0DF4-42C5-81F5-4B0DF554FB9B}" WorkUnitID="{35658988-EBE6-42AB-BE13-CC3667F51DCE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

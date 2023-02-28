@@ -9,6 +9,7 @@ public class StartScreenLoader : MonoBehaviour
     void Start()
     {
         StartCoroutine(StartScreenLoaderFn());
+        AkSoundEngine.PostEvent("Play_BGM_Menu_Placeholder", gameObject);
     }
 
     IEnumerator StartScreenLoaderFn()

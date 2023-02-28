@@ -16,6 +16,7 @@ public class OperationController : MonoBehaviour
     }
 
     [Header("Melody")]
+    [SerializeField] public string melodyIdentityName;
     [SerializeField] public notes[] _melodySequence;
 
     [Header("General")]

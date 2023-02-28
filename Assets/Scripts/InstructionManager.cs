@@ -6,12 +6,13 @@ using UnityEngine.SceneManagement;
 
 public class InstructionManager : MonoBehaviour
 {
-    public LevelLoader levelLoader;
+    private LevelLoader levelLoader;
+    private int childIndex = 0;
     void Start()
     {
         levelLoader = GameObject.Find("LevelLoader").GetComponent<LevelLoader>();
 
-        int childIndex = 0;
+
         switch (SceneManager.GetActiveScene().name)
         {
             case "I1":
@@ -49,6 +50,13 @@ public class InstructionManager : MonoBehaviour
 
     public void LoadNextScene()
     {
+        print(childIndex);
+        if (childIndex == 4)
+        {
+            print("Event time");
+            AkSoundEngine.PostEvent("Stop_BGM_Menu_Placeholder", null);
+        }
+
         AkSoundEngine.PostEvent("Play_Button_OnClick", gameObject);
         levelLoader.LoadScene();
     }

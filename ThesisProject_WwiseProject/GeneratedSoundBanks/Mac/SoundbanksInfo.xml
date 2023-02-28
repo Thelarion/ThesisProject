@@ -185,7 +185,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{494BA57D-8D17-4AEC-5D70-9CCC05C36E79}">
+		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{0375B817-4026-A42E-6283-FC3B87A4D14E}">
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
 			<Media>
@@ -268,10 +268,6 @@
 				<File Id="145978936" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>Inclusionmode Off.wav</ShortName>
 					<CachePath>Voices/English(US)/Inclusionmode Off_10C4C929.wem</CachePath>
-				</File>
-				<File Id="154148883" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>TreeCreak_02.wav</ShortName>
-					<CachePath>SFX/TreeCreak_02_10C4C929.wem</CachePath>
 				</File>
 				<File Id="160436766" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>WelcomeInclusionmode.wav</ShortName>
@@ -772,6 +768,10 @@
 				<File Id="918400394" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O3\C3.wav</ShortName>
 					<CachePath>SFX/O3/C3_10C4C929.wem</CachePath>
+				</File>
+				<File Id="918872021" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BGM_Menu_Placeholder.wav</ShortName>
+					<CachePath>SFX/BGM_Menu_Placeholder_9EDFC787.wem</CachePath>
 				</File>
 				<File Id="920490969" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grass\Plyr_Fstps_Grass_03.wav</ShortName>
@@ -1279,6 +1279,11 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="2771594344" Name="Play_BGM_Menu_Placeholder" DurationType="OneShot" DurationMin="240.571" DurationMax="240.571">
+					<MediaRefs>
+						<MediaRef Id="918872021"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="283810802" Name="Play_Button_OnClick" DurationType="OneShot" DurationMin="1.8826104" DurationMax="1.8826104">
 					<MediaRefs>
 						<MediaRef Id="277153547"/>
@@ -1582,11 +1587,6 @@
 						<MediaRef Id="1002045619"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3353040410" Name="Play_TreeCreak" MaxAttenuation="10" DurationType="OneShot" DurationMin="44.991997" DurationMax="44.991997">
-					<MediaRefs>
-						<MediaRef Id="154148883"/>
-					</MediaRefs>
-				</Event>
 				<Event Id="1569887440" Name="Play_VolumeCheck" DurationType="OneShot" DurationMin="0.70619047" DurationMax="2">
 					<SwitchContainers>
 						<SwitchContainer>
@@ -1611,6 +1611,7 @@
 				</Event>
 				<Event Id="2371377610" Name="Stop_AllEvents" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1073466678" Name="Stop_BGM" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2842046910" Name="Stop_BGM_Menu_Placeholder" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="632677629" Name="Stop_ButtonReadAloud" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3712676862" Name="Stop_VolumeCheck" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3625060726" Name="Success" DurationType="OneShot" DurationMin="5.4231367" DurationMax="5.4231367">
@@ -1712,5 +1713,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{BA6D8F48-7B02-0312-F4C3-AE2D06720699}</FileHash>
+	<FileHash>{BBF6D78F-7599-D0B7-3990-05E3AE9A0802}</FileHash>
 </SoundBanksInfo>

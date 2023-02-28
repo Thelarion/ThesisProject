@@ -85,6 +85,7 @@ namespace AK
         static const AkUniqueID PLAY_BEACONLOCK = 3923622767U;
         static const AkUniqueID PLAY_BEACONLR = 194014728U;
         static const AkUniqueID PLAY_BGM = 3126765036U;
+        static const AkUniqueID PLAY_BGM_MENU_PLACEHOLDER = 2771594344U;
         static const AkUniqueID PLAY_BUTTON_ONCLICK = 283810802U;
         static const AkUniqueID PLAY_BUTTON_SELECTION = 2964789125U;
         static const AkUniqueID PLAY_BUTTONREADALOUD = 2262911975U;
@@ -92,6 +93,7 @@ namespace AK
         static const AkUniqueID PLAY_C3_E3_A2_B2_C3_VERSIONS = 1946610009U;
         static const AkUniqueID PLAY_INSTRUCTIONS = 1184431001U;
         static const AkUniqueID PLAY_LEAVESRUSTLING = 636081116U;
+        static const AkUniqueID PLAY_M1_SEQ = 3827381996U;
         static const AkUniqueID PLAY_NOTEWRANGLE = 2787390506U;
         static const AkUniqueID PLAY_PLAYERFOOT = 3015844381U;
         static const AkUniqueID PLAY_SLINGSHOT_RELEASE = 3074787511U;
@@ -99,10 +101,10 @@ namespace AK
         static const AkUniqueID PLAY_TESTCLICK = 83581882U;
         static const AkUniqueID PLAY_TREEBUMP = 3793308878U;
         static const AkUniqueID PLAY_TREEBUMPPREVENTION = 3900353054U;
-        static const AkUniqueID PLAY_TREECREAK = 3353040410U;
         static const AkUniqueID PLAY_VOLUMECHECK = 1569887440U;
         static const AkUniqueID STOP_ALLEVENTS = 2371377610U;
         static const AkUniqueID STOP_BGM = 1073466678U;
+        static const AkUniqueID STOP_BGM_MENU_PLACEHOLDER = 2842046910U;
         static const AkUniqueID STOP_BUTTONREADALOUD = 632677629U;
         static const AkUniqueID STOP_VOLUMECHECK = 3712676862U;
         static const AkUniqueID SUCCESS = 3625060726U;

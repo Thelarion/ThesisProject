@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8885829166820360181}
   - component: {fileID: -1695969380326281172}
   - component: {fileID: -3851260898144688527}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: PP_Birch_Tree_06
   m_TagString: Tree
   m_Icon: {fileID: 0}

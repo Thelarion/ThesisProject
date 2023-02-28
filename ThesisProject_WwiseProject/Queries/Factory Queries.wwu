@@ -217,13 +217,7 @@
 								<Property Name="ObjectType" Type="int32" Value="800"/>
 							</PropertyList>
 							<ChildrenList>
-								<SearchCriteria Name="PropertyValue" ID="{C1CBCE65-2E3B-4D7C-B578-F2C68CBF2467}" SearchOperationID="{560736B7-4F5C-4EF7-9354-8D8DC6BBD70A}">
-									<PropertyList>
-										<Property Name="LeftValue" Type="Real64" Value="-96.3"/>
-										<Property Name="NumericOperator" Type="int16" Value="2"/>
-										<Property Name="PropertyName" Type="string" Value="LFEVolume"/>
-									</PropertyList>
-								</SearchCriteria>
+								<SearchCriteria Name="PropertyValue" ID="{C1CBCE65-2E3B-4D7C-B578-F2C68CBF2467}" SearchOperationID="{560736B7-4F5C-4EF7-9354-8D8DC6BBD70A}"/>
 							</ChildrenList>
 						</Query>
 						<Query Name="Zero Latency" ID="{4416E3DF-24CC-474B-8ABF-A3C3CB6808E7}">

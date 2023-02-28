@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1229948536" Type="User" Language="SFX" Hash="{7C09EAE0-05CB-9B95-38C9-8258AA7B9EE6}">
+		<SoundBank Id="1229948536" Type="User" Language="SFX">
 			<ShortName>Environment</ShortName>
 			<Path>Environment.bnk</Path>
 		</SoundBank>
@@ -185,13 +185,17 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{494BA57D-8D17-4AEC-5D70-9CCC05C36E79}">
+		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{DC302A34-DAE1-3BDE-C3C9-09B925C6FC13}">
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
 			<Media>
 				<File Id="804718" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O4\E4.wav</ShortName>
 					<CachePath>SFX/O4/E4_10C4C929.wem</CachePath>
+				</File>
+				<File Id="4722660" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>M1_C3_P1.wav</ShortName>
+					<CachePath>SFX/M1_C3_P1_10C4C929.wem</CachePath>
 				</File>
 				<File Id="12077457" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>G4#.wav</ShortName>
@@ -253,6 +257,10 @@
 					<ShortName>Grass\Plyr_Fstps_Grass_01.wav</ShortName>
 					<CachePath>SFX/Grass/Plyr_Fstps_Grass_01_10C4C929.wem</CachePath>
 				</File>
+				<File Id="126090513" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>M1_E3_P2.wav</ShortName>
+					<CachePath>SFX/M1_E3_P2_10C4C929.wem</CachePath>
+				</File>
 				<File Id="128521936" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>C3_E3_A2_B3_C3_v6.wav</ShortName>
 					<CachePath>SFX/C3_E3_A2_B3_C3_v6_D79FB2B7.wem</CachePath>
@@ -268,10 +276,6 @@
 				<File Id="145978936" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>Inclusionmode Off.wav</ShortName>
 					<CachePath>Voices/English(US)/Inclusionmode Off_10C4C929.wem</CachePath>
-				</File>
-				<File Id="154148883" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>TreeCreak_02.wav</ShortName>
-					<CachePath>SFX/TreeCreak_02_10C4C929.wem</CachePath>
 				</File>
 				<File Id="160436766" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>WelcomeInclusionmode.wav</ShortName>
@@ -340,6 +344,10 @@
 				<File Id="221568551" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>DistanceCount\10.wav</ShortName>
 					<CachePath>SFX/DistanceCount/10_10C4C929.wem</CachePath>
+				</File>
+				<File Id="232226852" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>M1_C3_P5.wav</ShortName>
+					<CachePath>SFX/M1_C3_P5_10C4C929.wem</CachePath>
 				</File>
 				<File Id="242190809" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>DistanceFrameTransition.wav</ShortName>
@@ -412,6 +420,10 @@
 				<File Id="360094241" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Water\Plyr_Fstps_Water_06.wav</ShortName>
 					<CachePath>SFX/Water/Plyr_Fstps_Water_06_10C4C929.wem</CachePath>
+				</File>
+				<File Id="364578896" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>M1_A2_P3.wav</ShortName>
+					<CachePath>SFX/M1_A2_P3_10C4C929.wem</CachePath>
 				</File>
 				<File Id="368822499" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>InstructionPlaceholder3.wav</ShortName>
@@ -605,6 +617,10 @@
 					<ShortName>StoneBump\StoneBump5.wav</ShortName>
 					<CachePath>SFX/StoneBump/StoneBump5_10C4C929.wem</CachePath>
 				</File>
+				<File Id="647086168" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>M1_B2_P4.wav</ShortName>
+					<CachePath>SFX/M1_B2_P4_10C4C929.wem</CachePath>
+				</File>
 				<File Id="655126732" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>26211 Silence in woods loop-full.wav</ShortName>
 					<CachePath>SFX/26211 Silence in woods loop-full_D79FB2B7.wem</CachePath>
@@ -772,6 +788,10 @@
 				<File Id="918400394" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O3\C3.wav</ShortName>
 					<CachePath>SFX/O3/C3_10C4C929.wem</CachePath>
+				</File>
+				<File Id="918872021" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BGM_Menu_Placeholder.wav</ShortName>
+					<CachePath>SFX/BGM_Menu_Placeholder_9EDFC787.wem</CachePath>
 				</File>
 				<File Id="920490969" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grass\Plyr_Fstps_Grass_03.wav</ShortName>
@@ -1279,6 +1299,11 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="2771594344" Name="Play_BGM_Menu_Placeholder" DurationType="OneShot" DurationMin="240.571" DurationMax="240.571">
+					<MediaRefs>
+						<MediaRef Id="918872021"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="283810802" Name="Play_Button_OnClick" DurationType="OneShot" DurationMin="1.8826104" DurationMax="1.8826104">
 					<MediaRefs>
 						<MediaRef Id="277153547"/>
@@ -1457,6 +1482,15 @@
 						<MediaRef Id="855718662"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3827381996" Name="Play_M1_Seq" MaxAttenuation="30" DurationType="OneShot" DurationMin="1" DurationMax="1">
+					<MediaRefs>
+						<MediaRef Id="4722660"/>
+						<MediaRef Id="126090513"/>
+						<MediaRef Id="232226852"/>
+						<MediaRef Id="364578896"/>
+						<MediaRef Id="647086168"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2787390506" Name="Play_NoteWrangle" MaxAttenuation="200" DurationType="OneShot" DurationMin="10" DurationMax="11">
 					<MediaRefs>
 						<MediaRef Id="782675017"/>
@@ -1582,11 +1616,6 @@
 						<MediaRef Id="1002045619"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3353040410" Name="Play_TreeCreak" MaxAttenuation="10" DurationType="OneShot" DurationMin="44.991997" DurationMax="44.991997">
-					<MediaRefs>
-						<MediaRef Id="154148883"/>
-					</MediaRefs>
-				</Event>
 				<Event Id="1569887440" Name="Play_VolumeCheck" DurationType="OneShot" DurationMin="0.70619047" DurationMax="2">
 					<SwitchContainers>
 						<SwitchContainer>
@@ -1611,6 +1640,7 @@
 				</Event>
 				<Event Id="2371377610" Name="Stop_AllEvents" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1073466678" Name="Stop_BGM" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2842046910" Name="Stop_BGM_Menu_Placeholder" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="632677629" Name="Stop_ButtonReadAloud" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3712676862" Name="Stop_VolumeCheck" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3625060726" Name="Success" DurationType="OneShot" DurationMin="5.4231367" DurationMax="5.4231367">
@@ -1712,5 +1742,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{A3A54213-B78B-03A7-2D92-663D189C3630}</FileHash>
+	<FileHash>{1ADE541F-FCBD-9D79-8F8B-7A636524AA1D}</FileHash>
 </SoundBanksInfo>

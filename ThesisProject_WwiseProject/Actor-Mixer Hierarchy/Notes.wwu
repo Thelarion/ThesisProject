@@ -1221,6 +1221,257 @@
 						</ObjectList>
 					</ObjectLists>
 				</ActorMixer>
+				<ActorMixer Name="NotesRadius" ID="{F8148884-9C7D-4252-BF59-12374C680EDD}" ShortID="115865795">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="att_Note_Sequence" ID="{7105A5C3-5E3C-402A-AEC9-C40C3B43175C}" WorkUnitID="{C9FCE274-C323-40BD-AB1C-73C657FFB12B}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Melodies" ID="{39301A31-C005-4173-9F99-CE07F05182A8}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SwitchContainer Name="NoteRadius" ID="{4FAFD84B-F1BA-42F9-B71D-0DB953EFDF47}" ShortID="1032288075">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="M1_P1" ID="{374CE651-666F-4F10-B390-BAEAE83F99AB}" WorkUnitID="{3366C92C-EFE1-45C7-A10A-B3FAD73419FC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="MelodyNoteToggle" ID="{4A1B126C-22A8-4D5E-B3A4-E563C4313D30}" WorkUnitID="{3366C92C-EFE1-45C7-A10A-B3FAD73419FC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="M1_P2_E3" ID="{57024D54-FCD7-4448-86DB-84E4106C8656}" ShortID="80361180">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="att_Note_Sequence" ID="{7105A5C3-5E3C-402A-AEC9-C40C3B43175C}" WorkUnitID="{C9FCE274-C323-40BD-AB1C-73C657FFB12B}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Melodies" ID="{39301A31-C005-4173-9F99-CE07F05182A8}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="M1_E3_P2" ID="{A44338BC-9C80-433F-8C49-DC2B77470F96}">
+											<Language>SFX</Language>
+											<AudioFile>M1_E3_P2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="126090513"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{2F5FF165-A45B-4FCD-A0DA-6A2391150C74}"/>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="M1_E3_P2" ID="{A44338BC-9C80-433F-8C49-DC2B77470F96}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="M1_P3_A2" ID="{8D764483-EE86-4183-A79E-2FE709B80EA9}" ShortID="525930023">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="att_Note_Sequence" ID="{7105A5C3-5E3C-402A-AEC9-C40C3B43175C}" WorkUnitID="{C9FCE274-C323-40BD-AB1C-73C657FFB12B}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Melodies" ID="{39301A31-C005-4173-9F99-CE07F05182A8}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="M1_A2_P3" ID="{41268D97-2D30-40FE-AB7A-BECB28098276}">
+											<Language>SFX</Language>
+											<AudioFile>M1_A2_P3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="364578896"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{A8605BEE-9F3A-46DA-8970-BD2DC8490143}"/>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="M1_A2_P3" ID="{41268D97-2D30-40FE-AB7A-BECB28098276}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="M1_P1_C3" ID="{2D072878-0E43-4B6E-AED2-392BB1CD32C6}" ShortID="72752925">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="att_Note_Sequence" ID="{7105A5C3-5E3C-402A-AEC9-C40C3B43175C}" WorkUnitID="{C9FCE274-C323-40BD-AB1C-73C657FFB12B}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Melodies" ID="{39301A31-C005-4173-9F99-CE07F05182A8}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="M1_C3_P1" ID="{7640AA6B-C3CF-4258-9383-5F9BA3AC31F1}">
+											<Language>SFX</Language>
+											<AudioFile>M1_C3_P1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="4722660"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{6AF8DA9E-7EDF-4741-B6C3-A5B29419E21F}"/>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="M1_C3_P1" ID="{7640AA6B-C3CF-4258-9383-5F9BA3AC31F1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="M1_P5_C3" ID="{2C8FA0FD-E4E9-45D2-A524-3EEEC389B40A}" ShortID="1026299965">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="att_Note_Sequence" ID="{7105A5C3-5E3C-402A-AEC9-C40C3B43175C}" WorkUnitID="{C9FCE274-C323-40BD-AB1C-73C657FFB12B}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Melodies" ID="{39301A31-C005-4173-9F99-CE07F05182A8}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="M1_C3_P5" ID="{DA157900-FA93-4A59-AE05-EC2B65620698}">
+											<Language>SFX</Language>
+											<AudioFile>M1_C3_P5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="232226852"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{1917714C-CC9D-4895-B23F-81D8A9CA7CC8}"/>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="M1_C3_P5" ID="{DA157900-FA93-4A59-AE05-EC2B65620698}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="M1_P4_B2" ID="{03D773CB-0408-404E-BEA6-3E625B165D61}" ShortID="920357279">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="att_Note_Sequence" ID="{7105A5C3-5E3C-402A-AEC9-C40C3B43175C}" WorkUnitID="{C9FCE274-C323-40BD-AB1C-73C657FFB12B}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Melodies" ID="{39301A31-C005-4173-9F99-CE07F05182A8}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="M1_B2_P4" ID="{CB711CFD-BB95-41DA-B1A4-15BA59C79D03}">
+											<Language>SFX</Language>
+											<AudioFile>M1_B2_P4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="647086168"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{33262A44-25F2-414E-8598-88A8EED5405F}"/>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="M1_B2_P4" ID="{CB711CFD-BB95-41DA-B1A4-15BA59C79D03}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="M1_P2_E3" ID="{57024D54-FCD7-4448-86DB-84E4106C8656}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="M1_P1_C3" ID="{2D072878-0E43-4B6E-AED2-392BB1CD32C6}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="M1_P3_A2" ID="{8D764483-EE86-4183-A79E-2FE709B80EA9}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="M1_P4_B2" ID="{03D773CB-0408-404E-BEA6-3E625B165D61}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="M1_P5_C3" ID="{2C8FA0FD-E4E9-45D2-A524-3EEEC389B40A}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="M1_P3" ID="{EDB34C11-0980-4362-BB02-B7286140D011}"/>
+										<ItemList>
+											<ItemRef Name="M1_P3_A2" ID="{8D764483-EE86-4183-A79E-2FE709B80EA9}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="M1_P1" ID="{374CE651-666F-4F10-B390-BAEAE83F99AB}"/>
+										<ItemList>
+											<ItemRef Name="M1_P1_C3" ID="{2D072878-0E43-4B6E-AED2-392BB1CD32C6}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="M1_P4" ID="{C327FD76-217F-4BFC-873F-4CFBC9B27B93}"/>
+										<ItemList>
+											<ItemRef Name="M1_P4_B2" ID="{03D773CB-0408-404E-BEA6-3E625B165D61}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="M1_P5" ID="{0E397EA9-D019-4186-9061-BA12B84BAB5D}"/>
+										<ItemList>
+											<ItemRef Name="M1_P5_C3" ID="{2C8FA0FD-E4E9-45D2-A524-3EEEC389B40A}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="M1_P2" ID="{FF3558AD-4273-4866-ACA7-B3096B7FBDE6}"/>
+										<ItemList>
+											<ItemRef Name="M1_P2_E3" ID="{57024D54-FCD7-4448-86DB-84E4106C8656}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{BC57A0C0-D99E-44D6-8342-4A18C261362A}"/>
+					</PositioningInfo>
+				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

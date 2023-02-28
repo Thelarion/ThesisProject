@@ -43,7 +43,6 @@ public class CanvasController : MonoBehaviour
             InclusionModeToggle.isOn = true;
         }
     }
-
     public void BackToStartMenu()
     {
         AkSoundEngine.StopAll();

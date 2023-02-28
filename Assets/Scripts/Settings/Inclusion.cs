@@ -12,6 +12,15 @@ public class Inclusion : MonoBehaviour
     public GameObject PlayerFollowCameraNoiseOff;
     public GameObject PlayerCameraRoot;
     public GameObject TargetParent;
+    public bool InclusionQuickStart = false;
+
+    private void Awake()
+    {
+        if (InclusionQuickStart)
+        {
+            StartMenuManager.InclusionState = true;
+        }
+    }
 
     private void Start()
     {

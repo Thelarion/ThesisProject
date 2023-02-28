@@ -85,6 +85,15 @@
 						<Switch Name="I6" ID="{9DC0F9E9-E652-4DF8-A19B-B95A0EBD911D}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="MelodyNoteToggle" ID="{4A1B126C-22A8-4D5E-B3A4-E563C4313D30}">
+					<ChildrenList>
+						<Switch Name="M1_P1" ID="{374CE651-666F-4F10-B390-BAEAE83F99AB}"/>
+						<Switch Name="M1_P2" ID="{FF3558AD-4273-4866-ACA7-B3096B7FBDE6}"/>
+						<Switch Name="M1_P3" ID="{EDB34C11-0980-4362-BB02-B7286140D011}"/>
+						<Switch Name="M1_P4" ID="{C327FD76-217F-4BFC-873F-4CFBC9B27B93}"/>
+						<Switch Name="M1_P5" ID="{0E397EA9-D019-4186-9061-BA12B84BAB5D}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>
