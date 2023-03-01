@@ -2475,7 +2475,7 @@ MonoBehaviour:
     ParentPath: Events\UI
     guid: 13ad265a32fe774b8e3372fc1241ceef
     GuidInternal: 
-    m_lastTime: -8585240882315898207
+    m_lastTime: -8585239129343406414
     List:
     - name: DistanceFrameTransition
       guid: b75bda6923c11a45b48382c150b587a0
@@ -2525,6 +2525,40 @@ MonoBehaviour:
         ObjectType: 3
         guid: 9f41563665b06943bcb9981cfdd56fb4
       Path: Events\UI\Play_Instructions
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_MenuClose
+      guid: 36bedd9ca80e764f97f0656c0827a41e
+      id: 2709512125
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: UI
+        ObjectType: 12
+        guid: 13ad265a32fe774b8e3372fc1241ceef
+      - ElementName: Play_MenuClose
+        ObjectType: 3
+        guid: 36bedd9ca80e764f97f0656c0827a41e
+      Path: Events\UI\Play_MenuClose
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_MenuOpen
+      guid: 76611b3640757241b6bf9e7f1fd57041
+      id: 119142231
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: UI
+        ObjectType: 12
+        guid: 13ad265a32fe774b8e3372fc1241ceef
+      - ElementName: Play_MenuOpen
+        ObjectType: 3
+        guid: 76611b3640757241b6bf9e7f1fd57041
+      Path: Events\UI\Play_MenuOpen
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1

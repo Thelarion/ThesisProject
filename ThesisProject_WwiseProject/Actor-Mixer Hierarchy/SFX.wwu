@@ -2651,6 +2651,50 @@
 										<ActiveSource Name="Button_OnClick" ID="{27F467B1-AAD4-4BA6-82E3-C0A623B800D2}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<Sound Name="MenuOpen" ID="{03B7878F-9F95-4077-A022-22EEC863808B}" ShortID="102043950">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MenuOpen" ID="{8FC13504-C682-4A6B-BD5A-7597BFC81A7F}">
+											<Language>SFX</Language>
+											<AudioFile>MenuOpen.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="346819927"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MenuOpen" ID="{8FC13504-C682-4A6B-BD5A-7597BFC81A7F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MenuClose" ID="{136BC3D6-564E-45CA-B46B-E6228BEC47CE}" ShortID="180554460">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MenuClose" ID="{C148A1DA-F079-4BB1-B34D-C36628253327}">
+											<Language>SFX</Language>
+											<AudioFile>MenuClose.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="972649241"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MenuClose" ID="{C148A1DA-F079-4BB1-B34D-C36628253327}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>

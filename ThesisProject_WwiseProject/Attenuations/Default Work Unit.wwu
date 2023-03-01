@@ -737,7 +737,7 @@
 				</Attenuation>
 				<Attenuation Name="att_StoneBumpPrevention" ID="{70295000-6B24-4A44-8C07-44C304C6985A}" ShortID="798387268">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="10"/>
+						<Property Name="RadiusMax" Type="Real64" Value="20"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -751,10 +751,22 @@
 											<XPos>0</XPos>
 											<YPos>0</YPos>
 											<Flags>5</Flags>
-											<SegmentShape>Exp2</SegmentShape>
+											<SegmentShape>Log1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>10</XPos>
+											<XPos>3.41597</XPos>
+											<YPos>-7.37629</YPos>
+											<Flags>0</Flags>
+											<SegmentShape>Exp1</SegmentShape>
+										</Point>
+										<Point>
+											<XPos>11.12948</XPos>
+											<YPos>-10.78152</YPos>
+											<Flags>0</Flags>
+											<SegmentShape>Exp1</SegmentShape>
+										</Point>
+										<Point>
+											<XPos>20</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -782,8 +794,8 @@
 											<SegmentShape>Exp2</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>10</XPos>
-											<YPos>76</YPos>
+											<XPos>20</XPos>
+											<YPos>14</YPos>
 											<Flags>37</Flags>
 										</Point>
 									</PointList>
@@ -807,13 +819,13 @@
 											<SegmentShape>Log3</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>1</XPos>
+											<XPos>2</XPos>
 											<YPos>8.6</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>Exp3</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>10</XPos>
+											<XPos>20</XPos>
 											<YPos>0</YPos>
 											<Flags>37</Flags>
 										</Point>

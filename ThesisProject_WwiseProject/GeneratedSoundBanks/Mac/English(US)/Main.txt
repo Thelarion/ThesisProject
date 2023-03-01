@@ -1,6 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
 	39386235	Reset_M1_Seq			\Melodies\Reset_M1_Seq	
 	83581882	Play_TestClick			\Testing\Play_TestClick	
+	119142231	Play_MenuOpen			\UI\Play_MenuOpen	
 	194014728	Play_BeaconLR			\SFX\Beacon\Play_BeaconLR	
 	278617630	Play_Ambience			\Environment\Play_Ambience	
 	283810802	Play_Button_OnClick			\SFX\Buttons\Play_Button_OnClick	
@@ -62,6 +63,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2371377610	Stop_AllEvents			\UI\Stop_AllEvents	
 	2481654591	Play_Plyr_Grunts			\Player\Play_Plyr_Grunts	
 	2702745606	Play_OnTarget			\SFX\Targets\Play_OnTarget	
+	2709512125	Play_MenuClose			\UI\Play_MenuClose	
 	2771594344	Play_BGM_Menu_Placeholder			\BGM\Play_BGM_Menu_Placeholder	
 	2787390506	Play_NoteWrangle			\SFX\Play_NoteWrangle	
 	2810620855	MelodyStateOff			\Melodies\MelodyStateOff	
@@ -230,6 +232,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	332098808	Plyr_Fstps_Water_03	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\Water\Plyr_Fstps_Water_03_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\Footsteps\Water\Plyr_Fstps_Water_03		180096
 	332946074	C4	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\O4\C4_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O4\C4		384096
 	338616897	Dropping Wood 04	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\TreeBump\Dropping Wood 04_3F75BDB9.wem		\Actor-Mixer Hierarchy\SFX\Environment\Environment\TreeBump\Dropping Wood 04		24099
+	346819927	MenuOpen	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\MenuOpen_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\UI\Buttons\MenuOpen		384096
 	351284602	Plyr_Fstps_Water_07	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\Water\Plyr_Fstps_Water_07_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\Footsteps\Water\Plyr_Fstps_Water_07		168096
 	357122905	Plyr_Grunt_04	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\Plyr_Grunt_04_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\Grunts\Plyr_Grunt_04		168096
 	360094241	Plyr_Fstps_Water_06	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\Water\Plyr_Fstps_Water_06_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\Footsteps\Water\Plyr_Fstps_Water_06		168096
@@ -347,6 +350,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	967319205	Track1_Em_90bpm_44_lp	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\Track1_Em_90bpm_44_lp_D79FB2B7.wem		\Interactive Music Hierarchy\Music\BGM\BGM\Track1_Em_90bpm_44_lp\Track1_Em_90bpm_44_lp		12288096
 	969926389	F2#	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\F2#_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O2\F2#		384096
 	970609161	StoneBump9	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\StoneBump\StoneBump9_3F75BDB9.wem		\Actor-Mixer Hierarchy\SFX\Environment\Environment\StoneBump\StoneBump9		19122
+	972649241	MenuClose	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\MenuClose_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\UI\Buttons\MenuClose		384096
 	973202644	InBetween	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\LookAngle_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Aiming\Compass\InBetween		66096
 	973849493	RacoonNoteWrangle_01	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\RacoonNoteWrangle_01_3F75BDB9.wem		\Actor-Mixer Hierarchy\SFX\NoteWrangle\RacoonNoteWrangle_01		174970
 	980309991	C2	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\O2\C2_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O2\C2		384096

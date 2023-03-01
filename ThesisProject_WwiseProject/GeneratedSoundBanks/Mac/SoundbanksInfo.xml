@@ -185,7 +185,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{D923DD19-900B-A564-0551-42293DDA2C01}">
+		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{626A8B4C-A400-9E0A-C998-B91F6BBC6E0F}">
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
 			<Media>
@@ -424,6 +424,10 @@
 				<File Id="338616897" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TreeBump\Dropping Wood 04.wav</ShortName>
 					<CachePath>SFX/TreeBump/Dropping Wood 04_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="346819927" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MenuOpen.wav</ShortName>
+					<CachePath>SFX/MenuOpen_10C4C929.wem</CachePath>
 				</File>
 				<File Id="351284602" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Water\Plyr_Fstps_Water_07.wav</ShortName>
@@ -892,6 +896,10 @@
 				<File Id="970609161" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>StoneBump\StoneBump9.wav</ShortName>
 					<CachePath>SFX/StoneBump/StoneBump9_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="972649241" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MenuClose.wav</ShortName>
+					<CachePath>SFX/MenuClose_10C4C929.wem</CachePath>
 				</File>
 				<File Id="973202644" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>LookAngle.wav</ShortName>
@@ -1560,6 +1568,16 @@
 						<MediaRef Id="647086168"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2709512125" Name="Play_MenuClose" DurationType="OneShot" DurationMin="2" DurationMax="2">
+					<MediaRefs>
+						<MediaRef Id="972649241"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="119142231" Name="Play_MenuOpen" DurationType="OneShot" DurationMin="2" DurationMax="2">
+					<MediaRefs>
+						<MediaRef Id="346819927"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1850732987" Name="Play_North" DurationType="OneShot" DurationMin="0.75" DurationMax="0.75">
 					<MediaRefs>
 						<MediaRef Id="115590999"/>
@@ -1656,7 +1674,7 @@
 						<MediaRef Id="992939571"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="988427829" Name="Play_ReflectionBumpPrevention" MaxAttenuation="10" DurationType="Infinite">
+				<Event Id="988427829" Name="Play_ReflectionBumpPrevention" MaxAttenuation="20" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="604891812"/>
 					</MediaRefs>
@@ -1842,5 +1860,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{9C5C707B-E9CA-A8B7-246A-3EF22A9983C2}</FileHash>
+	<FileHash>{389A6676-A598-023F-0960-CC834CBF7CDB}</FileHash>
 </SoundBanksInfo>

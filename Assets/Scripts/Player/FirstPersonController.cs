@@ -192,13 +192,26 @@ namespace StarterAssets
             }
         }
 
+        bool semaphore = false;
         private void Melody()
         {
             if (_input.melody)
             {
-                GetComponent<MelodyTrigger>().PlayMelodyRadius();
+                if (!semaphore)
+                {
+                    StartCoroutine(DelimitMelodyToNSec());
+                }
+
                 _input.melody = false;
             }
+        }
+
+        IEnumerator DelimitMelodyToNSec()
+        {
+            semaphore = true;
+            GetComponent<MelodyTrigger>().PlayMelodyRadius();
+            yield return new WaitForSeconds(5f);
+            semaphore = false;
         }
 
         private void LateUpdate()

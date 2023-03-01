@@ -65,8 +65,6 @@ public class LookManager : MonoBehaviour
         }
         float newAngle = Mathf.Round(_mTempAngle);
 
-        print(newAngle);
-
         if (newAngle != 180 && (newAngle % 45 == 0 || newAngle % 22.5f == 0.5f) && newAngle != roundedAngle && ignoreFirstState)
         {
             roundedAngle = newAngle;

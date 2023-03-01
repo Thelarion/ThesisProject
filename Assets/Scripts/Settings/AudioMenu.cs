@@ -12,7 +12,6 @@ public class AudioMenu : MonoBehaviour
     public AK.Wwise.Event Play_ButtonReadAloud;
     public AK.Wwise.Event Stop_ButtonReadAloud;
     public AK.Wwise.Event Play_Button_OnClick;
-    public AK.Wwise.Event Play_Button_Selection;
     private static bool menuInitializedState = false;
 
 
@@ -64,7 +63,6 @@ public class AudioMenu : MonoBehaviour
     {
         Stop_ButtonReadAloud.Post(gameObject);
         Play_ButtonReadAloud.Post(gameObject);
-        Play_Button_Selection.Post(gameObject);
     }
 
     private void Start()

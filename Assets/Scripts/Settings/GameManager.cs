@@ -13,8 +13,10 @@ public class GameManager : MonoBehaviour
     private static List<string> paletteOptions = new List<string>();
     private static string chosenPalette;
     public GameObject MenuInGameSettings;
+    public GameObject InGameUI;
     public AudioMenu audioMenuInGame;
     private bool menuActive;
+    public GameObject Blur;
 
 
     public static string ChosenPalette { get => chosenPalette; set => chosenPalette = value; }
@@ -73,14 +75,19 @@ public class GameManager : MonoBehaviour
     {
         if (!menuActive)
         {
+            AkSoundEngine.PostEvent("Play_MenuOpen", gameObject);
+            InGameUI.SetActive(false);
+            Blur.SetActive(true);
             MenuInGameSettings.SetActive(true);
             audioMenuInGame.ButtonReadAloud();
             menuActive = true;
         }
         else
         {
+            AkSoundEngine.PostEvent("Play_MenuClose", gameObject);
+            InGameUI.SetActive(true);
+            Blur.SetActive(false);
             MenuInGameSettings.SetActive(false);
-            AkSoundEngine.PostEvent("Play_Button_Selection", gameObject);
             menuActive = false;
         }
     }
