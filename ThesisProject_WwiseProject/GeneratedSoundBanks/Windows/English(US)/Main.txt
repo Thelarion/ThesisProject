@@ -2,6 +2,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	39386235	Reset_M1_Seq			\Melodies\Reset_M1_Seq	
 	83581882	Play_TestClick			\Testing\Play_TestClick	
 	194014728	Play_BeaconLR			\SFX\Beacon\Play_BeaconLR	
+	254960912	Play_LookAngle			\Player\Play_LookAngle	
 	278617630	Play_Ambience			\Environment\Play_Ambience	
 	283810802	Play_Button_OnClick			\SFX\Buttons\Play_Button_OnClick	
 	293588534	DistanceFrameTransition			\UI\DistanceFrameTransition	
@@ -29,7 +30,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	1836525715	D2			\Notes\O2\D2	
 	1836525717	D4			\Notes\O4\D4	
 	1838822093	B2b			\Notes\O2\B2b	
-	1848491570	WhiteNoiseOnTarget			\SFX\Targets\WhiteNoiseOnTarget	
 	1853303296	C4			\Notes\O4\C4	
 	1853303302	C2			\Notes\O2\C2	
 	1853303303	C3			\Notes\O3\C3	
@@ -59,6 +59,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2262911975	Play_ButtonReadAloud			\UI\Play_ButtonReadAloud	
 	2371377610	Stop_AllEvents			\UI\Stop_AllEvents	
 	2481654591	Play_Plyr_Grunts			\Player\Play_Plyr_Grunts	
+	2702745606	Play_OnTarget			\SFX\Targets\Play_OnTarget	
 	2771594344	Play_BGM_Menu_Placeholder			\BGM\Play_BGM_Menu_Placeholder	
 	2787390506	Play_NoteWrangle			\SFX\Play_NoteWrangle	
 	2810620855	MelodyStateOff			\Melodies\MelodyStateOff	
@@ -150,11 +151,11 @@ Switch	ID	Name	Switch Group			Notes
 	1752637687	I5	Instructions			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
-	815616169	RTPC_synth_pwm_up_down			\Default Work Unit\RTPC_synth_pwm_up_down	
+	815616169	RTPC_synth_pwm_up_down			\Aiming\RTPC_synth_pwm_up_down	
 	872361937	RTPC_wall_occlusion			\Occlusion\RTPC_wall_occlusion	
-	1364189011	RTPC_distance_freq			\Default Work Unit\RTPC_distance_freq	
-	1384204673	RTPC_frequency_depth			\Default Work Unit\RTPC_frequency_depth	
-	3707704703	RTPC_left_right			\Default Work Unit\RTPC_left_right	
+	1364189011	RTPC_distance_freq			\Aiming\RTPC_distance_freq	
+	1384204673	RTPC_frequency_depth			\Aiming\RTPC_frequency_depth	
+	3707704703	RTPC_left_right			\Aiming\RTPC_left_right	
 	4120900405	RTPC_beacon_lr_volume			\Beacon\RTPC_beacon_lr_volume	
 
 Modulator LFO	ID	Name			Wwise Object Path	Notes
@@ -164,7 +165,6 @@ Modulator LFO	ID	Name			Wwise Object Path	Notes
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	345407793	Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\SFX\Aiming\Frequency Distance\Synth One	
 	737587789	Silence	Wwise Silence		\Actor-Mixer Hierarchy\SFX\SortOut\Beacon\BeaconLR\SilenceBeacon\Silence	
-	962926609	Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\SFX\Aiming\White Noise OnTarget\Tone Generator	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	804718	E4	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O4\E4_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O4\E4		384096
@@ -281,6 +281,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	646510716	StoneBump5	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\StoneBump\StoneBump5_3F75BDB9.wem		\Actor-Mixer Hierarchy\SFX\Environment\Environment\StoneBump\StoneBump5		31752
 	647086168	M1_P4_B2	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\M1_B2_P4_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesRadius\NotesRadius\M1_P4_B2		192096
 	655126732	LightWind	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\26211 Silence in woods loop-full_9EDFC787.wem		\Actor-Mixer Hierarchy\SFX\Environment\Environment\Ambience\LightWind		1518555
+	659330428	OnTarget	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\OnTarget_D79FB2B7.wem		\Actor-Mixer Hierarchy\SFX\Aiming\OnTarget		288096
 	664643821	Instruction2	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\Voices\English(US)\InstructionPlaceholder2_10C4C929.wem		\Actor-Mixer Hierarchy\Voices\Instructions\Instruction2		473184
 	672218961	Plyr_Grunt_03	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Plyr_Grunt_03_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\Grunts\Plyr_Grunt_03		34096
 	673892171	G3#	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\G3#_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O3\G3#		384096
@@ -339,6 +340,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	967319205	Track1_Em_90bpm_44_lp	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Track1_Em_90bpm_44_lp_D79FB2B7.wem		\Interactive Music Hierarchy\Music\BGM\BGM\Track1_Em_90bpm_44_lp\Track1_Em_90bpm_44_lp		12288096
 	969926389	F2#	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\F2#_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O2\F2#		384096
 	970609161	StoneBump9	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\StoneBump\StoneBump9_3F75BDB9.wem		\Actor-Mixer Hierarchy\SFX\Environment\Environment\StoneBump\StoneBump9		19122
+	973202644	LookAngle	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\LookAngle_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Aiming\LookAngle		66096
 	973849493	RacoonNoteWrangle_01	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\RacoonNoteWrangle_01_3F75BDB9.wem		\Actor-Mixer Hierarchy\SFX\NoteWrangle\RacoonNoteWrangle_01		174970
 	980309991	C2	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O2\C2_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O2\C2		384096
 	985489907	SRelease1	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\SRelease1_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SortOut\Slingshot\Release\SRelease1		384096

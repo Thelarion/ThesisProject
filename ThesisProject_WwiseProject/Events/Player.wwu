@@ -25,6 +25,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_LookAngle" ID="{697AEC68-1434-41AD-B03A-B69D3EA99033}">
+					<ChildrenList>
+						<Action Name="" ID="{A2361178-A71D-4BF9-B982-38B60C5A1640}" ShortID="157457386">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="LookAngle" ID="{5A08F89C-38F6-4E93-947E-4DF825104FC1}" WorkUnitID="{690ABE9D-D445-44AA-AE0F-2C6B0F3C9C08}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

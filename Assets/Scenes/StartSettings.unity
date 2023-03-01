@@ -1087,7 +1087,7 @@ PrefabInstance:
     - target: {fileID: 5684492801547373865, guid: 9c4e2fd5da192204b8d880cc27877e37,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8951460254277573008, guid: 9c4e2fd5da192204b8d880cc27877e37,
         type: 3}
@@ -1228,7 +1228,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 55
   outline: {fileID: 2100000, guid: 5e99d6e591a8ad142b13908f5ecad1fe, type: 2}
-  AssitanceStateOff: 1
 --- !u!114 &9008879315188181917
 MonoBehaviour:
   m_ObjectHideFlags: 0

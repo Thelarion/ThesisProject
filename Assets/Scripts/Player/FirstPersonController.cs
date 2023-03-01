@@ -288,7 +288,7 @@ namespace StarterAssets
             _controller.Move(inputDirection.normalized * (_speed * Time.deltaTime) + new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
 
             if (_input.move.magnitude <= _threshold) firstGruntOverState = false;
-            print(_input.move.magnitude);
+
 
             if (_controller.velocity.magnitude <= 0.6f)
             {
@@ -306,19 +306,30 @@ namespace StarterAssets
                 firstGruntOverState = false;
 
             }
+            // print(_input.move.magnitude);
+            // print(_input.look.sqrMagnitude);
 
-            if (((_input.move != Vector2.zero && !PlayerVelocityZeroDefineState) || _input.look.sqrMagnitude >= _threshold) && !isFootstepCycleOn && !isJumping)
+            //     if (((_input.move != Vector2.zero && !PlayerVelocityZeroDefineState) || _input.look.sqrMagnitude >= _threshold) && !isFootstepCycleOn && !isJumping)
+            //     {
+
+            //         if (_input.move != Vector2.zero)
+            //         {
+            //             plyr_fstp_duration = 0.5f;
+            //             StartCoroutine(PlayFootsteps(plyr_fstp_duration));
+            //         }
+            //         if (_input.look.sqrMagnitude >= _threshold && _input.move.sqrMagnitude <= _threshold)
+            //         {
+            //             plyr_fstp_duration = 1.5f;
+            //             StartCoroutine(PlayFootsteps(plyr_fstp_duration));
+            //         }
+
+
+            //     }
+            // }
+
+            if (_input.move != Vector2.zero && !PlayerVelocityZeroDefineState && !isFootstepCycleOn && !isJumping)
             {
-
-                if (_input.move != Vector2.zero)
-                {
-                    plyr_fstp_duration = 0.5f;
-                }
-                if (_input.look.sqrMagnitude >= _threshold && _input.move.sqrMagnitude <= _threshold)
-                {
-                    plyr_fstp_duration = 0.3f;
-                }
-
+                plyr_fstp_duration = 0.5f;
                 StartCoroutine(PlayFootsteps(plyr_fstp_duration));
             }
         }

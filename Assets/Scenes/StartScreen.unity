@@ -1487,7 +1487,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 55
   outline: {fileID: 2100000, guid: 5e99d6e591a8ad142b13908f5ecad1fe, type: 2}
-  AssitanceStateOff: 1
 --- !u!114 &9008879315188181917
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -40,6 +40,10 @@
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="RTPC_distance_freq" ID="{2CD580FE-F1AA-48B5-BE61-37F43F4AF98D}"/>
+							<Value>5.5272149001277</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="RTPC_wall_occlusion" ID="{CDBF976E-CA53-49B6-8C0C-5767DD5366F1}"/>
 							<Value>0</Value>
 						</RTPCValue>

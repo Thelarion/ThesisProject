@@ -245,12 +245,12 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="WhiteNoiseOnTarget" ID="{C1091B34-059C-49D2-BB23-3B4E3D366514}">
+						<Event Name="Play_OnTarget" ID="{C1091B34-059C-49D2-BB23-3B4E3D366514}">
 							<ChildrenList>
 								<Action Name="" ID="{74B3CA67-43C8-4154-BEE1-8ABAE20953D7}" ShortID="330827111">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="White Noise OnTarget" ID="{2450B3B4-6CD3-4471-8B62-BB204A302A4D}" WorkUnitID="{690ABE9D-D445-44AA-AE0F-2C6B0F3C9C08}"/>
+											<ObjectRef Name="OnTarget" ID="{2450B3B4-6CD3-4471-8B62-BB204A302A4D}" WorkUnitID="{690ABE9D-D445-44AA-AE0F-2C6B0F3C9C08}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

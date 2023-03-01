@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F85D63CF-8424-473D-8873-AEDFF484C348}" SchemaVersion="110">
+	<GameParameters>
+		<WorkUnit Name="Aiming" ID="{F85D63CF-8424-473D-8873-AEDFF484C348}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="RTPC_left_right" ID="{60541B11-A5E4-4A1C-A022-D83ADF062581}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="Min" Type="Real64" Value="-1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="RTPC_distance_freq" ID="{2CD580FE-F1AA-48B5-BE61-37F43F4AF98D}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="10"/>
+						<Property Name="Max" Type="Real64" Value="10"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="RTPC_synth_pwm_up_down" ID="{BC431978-D304-4090-BEC8-40C997D41550}">
+					<PropertyList>
+						<Property Name="Max" Type="Real64" Value="50"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="RTPC_frequency_depth" ID="{600FFE17-1FEE-4D17-901F-C9F00C6592B8}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

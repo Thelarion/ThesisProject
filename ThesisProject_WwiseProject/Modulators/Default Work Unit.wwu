@@ -60,7 +60,7 @@
 										</PropertyList>
 										<ReferenceList>
 											<Reference Name="ControlInput">
-												<ObjectRef Name="RTPC_frequency_depth" ID="{600FFE17-1FEE-4D17-901F-C9F00C6592B8}" WorkUnitID="{D1EE20B6-952B-47F8-963E-ED7BCBBAF028}"/>
+												<ObjectRef Name="RTPC_frequency_depth" ID="{600FFE17-1FEE-4D17-901F-C9F00C6592B8}" WorkUnitID="{F85D63CF-8424-473D-8873-AEDFF484C348}"/>
 											</Reference>
 											<Reference Name="Curve">
 												<Custom>

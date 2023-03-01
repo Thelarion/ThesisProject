@@ -93,8 +93,10 @@ namespace AK
         static const AkUniqueID PLAY_C3_E3_A2_B2_C3_VERSIONS = 1946610009U;
         static const AkUniqueID PLAY_INSTRUCTIONS = 1184431001U;
         static const AkUniqueID PLAY_LEAVESRUSTLING = 636081116U;
+        static const AkUniqueID PLAY_LOOKANGLE = 254960912U;
         static const AkUniqueID PLAY_M1_SEQ = 3827381996U;
         static const AkUniqueID PLAY_NOTEWRANGLE = 2787390506U;
+        static const AkUniqueID PLAY_ONTARGET = 2702745606U;
         static const AkUniqueID PLAY_PLAYERFOOT = 3015844381U;
         static const AkUniqueID PLAY_PLYR_GRUNTS = 2481654591U;
         static const AkUniqueID PLAY_REFLECTIONBUMPPREVENTION = 988427829U;
@@ -111,7 +113,6 @@ namespace AK
         static const AkUniqueID STOP_BUTTONREADALOUD = 632677629U;
         static const AkUniqueID STOP_VOLUMECHECK = 3712676862U;
         static const AkUniqueID SUCCESS = 3625060726U;
-        static const AkUniqueID WHITENOISEONTARGET = 1848491570U;
     } // namespace EVENTS
 
     namespace STATES

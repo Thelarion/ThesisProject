@@ -117,7 +117,7 @@
 																		</PropertyList>
 																		<ReferenceList>
 																			<Reference Name="ControlInput">
-																				<ObjectRef Name="RTPC_left_right" ID="{60541B11-A5E4-4A1C-A022-D83ADF062581}" WorkUnitID="{D1EE20B6-952B-47F8-963E-ED7BCBBAF028}"/>
+																				<ObjectRef Name="RTPC_left_right" ID="{60541B11-A5E4-4A1C-A022-D83ADF062581}" WorkUnitID="{F85D63CF-8424-473D-8873-AEDFF484C348}"/>
 																			</Reference>
 																			<Reference Name="Curve">
 																				<Custom>
@@ -890,7 +890,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="White Noise OnTarget" ID="{2450B3B4-6CD3-4471-8B62-BB204A302A4D}" ShortID="656062473">
+						<Sound Name="OnTarget" ID="{2450B3B4-6CD3-4471-8B62-BB204A302A4D}" ShortID="656062473">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 							</PropertyList>
@@ -903,15 +903,16 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<SourcePlugin Name="Tone Generator" ID="{DC009CF2-63FC-4AAD-9EE3-163DAD9A8D83}" ShortID="962926609" PluginName="Wwise Tone Generator" CompanyID="0" PluginID="102">
-									<PropertyList>
-										<Property Name="WaveType" Type="int32" Value="4"/>
-									</PropertyList>
+								<AudioFileSource Name="OnTarget" ID="{BA84F8EB-2A7A-4DBC-9429-AC1393581266}">
 									<Language>SFX</Language>
-								</SourcePlugin>
+									<AudioFile>OnTarget.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="659330428"/>
+									</MediaIDList>
+								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Tone Generator" ID="{DC009CF2-63FC-4AAD-9EE3-163DAD9A8D83}" Platform="Linked"/>
+								<ActiveSource Name="OnTarget" ID="{BA84F8EB-2A7A-4DBC-9429-AC1393581266}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Frequency Distance" ID="{99AC6BE6-146C-4182-9837-E7FB3AE78D80}" ShortID="359235314">
@@ -952,7 +953,7 @@
 														</PropertyList>
 														<ReferenceList>
 															<Reference Name="ControlInput">
-																<ObjectRef Name="RTPC_distance_freq" ID="{2CD580FE-F1AA-48B5-BE61-37F43F4AF98D}" WorkUnitID="{D1EE20B6-952B-47F8-963E-ED7BCBBAF028}"/>
+																<ObjectRef Name="RTPC_distance_freq" ID="{2CD580FE-F1AA-48B5-BE61-37F43F4AF98D}" WorkUnitID="{F85D63CF-8424-473D-8873-AEDFF484C348}"/>
 															</Reference>
 															<Reference Name="Curve">
 																<Custom>
@@ -992,7 +993,7 @@
 														</PropertyList>
 														<ReferenceList>
 															<Reference Name="ControlInput">
-																<ObjectRef Name="RTPC_synth_pwm_up_down" ID="{BC431978-D304-4090-BEC8-40C997D41550}" WorkUnitID="{D1EE20B6-952B-47F8-963E-ED7BCBBAF028}"/>
+																<ObjectRef Name="RTPC_synth_pwm_up_down" ID="{BC431978-D304-4090-BEC8-40C997D41550}" WorkUnitID="{F85D63CF-8424-473D-8873-AEDFF484C348}"/>
 															</Reference>
 															<Reference Name="Curve">
 																<Custom>
@@ -1065,6 +1066,28 @@
 							</ObjectLists>
 							<ActiveSourceList>
 								<ActiveSource Name="Synth One" ID="{E417179C-919C-487F-A61F-7AD7830F8F31}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="LookAngle" ID="{5A08F89C-38F6-4E93-947E-4DF825104FC1}" ShortID="219394271">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="LookAngle" ID="{0689FF8F-4BBB-4381-8768-05BD2D4E3019}">
+									<Language>SFX</Language>
+									<AudioFile>LookAngle.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="973202644"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="LookAngle" ID="{0689FF8F-4BBB-4381-8768-05BD2D4E3019}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

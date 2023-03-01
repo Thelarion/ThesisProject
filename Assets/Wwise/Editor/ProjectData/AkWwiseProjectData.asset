@@ -396,7 +396,7 @@ MonoBehaviour:
     ParentPath: Events\Environment
     guid: 6b6ecfb2ce1fa94d909b1661ebea4ead
     GuidInternal: 
-    m_lastTime: -8585239920575952567
+    m_lastTime: -8585239911169008627
     List:
     - name: Play_Ambience
       guid: fa3455309387fb439b0c79717ed08820
@@ -1693,8 +1693,25 @@ MonoBehaviour:
     ParentPath: Events\Player
     guid: a739f7e5ca298a44a84cf8243f0f273a
     GuidInternal: 
-    m_lastTime: -8585240044319624346
+    m_lastTime: -8585239275799029306
     List:
+    - name: Play_LookAngle
+      guid: 68ec7a693414ad41b03ab69d3ea99033
+      id: 254960912
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: a739f7e5ca298a44a84cf8243f0f273a
+      - ElementName: Play_LookAngle
+        ObjectType: 3
+        guid: 68ec7a693414ad41b03ab69d3ea99033
+      Path: Events\Player\Play_LookAngle
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_PlayerFoot
       guid: e4392008128a7e4a8c3da3c8af76ee16
       id: 3015844381
@@ -1740,7 +1757,7 @@ MonoBehaviour:
     ParentPath: Events\SFX
     guid: 25bc135fc28aee46b33f4240d933cdbd
     GuidInternal: 
-    m_lastTime: -8585240228455892482
+    m_lastTime: -8585239228424449342
     List:
     - name: Beacon
       guid: bbc8b6179a41b343bca8b3cfc8a7a553
@@ -2223,6 +2240,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_OnTarget
+      guid: 341b09c19c05d249bb233b4e3d366514
+      id: 2702745606
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: SFX
+        ObjectType: 12
+        guid: 25bc135fc28aee46b33f4240d933cdbd
+      - ElementName: Targets
+        ObjectType: 4
+        guid: be282630ab9e824c8957e45eb0ab286f
+      - ElementName: Play_OnTarget
+        ObjectType: 3
+        guid: 341b09c19c05d249bb233b4e3d366514
+      Path: Events\SFX\Targets\Play_OnTarget
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Slingshot_Release
       guid: a2ec135f4f6ca3499af19ab5fa1a79d1
       id: 3074787511
@@ -2294,26 +2331,6 @@ MonoBehaviour:
         ObjectType: 4
         guid: be282630ab9e824c8957e45eb0ab286f
       Path: Events\SFX\Targets
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: WhiteNoiseOnTarget
-      guid: 341b09c19c05d249bb233b4e3d366514
-      id: 1848491570
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: SFX
-        ObjectType: 12
-        guid: 25bc135fc28aee46b33f4240d933cdbd
-      - ElementName: Targets
-        ObjectType: 4
-        guid: be282630ab9e824c8957e45eb0ab286f
-      - ElementName: WhiteNoiseOnTarget
-        ObjectType: 3
-        guid: 341b09c19c05d249bb233b4e3d366514
-      Path: Events\SFX\Targets\WhiteNoiseOnTarget
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -2480,6 +2497,75 @@ MonoBehaviour:
       maxDuration: -1
       minDuration: -1
   RtpcWwu:
+  - PhysicalPath: Game Parameters\Aiming.wwu
+    PathAndIcons:
+    - ElementName: Game Parameters
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Aiming
+      ObjectType: 12
+      guid: cf635df824843d478873aedff484c348
+    ParentPath: Game Parameters\Aiming
+    guid: cf635df824843d478873aedff484c348
+    GuidInternal: 
+    m_lastTime: -8585239255303986297
+    List:
+    - name: RTPC_distance_freq
+      guid: fe80d52caaf1b548be6137f43f4af98d
+      id: 1364189011
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Aiming
+        ObjectType: 12
+        guid: cf635df824843d478873aedff484c348
+      - ElementName: RTPC_distance_freq
+        ObjectType: 13
+        guid: fe80d52caaf1b548be6137f43f4af98d
+      Path: Game Parameters\Aiming\RTPC_distance_freq
+    - name: RTPC_frequency_depth
+      guid: 17fe0f60ee1f174d901fc9f00c6592b8
+      id: 1384204673
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Aiming
+        ObjectType: 12
+        guid: cf635df824843d478873aedff484c348
+      - ElementName: RTPC_frequency_depth
+        ObjectType: 13
+        guid: 17fe0f60ee1f174d901fc9f00c6592b8
+      Path: Game Parameters\Aiming\RTPC_frequency_depth
+    - name: RTPC_left_right
+      guid: 111b5460e4a51c4aa022d83adf062581
+      id: 3707704703
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Aiming
+        ObjectType: 12
+        guid: cf635df824843d478873aedff484c348
+      - ElementName: RTPC_left_right
+        ObjectType: 13
+        guid: 111b5460e4a51c4aa022d83adf062581
+      Path: Game Parameters\Aiming\RTPC_left_right
+    - name: RTPC_synth_pwm_up_down
+      guid: 781943bc04d39040bec840c997d41550
+      id: 815616169
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Aiming
+        ObjectType: 12
+        guid: cf635df824843d478873aedff484c348
+      - ElementName: RTPC_synth_pwm_up_down
+        ObjectType: 13
+        guid: 781943bc04d39040bec840c997d41550
+      Path: Game Parameters\Aiming\RTPC_synth_pwm_up_down
   - PhysicalPath: Game Parameters\Beacon.wwu
     PathAndIcons:
     - ElementName: Game Parameters
@@ -2518,50 +2604,8 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: b620eed12b95f847963eed7bcbbaf028
     GuidInternal: 
-    m_lastTime: -8585240071344273279
+    m_lastTime: -8585239255304315204
     List:
-    - name: RTPC_distance_freq
-      guid: fe80d52caaf1b548be6137f43f4af98d
-      id: 1364189011
-      PathAndIcons:
-      - ElementName: Game Parameters
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: b620eed12b95f847963eed7bcbbaf028
-      - ElementName: RTPC_distance_freq
-        ObjectType: 13
-        guid: fe80d52caaf1b548be6137f43f4af98d
-      Path: Game Parameters\Default Work Unit\RTPC_distance_freq
-    - name: RTPC_frequency_depth
-      guid: 17fe0f60ee1f174d901fc9f00c6592b8
-      id: 1384204673
-      PathAndIcons:
-      - ElementName: Game Parameters
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: b620eed12b95f847963eed7bcbbaf028
-      - ElementName: RTPC_frequency_depth
-        ObjectType: 13
-        guid: 17fe0f60ee1f174d901fc9f00c6592b8
-      Path: Game Parameters\Default Work Unit\RTPC_frequency_depth
-    - name: RTPC_left_right
-      guid: 111b5460e4a51c4aa022d83adf062581
-      id: 3707704703
-      PathAndIcons:
-      - ElementName: Game Parameters
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: b620eed12b95f847963eed7bcbbaf028
-      - ElementName: RTPC_left_right
-        ObjectType: 13
-        guid: 111b5460e4a51c4aa022d83adf062581
-      Path: Game Parameters\Default Work Unit\RTPC_left_right
     - name: RTPC_Plyr_Distance
       guid: 3b8cd6dea34ad8449dd43b94d0e800fb
       id: 3414688140
@@ -2576,20 +2620,6 @@ MonoBehaviour:
         ObjectType: 13
         guid: 3b8cd6dea34ad8449dd43b94d0e800fb
       Path: Game Parameters\Default Work Unit\RTPC_Plyr_Distance
-    - name: RTPC_synth_pwm_up_down
-      guid: 781943bc04d39040bec840c997d41550
-      id: 815616169
-      PathAndIcons:
-      - ElementName: Game Parameters
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: b620eed12b95f847963eed7bcbbaf028
-      - ElementName: RTPC_synth_pwm_up_down
-        ObjectType: 13
-        guid: 781943bc04d39040bec840c997d41550
-      Path: Game Parameters\Default Work Unit\RTPC_synth_pwm_up_down
   - PhysicalPath: Game Parameters\Melody.wwu
     PathAndIcons:
     - ElementName: Game Parameters
@@ -4057,7 +4087,7 @@ MonoBehaviour:
         guid: da8eac4adff1a245a328ede5f79242d9
       Path: Triggers\Default Work Unit\New_Trigger
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000002000000030000000400000005000000060000000a0000000b0000000d0000000f00000014000000160000001a0000001b0000001c0000001d000000200000002100000022000000240000002b0000002c0000002d0000002e0000002f00000030000000310000003200000033000000360000003700000038000000390000003a0000003b0000003c0000003d0000003e0000003f000000400000004200000043000000450000004b0000004d0000004f00000052000000850000008b0000008c000000a4000000a5000000a6000000e4000000
+  ExpandedWaapiItemIds: 0100000002000000030000000400000005000000060000000a0000000b0000000d0000000f00000014000000160000001b0000001c0000001d0000001e0000002000000022000000240000002b0000002c0000002d0000002e0000002f00000030000000310000003200000033000000360000003700000038000000390000003a0000003b0000003c0000003d0000003e0000003f000000400000004200000043000000450000004b0000004d0000004f00000052000000850000008b0000008c000000a4000000a5000000a6000000e4000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

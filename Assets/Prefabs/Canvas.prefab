@@ -3362,6 +3362,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 918ae7274dcabba42ad484baf3ff09e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  melodyIdentityName: 
   _melodySequence: 11000000170000000d0000001000000011000000
   _uI_noteDisplays:
   - {fileID: 6629794863777077373}
@@ -6024,7 +6025,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &3378709115291981589
 RectTransform:
   m_ObjectHideFlags: 0

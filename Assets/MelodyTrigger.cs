@@ -68,7 +68,7 @@ public class MelodyTrigger : MonoBehaviour
         for (int i = 0; i < max_value; i++)
         {
             Play_Melody_Seq.Post(sortedGOs[i]);
-            print(sortedGOs[i].name);
+            // print(sortedGOs[i].name);
 
             yield return new WaitForSeconds(1f);
         }
