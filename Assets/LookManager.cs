@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class LookManager : MonoBehaviour
 {
@@ -14,6 +15,10 @@ public class LookManager : MonoBehaviour
     public float _mTempAngle;
     private float roundedAngle;
     public AK.Wwise.Event Play_LookAngle;
+    public AK.Wwise.Event Play_West;
+    public AK.Wwise.Event Play_South;
+    public AK.Wwise.Event Play_East;
+    public AK.Wwise.Event Play_North;
     bool ignoreFirstState = false;
 
     // Update is called once per frame
@@ -47,19 +52,57 @@ public class LookManager : MonoBehaviour
         // compute the rotation angle in radians and adjust it 
         _mTempAngle = Mathf.Atan2(_mTempVector.x, _mTempVector.z);
         _mTempAngle *= Mathf.Rad2Deg;
+        _mTempAngle = _mTempAngle - 90f;
+
+
         // if (_mTempAngle < 0) _mTempAngle += 360f;
 
-        if (_mTempAngle < 0) _mTempAngle *= (-1);
+        if (_mTempAngle < 0)
+        {
+            // _mTempAngle = (_mTempAngle * (-1)) + 360f;
+            _mTempAngle = (_mTempAngle) + 360f;
 
+        }
         float newAngle = Mathf.Round(_mTempAngle);
 
-        if (newAngle % 30 == 0 && newAngle != roundedAngle && ignoreFirstState)
+        print(newAngle);
+
+        if (newAngle != 180 && (newAngle % 45 == 0 || newAngle % 22.5f == 0.5f) && newAngle != roundedAngle && ignoreFirstState)
         {
             roundedAngle = newAngle;
-            Play_LookAngle.Post(gameObject);
+            // Play_LookAngle.Post(gameObject);
+
+            switch (roundedAngle)
+            {
+                case 0:
+                    Play_North.Post(gameObject);
+                    break;
+                case 23:
+                    Play_LookAngle.Post(gameObject);
+                    break;
+                case 45:
+                    Play_East.Post(gameObject);
+                    break;
+                case 68f:
+                    Play_LookAngle.Post(gameObject);
+                    break;
+                case 90:
+                    Play_South.Post(gameObject);
+                    break;
+                case 113f:
+                    Play_LookAngle.Post(gameObject);
+                    break;
+                case 135:
+                    Play_West.Post(gameObject);
+                    break;
+                case 158:
+                    Play_LookAngle.Post(gameObject);
+                    break;
+            }
+            print(roundedAngle);
         }
 
-        if (!ignoreFirstState)
+        if (!ignoreFirstState && newAngle != 0f && newAngle != 180)
         {
             roundedAngle = newAngle;
             ignoreFirstState = true;

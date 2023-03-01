@@ -292,10 +292,10 @@ namespace StarterAssets
 
             if (_controller.velocity.magnitude <= 0.6f)
             {
-                // GruntIsResetState = false;
+
                 PlayerVelocityZeroDefineState = true;
 
-                if (!isGruntCycleOn && _input.move != Vector2.zero)
+                if (!isGruntCycleOn && _input.move.sqrMagnitude > _threshold && _controller.velocity.magnitude >= 0.1f)
                 {
                     StartCoroutine(PlayPlayerGrunts());
                 }
@@ -306,26 +306,6 @@ namespace StarterAssets
                 firstGruntOverState = false;
 
             }
-            // print(_input.move.magnitude);
-            // print(_input.look.sqrMagnitude);
-
-            //     if (((_input.move != Vector2.zero && !PlayerVelocityZeroDefineState) || _input.look.sqrMagnitude >= _threshold) && !isFootstepCycleOn && !isJumping)
-            //     {
-
-            //         if (_input.move != Vector2.zero)
-            //         {
-            //             plyr_fstp_duration = 0.5f;
-            //             StartCoroutine(PlayFootsteps(plyr_fstp_duration));
-            //         }
-            //         if (_input.look.sqrMagnitude >= _threshold && _input.move.sqrMagnitude <= _threshold)
-            //         {
-            //             plyr_fstp_duration = 1.5f;
-            //             StartCoroutine(PlayFootsteps(plyr_fstp_duration));
-            //         }
-
-
-            //     }
-            // }
 
             if (_input.move != Vector2.zero && !PlayerVelocityZeroDefineState && !isFootstepCycleOn && !isJumping)
             {

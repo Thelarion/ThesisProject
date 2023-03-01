@@ -1068,7 +1068,7 @@
 								<ActiveSource Name="Synth One" ID="{E417179C-919C-487F-A61F-7AD7830F8F31}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="LookAngle" ID="{5A08F89C-38F6-4E93-947E-4DF825104FC1}" ShortID="219394271">
+						<ActorMixer Name="Compass" ID="{40D85BDD-A0AF-4C0D-BF3A-7C1AD89E8208}" ShortID="906312254">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
@@ -1078,18 +1078,166 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="LookAngle" ID="{0689FF8F-4BBB-4381-8768-05BD2D4E3019}">
-									<Language>SFX</Language>
-									<AudioFile>LookAngle.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="973202644"/>
-									</MediaIDList>
-								</AudioFileSource>
+								<Sound Name="InBetween" ID="{5A08F89C-38F6-4E93-947E-4DF825104FC1}" ShortID="219394271">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{C5B628E2-30E6-49C9-B054-12444DCE2ACC}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LookAngle" ID="{0689FF8F-4BBB-4381-8768-05BD2D4E3019}">
+											<Language>SFX</Language>
+											<AudioFile>LookAngle.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="973202644"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="LookAngle" ID="{0689FF8F-4BBB-4381-8768-05BD2D4E3019}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="North" ID="{304929DE-7DB4-429F-8E89-E556CF902CF4}" ShortID="308997008">
+									<PropertyList>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{C5B628E2-30E6-49C9-B054-12444DCE2ACC}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="North" ID="{8E958892-2C25-4BD7-A102-F562734FC0B1}">
+											<Language>SFX</Language>
+											<AudioFile>North.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="115590999"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{C193C4B7-EFBE-43F8-A578-4FF6BCCFD4FF}">
+											<PropertyList>
+												<Property Name="PanX" Type="Real64" Value="1.11022302462516E-16"/>
+												<Property Name="PanY" Type="Real64" Value="76.4492753623188"/>
+											</PropertyList>
+										</Panner>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="North" ID="{8E958892-2C25-4BD7-A102-F562734FC0B1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="South" ID="{AA32ABD0-249A-4560-B4FD-107E8C00FB5B}" ShortID="931116338">
+									<PropertyList>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{C5B628E2-30E6-49C9-B054-12444DCE2ACC}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="South" ID="{BB523594-B3E1-4573-8ACB-A9D6D709F625}">
+											<Language>SFX</Language>
+											<AudioFile>South.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="598167937"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{BFA7FF35-A435-46C9-8254-229B257B6131}">
+											<PropertyList>
+												<Property Name="PanX" Type="Real64" Value="-0.675675675675675"/>
+												<Property Name="PanY" Type="Real64" Value="-75.3623188405797"/>
+											</PropertyList>
+										</Panner>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="South" ID="{BB523594-B3E1-4573-8ACB-A9D6D709F625}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="West" ID="{19F047D6-DB71-4926-B9D4-A8ECC901168D}" ShortID="257505319">
+									<PropertyList>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{C5B628E2-30E6-49C9-B054-12444DCE2ACC}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="West" ID="{56C27A7A-E7B3-49A4-BEA8-F1CB4EF0EB86}">
+											<Language>SFX</Language>
+											<AudioFile>West.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="805075098"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{58B41278-41C0-4FF8-A111-76FC480787B2}">
+											<PropertyList>
+												<Property Name="PanX" Type="Real64" Value="-94.5945945945946"/>
+												<Property Name="PanY" Type="Real64" Value="-1.44927536231884"/>
+											</PropertyList>
+										</Panner>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="West" ID="{56C27A7A-E7B3-49A4-BEA8-F1CB4EF0EB86}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="East" ID="{3F05C5DF-5D3E-4FFA-9EFA-ECDA9825B44F}" ShortID="859883022">
+									<PropertyList>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{C5B628E2-30E6-49C9-B054-12444DCE2ACC}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="East" ID="{7C38D395-0229-49F1-B386-6C9105DC2602}">
+											<Language>SFX</Language>
+											<AudioFile>East.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1051679878"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{5A4B15D9-3818-44E8-A2FF-C47701C2F9F2}">
+											<PropertyList>
+												<Property Name="PanX" Type="Real64" Value="83.4459459459459"/>
+												<Property Name="PanY" Type="Real64" Value="1.81159420289857"/>
+											</PropertyList>
+										</Panner>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="East" ID="{7C38D395-0229-49F1-B386-6C9105DC2602}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="LookAngle" ID="{0689FF8F-4BBB-4381-8768-05BD2D4E3019}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
+						</ActorMixer>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="Player" ID="{A5E27BB5-C57B-4FAB-9718-34940A3B249B}" ShortID="971419426">

@@ -185,7 +185,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{C9B60ACC-8AA2-BFEE-8FD5-61E176141057}">
+		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{D923DD19-900B-A564-0551-42293DDA2C01}">
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
 			<Media>
@@ -244,6 +244,10 @@
 				<File Id="106854697" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>DistanceCount\80.wav</ShortName>
 					<CachePath>SFX/DistanceCount/80_10C4C929.wem</CachePath>
+				</File>
+				<File Id="115590999" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>North.wav</ShortName>
+					<CachePath>SFX/North_10C4C929.wem</CachePath>
 				</File>
 				<File Id="119593203" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>D2b.wav</ShortName>
@@ -597,6 +601,10 @@
 					<ShortName>TreeBump\Dropping Wood 11.wav</ShortName>
 					<CachePath>SFX/TreeBump/Dropping Wood 11_3F75BDB9.wem</CachePath>
 				</File>
+				<File Id="598167937" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>South.wav</ShortName>
+					<CachePath>SFX/South_10C4C929.wem</CachePath>
+				</File>
 				<File Id="599950730" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>D4#.wav</ShortName>
 					<CachePath>SFX/D4#_10C4C929.wem</CachePath>
@@ -728,6 +736,10 @@
 				<File Id="795254982" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Gravel\FS_Gravel_02.wav</ShortName>
 					<CachePath>SFX/Footsteps/Gravel/FS_Gravel_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="805075098" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>West.wav</ShortName>
+					<CachePath>SFX/West_10C4C929.wem</CachePath>
 				</File>
 				<File Id="807706107" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O2\G2.wav</ShortName>
@@ -944,6 +956,10 @@
 				<File Id="1048145014" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TreeBump\Dropping Wood 10.wav</ShortName>
 					<CachePath>SFX/TreeBump/Dropping Wood 10_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="1051679878" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>East.wav</ShortName>
+					<CachePath>SFX/East_10C4C929.wem</CachePath>
 				</File>
 				<File Id="1053882955" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>StoneBump\StoneBump10.wav</ShortName>
@@ -1475,6 +1491,16 @@
 						<MediaRef Id="1071148732"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="4162345221" Name="Play_East" DurationType="OneShot" DurationMin="0.75" DurationMax="0.75">
+					<MediaRefs>
+						<MediaRef Id="1051679878"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="342260041" Name="Play_InBetween" DurationType="OneShot" DurationMin="0.34375" DurationMax="0.34375">
+					<MediaRefs>
+						<MediaRef Id="973202644"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1184431001" Name="Play_Instructions" DurationType="OneShot" DurationMin="2.5425622" DurationMax="2.9140816">
 					<SwitchContainers>
 						<SwitchContainer>
@@ -1525,11 +1551,6 @@
 						<MediaRef Id="855718662"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="254960912" Name="Play_LookAngle" DurationType="OneShot" DurationMin="0.34375" DurationMax="0.34375">
-					<MediaRefs>
-						<MediaRef Id="973202644"/>
-					</MediaRefs>
-				</Event>
 				<Event Id="3827381996" Name="Play_M1_Seq" MaxAttenuation="30" DurationType="OneShot" DurationMin="1" DurationMax="1">
 					<MediaRefs>
 						<MediaRef Id="4722660"/>
@@ -1537,6 +1558,11 @@
 						<MediaRef Id="232226852"/>
 						<MediaRef Id="364578896"/>
 						<MediaRef Id="647086168"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1850732987" Name="Play_North" DurationType="OneShot" DurationMin="0.75" DurationMax="0.75">
+					<MediaRefs>
+						<MediaRef Id="115590999"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="2787390506" Name="Play_NoteWrangle" MaxAttenuation="200" DurationType="OneShot" DurationMin="10" DurationMax="11">
@@ -1643,6 +1669,11 @@
 						<MediaRef Id="985489907"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3187449017" Name="Play_South" DurationType="OneShot" DurationMin="0.75" DurationMax="0.75">
+					<MediaRefs>
+						<MediaRef Id="598167937"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3385122965" Name="Play_StoneBump" DurationType="OneShot" DurationMin="0.86822915" DurationMax="1.7662916">
 					<MediaRefs>
 						<MediaRef Id="45056509"/>
@@ -1707,6 +1738,11 @@
 							</MediaRefs>
 						</SwitchContainer>
 					</SwitchContainers>
+				</Event>
+				<Event Id="1103419735" Name="Play_West" DurationType="OneShot" DurationMin="0.75" DurationMax="0.75">
+					<MediaRefs>
+						<MediaRef Id="805075098"/>
+					</MediaRefs>
 				</Event>
 				<Event Id="39386235" Name="Reset_M1_Seq" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2371377610" Name="Stop_AllEvents" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
@@ -1806,5 +1842,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{AD1C6782-9229-A098-A069-D19AEC74237C}</FileHash>
+	<FileHash>{70D2B85A-7F0D-FF0A-841F-B88603EC442B}</FileHash>
 </SoundBanksInfo>

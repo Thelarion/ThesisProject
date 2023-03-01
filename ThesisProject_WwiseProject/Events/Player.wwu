@@ -25,17 +25,65 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_LookAngle" ID="{697AEC68-1434-41AD-B03A-B69D3EA99033}">
+				<Folder Name="Look" ID="{2093EF22-F39F-48F3-83D4-05B2C3CCCA84}" ShortID="462771043">
 					<ChildrenList>
-						<Action Name="" ID="{A2361178-A71D-4BF9-B982-38B60C5A1640}" ShortID="157457386">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="LookAngle" ID="{5A08F89C-38F6-4E93-947E-4DF825104FC1}" WorkUnitID="{690ABE9D-D445-44AA-AE0F-2C6B0F3C9C08}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="Play_InBetween" ID="{697AEC68-1434-41AD-B03A-B69D3EA99033}">
+							<ChildrenList>
+								<Action Name="" ID="{A2361178-A71D-4BF9-B982-38B60C5A1640}" ShortID="157457386">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="InBetween" ID="{5A08F89C-38F6-4E93-947E-4DF825104FC1}" WorkUnitID="{690ABE9D-D445-44AA-AE0F-2C6B0F3C9C08}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_West" ID="{F097FAF2-0850-4F0E-BF2C-7393F00E48F9}">
+							<ChildrenList>
+								<Action Name="" ID="{9779BD16-13CA-4814-AFF6-8228B7EC78A4}" ShortID="1045205366">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="West" ID="{19F047D6-DB71-4926-B9D4-A8ECC901168D}" WorkUnitID="{690ABE9D-D445-44AA-AE0F-2C6B0F3C9C08}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_South" ID="{1835D857-44CF-40A8-85C9-61D36C13719E}">
+							<ChildrenList>
+								<Action Name="" ID="{678802B5-2C55-456B-AD17-981AA7A19134}" ShortID="729163708">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="South" ID="{AA32ABD0-249A-4560-B4FD-107E8C00FB5B}" WorkUnitID="{690ABE9D-D445-44AA-AE0F-2C6B0F3C9C08}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_North" ID="{9ECD0343-E03B-44BA-B118-BE608FFA290A}">
+							<ChildrenList>
+								<Action Name="" ID="{805CC54B-828E-469C-9111-FF7BFC628574}" ShortID="852125302">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="North" ID="{304929DE-7DB4-429F-8E89-E556CF902CF4}" WorkUnitID="{690ABE9D-D445-44AA-AE0F-2C6B0F3C9C08}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_East" ID="{B69C7843-9CAE-48DF-A363-9A4E4BA76914}">
+							<ChildrenList>
+								<Action Name="" ID="{05838173-50C1-480B-A2C4-20DE2EFC5872}" ShortID="860376426">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="East" ID="{3F05C5DF-5D3E-4FFA-9EFA-ECDA9825B44F}" WorkUnitID="{690ABE9D-D445-44AA-AE0F-2C6B0F3C9C08}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
