@@ -185,7 +185,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{79BD465F-D032-B8F1-BBEF-BDA613A4D7AA}">
+		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{A12655F1-0B48-6888-A7F8-170C50814938}">
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
 			<Media>
@@ -221,6 +221,10 @@
 					<ShortName>Resume.wav</ShortName>
 					<CachePath>SFX/Resume_10C4C929.wem</CachePath>
 				</File>
+				<File Id="43273240" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Woodpicker\Woodpicker_Pick_03.wav</ShortName>
+					<CachePath>SFX/Woodpicker/Woodpicker_Pick_03_10C4C929.wem</CachePath>
+				</File>
 				<File Id="45056509" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>StoneBump\StoneBump4.wav</ShortName>
 					<CachePath>SFX/StoneBump/StoneBump4_3F75BDB9.wem</CachePath>
@@ -235,7 +239,7 @@
 				</File>
 				<File Id="74676487" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>LeavesRustlingIndicator\Leaves_Rustling_06.wav</ShortName>
-					<CachePath>SFX/LeavesRustlingIndicator/Leaves_Rustling_06_3F75BDB9.wem</CachePath>
+					<CachePath>SFX/LeavesRustlingIndicator/Leaves_Rustling_06_10C4C929.wem</CachePath>
 				</File>
 				<File Id="99426326" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ButtonReadAloud\EffectsVolume.wav</ShortName>
@@ -287,7 +291,7 @@
 				</File>
 				<File Id="162125142" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>LeavesRustlingIndicator\Leaves_Rustling_03.wav</ShortName>
-					<CachePath>SFX/LeavesRustlingIndicator/Leaves_Rustling_03_3F75BDB9.wem</CachePath>
+					<CachePath>SFX/LeavesRustlingIndicator/Leaves_Rustling_03_10C4C929.wem</CachePath>
 				</File>
 				<File Id="164636996" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>F4#.wav</ShortName>
@@ -308,6 +312,10 @@
 				<File Id="179996937" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>DistanceCount\30.wav</ShortName>
 					<CachePath>SFX/DistanceCount/30_10C4C929.wem</CachePath>
+				</File>
+				<File Id="181304847" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Woodpicker\Woodpicker_Whistle_03.wav</ShortName>
+					<CachePath>SFX/Woodpicker/Woodpicker_Whistle_03_10C4C929.wem</CachePath>
 				</File>
 				<File Id="181898422" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O2\E2.wav</ShortName>
@@ -361,9 +369,21 @@
 					<ShortName>DistanceFrameTransition.wav</ShortName>
 					<CachePath>SFX/DistanceFrameTransition_10C4C929.wem</CachePath>
 				</File>
+				<File Id="247758342" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Woodpicker\Woodpicker_Whistle_01.wav</ShortName>
+					<CachePath>SFX/Woodpicker/Woodpicker_Whistle_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="249918726" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Woodpicker\Woodpicker_Whistle_04.wav</ShortName>
+					<CachePath>SFX/Woodpicker/Woodpicker_Whistle_04_10C4C929.wem</CachePath>
+				</File>
 				<File Id="263546721" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>VoiceVolume.wav</ShortName>
 					<CachePath>SFX/VoiceVolume_10C4C929.wem</CachePath>
+				</File>
+				<File Id="268897836" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Winter Wren\WinterWren_03.wav</ShortName>
+					<CachePath>SFX/Winter Wren/WinterWren_03_10C4C929.wem</CachePath>
 				</File>
 				<File Id="269103452" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>D2#.wav</ShortName>
@@ -372,6 +392,10 @@
 				<File Id="271194032" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>F3#.wav</ShortName>
 					<CachePath>SFX/F3#_10C4C929.wem</CachePath>
+				</File>
+				<File Id="274470355" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Woodpicker\Woodpicker_Pick_01.wav</ShortName>
+					<CachePath>SFX/Woodpicker/Woodpicker_Pick_01_10C4C929.wem</CachePath>
 				</File>
 				<File Id="277153547" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Button_OnClick.wav</ShortName>
@@ -391,7 +415,7 @@
 				</File>
 				<File Id="295788518" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>LeavesRustlingIndicator\Leaves_Rustling_02.wav</ShortName>
-					<CachePath>SFX/LeavesRustlingIndicator/Leaves_Rustling_02_3F75BDB9.wem</CachePath>
+					<CachePath>SFX/LeavesRustlingIndicator/Leaves_Rustling_02_10C4C929.wem</CachePath>
 				</File>
 				<File Id="308599422" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Plyr_Grunt_05.wav</ShortName>
@@ -452,6 +476,10 @@
 				<File Id="370788259" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ButtonReadAloud\PressReturnOrSpaceToTurnOn.wav</ShortName>
 					<CachePath>SFX/ButtonReadAloud/PressReturnOrSpaceToTurnOn_10C4C929.wem</CachePath>
+				</File>
+				<File Id="374046269" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Winter Wren\WinterWren_01.wav</ShortName>
+					<CachePath>SFX/Winter Wren/WinterWren_01_10C4C929.wem</CachePath>
 				</File>
 				<File Id="391679118" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Dirt\FS_Dirt_03.wav</ShortName>
@@ -681,6 +709,10 @@
 					<ShortName>A4#.wav</ShortName>
 					<CachePath>SFX/A4#_10C4C929.wem</CachePath>
 				</File>
+				<File Id="698313299" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Woodpicker\Woodpicker_Pick_02.wav</ShortName>
+					<CachePath>SFX/Woodpicker/Woodpicker_Pick_02_10C4C929.wem</CachePath>
+				</File>
 				<File Id="708823612" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Concrete\FS_Concrete_02.wav</ShortName>
 					<CachePath>SFX/Footsteps/Concrete/FS_Concrete_02_10C4C929.wem</CachePath>
@@ -695,7 +727,7 @@
 				</File>
 				<File Id="737434286" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>LeavesRustlingIndicator\Leaves_Rustling_01.wav</ShortName>
-					<CachePath>SFX/LeavesRustlingIndicator/Leaves_Rustling_01_3F75BDB9.wem</CachePath>
+					<CachePath>SFX/LeavesRustlingIndicator/Leaves_Rustling_01_10C4C929.wem</CachePath>
 				</File>
 				<File Id="742077720" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Tile\FS_Tile_01.wav</ShortName>
@@ -783,11 +815,11 @@
 				</File>
 				<File Id="852969047" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>LeavesRustlingIndicator\Leaves_Rustling_04.wav</ShortName>
-					<CachePath>SFX/LeavesRustlingIndicator/Leaves_Rustling_04_3F75BDB9.wem</CachePath>
+					<CachePath>SFX/LeavesRustlingIndicator/Leaves_Rustling_04_10C4C929.wem</CachePath>
 				</File>
 				<File Id="855718662" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>LeavesRustlingIndicator\Leaves_Rustling_05.wav</ShortName>
-					<CachePath>SFX/LeavesRustlingIndicator/Leaves_Rustling_05_3F75BDB9.wem</CachePath>
+					<CachePath>SFX/LeavesRustlingIndicator/Leaves_Rustling_05_10C4C929.wem</CachePath>
 				</File>
 				<File Id="857896596" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Plyr_Grunt_06.wav</ShortName>
@@ -836,6 +868,10 @@
 				<File Id="915905125" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>E4b.wav</ShortName>
 					<CachePath>SFX/E4b_10C4C929.wem</CachePath>
+				</File>
+				<File Id="917176186" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Woodpicker\Woodpicker_Whistle_02.wav</ShortName>
+					<CachePath>SFX/Woodpicker/Woodpicker_Whistle_02_10C4C929.wem</CachePath>
 				</File>
 				<File Id="917889763" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O2\B2.wav</ShortName>
@@ -949,6 +985,10 @@
 					<ShortName>GreatYouTappedCorrectNote.wav</ShortName>
 					<CachePath>Voices/English(US)/GreatYouTappedCorrectNote_10C4C929.wem</CachePath>
 				</File>
+				<File Id="1020057871" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Woodpicker\Woodpicker_Pick_04.wav</ShortName>
+					<CachePath>SFX/Woodpicker/Woodpicker_Pick_04_10C4C929.wem</CachePath>
+				</File>
 				<File Id="1030614238" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Concrete\FS_Concrete_04.wav</ShortName>
 					<CachePath>SFX/Footsteps/Concrete/FS_Concrete_04_10C4C929.wem</CachePath>
@@ -960,6 +1000,10 @@
 				<File Id="1045015971" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SquirrelNoteWrangle_02.wav</ShortName>
 					<CachePath>SFX/SquirrelNoteWrangle_02_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="1047754521" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Winter Wren\WinterWren_02.wav</ShortName>
+					<CachePath>SFX/Winter Wren/WinterWren_02_10C4C929.wem</CachePath>
 				</File>
 				<File Id="1048071603" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>B2b.wav</ShortName>
@@ -1503,6 +1547,27 @@
 						<MediaRef Id="1071148732"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2360441072" Name="Play_DirectionIndicator" MaxAttenuation="55" DurationType="OneShot" DurationMin="1.5" DurationMax="11">
+					<MediaRefs>
+						<MediaRef Id="43273240"/>
+						<MediaRef Id="74676487"/>
+						<MediaRef Id="162125142"/>
+						<MediaRef Id="181304847"/>
+						<MediaRef Id="247758342"/>
+						<MediaRef Id="249918726"/>
+						<MediaRef Id="268897836"/>
+						<MediaRef Id="274470355"/>
+						<MediaRef Id="295788518"/>
+						<MediaRef Id="374046269"/>
+						<MediaRef Id="698313299"/>
+						<MediaRef Id="737434286"/>
+						<MediaRef Id="852969047"/>
+						<MediaRef Id="855718662"/>
+						<MediaRef Id="917176186"/>
+						<MediaRef Id="1020057871"/>
+						<MediaRef Id="1047754521"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="4162345221" Name="Play_East" DurationType="OneShot" DurationMin="0.75" DurationMax="0.75">
 					<MediaRefs>
 						<MediaRef Id="1051679878"/>
@@ -1552,16 +1617,6 @@
 							</MediaRefs>
 						</SwitchContainer>
 					</SwitchContainers>
-				</Event>
-				<Event Id="636081116" Name="Play_LeavesRustling" MaxAttenuation="55" DurationType="OneShot" DurationMin="2.75" DurationMax="3.4598334">
-					<MediaRefs>
-						<MediaRef Id="74676487"/>
-						<MediaRef Id="162125142"/>
-						<MediaRef Id="295788518"/>
-						<MediaRef Id="737434286"/>
-						<MediaRef Id="852969047"/>
-						<MediaRef Id="855718662"/>
-					</MediaRefs>
 				</Event>
 				<Event Id="1202099945" Name="Play_M1_Birds" MaxAttenuation="300" DurationType="OneShot" DurationMin="2.5" DurationMax="2.5">
 					<MediaRefs>
@@ -1869,5 +1924,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{A44CE5B8-1FFA-329C-A0F2-938A272D9B73}</FileHash>
+	<FileHash>{FA3EB528-B553-E470-423E-5BE5DCD11816}</FileHash>
 </SoundBanksInfo>

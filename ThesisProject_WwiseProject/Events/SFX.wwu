@@ -269,12 +269,12 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_LeavesRustling" ID="{5AE08E4F-CCC1-4E60-9901-FF153602FADD}">
+				<Event Name="Play_DirectionIndicator" ID="{5AE08E4F-CCC1-4E60-9901-FF153602FADD}">
 					<ChildrenList>
-						<Action Name="" ID="{23102930-CC94-4808-9074-225D16CEFA44}" ShortID="36656744">
+						<Action Name="" ID="{07A2D5E9-B804-4037-A8EA-B9C5FEF5298A}" ShortID="1038419566">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="LeavesRustlingIndicator" ID="{8338778B-ACCB-4F35-880E-F88BB15FC159}" WorkUnitID="{690ABE9D-D445-44AA-AE0F-2C6B0F3C9C08}"/>
+									<ObjectRef Name="Indicator" ID="{5559B591-4098-4BDF-BB79-62F67AC51D1B}" WorkUnitID="{690ABE9D-D445-44AA-AE0F-2C6B0F3C9C08}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

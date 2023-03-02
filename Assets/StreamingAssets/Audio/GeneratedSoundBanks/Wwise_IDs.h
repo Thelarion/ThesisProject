@@ -91,10 +91,10 @@ namespace AK
         static const AkUniqueID PLAY_BUTTONREADALOUD = 2262911975U;
         static const AkUniqueID PLAY_C3_E3_A2_B2_C3 = 1668314063U;
         static const AkUniqueID PLAY_C3_E3_A2_B2_C3_VERSIONS = 1946610009U;
+        static const AkUniqueID PLAY_DIRECTIONINDICATOR = 2360441072U;
         static const AkUniqueID PLAY_EAST = 4162345221U;
         static const AkUniqueID PLAY_INBETWEEN = 342260041U;
         static const AkUniqueID PLAY_INSTRUCTIONS = 1184431001U;
-        static const AkUniqueID PLAY_LEAVESRUSTLING = 636081116U;
         static const AkUniqueID PLAY_M1_BIRDS = 1202099945U;
         static const AkUniqueID PLAY_M1_SEQ = 3827381996U;
         static const AkUniqueID PLAY_MENUCLOSE = 2709512125U;

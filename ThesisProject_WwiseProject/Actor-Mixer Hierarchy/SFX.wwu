@@ -2436,156 +2436,6 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
-				<RandomSequenceContainer Name="LeavesRustlingIndicator" ID="{8338778B-ACCB-4F35-880E-F88BB15FC159}" ShortID="910905298">
-					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="2"/>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Attenuation">
-							<ObjectRef Name="att_LeavesRustling" ID="{8FB6E4C5-66DC-459C-AFCD-2064D11C7B50}" WorkUnitID="{C9FCE274-C323-40BD-AB1C-73C657FFB12B}"/>
-						</Reference>
-						<Reference Name="Conversion">
-							<ObjectRef Name="SFX" ID="{AAF453CA-B151-4673-BCC3-F017C3006E77}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="SFX" ID="{C5B628E2-30E6-49C9-B054-12444DCE2ACC}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<Sound Name="Leaves_Rustling_06" ID="{C1857AE0-8015-4EA5-B3C2-AD7C1C6E5DA4}" ShortID="414700740">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Leaves_Rustling_06" ID="{76849B10-870F-4B14-93C0-F1E2E72E6E9C}">
-									<Language>SFX</Language>
-									<AudioFile>LeavesRustlingIndicator\Leaves_Rustling_06.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="74676487"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Leaves_Rustling_06" ID="{76849B10-870F-4B14-93C0-F1E2E72E6E9C}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Leaves_Rustling_01" ID="{40F6CD1D-205C-4A23-8D49-B3A04D15E018}" ShortID="886837438">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Leaves_Rustling_01" ID="{939E8795-17E9-4C43-B508-B41F0316DB10}">
-									<Language>SFX</Language>
-									<AudioFile>LeavesRustlingIndicator\Leaves_Rustling_01.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="737434286"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Leaves_Rustling_01" ID="{939E8795-17E9-4C43-B508-B41F0316DB10}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Leaves_Rustling_02" ID="{3CF72C1D-03A1-48F4-9D0F-9302BD24EB3D}" ShortID="728701901">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Leaves_Rustling_02" ID="{68FDF44B-C78E-48E2-AFD1-FECEDD4C1C89}">
-									<Language>SFX</Language>
-									<AudioFile>LeavesRustlingIndicator\Leaves_Rustling_02.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="295788518"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Leaves_Rustling_02" ID="{68FDF44B-C78E-48E2-AFD1-FECEDD4C1C89}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Leaves_Rustling_03" ID="{15477D5C-6658-42AF-8515-8637AD8C21C5}" ShortID="105043642">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Leaves_Rustling_03" ID="{A7ABA235-8478-4449-BF7E-C07B3FC540F9}">
-									<Language>SFX</Language>
-									<AudioFile>LeavesRustlingIndicator\Leaves_Rustling_03.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="162125142"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Leaves_Rustling_03" ID="{A7ABA235-8478-4449-BF7E-C07B3FC540F9}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Leaves_Rustling_04" ID="{963F5991-677A-4BDA-9296-F578BB8F25B4}" ShortID="707906646">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Leaves_Rustling_04" ID="{E43FD5AB-90AF-4553-B1BF-089EC8A4CE52}">
-									<Language>SFX</Language>
-									<AudioFile>LeavesRustlingIndicator\Leaves_Rustling_04.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="852969047"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Leaves_Rustling_04" ID="{E43FD5AB-90AF-4553-B1BF-089EC8A4CE52}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Leaves_Rustling_05" ID="{0A521332-27D7-4F21-BA15-8CDCEA0B1E06}" ShortID="431519844">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Leaves_Rustling_05" ID="{CE8B842B-915F-4871-A6FA-0F3A1AF57111}">
-									<Language>SFX</Language>
-									<AudioFile>LeavesRustlingIndicator\Leaves_Rustling_05.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="855718662"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Leaves_Rustling_05" ID="{CE8B842B-915F-4871-A6FA-0F3A1AF57111}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-					</ChildrenList>
-				</RandomSequenceContainer>
 				<WorkUnit Name="Environment" ID="{C9AE1A60-1F64-439A-AD46-9C53EF882DCA}" PersistMode="Reference"/>
 				<ActorMixer Name="UI" ID="{F674EE08-FDB2-4F1F-85F5-E58B2859BC1D}" ShortID="73720434">
 					<ReferenceList>
@@ -2699,6 +2549,438 @@
 						</Folder>
 					</ChildrenList>
 				</ActorMixer>
+				<RandomSequenceContainer Name="Indicator" ID="{5559B591-4098-4BDF-BB79-62F67AC51D1B}" ShortID="572960358">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="att_LeavesRustling" ID="{8FB6E4C5-66DC-459C-AFCD-2064D11C7B50}" WorkUnitID="{C9FCE274-C323-40BD-AB1C-73C657FFB12B}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{C5B628E2-30E6-49C9-B054-12444DCE2ACC}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Woodpicker" ID="{338E2BAE-CEEC-418E-B6AC-57EBB5F5B6CA}" ShortID="837608825">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Environment" ID="{736B6FAE-C07F-4C69-98D0-71093C86BCC7}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Woodpicker_Pick_01" ID="{2FFEBED5-9EB0-4E26-B464-610481FF67EA}" ShortID="363078734">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woodpicker_Pick_01" ID="{C092B280-8324-4B31-B11F-FE8E3E7D0723}">
+											<Language>SFX</Language>
+											<AudioFile>Woodpicker\Woodpicker_Pick_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="274470355"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woodpicker_Pick_01" ID="{C092B280-8324-4B31-B11F-FE8E3E7D0723}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woodpicker_Pick_02" ID="{43367E63-FEA8-43FC-908D-D439AFBE9661}" ShortID="192647698">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woodpicker_Pick_02" ID="{FB75120E-A92F-4A2C-80FB-7057ABD11228}">
+											<Language>SFX</Language>
+											<AudioFile>Woodpicker\Woodpicker_Pick_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="698313299"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woodpicker_Pick_02" ID="{FB75120E-A92F-4A2C-80FB-7057ABD11228}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woodpicker_Pick_03" ID="{8508841C-6E3E-4C84-81FC-2684EEF107E6}" ShortID="390576368">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woodpicker_Pick_03" ID="{61E1D97D-4497-4072-8DD1-84ED6EB0FFB5}">
+											<Language>SFX</Language>
+											<AudioFile>Woodpicker\Woodpicker_Pick_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="43273240"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woodpicker_Pick_03" ID="{61E1D97D-4497-4072-8DD1-84ED6EB0FFB5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woodpicker_Pick_04" ID="{46CCCDEF-4A88-43AD-A10C-3F7EFC215BDE}" ShortID="442651345">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woodpicker_Pick_04" ID="{85198CD3-8559-4151-84AC-1399E6924F94}">
+											<Language>SFX</Language>
+											<AudioFile>Woodpicker\Woodpicker_Pick_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1020057871"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woodpicker_Pick_04" ID="{85198CD3-8559-4151-84AC-1399E6924F94}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woodpicker_Whistle_01" ID="{65DBD8A9-459C-44E4-A8C0-32BF1BFF2FE3}" ShortID="461331043">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woodpicker_Whistle_01" ID="{DF6F5244-1052-436C-AC44-E8769E2FA234}">
+											<Language>SFX</Language>
+											<AudioFile>Woodpicker\Woodpicker_Whistle_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="247758342"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woodpicker_Whistle_01" ID="{DF6F5244-1052-436C-AC44-E8769E2FA234}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woodpicker_Whistle_02" ID="{25EA02F3-4262-42B0-9E58-2570C45C73AE}" ShortID="111741907">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woodpicker_Whistle_02" ID="{2E9B4138-9225-4F10-881F-5334953B290A}">
+											<Language>SFX</Language>
+											<AudioFile>Woodpicker\Woodpicker_Whistle_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="917176186"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woodpicker_Whistle_02" ID="{2E9B4138-9225-4F10-881F-5334953B290A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woodpicker_Whistle_03" ID="{40153FC6-D50A-44F6-941F-C1D1D22CD687}" ShortID="304925523">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woodpicker_Whistle_03" ID="{68158951-11A8-4466-A2F0-2146AFD4966D}">
+											<Language>SFX</Language>
+											<AudioFile>Woodpicker\Woodpicker_Whistle_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="181304847"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woodpicker_Whistle_03" ID="{68158951-11A8-4466-A2F0-2146AFD4966D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Woodpicker_Whistle_04" ID="{D7DA1931-7C51-41A8-9CBB-37D40411CD9A}" ShortID="705193023">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Woodpicker_Whistle_04" ID="{5A0D00BF-204A-4F36-A096-272D86DEA37B}">
+											<Language>SFX</Language>
+											<AudioFile>Woodpicker\Woodpicker_Whistle_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="249918726"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Woodpicker_Whistle_04" ID="{5A0D00BF-204A-4F36-A096-272D86DEA37B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="LeavesRustling" ID="{8338778B-ACCB-4F35-880E-F88BB15FC159}" ShortID="910905298">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Environment" ID="{736B6FAE-C07F-4C69-98D0-71093C86BCC7}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Leaves_Rustling_06" ID="{C1857AE0-8015-4EA5-B3C2-AD7C1C6E5DA4}" ShortID="414700740">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Leaves_Rustling_06" ID="{76849B10-870F-4B14-93C0-F1E2E72E6E9C}">
+											<Language>SFX</Language>
+											<AudioFile>LeavesRustlingIndicator\Leaves_Rustling_06.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="74676487"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Leaves_Rustling_06" ID="{76849B10-870F-4B14-93C0-F1E2E72E6E9C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Leaves_Rustling_01" ID="{40F6CD1D-205C-4A23-8D49-B3A04D15E018}" ShortID="886837438">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Leaves_Rustling_01" ID="{939E8795-17E9-4C43-B508-B41F0316DB10}">
+											<Language>SFX</Language>
+											<AudioFile>LeavesRustlingIndicator\Leaves_Rustling_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="737434286"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Leaves_Rustling_01" ID="{939E8795-17E9-4C43-B508-B41F0316DB10}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Leaves_Rustling_02" ID="{3CF72C1D-03A1-48F4-9D0F-9302BD24EB3D}" ShortID="728701901">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Leaves_Rustling_02" ID="{68FDF44B-C78E-48E2-AFD1-FECEDD4C1C89}">
+											<Language>SFX</Language>
+											<AudioFile>LeavesRustlingIndicator\Leaves_Rustling_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="295788518"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Leaves_Rustling_02" ID="{68FDF44B-C78E-48E2-AFD1-FECEDD4C1C89}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Leaves_Rustling_03" ID="{15477D5C-6658-42AF-8515-8637AD8C21C5}" ShortID="105043642">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Leaves_Rustling_03" ID="{A7ABA235-8478-4449-BF7E-C07B3FC540F9}">
+											<Language>SFX</Language>
+											<AudioFile>LeavesRustlingIndicator\Leaves_Rustling_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="162125142"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Leaves_Rustling_03" ID="{A7ABA235-8478-4449-BF7E-C07B3FC540F9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Leaves_Rustling_04" ID="{963F5991-677A-4BDA-9296-F578BB8F25B4}" ShortID="707906646">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Leaves_Rustling_04" ID="{E43FD5AB-90AF-4553-B1BF-089EC8A4CE52}">
+											<Language>SFX</Language>
+											<AudioFile>LeavesRustlingIndicator\Leaves_Rustling_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="852969047"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Leaves_Rustling_04" ID="{E43FD5AB-90AF-4553-B1BF-089EC8A4CE52}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Leaves_Rustling_05" ID="{0A521332-27D7-4F21-BA15-8CDCEA0B1E06}" ShortID="431519844">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Leaves_Rustling_05" ID="{CE8B842B-915F-4871-A6FA-0F3A1AF57111}">
+											<Language>SFX</Language>
+											<AudioFile>LeavesRustlingIndicator\Leaves_Rustling_05.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="855718662"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Leaves_Rustling_05" ID="{CE8B842B-915F-4871-A6FA-0F3A1AF57111}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="WinterWren" ID="{9FFA8E60-346D-479B-AE6D-7D739F652756}" ShortID="450315555">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="WinterWren_01" ID="{6BF6FCDD-F005-4A9D-871D-B0937C6AA061}" ShortID="33956645">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="WinterWren_01" ID="{3BCA9E3B-3A19-4E10-A414-8EA7B8E4578A}">
+											<Language>SFX</Language>
+											<AudioFile>Winter Wren\WinterWren_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="374046269"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="WinterWren_01" ID="{3BCA9E3B-3A19-4E10-A414-8EA7B8E4578A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="WinterWren_02" ID="{025AF21D-6E12-4025-ABBE-CF920A4C70F6}" ShortID="1038928480">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="WinterWren_02" ID="{CDAE849F-F07B-4E42-BB4A-179D8CEF1BFF}">
+											<Language>SFX</Language>
+											<AudioFile>Winter Wren\WinterWren_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1047754521"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="WinterWren_02" ID="{CDAE849F-F07B-4E42-BB4A-179D8CEF1BFF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="WinterWren_03" ID="{6A284444-F803-4248-9E95-9E6C18242986}" ShortID="981917730">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="WinterWren_03" ID="{43B3FA6F-B72E-4FAC-846C-41AC7BF61965}">
+											<Language>SFX</Language>
+											<AudioFile>Winter Wren\WinterWren_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="268897836"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="WinterWren_03" ID="{43B3FA6F-B72E-4FAC-846C-41AC7BF61965}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{DAA501EB-F046-43D2-A5B1-B00C687F9110}"/>
+					</PositioningInfo>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

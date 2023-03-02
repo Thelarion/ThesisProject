@@ -229,7 +229,7 @@ namespace StarterAssets
 
             isJumping = !Grounded ? true : false;
         }
-
+        Vector2 prevPosition;
         private void CameraRotation()
         {
             // if there is an input
@@ -237,6 +237,30 @@ namespace StarterAssets
             {
                 //Don't multiply mouse input by Time.deltaTime
                 float deltaTimeMultiplier = IsCurrentDeviceMouse ? 1.0f : Time.deltaTime;
+
+                if (StartMenuManager.InclusionState && (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)))
+                {
+                    deltaTimeMultiplier = Time.deltaTime;
+
+                    RotationSpeed = 80f;
+
+                    // Vector2 mousePosition = Mouse.current.position.ReadValue();
+                    // if (prevPosition != mousePosition)
+                    // {
+                    //     prevPosition = mousePosition;
+                    //     deltaTimeMultiplier = 1.0f;
+
+                    // }
+                }
+                else
+                {
+                    RotationSpeed = 0.6f;
+                }
+
+
+
+
+
 
                 _cinemachineTargetPitch += _input.look.y * RotationSpeed * deltaTimeMultiplier;
                 _rotationVelocity = _input.look.x * RotationSpeed * deltaTimeMultiplier;
