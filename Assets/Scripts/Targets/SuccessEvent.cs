@@ -8,9 +8,18 @@ public class SuccessEvent : MonoBehaviour
     public AK.Wwise.Event Play_M1_Birds;
     public LayerMask layerMask;
     int i = 0;
+    private NearbyTrees nearbyTreesIndicator;
+    private LookManager lookManager;
 
+    private void Start()
+    {
+        nearbyTreesIndicator = GameObject.Find("DirectionIndicationOnTree").GetComponent<NearbyTrees>();
+        lookManager = GameObject.Find("MainCamera").GetComponent<LookManager>();
+    }
     public void PlaySuccessEvent(Transform nextTransform)
     {
+        nearbyTreesIndicator.DelayIndicatorOnSucess();
+        lookManager.DelayAudioCompassOnSucess();
         StartCoroutine(SonifyTreeEnvironment(nextTransform));
     }
 
@@ -44,10 +53,10 @@ public class SuccessEvent : MonoBehaviour
             Play_M1_Birds.Post(treeWithShortestDistance.gameObject);
         }
 
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(4f);
 
 
-        if (i < 3)
+        if (i <= 1)
         {
             StartCoroutine(SonifyTreeEnvironment(treeWithShortestDistance));
         }

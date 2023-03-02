@@ -188,22 +188,22 @@
 						<Event Name="Success" ID="{8F188FA1-3E5F-4115-AD6C-B05712663900}">
 							<ChildrenList>
 								<Action Name="" ID="{75611FAB-382C-4F9B-AA1A-4B03B9215840}" ShortID="771074364">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="PlingSuccess" ID="{0A0234D2-4DA0-45BF-808B-B4CDD098DED2}" WorkUnitID="{690ABE9D-D445-44AA-AE0F-2C6B0F3C9C08}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
-								<Action Name="" ID="{B47EC0C9-9C99-4FE8-829D-466907FA504E}" ShortID="500486104">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Cheering" ID="{5437CF2C-491C-487D-8131-6B2F0DA38C0E}" WorkUnitID="{690ABE9D-D445-44AA-AE0F-2C6B0F3C9C08}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
 								<Action Name="" ID="{9641E70E-6F81-4B09-A8D9-7DD0E723F8C9}" ShortID="881015617">
 									<PropertyList>
-										<Property Name="Delay" Type="Real64" Value="0.5"/>
+										<Property Name="Delay" Type="Real64" Value="15"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -235,6 +235,9 @@
 							</ChildrenList>
 						</Event>
 						<Event Name="FreqDistanceEvent" ID="{E602C474-07D7-4073-A734-CCBD7B265C9E}">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool" Value="False"/>
+							</PropertyList>
 							<ChildrenList>
 								<Action Name="" ID="{A1259364-C192-4637-9C01-FE69666E7478}" ShortID="64396003">
 									<ReferenceList>

@@ -125,7 +125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ea2c144883e6fc4894a5bc28612b24c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlingSuccess:
+  Success:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 313805e6c57b05a47b7208f21c3af2ab,

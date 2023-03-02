@@ -20,16 +20,30 @@ public class LookManager : MonoBehaviour
     public AK.Wwise.Event Play_East;
     public AK.Wwise.Event Play_North;
     bool ignoreFirstState = false;
+    private bool stopAudioCompassOnSucess = false;
 
     // Update is called once per frame
     private void Update()
     {
-        if (StartMenuManager.InclusionState)
+        if (StartMenuManager.InclusionState && !stopAudioCompassOnSucess)
         {
             CalculatePlayerLookAngle();
         }
 
     }
+
+    public void DelayAudioCompassOnSucess()
+    {
+        StartCoroutine(ToggleIndicator());
+    }
+
+    IEnumerator ToggleIndicator()
+    {
+        stopAudioCompassOnSucess = true;
+        yield return new WaitForSeconds(10f);
+        stopAudioCompassOnSucess = false;
+    }
+
 
     private void CalculatePlayerLookAngle()
     {
@@ -97,7 +111,7 @@ public class LookManager : MonoBehaviour
                     Play_LookAngle.Post(gameObject);
                     break;
             }
-            print(roundedAngle);
+            // print(roundedAngle);
         }
 
         if (!ignoreFirstState && newAngle != 0f && newAngle != 180)

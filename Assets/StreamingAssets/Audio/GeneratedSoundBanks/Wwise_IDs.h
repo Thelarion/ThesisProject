@@ -55,7 +55,6 @@ namespace AK
         static const AkUniqueID D100 = 810809264U;
         static const AkUniqueID DESTINATION_REACHED = 4069116836U;
         static const AkUniqueID DISTANCEC = 2982082363U;
-        static const AkUniqueID DISTANCEFRAMETRANSITION = 293588534U;
         static const AkUniqueID E2 = 1819748156U;
         static const AkUniqueID E2B = 4220699414U;
         static const AkUniqueID E3 = 1819748157U;
@@ -68,7 +67,6 @@ namespace AK
         static const AkUniqueID F3S = 1955573803U;
         static const AkUniqueID F4 = 1802970447U;
         static const AkUniqueID F4S = 2073017134U;
-        static const AkUniqueID FREQDISTANCEEVENT = 2218041646U;
         static const AkUniqueID G2 = 1786192858U;
         static const AkUniqueID G2B = 1938649164U;
         static const AkUniqueID G2S = 1938649181U;

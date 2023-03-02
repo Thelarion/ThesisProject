@@ -313,7 +313,7 @@ public class OperationController : MonoBehaviour
 
         if (!_distanceFrameDelayState)
         {
-            StartCoroutine(DelayDistanceFrame(2.5f));
+            StartCoroutine(DelayDistanceFrame(10f));
             TargetIdentity closestTarget = DistanceToTarget.CurrentTargetIdentity;
 
             if (closestTarget != _currentClosestTarget)
@@ -331,7 +331,7 @@ public class OperationController : MonoBehaviour
                 // Make it visible
                 StartCoroutine(IncreaseAlpha(_currentFrameDistance));
                 // Play transition sound
-                if (blockInitialPost)
+                if (blockInitialPost && !StartMenuManager.InclusionState)
                 {
                     DistanceFrameTransition.Post(gameObject);
                 }

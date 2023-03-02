@@ -15,7 +15,7 @@ public class AudioController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        SidechainMusicWhenTargetClose();
+        // SidechainMusicWhenTargetClose();
     }
 
     private void SidechainMusicWhenTargetClose()

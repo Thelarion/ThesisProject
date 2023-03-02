@@ -15,33 +15,13 @@ public class AimManager : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (CheckIfTargetInRange())
+        if (currentTarget == null)
         {
-            if (currentTarget == null)
-            {
-                DetermineCurrentTarget();
-            }
-            CheckIfAimOnTarget();
+            DetermineCurrentTarget();
         }
+        CheckIfAimOnTarget();
     }
 
-    private bool CheckIfTargetInRange()
-    {
-
-        if (DistanceToTarget.CurrentTargetIdentity.gameObject != null)
-        {
-            GameObject nextTarget = DistanceToTarget.CurrentTargetIdentity.gameObject;
-
-
-            float distanceToTarget = Vector3.Distance(transform.position, nextTarget.transform.position);
-
-            bool value = distanceToTarget <= 20f ? true : false;
-
-            return value;
-        }
-        setAimOffTargetStatus();
-        return false;
-    }
 
     private void DetermineCurrentTarget()
     {

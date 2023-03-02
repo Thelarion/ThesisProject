@@ -13,7 +13,7 @@
 			<ShortName>Environment</ShortName>
 			<Path>Environment.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{6C7E3F89-BA91-B3D8-413C-60273085AFCA}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{187FB105-B234-007B-F4AD-053204DA2798}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -185,7 +185,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{A12655F1-0B48-6888-A7F8-170C50814938}">
+		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{576A7C4F-8663-0290-4E6C-02DB88E14CE1}">
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
 			<Media>
@@ -220,10 +220,6 @@
 				<File Id="38162977" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Resume.wav</ShortName>
 					<CachePath>SFX/Resume_10C4C929.wem</CachePath>
-				</File>
-				<File Id="43273240" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Woodpicker\Woodpicker_Pick_03.wav</ShortName>
-					<CachePath>SFX/Woodpicker/Woodpicker_Pick_03_10C4C929.wem</CachePath>
 				</File>
 				<File Id="45056509" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>StoneBump\StoneBump4.wav</ShortName>
@@ -313,10 +309,6 @@
 					<ShortName>DistanceCount\30.wav</ShortName>
 					<CachePath>SFX/DistanceCount/30_10C4C929.wem</CachePath>
 				</File>
-				<File Id="181304847" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Woodpicker\Woodpicker_Whistle_03.wav</ShortName>
-					<CachePath>SFX/Woodpicker/Woodpicker_Whistle_03_10C4C929.wem</CachePath>
-				</File>
 				<File Id="181898422" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O2\E2.wav</ShortName>
 					<CachePath>SFX/O2/E2_10C4C929.wem</CachePath>
@@ -364,18 +356,6 @@
 				<File Id="232226852" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>M1_C3_P5.wav</ShortName>
 					<CachePath>SFX/M1_C3_P5_10C4C929.wem</CachePath>
-				</File>
-				<File Id="242190809" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>DistanceFrameTransition.wav</ShortName>
-					<CachePath>SFX/DistanceFrameTransition_10C4C929.wem</CachePath>
-				</File>
-				<File Id="247758342" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Woodpicker\Woodpicker_Whistle_01.wav</ShortName>
-					<CachePath>SFX/Woodpicker/Woodpicker_Whistle_01_10C4C929.wem</CachePath>
-				</File>
-				<File Id="249918726" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Woodpicker\Woodpicker_Whistle_04.wav</ShortName>
-					<CachePath>SFX/Woodpicker/Woodpicker_Whistle_04_10C4C929.wem</CachePath>
 				</File>
 				<File Id="263546721" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>VoiceVolume.wav</ShortName>
@@ -565,10 +545,6 @@
 					<ShortName>Footsteps\Dirt\FS_Dirt_01.wav</ShortName>
 					<CachePath>SFX/Footsteps/Dirt/FS_Dirt_01_10C4C929.wem</CachePath>
 				</File>
-				<File Id="517302441" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>PlingSuccess.wav</ShortName>
-					<CachePath>SFX/PlingSuccess_10C4C929.wem</CachePath>
-				</File>
 				<File Id="523980979" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TreeBump\Dropping Wood 08.wav</ShortName>
 					<CachePath>SFX/TreeBump/Dropping Wood 08_3F75BDB9.wem</CachePath>
@@ -749,10 +725,6 @@
 					<ShortName>Plyr_Grunt_08.wav</ShortName>
 					<CachePath>SFX/Plyr_Grunt_08_10C4C929.wem</CachePath>
 				</File>
-				<File Id="778380301" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Cheering1.wav</ShortName>
-					<CachePath>SFX/Cheering1_52D27BF3.wem</CachePath>
-				</File>
 				<File Id="782485844" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O4\G4.wav</ShortName>
 					<CachePath>SFX/O4/G4_10C4C929.wem</CachePath>
@@ -868,10 +840,6 @@
 				<File Id="915905125" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>E4b.wav</ShortName>
 					<CachePath>SFX/E4b_10C4C929.wem</CachePath>
-				</File>
-				<File Id="917176186" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Woodpicker\Woodpicker_Whistle_02.wav</ShortName>
-					<CachePath>SFX/Woodpicker/Woodpicker_Whistle_02_10C4C929.wem</CachePath>
 				</File>
 				<File Id="917889763" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O2\B2.wav</ShortName>
@@ -1040,112 +1008,111 @@
 			</Media>
 			<Plugins>
 				<Custom>
-					<Plugin Id="345407793" Name="Synth One" LibName="Wwise Synth One" LibId="9699330"/>
 					<Plugin Id="737587789" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
 				</Custom>
 			</Plugins>
 			<Events>
-				<Event Id="1886858600" Name="A2" MaxAttenuation="70" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="1886858600" Name="A2" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="925483801"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1939634906" Name="A2b" MaxAttenuation="70" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="1939634906" Name="A2b" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="545185951"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1939634891" Name="A2s" MaxAttenuation="70" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="1939634891" Name="A2s" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="792301897"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1886858601" Name="A3" MaxAttenuation="70" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="1886858601" Name="A3" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="323227027"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1956412457" Name="A3b" MaxAttenuation="70" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="1956412457" Name="A3b" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="996453454"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1956412472" Name="A3s" MaxAttenuation="70" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="1956412472" Name="A3s" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="216779373"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1886858606" Name="A4" MaxAttenuation="70" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="1886858606" Name="A4" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="720284769"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2040300616" Name="A4b" MaxAttenuation="70" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="2040300616" Name="A4b" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="808692484"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2040300633" Name="A4s" MaxAttenuation="70" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="2040300633" Name="A4s" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="686006542"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1870081013" Name="B2" MaxAttenuation="70" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="1870081013" Name="B2" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="917889763"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1838822093" Name="B2b" MaxAttenuation="70" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="1838822093" Name="B2b" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="1048071603"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1870081012" Name="B3" MaxAttenuation="70" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="1870081012" Name="B3" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="990206362"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1822044542" Name="B3b" MaxAttenuation="70" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="1822044542" Name="B3b" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="476919538"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1870081011" Name="B4" MaxAttenuation="70" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="1870081011" Name="B4" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="427559518"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1805266923" Name="B4b" MaxAttenuation="70" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="1805266923" Name="B4b" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="815945255"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1853303302" Name="C2" MaxAttenuation="70" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="1853303302" Name="C2" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="980309991"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3952551681" Name="C2s" MaxAttenuation="70" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="3952551681" Name="C2s" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="456569173"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1853303303" Name="C3" MaxAttenuation="70" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="1853303303" Name="C3" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="918400394"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3969329526" Name="C3s" MaxAttenuation="70" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="3969329526" Name="C3s" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="868281298"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1853303296" Name="C4" MaxAttenuation="70" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="1853303296" Name="C4" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="332946074"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3851886195" Name="C4s" MaxAttenuation="70" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="3851886195" Name="C4s" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="757064969"/>
 					</MediaRefs>
@@ -1160,7 +1127,7 @@
 						<MediaRef Id="603105156"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1836525715" Name="D2" MaxAttenuation="70" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="1836525715" Name="D2" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="624828506"/>
 					</MediaRefs>
@@ -1170,17 +1137,17 @@
 						<MediaRef Id="1042648744"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3851738891" Name="D2b" MaxAttenuation="70" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="3851738891" Name="D2b" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="119593203"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3851738906" Name="D2s" MaxAttenuation="70" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="3851738906" Name="D2s" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="269103452"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1836525714" Name="D3" MaxAttenuation="70" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="1836525714" Name="D3" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="927525782"/>
 					</MediaRefs>
@@ -1190,17 +1157,17 @@
 						<MediaRef Id="179996937"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3834961332" Name="D3b" MaxAttenuation="70" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="3834961332" Name="D3b" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="291629109"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3834961317" Name="D3s" MaxAttenuation="70" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="3834961317" Name="D3s" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="189275940"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1836525717" Name="D4" MaxAttenuation="70" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="1836525717" Name="D4" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="25952176"/>
 					</MediaRefs>
@@ -1210,12 +1177,12 @@
 						<MediaRef Id="1072872748"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3885294317" Name="D4b" MaxAttenuation="70" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="3885294317" Name="D4b" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="618258995"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3885294332" Name="D4s" MaxAttenuation="70" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="3885294332" Name="D4s" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="599950730"/>
 					</MediaRefs>
@@ -1251,119 +1218,107 @@
 					</MediaRefs>
 				</Event>
 				<Event Id="2982082363" Name="distanceC" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="293588534" Name="DistanceFrameTransition" DurationType="OneShot" DurationMin="2.53125" DurationMax="2.53125">
-					<MediaRefs>
-						<MediaRef Id="242190809"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="1819748156" Name="E2" MaxAttenuation="70" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="1819748156" Name="E2" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="181898422"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="4220699414" Name="E2b" MaxAttenuation="70" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="4220699414" Name="E2b" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="764134868"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1819748157" Name="E3" MaxAttenuation="70" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="1819748157" Name="E3" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="145167046"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="4237477221" Name="E3b" MaxAttenuation="70" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="4237477221" Name="E3b" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="815486264"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1819748154" Name="E4" MaxAttenuation="70" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="1819748154" Name="E4" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="804718"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="4187144236" Name="E4b" MaxAttenuation="70" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="4187144236" Name="E4b" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="915905125"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1802970441" Name="F2" MaxAttenuation="70" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="1802970441" Name="F2" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="423178395"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1972351384" Name="F2s" MaxAttenuation="70" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="1972351384" Name="F2s" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="969926389"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1802970440" Name="F3" MaxAttenuation="70" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="1802970440" Name="F3" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="1064747333"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1955573803" Name="F3s" MaxAttenuation="70" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="1955573803" Name="F3s" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="271194032"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1802970447" Name="F4" MaxAttenuation="70" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="1802970447" Name="F4" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="755696122"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2073017134" Name="F4s" MaxAttenuation="70" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="2073017134" Name="F4s" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="164636996"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2218041646" Name="FreqDistanceEvent" DurationType="Infinite">
-					<PluginRefs>
-						<Custom>
-							<PluginRef Id="345407793"/>
-						</Custom>
-					</PluginRefs>
-				</Event>
-				<Event Id="1786192858" Name="G2" MaxAttenuation="70" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="1786192858" Name="G2" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="807706107"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1938649164" Name="G2b" MaxAttenuation="70" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="1938649164" Name="G2b" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="497078878"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1938649181" Name="G2s" MaxAttenuation="70" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="1938649181" Name="G2s" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="926129158"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1786192859" Name="G3" MaxAttenuation="70" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="1786192859" Name="G3" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="206363750"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1955426723" Name="G3b" MaxAttenuation="70" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="1955426723" Name="G3b" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="530408079"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1955426738" Name="G3s" MaxAttenuation="70" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="1955426738" Name="G3s" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="673892171"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1786192860" Name="G4" MaxAttenuation="70" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="1786192860" Name="G4" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="782485844"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1972204342" Name="G4b" MaxAttenuation="70" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="1972204342" Name="G4b" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="164737119"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1972204327" Name="G4s" MaxAttenuation="70" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="1972204327" Name="G4s" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="12077457"/>
 					</MediaRefs>
@@ -1547,14 +1502,10 @@
 						<MediaRef Id="1071148732"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2360441072" Name="Play_DirectionIndicator" MaxAttenuation="55" DurationType="OneShot" DurationMin="1.5" DurationMax="11">
+				<Event Id="2360441072" Name="Play_DirectionIndicator" MaxAttenuation="55" DurationType="OneShot" DurationMin="2.75" DurationMax="11">
 					<MediaRefs>
-						<MediaRef Id="43273240"/>
 						<MediaRef Id="74676487"/>
 						<MediaRef Id="162125142"/>
-						<MediaRef Id="181304847"/>
-						<MediaRef Id="247758342"/>
-						<MediaRef Id="249918726"/>
 						<MediaRef Id="268897836"/>
 						<MediaRef Id="274470355"/>
 						<MediaRef Id="295788518"/>
@@ -1563,7 +1514,6 @@
 						<MediaRef Id="737434286"/>
 						<MediaRef Id="852969047"/>
 						<MediaRef Id="855718662"/>
-						<MediaRef Id="917176186"/>
 						<MediaRef Id="1020057871"/>
 						<MediaRef Id="1047754521"/>
 					</MediaRefs>
@@ -1832,19 +1782,14 @@
 				<Event Id="2842046910" Name="Stop_BGM_Menu_Placeholder" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="632677629" Name="Stop_ButtonReadAloud" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3712676862" Name="Stop_VolumeCheck" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="3625060726" Name="Success" DurationType="OneShot" DurationMin="5.4231367" DurationMax="5.4231367">
+				<Event Id="3625060726" Name="Success" DurationType="OneShot" DurationMin="17.449682" DurationMax="17.449682">
 					<MediaRefs>
-						<MediaRef Id="517302441"/>
-						<MediaRef Id="778380301"/>
 						<MediaRef Id="1018730739"/>
 					</MediaRefs>
 				</Event>
 			</Events>
 			<GameParameters>
-				<GameParameter Id="815616169" Name="RTPC_synth_pwm_up_down"/>
 				<GameParameter Id="872361937" Name="RTPC_wall_occlusion"/>
-				<GameParameter Id="1364189011" Name="RTPC_distance_freq"/>
-				<GameParameter Id="1384204673" Name="RTPC_frequency_depth"/>
 				<GameParameter Id="3707704703" Name="RTPC_left_right"/>
 				<GameParameter Id="4120900405" Name="RTPC_beacon_lr_volume"/>
 			</GameParameters>
@@ -1924,5 +1869,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{FA3EB528-B553-E470-423E-5BE5DCD11816}</FileHash>
+	<FileHash>{6410BCFB-CFEA-480E-2F4C-44A36080426B}</FileHash>
 </SoundBanksInfo>

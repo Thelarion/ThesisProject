@@ -98,9 +98,6 @@
 					</CurveUsageInfoList>
 				</Attenuation>
 				<Attenuation Name="att_NoteAttenuation" ID="{30B6C5D9-94C7-4A5C-A5C6-1A69B4CC9AC3}" ShortID="424983686">
-					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="70"/>
-					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
@@ -116,19 +113,19 @@
 											<SegmentShape>Log1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>25.6635</XPos>
-											<YPos>-12.02696</YPos>
+											<XPos>37.4585</XPos>
+											<YPos>-9.51964</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>Exp2</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>64.29423</XPos>
+											<XPos>95.26187</XPos>
 											<YPos>-200</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>Log2</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>70</XPos>
+											<XPos>100</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -156,13 +153,13 @@
 											<SegmentShape>Exp3</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>19.422991</XPos>
+											<XPos>27.74713</XPos>
 											<YPos>43</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>70</XPos>
+											<XPos>100</XPos>
 											<YPos>71</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -183,7 +180,7 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>70</XPos>
+											<XPos>100</XPos>
 											<YPos>100</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -205,13 +202,13 @@
 											<SegmentShape>Log3</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>11.5506953333333</XPos>
+											<XPos>16.5009933333333</XPos>
 											<YPos>10.53356</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>Exp3</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>70</XPos>
+											<XPos>100</XPos>
 											<YPos>0</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -545,14 +542,14 @@
 											<SegmentShape>Log2</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>21.86781</XPos>
-											<YPos>-5.87126</YPos>
+											<XPos>21.58675</XPos>
+											<YPos>-3.12066</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>Exp2</SegmentShape>
 										</Point>
 										<Point>
 											<XPos>55</XPos>
-											<YPos>-200</YPos>
+											<YPos>-9.54608</YPos>
 											<Flags>37</Flags>
 										</Point>
 									</PointList>
@@ -580,13 +577,13 @@
 										</Point>
 										<Point>
 											<XPos>18.93443</XPos>
-											<YPos>21</YPos>
+											<YPos>11</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>Log2</SegmentShape>
 										</Point>
 										<Point>
 											<XPos>55</XPos>
-											<YPos>44</YPos>
+											<YPos>25</YPos>
 											<Flags>37</Flags>
 										</Point>
 									</PointList>

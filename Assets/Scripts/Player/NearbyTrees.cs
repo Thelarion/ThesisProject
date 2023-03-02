@@ -7,7 +7,8 @@ public class NearbyTrees : MonoBehaviour
 
     public AK.Wwise.Event LeavesRustling;
     private float radius = 50f;
-    private bool stopLeaves = false;
+    private bool stopIndicator = false;
+    private bool stopIndicatorOnSucess = false;
     private void Start()
     {
         Invoke("DelayedStart", 20f);
@@ -18,12 +19,17 @@ public class NearbyTrees : MonoBehaviour
         StartCoroutine(SonifyTrees());
     }
 
-    // void OnDrawGizmosSelected()
-    // {
-    //     // Draw a yellow sphere at the transform's position
-    //     Gizmos.color = Color.yellow;
-    //     Gizmos.DrawSphere(transform.position, 30);
-    // }
+    public void DelayIndicatorOnSucess()
+    {
+        StartCoroutine(ToggleIndicator());
+    }
+
+    IEnumerator ToggleIndicator()
+    {
+        stopIndicatorOnSucess = true;
+        yield return new WaitForSeconds(30f);
+        stopIndicatorOnSucess = false;
+    }
 
     IEnumerator SonifyTrees()
     {
@@ -38,11 +44,9 @@ public class NearbyTrees : MonoBehaviour
         {
             if (hitCollider.tag == "Tree")
             {
-                // print("tree");
                 GameObject colliderGO = hitCollider.gameObject;
                 float compareDistance = Vector3.Distance(colliderGO.transform.position, currentTargetTone.transform.position);
 
-                // print(compareDistance);
                 // Compare the most recent value with the saved value 
                 if (compareDistance < shortestDistanceTreeToTarget)
                 {
@@ -56,20 +60,20 @@ public class NearbyTrees : MonoBehaviour
 
         if (shortestDistanceTreeToTarget <= 40f)
         {
-            stopLeaves = true;
+            stopIndicator = true;
         }
         else
         {
-            stopLeaves = false;
+            stopIndicator = false;
         }
-
-        if (!stopLeaves && treeWithShortestDistance != null)
+        print("Should NOT play" + shortestDistanceTreeToTarget);
+        if (!stopIndicator && treeWithShortestDistance != null && !stopIndicatorOnSucess)
         {
-            print(shortestDistanceTreeToTarget);
+            print("Should play" + shortestDistanceTreeToTarget);
             LeavesRustling.Post(treeWithShortestDistance.gameObject);
         }
 
-        yield return new WaitForSeconds(20f);
+        yield return new WaitForSeconds(15f);
 
         StartCoroutine(SonifyTrees());
     }
