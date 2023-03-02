@@ -95,6 +95,7 @@ namespace AK
         static const AkUniqueID PLAY_INBETWEEN = 342260041U;
         static const AkUniqueID PLAY_INSTRUCTIONS = 1184431001U;
         static const AkUniqueID PLAY_LEAVESRUSTLING = 636081116U;
+        static const AkUniqueID PLAY_M1_BIRDS = 1202099945U;
         static const AkUniqueID PLAY_M1_SEQ = 3827381996U;
         static const AkUniqueID PLAY_MENUCLOSE = 2709512125U;
         static const AkUniqueID PLAY_MENUOPEN = 119142231U;

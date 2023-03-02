@@ -192,7 +192,10 @@ public class AudioMenu : MonoBehaviour
 
     public void OnClickSound()
     {
-        Play_Button_OnClick.Post(gameObject);
+        if (!(toggles[Selection].name == "Resume"))
+        {
+            Play_Button_OnClick.Post(gameObject);
+        }
     }
 
 }

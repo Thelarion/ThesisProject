@@ -1,24 +1,33 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class DistanceToTarget : MonoBehaviour
 {
-    private static TargetIdentity currentLoopObjectShortestDistance = null;
+    private static TargetIdentity currentTargetIdentity = null;
 
-    public static TargetIdentity CurrentLoopObjectShortestDistance
+    public static TargetIdentity CurrentTargetIdentity
     {
-        get { return currentLoopObjectShortestDistance; }
+        set => currentTargetIdentity = value;
+        get => currentTargetIdentity;
     }
+
+    public TargetController TargetController;
 
     private void Start()
     {
-        DetermineCurrentTarget();
+        CurrentTargetIdentity = TargetController.transform.GetChild(0).GetComponent<TargetIdentity>();
+
+        // Old Method, when all targets on the field
+        // DetermineCurrentTarget();
     }
 
     private void Update()
     {
-        DetermineCurrentTarget();
+
+        // Old Method, when all targets on the field
+        // DetermineCurrentTarget();
     }
 
     private void DetermineCurrentTarget()
@@ -41,7 +50,7 @@ public class DistanceToTarget : MonoBehaviour
                 if (compareValueTarget < distanceCameraNextTarget)
                 {
                     distanceCameraNextTarget = compareValueTarget;
-                    currentLoopObjectShortestDistance = target;
+                    CurrentTargetIdentity = target;
                 };
             }
         }

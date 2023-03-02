@@ -20,9 +20,9 @@ public class AudioController : MonoBehaviour
 
     private void SidechainMusicWhenTargetClose()
     {
-        if (DistanceToTarget.CurrentLoopObjectShortestDistance != null)
+        if (DistanceToTarget.CurrentTargetIdentity != null)
         {
-            Transform closestTarget = DistanceToTarget.CurrentLoopObjectShortestDistance.transform;
+            Transform closestTarget = DistanceToTarget.CurrentTargetIdentity.transform;
             float currentDistance = Vector3.Distance(player.transform.position, closestTarget.transform.position);
             // print(currentDistance);
             AkSoundEngine.SetRTPCValue("RTPC_MusicBusFade", currentDistance);

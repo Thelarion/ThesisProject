@@ -314,7 +314,7 @@ public class OperationController : MonoBehaviour
         if (!_distanceFrameDelayState)
         {
             StartCoroutine(DelayDistanceFrame(2.5f));
-            TargetIdentity closestTarget = DistanceToTarget.CurrentLoopObjectShortestDistance;
+            TargetIdentity closestTarget = DistanceToTarget.CurrentTargetIdentity;
 
             if (closestTarget != _currentClosestTarget)
             {

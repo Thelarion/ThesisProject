@@ -8,7 +8,7 @@
 						<Action Name="" ID="{2223758A-803C-4D30-8BA4-4597E1C1C8DC}" ShortID="607530205">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="C3_E3_A2_B2_C3" ID="{0F381F0A-774E-4EBF-AE44-458D92245DA5}" WorkUnitID="{E5F10FC4-A206-4CEE-8C77-3A46AC386FCD}"/>
+									<ObjectRef Name="M1" ID="{0F381F0A-774E-4EBF-AE44-458D92245DA5}" WorkUnitID="{E5F10FC4-A206-4CEE-8C77-3A46AC386FCD}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -47,7 +47,7 @@
 						<Action Name="" ID="{8976CBF9-AC8C-4693-B6FD-0D815272BB71}" ShortID="938321208">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="C3_E3_A2_B2_C3_versions" ID="{61B4E31A-EA12-49D5-AD6C-B1E5D383A282}" WorkUnitID="{E5F10FC4-A206-4CEE-8C77-3A46AC386FCD}"/>
+									<ObjectRef Name="M1_versions" ID="{61B4E31A-EA12-49D5-AD6C-B1E5D383A282}" WorkUnitID="{E5F10FC4-A206-4CEE-8C77-3A46AC386FCD}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -74,6 +74,17 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="NotesRadius" ID="{EAB6EB1A-2072-498E-A464-93416743FDE7}" WorkUnitID="{35658988-EBE6-42AB-BE13-CC3667F51DCE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_M1_Birds" ID="{37D82D1C-1298-41CD-B71C-58AEA3C521B5}">
+					<ChildrenList>
+						<Action Name="" ID="{0FEAF9CA-0164-4D63-96CE-10D6AFA889D0}" ShortID="934885259">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="M1_Birds" ID="{43FD7858-4D21-40DD-A06C-608DD8D1EFCF}" WorkUnitID="{E5F10FC4-A206-4CEE-8C77-3A46AC386FCD}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

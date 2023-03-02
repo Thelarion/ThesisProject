@@ -27,7 +27,7 @@ public class NearbyTrees : MonoBehaviour
 
     IEnumerator SonifyTrees()
     {
-        Transform currentTargetTone = DistanceToTarget.CurrentLoopObjectShortestDistance.transform;
+        Transform currentTargetTone = DistanceToTarget.CurrentTargetIdentity.transform;
 
         Transform treeWithShortestDistance = null;
 

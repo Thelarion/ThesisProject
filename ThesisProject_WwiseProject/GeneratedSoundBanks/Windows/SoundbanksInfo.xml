@@ -185,7 +185,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{626A8B4C-A400-9E0A-C998-B91F6BBC6E0F}">
+		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{79BD465F-D032-B8F1-BBEF-BDA613A4D7AA}">
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
 			<Media>
@@ -824,6 +824,10 @@
 				<File Id="893369011" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Tile\FS_Tile_04.wav</ShortName>
 					<CachePath>SFX/Footsteps/Tile/FS_Tile_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="899448972" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>C3_E3_A2_B3_C3_Bird.wav</ShortName>
+					<CachePath>SFX/C3_E3_A2_B3_C3_Bird_D79FB2B7.wem</CachePath>
 				</File>
 				<File Id="904983868" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SRelease2.wav</ShortName>
@@ -1559,6 +1563,11 @@
 						<MediaRef Id="855718662"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1202099945" Name="Play_M1_Birds" MaxAttenuation="300" DurationType="OneShot" DurationMin="2.5" DurationMax="2.5">
+					<MediaRefs>
+						<MediaRef Id="899448972"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3827381996" Name="Play_M1_Seq" MaxAttenuation="30" DurationType="OneShot" DurationMin="1" DurationMax="1">
 					<MediaRefs>
 						<MediaRef Id="4722660"/>
@@ -1860,5 +1869,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{3B41CFB8-F154-5A6E-65B9-31D4B711D8D7}</FileHash>
+	<FileHash>{A44CE5B8-1FFA-329C-A0F2-938A272D9B73}</FileHash>
 </SoundBanksInfo>

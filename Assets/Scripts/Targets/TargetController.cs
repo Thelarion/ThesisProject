@@ -50,7 +50,7 @@ public class TargetController : MonoBehaviour
     {
         if (!initializationState)
         {
-            currentShortestDistance = DistanceToTarget.CurrentLoopObjectShortestDistance.transform;
+            currentShortestDistance = DistanceToTarget.CurrentTargetIdentity.transform;
             targetCheckStateForDistance = currentShortestDistance;
             currentShortestDistance.GetComponent<CheckOcclusion>().enabled = true;
             initializationState = true;
@@ -59,9 +59,9 @@ public class TargetController : MonoBehaviour
 
     private void GetTargetWithShortestDistance()
     {
-        if (DistanceToTarget.CurrentLoopObjectShortestDistance != null)
+        if (DistanceToTarget.CurrentTargetIdentity != null)
         {
-            currentShortestDistance = DistanceToTarget.CurrentLoopObjectShortestDistance.transform;
+            currentShortestDistance = DistanceToTarget.CurrentTargetIdentity.transform;
 
             if (currentShortestDistance != targetCheckStateForDistance)
             {
@@ -154,11 +154,14 @@ public class TargetController : MonoBehaviour
         return k;
     }
 
-    public void ActivateNextTone()
+    public Transform ActivateNextTone()
     {
         if (transform.GetChild(1) != null)
         {
             transform.GetChild(1).transform.gameObject.SetActive(true);
+
+            return transform.GetChild(1);
         }
+        return null;
     }
 }

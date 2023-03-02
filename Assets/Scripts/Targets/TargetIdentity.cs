@@ -69,8 +69,12 @@ public class TargetIdentity : MonoBehaviour
         }
         if (transform.GetComponentInParent<TargetController>() != null)
         {
-            transform.GetComponentInParent<TargetController>().ActivateNextTone();
+            Transform nextTone = transform.GetComponentInParent<TargetController>().ActivateNextTone();
+            GetComponentInParent<SuccessEvent>().PlaySuccessEvent(this.transform);
+            DistanceToTarget.CurrentTargetIdentity = nextTone.transform.GetComponent<TargetIdentity>();
         }
+
+
         _instances.Remove(this);
     }
 }

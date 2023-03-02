@@ -86,7 +86,6 @@ namespace StarterAssets
         [HideInInspector] public bool MenuToggle = false;
         // [HideInInspector] private Slingshot slingshot;
         [HideInInspector] private ConductorBaton conductorBaton;
-        public LayerMask layerMask;
         private RaycastHit raycastHit;
         private Transform bumpDetection;
         bool firstGruntOverState = false;
