@@ -2979,6 +2979,49 @@
 						<Panner Name="" ID="{DAA501EB-F046-43D2-A5B1-B00C687F9110}"/>
 					</PositioningInfo>
 				</RandomSequenceContainer>
+				<ActorMixer Name="Bells" ID="{026EAE94-D4F6-4D2F-A4E1-B5B45B2B1D17}" ShortID="381838271">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="att_Bells" ID="{71DD5A56-4AF4-463D-8DDE-5A01C79C8476}" WorkUnitID="{C9FCE274-C323-40BD-AB1C-73C657FFB12B}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{C5B628E2-30E6-49C9-B054-12444DCE2ACC}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Bells" ID="{F8B4DD8B-851D-4C50-9D5F-1EED5FB9F157}" ShortID="674978197">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Bells" ID="{EE3B1F07-70F9-43A5-B687-FE8C5EB3BB90}">
+									<Language>SFX</Language>
+									<AudioFile>Bells.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="59830991"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Bells" ID="{EE3B1F07-70F9-43A5-B687-FE8C5EB3BB90}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

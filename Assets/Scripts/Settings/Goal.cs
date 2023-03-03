@@ -31,6 +31,7 @@ public class Goal : MonoBehaviour
                 playerStop.SetActive(true);
                 print("Completed!");
                 levelLoader.LoadScene();
+                AkSoundEngine.PostEvent("Stop_AllEvents", null);
             }
             else
             {
@@ -44,7 +45,7 @@ public class Goal : MonoBehaviour
                 {
                     levelLoader.LoadScene();
                     scoreManager.CurrentScore = 38;
-
+                    AkSoundEngine.PostEvent("Stop_AllEvents", null);
                 }
             }
         }

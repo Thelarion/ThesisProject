@@ -50,11 +50,9 @@ public class InstructionManager : MonoBehaviour
 
     public void LoadNextScene()
     {
-        print(childIndex);
         if (childIndex == 4)
         {
-            print("Event time");
-            AkSoundEngine.PostEvent("Stop_BGM_Menu_Placeholder", null);
+            AkSoundEngine.PostEvent("Stop_AllEvents", null);
         }
 
         AkSoundEngine.PostEvent("Play_Button_OnClick", gameObject);

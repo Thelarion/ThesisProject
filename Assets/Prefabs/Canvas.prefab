@@ -10195,6 +10195,9 @@ MonoBehaviour:
   InclusionModeOnSprite: {fileID: 21300000, guid: d2770db29aef36e49bb4a15199a85d4e,
     type: 3}
   MenuStartSettingsAudioMenu: {fileID: 8951460255645217337}
+  MenuInGame: {fileID: 4098641400073007067}
+  MenuStart: {fileID: 8951460255645217341}
+  MenuCredits: {fileID: 1527067604}
 --- !u!1 &8951460254279483288
 GameObject:
   m_ObjectHideFlags: 0

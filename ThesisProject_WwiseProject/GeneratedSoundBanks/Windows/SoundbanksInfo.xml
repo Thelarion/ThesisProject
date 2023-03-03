@@ -185,7 +185,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{576A7C4F-8663-0290-4E6C-02DB88E14CE1}">
+		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{A34EA639-D85E-A9A2-8738-670FEF13BC79}">
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
 			<Media>
@@ -224,6 +224,10 @@
 				<File Id="45056509" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>StoneBump\StoneBump4.wav</ShortName>
 					<CachePath>SFX/StoneBump/StoneBump4_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="59830991" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Bells.wav</ShortName>
+					<CachePath>SFX/Bells_D79FB2B7.wem</CachePath>
 				</File>
 				<File Id="62582298" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SRelease4.wav</ShortName>
@@ -1359,6 +1363,11 @@
 						</Custom>
 					</PluginRefs>
 				</Event>
+				<Event Id="2324519816" Name="Play_Bells" MaxAttenuation="400" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="59830991"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3126765036" Name="Play_BGM" DurationType="Infinite">
 					<SwitchContainers>
 						<SwitchContainer>
@@ -1869,5 +1878,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{6410BCFB-CFEA-480E-2F4C-44A36080426B}</FileHash>
+	<FileHash>{C9E358CA-4FCB-6465-D997-0AE07646769D}</FileHash>
 </SoundBanksInfo>

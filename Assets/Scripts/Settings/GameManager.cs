@@ -9,7 +9,7 @@ using System;
 public class GameManager : MonoBehaviour
 {
     // public GameObject menuAccessibility;
-    private FirstPersonController firstPersonController;
+    // private FirstPersonController firstPersonController;
     private static List<string> paletteOptions = new List<string>();
     private static string chosenPalette;
     public GameObject MenuInGameSettings;
@@ -28,36 +28,36 @@ public class GameManager : MonoBehaviour
 
     }
 
-    private void Start()
-    {
-        firstPersonController = GameObject.Find("Player").GetComponent<FirstPersonController>();
-    }
+    // private void Start()
+    // {
+    //     firstPersonController = GameObject.Find("Player").GetComponent<FirstPersonController>();
+    // }
     private void SetPaletteChoice()
     {
         paletteOptions.Add("Palette1");
         paletteOptions.Add("Palette2");
     }
 
-    private void Update()
-    {
-        CheckCursorLockState();
-    }
-    void CheckCursorLockState()
-    {
-        // if (menuPanel.activeSelf || menuAccessibility.activeSelf)
-        if (MenuInGameSettings.activeSelf)
-        {
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
-            firstPersonController.MenuToggle = true;
-        }
-        else
-        {
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
-            firstPersonController.MenuToggle = false;
-        }
-    }
+    // private void Update()
+    // {
+    //     CheckCursorLockState();
+    // }
+    // void CheckCursorLockState()
+    // {
+    //     // if (menuPanel.activeSelf || menuAccessibility.activeSelf)
+    //     if (MenuInGameSettings.activeSelf)
+    //     {
+    //         Cursor.lockState = CursorLockMode.None;
+    //         Cursor.visible = true;
+    //         firstPersonController.MenuToggle = true;
+    //     }
+    //     else
+    //     {
+    //         Cursor.lockState = CursorLockMode.Locked;
+    //         Cursor.visible = false;
+    //         firstPersonController.MenuToggle = false;
+    //     }
+    // }
 
     private static void ChooseRandomMaterialPalette()
     {

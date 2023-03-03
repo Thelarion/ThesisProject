@@ -12,6 +12,7 @@ public class TargetController : MonoBehaviour
     private Transform targetCheckStateForDistance;
     private Transform currentShortestDistance;
     private ScoreManager scoreManager;
+    public GameObject Goal;
     private enum notes
     {
         C2, C2s, D2b, D2, D2s, E2b, E2, F2, F2s, G2b, G2, G2s, A2b, A2, A2s, B2b, B2,
@@ -125,21 +126,17 @@ public class TargetController : MonoBehaviour
             child.GetComponent<TargetMove>().StopMovementWhenMissOrInclusion();
         }
     }
-
-    // public void ResetNotePositionToSpawnPoint()
-    // {
-    //     foreach (Transform child in transform)
-    //     {
-    //         child.transform.GetComponent<TargetIdentity>().ResetPositionToSpawnPoint();
-    //     }
-    // }
-
+    int i = 0;
     private void CheckTargetCount()
     {
-        if (CountChildrenTargets(transform) <= 0)
+
+        if (CountChildrenTargets(transform) <= 0 && i < 1)
         {
+
             print("No targets left");
+            i++;
             GameObject.Find("List").GetComponent<OperationController>().DecreaseAlphaIfZeroTargets();
+            AkSoundEngine.PostEvent("Play_Bells", Goal);
         }
     }
 

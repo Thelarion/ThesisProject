@@ -58,6 +58,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2040300633	A4s			\Notes\O4\A4s	
 	2073017134	F4s			\Notes\O4\F4s	
 	2262911975	Play_ButtonReadAloud			\UI\Play_ButtonReadAloud	
+	2324519816	Play_Bells			\SFX\Play_Bells	
 	2360441072	Play_DirectionIndicator			\SFX\Play_DirectionIndicator	
 	2371377610	Stop_AllEvents			\UI\Stop_AllEvents	
 	2481654591	Play_Plyr_Grunts			\Player\Play_Plyr_Grunts	
@@ -173,6 +174,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	33821008	PlingFail	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\PlingFail_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SortOut\PlingFail		768096
 	38162977	Resume	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\Resume_10C4C929.wem		\Actor-Mixer Hierarchy\Voices\ButtonReadAloud\Resume		159844
 	45056509	StoneBump4	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\StoneBump\StoneBump4_3F75BDB9.wem		\Actor-Mixer Hierarchy\SFX\Environment\Environment\StoneBump\StoneBump4		14278
+	59830991	Bells	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\Bells_D79FB2B7.wem		\Actor-Mixer Hierarchy\SFX\Bells\Bells		6144096
 	62582298	SRelease4	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\SRelease4_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SortOut\Slingshot\Release\SRelease4		384096
 	71396143	Start	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\StartTheGame_10C4C929.wem		\Actor-Mixer Hierarchy\Voices\ButtonReadAloud\Start		268384
 	74676487	Leaves_Rustling_06	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\LeavesRustlingIndicator\Leaves_Rustling_06_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Indicator\LeavesRustling\Leaves_Rustling_06		528096
