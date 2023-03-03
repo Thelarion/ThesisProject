@@ -7,12 +7,14 @@ using System.Linq;
 
 public class ScoreManager : MonoBehaviour
 {
-    private int _currentScore = 0;
+    private static int _currentScore = 0;
     public Image FirstDigitScore;
     public Image SecondDigitScore;
     private ArrayList digitSprites = new ArrayList();
     private ArrayList digitSpritesStrings = new ArrayList();
     private Sprite spriteIndex;
+
+    public int CurrentScore { get => _currentScore; set => _currentScore = value; }
 
     private void Start()
     {
@@ -23,13 +25,16 @@ public class ScoreManager : MonoBehaviour
             digitSprites.Add(item);
             digitSpritesStrings.Add(item.name);
         }
+
+        SetToSprite();
     }
 
     public void CalculatePoints(int missedTaps)
     {
-        _currentScore = _currentScore + getScoreSystem(missedTaps);
+        CurrentScore = CurrentScore + getScoreSystem(missedTaps);
         SetToSprite();
     }
+
 
     private int getScoreSystem(int missedTaps)
     {
@@ -48,7 +53,7 @@ public class ScoreManager : MonoBehaviour
 
     private void SetToSprite()
     {
-        string scoreToString = _currentScore.ToString();
+        string scoreToString = CurrentScore.ToString();
         string firstDigit;
         string secondDigit;
 

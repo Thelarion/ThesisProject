@@ -10,11 +10,14 @@ public class Goal : MonoBehaviour
     [HideInInspector] public OperationController operationController;
     private GameObject playerStop;
     private LevelLoader levelLoader;
+    private ScoreManager scoreManager;
+    public bool QuickTest = false;
     private void Start()
     {
         operationController = GameObject.Find("List").GetComponent<OperationController>();
         playerStop = GameObject.Find("PlayerStop");
         levelLoader = GameObject.Find("LevelLoader").GetComponent<LevelLoader>();
+        scoreManager = GameObject.Find("ScoreSystem").GetComponent<ScoreManager>();
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -31,17 +34,24 @@ public class Goal : MonoBehaviour
             }
             else
             {
-                GetComponent<BoxCollider>().isTrigger = false;
+                // GetComponent<BoxCollider>().isTrigger = false;
                 foreach (var item in missingTones)
                 {
                     print("Missing tone: " + item.GetComponent<ListItemIdentity>().ToneName);
+                }
+
+                if (QuickTest)
+                {
+                    levelLoader.LoadScene();
+                    scoreManager.CurrentScore = 38;
+
                 }
             }
         }
     }
 
-    private void OnTriggerExit(Collider other)
-    {
-        GetComponent<BoxCollider>().isTrigger = true;
-    }
+    // private void OnTriggerExit(Collider other)
+    // {
+    //     GetComponent<BoxCollider>().isTrigger = true;
+    // }
 }
