@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class AudioMenu : MonoBehaviour
@@ -67,7 +68,12 @@ public class AudioMenu : MonoBehaviour
 
     private void Start()
     {
-        if (!MenuInitializedState)
+        if (SceneManager.GetActiveScene().name == "Credits")
+        {
+
+        }
+
+        if (!MenuInitializedState && SceneManager.GetActiveScene().name == "StartSettings")
         {
             AkSoundEngine.SetState("AudioMenuState", "AudioMenuOff");
             Invoke("ReadInclusionWelcome", 1);
@@ -111,7 +117,7 @@ public class AudioMenu : MonoBehaviour
                 Slider slider = toggles[Selection].transform.GetChild(1).GetComponent<Slider>();
                 slider.value = slider.value + 1;
             }
-            else if (toggleName != "Start" && toggleName != "Quit")
+            else if (toggleName != "Start" && toggleName != "Quit" && toggleName != "Resume" && toggleName != "BackToMainMenu")
             {
                 toggles[Selection].isOn = !toggles[Selection].isOn;
             }
@@ -129,7 +135,7 @@ public class AudioMenu : MonoBehaviour
                 Slider slider = toggles[Selection].transform.GetChild(1).GetComponent<Slider>();
                 slider.value = slider.value - 1;
             }
-            else if (toggleName != "Start" && toggleName != "Quit")
+            else if (toggleName != "Start" && toggleName != "Quit" && toggleName != "Resume" && toggleName != "BackToMainMenu")
             {
                 // print("Left");
                 toggles[Selection].isOn = !toggles[Selection].isOn;

@@ -71,6 +71,7 @@ namespace StarterAssets
         bool isGruntCycleOn = false;
         bool isJumping;
         private bool facesObject = false;
+        public LayerMask EnvironmentGruntLayerMask;
         // bool isRunning;
         // public float FootstepDelayTime = 0.3f;
         public AK.Wwise.Event Play_Plyr_Fstp;
@@ -88,7 +89,7 @@ namespace StarterAssets
         [HideInInspector] private ConductorBaton conductorBaton;
         private RaycastHit raycastHit;
         private Transform bumpDetection;
-        bool firstGruntOverState = false;
+        bool AllowGruntState = false;
         float plyr_fstp_duration;
 
 
@@ -243,14 +244,6 @@ namespace StarterAssets
                     deltaTimeMultiplier = Time.deltaTime;
 
                     RotationSpeed = 80f;
-
-                    // Vector2 mousePosition = Mouse.current.position.ReadValue();
-                    // if (prevPosition != mousePosition)
-                    // {
-                    //     prevPosition = mousePosition;
-                    //     deltaTimeMultiplier = 1.0f;
-
-                    // }
                 }
                 else
                 {
@@ -323,15 +316,19 @@ namespace StarterAssets
             // move the player
             _controller.Move(inputDirection.normalized * (_speed * Time.deltaTime) + new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
 
-            if (_input.move.magnitude <= _threshold) firstGruntOverState = false;
+
+            // Reset when player stops moving
+            if (_input.move.magnitude <= _threshold) AllowGruntState = false;
 
 
-            if (_controller.velocity.magnitude <= 0.6f)
+            if (_controller.velocity.magnitude < 0.4f && _input.move.sqrMagnitude == 1f)
             {
 
                 PlayerVelocityZeroDefineState = true;
 
-                if (!isGruntCycleOn && _input.move.sqrMagnitude > _threshold && _controller.velocity.magnitude >= 0.1f)
+                Collider[] hitColliders = Physics.OverlapSphere(transform.position, 1.5f, EnvironmentGruntLayerMask);
+
+                if (!isGruntCycleOn && hitColliders.Length != 0)
                 {
                     StartCoroutine(PlayPlayerGrunts());
                 }
@@ -339,7 +336,7 @@ namespace StarterAssets
             else
             {
                 PlayerVelocityZeroDefineState = false;
-                firstGruntOverState = false;
+                AllowGruntState = false;
 
             }
 
@@ -354,16 +351,15 @@ namespace StarterAssets
         {
             isGruntCycleOn = true;
 
-            if (firstGruntOverState)
+            if (AllowGruntState)
             {
                 Play_Plyr_Grunts.Post(gameObject);
             }
 
             yield return new WaitForSeconds(0.5f); //delay for a period of time
 
-            firstGruntOverState = true;
+            AllowGruntState = true;
             isGruntCycleOn = false;
-
         }
 
         private void JumpAndGravity()

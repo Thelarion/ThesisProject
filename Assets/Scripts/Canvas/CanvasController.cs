@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class CanvasController : MonoBehaviour
 {
     public GameObject GameUI;
+    public GameObject Credits;
     public GameObject MenuStartSettings;
     public Toggle InclusionModeToggle;
     public Sprite InclusionModeOnSprite;
@@ -31,6 +32,10 @@ public class CanvasController : MonoBehaviour
         else if (sceneName == "Forest")
         {
             GameUI.SetActive(true);
+        }
+        else if (sceneName == "Credits")
+        {
+            Credits.SetActive(true);
         }
 
         if (currentScene.name == "StartSettings" && StartMenuManager.InclusionState == true)
