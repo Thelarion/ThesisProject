@@ -834,371 +834,6 @@
 						</SwitchContainer>
 					</ChildrenList>
 				</ActorMixer>
-				<ActorMixer Name="Aiming" ID="{B8BC739B-FB4B-48E8-AFC6-BE301E66D8CA}" ShortID="66461499">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="SFX" ID="{C5B628E2-30E6-49C9-B054-12444DCE2ACC}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<Sound Name="OnTarget" ID="{2450B3B4-6CD3-4471-8B62-BB204A302A4D}" ShortID="656062473">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="OnTarget" ID="{BA84F8EB-2A7A-4DBC-9429-AC1393581266}">
-									<Language>SFX</Language>
-									<AudioFile>OnTarget.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="659330428"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="OnTarget" ID="{BA84F8EB-2A7A-4DBC-9429-AC1393581266}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Frequency Distance" ID="{99AC6BE6-146C-4182-9837-E7FB3AE78D80}" ShortID="359235314">
-							<PropertyList>
-								<Property Name="Inclusion" Type="bool">
-									<ValueList>
-										<Value>False</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="Volume" Type="Real64">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{A9FFF4AD-EEA0-422B-A25B-77620A062160}"/>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<SourcePlugin Name="Synth One" ID="{E417179C-919C-487F-A61F-7AD7830F8F31}" ShortID="345407793" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
-									<PropertyList>
-										<Property Name="BaseFrequency" Type="Real32" Value="600"/>
-										<Property Name="Osc1Level" Type="Real32" Value="-5"/>
-										<Property Name="Osc1Pwm" Type="Real32" Value="0"/>
-										<Property Name="Osc2Level" Type="Real32" Value="-5"/>
-										<Property Name="Osc2Waveform" Type="int32" Value="1"/>
-									</PropertyList>
-									<ObjectLists>
-										<ObjectList Name="RTPC">
-											<Reference>
-												<Local>
-													<RTPC Name="" ID="{5624B8FD-372C-40BE-BE2E-134915864A04}" ShortID="750546924">
-														<PropertyList>
-															<Property Name="PropertyName" Type="string" Value="BaseFrequency"/>
-														</PropertyList>
-														<ReferenceList>
-															<Reference Name="ControlInput">
-																<ObjectRef Name="RTPC_distance_freq" ID="{2CD580FE-F1AA-48B5-BE61-37F43F4AF98D}" WorkUnitID="{F85D63CF-8424-473D-8873-AEDFF484C348}"/>
-															</Reference>
-															<Reference Name="Curve">
-																<Custom>
-																	<Curve Name="" ID="{5B2E3984-56DD-4E8C-BFF8-77C5421F6516}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="5"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>1000</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>1</XPos>
-																				<YPos>300</YPos>
-																				<Flags>0</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>10</XPos>
-																				<YPos>50</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</Custom>
-															</Reference>
-														</ReferenceList>
-													</RTPC>
-												</Local>
-											</Reference>
-											<Reference>
-												<Local>
-													<RTPC Name="" ID="{17011E74-8D6D-4C56-952A-80FAB092701F}" ShortID="832274042">
-														<PropertyList>
-															<Property Name="PropertyName" Type="string" Value="Osc2Pwm"/>
-														</PropertyList>
-														<ReferenceList>
-															<Reference Name="ControlInput">
-																<ObjectRef Name="RTPC_synth_pwm_up_down" ID="{BC431978-D304-4090-BEC8-40C997D41550}" WorkUnitID="{F85D63CF-8424-473D-8873-AEDFF484C348}"/>
-															</Reference>
-															<Reference Name="Curve">
-																<Custom>
-																	<Curve Name="" ID="{27E5D31D-95EB-4652-B682-34DD1D636AE0}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="1"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>0</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>50</XPos>
-																				<YPos>50</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</Custom>
-															</Reference>
-														</ReferenceList>
-													</RTPC>
-												</Local>
-											</Reference>
-										</ObjectList>
-									</ObjectLists>
-									<Language>SFX</Language>
-								</SourcePlugin>
-							</ChildrenList>
-							<ObjectLists>
-								<ObjectList Name="RTPC">
-									<Reference>
-										<Local>
-											<RTPC Name="" ID="{D54FDC16-EEF7-4AB0-AB0C-943893E30B6E}" ShortID="190926176">
-												<PropertyList>
-													<Property Name="PropertyName" Type="string" Value="Volume"/>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="ControlInput">
-														<ObjectRef Name="Voice Volume" ID="{FA9CAB03-94C5-4F3F-B7DC-5D4AD76E010B}" WorkUnitID="{DA0BC45C-13AC-4C6B-AAD7-B15B261FFC04}"/>
-													</Reference>
-													<Reference Name="Curve">
-														<Custom>
-															<Curve Name="" ID="{21811A17-4558-41C1-ACAE-26B2364751AD}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="3"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>21</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>1</XPos>
-																		<YPos>0</YPos>
-																		<Flags>53</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</Custom>
-													</Reference>
-												</ReferenceList>
-											</RTPC>
-										</Local>
-									</Reference>
-								</ObjectList>
-							</ObjectLists>
-							<ActiveSourceList>
-								<ActiveSource Name="Synth One" ID="{E417179C-919C-487F-A61F-7AD7830F8F31}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<ActorMixer Name="Compass" ID="{40D85BDD-A0AF-4C0D-BF3A-7C1AD89E8208}" ShortID="906312254">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="InBetween" ID="{5A08F89C-38F6-4E93-947E-4DF825104FC1}" ShortID="219394271">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="SFX" ID="{C5B628E2-30E6-49C9-B054-12444DCE2ACC}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="LookAngle" ID="{0689FF8F-4BBB-4381-8768-05BD2D4E3019}">
-											<Language>SFX</Language>
-											<AudioFile>LookAngle.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="973202644"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="LookAngle" ID="{0689FF8F-4BBB-4381-8768-05BD2D4E3019}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="North" ID="{304929DE-7DB4-429F-8E89-E556CF902CF4}" ShortID="308997008">
-									<PropertyList>
-										<Property Name="OverridePositioning" Type="bool" Value="True"/>
-										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="SFX" ID="{C5B628E2-30E6-49C9-B054-12444DCE2ACC}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="North" ID="{8E958892-2C25-4BD7-A102-F562734FC0B1}">
-											<Language>SFX</Language>
-											<AudioFile>North.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="115590999"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<PositioningInfo>
-										<Panner Name="" ID="{C193C4B7-EFBE-43F8-A578-4FF6BCCFD4FF}">
-											<PropertyList>
-												<Property Name="PanX" Type="Real64" Value="1.11022302462516E-16"/>
-												<Property Name="PanY" Type="Real64" Value="76.4492753623188"/>
-											</PropertyList>
-										</Panner>
-									</PositioningInfo>
-									<ActiveSourceList>
-										<ActiveSource Name="North" ID="{8E958892-2C25-4BD7-A102-F562734FC0B1}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="South" ID="{AA32ABD0-249A-4560-B4FD-107E8C00FB5B}" ShortID="931116338">
-									<PropertyList>
-										<Property Name="OverridePositioning" Type="bool" Value="True"/>
-										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="SFX" ID="{C5B628E2-30E6-49C9-B054-12444DCE2ACC}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="South" ID="{BB523594-B3E1-4573-8ACB-A9D6D709F625}">
-											<Language>SFX</Language>
-											<AudioFile>South.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="598167937"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<PositioningInfo>
-										<Panner Name="" ID="{BFA7FF35-A435-46C9-8254-229B257B6131}">
-											<PropertyList>
-												<Property Name="PanX" Type="Real64" Value="-0.675675675675675"/>
-												<Property Name="PanY" Type="Real64" Value="-75.3623188405797"/>
-											</PropertyList>
-										</Panner>
-									</PositioningInfo>
-									<ActiveSourceList>
-										<ActiveSource Name="South" ID="{BB523594-B3E1-4573-8ACB-A9D6D709F625}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="West" ID="{19F047D6-DB71-4926-B9D4-A8ECC901168D}" ShortID="257505319">
-									<PropertyList>
-										<Property Name="OverridePositioning" Type="bool" Value="True"/>
-										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="SFX" ID="{C5B628E2-30E6-49C9-B054-12444DCE2ACC}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="West" ID="{56C27A7A-E7B3-49A4-BEA8-F1CB4EF0EB86}">
-											<Language>SFX</Language>
-											<AudioFile>West.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="805075098"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<PositioningInfo>
-										<Panner Name="" ID="{58B41278-41C0-4FF8-A111-76FC480787B2}">
-											<PropertyList>
-												<Property Name="PanX" Type="Real64" Value="-94.5945945945946"/>
-												<Property Name="PanY" Type="Real64" Value="-1.44927536231884"/>
-											</PropertyList>
-										</Panner>
-									</PositioningInfo>
-									<ActiveSourceList>
-										<ActiveSource Name="West" ID="{56C27A7A-E7B3-49A4-BEA8-F1CB4EF0EB86}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="East" ID="{3F05C5DF-5D3E-4FFA-9EFA-ECDA9825B44F}" ShortID="859883022">
-									<PropertyList>
-										<Property Name="OverridePositioning" Type="bool" Value="True"/>
-										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="SFX" ID="{C5B628E2-30E6-49C9-B054-12444DCE2ACC}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="East" ID="{7C38D395-0229-49F1-B386-6C9105DC2602}">
-											<Language>SFX</Language>
-											<AudioFile>East.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="1051679878"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<PositioningInfo>
-										<Panner Name="" ID="{5A4B15D9-3818-44E8-A2FF-C47701C2F9F2}">
-											<PropertyList>
-												<Property Name="PanX" Type="Real64" Value="83.4459459459459"/>
-												<Property Name="PanY" Type="Real64" Value="1.81159420289857"/>
-											</PropertyList>
-										</Panner>
-									</PositioningInfo>
-									<ActiveSourceList>
-										<ActiveSource Name="East" ID="{7C38D395-0229-49F1-B386-6C9105DC2602}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</ActorMixer>
-					</ChildrenList>
-				</ActorMixer>
 				<ActorMixer Name="Player" ID="{A5E27BB5-C57B-4FAB-9718-34940A3B249B}" ShortID="971419426">
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -2261,11 +1896,342 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<ActorMixer Name="AudioCompass" ID="{40D85BDD-A0AF-4C0D-BF3A-7C1AD89E8208}" ShortID="906312254">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{C5B628E2-30E6-49C9-B054-12444DCE2ACC}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="InBetween" ID="{5A08F89C-38F6-4E93-947E-4DF825104FC1}" ShortID="219394271">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{C5B628E2-30E6-49C9-B054-12444DCE2ACC}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LookAngle" ID="{0689FF8F-4BBB-4381-8768-05BD2D4E3019}">
+											<Language>SFX</Language>
+											<AudioFile>LookAngle.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="973202644"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="LookAngle" ID="{0689FF8F-4BBB-4381-8768-05BD2D4E3019}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="North" ID="{304929DE-7DB4-429F-8E89-E556CF902CF4}" ShortID="308997008">
+									<PropertyList>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{C5B628E2-30E6-49C9-B054-12444DCE2ACC}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="North" ID="{8E958892-2C25-4BD7-A102-F562734FC0B1}">
+											<Language>SFX</Language>
+											<AudioFile>North.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="115590999"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{C193C4B7-EFBE-43F8-A578-4FF6BCCFD4FF}">
+											<PropertyList>
+												<Property Name="PanX" Type="Real64" Value="1.11022302462516E-16"/>
+												<Property Name="PanY" Type="Real64" Value="76.4492753623188"/>
+											</PropertyList>
+										</Panner>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="North" ID="{8E958892-2C25-4BD7-A102-F562734FC0B1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="South" ID="{AA32ABD0-249A-4560-B4FD-107E8C00FB5B}" ShortID="931116338">
+									<PropertyList>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{C5B628E2-30E6-49C9-B054-12444DCE2ACC}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="South" ID="{BB523594-B3E1-4573-8ACB-A9D6D709F625}">
+											<Language>SFX</Language>
+											<AudioFile>South.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="598167937"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{BFA7FF35-A435-46C9-8254-229B257B6131}">
+											<PropertyList>
+												<Property Name="PanX" Type="Real64" Value="-0.675675675675675"/>
+												<Property Name="PanY" Type="Real64" Value="-75.3623188405797"/>
+											</PropertyList>
+										</Panner>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="South" ID="{BB523594-B3E1-4573-8ACB-A9D6D709F625}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="West" ID="{19F047D6-DB71-4926-B9D4-A8ECC901168D}" ShortID="257505319">
+									<PropertyList>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{C5B628E2-30E6-49C9-B054-12444DCE2ACC}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="West" ID="{56C27A7A-E7B3-49A4-BEA8-F1CB4EF0EB86}">
+											<Language>SFX</Language>
+											<AudioFile>West.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="805075098"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{58B41278-41C0-4FF8-A111-76FC480787B2}">
+											<PropertyList>
+												<Property Name="PanX" Type="Real64" Value="-94.5945945945946"/>
+												<Property Name="PanY" Type="Real64" Value="-1.44927536231884"/>
+											</PropertyList>
+										</Panner>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="West" ID="{56C27A7A-E7B3-49A4-BEA8-F1CB4EF0EB86}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="East" ID="{3F05C5DF-5D3E-4FFA-9EFA-ECDA9825B44F}" ShortID="859883022">
+									<PropertyList>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{C5B628E2-30E6-49C9-B054-12444DCE2ACC}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="East" ID="{7C38D395-0229-49F1-B386-6C9105DC2602}">
+											<Language>SFX</Language>
+											<AudioFile>East.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1051679878"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{5A4B15D9-3818-44E8-A2FF-C47701C2F9F2}">
+											<PropertyList>
+												<Property Name="PanX" Type="Real64" Value="83.4459459459459"/>
+												<Property Name="PanY" Type="Real64" Value="1.81159420289857"/>
+											</PropertyList>
+										</Panner>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="East" ID="{7C38D395-0229-49F1-B386-6C9105DC2602}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</ActorMixer>
+						<ActorMixer Name="Aiming" ID="{B8BC739B-FB4B-48E8-AFC6-BE301E66D8CA}" ShortID="66461499">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{C5B628E2-30E6-49C9-B054-12444DCE2ACC}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SwitchContainer Name="OnTarget" ID="{B956B7E5-F336-4B34-ABAF-EDF6DFE946AC}" ShortID="206888464">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="PitchC" ID="{65757786-5769-42F4-B302-0EC597680AB3}" WorkUnitID="{3366C92C-EFE1-45C7-A10A-B3FAD73419FC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="OnTarget" ID="{6AC62666-2348-4A65-8287-90F1F7F2E828}" WorkUnitID="{3366C92C-EFE1-45C7-A10A-B3FAD73419FC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="OnTarget_PitchA" ID="{4D1E5E15-B516-4EA6-8D0D-0BCF01B94EBA}" ShortID="42566515">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="OnTarget_PitchA" ID="{A15693FD-55FD-482E-814B-BE31C486494C}">
+													<Language>SFX</Language>
+													<AudioFile>OnTarget\OnTarget_PitchA.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="363402405"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="OnTarget_PitchA" ID="{A15693FD-55FD-482E-814B-BE31C486494C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="OnTarget_PitchB" ID="{C7E7C3CD-2AF0-41BD-851F-97EE6DFACC4E}" ShortID="215038694">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="OnTarget_PitchB" ID="{5033589E-BC8E-444D-ACDF-D48404D29002}">
+													<Language>SFX</Language>
+													<AudioFile>OnTarget\OnTarget_PitchB.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="515046687"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="OnTarget_PitchB" ID="{5033589E-BC8E-444D-ACDF-D48404D29002}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="OnTarget_PitchC" ID="{CD9C6AC9-CF71-4D95-88F6-7A74A1929D79}" ShortID="390952132">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="OnTarget_PitchC" ID="{98CAD71B-9723-4C7C-A503-E6D51E8B58E8}">
+													<Language>SFX</Language>
+													<AudioFile>OnTarget\OnTarget_PitchC.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="532211832"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="OnTarget_PitchC" ID="{98CAD71B-9723-4C7C-A503-E6D51E8B58E8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="OnTarget_PitchE" ID="{017B6BEB-3C79-42C4-B0A4-8DD73925FCE8}" ShortID="419189573">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="OnTarget_PitchE" ID="{4504CF0A-EDB8-42E2-87C1-BE4981F8AF4E}">
+													<Language>SFX</Language>
+													<AudioFile>OnTarget\OnTarget_PitchE.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="681487044"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="OnTarget_PitchE" ID="{4504CF0A-EDB8-42E2-87C1-BE4981F8AF4E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="OnTarget_PitchA" ID="{4D1E5E15-B516-4EA6-8D0D-0BCF01B94EBA}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="OnTarget_PitchC" ID="{CD9C6AC9-CF71-4D95-88F6-7A74A1929D79}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="OnTarget_PitchB" ID="{C7E7C3CD-2AF0-41BD-851F-97EE6DFACC4E}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="OnTarget_PitchE" ID="{017B6BEB-3C79-42C4-B0A4-8DD73925FCE8}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="PitchB" ID="{0A202946-4AB0-40F5-B14A-F016B3109D16}"/>
+												<ItemList>
+													<ItemRef Name="OnTarget_PitchB" ID="{C7E7C3CD-2AF0-41BD-851F-97EE6DFACC4E}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="PitchE" ID="{B87DF266-C314-46C3-A9BD-88604B6320F3}"/>
+												<ItemList>
+													<ItemRef Name="OnTarget_PitchE" ID="{017B6BEB-3C79-42C4-B0A4-8DD73925FCE8}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="PitchC" ID="{65757786-5769-42F4-B302-0EC597680AB3}"/>
+												<ItemList>
+													<ItemRef Name="OnTarget_PitchC" ID="{CD9C6AC9-CF71-4D95-88F6-7A74A1929D79}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="PitchA" ID="{BEB698A7-6745-49AD-BD7E-FC25B1ADB065}"/>
+												<ItemList>
+													<ItemRef Name="OnTarget_PitchA" ID="{4D1E5E15-B516-4EA6-8D0D-0BCF01B94EBA}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+							</ChildrenList>
+						</ActorMixer>
 					</ChildrenList>
 				</ActorMixer>
 				<Sound Name="TestClick_lp" ID="{91E440D7-AD63-4168-962A-B94663B6D26F}" ShortID="242125386">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -2508,7 +2474,7 @@
 						</Folder>
 					</ChildrenList>
 				</ActorMixer>
-				<RandomSequenceContainer Name="Indicator" ID="{5559B591-4098-4BDF-BB79-62F67AC51D1B}" ShortID="572960358">
+				<RandomSequenceContainer Name="DirectionIndicator" ID="{5559B591-4098-4BDF-BB79-62F67AC51D1B}" ShortID="572960358">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="CenterPercentage" Type="int32">

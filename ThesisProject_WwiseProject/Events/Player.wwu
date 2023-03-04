@@ -25,7 +25,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Folder Name="Look" ID="{2093EF22-F39F-48F3-83D4-05B2C3CCCA84}" ShortID="462771043">
+				<Folder Name="AudioCompass" ID="{2093EF22-F39F-48F3-83D4-05B2C3CCCA84}" ShortID="462771043">
 					<ChildrenList>
 						<Event Name="Play_InBetween" ID="{697AEC68-1434-41AD-B03A-B69D3EA99033}">
 							<ChildrenList>
@@ -84,6 +84,17 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Play_OnTarget" ID="{C1091B34-059C-49D2-BB23-3B4E3D366514}">
+					<ChildrenList>
+						<Action Name="" ID="{74B3CA67-43C8-4154-BEE1-8ABAE20953D7}" ShortID="330827111">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="OnTarget" ID="{B956B7E5-F336-4B34-ABAF-EDF6DFE946AC}" WorkUnitID="{690ABE9D-D445-44AA-AE0F-2C6B0F3C9C08}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -248,17 +248,6 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_OnTarget" ID="{C1091B34-059C-49D2-BB23-3B4E3D366514}">
-							<ChildrenList>
-								<Action Name="" ID="{74B3CA67-43C8-4154-BEE1-8ABAE20953D7}" ShortID="330827111">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="OnTarget" ID="{2450B3B4-6CD3-4471-8B62-BB204A302A4D}" WorkUnitID="{690ABE9D-D445-44AA-AE0F-2C6B0F3C9C08}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 					</ChildrenList>
 				</Folder>
 				<Event Name="Play_NoteWrangle" ID="{7FF30FE3-7A31-4BEB-A7BF-34886F1F15C5}">
@@ -277,7 +266,7 @@
 						<Action Name="" ID="{07A2D5E9-B804-4037-A8EA-B9C5FEF5298A}" ShortID="1038419566">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Indicator" ID="{5559B591-4098-4BDF-BB79-62F67AC51D1B}" WorkUnitID="{690ABE9D-D445-44AA-AE0F-2C6B0F3C9C08}"/>
+									<ObjectRef Name="DirectionIndicator" ID="{5559B591-4098-4BDF-BB79-62F67AC51D1B}" WorkUnitID="{690ABE9D-D445-44AA-AE0F-2C6B0F3C9C08}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

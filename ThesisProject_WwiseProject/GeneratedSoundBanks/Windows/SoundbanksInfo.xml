@@ -133,6 +133,14 @@
 						<Switch Id="147423" Name="Track1"/>
 					</Switches>
 				</SwitchGroup>
+				<SwitchGroup Id="2048081433" Name="OnTarget">
+					<Switches>
+						<Switch Id="339713608" Name="PitchC"/>
+						<Switch Id="339713609" Name="PitchB"/>
+						<Switch Id="339713610" Name="PitchA"/>
+						<Switch Id="339713614" Name="PitchE"/>
+					</Switches>
+				</SwitchGroup>
 				<SwitchGroup Id="2429736717" Name="Melodies">
 					<Switches>
 						<Switch Id="1685527108" Name="M2"/>
@@ -185,7 +193,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{A34EA639-D85E-A9A2-8738-670FEF13BC79}">
+		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{524606FE-1161-13F5-1A6D-FC4C700B6138}">
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
 			<Media>
@@ -419,7 +427,7 @@
 				</File>
 				<File Id="331737057" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TestClick.wav</ShortName>
-					<CachePath>SFX/TestClick_10C4C929.wem</CachePath>
+					<CachePath>SFX/TestClick_D79FB2B7.wem</CachePath>
 				</File>
 				<File Id="332098808" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Water\Plyr_Fstps_Water_03.wav</ShortName>
@@ -448,6 +456,10 @@
 				<File Id="360094241" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Water\Plyr_Fstps_Water_06.wav</ShortName>
 					<CachePath>SFX/Water/Plyr_Fstps_Water_06_10C4C929.wem</CachePath>
+				</File>
+				<File Id="363402405" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>OnTarget\OnTarget_PitchA.wav</ShortName>
+					<CachePath>SFX/OnTarget/OnTarget_PitchA_10C4C929.wem</CachePath>
 				</File>
 				<File Id="364578896" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>M1_A2_P3.wav</ShortName>
@@ -549,6 +561,10 @@
 					<ShortName>Footsteps\Dirt\FS_Dirt_01.wav</ShortName>
 					<CachePath>SFX/Footsteps/Dirt/FS_Dirt_01_10C4C929.wem</CachePath>
 				</File>
+				<File Id="515046687" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>OnTarget\OnTarget_PitchB.wav</ShortName>
+					<CachePath>SFX/OnTarget/OnTarget_PitchB_10C4C929.wem</CachePath>
+				</File>
 				<File Id="523980979" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TreeBump\Dropping Wood 08.wav</ShortName>
 					<CachePath>SFX/TreeBump/Dropping Wood 08_3F75BDB9.wem</CachePath>
@@ -556,6 +572,10 @@
 				<File Id="530408079" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>G3b.wav</ShortName>
 					<CachePath>SFX/G3b_10C4C929.wem</CachePath>
+				</File>
+				<File Id="532211832" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>OnTarget\OnTarget_PitchC.wav</ShortName>
+					<CachePath>SFX/OnTarget/OnTarget_PitchC_10C4C929.wem</CachePath>
 				</File>
 				<File Id="538381605" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>DistanceCount\90.wav</ShortName>
@@ -665,10 +685,6 @@
 					<ShortName>26211 Silence in woods loop-full.wav</ShortName>
 					<CachePath>SFX/26211 Silence in woods loop-full_9EDFC787.wem</CachePath>
 				</File>
-				<File Id="659330428" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>OnTarget.wav</ShortName>
-					<CachePath>SFX/OnTarget_D79FB2B7.wem</CachePath>
-				</File>
 				<File Id="664643821" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>InstructionPlaceholder2.wav</ShortName>
 					<CachePath>Voices/English(US)/InstructionPlaceholder2_10C4C929.wem</CachePath>
@@ -684,6 +700,10 @@
 				<File Id="675839683" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>StoneBump\StoneBump3.wav</ShortName>
 					<CachePath>SFX/StoneBump/StoneBump3_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="681487044" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>OnTarget\OnTarget_PitchE.wav</ShortName>
+					<CachePath>SFX/OnTarget/OnTarget_PitchE_10C4C929.wem</CachePath>
 				</File>
 				<File Id="686006542" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>A4#.wav</ShortName>
@@ -1343,6 +1363,7 @@
 						<MediaRef Id="431263045"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1027751982" Name="New_Event_01" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="278617630" Name="Play_Ambience" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="655126732"/>
@@ -1614,10 +1635,33 @@
 						<MediaRef Id="1045015971"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2702745606" Name="Play_OnTarget" DurationType="Infinite">
-					<MediaRefs>
-						<MediaRef Id="659330428"/>
-					</MediaRefs>
+				<Event Id="2702745606" Name="Play_OnTarget" DurationType="OneShot" DurationMin="2" DurationMax="2">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2048081433" Id="339713609"/>
+							<MediaRefs>
+								<MediaRef Id="515046687"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2048081433" Id="339713614"/>
+							<MediaRefs>
+								<MediaRef Id="681487044"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2048081433" Id="339713608" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="532211832"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2048081433" Id="339713610"/>
+							<MediaRefs>
+								<MediaRef Id="363402405"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
 				<Event Id="3015844381" Name="Play_PlayerFoot" DurationType="OneShot" DurationMin="0.386644" DurationMax="1">
 					<SwitchContainers>
@@ -1729,7 +1773,7 @@
 						<MediaRef Id="1055002628"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="83581882" Name="Play_TestClick" DurationType="OneShot" DurationMin="1" DurationMax="1">
+				<Event Id="83581882" Name="Play_TestClick" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="331737057"/>
 					</MediaRefs>
@@ -1832,6 +1876,14 @@
 						<Switch Id="147423" Name="Track1"/>
 					</Switches>
 				</SwitchGroup>
+				<SwitchGroup Id="2048081433" Name="OnTarget">
+					<Switches>
+						<Switch Id="339713608" Name="PitchC"/>
+						<Switch Id="339713609" Name="PitchB"/>
+						<Switch Id="339713610" Name="PitchA"/>
+						<Switch Id="339713614" Name="PitchE"/>
+					</Switches>
+				</SwitchGroup>
 				<SwitchGroup Id="3099313910" Name="ButtonReadAloud">
 					<Switches>
 						<Switch Id="414646191" Name="VoiceVolume"/>
@@ -1878,5 +1930,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{C9E358CA-4FCB-6465-D997-0AE07646769D}</FileHash>
+	<FileHash>{FBA0AFE8-41DE-2D93-D808-56F497FE3607}</FileHash>
 </SoundBanksInfo>

@@ -85,6 +85,14 @@
 						<Switch Name="I6" ID="{9DC0F9E9-E652-4DF8-A19B-B95A0EBD911D}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="OnTarget" ID="{6AC62666-2348-4A65-8287-90F1F7F2E828}">
+					<ChildrenList>
+						<Switch Name="PitchC" ID="{65757786-5769-42F4-B302-0EC597680AB3}"/>
+						<Switch Name="PitchB" ID="{0A202946-4AB0-40F5-B14A-F016B3109D16}"/>
+						<Switch Name="PitchE" ID="{B87DF266-C314-46C3-A9BD-88604B6320F3}"/>
+						<Switch Name="PitchA" ID="{BEB698A7-6745-49AD-BD7E-FC25B1ADB065}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

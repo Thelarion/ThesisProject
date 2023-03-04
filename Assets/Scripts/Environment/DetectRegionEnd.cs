@@ -15,20 +15,25 @@ public class DetectRegionEnd : MonoBehaviour
     [SerializeField] bool regionEndState = false;
     ArrayList triggeredRegionEndIDs = new ArrayList();
     ArrayList triggeredRegionEnds = new ArrayList();
+    private bool isSemaphore;
 
     private void Update()
     {
         CheckForRegionEndCollision();
 
-        // print(triggeredRegionEnds.Count);
-        if (triggeredRegionEnds.Count > 0)
+        if (triggeredRegionEnds.Count > 0 && !isSemaphore)
         {
-            foreach (GameObject item in triggeredRegionEnds)
-            {
-                print(item.name);
-            }
+            StartCoroutine(EndZoneAnnouncement());
         }
 
+    }
+
+    IEnumerator EndZoneAnnouncement()
+    {
+        isSemaphore = true;
+        print("EndZone");
+        yield return new WaitForSeconds(5f);
+        isSemaphore = false;
     }
 
     public void CheckForRegionEndCollision()

@@ -35,6 +35,11 @@ public class AimManager : MonoBehaviour
         {
             if (hitOnTargetCheck.collider.tag == "Target")
             {
+
+                AkSoundEngine.SetSwitch("OnTarget", "Pitch" + hitOnTargetCheck.collider.name[0], gameObject);
+
+                print("Pitch" + hitOnTargetCheck.collider.name[0]);
+
                 setAimOnTargetStatus();
             }
             // If ray hits objects that are not targets

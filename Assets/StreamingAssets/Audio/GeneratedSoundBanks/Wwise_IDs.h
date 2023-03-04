@@ -79,6 +79,7 @@ namespace AK
         static const AkUniqueID MELODYSTATEOFF = 2810620855U;
         static const AkUniqueID MELODYSTATEON = 747211651U;
         static const AkUniqueID MISS = 3062523241U;
+        static const AkUniqueID NEW_EVENT_01 = 1027751982U;
         static const AkUniqueID PLAY_AMBIENCE = 278617630U;
         static const AkUniqueID PLAY_BEACONLOCK = 3923622767U;
         static const AkUniqueID PLAY_BEACONLR = 194014728U;
@@ -291,6 +292,19 @@ namespace AK
                 static const AkUniqueID G = 84696440U;
             } // namespace SWITCH
         } // namespace NOTES
+
+        namespace ONTARGET
+        {
+            static const AkUniqueID GROUP = 2048081433U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID PITCHA = 339713610U;
+                static const AkUniqueID PITCHB = 339713609U;
+                static const AkUniqueID PITCHC = 339713608U;
+                static const AkUniqueID PITCHE = 339713614U;
+            } // namespace SWITCH
+        } // namespace ONTARGET
 
         namespace TRACKNAMES
         {
