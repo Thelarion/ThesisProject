@@ -61,6 +61,8 @@
 						<Switch Name="BackToMainMenu" ID="{26A0D7B1-489E-4495-837C-92B980A5AE04}"/>
 						<Switch Name="Resume" ID="{E69F7961-A05B-41B1-836E-4C8BFF89428D}"/>
 						<Switch Name="WelcomeInclusion" ID="{66B7A692-9AD3-4E15-B4B2-8A055BFA3CBF}"/>
+						<Switch Name="ListenAgain" ID="{0D8296C5-E604-4E3B-A4FE-7C2B35152F5F}"/>
+						<Switch Name="Continue" ID="{2769B8F7-9051-480E-9DA1-521B20E9C70A}"/>
 					</ChildrenList>
 				</SwitchGroup>
 				<SwitchGroup Name="InclusionModeToggle" ID="{295A64D3-6D0F-4BEC-9654-5A33B7D556FD}">

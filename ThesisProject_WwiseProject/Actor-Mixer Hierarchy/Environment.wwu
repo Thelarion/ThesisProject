@@ -817,6 +817,128 @@
 								</Sound>
 							</ChildrenList>
 						</ActorMixer>
+						<RandomSequenceContainer Name="Step_GrassFlowers" ID="{1B0DBEA3-9A3F-41C5-B336-84FAB332124F}" ShortID="874094084">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Step_GrassFlowers_01" ID="{B9C840D7-461E-4153-8665-C9B636899477}" ShortID="622533541">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Step_GrassFlowers_01" ID="{01D4AAEC-C942-4034-96C2-8C61BCCABC74}">
+											<Language>SFX</Language>
+											<AudioFile>SteppingFlowersGrass\Step_GrassFlowers_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="877601672"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Step_GrassFlowers_01" ID="{01D4AAEC-C942-4034-96C2-8C61BCCABC74}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Step_GrassFlowers_02" ID="{AB83A429-2AA8-4E3B-B6A7-289D16C9AE28}" ShortID="251578842">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Step_GrassFlowers_02" ID="{97C7C65A-6E9A-44D4-B9CB-816362E0EE49}">
+											<Language>SFX</Language>
+											<AudioFile>SteppingFlowersGrass\Step_GrassFlowers_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="15978427"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Step_GrassFlowers_02" ID="{97C7C65A-6E9A-44D4-B9CB-816362E0EE49}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Step_GrassFlowers_03" ID="{D38952C1-782F-4DA6-8483-E0AA38BFECAB}" ShortID="626542257">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Step_GrassFlowers_03" ID="{CAE811CB-6E09-4318-8A8D-9B2B74A339BF}">
+											<Language>SFX</Language>
+											<AudioFile>SteppingFlowersGrass\Step_GrassFlowers_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="52751137"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Step_GrassFlowers_03" ID="{CAE811CB-6E09-4318-8A8D-9B2B74A339BF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Step_GrassFlowers_04" ID="{86E1F8F3-2BB1-4D0D-A2F8-E90C8E682E68}" ShortID="387843699">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Step_GrassFlowers_04" ID="{362E3BB6-443D-4B01-A453-4B9CAD43255C}">
+											<Language>SFX</Language>
+											<AudioFile>SteppingFlowersGrass\Step_GrassFlowers_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="748943891"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Step_GrassFlowers_04" ID="{362E3BB6-443D-4B01-A453-4B9CAD43255C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Step_GrassFlowers_05" ID="{68DE15B5-6203-4BB9-8287-11391CB9411C}" ShortID="247992170">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Step_GrassFlowers_05" ID="{EA711BAA-127F-44C2-A4B8-0D30870E3823}">
+											<Language>SFX</Language>
+											<AudioFile>SteppingFlowersGrass\Step_GrassFlowers_05.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="29792636"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Step_GrassFlowers_05" ID="{EA711BAA-127F-44C2-A4B8-0D30870E3823}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

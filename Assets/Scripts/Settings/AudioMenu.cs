@@ -117,7 +117,7 @@ public class AudioMenu : MonoBehaviour
                 Slider slider = toggles[Selection].transform.GetChild(1).GetComponent<Slider>();
                 slider.value = slider.value + 1;
             }
-            else if (toggleName != "Start" && toggleName != "Quit" && toggleName != "Resume" && toggleName != "BackToMainMenu")
+            else if (toggleName != "Start" && toggleName != "Quit" && toggleName != "Resume" && toggleName != "BackToMainMenu" && toggleName != "Continue" && toggleName != "ListenAgain")
             {
                 toggles[Selection].isOn = !toggles[Selection].isOn;
             }
@@ -135,7 +135,7 @@ public class AudioMenu : MonoBehaviour
                 Slider slider = toggles[Selection].transform.GetChild(1).GetComponent<Slider>();
                 slider.value = slider.value - 1;
             }
-            else if (toggleName != "Start" && toggleName != "Quit" && toggleName != "Resume" && toggleName != "BackToMainMenu")
+            else if (toggleName != "Start" && toggleName != "Quit" && toggleName != "Resume" && toggleName != "BackToMainMenu" && toggleName != "Continue" && toggleName != "ListenAgain")
             {
                 // print("Left");
                 toggles[Selection].isOn = !toggles[Selection].isOn;

@@ -61,6 +61,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Step_GrassFlowers" ID="{38694FB7-C63E-461B-BC41-B954B6B7A29E}">
+					<ChildrenList>
+						<Action Name="" ID="{E99A591E-6F01-489D-8BA1-007E78EC20E7}" ShortID="29098207">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Step_GrassFlowers" ID="{1B0DBEA3-9A3F-41C5-B336-84FAB332124F}" WorkUnitID="{C9AE1A60-1F64-439A-AD46-9C53EF882DCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

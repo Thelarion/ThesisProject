@@ -34,6 +34,7 @@
 				<Property Name="Event Action List\{374B5146-E64A-4974-B8AF-3951C3EEBB64}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{37D82D1C-1298-41CD-B71C-58AEA3C521B5}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{37DFE735-BDB1-4E39-A80E-2BF0F81A02D7}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{38694FB7-C63E-461B-BC41-B954B6B7A29E}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{3AB1EEBD-001C-4B4D-BB83-C89F30542A22}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{3E2A3D82-5EBD-4665-8356-59839DF25576}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{3ED95E17-02C4-45DC-B219-8BA7925BF0EA}\x64_Expand States" Type="string" Value=""/>
@@ -173,7 +174,7 @@
 				<Property Name="Interactive Music\x64_{8C7D9FF0-310C-4EF9-92D9-21B9CD5555CC} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwPwAAAAAAuCpAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="Interactive Music\x64_{EC7A077F-5664-40B9-A7CF-FFEA87AFD018} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwPwAAAAAA2CZAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="Interactive Music\x64_{ECD23279-D7A6-4C9B-AF9D-7AF3F15092A7} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwP9MESnK01V5AAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
-				<Property Name="ListView\SearchText" Type="string" Value=""/>
+				<Property Name="ListView\SearchText" Type="string" Value="$ &quot;\Actor-Mixer Hierarchy\SFX\Bells\Bells&quot;"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
 				<Property Name="MeterView\MeterMode1Viewpoint0" Type="int32" Value="1"/>

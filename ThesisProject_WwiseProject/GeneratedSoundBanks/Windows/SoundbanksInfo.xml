@@ -157,8 +157,10 @@
 						<Switch Id="984851287" Name="WelcomeInclusion"/>
 						<Switch Id="1281810935" Name="Start"/>
 						<Switch Id="1343002924" Name="InclusionModeToggle"/>
+						<Switch Id="1937078684" Name="ListenAgain"/>
 						<Switch Id="2346531308" Name="MusicVolume"/>
 						<Switch Id="2734938552" Name="ArrowKeys"/>
+						<Switch Id="3405713266" Name="Continue"/>
 						<Switch Id="3490598729" Name="BackToMainMenu"/>
 						<Switch Id="3569097980" Name="AudioVisualiserToggle"/>
 						<Switch Id="3930794392" Name="Quit"/>
@@ -193,7 +195,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{524606FE-1161-13F5-1A6D-FC4C700B6138}">
+		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{F6761824-D4D9-3C19-A810-6DB21078939A}">
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
 			<Media>
@@ -209,6 +211,10 @@
 					<ShortName>G4#.wav</ShortName>
 					<CachePath>SFX/G4#_10C4C929.wem</CachePath>
 				</File>
+				<File Id="15978427" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SteppingFlowersGrass\Step_GrassFlowers_02.wav</ShortName>
+					<CachePath>SFX/SteppingFlowersGrass/Step_GrassFlowers_02_3F75BDB9.wem</CachePath>
+				</File>
 				<File Id="19019098" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Concrete\FS_Concrete_01.wav</ShortName>
 					<CachePath>SFX/Footsteps/Concrete/FS_Concrete_01_10C4C929.wem</CachePath>
@@ -221,6 +227,10 @@
 					<ShortName>O4\D4.wav</ShortName>
 					<CachePath>SFX/O4/D4_10C4C929.wem</CachePath>
 				</File>
+				<File Id="29792636" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SteppingFlowersGrass\Step_GrassFlowers_05.wav</ShortName>
+					<CachePath>SFX/SteppingFlowersGrass/Step_GrassFlowers_05_3F75BDB9.wem</CachePath>
+				</File>
 				<File Id="33821008" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>PlingFail.wav</ShortName>
 					<CachePath>SFX/PlingFail_10C4C929.wem</CachePath>
@@ -232,6 +242,10 @@
 				<File Id="45056509" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>StoneBump\StoneBump4.wav</ShortName>
 					<CachePath>SFX/StoneBump/StoneBump4_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="52751137" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SteppingFlowersGrass\Step_GrassFlowers_03.wav</ShortName>
+					<CachePath>SFX/SteppingFlowersGrass/Step_GrassFlowers_03_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="59830991" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Bells.wav</ShortName>
@@ -405,6 +419,10 @@
 					<ShortName>D3b.wav</ShortName>
 					<CachePath>SFX/D3b_10C4C929.wem</CachePath>
 				</File>
+				<File Id="294881190" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>MenuOpen.wav</ShortName>
+					<CachePath>Voices/English(US)/MenuOpen_10C4C929.wem</CachePath>
+				</File>
 				<File Id="295788518" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>LeavesRustlingIndicator\Leaves_Rustling_02.wav</ShortName>
 					<CachePath>SFX/LeavesRustlingIndicator/Leaves_Rustling_02_10C4C929.wem</CachePath>
@@ -553,6 +571,10 @@
 					<ShortName>ButtonReadAloud\AudioVisualiserOn.wav</ShortName>
 					<CachePath>SFX/ButtonReadAloud/AudioVisualiserOn_10C4C929.wem</CachePath>
 				</File>
+				<File Id="499139477" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>MenuClose.wav</ShortName>
+					<CachePath>Voices/English(US)/MenuClose_10C4C929.wem</CachePath>
+				</File>
 				<File Id="509973139" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>DistanceCount\70.wav</ShortName>
 					<CachePath>SFX/DistanceCount/70_10C4C929.wem</CachePath>
@@ -621,9 +643,9 @@
 					<ShortName>Grass\Plyr_Fstps_Grass_08.wav</ShortName>
 					<CachePath>SFX/Grass/Plyr_Fstps_Grass_08_10C4C929.wem</CachePath>
 				</File>
-				<File Id="584492099" Language="SFX" Streaming="false" Location="Memory">
+				<File Id="584492100" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>ButtonReadAloud\MusicVolume.wav</ShortName>
-					<CachePath>SFX/ButtonReadAloud/MusicVolume_10C4C929.wem</CachePath>
+					<CachePath>Voices/English(US)/ButtonReadAloud/MusicVolume_10C4C929.wem</CachePath>
 				</File>
 				<File Id="592682436" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>C3_E3_A2_B3_C3_v5.wav</ShortName>
@@ -733,6 +755,10 @@
 					<ShortName>Footsteps\Tile\FS_Tile_01.wav</ShortName>
 					<CachePath>SFX/Footsteps/Tile/FS_Tile_01_10C4C929.wem</CachePath>
 				</File>
+				<File Id="748943891" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SteppingFlowersGrass\Step_GrassFlowers_04.wav</ShortName>
+					<CachePath>SFX/SteppingFlowersGrass/Step_GrassFlowers_04_3F75BDB9.wem</CachePath>
+				</File>
 				<File Id="755696122" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O4\F4.wav</ShortName>
 					<CachePath>SFX/O4/F4_10C4C929.wem</CachePath>
@@ -832,6 +858,10 @@
 				<File Id="872404735" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>C3_E3_A2_B3_C3_v3.wav</ShortName>
 					<CachePath>SFX/C3_E3_A2_B3_C3_v3_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="877601672" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SteppingFlowersGrass\Step_GrassFlowers_01.wav</ShortName>
+					<CachePath>SFX/SteppingFlowersGrass/Step_GrassFlowers_01_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="880038709" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grass\Plyr_Fstps_Grass_09.wav</ShortName>
@@ -1363,7 +1393,6 @@
 						<MediaRef Id="431263045"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1027751982" Name="New_Event_01" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="278617630" Name="Play_Ambience" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="655126732"/>
@@ -1431,7 +1460,7 @@
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="3099313910" Id="2346531308"/>
 							<MediaRefs>
-								<MediaRef Id="584492099"/>
+								<MediaRef Id="584492100"/>
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
@@ -1499,6 +1528,12 @@
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3099313910" Id="1937078684"/>
+							<MediaRefs>
+								<MediaRef Id="294881190"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="3099313910" Id="4024813983"/>
 							<MediaRefs>
 								<MediaRef Id="370788259"/>
@@ -1514,6 +1549,12 @@
 							<SwitchValue GroupType="Switch" GroupId="3099313910" Id="3930794392"/>
 							<MediaRefs>
 								<MediaRef Id="561107131"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3099313910" Id="3405713266"/>
+							<MediaRefs>
+								<MediaRef Id="499139477"/>
 							</MediaRefs>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -1759,6 +1800,15 @@
 						<MediaRef Id="598167937"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3460539825" Name="Play_Step_GrassFlowers" DurationType="OneShot" DurationMin="0.4375" DurationMax="1.597125">
+					<MediaRefs>
+						<MediaRef Id="15978427"/>
+						<MediaRef Id="29792636"/>
+						<MediaRef Id="52751137"/>
+						<MediaRef Id="748943891"/>
+						<MediaRef Id="877601672"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3385122965" Name="Play_StoneBump" DurationType="OneShot" DurationMin="0.86822915" DurationMax="1.7662916">
 					<MediaRefs>
 						<MediaRef Id="45056509"/>
@@ -1893,8 +1943,10 @@
 						<Switch Id="984851287" Name="WelcomeInclusion"/>
 						<Switch Id="1281810935" Name="Start"/>
 						<Switch Id="1343002924" Name="InclusionModeToggle"/>
+						<Switch Id="1937078684" Name="ListenAgain"/>
 						<Switch Id="2346531308" Name="MusicVolume"/>
 						<Switch Id="2734938552" Name="ArrowKeys"/>
+						<Switch Id="3405713266" Name="Continue"/>
 						<Switch Id="3490598729" Name="BackToMainMenu"/>
 						<Switch Id="3569097980" Name="AudioVisualiserToggle"/>
 						<Switch Id="3930794392" Name="Quit"/>
@@ -1930,5 +1982,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{FBA0AFE8-41DE-2D93-D808-56F497FE3607}</FileHash>
+	<FileHash>{A2BC9181-C800-3550-5E00-92D4893A2454}</FileHash>
 </SoundBanksInfo>

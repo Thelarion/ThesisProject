@@ -155,6 +155,9 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="MusicVolume" ID="{4E2A8887-02CC-4D5A-813E-425A4470F3A1}" ShortID="140463157">
+							<PropertyList>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
@@ -165,10 +168,10 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="MusicVolume" ID="{723B8135-5DD2-4028-B262-246B1F31D77D}">
-									<Language>SFX</Language>
+									<Language>English(US)</Language>
 									<AudioFile>ButtonReadAloud\MusicVolume.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="584492099"/>
+										<MediaID ID="584492100"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
@@ -528,6 +531,56 @@
 								<ActiveSource Name="WelcomeInclusionmode" ID="{F9375E27-F07A-4F5C-B733-6CCCF24527FB}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="ListenAgain" ID="{66DB382A-6F9F-4E13-8CE9-AB317466300B}" ShortID="715846019">
+							<PropertyList>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MenuOpen" ID="{6185C926-8A6E-42FC-9D13-BA7E502E7F21}">
+									<Language>English(US)</Language>
+									<AudioFile>MenuOpen.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="294881190"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MenuOpen" ID="{6185C926-8A6E-42FC-9D13-BA7E502E7F21}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Continue" ID="{6A1056EF-9325-42DC-B5DA-D91F16D165A8}" ShortID="654752296">
+							<PropertyList>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MenuClose" ID="{C7813431-1452-42FC-8135-898C7BEDDD1C}">
+									<Language>English(US)</Language>
+									<AudioFile>MenuClose.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="499139477"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MenuClose" ID="{C7813431-1452-42FC-8135-898C7BEDDD1C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 					<GroupingInfo>
 						<GroupingBehaviorList>
@@ -539,6 +592,9 @@
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="Start" ID="{CC60D629-1AD4-4AB5-B923-0414C9035C48}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="ListenAgain" ID="{66DB382A-6F9F-4E13-8CE9-AB317466300B}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="EffectsVolume" ID="{45A64B2A-0579-4C59-9B42-FA8AC4DB0215}"/>
@@ -569,6 +625,9 @@
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="AudioVisualiserToggle" ID="{6EDED0C8-C302-480A-9E0B-82DB4F268842}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Continue" ID="{6A1056EF-9325-42DC-B5DA-D91F16D165A8}"/>
 							</GroupingBehavior>
 						</GroupingBehaviorList>
 						<GroupingList>
@@ -633,6 +692,12 @@
 								</ItemList>
 							</Grouping>
 							<Grouping>
+								<SwitchRef Name="ListenAgain" ID="{0D8296C5-E604-4E3B-A4FE-7C2B35152F5F}"/>
+								<ItemList>
+									<ItemRef Name="ListenAgain" ID="{66DB382A-6F9F-4E13-8CE9-AB317466300B}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
 								<SwitchRef Name="ReturnSpace" ID="{F41FCCD7-DEA9-4635-893E-DEC7FA5FF3D7}"/>
 								<ItemList>
 									<ItemRef Name="ReturnSpace" ID="{A212E786-E4B0-4635-9296-7635394A680E}"/>
@@ -648,6 +713,12 @@
 								<SwitchRef Name="Quit" ID="{75D0E5F5-D20C-419A-A557-788E00F73A93}"/>
 								<ItemList>
 									<ItemRef Name="Quit" ID="{2B781C7C-5F98-4760-BC85-014C954B9D49}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Continue" ID="{2769B8F7-9051-480E-9DA1-521B20E9C70A}"/>
+								<ItemList>
+									<ItemRef Name="Continue" ID="{6A1056EF-9325-42DC-B5DA-D91F16D165A8}"/>
 								</ItemList>
 							</Grouping>
 						</GroupingList>

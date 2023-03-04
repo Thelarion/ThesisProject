@@ -79,7 +79,6 @@ namespace AK
         static const AkUniqueID MELODYSTATEOFF = 2810620855U;
         static const AkUniqueID MELODYSTATEON = 747211651U;
         static const AkUniqueID MISS = 3062523241U;
-        static const AkUniqueID NEW_EVENT_01 = 1027751982U;
         static const AkUniqueID PLAY_AMBIENCE = 278617630U;
         static const AkUniqueID PLAY_BEACONLOCK = 3923622767U;
         static const AkUniqueID PLAY_BEACONLR = 194014728U;
@@ -107,6 +106,7 @@ namespace AK
         static const AkUniqueID PLAY_REFLECTIONBUMPPREVENTION = 988427829U;
         static const AkUniqueID PLAY_SLINGSHOT_RELEASE = 3074787511U;
         static const AkUniqueID PLAY_SOUTH = 3187449017U;
+        static const AkUniqueID PLAY_STEP_GRASSFLOWERS = 3460539825U;
         static const AkUniqueID PLAY_STONEBUMP = 3385122965U;
         static const AkUniqueID PLAY_TESTCLICK = 83581882U;
         static const AkUniqueID PLAY_TREEBUMP = 3793308878U;
@@ -210,9 +210,11 @@ namespace AK
                 static const AkUniqueID ARROWKEYS = 2734938552U;
                 static const AkUniqueID AUDIOVISUALISERTOGGLE = 3569097980U;
                 static const AkUniqueID BACKTOMAINMENU = 3490598729U;
+                static const AkUniqueID CONTINUE = 3405713266U;
                 static const AkUniqueID DEFAULT = 782826392U;
                 static const AkUniqueID EFFECTSVOLUME = 640585335U;
                 static const AkUniqueID INCLUSIONMODETOGGLE = 1343002924U;
+                static const AkUniqueID LISTENAGAIN = 1937078684U;
                 static const AkUniqueID MUSICVOLUME = 2346531308U;
                 static const AkUniqueID QUIT = 3930794392U;
                 static const AkUniqueID RESUME = 953277036U;
