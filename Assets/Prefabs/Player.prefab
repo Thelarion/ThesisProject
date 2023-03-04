@@ -1397,20 +1397,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentTarget: {fileID: 0}
-  frequencyDistance:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 8287edaeb31e672439b503ce4a52dd95,
-      type: 2}
-  onTargetWhiteNoise:
+  Play_OnTarget:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 65dd201fd89bd264b8087ce092d483c2,
       type: 2}
   layerMask:
     serializedVersion: 2
-    m_Bits: 1024
-  outline: {fileID: 2100000, guid: 5e99d6e591a8ad142b13908f5ecad1fe, type: 2}
+    m_Bits: 4294967295
 --- !u!114 &9008879316150871780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1453,6 +1447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3e8a0fb2fab7e4ea2d430feaa65569, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TargetController: {fileID: 0}
 --- !u!114 &1095127568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1497,6 +1492,26 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: f48a19ff01290254daa91a0c3709b7ae,
+      type: 2}
+  Play_West:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 2d5e76ea8c1269d4db62dfc6e9d83b50,
+      type: 2}
+  Play_South:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 131bbbed018467444969911c25ed7bc4,
+      type: 2}
+  Play_East:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: db6cabd38b9dc944ab4d2d440cf384f5,
+      type: 2}
+  Play_North:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: e001b424f1b7feb43af1f7e297081dbc,
       type: 2}
 --- !u!1 &3606295275162554051
 GameObject:
@@ -8001,15 +8016,13 @@ MonoBehaviour:
   CinemachineCameraTarget: {fileID: 4567491431198805112}
   TopClamp: 89
   BottomClamp: -89
+  EnvironmentGruntLayerMask:
+    serializedVersion: 2
+    m_Bits: 14336
   Play_Plyr_Fstp:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: d00dae2a0e17d574f9a0c85caf9eea5e,
-      type: 2}
-  Play_Slingshot_Release:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 0e36095eeb9693148a4ded2f772527a0,
       type: 2}
   Play_Plyr_Grunts:
     idInternal: 0
@@ -8021,9 +8034,6 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   melodyManager: {fileID: 0}
   MenuToggle: 0
-  layerMask:
-    serializedVersion: 2
-    m_Bits: 2048
   startMenuManager: {fileID: 6639961037101306525, guid: d5f2697d68338214da4615bcecb75ab9,
     type: 3}
 --- !u!114 &2122472149014863827
@@ -8196,7 +8206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layerMask:
     serializedVersion: 2
-    m_Bits: 2048
+    m_Bits: 6144
   Play_Melody_Seq:
     idInternal: 0
     valueGuidInternal: 

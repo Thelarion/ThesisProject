@@ -16,12 +16,12 @@
 							<Value>1</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="RTPC_VoiceVolumeSettings" ID="{3057E62F-CF98-4255-BD17-B97F194E600F}"/>
-							<Value>10</Value>
+							<GameParameterRef Name="RTPC_Obstruction" ID="{58A17CEA-293F-4213-BFBE-774438E085FA}"/>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="RTPC_GenOcclusion" ID="{07AD59E1-527F-42E0-A4E6-F30719E85712}"/>
-							<Value>100</Value>
+							<GameParameterRef Name="RTPC_VoiceVolumeSettings" ID="{3057E62F-CF98-4255-BD17-B97F194E600F}"/>
+							<Value>10</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="RTPC_MusicBusFade" ID="{D4C4D49F-FCA5-435E-9383-0CE003094D2A}"/>
@@ -44,7 +44,7 @@
 							<Value>5.5272149001277</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="RTPC_wall_occlusion" ID="{CDBF976E-CA53-49B6-8C0C-5767DD5366F1}"/>
+							<GameParameterRef Name="RTPC_Occlusion" ID="{CDBF976E-CA53-49B6-8C0C-5767DD5366F1}"/>
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
@@ -61,7 +61,7 @@
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="ArrowKeys" ID="{BB50126F-D323-4400-B86E-B2AA2D1BEDDA}"/>
-						<CurrentSwitchRef Name="Water" ID="{AA98095F-C61F-41A4-8FBD-52493CD6CD91}"/>
+						<CurrentSwitchRef Name="Concrete" ID="{7624D16A-D815-43AD-A2F4-FF7B846EB163}"/>
 						<CurrentSwitchRef Name="Effects" ID="{DF101DDA-99A3-4826-BB05-82E4347BC0B5}"/>
 						<CurrentSwitchRef Name="M1" ID="{EE148B74-339E-4862-B987-D0463480A443}"/>
 						<CurrentSwitchRef Name="Track1" ID="{DF0AB87B-7594-47E9-A09B-20EC64FAC28A}"/>

@@ -159,9 +159,9 @@ public class OperationController : MonoBehaviour
     {
         foreach (Transform childGO in transform)
         {
-            Transform noteGO = childGO.GetChild(0);
-            Transform octaveGO = noteGO.GetChild(3);
-            Transform accidentalGO = noteGO.GetChild(4);
+            Transform noteGO = childGO.GetChild(0); // Note Display
+            Transform octaveGO = noteGO.GetChild(4);
+            Transform accidentalGO = noteGO.GetChild(5);
 
             // Set up octaves
             string octave = noteGO.GetComponent<ListItemIdentity>().Octave;
@@ -291,7 +291,7 @@ public class OperationController : MonoBehaviour
 
     private Image GetModeAndImage(bool ColourHelpOn, int index)
     {
-        int mode = ColourHelpOn ? 2 : 1;
+        int mode = ColourHelpOn ? 3 : 2;
         Image currentFrameSuccess = _uI_noteDisplays[index].GetChild(mode).GetComponent<Image>();
         return currentFrameSuccess;
     }
@@ -327,7 +327,8 @@ public class OperationController : MonoBehaviour
                     StartCoroutine(DecreaseAlpha(_currentFrameDistance));
                 }
                 // Get new list frame
-                _currentFrameDistance = _uI_noteDisplays[_currentClosestTarget.getIndexInSequence()].GetChild(0).GetComponent<Image>();
+                int childIndex = ColourHelpState ? 1 : 0;
+                _currentFrameDistance = _uI_noteDisplays[_currentClosestTarget.getIndexInSequence()].GetChild(childIndex).GetComponent<Image>();
                 // Make it visible
                 StartCoroutine(IncreaseAlpha(_currentFrameDistance));
                 // Play transition sound

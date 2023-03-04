@@ -13,7 +13,7 @@
 			<ShortName>Environment</ShortName>
 			<Path>Environment.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{187FB105-B234-007B-F4AD-053204DA2798}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{3B670D74-AD4F-6A42-0529-016E461B6186}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -29,12 +29,15 @@
 				<Bus Id="201729212" Name="Notes"/>
 				<Bus Id="393239870" Name="SFX"/>
 				<Bus Id="412724365" Name="BGM"/>
-				<Bus Id="1229948536" Name="Environment"/>
+				<Bus Id="1229948536" Name="Environment">
+					<AuxBusRefs>
+						<AuxBusRef Id="348963605" Name="Reverb"/>
+					</AuxBusRefs>
+				</Bus>
 				<Bus Id="2429736717" Name="Melodies"/>
 				<Bus Id="3105667492" Name="AudioMenu"/>
 				<Bus Id="3170124113" Name="Voice"/>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
-				<Bus Id="3882419280" Name="Trees"/>
 				<Bus Id="3991942870" Name="Music"/>
 			</Busses>
 			<AuxBusses>
@@ -49,12 +52,12 @@
 			<GameParameters>
 				<GameParameter Id="257343836" Name="RTPC_MusicBusFade"/>
 				<GameParameter Id="815616169" Name="RTPC_synth_pwm_up_down"/>
-				<GameParameter Id="872361937" Name="RTPC_wall_occlusion"/>
 				<GameParameter Id="1364189011" Name="RTPC_distance_freq"/>
 				<GameParameter Id="1384204673" Name="RTPC_frequency_depth"/>
 				<GameParameter Id="1574311894" Name="RTPC_EffectsVolumeSettings"/>
+				<GameParameter Id="1664992182" Name="RTPC_Occlusion"/>
 				<GameParameter Id="2118858538" Name="RTPC_VoiceVolumeSettings"/>
-				<GameParameter Id="3170173318" Name="RTPC_GenOcclusion"/>
+				<GameParameter Id="3316058687" Name="RTPC_Obstruction"/>
 				<GameParameter Id="3414688140" Name="RTPC_Plyr_Distance"/>
 				<GameParameter Id="3453464353" Name="RTPC_MusicVolumeSettings"/>
 				<GameParameter Id="3707704703" Name="RTPC_left_right"/>
@@ -195,7 +198,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{F6761824-D4D9-3C19-A810-6DB21078939A}">
+		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{ECE7F574-C075-BCC4-F7AC-E6216668974D}">
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
 			<Media>
@@ -1892,7 +1895,7 @@
 				</Event>
 			</Events>
 			<GameParameters>
-				<GameParameter Id="872361937" Name="RTPC_wall_occlusion"/>
+				<GameParameter Id="3316058687" Name="RTPC_Obstruction"/>
 				<GameParameter Id="3707704703" Name="RTPC_left_right"/>
 				<GameParameter Id="4120900405" Name="RTPC_beacon_lr_volume"/>
 			</GameParameters>
@@ -1982,5 +1985,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{A2BC9181-C800-3550-5E00-92D4893A2454}</FileHash>
+	<FileHash>{EE4A68E8-35E9-ABAD-6159-DE2CAE73527A}</FileHash>
 </SoundBanksInfo>

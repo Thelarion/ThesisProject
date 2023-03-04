@@ -11,7 +11,7 @@ public class ConductorBaton : MonoBehaviour
     public Transform ConductSphereSpawn;
     private Rigidbody rb;
     public float launchVelocity = 1200f;
-
+    private string currentTarget;
     private void Start()
     {
         m_Animator = gameObject.GetComponent<Animator>();
@@ -22,8 +22,15 @@ public class ConductorBaton : MonoBehaviour
         m_Animator.SetTrigger("OnConduct");
     }
 
+    private void Update()
+    {
+        currentTarget = DistanceToTarget.CurrentTargetIdentity.gameObject.name;
+    }
+
     public void FireConductor()
     {
+        AkSoundEngine.PostEvent(currentTarget, gameObject);
+
         conductSphere = Instantiate(ConductSpherePrefab, ConductSphereSpawn.position, ConductSphereSpawn.rotation);
 
         conductSphere.transform.localRotation = Quaternion.identity;

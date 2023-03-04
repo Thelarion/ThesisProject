@@ -217,17 +217,11 @@
 									</ReferenceList>
 								</AuxBus>
 								<Bus Name="Environment" ID="{736B6FAE-C07F-4C69-98D0-71093C86BCC7}">
-									<ChildrenList>
-										<Bus Name="Trees" ID="{6492E321-F36A-40F7-9D82-1E46B3A139B5}">
-											<PropertyList>
-												<Property Name="BusChannelConfig" Type="int32">
-													<ValueList>
-														<Value>768</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-										</Bus>
-									</ChildrenList>
+									<ReferenceList>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Reverb" ID="{BA2DA9B7-D5B4-46D8-9F6A-43B7CF3D38D1}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
 								</Bus>
 							</ChildrenList>
 							<ObjectLists>

@@ -75,7 +75,7 @@ namespace StarterAssets
         // bool isRunning;
         // public float FootstepDelayTime = 0.3f;
         public AK.Wwise.Event Play_Plyr_Fstp;
-        public AK.Wwise.Event Play_Slingshot_Release;
+        // public AK.Wwise.Event Play_Slingshot_Release;
         public AK.Wwise.Event Play_Plyr_Grunts;
 
 
@@ -167,7 +167,7 @@ namespace StarterAssets
             if (_input.fire)
             {
                 // slingshot.FireSlingshot();
-                Play_Slingshot_Release.Post(gameObject);
+                // Play_Slingshot_Release.Post(gameObject);
                 conductorBaton.TriggerConductor();
                 _input.fire = false;
             }

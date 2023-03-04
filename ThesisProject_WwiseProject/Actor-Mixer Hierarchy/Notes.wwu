@@ -84,6 +84,10 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="C2" ID="{FD955AA0-B874-41B7-9162-70FDD21E4C30}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.0623376623376623"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>O2\C2.wav</AudioFile>
 											<MediaIDList>
@@ -1191,7 +1195,7 @@
 										</PropertyList>
 										<ReferenceList>
 											<Reference Name="ControlInput">
-												<ObjectRef Name="RTPC_wall_occlusion" ID="{CDBF976E-CA53-49B6-8C0C-5767DD5366F1}" WorkUnitID="{72267048-CC67-485E-A1E2-D5F272BBA672}"/>
+												<ObjectRef Name="RTPC_Obstruction" ID="{58A17CEA-293F-4213-BFBE-774438E085FA}" WorkUnitID="{72267048-CC67-485E-A1E2-D5F272BBA672}"/>
 											</Reference>
 											<Reference Name="Curve">
 												<Custom>
@@ -1238,7 +1242,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<RandomSequenceContainer Name="NotesRadius" ID="{EAB6EB1A-2072-498E-A464-93416743FDE7}" ShortID="1004270350">
+						<RandomSequenceContainer Name="M1Radius" ID="{EAB6EB1A-2072-498E-A464-93416743FDE7}" ShortID="1004270350">
 							<PropertyList>
 								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 							</PropertyList>

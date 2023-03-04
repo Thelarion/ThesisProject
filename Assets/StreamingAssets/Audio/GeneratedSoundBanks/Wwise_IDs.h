@@ -340,15 +340,15 @@ namespace AK
         static const AkUniqueID RTPC_DISTANCE_FREQ = 1364189011U;
         static const AkUniqueID RTPC_EFFECTSVOLUMESETTINGS = 1574311894U;
         static const AkUniqueID RTPC_FREQUENCY_DEPTH = 1384204673U;
-        static const AkUniqueID RTPC_GENOCCLUSION = 3170173318U;
         static const AkUniqueID RTPC_LEFT_RIGHT = 3707704703U;
         static const AkUniqueID RTPC_MELODYON = 3726690316U;
         static const AkUniqueID RTPC_MUSICBUSFADE = 257343836U;
         static const AkUniqueID RTPC_MUSICVOLUMESETTINGS = 3453464353U;
+        static const AkUniqueID RTPC_OBSTRUCTION = 3316058687U;
+        static const AkUniqueID RTPC_OCCLUSION = 1664992182U;
         static const AkUniqueID RTPC_PLYR_DISTANCE = 3414688140U;
         static const AkUniqueID RTPC_SYNTH_PWM_UP_DOWN = 815616169U;
         static const AkUniqueID RTPC_VOICEVOLUMESETTINGS = 2118858538U;
-        static const AkUniqueID RTPC_WALL_OCCLUSION = 872361937U;
     } // namespace GAME_PARAMETERS
 
     namespace TRIGGERS
@@ -373,7 +373,6 @@ namespace AK
         static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID NOTES = 201729212U;
         static const AkUniqueID SFX = 393239870U;
-        static const AkUniqueID TREES = 3882419280U;
         static const AkUniqueID VOICE = 3170124113U;
     } // namespace BUSSES
 

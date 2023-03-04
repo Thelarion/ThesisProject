@@ -58,7 +58,7 @@
 						<Action Name="" ID="{C48A77D7-3BAA-433B-B33A-FC1B51C9B3CF}" ShortID="342238475">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="NotesRadius" ID="{EAB6EB1A-2072-498E-A464-93416743FDE7}" WorkUnitID="{35658988-EBE6-42AB-BE13-CC3667F51DCE}"/>
+									<ObjectRef Name="M1Radius" ID="{EAB6EB1A-2072-498E-A464-93416743FDE7}" WorkUnitID="{35658988-EBE6-42AB-BE13-CC3667F51DCE}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -73,7 +73,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="NotesRadius" ID="{EAB6EB1A-2072-498E-A464-93416743FDE7}" WorkUnitID="{35658988-EBE6-42AB-BE13-CC3667F51DCE}"/>
+									<ObjectRef Name="M1Radius" ID="{EAB6EB1A-2072-498E-A464-93416743FDE7}" WorkUnitID="{35658988-EBE6-42AB-BE13-CC3667F51DCE}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

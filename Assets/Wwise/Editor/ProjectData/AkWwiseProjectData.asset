@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 111a36df2b99a2459ec0d5f0605e9fb4
     GuidInternal: 
-    m_lastTime: -8585242593830720048
+    m_lastTime: -8585236542125938429
     List:
     - name: AudioMenu
       guid: e673bc3db8f4c14eaffb601995ce92ae
@@ -208,29 +208,6 @@ MonoBehaviour:
         ObjectType: 2
         guid: e228b6c5e630c949b05412444dce2acc
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX
-    - name: Trees
-      guid: 21e392646af3f7409d821e46b3a139b5
-      id: 3882419280
-      PathAndIcons:
-      - ElementName: Master-Mixer Hierarchy
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 111a36df2b99a2459ec0d5f0605e9fb4
-      - ElementName: Master Audio Bus
-        ObjectType: 2
-        guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: SFX
-        ObjectType: 2
-        guid: e228b6c5e630c949b05412444dce2acc
-      - ElementName: Environment
-        ObjectType: 2
-        guid: ae6f6b737fc0694c98d071093c86bcc7
-      - ElementName: Trees
-        ObjectType: 2
-        guid: 21e392646af3f7409d821e46b3a139b5
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\Environment\Trees
     - name: Voice
       guid: 58d2cb1463c05f4f8620f1cd9a64e84f
       id: 3170124113
@@ -511,7 +488,7 @@ MonoBehaviour:
     ParentPath: Events\Melodies
     guid: 66b8f97f472fd74791287fbb4e712395
     GuidInternal: 
-    m_lastTime: -8585238401559294152
+    m_lastTime: -8585236552085260254
     List:
     - name: MelodyStateOff
       guid: a8fea77287b0f348ad210b6acb17e0e4
@@ -2856,47 +2833,47 @@ MonoBehaviour:
         ObjectType: 13
         guid: 9fd4c4d4a5fc5e4393830ce003094d2a
       Path: Game Parameters\Music\RTPC_MusicBusFade
-  - PhysicalPath: Game Parameters\Occlusion.wwu
+  - PhysicalPath: Game Parameters\Obstruction_Occlusion.wwu
     PathAndIcons:
     - ElementName: Game Parameters
       ObjectType: 5
       guid: 00000000000000000000000000000000
-    - ElementName: Occlusion
+    - ElementName: Obstruction_Occlusion
       ObjectType: 12
       guid: 4870267267cc5e48a1e2d5f272bba672
-    ParentPath: Game Parameters\Occlusion
+    ParentPath: Game Parameters\Obstruction_Occlusion
     guid: 4870267267cc5e48a1e2d5f272bba672
     GuidInternal: 
-    m_lastTime: -8585252130466471508
+    m_lastTime: -8585236501134246300
     List:
-    - name: RTPC_GenOcclusion
-      guid: e159ad077f52e042a4e6f30719e85712
-      id: 3170173318
+    - name: RTPC_Obstruction
+      guid: ea7ca1583f291342bfbe774438e085fa
+      id: 3316058687
       PathAndIcons:
       - ElementName: Game Parameters
         ObjectType: 5
         guid: 00000000000000000000000000000000
-      - ElementName: Occlusion
+      - ElementName: Obstruction_Occlusion
         ObjectType: 12
         guid: 4870267267cc5e48a1e2d5f272bba672
-      - ElementName: RTPC_GenOcclusion
+      - ElementName: RTPC_Obstruction
         ObjectType: 13
-        guid: e159ad077f52e042a4e6f30719e85712
-      Path: Game Parameters\Occlusion\RTPC_GenOcclusion
-    - name: RTPC_wall_occlusion
+        guid: ea7ca1583f291342bfbe774438e085fa
+      Path: Game Parameters\Obstruction_Occlusion\RTPC_Obstruction
+    - name: RTPC_Occlusion
       guid: 6e97bfcd53cab6498c0c5767dd5366f1
-      id: 872361937
+      id: 1664992182
       PathAndIcons:
       - ElementName: Game Parameters
         ObjectType: 5
         guid: 00000000000000000000000000000000
-      - ElementName: Occlusion
+      - ElementName: Obstruction_Occlusion
         ObjectType: 12
         guid: 4870267267cc5e48a1e2d5f272bba672
-      - ElementName: RTPC_wall_occlusion
+      - ElementName: RTPC_Occlusion
         ObjectType: 13
         guid: 6e97bfcd53cab6498c0c5767dd5366f1
-      Path: Game Parameters\Occlusion\RTPC_wall_occlusion
+      Path: Game Parameters\Obstruction_Occlusion\RTPC_Occlusion
   - PhysicalPath: Game Parameters\UI.wwu
     PathAndIcons:
     - ElementName: Game Parameters
