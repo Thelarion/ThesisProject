@@ -56,7 +56,7 @@
 						<CurrentStateRef Name="None" ID="{774C6CBC-C129-4C8F-BD56-D5E99C9F83BB}"/>
 						<CurrentStateRef Name="AudioMenuOff" ID="{2B5FCBCB-4223-4FE1-8D67-511A190CEB25}"/>
 						<CurrentStateRef Name="None" ID="{4AB2A078-E8B3-4886-A7CA-0C8E3CB10D5E}"/>
-						<CurrentStateRef Name="None" ID="{F2F41ECF-6FDA-4788-A397-D7909B863089}"/>
+						<CurrentStateRef Name="MelodyOff" ID="{FDE21147-AC5C-4161-9DC2-29B3B77D8C7C}"/>
 						<CurrentStateRef Name="None" ID="{4DF8E2CD-ACA4-4042-B8B1-0AF765FA3B11}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
@@ -65,7 +65,7 @@
 						<CurrentSwitchRef Name="Effects" ID="{DF101DDA-99A3-4826-BB05-82E4347BC0B5}"/>
 						<CurrentSwitchRef Name="M1" ID="{EE148B74-339E-4862-B987-D0463480A443}"/>
 						<CurrentSwitchRef Name="Track1" ID="{DF0AB87B-7594-47E9-A09B-20EC64FAC28A}"/>
-						<CurrentSwitchRef Name="PitchE" ID="{B87DF266-C314-46C3-A9BD-88604B6320F3}"/>
+						<CurrentSwitchRef Name="PitchA" ID="{BEB698A7-6745-49AD-BD7E-FC25B1ADB065}"/>
 						<CurrentSwitchRef Name="A" ID="{69A2F832-DD04-48E8-A090-5AF674AE02FC}"/>
 						<CurrentSwitchRef Name="InclusionModeOff" ID="{B8BF384A-A71B-41B5-B967-6E8389C3EB50}"/>
 						<CurrentSwitchRef Name="AudioVisualiserOff" ID="{F9B012F6-BBAA-4B50-A839-0AC95FD06728}"/>

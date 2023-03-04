@@ -2094,6 +2094,9 @@
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="OnTarget_PitchA" ID="{4D1E5E15-B516-4EA6-8D0D-0BCF01B94EBA}" ShortID="42566515">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
@@ -2116,6 +2119,9 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="OnTarget_PitchB" ID="{C7E7C3CD-2AF0-41BD-851F-97EE6DFACC4E}" ShortID="215038694">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
@@ -2138,6 +2144,9 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="OnTarget_PitchC" ID="{CD9C6AC9-CF71-4D95-88F6-7A74A1929D79}" ShortID="390952132">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
@@ -2160,6 +2169,9 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="OnTarget_PitchE" ID="{017B6BEB-3C79-42C4-B0A4-8DD73925FCE8}" ShortID="419189573">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>

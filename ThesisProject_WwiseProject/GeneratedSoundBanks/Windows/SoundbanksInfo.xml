@@ -13,7 +13,7 @@
 			<ShortName>Environment</ShortName>
 			<Path>Environment.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{3B670D74-AD4F-6A42-0529-016E461B6186}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{8960AC6F-BFEB-5072-5034-30F47CC6E3D3}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -198,7 +198,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{ECE7F574-C075-BCC4-F7AC-E6216668974D}">
+		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{790E772B-B5A3-5D91-AE34-8BE025E882CC}">
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
 			<Media>
@@ -229,6 +229,10 @@
 				<File Id="25952176" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O4\D4.wav</ShortName>
 					<CachePath>SFX/O4/D4_10C4C929.wem</CachePath>
+				</File>
+				<File Id="28580584" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Disstected Melody\M1_P3_A2_Dissected.wav</ShortName>
+					<CachePath>SFX/Disstected Melody/M1_P3_A2_Dissected_10C4C929.wem</CachePath>
 				</File>
 				<File Id="29792636" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SteppingFlowersGrass\Step_GrassFlowers_05.wav</ShortName>
@@ -297,6 +301,10 @@
 				<File Id="128521936" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>C3_E3_A2_B3_C3_v6.wav</ShortName>
 					<CachePath>SFX/C3_E3_A2_B3_C3_v6_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="128897188" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Disstected Melody\M1_P4_B2_Dissected.wav</ShortName>
+					<CachePath>SFX/Disstected Melody/M1_P4_B2_Dissected_10C4C929.wem</CachePath>
 				</File>
 				<File Id="136132481" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Tile\FS_Tile_03.wav</ShortName>
@@ -614,6 +622,10 @@
 					<ShortName>InstructionPlaceholder5.wav</ShortName>
 					<CachePath>Voices/English(US)/InstructionPlaceholder5_10C4C929.wem</CachePath>
 				</File>
+				<File Id="556685349" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Disstected Melody\M1_P1_C3_Dissected.wav</ShortName>
+					<CachePath>SFX/Disstected Melody/M1_P1_C3_Dissected_10C4C929.wem</CachePath>
+				</File>
 				<File Id="557735401" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Water\Plyr_Fstps_Water_01.wav</ShortName>
 					<CachePath>SFX/Water/Plyr_Fstps_Water_01_10C4C929.wem</CachePath>
@@ -698,6 +710,10 @@
 					<ShortName>BeaconSignal.wav</ShortName>
 					<CachePath>SFX/BeaconSignal_10C4C929.wem</CachePath>
 				</File>
+				<File Id="638180037" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>M1_P2_E3_Dissected.wav</ShortName>
+					<CachePath>SFX/M1_P2_E3_Dissected_10C4C929.wem</CachePath>
+				</File>
 				<File Id="646510716" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>StoneBump\StoneBump5.wav</ShortName>
 					<CachePath>SFX/StoneBump/StoneBump5_3F75BDB9.wem</CachePath>
@@ -741,6 +757,10 @@
 				<File Id="708823612" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Concrete\FS_Concrete_02.wav</ShortName>
 					<CachePath>SFX/Footsteps/Concrete/FS_Concrete_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="716105785" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Disstected Melody\M1_P5_C3_Dissected.wav</ShortName>
+					<CachePath>SFX/Disstected Melody/M1_P5_C3_Dissected_10C4C929.wem</CachePath>
 				</File>
 				<File Id="720284769" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O4\A4.wav</ShortName>
@@ -1562,20 +1582,6 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="1668314063" Name="Play_C3_E3_A2_B2_C3" DurationType="OneShot" DurationMin="3.904981" DurationMax="3.904981">
-					<MediaRefs>
-						<MediaRef Id="170761103"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="1946610009" Name="Play_C3_E3_A2_B2_C3_versions" MaxAttenuation="100" DurationType="OneShot" DurationMin="4" DurationMax="4">
-					<MediaRefs>
-						<MediaRef Id="128521936"/>
-						<MediaRef Id="592682436"/>
-						<MediaRef Id="601310814"/>
-						<MediaRef Id="872404735"/>
-						<MediaRef Id="1071148732"/>
-					</MediaRefs>
-				</Event>
 				<Event Id="2360441072" Name="Play_DirectionIndicator" MaxAttenuation="55" DurationType="OneShot" DurationMin="2.75" DurationMax="11">
 					<MediaRefs>
 						<MediaRef Id="74676487"/>
@@ -1642,9 +1648,23 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="2447410352" Name="Play_M1" DurationType="OneShot" DurationMin="3.904981" DurationMax="3.904981">
+					<MediaRefs>
+						<MediaRef Id="170761103"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1202099945" Name="Play_M1_Birds" MaxAttenuation="300" DurationType="OneShot" DurationMin="2.5" DurationMax="2.5">
 					<MediaRefs>
 						<MediaRef Id="899448972"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2113618703" Name="Play_M1_Dissected" MaxAttenuation="30" DurationType="OneShot" DurationMin="1.9375" DurationMax="2">
+					<MediaRefs>
+						<MediaRef Id="28580584"/>
+						<MediaRef Id="128897188"/>
+						<MediaRef Id="556685349"/>
+						<MediaRef Id="638180037"/>
+						<MediaRef Id="716105785"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="3827381996" Name="Play_M1_Seq" MaxAttenuation="30" DurationType="OneShot" DurationMin="1" DurationMax="1">
@@ -1654,6 +1674,15 @@
 						<MediaRef Id="232226852"/>
 						<MediaRef Id="364578896"/>
 						<MediaRef Id="647086168"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3081684988" Name="Play_M1_versions" MaxAttenuation="100" DurationType="OneShot" DurationMin="4" DurationMax="4">
+					<MediaRefs>
+						<MediaRef Id="128521936"/>
+						<MediaRef Id="592682436"/>
+						<MediaRef Id="601310814"/>
+						<MediaRef Id="872404735"/>
+						<MediaRef Id="1071148732"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="2709512125" Name="Play_MenuClose" DurationType="OneShot" DurationMin="2" DurationMax="2">
@@ -1882,6 +1911,7 @@
 						<MediaRef Id="805075098"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="419352152" Name="Reset_M1_Dissected" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="39386235" Name="Reset_M1_Seq" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2371377610" Name="Stop_AllEvents" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1073466678" Name="Stop_BGM" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
@@ -1985,5 +2015,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{EE4A68E8-35E9-ABAD-6159-DE2CAE73527A}</FileHash>
+	<FileHash>{F32ED81F-C416-8908-D107-F82427C09836}</FileHash>
 </SoundBanksInfo>

@@ -4,6 +4,10 @@
 		<WorkUnit Name="Melodies" ID="{E5F10FC4-A206-4CEE-8C77-3A46AC386FCD}" OwnerID="{834F9D6A-2FA4-4401-8C17-0B7E3D377947}" PersistMode="Nested">
 			<ChildrenList>
 				<MusicSwitchContainer Name="Melodies" ID="{C6F14BA1-D298-4772-8DD2-8457CA9DF44A}" ShortID="949471318">
+					<PropertyList>
+						<Property Name="3DPosition" Type="int16" Value="1"/>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
@@ -218,6 +222,112 @@
 							</ObjectLists>
 						</MusicSegment>
 					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{C133481C-34D8-496E-8460-648F30E73246}"/>
+						<Position Name="" ID="{5C134214-197F-483C-85D3-6D46836172F0}">
+							<PropertyList>
+								<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+							</PropertyList>
+							<ChildrenList>
+								<Path2D Name="Melodies_Path" ID="{3C6B7258-0676-47CC-B9F6-1C54DDA63B21}">
+									<PropertyList>
+										<Property Name="Duration" Type="Uint32" Value="1500"/>
+										<Property Name="RandomX" Type="Real64" Value="41"/>
+										<Property Name="RandomY" Type="Real64" Value="33"/>
+										<Property Name="RandomZ" Type="Real64" Value="35"/>
+									</PropertyList>
+									<PointList>
+										<Point>
+											<XPos>50.2538</XPos>
+											<YPos>49.43503</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+										<Point>
+											<XPos>-62.94415</XPos>
+											<YPos>47.45763</YPos>
+											<Flags>0</Flags>
+											<Time>500</Time>
+										</Point>
+										<Point>
+											<XPos>-64.97462</XPos>
+											<YPos>-60.45198</YPos>
+											<Flags>0</Flags>
+											<Time>1000</Time>
+										</Point>
+										<Point>
+											<XPos>55.83757</XPos>
+											<YPos>-55.93221</YPos>
+											<Flags>0</Flags>
+											<Time>1500</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="Melodies_Path_01" ID="{01B6F281-C0E2-40A7-8F8F-BAC6672F674E}">
+									<PropertyList>
+										<Property Name="Duration" Type="Uint32" Value="1500"/>
+									</PropertyList>
+									<PointList>
+										<Point>
+											<XPos>-39.08629</XPos>
+											<YPos>41.52542</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+										<Point>
+											<XPos>-49.238578680203</XPos>
+											<YPos>-32.2033898305085</YPos>
+											<Flags>0</Flags>
+											<Time>500</Time>
+										</Point>
+										<Point>
+											<XPos>-19.79695</XPos>
+											<YPos>-63.84181</YPos>
+											<Flags>0</Flags>
+											<Time>1000</Time>
+										</Point>
+										<Point>
+											<XPos>53.8071065989848</XPos>
+											<YPos>-64.9717514124294</YPos>
+											<Flags>0</Flags>
+											<Time>1500</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="Melodies_Path_02" ID="{2752DC9B-1095-4DC7-AE44-7103D41FF4AB}">
+									<PropertyList>
+										<Property Name="Duration" Type="Uint32" Value="1500"/>
+									</PropertyList>
+									<PointList>
+										<Point>
+											<XPos>40.60913</XPos>
+											<YPos>59.60452</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+										<Point>
+											<XPos>60.40609</XPos>
+											<YPos>-57.62712</YPos>
+											<Flags>0</Flags>
+											<Time>500</Time>
+										</Point>
+										<Point>
+											<XPos>-54.31472</XPos>
+											<YPos>-62.14689</YPos>
+											<Flags>0</Flags>
+											<Time>1000</Time>
+										</Point>
+										<Point>
+											<XPos>-49.23858</XPos>
+											<YPos>59.32203</YPos>
+											<Flags>0</Flags>
+											<Time>1500</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+							</ChildrenList>
+						</Position>
+					</PositioningInfo>
 					<TransitionList>
 						<MusicTransition Name="Root" ID="{88A23D47-F74A-49F7-A591-6C64014631FA}">
 							<PropertyList>

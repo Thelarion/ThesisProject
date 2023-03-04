@@ -19,13 +19,13 @@ public class CheckOcclusion : MonoBehaviour
     {
         if (Physics.Linecast(transform.position, player.transform.position, out playerOcclusionCheck, layerMask))
         {
-            AkSoundEngine.SetRTPCValue("RTPC_Obstruction", 1);
-            print("1");
+            AkSoundEngine.SetRTPCValue("RTPC_Obstruction", 1, gameObject);
+            // print("1");
         }
         else
         {
-            AkSoundEngine.SetRTPCValue("RTPC_Obstruction", 0);
-            print("0");
+            AkSoundEngine.SetRTPCValue("RTPC_Obstruction", 0, gameObject);
+            // print("0");
         }
     }
 }

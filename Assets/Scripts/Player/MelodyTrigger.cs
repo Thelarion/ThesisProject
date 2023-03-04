@@ -58,7 +58,7 @@ public class MelodyTrigger : MonoBehaviour
 
     }
 
-
+    float waitSeconds;
     IEnumerator PlayMelSeq(GameObject[] sortedGOs)
     {
         int max_value;
@@ -68,11 +68,54 @@ public class MelodyTrigger : MonoBehaviour
         for (int i = 0; i < max_value; i++)
         {
             Play_Melody_Seq.Post(sortedGOs[i]);
-            // print(sortedGOs[i].name);
 
-            yield return new WaitForSeconds(1f);
+
+
+            switch (i)
+            {
+                case 0:
+                    waitSeconds = 0.563f;
+                    break;
+                case 1:
+                    waitSeconds = 0.188f;
+                    break;
+                case 2:
+                    waitSeconds = 0.375f;
+                    break;
+                case 3:
+                    waitSeconds = 0.375f;
+                    break;
+                default:
+                    break;
+            }
+
+            if (StartMenuManager.InclusionState)
+            {
+                waitSeconds = 1f;
+            }
+
+
+            yield return new WaitForSeconds(waitSeconds);
         }
 
         Reset_Melody_Seq.Post(gameObject);
     }
+
+
+    // IEnumerator PlayMelSeq(GameObject[] sortedGOs)
+    // {
+    //     int max_value;
+
+    //     max_value = sortedGOs.Length > 5 ? 5 : sortedGOs.Length;
+
+    //     for (int i = 0; i < max_value; i++)
+    //     {
+    //         Play_Melody_Seq.Post(sortedGOs[i]);
+    //         // print(sortedGOs[i].name);
+
+    //         yield return new WaitForSeconds(1f);
+    //     }
+
+    //     Reset_Melody_Seq.Post(gameObject);
+    // }
 }

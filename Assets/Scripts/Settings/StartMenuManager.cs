@@ -22,6 +22,7 @@ public class StartMenuManager : MonoBehaviour
     public void StartGame()
     {
         SceneManager.LoadScene("Forest");
+        AkSoundEngine.PostEvent("Stop_AllEvents", null);
     }
 
     public void Quit()

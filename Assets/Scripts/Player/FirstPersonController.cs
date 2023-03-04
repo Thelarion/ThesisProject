@@ -193,9 +193,10 @@ namespace StarterAssets
         }
 
         bool semaphore = false;
+        bool semaphoreStartMelPlaying = true; // let the melody in the beginning of the game play without interuption
         private void Melody()
         {
-            if (_input.melody)
+            if (_input.melody && !semaphoreStartMelPlaying)
             {
                 if (!semaphore)
                 {
@@ -204,6 +205,17 @@ namespace StarterAssets
 
                 _input.melody = false;
             }
+
+            if (semaphoreStartMelPlaying)
+            {
+                StartCoroutine(WaitForStartMelody());
+            }
+        }
+
+        IEnumerator WaitForStartMelody()
+        {
+            yield return new WaitForSeconds(15f);
+            semaphoreStartMelPlaying = false;
         }
 
         IEnumerator DelimitMelodyToNSec()

@@ -25,39 +25,35 @@ public class GameManager : MonoBehaviour
     {
         SetPaletteChoice();
         ChooseRandomMaterialPalette();
-
     }
 
-    // private void Start()
-    // {
-    //     firstPersonController = GameObject.Find("Player").GetComponent<FirstPersonController>();
-    // }
+    private void Start()
+    {
+        Invoke("PlayMelodyCoroutine", 4f);
+    }
+
+    int index = 0;
+    void PlayMelodyCoroutine()
+    {
+        StartCoroutine(PlayMelody());
+    }
+
+    IEnumerator PlayMelody()
+    {
+        AkSoundEngine.PostEvent("Play_M1", GameObject.Find("Player"));
+        yield return new WaitForSeconds(4f);
+        if (index < 2)
+        {
+            StartCoroutine(PlayMelody());
+            index++;
+        }
+    }
+
     private void SetPaletteChoice()
     {
         paletteOptions.Add("Palette1");
         paletteOptions.Add("Palette2");
     }
-
-    // private void Update()
-    // {
-    //     CheckCursorLockState();
-    // }
-    // void CheckCursorLockState()
-    // {
-    //     // if (menuPanel.activeSelf || menuAccessibility.activeSelf)
-    //     if (MenuInGameSettings.activeSelf)
-    //     {
-    //         Cursor.lockState = CursorLockMode.None;
-    //         Cursor.visible = true;
-    //         firstPersonController.MenuToggle = true;
-    //     }
-    //     else
-    //     {
-    //         Cursor.lockState = CursorLockMode.Locked;
-    //         Cursor.visible = false;
-    //         firstPersonController.MenuToggle = false;
-    //     }
-    // }
 
     private static void ChooseRandomMaterialPalette()
     {

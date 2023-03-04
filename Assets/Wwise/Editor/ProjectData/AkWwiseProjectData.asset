@@ -488,7 +488,7 @@ MonoBehaviour:
     ParentPath: Events\Melodies
     guid: 66b8f97f472fd74791287fbb4e712395
     GuidInternal: 
-    m_lastTime: -8585236552085260254
+    m_lastTime: -8585236372335693327
     List:
     - name: MelodyStateOff
       guid: a8fea77287b0f348ad210b6acb17e0e4
@@ -524,9 +524,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Play_C3_E3_A2_B2_C3
+    - name: Play_M1
       guid: 4ee8ad68a59ec146968a9a3d04984ebd
-      id: 1668314063
+      id: 2447410352
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -534,27 +534,10 @@ MonoBehaviour:
       - ElementName: Melodies
         ObjectType: 12
         guid: 66b8f97f472fd74791287fbb4e712395
-      - ElementName: Play_C3_E3_A2_B2_C3
+      - ElementName: Play_M1
         ObjectType: 3
         guid: 4ee8ad68a59ec146968a9a3d04984ebd
-      Path: Events\Melodies\Play_C3_E3_A2_B2_C3
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Play_C3_E3_A2_B2_C3_versions
-      guid: 4b94e49f91777e45af5ec0a9fc46b188
-      id: 1946610009
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Melodies
-        ObjectType: 12
-        guid: 66b8f97f472fd74791287fbb4e712395
-      - ElementName: Play_C3_E3_A2_B2_C3_versions
-        ObjectType: 3
-        guid: 4b94e49f91777e45af5ec0a9fc46b188
-      Path: Events\Melodies\Play_C3_E3_A2_B2_C3_versions
+      Path: Events\Melodies\Play_M1
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -575,6 +558,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_M1_Dissected
+      guid: 21b969d9ad6fc244a3aa5e2e8d67af49
+      id: 2113618703
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Melodies
+        ObjectType: 12
+        guid: 66b8f97f472fd74791287fbb4e712395
+      - ElementName: Play_M1_Dissected
+        ObjectType: 3
+        guid: 21b969d9ad6fc244a3aa5e2e8d67af49
+      Path: Events\Melodies\Play_M1_Dissected
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_M1_Seq
       guid: 823d2a3ebd5e6546835659839df25576
       id: 3827381996
@@ -589,6 +589,40 @@ MonoBehaviour:
         ObjectType: 3
         guid: 823d2a3ebd5e6546835659839df25576
       Path: Events\Melodies\Play_M1_Seq
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_M1_versions
+      guid: 4b94e49f91777e45af5ec0a9fc46b188
+      id: 3081684988
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Melodies
+        ObjectType: 12
+        guid: 66b8f97f472fd74791287fbb4e712395
+      - ElementName: Play_M1_versions
+        ObjectType: 3
+        guid: 4b94e49f91777e45af5ec0a9fc46b188
+      Path: Events\Melodies\Play_M1_versions
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Reset_M1_Dissected
+      guid: f760b64a0768574b9433dfc2d8c917d6
+      id: 419352152
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Melodies
+        ObjectType: 12
+        guid: 66b8f97f472fd74791287fbb4e712395
+      - ElementName: Reset_M1_Dissected
+        ObjectType: 3
+        guid: f760b64a0768574b9433dfc2d8c917d6
+      Path: Events\Melodies\Reset_M1_Dissected
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -4360,7 +4394,7 @@ MonoBehaviour:
         guid: da8eac4adff1a245a328ede5f79242d9
       Path: Triggers\Default Work Unit\New_Trigger
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000200000003000000050000000a0000000b0000000f00000014000000160000001c0000001d0000001e0000002000000021000000230000002c0000002d0000002e0000002f000000300000003100000032000000330000003600000037000000390000003a0000003b0000003c0000003d0000003e0000004000000042000000450000004b0000004d0000004f00000052000000850000008b0000008c000000a4000000a5000000a6000000e4000000
+  ExpandedWaapiItemIds: 010000000200000003000000050000000a0000000b0000000f00000014000000160000001c0000001d0000001e0000002000000021000000230000002c0000002d0000002e0000002f000000300000003100000032000000330000003600000037000000390000003a0000003b0000003c0000003d0000003e0000004000000042000000450000004b0000004d0000004f00000052000000850000008b0000008c0000008f0000009d000000a4000000a5000000a6000000e4000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

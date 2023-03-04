@@ -3,7 +3,7 @@
 	<Events>
 		<WorkUnit Name="Melodies" ID="{7FF9B866-2F47-47D7-9128-7FBB4E712395}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Play_C3_E3_A2_B2_C3" ID="{68ADE84E-9EA5-46C1-968A-9A3D04984EBD}">
+				<Event Name="Play_M1" ID="{68ADE84E-9EA5-46C1-968A-9A3D04984EBD}">
 					<ChildrenList>
 						<Action Name="" ID="{2223758A-803C-4D30-8BA4-4597E1C1C8DC}" ShortID="607530205">
 							<ReferenceList>
@@ -42,7 +42,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_C3_E3_A2_B2_C3_versions" ID="{9FE4944B-7791-457E-AF5E-C0A9FC46B188}">
+				<Event Name="Play_M1_versions" ID="{9FE4944B-7791-457E-AF5E-C0A9FC46B188}">
 					<ChildrenList>
 						<Action Name="" ID="{8976CBF9-AC8C-4693-B6FD-0D815272BB71}" ShortID="938321208">
 							<ReferenceList>
@@ -85,6 +85,31 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="M1_Birds" ID="{43FD7858-4D21-40DD-A06C-608DD8D1EFCF}" WorkUnitID="{E5F10FC4-A206-4CEE-8C77-3A46AC386FCD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_M1_Dissected" ID="{D969B921-6FAD-44C2-A3AA-5E2E8D67AF49}">
+					<ChildrenList>
+						<Action Name="" ID="{3F523A74-7681-418B-ADBC-4B7B73BB95BC}" ShortID="666349454">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="M1Dissected" ID="{B2BB9658-A434-4934-9020-2158BA0713E1}" WorkUnitID="{35658988-EBE6-42AB-BE13-CC3667F51DCE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Reset_M1_Dissected" ID="{4AB660F7-6807-4B57-9433-DFC2D8C917D6}">
+					<ChildrenList>
+						<Action Name="" ID="{C1A8882A-3B93-4E71-944A-6F8E50C33EC8}" ShortID="717194729">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="42"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="M1Dissected" ID="{B2BB9658-A434-4934-9020-2158BA0713E1}" WorkUnitID="{35658988-EBE6-42AB-BE13-CC3667F51DCE}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

@@ -66,14 +66,14 @@ public class NearbyTrees : MonoBehaviour
         {
             stopIndicator = false;
         }
-        print("Should NOT play" + shortestDistanceTreeToTarget);
+        // print("Should NOT play" + shortestDistanceTreeToTarget);
         if (!stopIndicator && treeWithShortestDistance != null && !stopIndicatorOnSucess)
         {
-            print("Should play" + shortestDistanceTreeToTarget);
+            // print("Should play" + shortestDistanceTreeToTarget);
             LeavesRustling.Post(treeWithShortestDistance.gameObject);
         }
 
-        yield return new WaitForSeconds(15f);
+        yield return new WaitForSeconds(9f);
 
         StartCoroutine(SonifyTrees());
     }
