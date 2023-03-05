@@ -198,7 +198,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{790E772B-B5A3-5D91-AE34-8BE025E882CC}">
+		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{4DFD4C7E-63F2-65C0-8A27-06857CA0BF2F}">
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
 			<Media>
@@ -270,6 +270,10 @@
 					<ShortName>LeavesRustlingIndicator\Leaves_Rustling_06.wav</ShortName>
 					<CachePath>SFX/LeavesRustlingIndicator/Leaves_Rustling_06_10C4C929.wem</CachePath>
 				</File>
+				<File Id="77008919" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>North.wav</ShortName>
+					<CachePath>Voices/English(US)/North_10C4C929.wem</CachePath>
+				</File>
 				<File Id="99426326" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ButtonReadAloud\EffectsVolume.wav</ShortName>
 					<CachePath>SFX/ButtonReadAloud/EffectsVolume_10C4C929.wem</CachePath>
@@ -277,10 +281,6 @@
 				<File Id="106854697" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>DistanceCount\80.wav</ShortName>
 					<CachePath>SFX/DistanceCount/80_10C4C929.wem</CachePath>
-				</File>
-				<File Id="115590999" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>North.wav</ShortName>
-					<CachePath>SFX/North_10C4C929.wem</CachePath>
 				</File>
 				<File Id="119593203" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>D2b.wav</ShortName>
@@ -410,6 +410,10 @@
 					<ShortName>F3#.wav</ShortName>
 					<CachePath>SFX/F3#_10C4C929.wem</CachePath>
 				</File>
+				<File Id="272710834" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>West.wav</ShortName>
+					<CachePath>Voices/English(US)/West_10C4C929.wem</CachePath>
+				</File>
 				<File Id="274470355" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Woodpicker\Woodpicker_Pick_01.wav</ShortName>
 					<CachePath>SFX/Woodpicker/Woodpicker_Pick_01_10C4C929.wem</CachePath>
@@ -488,7 +492,7 @@
 				</File>
 				<File Id="363402405" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>OnTarget\OnTarget_PitchA.wav</ShortName>
-					<CachePath>SFX/OnTarget/OnTarget_PitchA_10C4C929.wem</CachePath>
+					<CachePath>SFX/OnTarget/OnTarget_PitchA_D79FB2B7.wem</CachePath>
 				</File>
 				<File Id="364578896" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>M1_A2_P3.wav</ShortName>
@@ -596,7 +600,7 @@
 				</File>
 				<File Id="515046687" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>OnTarget\OnTarget_PitchB.wav</ShortName>
-					<CachePath>SFX/OnTarget/OnTarget_PitchB_10C4C929.wem</CachePath>
+					<CachePath>SFX/OnTarget/OnTarget_PitchB_D79FB2B7.wem</CachePath>
 				</File>
 				<File Id="523980979" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TreeBump\Dropping Wood 08.wav</ShortName>
@@ -608,7 +612,11 @@
 				</File>
 				<File Id="532211832" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>OnTarget\OnTarget_PitchC.wav</ShortName>
-					<CachePath>SFX/OnTarget/OnTarget_PitchC_10C4C929.wem</CachePath>
+					<CachePath>SFX/OnTarget/OnTarget_PitchC_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="535282374" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>South.wav</ShortName>
+					<CachePath>Voices/English(US)/South_10C4C929.wem</CachePath>
 				</File>
 				<File Id="538381605" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>DistanceCount\90.wav</ShortName>
@@ -669,10 +677,6 @@
 				<File Id="597020867" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TreeBump\Dropping Wood 11.wav</ShortName>
 					<CachePath>SFX/TreeBump/Dropping Wood 11_3F75BDB9.wem</CachePath>
-				</File>
-				<File Id="598167937" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>South.wav</ShortName>
-					<CachePath>SFX/South_10C4C929.wem</CachePath>
 				</File>
 				<File Id="599950730" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>D4#.wav</ShortName>
@@ -744,7 +748,7 @@
 				</File>
 				<File Id="681487044" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>OnTarget\OnTarget_PitchE.wav</ShortName>
-					<CachePath>SFX/OnTarget/OnTarget_PitchE_10C4C929.wem</CachePath>
+					<CachePath>SFX/OnTarget/OnTarget_PitchE_D79FB2B7.wem</CachePath>
 				</File>
 				<File Id="686006542" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>A4#.wav</ShortName>
@@ -798,6 +802,10 @@
 					<ShortName>Plyr_Grunt_08.wav</ShortName>
 					<CachePath>SFX/Plyr_Grunt_08_10C4C929.wem</CachePath>
 				</File>
+				<File Id="767168823" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>East.wav</ShortName>
+					<CachePath>Voices/English(US)/East_10C4C929.wem</CachePath>
+				</File>
 				<File Id="782485844" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O4\G4.wav</ShortName>
 					<CachePath>SFX/O4/G4_10C4C929.wem</CachePath>
@@ -817,10 +825,6 @@
 				<File Id="795254982" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Gravel\FS_Gravel_02.wav</ShortName>
 					<CachePath>SFX/Footsteps/Gravel/FS_Gravel_02_10C4C929.wem</CachePath>
-				</File>
-				<File Id="805075098" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>West.wav</ShortName>
-					<CachePath>SFX/West_10C4C929.wem</CachePath>
 				</File>
 				<File Id="807706107" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O2\G2.wav</ShortName>
@@ -1057,10 +1061,6 @@
 				<File Id="1048145014" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TreeBump\Dropping Wood 10.wav</ShortName>
 					<CachePath>SFX/TreeBump/Dropping Wood 10_3F75BDB9.wem</CachePath>
-				</File>
-				<File Id="1051679878" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>East.wav</ShortName>
-					<CachePath>SFX/East_10C4C929.wem</CachePath>
 				</File>
 				<File Id="1053882955" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>StoneBump\StoneBump10.wav</ShortName>
@@ -1598,9 +1598,9 @@
 						<MediaRef Id="1047754521"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="4162345221" Name="Play_East" DurationType="OneShot" DurationMin="0.75" DurationMax="0.75">
+				<Event Id="4162345221" Name="Play_East" DurationType="OneShot" DurationMin="0.5625" DurationMax="0.5625">
 					<MediaRefs>
-						<MediaRef Id="1051679878"/>
+						<MediaRef Id="767168823"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="342260041" Name="Play_InBetween" DurationType="OneShot" DurationMin="0.34375" DurationMax="0.34375">
@@ -1695,9 +1695,9 @@
 						<MediaRef Id="346819927"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1850732987" Name="Play_North" DurationType="OneShot" DurationMin="0.75" DurationMax="0.75">
+				<Event Id="1850732987" Name="Play_North" DurationType="OneShot" DurationMin="0.8125" DurationMax="0.8125">
 					<MediaRefs>
-						<MediaRef Id="115590999"/>
+						<MediaRef Id="77008919"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="2787390506" Name="Play_NoteWrangle" MaxAttenuation="200" DurationType="OneShot" DurationMin="10" DurationMax="11">
@@ -1708,7 +1708,7 @@
 						<MediaRef Id="1045015971"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2702745606" Name="Play_OnTarget" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="2702745606" Name="Play_OnTarget" DurationType="Infinite">
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="2048081433" Id="339713609"/>
@@ -1827,9 +1827,9 @@
 						<MediaRef Id="985489907"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3187449017" Name="Play_South" DurationType="OneShot" DurationMin="0.75" DurationMax="0.75">
+				<Event Id="3187449017" Name="Play_South" DurationType="OneShot" DurationMin="0.66229165" DurationMax="0.66229165">
 					<MediaRefs>
-						<MediaRef Id="598167937"/>
+						<MediaRef Id="535282374"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="3460539825" Name="Play_Step_GrassFlowers" DurationType="OneShot" DurationMin="0.4375" DurationMax="1.597125">
@@ -1908,7 +1908,7 @@
 				</Event>
 				<Event Id="1103419735" Name="Play_West" DurationType="OneShot" DurationMin="0.75" DurationMax="0.75">
 					<MediaRefs>
-						<MediaRef Id="805075098"/>
+						<MediaRef Id="272710834"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="419352152" Name="Reset_M1_Dissected" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
@@ -2015,5 +2015,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{7B7816C3-5572-8DD1-EF85-D45CBA563617}</FileHash>
+	<FileHash>{54C6BB8E-620D-440F-DFC8-5B66A2DB1AF2}</FileHash>
 </SoundBanksInfo>

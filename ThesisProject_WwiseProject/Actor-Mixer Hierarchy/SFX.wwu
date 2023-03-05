@@ -1931,6 +1931,7 @@
 								</Sound>
 								<Sound Name="North" ID="{304929DE-7DB4-429F-8E89-E556CF902CF4}" ShortID="308997008">
 									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 									</PropertyList>
@@ -1943,11 +1944,11 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="North" ID="{8E958892-2C25-4BD7-A102-F562734FC0B1}">
-											<Language>SFX</Language>
+										<AudioFileSource Name="North" ID="{449179A4-739D-4525-94DC-2CFB92D76545}">
+											<Language>English(US)</Language>
 											<AudioFile>North.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="115590999"/>
+												<MediaID ID="77008919"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
@@ -1960,11 +1961,12 @@
 										</Panner>
 									</PositioningInfo>
 									<ActiveSourceList>
-										<ActiveSource Name="North" ID="{8E958892-2C25-4BD7-A102-F562734FC0B1}" Platform="Linked"/>
+										<ActiveSource Name="North" ID="{449179A4-739D-4525-94DC-2CFB92D76545}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="South" ID="{AA32ABD0-249A-4560-B4FD-107E8C00FB5B}" ShortID="931116338">
 									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 									</PropertyList>
@@ -1977,11 +1979,11 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="South" ID="{BB523594-B3E1-4573-8ACB-A9D6D709F625}">
-											<Language>SFX</Language>
+										<AudioFileSource Name="South" ID="{585A9B4F-4A6E-4CF2-9AF8-A85AB23459C6}">
+											<Language>English(US)</Language>
 											<AudioFile>South.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="598167937"/>
+												<MediaID ID="535282374"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
@@ -1994,11 +1996,12 @@
 										</Panner>
 									</PositioningInfo>
 									<ActiveSourceList>
-										<ActiveSource Name="South" ID="{BB523594-B3E1-4573-8ACB-A9D6D709F625}" Platform="Linked"/>
+										<ActiveSource Name="South" ID="{585A9B4F-4A6E-4CF2-9AF8-A85AB23459C6}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="West" ID="{19F047D6-DB71-4926-B9D4-A8ECC901168D}" ShortID="257505319">
 									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 									</PropertyList>
@@ -2011,11 +2014,11 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="West" ID="{56C27A7A-E7B3-49A4-BEA8-F1CB4EF0EB86}">
-											<Language>SFX</Language>
+										<AudioFileSource Name="West" ID="{F889EEB0-7C6B-4071-9D07-0670A71D7931}">
+											<Language>English(US)</Language>
 											<AudioFile>West.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="805075098"/>
+												<MediaID ID="272710834"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
@@ -2028,11 +2031,12 @@
 										</Panner>
 									</PositioningInfo>
 									<ActiveSourceList>
-										<ActiveSource Name="West" ID="{56C27A7A-E7B3-49A4-BEA8-F1CB4EF0EB86}" Platform="Linked"/>
+										<ActiveSource Name="West" ID="{F889EEB0-7C6B-4071-9D07-0670A71D7931}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="East" ID="{3F05C5DF-5D3E-4FFA-9EFA-ECDA9825B44F}" ShortID="859883022">
 									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 									</PropertyList>
@@ -2045,11 +2049,11 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="East" ID="{7C38D395-0229-49F1-B386-6C9105DC2602}">
-											<Language>SFX</Language>
+										<AudioFileSource Name="East" ID="{04F9A191-E9E5-4F20-9C07-176C91F27098}">
+											<Language>English(US)</Language>
 											<AudioFile>East.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="1051679878"/>
+												<MediaID ID="767168823"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
@@ -2062,7 +2066,7 @@
 										</Panner>
 									</PositioningInfo>
 									<ActiveSourceList>
-										<ActiveSource Name="East" ID="{7C38D395-0229-49F1-B386-6C9105DC2602}" Platform="Linked"/>
+										<ActiveSource Name="East" ID="{04F9A191-E9E5-4F20-9C07-176C91F27098}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>

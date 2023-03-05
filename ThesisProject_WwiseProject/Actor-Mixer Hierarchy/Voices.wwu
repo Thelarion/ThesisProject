@@ -519,16 +519,16 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="WelcomeInclusionmode" ID="{F9375E27-F07A-4F5C-B733-6CCCF24527FB}">
+								<AudioFileSource Name="Welcome" ID="{7CC27642-D886-4F66-9F4D-625E2A5AA6C3}">
 									<Language>English(US)</Language>
-									<AudioFile>WelcomeInclusionmode.wav</AudioFile>
+									<AudioFile>Welcome.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="160436766"/>
+										<MediaID ID="770808343"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="WelcomeInclusionmode" ID="{F9375E27-F07A-4F5C-B733-6CCCF24527FB}" Platform="Linked"/>
+								<ActiveSource Name="Welcome" ID="{7CC27642-D886-4F66-9F4D-625E2A5AA6C3}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="ListenAgain" ID="{66DB382A-6F9F-4E13-8CE9-AB317466300B}" ShortID="715846019">
