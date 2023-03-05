@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     public AudioMenu audioMenuInGame;
     private bool menuActive;
     public GameObject Blur;
+    public GameObject player;
 
 
     public static string ChosenPalette { get => chosenPalette; set => chosenPalette = value; }
@@ -29,7 +30,13 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        player = GameObject.Find("Player");
+
         Invoke("PlayMelodyCoroutine", 3f);
+        if (!StartMenuManager.InclusionState)
+        {
+            AkSoundEngine.PostEvent("Play_Birds", player);
+        }
     }
 
     int index = 0;
@@ -40,7 +47,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator PlayMelody()
     {
-        AkSoundEngine.PostEvent("Play_M1", GameObject.Find("Player"));
+        AkSoundEngine.PostEvent("Play_M1", player);
         yield return new WaitForSeconds(5f);
         if (index < 2)
         {
@@ -49,8 +56,8 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            AkSoundEngine.PostEvent("Reset_M1_Success_Announce", GameObject.Find("Player"));
-            AkSoundEngine.PostEvent("Play_M1_Intro", GameObject.Find("Player"));
+            AkSoundEngine.PostEvent("Reset_M1_Success_Announce", player);
+            AkSoundEngine.PostEvent("Play_M1_Intro", player);
         }
 
     }

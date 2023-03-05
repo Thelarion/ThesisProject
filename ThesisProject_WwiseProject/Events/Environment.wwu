@@ -94,6 +94,21 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Birds" ID="{1F260AC8-B9E5-4F96-8CC3-B5B248BE57EF}">
+					<ChildrenList>
+						<Action Name="" ID="{8D469043-0877-46E5-80BC-61741FA517F4}" ShortID="922380015">
+							<PropertyList>
+								<Property Name="FadeInCurve" Type="int16" Value="6"/>
+								<Property Name="FadeTime" Type="Real64" Value="4"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Birds" ID="{4E777159-638B-477C-A54F-279B799DCC4B}" WorkUnitID="{C9AE1A60-1F64-439A-AD46-9C53EF882DCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

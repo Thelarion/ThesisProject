@@ -85,6 +85,7 @@ namespace AK
         static const AkUniqueID PLAY_BELLS = 2324519816U;
         static const AkUniqueID PLAY_BGM = 3126765036U;
         static const AkUniqueID PLAY_BGM_MENU_PLACEHOLDER = 2771594344U;
+        static const AkUniqueID PLAY_BIRDS = 3025897706U;
         static const AkUniqueID PLAY_BUTTON_ONCLICK = 283810802U;
         static const AkUniqueID PLAY_BUTTON_SELECTION = 2964789125U;
         static const AkUniqueID PLAY_BUTTONREADALOUD = 2262911975U;

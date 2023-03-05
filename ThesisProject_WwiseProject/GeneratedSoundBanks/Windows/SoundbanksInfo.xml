@@ -200,7 +200,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{8DF2D81C-F6AE-4C1B-8C0A-459ED6137E1E}">
+		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{47095FAB-44DB-F5E0-36C9-CDBEABDA47DC}">
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
 			<Media>
@@ -672,6 +672,10 @@
 					<ShortName>TreeBump\Dropping Wood 11.wav</ShortName>
 					<CachePath>SFX/TreeBump/Dropping Wood 11_3F75BDB9.wem</CachePath>
 				</File>
+				<File Id="599570934" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Birds\Birds_lp_02.wav</ShortName>
+					<CachePath>SFX/Birds/Birds_lp_02_3F75BDB9.wem</CachePath>
+				</File>
 				<File Id="599950730" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>D4#.wav</ShortName>
 					<CachePath>SFX/D4#_10C4C929.wem</CachePath>
@@ -980,6 +984,10 @@
 					<ShortName>Grass\Plyr_Fstps_Grass_02.wav</ShortName>
 					<CachePath>SFX/Grass/Plyr_Fstps_Grass_02_10C4C929.wem</CachePath>
 				</File>
+				<File Id="955220572" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Birds\Birds_lp_01.wav</ShortName>
+					<CachePath>SFX/Birds/Birds_lp_01_3F75BDB9.wem</CachePath>
+				</File>
 				<File Id="959719737" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>Check.wav</ShortName>
 					<CachePath>Voices/English(US)/Check_10C4C929.wem</CachePath>
@@ -1079,6 +1087,10 @@
 				<File Id="1048145014" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TreeBump\Dropping Wood 10.wav</ShortName>
 					<CachePath>SFX/TreeBump/Dropping Wood 10_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="1050789876" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Birds\Birds_lp_03.wav</ShortName>
+					<CachePath>SFX/Birds/Birds_lp_03_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="1053882955" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>StoneBump\StoneBump10.wav</ShortName>
@@ -1471,6 +1483,13 @@
 				<Event Id="2771594344" Name="Play_BGM_Menu_Placeholder" DurationType="OneShot" DurationMin="240.571" DurationMax="240.571">
 					<MediaRefs>
 						<MediaRef Id="918872021"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3025897706" Name="Play_Birds" DurationType="OneShot" DurationMin="268.63528" DurationMax="268.63528">
+					<MediaRefs>
+						<MediaRef Id="599570934"/>
+						<MediaRef Id="955220572"/>
+						<MediaRef Id="1050789876"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="283810802" Name="Play_Button_OnClick" DurationType="OneShot" DurationMin="1.8826104" DurationMax="1.8826104">
@@ -2045,5 +2064,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{B4DFCD26-A899-1816-AFE8-D25BAA9E72E8}</FileHash>
+	<FileHash>{B4823A90-FDD7-AF60-E6EF-8167DFCBF02D}</FileHash>
 </SoundBanksInfo>
