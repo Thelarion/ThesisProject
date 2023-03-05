@@ -7,7 +7,7 @@ using System.Linq;
 public class TargetController : MonoBehaviour
 {
     private OperationController _operationController;
-    public int _targetCount;
+    [SerializeField] private int _targetCount;
     public string chosenPalette;
     private Transform targetCheckStateForDistance;
     private Transform currentShortestDistance;
@@ -127,17 +127,25 @@ public class TargetController : MonoBehaviour
         }
     }
     int i = 0;
+
+    public int TargetCount { get => _targetCount; set => _targetCount = value; }
+
     private void CheckTargetCount()
     {
 
         if (CountChildrenTargets(transform) <= 0 && i < 1)
         {
 
-            print("No targets left");
             i++;
+            AkSoundEngine.PostEvent("Play_MelodyComplete", GameObject.Find("Player"));
             GameObject.Find("List").GetComponent<OperationController>().DecreaseAlphaIfZeroTargets();
-            AkSoundEngine.PostEvent("Play_Bells", Goal);
+            Invoke("PlayBells", 9f);
         }
+    }
+
+    void PlayBells()
+    {
+        AkSoundEngine.PostEvent("Play_Bells", Goal);
     }
 
     public int CountChildrenTargets(Transform t)
@@ -145,9 +153,11 @@ public class TargetController : MonoBehaviour
         int k = 0;
         foreach (Transform c in t)
         {
-            if (c.gameObject.activeSelf)
+            // if (c.gameObject.activeSelf)
+            if (c.gameObject)
                 k++;
         }
+        TargetCount = k;
         return k;
     }
 

@@ -413,7 +413,7 @@ MonoBehaviour:
     ParentPath: Events\Environment
     guid: 6b6ecfb2ce1fa94d909b1661ebea4ead
     GuidInternal: 
-    m_lastTime: -8585235895140537256
+    m_lastTime: -8585235870973592993
     List:
     - name: Play_Ambience
       guid: fa3455309387fb439b0c79717ed08820
@@ -446,6 +446,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: a3092b3ffa882e49a3a2d737138579ae
       Path: Events\Environment\Play_EndRegion
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_MelodyComplete
+      guid: 43f8e71ba1e48e4b84bfa9d0ce0cf814
+      id: 3868038991
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Environment
+        ObjectType: 12
+        guid: 6b6ecfb2ce1fa94d909b1661ebea4ead
+      - ElementName: Play_MelodyComplete
+        ObjectType: 3
+        guid: 43f8e71ba1e48e4b84bfa9d0ce0cf814
+      Path: Events\Environment\Play_MelodyComplete
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -545,7 +562,7 @@ MonoBehaviour:
     ParentPath: Events\Melodies
     guid: 66b8f97f472fd74791287fbb4e712395
     GuidInternal: 
-    m_lastTime: -8585236372335693327
+    m_lastTime: -8585235606183381006
     List:
     - name: MelodyStateOff
       guid: a8fea77287b0f348ad210b6acb17e0e4
@@ -632,6 +649,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_M1_Intro
+      guid: 8799177700187d4f9cf03761f376e39d
+      id: 2184134547
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Melodies
+        ObjectType: 12
+        guid: 66b8f97f472fd74791287fbb4e712395
+      - ElementName: Play_M1_Intro
+        ObjectType: 3
+        guid: 8799177700187d4f9cf03761f376e39d
+      Path: Events\Melodies\Play_M1_Intro
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_M1_Seq
       guid: 823d2a3ebd5e6546835659839df25576
       id: 3827381996
@@ -649,6 +683,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_M1_Success_Announce
+      guid: 0a290a225817f44280e97e78fd51003a
+      id: 763214702
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Melodies
+        ObjectType: 12
+        guid: 66b8f97f472fd74791287fbb4e712395
+      - ElementName: Play_M1_Success_Announce
+        ObjectType: 3
+        guid: 0a290a225817f44280e97e78fd51003a
+      Path: Events\Melodies\Play_M1_Success_Announce
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_M1_versions
       guid: 4b94e49f91777e45af5ec0a9fc46b188
       id: 3081684988
@@ -663,6 +714,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: 4b94e49f91777e45af5ec0a9fc46b188
       Path: Events\Melodies\Play_M1_versions
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Wrong_Note
+      guid: 905bb1f1b343d740b6b357262ebebd46
+      id: 1500429816
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Melodies
+        ObjectType: 12
+        guid: 66b8f97f472fd74791287fbb4e712395
+      - ElementName: Play_Wrong_Note
+        ObjectType: 3
+        guid: 905bb1f1b343d740b6b357262ebebd46
+      Path: Events\Melodies\Play_Wrong_Note
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -697,6 +765,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: 5a91b1a2d14f754eaaf4d9dccdf89832
       Path: Events\Melodies\Reset_M1_Seq
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Reset_M1_Sucess_Announce
+      guid: 5ba6eb17a68e7b468576ca795cbe5293
+      id: 2401183550
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Melodies
+        ObjectType: 12
+        guid: 66b8f97f472fd74791287fbb4e712395
+      - ElementName: Reset_M1_Sucess_Announce
+        ObjectType: 3
+        guid: 5ba6eb17a68e7b468576ca795cbe5293
+      Path: Events\Melodies\Reset_M1_Sucess_Announce
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1976,7 +2061,7 @@ MonoBehaviour:
     ParentPath: Events\SFX
     guid: 25bc135fc28aee46b33f4240d933cdbd
     GuidInternal: 
-    m_lastTime: -8585236688426835428
+    m_lastTime: -8585235643690860892
     List:
     - name: Beacon
       guid: bbc8b6179a41b343bca8b3cfc8a7a553
@@ -2305,46 +2390,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: FreqDistanceEvent
-      guid: 74c402e6d7077340a734ccbd7b265c9e
-      id: 2218041646
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: SFX
-        ObjectType: 12
-        guid: 25bc135fc28aee46b33f4240d933cdbd
-      - ElementName: Targets
-        ObjectType: 4
-        guid: be282630ab9e824c8957e45eb0ab286f
-      - ElementName: FreqDistanceEvent
-        ObjectType: 3
-        guid: 74c402e6d7077340a734ccbd7b265c9e
-      Path: Events\SFX\Targets\FreqDistanceEvent
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Miss
-      guid: c3bcf1bd2135fb49a33b11b6d7b71982
-      id: 3062523241
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: SFX
-        ObjectType: 12
-        guid: 25bc135fc28aee46b33f4240d933cdbd
-      - ElementName: Targets
-        ObjectType: 4
-        guid: be282630ab9e824c8957e45eb0ab286f
-      - ElementName: Miss
-        ObjectType: 3
-        guid: c3bcf1bd2135fb49a33b11b6d7b71982
-      Path: Events\SFX\Targets\Miss
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: Play_BeaconLock
       guid: 2bb7d26173335449a5a2a3e2d4cfd5ef
       id: 3923622767
@@ -2513,43 +2558,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Success
-      guid: a18f188f5f3e1541ad6cb05712663900
-      id: 3625060726
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: SFX
-        ObjectType: 12
-        guid: 25bc135fc28aee46b33f4240d933cdbd
-      - ElementName: Targets
-        ObjectType: 4
-        guid: be282630ab9e824c8957e45eb0ab286f
-      - ElementName: Success
-        ObjectType: 3
-        guid: a18f188f5f3e1541ad6cb05712663900
-      Path: Events\SFX\Targets\Success
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Targets
-      guid: be282630ab9e824c8957e45eb0ab286f
-      id: 3814383601
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: SFX
-        ObjectType: 12
-        guid: 25bc135fc28aee46b33f4240d933cdbd
-      - ElementName: Targets
-        ObjectType: 4
-        guid: be282630ab9e824c8957e45eb0ab286f
-      Path: Events\SFX\Targets
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
   - PhysicalPath: Events\Testing.wwu
     PathAndIcons:
     - ElementName: Events
@@ -2591,7 +2599,7 @@ MonoBehaviour:
     ParentPath: Events\UI
     guid: 13ad265a32fe774b8e3372fc1241ceef
     GuidInternal: 
-    m_lastTime: -8585235908392531927
+    m_lastTime: -8585235548280519323
     List:
     - name: DistanceFrameTransition
       guid: b75bda6923c11a45b48382c150b587a0
@@ -4468,7 +4476,7 @@ MonoBehaviour:
         guid: da8eac4adff1a245a328ede5f79242d9
       Path: Triggers\Default Work Unit\New_Trigger
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000200000003000000050000000a0000000b0000000f00000014000000160000001c0000001d0000001e0000002000000021000000230000002c0000002d0000002e0000002f000000300000003100000032000000330000003600000037000000390000003a0000003b0000003c0000003d0000003e0000004000000042000000450000004b0000004d0000004f00000052000000850000008b0000008c0000008f0000009d000000a4000000a5000000a6000000e4000000
+  ExpandedWaapiItemIds: 010000000200000003000000050000000a0000000b0000000f00000014000000160000001c0000001d0000001e0000002000000021000000230000002c0000002d0000002e0000002f00000030000000310000003200000033000000350000003600000037000000390000003a0000003b0000003c0000003d0000003e0000004000000042000000450000004b0000004d0000004f00000052000000850000008b0000008c0000008f0000009d000000a4000000a5000000a6000000e4000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

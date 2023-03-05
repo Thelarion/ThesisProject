@@ -115,6 +115,56 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_M1_Success_Announce" ID="{220A290A-1758-42F4-80E9-7E78FD51003A}">
+					<ChildrenList>
+						<Action Name="" ID="{160BD1FF-010F-473D-85A2-E08F7C1C098D}" ShortID="779435088">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="11"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="M1SuccessAnnounce" ID="{4BDFB024-02F4-48F5-8A4B-BA9C1663E933}" WorkUnitID="{14E6A00B-1C33-466E-9627-FBDE77EDBF18}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Reset_M1_Sucess_Announce" ID="{17EBA65B-8EA6-467B-8576-CA795CBE5293}">
+					<ChildrenList>
+						<Action Name="" ID="{CEA1D013-D0B0-4B21-AD26-A5C65E2DDE0E}" ShortID="172207644">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="42"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="M1SuccessAnnounce" ID="{4BDFB024-02F4-48F5-8A4B-BA9C1663E933}" WorkUnitID="{14E6A00B-1C33-466E-9627-FBDE77EDBF18}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Wrong_Note" ID="{F1B15B90-43B3-40D7-B6B3-57262EBEBD46}">
+					<ChildrenList>
+						<Action Name="" ID="{2B347679-ABF6-4EAB-8164-90D1165B1D5B}" ShortID="363002402">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="WrongNote" ID="{49FE5778-A0B2-471F-B88D-4966FF41A239}" WorkUnitID="{14E6A00B-1C33-466E-9627-FBDE77EDBF18}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_M1_Intro" ID="{77179987-1800-4F7D-9CF0-3761F376E39D}">
+					<ChildrenList>
+						<Action Name="" ID="{2C867495-FFBC-495F-864B-A5116E850BA1}" ShortID="283968115">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Announce_M1_P1_C3" ID="{A627D404-EF3E-4808-A5EB-9DA4BE3E6ECB}" WorkUnitID="{14E6A00B-1C33-466E-9627-FBDE77EDBF18}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

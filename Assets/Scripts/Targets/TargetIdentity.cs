@@ -62,17 +62,22 @@ public class TargetIdentity : MonoBehaviour
     // Remove target from instances when destroyed
     private void OnDestroy()
     {
+
         if (_tapState && operationController != null)
         {
             operationController.ActivateFrameSuccess(_indexInSequence, transform.name);
             operationController.DelayDistanceFrameCoroutine(4.5f);
         }
-        if (transform.GetComponentInParent<TargetController>() != null)
+
+
+        if (transform.GetComponentInParent<TargetController>().TargetCount > 1)
         {
+            AkSoundEngine.PostEvent("Play_M1_Success_Announce", GameObject.Find("Player"));
             Transform nextTone = transform.GetComponentInParent<TargetController>().ActivateNextTone();
             GetComponentInParent<SuccessEvent>().PlaySuccessEvent(this.transform);
             DistanceToTarget.CurrentTargetIdentity = nextTone.transform.GetComponent<TargetIdentity>();
         }
+
 
 
         _instances.Remove(this);

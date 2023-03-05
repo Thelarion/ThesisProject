@@ -24,7 +24,10 @@ public class ConductorBaton : MonoBehaviour
 
     private void Update()
     {
-        currentTarget = DistanceToTarget.CurrentTargetIdentity.gameObject.name;
+        if (DistanceToTarget.CurrentTargetIdentity != null)
+        {
+            currentTarget = DistanceToTarget.CurrentTargetIdentity.gameObject.name;
+        }
     }
 
     public void FireConductor()

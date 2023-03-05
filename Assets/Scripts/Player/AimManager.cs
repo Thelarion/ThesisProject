@@ -15,17 +15,23 @@ public class AimManager : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (currentTarget == null)
+        if (StartMenuManager.InclusionState)
         {
-            DetermineCurrentTarget();
+            if (currentTarget == null)
+            {
+                DetermineCurrentTarget();
+            }
+            CheckIfAimOnTarget();
         }
-        CheckIfAimOnTarget();
     }
 
 
     private void DetermineCurrentTarget()
     {
-        currentTarget = DistanceToTarget.CurrentTargetIdentity.gameObject;
+        if (DistanceToTarget.CurrentTargetIdentity != null)
+        {
+            currentTarget = DistanceToTarget.CurrentTargetIdentity.gameObject;
+        }
     }
 
 
@@ -51,7 +57,7 @@ public class AimManager : MonoBehaviour
     }
     private void setAimOnTargetStatus()
     {
-        print("onTarget");
+        // print("onTarget");
         if (!isAimOnTarget)
         {
             isAimOnTarget = true;

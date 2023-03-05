@@ -3,8 +3,6 @@ using UnityEngine;
 
 public class ConductNoteHitCheck : MonoBehaviour
 {
-    public AK.Wwise.Event Success;
-    public AK.Wwise.Event PlingFail;
     private ScoreManager scoreManager;
     public ParticleSystem hitParticles;
 
@@ -22,7 +20,6 @@ public class ConductNoteHitCheck : MonoBehaviour
         // CASE CORRECT NOTE
         if (other.transform.tag == "Target" && other.transform.GetComponent<RunInterval>().TapState)
         {
-            Success.Post(gameObject);
             scoreManager.CalculatePoints(other.transform.GetComponent<TargetIdentity>().MissedTaps);
             Destroy(other.transform.gameObject);
         }
@@ -40,7 +37,7 @@ public class ConductNoteHitCheck : MonoBehaviour
 
             other.transform.position = targetSpawnPoints.ReturnRandomSpawnTransform(indexInSequence).position;
 
-            PlingFail.Post(gameObject);
+            AkSoundEngine.PostEvent("Play_Wrong_Note", GameObject.Find("Player"));
 
             targetMove.InitializeMovementAfterMissOrInclusion();
 

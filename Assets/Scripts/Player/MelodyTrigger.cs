@@ -100,22 +100,4 @@ public class MelodyTrigger : MonoBehaviour
 
         Reset_Melody_Seq.Post(gameObject);
     }
-
-
-    // IEnumerator PlayMelSeq(GameObject[] sortedGOs)
-    // {
-    //     int max_value;
-
-    //     max_value = sortedGOs.Length > 5 ? 5 : sortedGOs.Length;
-
-    //     for (int i = 0; i < max_value; i++)
-    //     {
-    //         Play_Melody_Seq.Post(sortedGOs[i]);
-    //         // print(sortedGOs[i].name);
-
-    //         yield return new WaitForSeconds(1f);
-    //     }
-
-    //     Reset_Melody_Seq.Post(gameObject);
-    // }
 }

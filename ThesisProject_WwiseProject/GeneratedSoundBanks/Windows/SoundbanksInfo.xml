@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1229948536" Type="User" Language="SFX">
+		<SoundBank Id="1229948536" Type="User" Language="SFX" Hash="{7C09EAE0-05CB-9B95-38C9-8258AA7B9EE6}">
 			<ShortName>Environment</ShortName>
 			<Path>Environment.bnk</Path>
 		</SoundBank>
@@ -200,7 +200,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{84EE9763-4686-F91F-E8E3-0A5BDFEF4A0F}">
+		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{8DF2D81C-F6AE-4C1B-8C0A-459ED6137E1E}">
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
 			<Media>
@@ -211,6 +211,10 @@
 				<File Id="4722660" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>M1_C3_P1.wav</ShortName>
 					<CachePath>SFX/M1_C3_P1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="10711433" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>M1Announce\Announce_M1_P5_C3.wav</ShortName>
+					<CachePath>SFX/M1Announce/Announce_M1_P5_C3_10C4C929.wem</CachePath>
 				</File>
 				<File Id="12077457" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>G4#.wav</ShortName>
@@ -244,10 +248,6 @@
 					<ShortName>SteppingFlowersGrass\Step_GrassFlowers_05.wav</ShortName>
 					<CachePath>SFX/SteppingFlowersGrass/Step_GrassFlowers_05_3F75BDB9.wem</CachePath>
 				</File>
-				<File Id="33821008" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>PlingFail.wav</ShortName>
-					<CachePath>SFX/PlingFail_10C4C929.wem</CachePath>
-				</File>
 				<File Id="38162978" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>Resume.wav</ShortName>
 					<CachePath>Voices/English(US)/Resume_3F75BDB9.wem</CachePath>
@@ -255,6 +255,10 @@
 				<File Id="45056509" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>StoneBump\StoneBump4.wav</ShortName>
 					<CachePath>SFX/StoneBump/StoneBump4_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="48270307" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>WrongNote.wav</ShortName>
+					<CachePath>SFX/WrongNote_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="52751137" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SteppingFlowersGrass\Step_GrassFlowers_03.wav</ShortName>
@@ -392,9 +396,17 @@
 					<ShortName>DistanceCount\10.wav</ShortName>
 					<CachePath>SFX/DistanceCount/10_10C4C929.wem</CachePath>
 				</File>
+				<File Id="221912054" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>M1Announce\Announce_M1_P2_E3.wav</ShortName>
+					<CachePath>SFX/M1Announce/Announce_M1_P2_E3_10C4C929.wem</CachePath>
+				</File>
 				<File Id="232226852" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>M1_C3_P5.wav</ShortName>
 					<CachePath>SFX/M1_C3_P5_10C4C929.wem</CachePath>
+				</File>
+				<File Id="242190809" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>DistanceFrameTransition.wav</ShortName>
+					<CachePath>SFX/DistanceFrameTransition_10C4C929.wem</CachePath>
 				</File>
 				<File Id="263546722" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>VoiceVolume.wav</ShortName>
@@ -426,7 +438,7 @@
 				</File>
 				<File Id="277361146" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>I1.wav</ShortName>
-					<CachePath>Voices/English(US)/I1_060BD59C.wem</CachePath>
+					<CachePath>Voices/English(US)/I1_7F0E4365.wem</CachePath>
 				</File>
 				<File Id="288447565" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Water\Plyr_Fstps_Water_02.wav</ShortName>
@@ -516,6 +528,10 @@
 					<ShortName>Start.wav</ShortName>
 					<CachePath>Voices/English(US)/Start_3F75BDB9.wem</CachePath>
 				</File>
+				<File Id="387326776" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>M1Announce\Announce_M1_P3_A2.wav</ShortName>
+					<CachePath>SFX/M1Announce/Announce_M1_P3_A2_10C4C929.wem</CachePath>
+				</File>
 				<File Id="391679118" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Dirt\FS_Dirt_03.wav</ShortName>
 					<CachePath>SFX/Footsteps/Dirt/FS_Dirt_03_10C4C929.wem</CachePath>
@@ -543,10 +559,6 @@
 				<File Id="429045180" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>StoneBump\StoneBump1.wav</ShortName>
 					<CachePath>SFX/StoneBump/StoneBump1_3F75BDB9.wem</CachePath>
-				</File>
-				<File Id="431263045" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>WrongNoteTryAgain.wav</ShortName>
-					<CachePath>SFX/WrongNoteTryAgain_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="441185423" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AudioVisualiserOn.wav</ShortName>
@@ -736,6 +748,10 @@
 					<ShortName>A4#.wav</ShortName>
 					<CachePath>SFX/A4#_10C4C929.wem</CachePath>
 				</File>
+				<File Id="692054553" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>M1Announce\Announce_M1_P1_C3.wav</ShortName>
+					<CachePath>SFX/M1Announce/Announce_M1_P1_C3_10C4C929.wem</CachePath>
+				</File>
 				<File Id="698313299" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Woodpicker\Woodpicker_Pick_02.wav</ShortName>
 					<CachePath>SFX/Woodpicker/Woodpicker_Pick_02_10C4C929.wem</CachePath>
@@ -852,6 +868,10 @@
 					<ShortName>TreeBump\Dropping Wood 14.wav</ShortName>
 					<CachePath>SFX/TreeBump/Dropping Wood 14_3F75BDB9.wem</CachePath>
 				</File>
+				<File Id="825131217" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>MelodyComplete.wav</ShortName>
+					<CachePath>Voices/English(US)/MelodyComplete_3F75BDB9.wem</CachePath>
+				</File>
 				<File Id="828653254" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TreeBump\Dropping Wood 15.wav</ShortName>
 					<CachePath>SFX/TreeBump/Dropping Wood 15_3F75BDB9.wem</CachePath>
@@ -915,6 +935,10 @@
 				<File Id="904983868" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SRelease2.wav</ShortName>
 					<CachePath>SFX/SRelease2_10C4C929.wem</CachePath>
+				</File>
+				<File Id="906158194" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>M1Announce\Announce_M1_P4_B2.wav</ShortName>
+					<CachePath>SFX/M1Announce/Announce_M1_P4_B2_10C4C929.wem</CachePath>
 				</File>
 				<File Id="915905125" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>E4b.wav</ShortName>
@@ -1027,10 +1051,6 @@
 				<File Id="1014629448" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>Continue.wav</ShortName>
 					<CachePath>Voices/English(US)/Continue_3F75BDB9.wem</CachePath>
-				</File>
-				<File Id="1018730739" Language="English(US)" Streaming="false" Location="Memory">
-					<ShortName>GreatYouTappedCorrectNote.wav</ShortName>
-					<CachePath>Voices/English(US)/GreatYouTappedCorrectNote_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="1020057871" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Woodpicker\Woodpicker_Pick_04.wav</ShortName>
@@ -1293,6 +1313,11 @@
 					</MediaRefs>
 				</Event>
 				<Event Id="2982082363" Name="distanceC" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="293588534" Name="DistanceFrameTransition" DurationType="OneShot" DurationMin="7.53125" DurationMax="7.53125">
+					<MediaRefs>
+						<MediaRef Id="242190809"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1819748156" Name="E2" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="181898422"/>
@@ -1407,12 +1432,6 @@
 					<ActionSetState>
 						<ActionSetStateEntry GroupId="3443944880" Id="2796181470" Name="MelodyOn"/>
 					</ActionSetState>
-				</Event>
-				<Event Id="3062523241" Name="Miss" DurationType="OneShot" DurationMin="7.3738775" DurationMax="7.3738775">
-					<MediaRefs>
-						<MediaRef Id="33821008"/>
-						<MediaRef Id="431263045"/>
-					</MediaRefs>
 				</Event>
 				<Event Id="278617630" Name="Play_Ambience" DurationType="Infinite">
 					<MediaRefs>
@@ -1658,6 +1677,11 @@
 						<MediaRef Id="716105785"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2184134547" Name="Play_M1_Intro" DurationType="OneShot" DurationMin="14.5" DurationMax="14.5">
+					<MediaRefs>
+						<MediaRef Id="692054553"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3827381996" Name="Play_M1_Seq" MaxAttenuation="30" DurationType="OneShot" DurationMin="1" DurationMax="1">
 					<MediaRefs>
 						<MediaRef Id="4722660"/>
@@ -1667,6 +1691,14 @@
 						<MediaRef Id="647086168"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="763214702" Name="Play_M1_Success_Announce" DurationType="OneShot" DurationMin="17.547604" DurationMax="20.490313">
+					<MediaRefs>
+						<MediaRef Id="10711433"/>
+						<MediaRef Id="221912054"/>
+						<MediaRef Id="387326776"/>
+						<MediaRef Id="906158194"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3081684988" Name="Play_M1_versions" MaxAttenuation="100" DurationType="OneShot" DurationMin="4" DurationMax="4">
 					<MediaRefs>
 						<MediaRef Id="128521936"/>
@@ -1674,6 +1706,11 @@
 						<MediaRef Id="601310814"/>
 						<MediaRef Id="872404735"/>
 						<MediaRef Id="1071148732"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3868038991" Name="Play_MelodyComplete" DurationType="OneShot" DurationMin="9.5" DurationMax="9.5">
+					<MediaRefs>
+						<MediaRef Id="825131217"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="2709512125" Name="Play_MenuClose" DurationType="OneShot" DurationMin="2" DurationMax="2">
@@ -1902,19 +1939,20 @@
 						<MediaRef Id="272710834"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1500429816" Name="Play_Wrong_Note" DurationType="OneShot" DurationMin="6.5" DurationMax="6.5">
+					<MediaRefs>
+						<MediaRef Id="48270307"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="419352152" Name="Reset_M1_Dissected" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="39386235" Name="Reset_M1_Seq" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2401183550" Name="Reset_M1_Sucess_Announce" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2371377610" Name="Stop_AllEvents" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1073466678" Name="Stop_BGM" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2842046910" Name="Stop_BGM_Menu_Placeholder" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="632677629" Name="Stop_ButtonReadAloud" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2496424763" Name="Stop_Instructions" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3712676862" Name="Stop_VolumeCheck" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="3625060726" Name="Success" DurationType="OneShot" DurationMin="17.449682" DurationMax="17.449682">
-					<MediaRefs>
-						<MediaRef Id="1018730739"/>
-					</MediaRefs>
-				</Event>
 			</Events>
 			<GameParameters>
 				<GameParameter Id="3316058687" Name="RTPC_Obstruction"/>
@@ -2007,5 +2045,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{C03C2CC9-2BF4-7B73-0DE4-A13A072C0726}</FileHash>
+	<FileHash>{B4DFCD26-A899-1816-AFE8-D25BAA9E72E8}</FileHash>
 </SoundBanksInfo>

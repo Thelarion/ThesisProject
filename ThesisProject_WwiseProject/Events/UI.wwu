@@ -4,11 +4,11 @@
 		<WorkUnit Name="UI" ID="{5A26AD13-FE32-4B77-8E33-72FC1241CEEF}" PersistMode="Standalone">
 			<ChildrenList>
 				<Event Name="DistanceFrameTransition" ID="{69DA5BB7-C123-451A-B483-82C150B587A0}">
-					<PropertyList>
-						<Property Name="Inclusion" Type="bool" Value="False"/>
-					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{F304B334-6FAF-4D56-9611-C86BBF602D79}" ShortID="422786274">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="5"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="DistanceFrameTransition" ID="{9A6D3DAF-10A7-481F-AD73-6DDD86D47CE7}" WorkUnitID="{690ABE9D-D445-44AA-AE0F-2C6B0F3C9C08}"/>

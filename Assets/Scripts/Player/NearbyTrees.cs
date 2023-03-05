@@ -30,10 +30,13 @@ public class NearbyTrees : MonoBehaviour
         yield return new WaitForSeconds(30f);
         stopIndicatorOnSucess = false;
     }
-
+    Transform currentTargetTone;
     IEnumerator SonifyTrees()
     {
-        Transform currentTargetTone = DistanceToTarget.CurrentTargetIdentity.transform;
+        if (DistanceToTarget.CurrentTargetIdentity != null)
+        {
+            currentTargetTone = DistanceToTarget.CurrentTargetIdentity.transform;
+        }
 
         Transform treeWithShortestDistance = null;
 

@@ -332,10 +332,10 @@ public class OperationController : MonoBehaviour
                 // Make it visible
                 StartCoroutine(IncreaseAlpha(_currentFrameDistance));
                 // Play transition sound
-                if (blockInitialPost && !StartMenuManager.InclusionState)
-                {
-                    DistanceFrameTransition.Post(gameObject);
-                }
+                // if (blockInitialPost && !StartMenuManager.InclusionState)
+                // {
+                //     DistanceFrameTransition.Post(gameObject);
+                // }
                 blockInitialPost = true;
             }
         }

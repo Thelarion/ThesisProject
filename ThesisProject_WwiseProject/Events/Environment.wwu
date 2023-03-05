@@ -83,6 +83,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_MelodyComplete" ID="{1BE7F843-E4A1-4B8E-84BF-A9D0CE0CF814}">
+					<ChildrenList>
+						<Action Name="" ID="{CC2F5C8A-CBF9-41B7-A137-2B68E60FAD35}" ShortID="19185891">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MelodyComplete" ID="{870AA163-1613-4781-847B-7ED0A7F2EB54}" WorkUnitID="{14E6A00B-1C33-466E-9627-FBDE77EDBF18}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

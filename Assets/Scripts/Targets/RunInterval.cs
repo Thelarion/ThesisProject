@@ -16,7 +16,7 @@ public class RunInterval : MonoBehaviour
     [HideInInspector] public PlayNoteOnTone PlayNoteOnTone;
     private string currentMaterialName;
     private string constructedNote;
-    private ParticleSystem noteParticles;
+    // private ParticleSystem noteParticles;
 
     void Start()
     {
@@ -29,7 +29,7 @@ public class RunInterval : MonoBehaviour
 
         void GetComponents()
         {
-            noteParticles = transform.GetChild(0).GetComponent<ParticleSystem>();
+            // noteParticles = transform.GetChild(0).GetComponent<ParticleSystem>();
             PlayNoteOnTone = transform.parent.gameObject.GetComponent<PlayNoteOnTone>();
         }
 
@@ -144,7 +144,7 @@ public class RunInterval : MonoBehaviour
     IEnumerator IntervalNoteAndEffect()
     {
         PlayNoteOnTone.PlayNote(currentMaterialName, _nameGOOctave, _nameGOAccidental, transform.gameObject);
-        noteParticles.Play();
+        // noteParticles.Play();
         yield return new WaitForSeconds(1);
         StartCoroutine(IntervalNoteAndEffect());
     }

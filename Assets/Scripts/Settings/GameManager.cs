@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        Invoke("PlayMelodyCoroutine", 4f);
+        Invoke("PlayMelodyCoroutine", 3f);
     }
 
     int index = 0;
@@ -41,12 +41,18 @@ public class GameManager : MonoBehaviour
     IEnumerator PlayMelody()
     {
         AkSoundEngine.PostEvent("Play_M1", GameObject.Find("Player"));
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(5f);
         if (index < 2)
         {
             StartCoroutine(PlayMelody());
             index++;
         }
+        else
+        {
+            AkSoundEngine.PostEvent("Reset_M1_Success_Announce", GameObject.Find("Player"));
+            AkSoundEngine.PostEvent("Play_M1_Intro", GameObject.Find("Player"));
+        }
+
     }
 
     private void SetPaletteChoice()

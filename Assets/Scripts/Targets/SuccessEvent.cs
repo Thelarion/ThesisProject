@@ -18,6 +18,7 @@ public class SuccessEvent : MonoBehaviour
     }
     public void PlaySuccessEvent(Transform nextTransform)
     {
+        i = 0;
         nearbyTreesIndicator.DelayIndicatorOnSucess();
         lookManager.DelayAudioCompassOnSucess();
         StartCoroutine(SonifyTreeEnvironment(nextTransform));

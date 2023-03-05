@@ -55,6 +55,7 @@ namespace AK
         static const AkUniqueID D100 = 810809264U;
         static const AkUniqueID DESTINATION_REACHED = 4069116836U;
         static const AkUniqueID DISTANCEC = 2982082363U;
+        static const AkUniqueID DISTANCEFRAMETRANSITION = 293588534U;
         static const AkUniqueID E2 = 1819748156U;
         static const AkUniqueID E2B = 4220699414U;
         static const AkUniqueID E3 = 1819748157U;
@@ -78,7 +79,6 @@ namespace AK
         static const AkUniqueID G4S = 1972204327U;
         static const AkUniqueID MELODYSTATEOFF = 2810620855U;
         static const AkUniqueID MELODYSTATEON = 747211651U;
-        static const AkUniqueID MISS = 3062523241U;
         static const AkUniqueID PLAY_AMBIENCE = 278617630U;
         static const AkUniqueID PLAY_BEACONLOCK = 3923622767U;
         static const AkUniqueID PLAY_BEACONLR = 194014728U;
@@ -96,8 +96,11 @@ namespace AK
         static const AkUniqueID PLAY_M1 = 2447410352U;
         static const AkUniqueID PLAY_M1_BIRDS = 1202099945U;
         static const AkUniqueID PLAY_M1_DISSECTED = 2113618703U;
+        static const AkUniqueID PLAY_M1_INTRO = 2184134547U;
         static const AkUniqueID PLAY_M1_SEQ = 3827381996U;
+        static const AkUniqueID PLAY_M1_SUCCESS_ANNOUNCE = 763214702U;
         static const AkUniqueID PLAY_M1_VERSIONS = 3081684988U;
+        static const AkUniqueID PLAY_MELODYCOMPLETE = 3868038991U;
         static const AkUniqueID PLAY_MENUCLOSE = 2709512125U;
         static const AkUniqueID PLAY_MENUOPEN = 119142231U;
         static const AkUniqueID PLAY_NORTH = 1850732987U;
@@ -115,15 +118,16 @@ namespace AK
         static const AkUniqueID PLAY_TREEBUMPPREVENTION = 3900353054U;
         static const AkUniqueID PLAY_VOLUMECHECK = 1569887440U;
         static const AkUniqueID PLAY_WEST = 1103419735U;
+        static const AkUniqueID PLAY_WRONG_NOTE = 1500429816U;
         static const AkUniqueID RESET_M1_DISSECTED = 419352152U;
         static const AkUniqueID RESET_M1_SEQ = 39386235U;
+        static const AkUniqueID RESET_M1_SUCESS_ANNOUNCE = 2401183550U;
         static const AkUniqueID STOP_ALLEVENTS = 2371377610U;
         static const AkUniqueID STOP_BGM = 1073466678U;
         static const AkUniqueID STOP_BGM_MENU_PLACEHOLDER = 2842046910U;
         static const AkUniqueID STOP_BUTTONREADALOUD = 632677629U;
         static const AkUniqueID STOP_INSTRUCTIONS = 2496424763U;
         static const AkUniqueID STOP_VOLUMECHECK = 3712676862U;
-        static const AkUniqueID SUCCESS = 3625060726U;
     } // namespace EVENTS
 
     namespace STATES
