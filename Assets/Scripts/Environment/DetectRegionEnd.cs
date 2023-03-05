@@ -31,7 +31,7 @@ public class DetectRegionEnd : MonoBehaviour
     IEnumerator EndZoneAnnouncement()
     {
         isSemaphore = true;
-        print("EndZone");
+        AkSoundEngine.PostEvent("Play_EndRegion", gameObject);
         yield return new WaitForSeconds(5f);
         isSemaphore = false;
     }

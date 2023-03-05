@@ -72,6 +72,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_EndRegion" ID="{3F2B09A3-88FA-492E-A3A2-D737138579AE}">
+					<ChildrenList>
+						<Action Name="" ID="{A22C1DF0-EAFE-4538-B1CB-FE3E478BB2CA}" ShortID="684663585">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="EndRegion" ID="{330EC6BD-2A9E-4170-932C-B141ED244E8F}" WorkUnitID="{14E6A00B-1C33-466E-9627-FBDE77EDBF18}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

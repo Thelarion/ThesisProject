@@ -117,6 +117,21 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Stop_Instructions" ID="{CB2E7F64-E312-41FE-AEBF-66438A3F690D}">
+					<ChildrenList>
+						<Action Name="" ID="{80B9B99C-4158-4408-BF3C-42E4D7FF3FC7}" ShortID="521286784">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Instructions" ID="{ACD8B23A-16A2-42F5-A9E8-2EC2B268DB8C}" WorkUnitID="{14E6A00B-1C33-466E-9627-FBDE77EDBF18}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -39,15 +39,20 @@ public class InstructionManager : MonoBehaviour
     {
         if (StartMenuManager.InclusionState)
         {
-            AkSoundEngine.SetSwitch("Instructions", SceneManager.GetActiveScene().name, gameObject);
-            AkSoundEngine.PostEvent("Play_Instructions", gameObject);
             instructionButtons.transform.GetChild(1).transform.gameObject.SetActive(true);
+            AkSoundEngine.SetSwitch("Instructions", SceneManager.GetActiveScene().name, gameObject);
+            Invoke("PlayInstructionVoice", 1f);
         }
         else
         {
             instructionButtons.transform.GetChild(0).transform.gameObject.SetActive(true);
         }
 
+    }
+
+    void PlayInstructionVoice()
+    {
+        AkSoundEngine.PostEvent("Play_Instructions", gameObject);
     }
 
     void Update()
@@ -86,6 +91,7 @@ public class InstructionManager : MonoBehaviour
         }
 
         AkSoundEngine.PostEvent("Play_Button_OnClick", gameObject);
+        AkSoundEngine.PostEvent("Stop_Instructions", gameObject);
         levelLoader.LoadScene();
     }
 }

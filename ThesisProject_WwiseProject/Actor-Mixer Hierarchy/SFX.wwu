@@ -749,6 +749,7 @@
 								</Sound>
 								<Sound Name="VoiceVolumeCheck" ID="{3946D1C4-EA79-42BD-826E-1216ABA7D2BB}" ShortID="39502337">
 									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
 										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
@@ -760,16 +761,16 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Check" ID="{5617CC6B-12E7-46E1-97DD-B4E40FEC6AE8}">
-											<Language>SFX</Language>
+										<AudioFileSource Name="Check" ID="{7E5EBBB8-0E09-4C5D-9350-F338B292A024}">
+											<Language>English(US)</Language>
 											<AudioFile>Check.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="959719736"/>
+												<MediaID ID="959719737"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="Check" ID="{5617CC6B-12E7-46E1-97DD-B4E40FEC6AE8}" Platform="Linked"/>
+										<ActiveSource Name="Check" ID="{7E5EBBB8-0E09-4C5D-9350-F338B292A024}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="EffectsVolumeCheck" ID="{4B610A36-1D1B-41AF-BDD9-17A5B3FB69BD}" ShortID="903830060">
@@ -1898,12 +1899,15 @@
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<ActorMixer Name="AudioCompass" ID="{40D85BDD-A0AF-4C0D-BF3A-7C1AD89E8208}" ShortID="906312254">
+							<PropertyList>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="SFX" ID="{C5B628E2-30E6-49C9-B054-12444DCE2ACC}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+									<ObjectRef Name="AudioCompass" ID="{CBA2ACF5-49DB-453F-B713-8C4DE8CBF9C9}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>

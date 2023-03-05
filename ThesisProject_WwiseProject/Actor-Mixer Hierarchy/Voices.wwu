@@ -6,7 +6,7 @@
 				<ActorMixer Name="InGame" ID="{7FEEAA74-13F2-4347-AC71-D624B905E932}" ShortID="716491535">
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+							<ObjectRef Name="Voice" ID="{A7C6C538-619E-4C8E-88BA-DCF5EE7D33D7}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Voice" ID="{14CBD258-C063-4F5F-8620-F1CD9A64E84F}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
@@ -60,12 +60,38 @@
 								<ActiveSource Name="GreatYouTappedCorrectNote" ID="{C2A0CBFF-5887-450B-8812-0145A4039573}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="EndRegion" ID="{330EC6BD-2A9E-4170-932C-B141ED244E8F}" ShortID="158227691">
+							<PropertyList>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="InGameVoice" ID="{64F59E5D-ADF1-4C19-AB2A-69D3C92A0582}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="EndRegion" ID="{09CE8AFD-22AB-4C5C-A048-3E2BFB98A1E3}">
+									<Language>English(US)</Language>
+									<AudioFile>EndRegion.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="313915896"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="EndRegion" ID="{09CE8AFD-22AB-4C5C-A048-3E2BFB98A1E3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="Menu" ID="{AFB7E0F1-93C9-4FD3-93DA-D1AC469EC3FE}" ShortID="795071208">
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+							<ObjectRef Name="Voice" ID="{A7C6C538-619E-4C8E-88BA-DCF5EE7D33D7}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
@@ -75,7 +101,7 @@
 				<SwitchContainer Name="ButtonReadAloud" ID="{167BCFFC-09B8-4343-9234-2955A1E0A23C}" ShortID="311647369">
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+							<ObjectRef Name="Voice" ID="{A7C6C538-619E-4C8E-88BA-DCF5EE7D33D7}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
 						</Reference>
 						<Reference Name="DefaultSwitchOrState">
 							<ObjectRef Name="Default" ID="{0FB83FEE-1C52-4BF0-A15E-7B3DE3DB8952}" WorkUnitID="{3366C92C-EFE1-45C7-A10A-B3FAD73419FC}"/>
@@ -89,6 +115,9 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Sound Name="ReturnSpace" ID="{A212E786-E4B0-4635-9296-7635394A680E}" ShortID="8253690">
+							<PropertyList>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
@@ -99,10 +128,10 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="PressReturnOrSpaceToTurnOn" ID="{95F386A4-2628-4A83-B68C-6DBEC145E5C2}">
-									<Language>SFX</Language>
+									<Language>English(US)</Language>
 									<AudioFile>ButtonReadAloud\PressReturnOrSpaceToTurnOn.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="370788259"/>
+										<MediaID ID="370788260"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
@@ -111,6 +140,9 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="VoiceVolume" ID="{9AF95C02-F1AA-4E52-90EC-CEFC8B47C123}" ShortID="62953938">
+							<PropertyList>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
@@ -120,38 +152,16 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="VoiceVolume" ID="{3B94D7FD-49B7-4558-A2C4-85C598777F23}">
-									<Language>SFX</Language>
+								<AudioFileSource Name="VoiceVolume" ID="{10C2278F-7195-454B-B6AF-75B31F6BF889}">
+									<Language>English(US)</Language>
 									<AudioFile>VoiceVolume.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="263546721"/>
+										<MediaID ID="263546722"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="VoiceVolume" ID="{3B94D7FD-49B7-4558-A2C4-85C598777F23}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="ArrowKeys" ID="{60A84A7E-BFE2-489B-B83D-9BAB95FAA65D}" ShortID="3860267">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="PressRightOrLeftArrowKeyToChange" ID="{3325EBC7-EFCE-497C-9F72-A111C269CFC1}">
-									<Language>SFX</Language>
-									<AudioFile>ButtonReadAloud\PressRightOrLeftArrowKeyToChange.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="320309339"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="PressRightOrLeftArrowKeyToChange" ID="{3325EBC7-EFCE-497C-9F72-A111C269CFC1}" Platform="Linked"/>
+								<ActiveSource Name="VoiceVolume" ID="{10C2278F-7195-454B-B6AF-75B31F6BF889}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="MusicVolume" ID="{4E2A8887-02CC-4D5A-813E-425A4470F3A1}" ShortID="140463157">
@@ -167,19 +177,22 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="MusicVolume" ID="{723B8135-5DD2-4028-B262-246B1F31D77D}">
+								<AudioFileSource Name="MusicVolume" ID="{752B2241-E7F4-4580-BBC0-F69DBE3C201D}">
 									<Language>English(US)</Language>
-									<AudioFile>ButtonReadAloud\MusicVolume.wav</AudioFile>
+									<AudioFile>MusicVolume.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="584492100"/>
+										<MediaID ID="875746989"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="MusicVolume" ID="{723B8135-5DD2-4028-B262-246B1F31D77D}" Platform="Linked"/>
+								<ActiveSource Name="MusicVolume" ID="{752B2241-E7F4-4580-BBC0-F69DBE3C201D}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="EffectsVolume" ID="{45A64B2A-0579-4C59-9B42-FA8AC4DB0215}" ShortID="737307143">
+							<PropertyList>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
@@ -189,16 +202,16 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="EffectsVolume" ID="{F6922E7B-986D-45A5-BEE0-AF74B9B371AD}">
-									<Language>SFX</Language>
-									<AudioFile>ButtonReadAloud\EffectsVolume.wav</AudioFile>
+								<AudioFileSource Name="EffectsVolume" ID="{CA2605B7-EE06-49EC-A9C3-5BF7285BC8BF}">
+									<Language>English(US)</Language>
+									<AudioFile>EffectsVolume.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="99426326"/>
+										<MediaID ID="793117053"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="EffectsVolume" ID="{F6922E7B-986D-45A5-BEE0-AF74B9B371AD}" Platform="Linked"/>
+								<ActiveSource Name="EffectsVolume" ID="{CA2605B7-EE06-49EC-A9C3-5BF7285BC8BF}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<SwitchContainer Name="InclusionModeToggle" ID="{2596980C-E422-4D60-9BCD-F9EFC0D4A6A4}" ShortID="734465596">
@@ -233,16 +246,16 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Inclusionmode On" ID="{BECEE03B-65BB-4680-A44B-2A41CBCF5E84}">
+										<AudioFileSource Name="InclusionModeOn" ID="{672452BB-72C0-473B-8E3B-D25CB8686B78}">
 											<Language>English(US)</Language>
-											<AudioFile>Inclusionmode On.wav</AudioFile>
+											<AudioFile>InclusionModeOn.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="1003304545"/>
+												<MediaID ID="705663367"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="Inclusionmode On" ID="{BECEE03B-65BB-4680-A44B-2A41CBCF5E84}" Platform="Linked"/>
+										<ActiveSource Name="InclusionModeOn" ID="{672452BB-72C0-473B-8E3B-D25CB8686B78}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="InclusionMode Off" ID="{262BF726-E33B-4D19-816E-A2C6CFE926EC}" ShortID="1045764518">
@@ -258,16 +271,16 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Inclusionmode Off" ID="{61645BBF-EECA-47A8-B4AA-E00C9A3F1ED6}">
+										<AudioFileSource Name="InclusionModeOff" ID="{0AA9C473-6208-4477-8F51-156863485A58}">
 											<Language>English(US)</Language>
-											<AudioFile>Inclusionmode Off.wav</AudioFile>
+											<AudioFile>InclusionModeOff.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="145978936"/>
+												<MediaID ID="754521329"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="Inclusionmode Off" ID="{61645BBF-EECA-47A8-B4AA-E00C9A3F1ED6}" Platform="Linked"/>
+										<ActiveSource Name="InclusionModeOff" ID="{0AA9C473-6208-4477-8F51-156863485A58}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
@@ -322,16 +335,16 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="AudioVisualiserOff" ID="{2BCA14DF-581F-4F70-9AC9-763532E05C84}">
+										<AudioFileSource Name="AudioVisualiserOff" ID="{8E4D380D-98FA-46F2-9296-5689B227A9C0}">
 											<Language>SFX</Language>
-											<AudioFile>ButtonReadAloud\AudioVisualiserOff.wav</AudioFile>
+											<AudioFile>AudioVisualiserOff.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="565812533"/>
+												<MediaID ID="105873676"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="AudioVisualiserOff" ID="{2BCA14DF-581F-4F70-9AC9-763532E05C84}" Platform="Linked"/>
+										<ActiveSource Name="AudioVisualiserOff" ID="{8E4D380D-98FA-46F2-9296-5689B227A9C0}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="AudioVisualiserOn" ID="{A2ECD97E-92ED-46F3-BDB6-3721B986E3BE}" ShortID="432451583">
@@ -344,16 +357,16 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="AudioVisualiserOn" ID="{6C5104E6-6A1D-4979-AC26-8C32DF75C856}">
+										<AudioFileSource Name="AudioVisualiserOn" ID="{E8827E86-7218-40E9-AD1E-A6909159FB85}">
 											<Language>SFX</Language>
-											<AudioFile>ButtonReadAloud\AudioVisualiserOn.wav</AudioFile>
+											<AudioFile>AudioVisualiserOn.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="497910407"/>
+												<MediaID ID="441185423"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="AudioVisualiserOn" ID="{6C5104E6-6A1D-4979-AC26-8C32DF75C856}" Platform="Linked"/>
+										<ActiveSource Name="AudioVisualiserOn" ID="{E8827E86-7218-40E9-AD1E-A6909159FB85}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
@@ -385,6 +398,7 @@
 						<Sound Name="ErrorDefault" ID="{261E5BB6-1B44-4788-8F42-46DF01FD2EBD}" ShortID="532823468">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -399,10 +413,10 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="ErrorDefault" ID="{96FC9854-F6DD-484D-A1D4-51C4F30DD54F}">
-									<Language>SFX</Language>
+									<Language>English(US)</Language>
 									<AudioFile>ErrorDefault.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="444589169"/>
+										<MediaID ID="190432777"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
@@ -411,6 +425,9 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Start" ID="{CC60D629-1AD4-4AB5-B923-0414C9035C48}" ShortID="787821792">
+							<PropertyList>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
@@ -420,19 +437,22 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="StartTheGame" ID="{2CD78CF1-8BE9-481D-8CF3-F54A9C6AB560}">
-									<Language>SFX</Language>
-									<AudioFile>StartTheGame.wav</AudioFile>
+								<AudioFileSource Name="Start" ID="{4DBCCA3B-A27D-470F-841A-2F2EAA32AD02}">
+									<Language>English(US)</Language>
+									<AudioFile>Start.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="71396143"/>
+										<MediaID ID="383018940"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="StartTheGame" ID="{2CD78CF1-8BE9-481D-8CF3-F54A9C6AB560}" Platform="Linked"/>
+								<ActiveSource Name="Start" ID="{4DBCCA3B-A27D-470F-841A-2F2EAA32AD02}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Quit" ID="{2B781C7C-5F98-4760-BC85-014C954B9D49}" ShortID="402869824">
+							<PropertyList>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
@@ -442,19 +462,22 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="QuitTheGame" ID="{BFD89B2F-CCFC-4DB2-99DA-39ADA0F93CD2}">
-									<Language>SFX</Language>
-									<AudioFile>QuitTheGame.wav</AudioFile>
+								<AudioFileSource Name="Quit" ID="{69652C3A-0DD0-4033-857A-C77EC57AC23E}">
+									<Language>English(US)</Language>
+									<AudioFile>Quit.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="561107131"/>
+										<MediaID ID="335502933"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="QuitTheGame" ID="{BFD89B2F-CCFC-4DB2-99DA-39ADA0F93CD2}" Platform="Linked"/>
+								<ActiveSource Name="Quit" ID="{69652C3A-0DD0-4033-857A-C77EC57AC23E}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="BackToMainMenu" ID="{BA2B7555-A6E0-4ECD-B7AC-DAC77EB833E8}" ShortID="314455605">
+							<PropertyList>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
@@ -464,20 +487,21 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="BackToMainMenu" ID="{766F434C-BEF1-4817-8AC8-949DA33C46EB}">
-									<Language>SFX</Language>
+								<AudioFileSource Name="BackToMainMenu" ID="{DA07476B-8EC4-449B-8AC8-05DF3D1AB562}">
+									<Language>English(US)</Language>
 									<AudioFile>BackToMainMenu.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="628185303"/>
+										<MediaID ID="660782048"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="BackToMainMenu" ID="{766F434C-BEF1-4817-8AC8-949DA33C46EB}" Platform="Linked"/>
+								<ActiveSource Name="BackToMainMenu" ID="{DA07476B-8EC4-449B-8AC8-05DF3D1AB562}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Resume" ID="{6F9AED4A-E72E-4316-93F2-FDC476248D5B}" ShortID="833515847">
 							<PropertyList>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-2</Value>
@@ -493,16 +517,16 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Resume" ID="{8B10D748-34B2-45F4-836C-F7DD372818E0}">
-									<Language>SFX</Language>
+								<AudioFileSource Name="Resume" ID="{62C56BC2-F52E-449D-8D01-33A7C45D55B5}">
+									<Language>English(US)</Language>
 									<AudioFile>Resume.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="38162977"/>
+										<MediaID ID="38162978"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Resume" ID="{8B10D748-34B2-45F4-836C-F7DD372818E0}" Platform="Linked"/>
+								<ActiveSource Name="Resume" ID="{62C56BC2-F52E-449D-8D01-33A7C45D55B5}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="WelcomeInclusion" ID="{7A1D539D-EC3B-466A-8F0B-9C74C4D48EF8}" ShortID="28997847">
@@ -544,16 +568,16 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="MenuOpen" ID="{6185C926-8A6E-42FC-9D13-BA7E502E7F21}">
+								<AudioFileSource Name="ListenAgain" ID="{689334C9-9B21-4BA8-9755-D7C07D07CE3F}">
 									<Language>English(US)</Language>
-									<AudioFile>MenuOpen.wav</AudioFile>
+									<AudioFile>ListenAgain.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="294881190"/>
+										<MediaID ID="628564408"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="MenuOpen" ID="{6185C926-8A6E-42FC-9D13-BA7E502E7F21}" Platform="Linked"/>
+								<ActiveSource Name="ListenAgain" ID="{689334C9-9B21-4BA8-9755-D7C07D07CE3F}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Continue" ID="{6A1056EF-9325-42DC-B5DA-D91F16D165A8}" ShortID="654752296">
@@ -569,16 +593,16 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="MenuClose" ID="{C7813431-1452-42FC-8135-898C7BEDDD1C}">
+								<AudioFileSource Name="Continue" ID="{462FCD85-345E-4FA3-8DBD-3D0AAF4C09F1}">
 									<Language>English(US)</Language>
-									<AudioFile>MenuClose.wav</AudioFile>
+									<AudioFile>Continue.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="499139477"/>
+										<MediaID ID="1014629448"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="MenuClose" ID="{C7813431-1452-42FC-8135-898C7BEDDD1C}" Platform="Linked"/>
+								<ActiveSource Name="Continue" ID="{462FCD85-345E-4FA3-8DBD-3D0AAF4C09F1}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
@@ -607,9 +631,6 @@
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="Quit" ID="{2B781C7C-5F98-4760-BC85-014C954B9D49}"/>
-							</GroupingBehavior>
-							<GroupingBehavior>
-								<ItemRef Name="ArrowKeys" ID="{60A84A7E-BFE2-489B-B83D-9BAB95FAA65D}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="ReturnSpace" ID="{A212E786-E4B0-4635-9296-7635394A680E}"/>
@@ -653,12 +674,6 @@
 								<SwitchRef Name="Resume" ID="{E69F7961-A05B-41B1-836E-4C8BFF89428D}"/>
 								<ItemList>
 									<ItemRef Name="Resume" ID="{6F9AED4A-E72E-4316-93F2-FDC476248D5B}"/>
-								</ItemList>
-							</Grouping>
-							<Grouping>
-								<SwitchRef Name="ArrowKeys" ID="{BB50126F-D323-4400-B86E-B2AA2D1BEDDA}"/>
-								<ItemList>
-									<ItemRef Name="ArrowKeys" ID="{60A84A7E-BFE2-489B-B83D-9BAB95FAA65D}"/>
 								</ItemList>
 							</Grouping>
 							<Grouping>
@@ -727,7 +742,7 @@
 				<SwitchContainer Name="Instructions" ID="{ACD8B23A-16A2-42F5-A9E8-2EC2B268DB8C}" ShortID="450390820">
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+							<ObjectRef Name="Voice" ID="{A7C6C538-619E-4C8E-88BA-DCF5EE7D33D7}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
 						</Reference>
 						<Reference Name="DefaultSwitchOrState">
 							<ObjectRef Name="I1" ID="{09CB61C6-C18C-42E1-A5DB-434A12AC2284}" WorkUnitID="{3366C92C-EFE1-45C7-A10A-B3FAD73419FC}"/>
@@ -753,16 +768,16 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="InstructionPlaceholder3" ID="{B8229426-E2CF-469C-92E4-81F2E58C2AD2}">
+								<AudioFileSource Name="I3" ID="{4D97077C-95C6-44D8-B43D-D8B34967DE1A}">
 									<Language>English(US)</Language>
-									<AudioFile>InstructionPlaceholder3.wav</AudioFile>
+									<AudioFile>I3.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="368822499"/>
+										<MediaID ID="496510789"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="InstructionPlaceholder3" ID="{B8229426-E2CF-469C-92E4-81F2E58C2AD2}" Platform="Linked"/>
+								<ActiveSource Name="I3" ID="{4D97077C-95C6-44D8-B43D-D8B34967DE1A}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Instruction4" ID="{7AF6D23A-73A8-4558-AC85-F643B35F1625}" ShortID="287989670">
@@ -778,16 +793,16 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="InstructionPlaceholder4" ID="{91FAFD5B-766B-4ABB-A1FF-1EBBE28BD10E}">
+								<AudioFileSource Name="I4" ID="{359636CE-73FB-41CB-AD2E-C14A81A555A3}">
 									<Language>English(US)</Language>
-									<AudioFile>InstructionPlaceholder4.wav</AudioFile>
+									<AudioFile>I4.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="962278064"/>
+										<MediaID ID="970148816"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="InstructionPlaceholder4" ID="{91FAFD5B-766B-4ABB-A1FF-1EBBE28BD10E}" Platform="Linked"/>
+								<ActiveSource Name="I4" ID="{359636CE-73FB-41CB-AD2E-C14A81A555A3}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Instruction1" ID="{0D42BFA2-4DAF-4B76-8FCB-CE2CCC24D00E}" ShortID="596224026">
@@ -803,16 +818,21 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="InstructionPlaceholder1" ID="{54CB1BD9-0711-4340-9869-6245127B7EAB}">
+								<AudioFileSource Name="I1" ID="{47F0F3B2-067E-43E3-A978-953961BC6CA4}">
+									<PropertyList>
+										<Property Name="LoopBegin" Type="Real64" Value="0.579710144927536"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.579710144927536"/>
+									</PropertyList>
 									<Language>English(US)</Language>
-									<AudioFile>InstructionPlaceholder1.wav</AudioFile>
+									<AudioFile>I1.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="577693576"/>
+										<MediaID ID="277361146"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="InstructionPlaceholder1" ID="{54CB1BD9-0711-4340-9869-6245127B7EAB}" Platform="Linked"/>
+								<ActiveSource Name="I1" ID="{47F0F3B2-067E-43E3-A978-953961BC6CA4}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Instruction5" ID="{74C027E4-297B-4ED9-9FD6-A4AF8E9B5935}" ShortID="287484790">
@@ -828,16 +848,16 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="InstructionPlaceholder5" ID="{1C40B9D1-FEFA-448C-B4AC-CD90DE4047EA}">
+								<AudioFileSource Name="I5" ID="{C509D961-97A7-42EF-A379-7CA0025F0A57}">
 									<Language>English(US)</Language>
-									<AudioFile>InstructionPlaceholder5.wav</AudioFile>
+									<AudioFile>I5.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="548481294"/>
+										<MediaID ID="28950629"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="InstructionPlaceholder5" ID="{1C40B9D1-FEFA-448C-B4AC-CD90DE4047EA}" Platform="Linked"/>
+								<ActiveSource Name="I5" ID="{C509D961-97A7-42EF-A379-7CA0025F0A57}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Instruction2" ID="{14260CB7-76E0-4F2F-A42E-0859AF2FD185}" ShortID="56319458">
@@ -853,41 +873,16 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="InstructionPlaceholder2" ID="{E0C2CB4D-DF11-453B-8DE1-B825FCAB5D1F}">
+								<AudioFileSource Name="I2" ID="{D1418613-BCC8-44E9-BBAB-C8F942B02DD5}">
 									<Language>English(US)</Language>
-									<AudioFile>InstructionPlaceholder2.wav</AudioFile>
+									<AudioFile>I2.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="664643821"/>
+										<MediaID ID="79818769"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="InstructionPlaceholder2" ID="{E0C2CB4D-DF11-453B-8DE1-B825FCAB5D1F}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Instruction6" ID="{6C208374-CA6C-47F7-89B1-4A6B25F4F6D4}" ShortID="183881665">
-							<PropertyList>
-								<Property Name="IsVoice" Type="bool" Value="True"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="InstructionPlaceholder6" ID="{F5FD8341-20D6-4571-B834-DDEF720EC295}">
-									<Language>English(US)</Language>
-									<AudioFile>InstructionPlaceholder6.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="883726677"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="InstructionPlaceholder6" ID="{F5FD8341-20D6-4571-B834-DDEF720EC295}" Platform="Linked"/>
+								<ActiveSource Name="I2" ID="{D1418613-BCC8-44E9-BBAB-C8F942B02DD5}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
@@ -898,9 +893,6 @@
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="Instruction3" ID="{D70F6752-B5F0-4FDD-AE8D-248905729242}"/>
-							</GroupingBehavior>
-							<GroupingBehavior>
-								<ItemRef Name="Instruction6" ID="{6C208374-CA6C-47F7-89B1-4A6B25F4F6D4}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="Instruction1" ID="{0D42BFA2-4DAF-4B76-8FCB-CE2CCC24D00E}"/>
@@ -935,12 +927,6 @@
 								<SwitchRef Name="I1" ID="{09CB61C6-C18C-42E1-A5DB-434A12AC2284}"/>
 								<ItemList>
 									<ItemRef Name="Instruction1" ID="{0D42BFA2-4DAF-4B76-8FCB-CE2CCC24D00E}"/>
-								</ItemList>
-							</Grouping>
-							<Grouping>
-								<SwitchRef Name="I6" ID="{9DC0F9E9-E652-4DF8-A19B-B95A0EBD911D}"/>
-								<ItemList>
-									<ItemRef Name="Instruction6" ID="{6C208374-CA6C-47F7-89B1-4A6B25F4F6D4}"/>
 								</ItemList>
 							</Grouping>
 							<Grouping>

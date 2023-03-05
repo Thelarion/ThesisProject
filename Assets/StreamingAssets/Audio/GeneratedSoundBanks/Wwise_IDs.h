@@ -90,6 +90,7 @@ namespace AK
         static const AkUniqueID PLAY_BUTTONREADALOUD = 2262911975U;
         static const AkUniqueID PLAY_DIRECTIONINDICATOR = 2360441072U;
         static const AkUniqueID PLAY_EAST = 4162345221U;
+        static const AkUniqueID PLAY_ENDREGION = 1410858841U;
         static const AkUniqueID PLAY_INBETWEEN = 342260041U;
         static const AkUniqueID PLAY_INSTRUCTIONS = 1184431001U;
         static const AkUniqueID PLAY_M1 = 2447410352U;
@@ -120,6 +121,7 @@ namespace AK
         static const AkUniqueID STOP_BGM = 1073466678U;
         static const AkUniqueID STOP_BGM_MENU_PLACEHOLDER = 2842046910U;
         static const AkUniqueID STOP_BUTTONREADALOUD = 632677629U;
+        static const AkUniqueID STOP_INSTRUCTIONS = 2496424763U;
         static const AkUniqueID STOP_VOLUMECHECK = 3712676862U;
         static const AkUniqueID SUCCESS = 3625060726U;
     } // namespace EVENTS
@@ -367,9 +369,11 @@ namespace AK
 
     namespace BUSSES
     {
+        static const AkUniqueID AUDIOCOMPASS = 433383851U;
         static const AkUniqueID AUDIOMENU = 3105667492U;
         static const AkUniqueID BGM = 412724365U;
         static const AkUniqueID ENVIRONMENT = 1229948536U;
+        static const AkUniqueID INGAMEVOICE = 1535976704U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID MELODIES = 2429736717U;
         static const AkUniqueID MUSIC = 3991942870U;

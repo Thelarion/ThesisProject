@@ -38,8 +38,28 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 111a36df2b99a2459ec0d5f0605e9fb4
     GuidInternal: 
-    m_lastTime: -8585236542125938429
+    m_lastTime: -8585235891967535237
     List:
+    - name: AudioCompass
+      guid: f5aca2cbdb493f45b7138c4de8cbf9c9
+      id: 433383851
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 111a36df2b99a2459ec0d5f0605e9fb4
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Voice
+        ObjectType: 2
+        guid: 58d2cb1463c05f4f8620f1cd9a64e84f
+      - ElementName: AudioCompass
+        ObjectType: 2
+        guid: f5aca2cbdb493f45b7138c4de8cbf9c9
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Voice\AudioCompass
     - name: AudioMenu
       guid: e673bc3db8f4c14eaffb601995ce92ae
       id: 3105667492
@@ -100,6 +120,26 @@ MonoBehaviour:
         ObjectType: 2
         guid: ae6f6b737fc0694c98d071093c86bcc7
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\Environment
+    - name: InGameVoice
+      guid: 5d9ef564f1ad194cab2a69d3c92a0582
+      id: 1535976704
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 111a36df2b99a2459ec0d5f0605e9fb4
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Voice
+        ObjectType: 2
+        guid: 58d2cb1463c05f4f8620f1cd9a64e84f
+      - ElementName: InGameVoice
+        ObjectType: 2
+        guid: 5d9ef564f1ad194cab2a69d3c92a0582
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Voice\InGameVoice
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -373,7 +413,7 @@ MonoBehaviour:
     ParentPath: Events\Environment
     guid: 6b6ecfb2ce1fa94d909b1661ebea4ead
     GuidInternal: 
-    m_lastTime: -8585236640454461274
+    m_lastTime: -8585235895140537256
     List:
     - name: Play_Ambience
       guid: fa3455309387fb439b0c79717ed08820
@@ -389,6 +429,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: fa3455309387fb439b0c79717ed08820
       Path: Events\Environment\Play_Ambience
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_EndRegion
+      guid: a3092b3ffa882e49a3a2d737138579ae
+      id: 1410858841
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Environment
+        ObjectType: 12
+        guid: 6b6ecfb2ce1fa94d909b1661ebea4ead
+      - ElementName: Play_EndRegion
+        ObjectType: 3
+        guid: a3092b3ffa882e49a3a2d737138579ae
+      Path: Events\Environment\Play_EndRegion
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -2534,7 +2591,7 @@ MonoBehaviour:
     ParentPath: Events\UI
     guid: 13ad265a32fe774b8e3372fc1241ceef
     GuidInternal: 
-    m_lastTime: -8585237395458445436
+    m_lastTime: -8585235908392531927
     List:
     - name: DistanceFrameTransition
       guid: b75bda6923c11a45b48382c150b587a0
@@ -2669,6 +2726,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: a8fe5f6eac8b1b44a837f1fe071592bb
       Path: Events\UI\Stop_ButtonReadAloud
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Instructions
+      guid: 647f2ecb12e3fe41aebf66438a3f690d
+      id: 2496424763
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: UI
+        ObjectType: 12
+        guid: 13ad265a32fe774b8e3372fc1241ceef
+      - ElementName: Stop_Instructions
+        ObjectType: 3
+        guid: 647f2ecb12e3fe41aebf66438a3f690d
+      Path: Events\UI\Stop_Instructions
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
