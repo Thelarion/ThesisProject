@@ -36,6 +36,11 @@ public class GameManager : MonoBehaviour
         if (!StartMenuManager.InclusionState)
         {
             AkSoundEngine.PostEvent("Play_Birds", player);
+            AkSoundEngine.SetRTPCValue("RTPC_ReverbMode", 1);
+        }
+        else if (StartMenuManager.InclusionState)
+        {
+            AkSoundEngine.SetRTPCValue("RTPC_ReverbMode", 0);
         }
     }
 

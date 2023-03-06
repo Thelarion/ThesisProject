@@ -40,6 +40,14 @@
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="RTPC_ReverbMode" ID="{90243991-A972-45DC-9DA4-0C021DBFDBAD}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_MelodyVoice" ID="{3BBE2090-5D1C-48A2-AD6E-52699BF9DA9A}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="RTPC_distance_freq" ID="{2CD580FE-F1AA-48B5-BE61-37F43F4AF98D}"/>
 							<Value>5.5272149001277</Value>
 						</RTPCValue>

@@ -13,7 +13,7 @@
 			<ShortName>Environment</ShortName>
 			<Path>Environment.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{179AE499-0A07-42E7-6FF4-F4E36BCB34E4}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{BB25CB57-F24B-FAF5-E588-73DD22CC7DFA}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -58,7 +58,9 @@
 				<GameParameter Id="1384204673" Name="RTPC_frequency_depth"/>
 				<GameParameter Id="1574311894" Name="RTPC_EffectsVolumeSettings"/>
 				<GameParameter Id="1664992182" Name="RTPC_Occlusion"/>
+				<GameParameter Id="2033424207" Name="RTPC_MelodyVoice"/>
 				<GameParameter Id="2118858538" Name="RTPC_VoiceVolumeSettings"/>
+				<GameParameter Id="3159236614" Name="RTPC_ReverbMode"/>
 				<GameParameter Id="3316058687" Name="RTPC_Obstruction"/>
 				<GameParameter Id="3414688140" Name="RTPC_Plyr_Distance"/>
 				<GameParameter Id="3453464353" Name="RTPC_MusicVolumeSettings"/>
@@ -200,7 +202,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{47095FAB-44DB-F5E0-36C9-CDBEABDA47DC}">
+		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{5CB9F941-FFF6-9137-688F-FEB64674F6FF}">
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
 			<Media>
@@ -267,10 +269,6 @@
 				<File Id="59830991" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Bells.wav</ShortName>
 					<CachePath>SFX/Bells_D79FB2B7.wem</CachePath>
-				</File>
-				<File Id="62582298" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>SRelease4.wav</ShortName>
-					<CachePath>SFX/SRelease4_10C4C929.wem</CachePath>
 				</File>
 				<File Id="74676487" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>LeavesRustlingIndicator\Leaves_Rustling_06.wav</ShortName>
@@ -351,10 +349,6 @@
 				<File Id="181898422" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O2\E2.wav</ShortName>
 					<CachePath>SFX/O2/E2_10C4C929.wem</CachePath>
-				</File>
-				<File Id="185344975" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>SRelease3.wav</ShortName>
-					<CachePath>SFX/SRelease3_10C4C929.wem</CachePath>
 				</File>
 				<File Id="188859037" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Water\Plyr_Fstps_Water_05.wav</ShortName>
@@ -592,6 +586,10 @@
 					<ShortName>B3b.wav</ShortName>
 					<CachePath>SFX/B3b_10C4C929.wem</CachePath>
 				</File>
+				<File Id="481546061" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Birds_lp_04.wav</ShortName>
+					<CachePath>SFX/Birds_lp_04_9EDFC787.wem</CachePath>
+				</File>
 				<File Id="490717431" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Dirt\FS_Dirt_02.wav</ShortName>
 					<CachePath>SFX/Footsteps/Dirt/FS_Dirt_02_10C4C929.wem</CachePath>
@@ -615,6 +613,10 @@
 				<File Id="515046687" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>OnTarget\OnTarget_PitchB.wav</ShortName>
 					<CachePath>SFX/OnTarget/OnTarget_PitchB_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="517302441" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>PlingSuccess.wav</ShortName>
+					<CachePath>SFX/PlingSuccess_10C4C929.wem</CachePath>
 				</File>
 				<File Id="523980979" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TreeBump\Dropping Wood 08.wav</ShortName>
@@ -674,7 +676,7 @@
 				</File>
 				<File Id="599570934" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Birds\Birds_lp_02.wav</ShortName>
-					<CachePath>SFX/Birds/Birds_lp_02_3F75BDB9.wem</CachePath>
+					<CachePath>SFX/Birds/Birds_lp_02_9EDFC787.wem</CachePath>
 				</File>
 				<File Id="599950730" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>D4#.wav</ShortName>
@@ -936,10 +938,6 @@
 					<ShortName>C3_E3_A2_B3_C3_Bird.wav</ShortName>
 					<CachePath>SFX/C3_E3_A2_B3_C3_Bird_D79FB2B7.wem</CachePath>
 				</File>
-				<File Id="904983868" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>SRelease2.wav</ShortName>
-					<CachePath>SFX/SRelease2_10C4C929.wem</CachePath>
-				</File>
 				<File Id="906158194" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>M1Announce\Announce_M1_P4_B2.wav</ShortName>
 					<CachePath>SFX/M1Announce/Announce_M1_P4_B2_10C4C929.wem</CachePath>
@@ -955,10 +953,6 @@
 				<File Id="918400394" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O3\C3.wav</ShortName>
 					<CachePath>SFX/O3/C3_10C4C929.wem</CachePath>
-				</File>
-				<File Id="918872021" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>BGM_Menu_Placeholder.wav</ShortName>
-					<CachePath>SFX/BGM_Menu_Placeholder_9EDFC787.wem</CachePath>
 				</File>
 				<File Id="920490969" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grass\Plyr_Fstps_Grass_03.wav</ShortName>
@@ -986,7 +980,7 @@
 				</File>
 				<File Id="955220572" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Birds\Birds_lp_01.wav</ShortName>
-					<CachePath>SFX/Birds/Birds_lp_01_3F75BDB9.wem</CachePath>
+					<CachePath>SFX/Birds/Birds_lp_01_9EDFC787.wem</CachePath>
 				</File>
 				<File Id="959719737" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>Check.wav</ShortName>
@@ -1031,10 +1025,6 @@
 				<File Id="980309991" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O2\C2.wav</ShortName>
 					<CachePath>SFX/O2/C2_10C4C929.wem</CachePath>
-				</File>
-				<File Id="985489907" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>SRelease1.wav</ShortName>
-					<CachePath>SFX/SRelease1_10C4C929.wem</CachePath>
 				</File>
 				<File Id="990206362" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O3\B3.wav</ShortName>
@@ -1090,7 +1080,7 @@
 				</File>
 				<File Id="1050789876" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Birds\Birds_lp_03.wav</ShortName>
-					<CachePath>SFX/Birds/Birds_lp_03_3F75BDB9.wem</CachePath>
+					<CachePath>SFX/Birds/Birds_lp_03_9EDFC787.wem</CachePath>
 				</File>
 				<File Id="1053882955" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>StoneBump\StoneBump10.wav</ShortName>
@@ -1117,6 +1107,9 @@
 				<Custom>
 					<Plugin Id="737587789" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
 				</Custom>
+				<ShareSets>
+					<Plugin Id="3604890626" Name="High_Pass_60Hz" LibName="Wwise Parametric EQ" LibId="6881283"/>
+				</ShareSets>
 			</Plugins>
 			<Events>
 				<Event Id="1886858600" Name="A2" MaxAttenuation="100" DurationType="OneShot" DurationMin="2" DurationMax="2">
@@ -1470,23 +1463,19 @@
 						<MediaRef Id="59830991"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3126765036" Name="Play_BGM" DurationType="Infinite">
-					<SwitchContainers>
-						<SwitchContainer>
-							<SwitchValue GroupType="Switch" GroupId="1419421502" Id="147423"/>
-							<MediaRefs>
-								<MediaRef Id="967319205"/>
-							</MediaRefs>
-						</SwitchContainer>
-					</SwitchContainers>
-				</Event>
-				<Event Id="2771594344" Name="Play_BGM_Menu_Placeholder" DurationType="OneShot" DurationMin="240.571" DurationMax="240.571">
+				<Event Id="2295745746" Name="Play_BGM_Menu" DurationType="Infinite">
 					<MediaRefs>
-						<MediaRef Id="918872021"/>
+						<MediaRef Id="967319205"/>
 					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="3604890626"/>
+						</ShareSets>
+					</PluginRefs>
 				</Event>
-				<Event Id="3025897706" Name="Play_Birds" DurationType="OneShot" DurationMin="268.63528" DurationMax="268.63528">
+				<Event Id="3025897706" Name="Play_Birds" DurationType="Infinite">
 					<MediaRefs>
+						<MediaRef Id="481546061"/>
 						<MediaRef Id="599570934"/>
 						<MediaRef Id="955220572"/>
 						<MediaRef Id="1050789876"/>
@@ -1849,6 +1838,11 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="3027595979" Name="Play_PlingSuccess" DurationType="OneShot" DurationMin="2" DurationMax="2">
+					<MediaRefs>
+						<MediaRef Id="517302441"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2481654591" Name="Play_Plyr_Grunts" DurationType="OneShot" DurationMin="0.17708333" DurationMax="0.875">
 					<MediaRefs>
 						<MediaRef Id="198455538"/>
@@ -1864,14 +1858,6 @@
 				<Event Id="988427829" Name="Play_ReflectionBumpPrevention" MaxAttenuation="20" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="604891812"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="3074787511" Name="Play_Slingshot_Release" DurationType="OneShot" DurationMin="1.5" DurationMax="2">
-					<MediaRefs>
-						<MediaRef Id="62582298"/>
-						<MediaRef Id="185344975"/>
-						<MediaRef Id="904983868"/>
-						<MediaRef Id="985489907"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="3187449017" Name="Play_South" DurationType="OneShot" DurationMin="0.66229165" DurationMax="0.66229165">
@@ -1967,13 +1953,13 @@
 				<Event Id="39386235" Name="Reset_M1_Seq" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2401183550" Name="Reset_M1_Sucess_Announce" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2371377610" Name="Stop_AllEvents" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="1073466678" Name="Stop_BGM" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="2842046910" Name="Stop_BGM_Menu_Placeholder" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="388256776" Name="Stop_BGM_Menu" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="632677629" Name="Stop_ButtonReadAloud" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2496424763" Name="Stop_Instructions" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3712676862" Name="Stop_VolumeCheck" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 			<GameParameters>
+				<GameParameter Id="2033424207" Name="RTPC_MelodyVoice"/>
 				<GameParameter Id="3316058687" Name="RTPC_Obstruction"/>
 				<GameParameter Id="3707704703" Name="RTPC_left_right"/>
 				<GameParameter Id="4120900405" Name="RTPC_beacon_lr_volume"/>
@@ -1999,13 +1985,6 @@
 					<Switches>
 						<Switch Id="948478191" Name="InclusionModeOff"/>
 						<Switch Id="3050936059" Name="InclusionModeOn"/>
-					</Switches>
-				</SwitchGroup>
-				<SwitchGroup Id="1419421502" Name="TrackNames">
-					<Switches>
-						<Switch Id="147420" Name="Track2"/>
-						<Switch Id="147421" Name="Track3"/>
-						<Switch Id="147423" Name="Track1"/>
 					</Switches>
 				</SwitchGroup>
 				<SwitchGroup Id="2048081433" Name="OnTarget">
@@ -2064,5 +2043,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{B4823A90-FDD7-AF60-E6EF-8167DFCBF02D}</FileHash>
+	<FileHash>{ED9C5585-F740-5C7B-613F-123D636FFEC2}</FileHash>
 </SoundBanksInfo>

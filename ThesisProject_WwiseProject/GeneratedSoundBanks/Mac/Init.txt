@@ -32,6 +32,7 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	257343836	RTPC_MusicBusFade			\Music\RTPC_MusicBusFade	
 	1574311894	RTPC_EffectsVolumeSettings			\UI\RTPC_EffectsVolumeSettings	
 	2118858538	RTPC_VoiceVolumeSettings			\UI\RTPC_VoiceVolumeSettings	
+	3159236614	RTPC_ReverbMode			\Default Work Unit\RTPC_ReverbMode	
 	3453464353	RTPC_MusicVolumeSettings			\UI\RTPC_MusicVolumeSettings	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes

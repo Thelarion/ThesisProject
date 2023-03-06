@@ -168,21 +168,6 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Slingshot" ID="{D9413055-E03F-410C-83B4-76DEB70813E7}" ShortID="50267966">
-					<ChildrenList>
-						<Event Name="Play_Slingshot_Release" ID="{5F13ECA2-6C4F-49A3-9AF1-9AB5FA1A79D1}">
-							<ChildrenList>
-								<Action Name="" ID="{9F6D9147-8CE0-496C-89EC-5ED393151011}" ShortID="140937071">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Release" ID="{8B03A719-79DB-44C5-BAF0-B699AC8CF739}" WorkUnitID="{690ABE9D-D445-44AA-AE0F-2C6B0F3C9C08}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-					</ChildrenList>
-				</Folder>
 				<Event Name="Play_NoteWrangle" ID="{7FF30FE3-7A31-4BEB-A7BF-34886F1F15C5}">
 					<ChildrenList>
 						<Action Name="" ID="{3BD0D802-6769-4F39-A816-A78F8A9C0F74}" ShortID="197264921">

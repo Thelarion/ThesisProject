@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2884db9baba48ae43abdd083adbd1799, type: 3}
   m_Name: 37DFE735-BDB1-4E39-A80E-2BF0F81A02D7
   m_EditorClassIdentifier: 
-  objectName: Stop_BGM
-  id: 1073466678
+  objectName: Stop_BGM_Menu
+  id: 388256776
   guid: 37DFE735-BDB1-4E39-A80E-2BF0F81A02D7

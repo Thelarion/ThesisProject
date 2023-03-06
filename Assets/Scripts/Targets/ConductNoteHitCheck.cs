@@ -20,6 +20,11 @@ public class ConductNoteHitCheck : MonoBehaviour
         // CASE CORRECT NOTE
         if (other.transform.tag == "Target" && other.transform.GetComponent<RunInterval>().TapState)
         {
+            if (!StartMenuManager.InclusionState)
+            {
+                AkSoundEngine.PostEvent("Play_PlingSuccess", GameObject.Find("Player"));
+            }
+
             scoreManager.CalculatePoints(other.transform.GetComponent<TargetIdentity>().MissedTaps);
             Destroy(other.transform.gameObject);
         }

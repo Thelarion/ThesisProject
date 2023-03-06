@@ -94,8 +94,9 @@ public class CanvasController : MonoBehaviour
     public void BackToStartMenu()
     {
         // AkSoundEngine.StopAll();
+        GameObject.Find("ScoreSystem").GetComponent<ScoreManager>().CurrentScore = 0;
         AkSoundEngine.PostEvent("Stop_AllEvents", gameObject);
-        SceneManager.LoadScene("StartSettings");
+        SceneManager.LoadScene("StartScreen");
     }
 
 }

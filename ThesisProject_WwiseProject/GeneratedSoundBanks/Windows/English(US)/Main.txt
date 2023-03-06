@@ -7,13 +7,13 @@ Event	ID	Name			Wwise Object Path	Notes
 	283810802	Play_Button_OnClick			\SFX\Buttons\Play_Button_OnClick	
 	293588534	DistanceFrameTransition			\UI\DistanceFrameTransition	
 	342260041	Play_InBetween			\Player\AudioCompass\Play_InBetween	
+	388256776	Stop_BGM_Menu			\BGM\Stop_BGM_Menu	
 	419352152	Reset_M1_Dissected			\Melodies\Reset_M1_Dissected	
 	632677629	Stop_ButtonReadAloud			\UI\Stop_ButtonReadAloud	
 	747211651	MelodyStateOn			\Melodies\MelodyStateOn	
 	763214702	Play_M1_Success_Announce			\Melodies\Play_M1_Success_Announce	
 	810809264	d100			\SFX\Beacon\DistanceCount\d100	
 	988427829	Play_ReflectionBumpPrevention			\Environment\Play_ReflectionBumpPrevention	
-	1073466678	Stop_BGM			\BGM\Stop_BGM	
 	1103419735	Play_West			\Player\AudioCompass\Play_West	
 	1184431001	Play_Instructions			\UI\Play_Instructions	
 	1202099945	Play_M1_Birds			\Melodies\Play_M1_Birds	
@@ -63,6 +63,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2113618703	Play_M1_Dissected			\Melodies\Play_M1_Dissected	
 	2184134547	Play_M1_Intro			\Melodies\Play_M1_Intro	
 	2262911975	Play_ButtonReadAloud			\UI\Play_ButtonReadAloud	
+	2295745746	Play_BGM_Menu			\BGM\Play_BGM_Menu	
 	2324519816	Play_Bells			\SFX\Play_Bells	
 	2360441072	Play_DirectionIndicator			\SFX\Play_DirectionIndicator	
 	2371377610	Stop_AllEvents			\UI\Stop_AllEvents	
@@ -72,17 +73,14 @@ Event	ID	Name			Wwise Object Path	Notes
 	2496424763	Stop_Instructions			\UI\Stop_Instructions	
 	2702745606	Play_OnTarget			\Player\Play_OnTarget	
 	2709512125	Play_MenuClose			\UI\Play_MenuClose	
-	2771594344	Play_BGM_Menu_Placeholder			\BGM\Play_BGM_Menu_Placeholder	
 	2787390506	Play_NoteWrangle			\SFX\Play_NoteWrangle	
 	2810620855	MelodyStateOff			\Melodies\MelodyStateOff	
-	2842046910	Stop_BGM_Menu_Placeholder			\BGM\Stop_BGM_Menu_Placeholder	
 	2964789125	Play_Button_Selection			\SFX\Buttons\Play_Button_Selection	
 	2982082363	distanceC			\SFX\Beacon\distanceC	
 	3015844381	Play_PlayerFoot			\Player\Play_PlayerFoot	
 	3025897706	Play_Birds			\Environment\Play_Birds	
-	3074787511	Play_Slingshot_Release			\SFX\Slingshot\Play_Slingshot_Release	
+	3027595979	Play_PlingSuccess			\UI\Play_PlingSuccess	
 	3081684988	Play_M1_versions			\Melodies\Play_M1_versions	
-	3126765036	Play_BGM			\BGM\Play_BGM	
 	3187449017	Play_South			\Player\AudioCompass\Play_South	
 	3385122965	Play_StoneBump			\Environment\Play_StoneBump	
 	3460539825	Play_Step_GrassFlowers			\Environment\Play_Step_GrassFlowers	
@@ -119,7 +117,6 @@ Event	ID	Name			Wwise Object Path	Notes
 Switch Group	ID	Name			Wwise Object Path	Notes
 	360641673	VolumeCheck			\Default Work Unit\VolumeCheck	
 	1343002924	InclusionModeToggle			\Default Work Unit\InclusionModeToggle	
-	1419421502	TrackNames			\Default Work Unit\TrackNames	
 	2048081433	OnTarget			\Default Work Unit\OnTarget	
 	2429736717	Melodies			\Default Work Unit\Melodies	
 	3099313910	ButtonReadAloud			\Default Work Unit\ButtonReadAloud	
@@ -133,9 +130,6 @@ Switch	ID	Name	Switch Group			Notes
 	3991942870	Music	VolumeCheck			
 	948478191	InclusionModeOff	InclusionModeToggle			
 	3050936059	InclusionModeOn	InclusionModeToggle			
-	147420	Track2	TrackNames			
-	147421	Track3	TrackNames			
-	147423	Track1	TrackNames			
 	339713608	PitchC	OnTarget			
 	339713609	PitchB	OnTarget			
 	339713610	PitchA	OnTarget			
@@ -174,12 +168,16 @@ Switch	ID	Name	Switch Group			Notes
 	1752637687	I5	Instructions			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
+	2033424207	RTPC_MelodyVoice			\Melody\RTPC_MelodyVoice	
 	3316058687	RTPC_Obstruction			\Obstruction_Occlusion\RTPC_Obstruction	
 	3707704703	RTPC_left_right			\Aiming\RTPC_left_right	
 	4120900405	RTPC_beacon_lr_volume			\Beacon\RTPC_beacon_lr_volume	
 
+Effect plug-ins	ID	Name	Type				Notes
+	3604890626	High_Pass_60Hz	Wwise Parametric EQ			
+
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
-	737587789	Silence	Wwise Silence		\Actor-Mixer Hierarchy\SFX\SortOut\Beacon\BeaconLR\SilenceBeacon\Silence	
+	737587789	Silence	Wwise Silence		\Actor-Mixer Hierarchy\SFX\Unused\Beacon\BeaconLR\SilenceBeacon\Silence	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	804718	E4	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O4\E4_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O4\E4		384096
@@ -198,12 +196,11 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	48270307	WrongNote	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\WrongNote_3F75BDB9.wem		\Actor-Mixer Hierarchy\Voices\InGame\WrongNote		88803
 	52751137	Step_GrassFlowers_03	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\SteppingFlowersGrass\Step_GrassFlowers_03_3F75BDB9.wem		\Actor-Mixer Hierarchy\SFX\Environment\Environment\Step_GrassFlowers\Step_GrassFlowers_03		19790
 	59830991	Bells	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Bells_D79FB2B7.wem		\Actor-Mixer Hierarchy\SFX\Bells\Bells		6144096
-	62582298	SRelease4	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\SRelease4_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SortOut\Slingshot\Release\SRelease4		384096
 	74676487	Leaves_Rustling_06	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\LeavesRustlingIndicator\Leaves_Rustling_06_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\DirectionIndicator\LeavesRustling\Leaves_Rustling_06		528096
 	77008919	North	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\Voices\English(US)\North_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\AudioCompass\North		156096
 	79818769	Instruction2	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\Voices\English(US)\I2_3F75BDB9.wem		\Actor-Mixer Hierarchy\Voices\Instructions\Instruction2		546548
 	105873676	AudioVisualiserOff	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\AudioVisualiserOff_3F75BDB9.wem		\Actor-Mixer Hierarchy\Voices\ButtonReadAloud\AudioVisualiserToggle\AudioVisualiserOff		25709
-	106854697	80	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\DistanceCount\80_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SortOut\Beacon\DistanceCount\80		94456
+	106854697	80	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\DistanceCount\80_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Unused\Beacon\DistanceCount\80		94456
 	119593203	D2b	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\D2b_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O2\D2b		384096
 	121037009	Plyr_Fstps_Grass_06	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Grass\Plyr_Fstps_Grass_06_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\Footsteps\Grass\Plyr_Fstps_Grass_06		138716
 	124046553	Plyr_Fstps_Grass_01	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Grass\Plyr_Fstps_Grass_01_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\Footsteps\Grass\Plyr_Fstps_Grass_01		138716
@@ -217,22 +214,21 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	164737119	G4b	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\G4b_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O4\G4b		384096
 	167049895	Dropping Wood 13	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\TreeBump\Dropping Wood 13_3F75BDB9.wem		\Actor-Mixer Hierarchy\SFX\Environment\Environment\TreeBump\Dropping Wood 13		24335
 	170761103	C3_E3_A2_B2_C3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\C3_E3_A2_B3_C3_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Melodies\Melodies\M1\C3_E3_A2_B2_C3		768096
-	179996937	30	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\DistanceCount\30_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SortOut\Beacon\DistanceCount\30		118272
+	179996937	30	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\DistanceCount\30_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Unused\Beacon\DistanceCount\30		118272
 	181898422	E2	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O2\E2_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O2\E2		384096
-	185344975	SRelease3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\SRelease3_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SortOut\Slingshot\Release\SRelease3		288096
 	188859037	Plyr_Fstps_Water_05	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Water\Plyr_Fstps_Water_05_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\Footsteps\Water\Plyr_Fstps_Water_05		192096
 	189275940	D3#	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\D3#_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O3\D3#		384096
 	190432777	ErrorDefault	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\Voices\English(US)\ErrorDefault_3F75BDB9.wem		\Actor-Mixer Hierarchy\Voices\ButtonReadAloud\ErrorDefault		11925
-	197696890	EffectsVolumeCheck	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\EffectsVolumeTest_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SortOut\VolumeCheck\EffectsVolumeCheck		384096
+	197696890	EffectsVolumeCheck	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\EffectsVolumeTest_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\UI\VolumeCheck\EffectsVolumeCheck		384096
 	198455538	Plyr_Grunt_01	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Plyr_Grunt_01_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\Grunts\Plyr_Grunt_01		46688
 	199504774	Dropping Wood 05	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\TreeBump\Dropping Wood 05_3F75BDB9.wem		\Actor-Mixer Hierarchy\SFX\Environment\Environment\TreeBump\Dropping Wood 05		38524
 	206363750	G3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O3\G3_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O3\G3		384096
-	213534083	MusicVolumeCheck	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\MusicVolumeTest_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SortOut\VolumeCheck\MusicVolumeCheck		384096
+	213534083	MusicVolumeCheck	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\MusicVolumeTest_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\UI\VolumeCheck\MusicVolumeCheck		384096
 	216779373	A3#	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\A3#_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O3\A3#		384096
-	221568551	10	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\DistanceCount\10_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SortOut\Beacon\DistanceCount\10		76924
+	221568551	10	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\DistanceCount\10_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Unused\Beacon\DistanceCount\10		76924
 	221912054	Announce_M1_P2_E3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\M1Announce\Announce_M1_P2_E3_10C4C929.wem		\Actor-Mixer Hierarchy\Voices\M1\M1SuccessAnnounce\Announce_M1_P2_E3		1822236
 	232226852	M1_P5_C3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\M1_C3_P5_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesRadius\M1Radius\M1_P5_C3		192096
-	242190809	DistanceFrameTransition	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\DistanceFrameTransition_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SortOut\DistanceFrameTransition		486096
+	242190809	DistanceFrameTransition	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\DistanceFrameTransition_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\UI\DistanceFrameTransition		486096
 	263546722	VoiceVolume	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\Voices\English(US)\VoiceVolume_3F75BDB9.wem		\Actor-Mixer Hierarchy\Voices\ButtonReadAloud\VoiceVolume		20913
 	268897836	WinterWren_03	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Winter Wren\WinterWren_03_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\DirectionIndicator\WinterWren\WinterWren_03		1920096
 	269103452	D2#	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\D2#_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O2\D2#		384096
@@ -249,7 +245,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	313915896	EndRegion	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\Voices\English(US)\EndRegion_3F75BDB9.wem		\Actor-Mixer Hierarchy\Voices\InGame\EndRegion		85633
 	318186197	Plyr_Fstps_Grass_07	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Grass\Plyr_Fstps_Grass_07_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\Footsteps\Grass\Plyr_Fstps_Grass_07		138716
 	323227027	A3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O3\A3_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O3\A3		384096
-	331737057	TestClick_lp	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\TestClick_D79FB2B7.wem		\Actor-Mixer Hierarchy\SFX\TestClick_lp		192096
+	331737057	TestClick_lp	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\TestClick_D79FB2B7.wem		\Actor-Mixer Hierarchy\SFX\Unused\TestClick_lp		192096
 	332098808	Plyr_Fstps_Water_03	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Water\Plyr_Fstps_Water_03_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\Footsteps\Water\Plyr_Fstps_Water_03		180096
 	332946074	C4	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O4\C4_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O4\C4		384096
 	335502933	Quit	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\Voices\English(US)\Quit_3F75BDB9.wem		\Actor-Mixer Hierarchy\Voices\ButtonReadAloud\Quit		17881
@@ -272,24 +268,26 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	427559518	B4	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O4\B4_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O4\B4		384096
 	429045180	StoneBump1	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\StoneBump\StoneBump1_3F75BDB9.wem		\Actor-Mixer Hierarchy\SFX\Environment\Environment\StoneBump\StoneBump1		14459
 	441185423	AudioVisualiserOn	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\AudioVisualiserOn_3F75BDB9.wem		\Actor-Mixer Hierarchy\Voices\ButtonReadAloud\AudioVisualiserToggle\AudioVisualiserOn		23941
-	447603507	destination_reached	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\destination_reached_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SortOut\Beacon\DistanceCount\destination_reached		264096
+	447603507	destination_reached	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\destination_reached_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Unused\Beacon\DistanceCount\destination_reached		264096
 	454928087	FS_Concrete_03	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Footsteps\Concrete\FS_Concrete_03_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\Footsteps\Concrete\FS_Concrete_03		63518
 	456569173	C2#	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\C2#_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O2\C2#		384096
 	458198719	Plyr_Fstps_Grass_04	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Grass\Plyr_Fstps_Grass_04_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\Footsteps\Grass\Plyr_Fstps_Grass_04		138716
 	462856247	StoneBump6	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\StoneBump\StoneBump6_3F75BDB9.wem		\Actor-Mixer Hierarchy\SFX\Environment\Environment\StoneBump\StoneBump6		33072
 	473231221	FS_Gravel_03	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Footsteps\Gravel\FS_Gravel_03_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\Footsteps\Gravel\FS_Gravel_03		48248
 	476919538	B3b	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\B3b_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O3\B3b		384096
+	481546061	Birds_lp_04	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Birds_lp_04_9EDFC787.wem		\Actor-Mixer Hierarchy\SFX\Environment\Environment\Birds\Birds_lp_04		2570140
 	490717431	FS_Dirt_02	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Footsteps\Dirt\FS_Dirt_02_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\Footsteps\Dirt\FS_Dirt_02		75892
 	496510789	Instruction3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\Voices\English(US)\I3_3F75BDB9.wem		\Actor-Mixer Hierarchy\Voices\Instructions\Instruction3		566756
 	497078878	G2b	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\G2b_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O2\G2b		384096
-	509973139	70	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\DistanceCount\70_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SortOut\Beacon\DistanceCount\70		139600
+	509973139	70	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\DistanceCount\70_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Unused\Beacon\DistanceCount\70		139600
 	512266225	FS_Dirt_01	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Footsteps\Dirt\FS_Dirt_01_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\Footsteps\Dirt\FS_Dirt_01		43874
 	515046687	OnTarget_PitchB	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\OnTarget\OnTarget_PitchB_D79FB2B7.wem		\Actor-Mixer Hierarchy\SFX\Player\Aiming\OnTarget\OnTarget_PitchB		384096
+	517302441	PlingSuccess	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\PlingSuccess_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\UI\PlingSuccess		384096
 	523980979	Dropping Wood 08	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\TreeBump\Dropping Wood 08_3F75BDB9.wem		\Actor-Mixer Hierarchy\SFX\Environment\Environment\TreeBump\Dropping Wood 08		36003
 	530408079	G3b	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\G3b_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O3\G3b		384096
 	532211832	OnTarget_PitchC	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\OnTarget\OnTarget_PitchC_D79FB2B7.wem		\Actor-Mixer Hierarchy\SFX\Player\Aiming\OnTarget\OnTarget_PitchC		384096
 	535282374	South	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\Voices\English(US)\South_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\AudioCompass\South		127256
-	538381605	90	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\DistanceCount\90_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SortOut\Beacon\DistanceCount\90		120096
+	538381605	90	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\DistanceCount\90_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Unused\Beacon\DistanceCount\90		120096
 	545185951	A2b	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\A2b_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O2\A2b		384096
 	556685349	M1_P1_C3_Dissected	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Disstected Melody\M1_P1_C3_Dissected_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\M1Dissected\M1_P1_C3_Dissected		384096
 	557735401	Plyr_Fstps_Water_01	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Water\Plyr_Fstps_Water_01_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\Footsteps\Water\Plyr_Fstps_Water_01		132096
@@ -299,16 +297,16 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	583150438	Plyr_Fstps_Grass_08	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Grass\Plyr_Fstps_Grass_08_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\Footsteps\Grass\Plyr_Fstps_Grass_08		157316
 	592682436	C3_E3_A2_B3_C3_v5	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\C3_E3_A2_B3_C3_v5_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Melodies\M1_versions\C3_E3_A2_B3_C3_v5\C3_E3_A2_B3_C3_v5		768096
 	597020867	Dropping Wood 11	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\TreeBump\Dropping Wood 11_3F75BDB9.wem		\Actor-Mixer Hierarchy\SFX\Environment\Environment\TreeBump\Dropping Wood 11		25863
-	599570934	Birds_lp_02	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Birds\Birds_lp_02_3F75BDB9.wem		\Actor-Mixer Hierarchy\SFX\Environment\Environment\Birds\Birds_lp_02		4381110
+	599570934	Birds_lp_02	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Birds\Birds_lp_02_9EDFC787.wem		\Actor-Mixer Hierarchy\SFX\Environment\Environment\Birds\Birds_lp_02		4381110
 	599950730	D4#	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\D4#_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O4\D4#		384096
 	601310814	C3_E3_A2_B3_C3_v2	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\C3_E3_A2_B3_C3_v2_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Melodies\M1_versions\C3_E3_A2_B3_C3_v2\C3_E3_A2_B3_C3_v2		768096
-	603105156	100	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\DistanceCount\100_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SortOut\Beacon\DistanceCount\100		170352
+	603105156	100	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\DistanceCount\100_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Unused\Beacon\DistanceCount\100		170352
 	604609623	Dropping Wood 06	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\TreeBump\Dropping Wood 06_3F75BDB9.wem		\Actor-Mixer Hierarchy\SFX\Environment\Environment\TreeBump\Dropping Wood 06		40948
 	604891812	Reflections	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Reflections_9EDFC787.wem		\Actor-Mixer Hierarchy\SFX\Environment\Environment\ReflectionBumpPrevention\Reflections		765404
 	618258995	D4b	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\D4b_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O4\D4b		384096
 	624828506	D2	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O2\D2_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O2\D2		384096
 	628564408	ListenAgain	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\Voices\English(US)\ListenAgain_3F75BDB9.wem		\Actor-Mixer Hierarchy\Voices\ButtonReadAloud\ListenAgain		19101
-	632144886	BeaconLR	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\BeaconSignal_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SortOut\Beacon\BeaconLR\BeaconLR		42096
+	632144886	BeaconLR	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\BeaconSignal_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Unused\Beacon\BeaconLR\BeaconLR		42096
 	638180037	M1_P2_E3_Dissected	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\M1_P2_E3_Dissected_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\M1Dissected\M1_P2_E3_Dissected		372096
 	646510716	StoneBump5	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\StoneBump\StoneBump5_3F75BDB9.wem		\Actor-Mixer Hierarchy\SFX\Environment\Environment\StoneBump\StoneBump5		31752
 	647086168	M1_P4_B2	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\M1_B2_P4_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesRadius\M1Radius\M1_P4_B2		192096
@@ -325,7 +323,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	708823612	FS_Concrete_02	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Footsteps\Concrete\FS_Concrete_02_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\Footsteps\Concrete\FS_Concrete_02		55048
 	716105785	M1_P5_C3_Dissected	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Disstected Melody\M1_P5_C3_Dissected_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\M1Dissected\M1_P5_C3_Dissected		384096
 	720284769	A4	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O4\A4_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O4\A4		384096
-	732948850	50	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\DistanceCount\50_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SortOut\Beacon\DistanceCount\50		133528
+	732948850	50	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\DistanceCount\50_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Unused\Beacon\DistanceCount\50		133528
 	737434286	Leaves_Rustling_01	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\LeavesRustlingIndicator\Leaves_Rustling_01_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\DirectionIndicator\LeavesRustling\Leaves_Rustling_01		576096
 	742077720	FS_Tile_01	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Footsteps\Tile\FS_Tile_01_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\Footsteps\Tile\FS_Tile_01		37538
 	748943891	Step_GrassFlowers_04	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\SteppingFlowersGrass\Step_GrassFlowers_04_3F75BDB9.wem		\Actor-Mixer Hierarchy\SFX\Environment\Environment\Step_GrassFlowers\Step_GrassFlowers_04		20662
@@ -365,23 +363,21 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	889111003	StoneBump7	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\StoneBump\StoneBump7_3F75BDB9.wem		\Actor-Mixer Hierarchy\SFX\Environment\Environment\StoneBump\StoneBump7		35082
 	893369011	FS_Tile_04	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Footsteps\Tile\FS_Tile_04_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\Footsteps\Tile\FS_Tile_04		34826
 	899448972	C3_E3_A2_B3_C3_Bird	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\C3_E3_A2_B3_C3_Bird_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Melodies\M1_Birds\C3_E3_A2_B3_C3_Bird		480096
-	904983868	SRelease2	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\SRelease2_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SortOut\Slingshot\Release\SRelease2		288096
 	906158194	Announce_M1_P4_B2	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\M1Announce\Announce_M1_P4_B2_10C4C929.wem		\Actor-Mixer Hierarchy\Voices\M1\M1SuccessAnnounce\Announce_M1_P4_B2		1258556
 	915905125	E4b	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\E4b_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O4\E4b		384096
 	917889763	B2	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O2\B2_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O2\B2		384096
 	918400394	C3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O3\C3_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O3\C3		384096
-	918872021	BGM_Menu_Placeholder	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\BGM_Menu_Placeholder_9EDFC787.wem		\Interactive Music Hierarchy\Music\BGM\BGM_Menu_Placeholder\BGM_Menu_Placeholder		3770310
 	920490969	Plyr_Fstps_Grass_03	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Grass\Plyr_Fstps_Grass_03_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\Footsteps\Grass\Plyr_Fstps_Grass_03		138716
 	924306492	Dropping Wood 07	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\TreeBump\Dropping Wood 07_3F75BDB9.wem		\Actor-Mixer Hierarchy\SFX\Environment\Environment\TreeBump\Dropping Wood 07		23096
 	925483801	A2	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O2\A2_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O2\A2		384096
 	926129158	G2#	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\G2#_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O2\G2#		384096
 	927525782	D3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O3\D3_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O3\D3		384096
 	932724716	Plyr_Fstps_Grass_02	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Grass\Plyr_Fstps_Grass_02_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\Footsteps\Grass\Plyr_Fstps_Grass_02		138716
-	955220572	Birds_lp_01	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Birds\Birds_lp_01_3F75BDB9.wem		\Actor-Mixer Hierarchy\SFX\Environment\Environment\Birds\Birds_lp_01		2051719
-	959719737	VoiceVolumeCheck	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\Voices\English(US)\Check_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SortOut\VolumeCheck\VoiceVolumeCheck		154284
-	964224159	60	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\DistanceCount\60_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SortOut\Beacon\DistanceCount\60		144096
-	966532559	BeaconLock	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\BeaconLock_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SortOut\Beacon\BeaconLock		249696
-	967319205	Track1_Em_90bpm_44_lp	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Track1_Em_90bpm_44_lp_D79FB2B7.wem		\Interactive Music Hierarchy\Music\BGM\BGM\Track1_Em_90bpm_44_lp\Track1_Em_90bpm_44_lp		12288096
+	955220572	Birds_lp_01	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Birds\Birds_lp_01_9EDFC787.wem		\Actor-Mixer Hierarchy\SFX\Environment\Environment\Birds\Birds_lp_01		2051719
+	959719737	VoiceVolumeCheck	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\Voices\English(US)\Check_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\UI\VolumeCheck\VoiceVolumeCheck		154284
+	964224159	60	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\DistanceCount\60_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Unused\Beacon\DistanceCount\60		144096
+	966532559	BeaconLock	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\BeaconLock_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Unused\Beacon\BeaconLock		249696
+	967319205	Track1_Em_90bpm_44_lp	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Track1_Em_90bpm_44_lp_D79FB2B7.wem		\Interactive Music Hierarchy\Music\BGM\BackgroundMusic\Track1_Em_90bpm_44_lp\Track1_Em_90bpm_44_lp		12288096
 	969926389	F2#	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\F2#_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O2\F2#		384096
 	970148816	Instruction4	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\Voices\English(US)\I4_3F75BDB9.wem		\Actor-Mixer Hierarchy\Voices\Instructions\Instruction4		571652
 	970609161	StoneBump9	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\StoneBump\StoneBump9_3F75BDB9.wem		\Actor-Mixer Hierarchy\SFX\Environment\Environment\StoneBump\StoneBump9		19122
@@ -389,7 +385,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	973202644	InBetween	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\LookAngle_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\AudioCompass\InBetween		66096
 	973849493	RacoonNoteWrangle_01	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\RacoonNoteWrangle_01_3F75BDB9.wem		\Actor-Mixer Hierarchy\SFX\NoteWrangle\RacoonNoteWrangle_01		174970
 	980309991	C2	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O2\C2_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O2\C2		384096
-	985489907	SRelease1	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\SRelease1_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SortOut\Slingshot\Release\SRelease1		384096
 	990206362	B3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O3\B3_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O3\B3		384096
 	992939571	Plyr_Grunt_02	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Plyr_Grunt_02_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\Grunts\Plyr_Grunt_02		95128
 	996453454	A3b	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\A3b_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O3\A3b		384096
@@ -398,15 +393,15 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	1014629448	Continue	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\Voices\English(US)\Continue_3F75BDB9.wem		\Actor-Mixer Hierarchy\Voices\ButtonReadAloud\Continue		12386
 	1020057871	Woodpicker_Pick_04	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Woodpicker\Woodpicker_Pick_04_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\DirectionIndicator\Woodpicker\Woodpicker_Pick_04		576096
 	1030614238	FS_Concrete_04	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Footsteps\Concrete\FS_Concrete_04_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\Footsteps\Concrete\FS_Concrete_04		39220
-	1042648744	20	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\DistanceCount\20_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SortOut\Beacon\DistanceCount\20		134212
+	1042648744	20	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\DistanceCount\20_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Unused\Beacon\DistanceCount\20		134212
 	1045015971	SquirrelNoteWrangle_02	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\SquirrelNoteWrangle_02_3F75BDB9.wem		\Actor-Mixer Hierarchy\SFX\NoteWrangle\SquirrelNoteWrangle_02		141614
 	1047754521	WinterWren_02	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Winter Wren\WinterWren_02_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\DirectionIndicator\WinterWren\WinterWren_02		1728096
 	1048071603	B2b	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\B2b_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O2\B2b		384096
 	1048145014	Dropping Wood 10	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\TreeBump\Dropping Wood 10_3F75BDB9.wem		\Actor-Mixer Hierarchy\SFX\Environment\Environment\TreeBump\Dropping Wood 10		23910
-	1050789876	Birds_lp_03	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Birds\Birds_lp_03_3F75BDB9.wem		\Actor-Mixer Hierarchy\SFX\Environment\Environment\Birds\Birds_lp_03		946725
+	1050789876	Birds_lp_03	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Birds\Birds_lp_03_9EDFC787.wem		\Actor-Mixer Hierarchy\SFX\Environment\Environment\Birds\Birds_lp_03		946725
 	1053882955	StoneBump10	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\StoneBump\StoneBump10_3F75BDB9.wem		\Actor-Mixer Hierarchy\SFX\Environment\Environment\StoneBump\StoneBump10		18333
 	1055002628	StoneBump8	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\StoneBump\StoneBump8_3F75BDB9.wem		\Actor-Mixer Hierarchy\SFX\Environment\Environment\StoneBump\StoneBump8		14837
 	1064747333	F3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\O3\F3_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O3\F3		384096
 	1071148732	C3_E3_A2_B3_C3_v4	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\C3_E3_A2_B3_C3_v4_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Melodies\M1_versions\C3_E3_A2_B3_C3_v4\C3_E3_A2_B3_C3_v4		768096
-	1072872748	40	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\DistanceCount\40_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SortOut\Beacon\DistanceCount\40		122040
+	1072872748	40	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\DistanceCount\40_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Unused\Beacon\DistanceCount\40		122040
 

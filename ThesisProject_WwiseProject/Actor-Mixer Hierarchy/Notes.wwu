@@ -6,6 +6,11 @@
 				<ActorMixer Name="NotesMixer" ID="{69969035-408C-410B-AFC3-FBF9A354465F}" ShortID="991849679">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-7</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -1212,6 +1217,41 @@
 															<Point>
 																<XPos>1</XPos>
 																<YPos>62</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{6BEDC781-2F64-4BA7-970F-52D03496C482}" ShortID="171657855">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Volume"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="RTPC_MelodyVoice" ID="{3BBE2090-5D1C-48A2-AD6E-52699BF9DA9A}" WorkUnitID="{AF997754-2938-43BD-928E-2FB426C2F6C9}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{5EEF622B-0988-4403-8489-AE5209CF3B8E}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>9</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>

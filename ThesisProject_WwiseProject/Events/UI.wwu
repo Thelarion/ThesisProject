@@ -132,6 +132,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_PlingSuccess" ID="{681ADAC4-6677-45BB-BC87-E878C8CBC753}">
+					<ChildrenList>
+						<Action Name="" ID="{84735220-17E7-4AED-86C9-B980391F8DEC}" ShortID="180416481">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PlingSuccess" ID="{0A0234D2-4DA0-45BF-808B-B4CDD098DED2}" WorkUnitID="{690ABE9D-D445-44AA-AE0F-2C6B0F3C9C08}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

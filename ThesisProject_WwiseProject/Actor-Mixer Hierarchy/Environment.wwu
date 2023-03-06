@@ -1001,6 +1001,9 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Birds_lp_02" ID="{C513BA78-7EFD-4670-91A8-47ACCDFBA83C}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Birds\Birds_lp_02.wav</AudioFile>
 											<MediaIDList>

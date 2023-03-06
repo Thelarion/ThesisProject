@@ -83,8 +83,7 @@ namespace AK
         static const AkUniqueID PLAY_BEACONLOCK = 3923622767U;
         static const AkUniqueID PLAY_BEACONLR = 194014728U;
         static const AkUniqueID PLAY_BELLS = 2324519816U;
-        static const AkUniqueID PLAY_BGM = 3126765036U;
-        static const AkUniqueID PLAY_BGM_MENU_PLACEHOLDER = 2771594344U;
+        static const AkUniqueID PLAY_BGM_MENU = 2295745746U;
         static const AkUniqueID PLAY_BIRDS = 3025897706U;
         static const AkUniqueID PLAY_BUTTON_ONCLICK = 283810802U;
         static const AkUniqueID PLAY_BUTTON_SELECTION = 2964789125U;
@@ -108,9 +107,9 @@ namespace AK
         static const AkUniqueID PLAY_NOTEWRANGLE = 2787390506U;
         static const AkUniqueID PLAY_ONTARGET = 2702745606U;
         static const AkUniqueID PLAY_PLAYERFOOT = 3015844381U;
+        static const AkUniqueID PLAY_PLINGSUCCESS = 3027595979U;
         static const AkUniqueID PLAY_PLYR_GRUNTS = 2481654591U;
         static const AkUniqueID PLAY_REFLECTIONBUMPPREVENTION = 988427829U;
-        static const AkUniqueID PLAY_SLINGSHOT_RELEASE = 3074787511U;
         static const AkUniqueID PLAY_SOUTH = 3187449017U;
         static const AkUniqueID PLAY_STEP_GRASSFLOWERS = 3460539825U;
         static const AkUniqueID PLAY_STONEBUMP = 3385122965U;
@@ -124,8 +123,7 @@ namespace AK
         static const AkUniqueID RESET_M1_SEQ = 39386235U;
         static const AkUniqueID RESET_M1_SUCESS_ANNOUNCE = 2401183550U;
         static const AkUniqueID STOP_ALLEVENTS = 2371377610U;
-        static const AkUniqueID STOP_BGM = 1073466678U;
-        static const AkUniqueID STOP_BGM_MENU_PLACEHOLDER = 2842046910U;
+        static const AkUniqueID STOP_BGM_MENU = 388256776U;
         static const AkUniqueID STOP_BUTTONREADALOUD = 632677629U;
         static const AkUniqueID STOP_INSTRUCTIONS = 2496424763U;
         static const AkUniqueID STOP_VOLUMECHECK = 3712676862U;
@@ -351,11 +349,13 @@ namespace AK
         static const AkUniqueID RTPC_FREQUENCY_DEPTH = 1384204673U;
         static const AkUniqueID RTPC_LEFT_RIGHT = 3707704703U;
         static const AkUniqueID RTPC_MELODYON = 3726690316U;
+        static const AkUniqueID RTPC_MELODYVOICE = 2033424207U;
         static const AkUniqueID RTPC_MUSICBUSFADE = 257343836U;
         static const AkUniqueID RTPC_MUSICVOLUMESETTINGS = 3453464353U;
         static const AkUniqueID RTPC_OBSTRUCTION = 3316058687U;
         static const AkUniqueID RTPC_OCCLUSION = 1664992182U;
         static const AkUniqueID RTPC_PLYR_DISTANCE = 3414688140U;
+        static const AkUniqueID RTPC_REVERBMODE = 3159236614U;
         static const AkUniqueID RTPC_SYNTH_PWM_UP_DOWN = 815616169U;
         static const AkUniqueID RTPC_VOICEVOLUMESETTINGS = 2118858538U;
     } // namespace GAME_PARAMETERS

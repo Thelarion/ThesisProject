@@ -3,22 +3,21 @@
 	<Events>
 		<WorkUnit Name="BGM" ID="{41C7A8FE-D04F-42B7-BFA2-9828FE7796A2}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Play_BGM" ID="{50611C64-E978-4B6F-930A-E0A615ED3D42}">
+				<Event Name="Play_BGM_Menu" ID="{50611C64-E978-4B6F-930A-E0A615ED3D42}">
 					<ChildrenList>
 						<Action Name="" ID="{6441B0F7-C98B-4130-80BC-8F1E64AE0E06}" ShortID="949781753">
 							<PropertyList>
 								<Property Name="FadeInCurve" Type="int16" Value="6"/>
-								<Property Name="FadeTime" Type="Real64" Value="8"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="BGM" ID="{FA175E77-C23F-4F20-9E66-BA97D9647278}" WorkUnitID="{E97775FD-0D3D-405F-9E19-353A7C2D06C9}"/>
+									<ObjectRef Name="BackgroundMusic" ID="{AE7ED769-A727-416C-81EC-B113DF3DAF23}" WorkUnitID="{E97775FD-0D3D-405F-9E19-353A7C2D06C9}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Stop_BGM" ID="{37DFE735-BDB1-4E39-A80E-2BF0F81A02D7}">
+				<Event Name="Stop_BGM_Menu" ID="{37DFE735-BDB1-4E39-A80E-2BF0F81A02D7}">
 					<ChildrenList>
 						<Action Name="" ID="{CAB0F50B-E986-41B4-AB69-CF04E6305D1C}" ShortID="811938284">
 							<PropertyList>
@@ -27,34 +26,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="BGM" ID="{FA175E77-C23F-4F20-9E66-BA97D9647278}" WorkUnitID="{E97775FD-0D3D-405F-9E19-353A7C2D06C9}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_BGM_Menu_Placeholder" ID="{54F5A846-8A7D-4308-B080-BF3785BA6BA9}">
-					<ChildrenList>
-						<Action Name="" ID="{48BDAB08-6314-4D70-9736-4EA1C8C67AD8}" ShortID="555458381">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="BGM_Menu_Placeholder" ID="{79348839-35A9-4CCB-A38A-F45AE9778046}" WorkUnitID="{E97775FD-0D3D-405F-9E19-353A7C2D06C9}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Stop_BGM_Menu_Placeholder" ID="{E630C1C2-BBC4-408A-B09F-C5518F721E37}">
-					<ChildrenList>
-						<Action Name="" ID="{4266A7A6-7E1F-4B37-B56B-52F159FAEA2C}" ShortID="184190951">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="FadeTime" Type="Real64" Value="2.5"/>
-								<Property Name="Scope" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="BGM_Menu_Placeholder" ID="{79348839-35A9-4CCB-A38A-F45AE9778046}" WorkUnitID="{E97775FD-0D3D-405F-9E19-353A7C2D06C9}"/>
+									<ObjectRef Name="BackgroundMusic" ID="{AE7ED769-A727-416C-81EC-B113DF3DAF23}" WorkUnitID="{E97775FD-0D3D-405F-9E19-353A7C2D06C9}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

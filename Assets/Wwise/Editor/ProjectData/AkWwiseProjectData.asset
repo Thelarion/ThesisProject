@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 111a36df2b99a2459ec0d5f0605e9fb4
     GuidInternal: 
-    m_lastTime: -8585235891967535237
+    m_lastTime: -8585235068209142015
     List:
     - name: AudioCompass
       guid: f5aca2cbdb493f45b7138c4de8cbf9c9
@@ -319,11 +319,11 @@ MonoBehaviour:
     ParentPath: Events\BGM
     guid: fea8c7414fd0b742bfa29828fe7796a2
     GuidInternal: 
-    m_lastTime: -8585240681838157474
+    m_lastTime: -8585235102619592109
     List:
-    - name: Play_BGM
+    - name: Play_BGM_Menu
       guid: 641c615078e96f4b930ae0a615ed3d42
-      id: 3126765036
+      id: 2295745746
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -331,33 +331,16 @@ MonoBehaviour:
       - ElementName: BGM
         ObjectType: 12
         guid: fea8c7414fd0b742bfa29828fe7796a2
-      - ElementName: Play_BGM
+      - ElementName: Play_BGM_Menu
         ObjectType: 3
         guid: 641c615078e96f4b930ae0a615ed3d42
-      Path: Events\BGM\Play_BGM
+      Path: Events\BGM\Play_BGM_Menu
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Play_BGM_Menu_Placeholder
-      guid: 46a8f5547d8a0843b080bf3785ba6ba9
-      id: 2771594344
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: BGM
-        ObjectType: 12
-        guid: fea8c7414fd0b742bfa29828fe7796a2
-      - ElementName: Play_BGM_Menu_Placeholder
-        ObjectType: 3
-        guid: 46a8f5547d8a0843b080bf3785ba6ba9
-      Path: Events\BGM\Play_BGM_Menu_Placeholder
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Stop_BGM
+    - name: Stop_BGM_Menu
       guid: 35e7df37b1bd394ea80e2bf0f81a02d7
-      id: 1073466678
+      id: 388256776
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -365,27 +348,10 @@ MonoBehaviour:
       - ElementName: BGM
         ObjectType: 12
         guid: fea8c7414fd0b742bfa29828fe7796a2
-      - ElementName: Stop_BGM
+      - ElementName: Stop_BGM_Menu
         ObjectType: 3
         guid: 35e7df37b1bd394ea80e2bf0f81a02d7
-      Path: Events\BGM\Stop_BGM
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Stop_BGM_Menu_Placeholder
-      guid: c2c130e6c4bb8a40b09fc5518f721e37
-      id: 2842046910
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: BGM
-        ObjectType: 12
-        guid: fea8c7414fd0b742bfa29828fe7796a2
-      - ElementName: Stop_BGM_Menu_Placeholder
-        ObjectType: 3
-        guid: c2c130e6c4bb8a40b09fc5518f721e37
-      Path: Events\BGM\Stop_BGM_Menu_Placeholder
+      Path: Events\BGM\Stop_BGM_Menu
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -2078,7 +2044,7 @@ MonoBehaviour:
     ParentPath: Events\SFX
     guid: 25bc135fc28aee46b33f4240d933cdbd
     GuidInternal: 
-    m_lastTime: -8585235643690860892
+    m_lastTime: -8585235102500703848
     List:
     - name: Beacon
       guid: bbc8b6179a41b343bca8b3cfc8a7a553
@@ -2538,43 +2504,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Play_Slingshot_Release
-      guid: a2ec135f4f6ca3499af19ab5fa1a79d1
-      id: 3074787511
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: SFX
-        ObjectType: 12
-        guid: 25bc135fc28aee46b33f4240d933cdbd
-      - ElementName: Slingshot
-        ObjectType: 4
-        guid: 553041d93fe00c4183b476deb70813e7
-      - ElementName: Play_Slingshot_Release
-        ObjectType: 3
-        guid: a2ec135f4f6ca3499af19ab5fa1a79d1
-      Path: Events\SFX\Slingshot\Play_Slingshot_Release
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Slingshot
-      guid: 553041d93fe00c4183b476deb70813e7
-      id: 3235795600
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: SFX
-        ObjectType: 12
-        guid: 25bc135fc28aee46b33f4240d933cdbd
-      - ElementName: Slingshot
-        ObjectType: 4
-        guid: 553041d93fe00c4183b476deb70813e7
-      Path: Events\SFX\Slingshot
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
   - PhysicalPath: Events\Testing.wwu
     PathAndIcons:
     - ElementName: Events
@@ -2586,7 +2515,7 @@ MonoBehaviour:
     ParentPath: Events\Testing
     guid: 91aa8a8db2bfc74895047f3f41bfb36e
     GuidInternal: 
-    m_lastTime: -8585246090020134209
+    m_lastTime: -8585235111790682118
     List:
     - name: Play_TestClick
       guid: 2637dd81fb4b284f8476f06836847d59
@@ -2616,7 +2545,7 @@ MonoBehaviour:
     ParentPath: Events\UI
     guid: 13ad265a32fe774b8e3372fc1241ceef
     GuidInternal: 
-    m_lastTime: -8585235548280519323
+    m_lastTime: -8585235084557399137
     List:
     - name: DistanceFrameTransition
       guid: b75bda6923c11a45b48382c150b587a0
@@ -2700,6 +2629,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: 76611b3640757241b6bf9e7f1fd57041
       Path: Events\UI\Play_MenuOpen
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_PlingSuccess
+      guid: c4da1a687766bb45bc87e878c8cbc753
+      id: 3027595979
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: UI
+        ObjectType: 12
+        guid: 13ad265a32fe774b8e3372fc1241ceef
+      - ElementName: Play_PlingSuccess
+        ObjectType: 3
+        guid: c4da1a687766bb45bc87e878c8cbc753
+      Path: Events\UI\Play_PlingSuccess
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -2896,7 +2842,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: b620eed12b95f847963eed7bcbbaf028
     GuidInternal: 
-    m_lastTime: -8585239255304315204
+    m_lastTime: -8585235491537765411
     List:
     - name: RTPC_Plyr_Distance
       guid: 3b8cd6dea34ad8449dd43b94d0e800fb
@@ -2912,6 +2858,20 @@ MonoBehaviour:
         ObjectType: 13
         guid: 3b8cd6dea34ad8449dd43b94d0e800fb
       Path: Game Parameters\Default Work Unit\RTPC_Plyr_Distance
+    - name: RTPC_ReverbMode
+      guid: 9139249072a9dc459da40c021dbfdbad
+      id: 3159236614
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b620eed12b95f847963eed7bcbbaf028
+      - ElementName: RTPC_ReverbMode
+        ObjectType: 13
+        guid: 9139249072a9dc459da40c021dbfdbad
+      Path: Game Parameters\Default Work Unit\RTPC_ReverbMode
   - PhysicalPath: Game Parameters\Melody.wwu
     PathAndIcons:
     - ElementName: Game Parameters
@@ -2923,7 +2883,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Melody
     guid: 547799af3829bd43928e2fb426c2f6c9
     GuidInternal: 
-    m_lastTime: -8585240053967148801
+    m_lastTime: -8585235080542233189
     List:
     - name: RTPC_MelodyOn
       guid: 7b0dd75018b34145b711aca439313934
@@ -2939,6 +2899,20 @@ MonoBehaviour:
         ObjectType: 13
         guid: 7b0dd75018b34145b711aca439313934
       Path: Game Parameters\Melody\RTPC_MelodyOn
+    - name: RTPC_MelodyVoice
+      guid: 9020be3b1c5da248ad6e52699bf9da9a
+      id: 2033424207
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Melody
+        ObjectType: 12
+        guid: 547799af3829bd43928e2fb426c2f6c9
+      - ElementName: RTPC_MelodyVoice
+        ObjectType: 13
+        guid: 9020be3b1c5da248ad6e52699bf9da9a
+      Path: Game Parameters\Melody\RTPC_MelodyVoice
   - PhysicalPath: Game Parameters\Music.wwu
     PathAndIcons:
     - ElementName: Game Parameters
@@ -3074,7 +3048,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 7fb15f74f422ed4bad756627e85a9cb3
     GuidInternal: 
-    m_lastTime: -8585251353044230909
+    m_lastTime: -8585235490150248894
     List:
     - name: AimDirection
       guid: bdd2e6e80180014ab731b31c36909571
@@ -4493,7 +4467,7 @@ MonoBehaviour:
         guid: da8eac4adff1a245a328ede5f79242d9
       Path: Triggers\Default Work Unit\New_Trigger
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000002000000050000000a0000000b0000000f00000014000000160000001c0000001d0000001e0000002000000021000000230000002c0000002d0000002e0000002f00000030000000310000003200000033000000350000003600000037000000390000003a0000003b0000003c0000003d0000003e0000004000000042000000450000004b0000004d0000004f00000052000000850000008b0000008c0000008f0000009d000000a4000000a5000000a6000000e4000000
+  ExpandedWaapiItemIds: 01000000020000000500000006000000070000000a0000000b0000000f00000014000000160000001c0000001d0000001e0000002000000021000000230000002c0000002d0000002f00000030000000310000003200000033000000350000003600000037000000390000003a0000003b0000003c0000003d0000003e0000004000000042000000450000004b0000004d0000004f000000520000005b000000850000008b0000008c0000008f0000009d000000a4000000a5000000a6000000e4000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

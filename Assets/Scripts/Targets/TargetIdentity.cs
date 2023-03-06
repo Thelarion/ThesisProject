@@ -33,14 +33,20 @@ public class TargetIdentity : MonoBehaviour
     private void Start()
     {
         gameObject.transform.position = targetSpawnPoints.ReturnRandomSpawnTransform(_indexInSequence).position;
-        IncreaseSizeOnInclusion();
+        AdjustSizeAndVoice();
     }
 
-    private void IncreaseSizeOnInclusion()
+    private void AdjustSizeAndVoice()
     {
         if (StartMenuManager.InclusionState == true)
         {
-            transform.localScale = new Vector3(70f, 70f, 70);
+            transform.localScale = new Vector3(70f, 70f, 70f);
+            AkSoundEngine.SetRTPCValue("RTPC_MelodyVoice", 1f);
+        }
+        else if (StartMenuManager.InclusionState == false)
+        {
+            transform.localScale = new Vector3(20f, 20f, 20f);
+            AkSoundEngine.SetRTPCValue("RTPC_MelodyVoice", 0f);
         }
     }
 
