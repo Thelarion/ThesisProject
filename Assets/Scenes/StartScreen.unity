@@ -932,6 +932,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3e8a0fb2fab7e4ea2d430feaa65569, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TargetController: {fileID: 0}
 --- !u!1 &2114283753834967212
 GameObject:
   m_ObjectHideFlags: 0
@@ -1473,20 +1474,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentTarget: {fileID: 0}
-  frequencyDistance:
+  Play_OnTarget:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 8287edaeb31e672439b503ce4a52dd95,
-      type: 2}
-  onTargetWhiteNoise:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 65dd201fd89bd264b8087ce092d483c2,
-      type: 2}
+    WwiseObjectReference: {fileID: 0}
   layerMask:
     serializedVersion: 2
     m_Bits: 55
-  outline: {fileID: 2100000, guid: 5e99d6e591a8ad142b13908f5ecad1fe, type: 2}
 --- !u!114 &9008879315188181917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1507,8 +1501,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 8287edaeb31e672439b503ce4a52dd95,
-      type: 2}
+    WwiseObjectReference: {fileID: 0}
   useCallbacks: 0
   Callbacks: []
   playingId: 0

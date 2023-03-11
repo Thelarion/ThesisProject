@@ -13,12 +13,17 @@ public class Inclusion : MonoBehaviour
     public GameObject PlayerCameraRoot;
     public GameObject TargetParent;
     public bool InclusionQuickStart = false;
+    public bool ColourQuickStart = false;
 
     private void Awake()
     {
         if (InclusionQuickStart)
         {
             StartMenuManager.InclusionState = true;
+        }
+        if (ColourQuickStart)
+        {
+            StartMenuManager.ColourState = true;
         }
     }
 

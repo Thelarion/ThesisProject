@@ -9,9 +9,11 @@ public class NearbyTrees : MonoBehaviour
     private float radius = 50f;
     private bool stopIndicator = false;
     private bool stopIndicatorOnSucess = false;
+    private TargetIndicator targetIndicator;
     private void Start()
     {
         Invoke("DelayedStart", 20f);
+        targetIndicator = GameObject.Find("TargetIndicator").GetComponent<TargetIndicator>();
     }
 
     private void DelayedStart()
@@ -74,6 +76,11 @@ public class NearbyTrees : MonoBehaviour
         {
             // print("Should play" + shortestDistanceTreeToTarget);
             LeavesRustling.Post(treeWithShortestDistance.gameObject);
+            if (StartMenuManager.ColourState)
+            {
+                targetIndicator.Target = treeWithShortestDistance.gameObject.transform;
+            }
+
         }
 
         yield return new WaitForSeconds(9f);

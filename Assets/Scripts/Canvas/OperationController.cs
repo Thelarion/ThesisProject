@@ -48,11 +48,11 @@ public class OperationController : MonoBehaviour
     public Sprite UI_ListBackground_Contrast;
     [Header("Wwise")]
     public AK.Wwise.Event DistanceFrameTransition;
-    private bool blockInitialPost = false;
+    // private bool blockInitialPost = false;
 
     private void Start()
     {
-        ColourHelpState = StartMenuManager.ActivateColour;
+        ColourHelpState = StartMenuManager.ColourState;
         UpdateUI();
         // ActivateFrameDistance();
     }
@@ -336,7 +336,7 @@ public class OperationController : MonoBehaviour
                 // {
                 //     DistanceFrameTransition.Post(gameObject);
                 // }
-                blockInitialPost = true;
+                // blockInitialPost = true;
             }
         }
 

@@ -20,6 +20,7 @@ public class CanvasController : MonoBehaviour
     public GameObject MenuInGame;
     public GameObject MenuStart;
     public GameObject MenuCredits;
+    private ScoreManager scoreManager;
 
     [Header("Variables")]
     private string sceneName;
@@ -44,6 +45,7 @@ public class CanvasController : MonoBehaviour
         else if (sceneName == "Forest")
         {
             GameUI.SetActive(true);
+            scoreManager = GameObject.Find("ScoreSystem").GetComponent<ScoreManager>();
         }
         else if (sceneName == "Credits")
         {
@@ -94,7 +96,17 @@ public class CanvasController : MonoBehaviour
     public void BackToStartMenu()
     {
         // AkSoundEngine.StopAll();
-        GameObject.Find("ScoreSystem").GetComponent<ScoreManager>().CurrentScore = 0;
+
+        if (scoreManager != null)
+        {
+            scoreManager.CurrentScore = 0;
+        }
+
+        if (sceneName == "Credits")
+        {
+            GameObject.Find("ScoreSystem").GetComponent<ScoreManager>().CurrentScore = 0;
+        }
+
         AkSoundEngine.PostEvent("Stop_AllEvents", gameObject);
         SceneManager.LoadScene("StartScreen");
     }

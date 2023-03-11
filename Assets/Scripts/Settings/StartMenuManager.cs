@@ -6,17 +6,16 @@ using UnityEngine.SceneManagement;
 public class StartMenuManager : MonoBehaviour
 {
     private static bool _inclusionState = false;
-    private static bool _activateColour;
+    private static bool _colourState = false;
     public static bool InclusionState
     {
         get { return _inclusionState; }
         set { _inclusionState = value; }
     }
-
-    public static bool ActivateColour
+    public static bool ColourState
     {
-        get { return _activateColour; }
-        set { _activateColour = value; }
+        get { return _colourState; }
+        set { _colourState = value; }
     }
 
     public void StartGame()

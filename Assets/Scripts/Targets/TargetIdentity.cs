@@ -34,6 +34,7 @@ public class TargetIdentity : MonoBehaviour
     {
         gameObject.transform.position = targetSpawnPoints.ReturnRandomSpawnTransform(_indexInSequence).position;
         AdjustSizeAndVoice();
+        // GameObject.Find("TargetIndicator").GetComponent<TargetIndicator>().Target = gameObject.transform;
     }
 
     private void AdjustSizeAndVoice()
