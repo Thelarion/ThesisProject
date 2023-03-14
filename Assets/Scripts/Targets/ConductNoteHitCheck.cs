@@ -34,6 +34,7 @@ public class ConductNoteHitCheck : MonoBehaviour
         {
 
             other.transform.GetComponent<TargetIdentity>().MissedTaps++;
+            LogManager.MissedTaps++;
             TargetMove targetMove = other.transform.GetComponent<TargetMove>();
 
             targetMove.StopMovementWhenMissOrInclusion();

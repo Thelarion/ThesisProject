@@ -38,28 +38,8 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 111a36df2b99a2459ec0d5f0605e9fb4
     GuidInternal: 
-    m_lastTime: -8585235068209142015
+    m_lastTime: -8585227947243903720
     List:
-    - name: AudioCompass
-      guid: f5aca2cbdb493f45b7138c4de8cbf9c9
-      id: 433383851
-      PathAndIcons:
-      - ElementName: Master-Mixer Hierarchy
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 111a36df2b99a2459ec0d5f0605e9fb4
-      - ElementName: Master Audio Bus
-        ObjectType: 2
-        guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Voice
-        ObjectType: 2
-        guid: 58d2cb1463c05f4f8620f1cd9a64e84f
-      - ElementName: AudioCompass
-        ObjectType: 2
-        guid: f5aca2cbdb493f45b7138c4de8cbf9c9
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Voice\AudioCompass
     - name: AudioMenu
       guid: e673bc3db8f4c14eaffb601995ce92ae
       id: 3105667492

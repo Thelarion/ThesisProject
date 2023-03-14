@@ -169,6 +169,7 @@ namespace StarterAssets
                 // slingshot.FireSlingshot();
                 // Play_Slingshot_Release.Post(gameObject);
                 conductorBaton.TriggerConductor();
+                LogManager.TriggerCount++;
                 _input.fire = false;
             }
         }

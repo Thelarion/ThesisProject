@@ -300,20 +300,7 @@
 										</DuckItem>
 									</DuckingList>
 								</Bus>
-								<Bus Name="AudioCompass" ID="{CBA2ACF5-49DB-453F-B713-8C4DE8CBF9C9}"/>
-								<Bus Name="InGameVoice" ID="{64F59E5D-ADF1-4C19-AB2A-69D3C92A0582}">
-									<DuckingList>
-										<DuckItem>
-											<BusRef Name="AudioCompass" ID="{CBA2ACF5-49DB-453F-B713-8C4DE8CBF9C9}"/>
-											<DuckingParam>
-												<Volume>-96</Volume>
-												<FadeInTime>0.300000011920929</FadeInTime>
-												<FadeOutTime>0.300000011920929</FadeOutTime>
-												<FadeCurve>FadeLinear</FadeCurve>
-											</DuckingParam>
-										</DuckItem>
-									</DuckingList>
-								</Bus>
+								<Bus Name="InGameVoice" ID="{64F59E5D-ADF1-4C19-AB2A-69D3C92A0582}"/>
 							</ChildrenList>
 							<ObjectLists>
 								<ObjectList Name="RTPC">

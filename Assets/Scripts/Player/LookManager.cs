@@ -20,12 +20,12 @@ public class LookManager : MonoBehaviour
     public AK.Wwise.Event Play_East;
     public AK.Wwise.Event Play_North;
     bool ignoreFirstState = false;
-    private bool stopAudioCompassOnSucess = false;
+    private bool stopAudioCompassOnSuccess = false;
 
     // Update is called once per frame
     private void Update()
     {
-        if (StartMenuManager.InclusionState && !stopAudioCompassOnSucess)
+        if (!stopAudioCompassOnSuccess)
         {
             CalculatePlayerLookAngle();
         }
@@ -39,9 +39,9 @@ public class LookManager : MonoBehaviour
 
     IEnumerator ToggleIndicator()
     {
-        stopAudioCompassOnSucess = true;
+        stopAudioCompassOnSuccess = true;
         yield return new WaitForSeconds(10f);
-        stopAudioCompassOnSucess = false;
+        stopAudioCompassOnSuccess = false;
     }
 
 
@@ -88,24 +88,28 @@ public class LookManager : MonoBehaviour
             {
                 case 0:
                     Play_North.Post(gameObject);
+                    LogManager.North++;
                     break;
                 case 23:
                     Play_LookAngle.Post(gameObject);
                     break;
                 case 45:
                     Play_East.Post(gameObject);
+                    LogManager.East++;
                     break;
                 case 68f:
                     Play_LookAngle.Post(gameObject);
                     break;
                 case 90:
                     Play_South.Post(gameObject);
+                    LogManager.South++;
                     break;
                 case 113f:
                     Play_LookAngle.Post(gameObject);
                     break;
                 case 135:
                     Play_West.Post(gameObject);
+                    LogManager.West++;
                     break;
                 case 158:
                     Play_LookAngle.Post(gameObject);

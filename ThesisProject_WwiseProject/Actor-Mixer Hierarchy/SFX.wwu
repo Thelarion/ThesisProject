@@ -1593,7 +1593,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="AudioCompass" ID="{CBA2ACF5-49DB-453F-B713-8C4DE8CBF9C9}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+									<ObjectRef Name="AudioMenu" ID="{3DBC73E6-F4B8-4EC1-AFFB-601995CE92AE}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>

@@ -80,6 +80,7 @@ public class SliderController : MonoBehaviour
             VoiceRTPCValue = value;
             AkSoundEngine.SetSwitch("VolumeCheck", "Voice", gameObject);
             AkSoundEngine.SetRTPCValue("RTPC_VoiceVolumeSettings", VoiceRTPCValue);
+            LogManager.VoiceVolume = value;
             PostEvents();
         }
     }
@@ -92,6 +93,7 @@ public class SliderController : MonoBehaviour
             MusicRTPCValue = value;
             AkSoundEngine.SetSwitch("VolumeCheck", "Music", gameObject);
             RTPC_MusicVolumeSettings.SetGlobalValue(MusicRTPCValue);
+            LogManager.MusicVolume = value;
             PostEvents();
         }
     }
@@ -103,6 +105,7 @@ public class SliderController : MonoBehaviour
             EffectsRTPCValue = value;
             AkSoundEngine.SetSwitch("VolumeCheck", "Effects", gameObject);
             AkSoundEngine.SetRTPCValue("RTPC_EffectsVolumeSettings", EffectsRTPCValue);
+            LogManager.EffectsVolume = value;
             PostEvents();
         }
     }

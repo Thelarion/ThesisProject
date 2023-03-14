@@ -28,6 +28,10 @@ public class Goal : MonoBehaviour
 
             if (missingTones.Count == 0)
             {
+                LogManager.EndTime = Time.time;
+                LogManager.TotalPoints = scoreManager.CurrentScore;
+                LogManager.PrintToTxt();
+
                 playerStop.SetActive(true);
                 print("Completed!");
                 levelLoader.LoadScene();
@@ -43,8 +47,16 @@ public class Goal : MonoBehaviour
 
                 if (QuickTest)
                 {
-                    levelLoader.LoadScene();
+
                     scoreManager.CurrentScore = 38;
+
+                    LogManager.EndTime = Time.time;
+                    LogManager.TotalPoints = scoreManager.CurrentScore;
+                    LogManager.PrintToTxt();
+
+                    playerStop.SetActive(true);
+                    print("Completed!");
+                    levelLoader.LoadScene();
                     AkSoundEngine.PostEvent("Stop_AllEvents", null);
                 }
             }

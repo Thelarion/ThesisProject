@@ -13,7 +13,7 @@
 			<ShortName>Environment</ShortName>
 			<Path>Environment.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{36C20A24-D3C8-19C9-AAF9-98CA0C071F67}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{DA668B33-3181-C09C-BF55-CCD4D2CF616F}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -29,7 +29,6 @@
 				<Bus Id="201729212" Name="Notes"/>
 				<Bus Id="393239870" Name="SFX"/>
 				<Bus Id="412724365" Name="BGM"/>
-				<Bus Id="433383851" Name="AudioCompass"/>
 				<Bus Id="1229948536" Name="Environment">
 					<AuxBusRefs>
 						<AuxBusRef Id="348963605" Name="Reverb"/>
@@ -202,7 +201,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{5CB9F941-FFF6-9137-688F-FEB64674F6FF}">
+		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{40A45B86-B54B-0CC1-1274-E84A976FC677}">
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
 			<Media>
@@ -676,7 +675,7 @@
 				</File>
 				<File Id="599570934" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Birds\Birds_lp_02.wav</ShortName>
-					<CachePath>SFX/Birds/Birds_lp_02_9EDFC787.wem</CachePath>
+					<CachePath>SFX/Birds/Birds_lp_02_18A59087.wem</CachePath>
 				</File>
 				<File Id="599950730" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>D4#.wav</ShortName>
@@ -2043,5 +2042,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{160E7395-594E-9325-C015-79C4160AA2E4}</FileHash>
+	<FileHash>{ED458FBD-AD3A-7643-DB65-EDA40A3E2BD3}</FileHash>
 </SoundBanksInfo>

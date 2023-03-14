@@ -32,6 +32,8 @@ public class GameManager : MonoBehaviour
     {
         player = GameObject.Find("Player");
 
+        LogManager.StartTime = Time.time;
+
         Invoke("PlayMelodyCoroutine", 3f);
         if (!StartMenuManager.InclusionState)
         {
@@ -42,6 +44,7 @@ public class GameManager : MonoBehaviour
         {
             AkSoundEngine.SetRTPCValue("RTPC_ReverbMode", 0);
         }
+
     }
 
     int index = 0;

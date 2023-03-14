@@ -39,7 +39,6 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	201729212	Notes			\Default Work Unit\Master Audio Bus\Music\Notes	
 	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
 	412724365	BGM			\Default Work Unit\Master Audio Bus\Music\BGM	
-	433383851	AudioCompass			\Default Work Unit\Master Audio Bus\Voice\AudioCompass	
 	1229948536	Environment			\Default Work Unit\Master Audio Bus\SFX\Environment	
 	1535976704	InGameVoice			\Default Work Unit\Master Audio Bus\Voice\InGameVoice	
 	2429736717	Melodies			\Default Work Unit\Master Audio Bus\Music\Melodies	
