@@ -10,10 +10,12 @@ public class NearbyTrees : MonoBehaviour
     private bool stopIndicator = false;
     private bool stopIndicatorOnSucess = false;
     private TargetIndicator targetIndicator;
+    private ClosedCaptions closedCaptions;
     private void Start()
     {
         Invoke("DelayedStart", 20f);
         targetIndicator = GameObject.Find("TargetIndicator").GetComponent<TargetIndicator>();
+        closedCaptions = GameObject.Find("ClosedCaptions").GetComponent<ClosedCaptions>();
     }
 
     private void DelayedStart()
@@ -79,6 +81,7 @@ public class NearbyTrees : MonoBehaviour
             if (StartMenuManager.ColourState)
             {
                 targetIndicator.Target = treeWithShortestDistance.gameObject.transform;
+                closedCaptions.DisplayCaptions("Leaves are rustling in this direction!");
             }
 
         }
