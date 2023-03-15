@@ -1607,16 +1607,15 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="LookAngle" ID="{0689FF8F-4BBB-4381-8768-05BD2D4E3019}">
+										<SourcePlugin Name="Silence" ID="{A0D98610-68FC-4DE4-B3FC-2087849D117F}" ShortID="449421765" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+											<PropertyList>
+												<Property Name="Length" Type="Real32" Value="0.1"/>
+											</PropertyList>
 											<Language>SFX</Language>
-											<AudioFile>LookAngle.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="973202644"/>
-											</MediaIDList>
-										</AudioFileSource>
+										</SourcePlugin>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="LookAngle" ID="{0689FF8F-4BBB-4381-8768-05BD2D4E3019}" Platform="Linked"/>
+										<ActiveSource Name="Silence" ID="{A0D98610-68FC-4DE4-B3FC-2087849D117F}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="North" ID="{304929DE-7DB4-429F-8E89-E556CF902CF4}" ShortID="308997008">
@@ -1772,12 +1771,23 @@
 							</ReferenceList>
 							<ChildrenList>
 								<SwitchContainer Name="OnTarget" ID="{B956B7E5-F336-4B34-ABAF-EDF6DFE946AC}" ShortID="206888464">
+									<PropertyList>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
 										</Reference>
 										<Reference Name="DefaultSwitchOrState">
 											<ObjectRef Name="PitchC" ID="{65757786-5769-42F4-B302-0EC597680AB3}" WorkUnitID="{3366C92C-EFE1-45C7-A10A-B3FAD73419FC}"/>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+											<ObjectRef Name="High_Impact" ID="{2AFD6FB0-C906-4683-A377-FEEEF72967B0}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>

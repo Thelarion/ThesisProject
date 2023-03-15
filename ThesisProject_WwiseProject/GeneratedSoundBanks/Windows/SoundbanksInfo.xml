@@ -13,7 +13,7 @@
 			<ShortName>Environment</ShortName>
 			<Path>Environment.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{2B26C3E5-E5A6-21D4-D1FF-21B2C3424103}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{4492F8F1-2313-C874-CFCF-ED188D1470F0}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -201,7 +201,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{40A45B86-B54B-0CC1-1274-E84A976FC677}">
+		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{2BCF8D7D-46FE-9FC4-243F-52C8743D63D8}">
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
 			<Media>
@@ -1013,10 +1013,6 @@
 					<ShortName>MenuClose.wav</ShortName>
 					<CachePath>SFX/MenuClose_10C4C929.wem</CachePath>
 				</File>
-				<File Id="973202644" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>LookAngle.wav</ShortName>
-					<CachePath>SFX/LookAngle_10C4C929.wem</CachePath>
-				</File>
 				<File Id="973849493" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>RacoonNoteWrangle_01.wav</ShortName>
 					<CachePath>SFX/RacoonNoteWrangle_01_3F75BDB9.wem</CachePath>
@@ -1104,9 +1100,11 @@
 			</Media>
 			<Plugins>
 				<Custom>
+					<Plugin Id="449421765" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
 					<Plugin Id="737587789" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
 				</Custom>
 				<ShareSets>
+					<Plugin Id="3043085106" Name="High_Impact" LibName="Wwise Compressor" LibId="7077891"/>
 					<Plugin Id="3604890626" Name="High_Pass_60Hz" LibName="Wwise Parametric EQ" LibId="6881283"/>
 				</ShareSets>
 			</Plugins>
@@ -1626,10 +1624,12 @@
 						<MediaRef Id="313915896"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="342260041" Name="Play_InBetween" DurationType="OneShot" DurationMin="0.34375" DurationMax="0.34375">
-					<MediaRefs>
-						<MediaRef Id="973202644"/>
-					</MediaRefs>
+				<Event Id="342260041" Name="Play_InBetween" DurationType="OneShot" DurationMin="0.1" DurationMax="0.1">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="449421765"/>
+						</Custom>
+					</PluginRefs>
 				</Event>
 				<Event Id="1184431001" Name="Play_Instructions" DurationType="OneShot" DurationMin="35.5" DurationMax="42.625">
 					<SwitchContainers>
@@ -1750,24 +1750,44 @@
 							<MediaRefs>
 								<MediaRef Id="515046687"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="3043085106"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="2048081433" Id="339713614"/>
 							<MediaRefs>
 								<MediaRef Id="681487044"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="3043085106"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="2048081433" Id="339713608" Default="true"/>
 							<MediaRefs>
 								<MediaRef Id="532211832"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="3043085106"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="2048081433" Id="339713610"/>
 							<MediaRefs>
 								<MediaRef Id="363402405"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="3043085106"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
@@ -2042,5 +2062,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{FD649835-03B5-3017-3DC6-F59779099DEE}</FileHash>
+	<FileHash>{20C5BCE1-C385-6BFF-3CD5-836B4ECCD1E8}</FileHash>
 </SoundBanksInfo>

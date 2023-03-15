@@ -174,9 +174,11 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	4120900405	RTPC_beacon_lr_volume			\Beacon\RTPC_beacon_lr_volume	
 
 Effect plug-ins	ID	Name	Type				Notes
+	3043085106	High_Impact	Wwise Compressor			
 	3604890626	High_Pass_60Hz	Wwise Parametric EQ			
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	449421765	Silence	Wwise Silence		\Actor-Mixer Hierarchy\SFX\Player\AudioCompass\InBetween\Silence	
 	737587789	Silence	Wwise Silence		\Actor-Mixer Hierarchy\SFX\Unused\Beacon\BeaconLR\SilenceBeacon\Silence	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
@@ -382,7 +384,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	970148816	Instruction4	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\Voices\English(US)\I4_3F75BDB9.wem		\Actor-Mixer Hierarchy\Voices\Instructions\Instruction4		571652
 	970609161	StoneBump9	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\StoneBump\StoneBump9_3F75BDB9.wem		\Actor-Mixer Hierarchy\SFX\Environment\Environment\StoneBump\StoneBump9		19122
 	972649241	MenuClose	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\MenuClose_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\UI\Buttons\MenuClose		384096
-	973202644	InBetween	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\LookAngle_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player\AudioCompass\InBetween		66096
 	973849493	RacoonNoteWrangle_01	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\RacoonNoteWrangle_01_3F75BDB9.wem		\Actor-Mixer Hierarchy\SFX\NoteWrangle\RacoonNoteWrangle_01		174970
 	980309991	C2	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\O2\C2_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O2\C2		384096
 	990206362	B3	C:\Users\Ben\Documents\GitHub\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\O3\B3_10C4C929.wem		\Actor-Mixer Hierarchy\Music\Notes\NotesMixer\O3\B3		384096

@@ -329,8 +329,8 @@
 											<SegmentShape>Log3</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>2.35062</XPos>
-											<YPos>11.44414</YPos>
+											<XPos>0.81036</XPos>
+											<YPos>6.94976</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>Exp3</SegmentShape>
 										</Point>
@@ -828,8 +828,8 @@
 											<SegmentShape>Log3</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>2</XPos>
-											<YPos>8.6</YPos>
+											<XPos>0.22637</XPos>
+											<YPos>5.22921</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>Exp3</SegmentShape>
 										</Point>
@@ -1006,7 +1006,7 @@
 							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
 						</HighPassFilterUsage>
 						<SpreadUsage>
-							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+							<CurveUsageInfo Platform="Linked" CurveToUse="None">
 								<Curve Name="Spread" ID="{92AFA384-423E-4D79-8ABD-F9DB365880EE}">
 									<PropertyList>
 										<Property Name="Flags" Type="int32" Value="1"/>
@@ -1019,8 +1019,8 @@
 											<SegmentShape>Log1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>50.11389</XPos>
-											<YPos>29.41177</YPos>
+											<XPos>6.70665</XPos>
+											<YPos>4.13087</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>Exp1</SegmentShape>
 										</Point>

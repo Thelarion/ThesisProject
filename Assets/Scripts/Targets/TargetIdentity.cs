@@ -41,7 +41,7 @@ public class TargetIdentity : MonoBehaviour
     {
         if (StartMenuManager.InclusionState == true)
         {
-            transform.localScale = new Vector3(70f, 70f, 70f);
+            transform.localScale = new Vector3(80f, 80f, 80f);
             AkSoundEngine.SetRTPCValue("RTPC_MelodyVoice", 1f);
         }
         else if (StartMenuManager.InclusionState == false)

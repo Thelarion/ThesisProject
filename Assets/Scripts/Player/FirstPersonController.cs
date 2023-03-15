@@ -75,7 +75,6 @@ namespace StarterAssets
         // bool isRunning;
         // public float FootstepDelayTime = 0.3f;
         public AK.Wwise.Event Play_Plyr_Fstp;
-        // public AK.Wwise.Event Play_Slingshot_Release;
         public AK.Wwise.Event Play_Plyr_Grunts;
 
 
@@ -85,7 +84,6 @@ namespace StarterAssets
         [HideInInspector] public GameManager gameManager;
         [HideInInspector] public MelodyManager melodyManager;
         [HideInInspector] public bool MenuToggle = false;
-        // [HideInInspector] private Slingshot slingshot;
         [HideInInspector] private ConductorBaton conductorBaton;
         private RaycastHit raycastHit;
         private Transform bumpDetection;
@@ -166,8 +164,6 @@ namespace StarterAssets
         {
             if (_input.fire)
             {
-                // slingshot.FireSlingshot();
-                // Play_Slingshot_Release.Post(gameObject);
                 conductorBaton.TriggerConductor();
                 LogManager.TriggerCount++;
                 _input.fire = false;

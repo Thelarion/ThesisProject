@@ -11,8 +11,6 @@ public class MelodyTrigger : MonoBehaviour
 
     public void PlayMelodyRadius()
     {
-        LogManager.MelodyCount++;
-
         float radius = 30f;
 
         Collider[] hitColliders = Physics.OverlapSphere(transform.position, radius, layerMask);
@@ -99,7 +97,7 @@ public class MelodyTrigger : MonoBehaviour
 
             yield return new WaitForSeconds(waitSeconds);
         }
-
+        LogManager.MelodyCount++;
         Reset_Melody_Seq.Post(gameObject);
     }
 }
