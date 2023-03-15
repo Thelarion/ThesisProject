@@ -109,6 +109,39 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_FenceGoRight" ID="{46F581E1-E95A-4E4F-8340-97D9AC996361}">
+					<ChildrenList>
+						<Action Name="" ID="{DBCADB37-82BC-4D0E-B59E-95CD98D25B3F}" ShortID="214700308">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FenceRight" ID="{D08DC8FE-7974-448B-904A-FCB43983461B}" WorkUnitID="{14E6A00B-1C33-466E-9627-FBDE77EDBF18}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_FenceGoLeft" ID="{21CE5A6A-35CA-4012-96DE-BF830D47DDA1}">
+					<ChildrenList>
+						<Action Name="" ID="{7B627C55-D3BF-44EB-A461-B4BBB74D4823}" ShortID="479803894">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FenceLeft" ID="{A4266FE0-524E-44F4-BAE1-2BA118A253F9}" WorkUnitID="{14E6A00B-1C33-466E-9627-FBDE77EDBF18}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_ThankYou" ID="{F616BE0E-E4FD-4604-B8EE-6E484F13E1B9}">
+					<ChildrenList>
+						<Action Name="" ID="{D97F1616-FADF-4A11-84AE-D54F62989397}" ShortID="872020596">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ThankYouForPlaying" ID="{BD126B18-58D5-4F05-A4FE-0118DEC67E7A}" WorkUnitID="{14E6A00B-1C33-466E-9627-FBDE77EDBF18}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

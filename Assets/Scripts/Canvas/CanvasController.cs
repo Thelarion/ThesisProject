@@ -50,6 +50,7 @@ public class CanvasController : MonoBehaviour
         else if (sceneName == "Credits")
         {
             Credits.SetActive(true);
+            AkSoundEngine.PostEvent("Play_ThankYou", gameObject);
         }
 
         if (currentScene.name == "StartSettings" && StartMenuManager.InclusionState == true)

@@ -10,6 +10,7 @@ public class TargetIndicator : MonoBehaviour
     private bool indicateState = false;
     private GameObject indicatorGO;
     private bool startMelodyDone = false;
+    private bool semaphore = false;
 
     public Transform Target { get => _target; set { _target = value; IndicateTarget(); } }
 
@@ -31,7 +32,7 @@ public class TargetIndicator : MonoBehaviour
 
     private void IndicateTarget()
     {
-        if (startMelodyDone)
+        if (!semaphore && startMelodyDone)
         {
             StartCoroutine(IndicateInterval());
         }
@@ -39,11 +40,16 @@ public class TargetIndicator : MonoBehaviour
 
     IEnumerator IndicateInterval()
     {
+        semaphore = true;
+
         indicatorGO.SetActive(true);
         indicateState = true;
         yield return new WaitForSeconds(3f);
         indicatorGO.SetActive(false);
         indicateState = false;
+
+        yield return new WaitForSeconds(10f);
+        semaphore = false;
 
     }
 

@@ -359,7 +359,7 @@ MonoBehaviour:
     ParentPath: Events\Environment
     guid: 6b6ecfb2ce1fa94d909b1661ebea4ead
     GuidInternal: 
-    m_lastTime: -8585235503739534320
+    m_lastTime: -8585227152178413818
     List:
     - name: Play_Ambience
       guid: fa3455309387fb439b0c79717ed08820
@@ -409,6 +409,40 @@ MonoBehaviour:
         ObjectType: 3
         guid: a3092b3ffa882e49a3a2d737138579ae
       Path: Events\Environment\Play_EndRegion
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_FenceGoLeft
+      guid: 6a5ace21ca35124096debf830d47dda1
+      id: 2139524352
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Environment
+        ObjectType: 12
+        guid: 6b6ecfb2ce1fa94d909b1661ebea4ead
+      - ElementName: Play_FenceGoLeft
+        ObjectType: 3
+        guid: 6a5ace21ca35124096debf830d47dda1
+      Path: Events\Environment\Play_FenceGoLeft
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_FenceGoRight
+      guid: e181f5465ae94f4e834097d9ac996361
+      id: 4293820695
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Environment
+        ObjectType: 12
+        guid: 6b6ecfb2ce1fa94d909b1661ebea4ead
+      - ElementName: Play_FenceGoRight
+        ObjectType: 3
+        guid: e181f5465ae94f4e834097d9ac996361
+      Path: Events\Environment\Play_FenceGoRight
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -477,6 +511,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: f25d2dde1034d842b0d26da16867c046
       Path: Events\Environment\Play_StoneBump
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_ThankYou
+      guid: 0ebe16f6fde40446b8ee6e484f13e1b9
+      id: 1793656911
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Environment
+        ObjectType: 12
+        guid: 6b6ecfb2ce1fa94d909b1661ebea4ead
+      - ElementName: Play_ThankYou
+        ObjectType: 3
+        guid: 0ebe16f6fde40446b8ee6e484f13e1b9
+      Path: Events\Environment\Play_ThankYou
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1

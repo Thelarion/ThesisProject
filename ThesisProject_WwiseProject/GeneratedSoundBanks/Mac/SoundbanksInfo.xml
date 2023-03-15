@@ -201,7 +201,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{2BCF8D7D-46FE-9FC4-243F-52C8743D63D8}">
+		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{90BF3B6D-FC0D-255D-3F3C-C365A596C91F}">
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
 			<Media>
@@ -336,6 +336,10 @@
 				<File Id="167049895" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TreeBump\Dropping Wood 13.wav</ShortName>
 					<CachePath>SFX/TreeBump/Dropping Wood 13_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="168050965" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Fence_Right.wav</ShortName>
+					<CachePath>Voices/English(US)/Fence_Right_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="170761103" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>C3_E3_A2_B3_C3.wav</ShortName>
@@ -753,10 +757,6 @@
 					<ShortName>A4#.wav</ShortName>
 					<CachePath>SFX/A4#_10C4C929.wem</CachePath>
 				</File>
-				<File Id="692054553" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>M1Announce\Announce_M1_P1_C3.wav</ShortName>
-					<CachePath>SFX/M1Announce/Announce_M1_P1_C3_10C4C929.wem</CachePath>
-				</File>
 				<File Id="698313299" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Woodpicker\Woodpicker_Pick_02.wav</ShortName>
 					<CachePath>SFX/Woodpicker/Woodpicker_Pick_02_10C4C929.wem</CachePath>
@@ -957,6 +957,10 @@
 					<ShortName>Grass\Plyr_Fstps_Grass_03.wav</ShortName>
 					<CachePath>SFX/Grass/Plyr_Fstps_Grass_03_10C4C929.wem</CachePath>
 				</File>
+				<File Id="923941858" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Announce_M1_P1_C3.wav</ShortName>
+					<CachePath>SFX/Announce_M1_P1_C3_10C4C929.wem</CachePath>
+				</File>
 				<File Id="924306492" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TreeBump\Dropping Wood 07.wav</ShortName>
 					<CachePath>SFX/TreeBump/Dropping Wood 07_3F75BDB9.wem</CachePath>
@@ -976,6 +980,10 @@
 				<File Id="932724716" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grass\Plyr_Fstps_Grass_02.wav</ShortName>
 					<CachePath>SFX/Grass/Plyr_Fstps_Grass_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="937869554" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>ThankYouForPlaying.wav</ShortName>
+					<CachePath>Voices/English(US)/ThankYouForPlaying_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="955220572" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Birds\Birds_lp_01.wav</ShortName>
@@ -1016,6 +1024,10 @@
 				<File Id="973849493" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>RacoonNoteWrangle_01.wav</ShortName>
 					<CachePath>SFX/RacoonNoteWrangle_01_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="980014633" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Fence_Left.wav</ShortName>
+					<CachePath>Voices/English(US)/Fence_Left_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="980309991" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O2\C2.wav</ShortName>
@@ -1624,6 +1636,16 @@
 						<MediaRef Id="313915896"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2139524352" Name="Play_FenceGoLeft" DurationType="OneShot" DurationMin="8.8125" DurationMax="8.8125">
+					<MediaRefs>
+						<MediaRef Id="980014633"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4293820695" Name="Play_FenceGoRight" DurationType="OneShot" DurationMin="10.169333" DurationMax="10.169333">
+					<MediaRefs>
+						<MediaRef Id="168050965"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="342260041" Name="Play_InBetween" DurationType="OneShot" DurationMin="0.1" DurationMax="0.1">
 					<PluginRefs>
 						<Custom>
@@ -1684,9 +1706,9 @@
 						<MediaRef Id="716105785"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2184134547" Name="Play_M1_Intro" DurationType="OneShot" DurationMin="14.5" DurationMax="14.5">
+				<Event Id="2184134547" Name="Play_M1_Intro" DurationType="OneShot" DurationMin="23.050188" DurationMax="23.050188">
 					<MediaRefs>
-						<MediaRef Id="692054553"/>
+						<MediaRef Id="923941858"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="3827381996" Name="Play_M1_Seq" MaxAttenuation="30" DurationType="OneShot" DurationMin="1" DurationMax="1">
@@ -1912,6 +1934,11 @@
 						<MediaRef Id="331737057"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1793656911" Name="Play_ThankYou" DurationType="OneShot" DurationMin="9.9453335" DurationMax="9.9453335">
+					<MediaRefs>
+						<MediaRef Id="937869554"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3793308878" Name="Play_TreeBump" DurationType="OneShot" DurationMin="1.2030386" DurationMax="2.301678">
 					<MediaRefs>
 						<MediaRef Id="167049895"/>
@@ -2062,5 +2089,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{64011CDC-3830-575C-8845-2FD3C3A72F88}</FileHash>
+	<FileHash>{CBFDAAAA-9C49-C1B1-2CFB-1C1138AF3A3E}</FileHash>
 </SoundBanksInfo>

@@ -91,6 +91,8 @@ namespace AK
         static const AkUniqueID PLAY_DIRECTIONINDICATOR = 2360441072U;
         static const AkUniqueID PLAY_EAST = 4162345221U;
         static const AkUniqueID PLAY_ENDREGION = 1410858841U;
+        static const AkUniqueID PLAY_FENCEGOLEFT = 2139524352U;
+        static const AkUniqueID PLAY_FENCEGORIGHT = 4293820695U;
         static const AkUniqueID PLAY_INBETWEEN = 342260041U;
         static const AkUniqueID PLAY_INSTRUCTIONS = 1184431001U;
         static const AkUniqueID PLAY_M1 = 2447410352U;
@@ -114,6 +116,7 @@ namespace AK
         static const AkUniqueID PLAY_STEP_GRASSFLOWERS = 3460539825U;
         static const AkUniqueID PLAY_STONEBUMP = 3385122965U;
         static const AkUniqueID PLAY_TESTCLICK = 83581882U;
+        static const AkUniqueID PLAY_THANKYOU = 1793656911U;
         static const AkUniqueID PLAY_TREEBUMP = 3793308878U;
         static const AkUniqueID PLAY_TREEBUMPPREVENTION = 3900353054U;
         static const AkUniqueID PLAY_VOLUMECHECK = 1569887440U;
