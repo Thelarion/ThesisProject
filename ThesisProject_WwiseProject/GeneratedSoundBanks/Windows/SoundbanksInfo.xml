@@ -201,7 +201,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{90BF3B6D-FC0D-255D-3F3C-C365A596C91F}">
+		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{01569E63-CA92-8449-8057-3AFC2FCCFF1B}">
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
 			<Media>
@@ -1653,7 +1653,7 @@
 						</Custom>
 					</PluginRefs>
 				</Event>
-				<Event Id="1184431001" Name="Play_Instructions" DurationType="OneShot" DurationMin="35.5" DurationMax="42.625">
+				<Event Id="1184431001" Name="Play_Instructions" DurationType="OneShot" DurationMin="39.420288" DurationMax="47.708313">
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="4273002286" Id="1752637680"/>
@@ -2089,5 +2089,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{442B9F8B-3AC4-D3E7-56C6-53A3B31FAA68}</FileHash>
+	<FileHash>{C1113C02-72C1-E79E-E2D7-8534D6B9BE17}</FileHash>
 </SoundBanksInfo>

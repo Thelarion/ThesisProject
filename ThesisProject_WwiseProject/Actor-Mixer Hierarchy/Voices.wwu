@@ -858,7 +858,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="I4" ID="{359636CE-73FB-41CB-AD2E-C14A81A555A3}">
+								<AudioFileSource Name="I4" ID="{A474591F-7078-49F1-99B4-C12E69A96B89}">
 									<Language>English(US)</Language>
 									<AudioFile>I4.wav</AudioFile>
 									<MediaIDList>
@@ -867,7 +867,7 @@
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="I4" ID="{359636CE-73FB-41CB-AD2E-C14A81A555A3}" Platform="Linked"/>
+								<ActiveSource Name="I4" ID="{A474591F-7078-49F1-99B4-C12E69A96B89}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Instruction1" ID="{0D42BFA2-4DAF-4B76-8FCB-CE2CCC24D00E}" ShortID="596224026">
@@ -913,7 +913,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="I5" ID="{C509D961-97A7-42EF-A379-7CA0025F0A57}">
+								<AudioFileSource Name="I5" ID="{2E4E6EAE-4F83-46CE-A290-0DF5C75EB679}">
 									<Language>English(US)</Language>
 									<AudioFile>I5.wav</AudioFile>
 									<MediaIDList>
@@ -922,7 +922,7 @@
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="I5" ID="{C509D961-97A7-42EF-A379-7CA0025F0A57}" Platform="Linked"/>
+								<ActiveSource Name="I5" ID="{2E4E6EAE-4F83-46CE-A290-0DF5C75EB679}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Instruction2" ID="{14260CB7-76E0-4F2F-A42E-0859AF2FD185}" ShortID="56319458">
