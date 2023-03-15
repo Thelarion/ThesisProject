@@ -18,6 +18,8 @@ public class GameManager : MonoBehaviour
     private bool menuActive;
     public GameObject Blur;
     public GameObject player;
+    private ClosedCaptions closedCaptions;
+    private TargetIndicator targetIndicator;
 
 
     public static string ChosenPalette { get => chosenPalette; set => chosenPalette = value; }
@@ -30,6 +32,8 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        closedCaptions = GameObject.Find("ClosedCaptions").GetComponent<ClosedCaptions>();
+        targetIndicator = GameObject.Find("TargetIndicator").GetComponent<TargetIndicator>();
         player = GameObject.Find("Player");
 
         LogManager.StartTime = Time.time;
@@ -66,6 +70,9 @@ public class GameManager : MonoBehaviour
         {
             AkSoundEngine.PostEvent("Reset_M1_Success_Announce", player);
             AkSoundEngine.PostEvent("Play_M1_Intro", player);
+            closedCaptions.StartMelodyDone = true;
+            targetIndicator.StartMelodyDone = true;
+
         }
 
     }

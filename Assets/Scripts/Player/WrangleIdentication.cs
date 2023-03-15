@@ -29,7 +29,7 @@ public class WrangleIdentication : MonoBehaviour
             if (StartMenuManager.ColourState)
             {
                 targetIndicator.Target = gameObject.transform;
-                closedCaptions.DisplayCaptions("It looks like a forest inhabitant got into a tangle with a Tone!");
+                closedCaptions.DisplayCaptions("A forest inhabitant got into trouble with a Tone!");
             }
         }
         StartCoroutine(PlayWrangleIdentication());

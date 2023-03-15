@@ -9,25 +9,39 @@ public class TargetIndicator : MonoBehaviour
     private float rotationSpeed = 50f;
     private bool indicateState = false;
     private GameObject indicatorGO;
+    private bool startMelodyDone = false;
 
     public Transform Target { get => _target; set { _target = value; IndicateTarget(); } }
+
+
+    public bool StartMelodyDone
+    {
+        get => startMelodyDone; set { Invoke("DelayFirstCC", 5f); }
+    }
 
     private void Start()
     {
         indicatorGO = transform.GetChild(0).gameObject;
     }
+    public void DelayFirstCC()
+    {
+        startMelodyDone = true;
+    }
 
 
     private void IndicateTarget()
     {
-        StartCoroutine(IndicateInterval());
+        if (startMelodyDone)
+        {
+            StartCoroutine(IndicateInterval());
+        }
     }
 
     IEnumerator IndicateInterval()
     {
         indicatorGO.SetActive(true);
         indicateState = true;
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(3f);
         indicatorGO.SetActive(false);
         indicateState = false;
 

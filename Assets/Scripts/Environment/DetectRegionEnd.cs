@@ -11,11 +11,17 @@ public class DetectRegionEnd : MonoBehaviour
     Vector3 rayDirectionRight;
     Vector3 rayDirectionBack;
     RaycastHit detectionRay;
+    private ClosedCaptions closedCaptions;
     int rayLengthMeters = 2;
     [SerializeField] bool regionEndState = false;
     ArrayList triggeredRegionEndIDs = new ArrayList();
     ArrayList triggeredRegionEnds = new ArrayList();
     private bool isSemaphore;
+
+    private void Start()
+    {
+        closedCaptions = GameObject.Find("ClosedCaptions").GetComponent<ClosedCaptions>();
+    }
 
     private void Update()
     {
@@ -32,6 +38,7 @@ public class DetectRegionEnd : MonoBehaviour
     {
         isSemaphore = true;
         AkSoundEngine.PostEvent("Play_EndRegion", gameObject);
+        closedCaptions.DisplayCaptions("You cannot climb the mountains!");
         yield return new WaitForSeconds(5f);
         isSemaphore = false;
     }
