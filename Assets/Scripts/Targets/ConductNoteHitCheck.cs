@@ -5,12 +5,14 @@ public class ConductNoteHitCheck : MonoBehaviour
 {
     private ScoreManager scoreManager;
     public ParticleSystem hitParticles;
+    private ClosedCaptions closedCaptions;
 
 
     [HideInInspector] public TargetSpawnPoints targetSpawnPoints;
 
     private void Start()
     {
+        closedCaptions = GameObject.Find("ClosedCaptions").GetComponent<ClosedCaptions>();
         targetSpawnPoints = GameObject.Find("SpawnPoints").GetComponent<TargetSpawnPoints>();
         scoreManager = GameObject.Find("ScoreSystem").GetComponent<ScoreManager>();
     }
@@ -44,6 +46,11 @@ public class ConductNoteHitCheck : MonoBehaviour
             other.transform.position = targetSpawnPoints.ReturnRandomSpawnTransform(indexInSequence).position;
 
             AkSoundEngine.PostEvent("Play_Wrong_Note", GameObject.Find("Player"));
+
+            if (StartMenuManager.ColourState)
+            {
+                closedCaptions.DisplayCaptions("That was the wrong note. The note moved but is still nearby!");
+            }
 
             targetMove.InitializeMovementAfterMissOrInclusion();
 

@@ -2576,7 +2576,7 @@ MonoBehaviour:
     ParentPath: Events\UI
     guid: 13ad265a32fe774b8e3372fc1241ceef
     GuidInternal: 
-    m_lastTime: -8585235084557399137
+    m_lastTime: -8585223698537597857
     List:
     - name: DistanceFrameTransition
       guid: b75bda6923c11a45b48382c150b587a0
@@ -2677,6 +2677,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: c4da1a687766bb45bc87e878c8cbc753
       Path: Events\UI\Play_PlingSuccess
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_PracticeEnd
+      guid: 84a875e95d61e24bb625c7f6affe95b9
+      id: 2598215984
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: UI
+        ObjectType: 12
+        guid: 13ad265a32fe774b8e3372fc1241ceef
+      - ElementName: Play_PracticeEnd
+        ObjectType: 3
+        guid: 84a875e95d61e24bb625c7f6affe95b9
+      Path: Events\UI\Play_PracticeEnd
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1

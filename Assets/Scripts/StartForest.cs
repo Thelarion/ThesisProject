@@ -9,6 +9,7 @@ public class StartForest : MonoBehaviour
     private bool practiceModeEndState = false;
     private LevelLoader levelLoader;
     private ClosedCaptions closedCaptions;
+    private bool announcePlayedState = false;
 
     private void Start()
     {
@@ -22,6 +23,12 @@ public class StartForest : MonoBehaviour
         if (StartMenuManager.ColourState)
         {
             closedCaptions.DisplayCaptionsPracticeEnd("Practice end! If you feel ready, press Enter to start the game.");
+
+            if (!announcePlayedState)
+            {
+                announcePlayedState = true;
+                AkSoundEngine.PostEvent("Play_PracticeEnd", gameObject);
+            }
         }
     }
 

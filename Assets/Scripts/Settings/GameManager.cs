@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
 
         LogManager.StartTime = Time.time;
 
-        Invoke("PlayMelodyCoroutine", 3f);
+        Invoke("PlayMelodyCoroutine", 1f);
         if (!StartMenuManager.InclusionState)
         {
             AkSoundEngine.PostEvent("Play_Birds", player);
@@ -51,7 +51,6 @@ public class GameManager : MonoBehaviour
 
     }
 
-    int index = 0;
     void PlayMelodyCoroutine()
     {
         StartCoroutine(PlayMelody());
@@ -60,20 +59,12 @@ public class GameManager : MonoBehaviour
     IEnumerator PlayMelody()
     {
         AkSoundEngine.PostEvent("Play_M1", player);
-        yield return new WaitForSeconds(3f);
-        if (index < 2)
-        {
-            StartCoroutine(PlayMelody());
-            index++;
-        }
-        else
-        {
-            AkSoundEngine.PostEvent("Reset_M1_Success_Announce", player);
-            AkSoundEngine.PostEvent("Play_M1_Intro", player);
-            closedCaptions.StartMelodyDone = true;
-            targetIndicator.StartMelodyDone = true;
+        yield return new WaitForSeconds(4f);
 
-        }
+        AkSoundEngine.PostEvent("Reset_M1_Success_Announce", player);
+        AkSoundEngine.PostEvent("Play_M1_Intro", player);
+        closedCaptions.StartMelodyDone = true;
+        targetIndicator.StartMelodyDone = true;
 
     }
 

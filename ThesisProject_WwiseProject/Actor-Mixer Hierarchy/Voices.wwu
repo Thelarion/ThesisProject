@@ -161,6 +161,31 @@
 								<ActiveSource Name="ThankYouForPlaying" ID="{231254BD-3969-4D1C-A8BD-D6B035781550}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="PracticeEnd" ID="{9634C841-2B73-4BBF-AD25-58682D90C243}" ShortID="12498081">
+							<PropertyList>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="PracticeEnd" ID="{12B113B7-4828-4656-A8FF-36749A6AF76C}">
+									<Language>English(US)</Language>
+									<AudioFile>PracticeEnd.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="79578983"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="PracticeEnd" ID="{12B113B7-4828-4656-A8FF-36749A6AF76C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 				<SwitchContainer Name="ButtonReadAloud" ID="{167BCFFC-09B8-4343-9234-2955A1E0A23C}" ShortID="311647369">
@@ -609,6 +634,11 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="Welcome" ID="{7CC27642-D886-4F66-9F4D-625E2A5AA6C3}">
+									<PropertyList>
+										<Property Name="LoopBegin" Type="Real64" Value="0.464088397790055"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.464088397790055"/>
+									</PropertyList>
 									<Language>English(US)</Language>
 									<AudioFile>Welcome.wav</AudioFile>
 									<MediaIDList>
@@ -833,7 +863,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="I3" ID="{4D97077C-95C6-44D8-B43D-D8B34967DE1A}">
+								<AudioFileSource Name="I3" ID="{C425F0E6-49F1-4EEE-A3A6-2EC1C3DFC021}">
 									<Language>English(US)</Language>
 									<AudioFile>I3.wav</AudioFile>
 									<MediaIDList>
@@ -842,7 +872,7 @@
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="I3" ID="{4D97077C-95C6-44D8-B43D-D8B34967DE1A}" Platform="Linked"/>
+								<ActiveSource Name="I3" ID="{C425F0E6-49F1-4EEE-A3A6-2EC1C3DFC021}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Instruction4" ID="{7AF6D23A-73A8-4558-AC85-F643B35F1625}" ShortID="287989670">
@@ -858,7 +888,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="I4" ID="{A474591F-7078-49F1-99B4-C12E69A96B89}">
+								<AudioFileSource Name="I4" ID="{9D134BCD-361B-40BA-9816-D5516AA9F7B0}">
 									<Language>English(US)</Language>
 									<AudioFile>I4.wav</AudioFile>
 									<MediaIDList>
@@ -867,7 +897,7 @@
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="I4" ID="{A474591F-7078-49F1-99B4-C12E69A96B89}" Platform="Linked"/>
+								<ActiveSource Name="I4" ID="{9D134BCD-361B-40BA-9816-D5516AA9F7B0}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Instruction1" ID="{0D42BFA2-4DAF-4B76-8FCB-CE2CCC24D00E}" ShortID="596224026">
@@ -883,12 +913,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="I1" ID="{47F0F3B2-067E-43E3-A978-953961BC6CA4}">
-									<PropertyList>
-										<Property Name="LoopBegin" Type="Real64" Value="0.579710144927536"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimBegin" Type="Real64" Value="0.579710144927536"/>
-									</PropertyList>
+								<AudioFileSource Name="I1" ID="{B4A4035D-71C6-4BE3-8DAB-084A9AA5626B}">
 									<Language>English(US)</Language>
 									<AudioFile>I1.wav</AudioFile>
 									<MediaIDList>
@@ -897,7 +922,7 @@
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="I1" ID="{47F0F3B2-067E-43E3-A978-953961BC6CA4}" Platform="Linked"/>
+								<ActiveSource Name="I1" ID="{B4A4035D-71C6-4BE3-8DAB-084A9AA5626B}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Instruction5" ID="{74C027E4-297B-4ED9-9FD6-A4AF8E9B5935}" ShortID="287484790">
@@ -913,7 +938,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="I5" ID="{2E4E6EAE-4F83-46CE-A290-0DF5C75EB679}">
+								<AudioFileSource Name="I5" ID="{456065FC-4468-4F7A-8BAD-F13C6BC70016}">
 									<Language>English(US)</Language>
 									<AudioFile>I5.wav</AudioFile>
 									<MediaIDList>
@@ -922,7 +947,7 @@
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="I5" ID="{2E4E6EAE-4F83-46CE-A290-0DF5C75EB679}" Platform="Linked"/>
+								<ActiveSource Name="I5" ID="{456065FC-4468-4F7A-8BAD-F13C6BC70016}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Instruction2" ID="{14260CB7-76E0-4F2F-A42E-0859AF2FD185}" ShortID="56319458">
@@ -938,7 +963,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="I2" ID="{D1418613-BCC8-44E9-BBAB-C8F942B02DD5}">
+								<AudioFileSource Name="I2" ID="{F07BED48-4AA9-4E6C-AFE9-633803694E55}">
 									<Language>English(US)</Language>
 									<AudioFile>I2.wav</AudioFile>
 									<MediaIDList>
@@ -947,7 +972,7 @@
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="I2" ID="{D1418613-BCC8-44E9-BBAB-C8F942B02DD5}" Platform="Linked"/>
+								<ActiveSource Name="I2" ID="{F07BED48-4AA9-4E6C-AFE9-633803694E55}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

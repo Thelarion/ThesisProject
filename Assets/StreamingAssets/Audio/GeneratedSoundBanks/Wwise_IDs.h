@@ -111,6 +111,7 @@ namespace AK
         static const AkUniqueID PLAY_PLAYERFOOT = 3015844381U;
         static const AkUniqueID PLAY_PLINGSUCCESS = 3027595979U;
         static const AkUniqueID PLAY_PLYR_GRUNTS = 2481654591U;
+        static const AkUniqueID PLAY_PRACTICEEND = 2598215984U;
         static const AkUniqueID PLAY_REFLECTIONBUMPPREVENTION = 988427829U;
         static const AkUniqueID PLAY_SOUTH = 3187449017U;
         static const AkUniqueID PLAY_STEP_GRASSFLOWERS = 3460539825U;

@@ -201,7 +201,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{01569E63-CA92-8449-8057-3AFC2FCCFF1B}">
+		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{23C0AAEF-B061-1006-4E4A-3A01FD825D88}">
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
 			<Media>
@@ -276,6 +276,10 @@
 				<File Id="77008919" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>North.wav</ShortName>
 					<CachePath>Voices/English(US)/North_10C4C929.wem</CachePath>
+				</File>
+				<File Id="79578983" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>PracticeEnd.wav</ShortName>
+					<CachePath>Voices/English(US)/PracticeEnd_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="79818769" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>I2.wav</ShortName>
@@ -435,7 +439,7 @@
 				</File>
 				<File Id="277361146" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>I1.wav</ShortName>
-					<CachePath>Voices/English(US)/I1_7F0E4365.wem</CachePath>
+					<CachePath>Voices/English(US)/I1_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="288447565" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Water\Plyr_Fstps_Water_02.wav</ShortName>
@@ -819,7 +823,7 @@
 				</File>
 				<File Id="770808343" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>Welcome.wav</ShortName>
-					<CachePath>Voices/English(US)/Welcome_3F75BDB9.wem</CachePath>
+					<CachePath>Voices/English(US)/Welcome_3D901B99.wem</CachePath>
 				</File>
 				<File Id="782485844" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O4\G4.wav</ShortName>
@@ -1500,7 +1504,7 @@
 						<MediaRef Id="813247547"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2262911975" Name="Play_ButtonReadAloud" DurationType="OneShot" DurationMin="1" DurationMax="8">
+				<Event Id="2262911975" Name="Play_ButtonReadAloud" DurationType="OneShot" DurationMin="1" DurationMax="7.5359116">
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="3099313910" Id="640585335"/>
@@ -1653,7 +1657,7 @@
 						</Custom>
 					</PluginRefs>
 				</Event>
-				<Event Id="1184431001" Name="Play_Instructions" DurationType="OneShot" DurationMin="39.420288" DurationMax="47.708313">
+				<Event Id="1184431001" Name="Play_Instructions" DurationType="OneShot" DurationMin="19.2425" DurationMax="32.31373">
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="4273002286" Id="1752637680"/>
@@ -1896,6 +1900,11 @@
 						<MediaRef Id="992939571"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2598215984" Name="Play_PracticeEnd" DurationType="OneShot" DurationMin="7.4796457" DurationMax="7.4796457">
+					<MediaRefs>
+						<MediaRef Id="79578983"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="988427829" Name="Play_ReflectionBumpPrevention" MaxAttenuation="20" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="604891812"/>
@@ -2089,5 +2098,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{53E870DE-4899-3A97-0BD5-5E9263A09375}</FileHash>
+	<FileHash>{E1462892-386D-F40A-327D-445B81E01501}</FileHash>
 </SoundBanksInfo>

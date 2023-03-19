@@ -143,6 +143,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_PracticeEnd" ID="{E975A884-615D-4BE2-B625-C7F6AFFE95B9}">
+					<ChildrenList>
+						<Action Name="" ID="{13131F3D-CDAD-4F17-8232-491A415356AF}" ShortID="118409619">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PracticeEnd" ID="{9634C841-2B73-4BBF-AD25-58682D90C243}" WorkUnitID="{14E6A00B-1C33-466E-9627-FBDE77EDBF18}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
