@@ -23,12 +23,11 @@ public class StartForest : MonoBehaviour
         if (StartMenuManager.ColourState)
         {
             closedCaptions.DisplayCaptionsPracticeEnd("Practice end! If you feel ready, press Enter to start the game.");
-
-            if (!announcePlayedState)
-            {
-                announcePlayedState = true;
-                AkSoundEngine.PostEvent("Play_PracticeEnd", gameObject);
-            }
+        }
+        if (!announcePlayedState)
+        {
+            announcePlayedState = true;
+            AkSoundEngine.PostEvent("Play_PracticeEnd", gameObject);
         }
     }
 
