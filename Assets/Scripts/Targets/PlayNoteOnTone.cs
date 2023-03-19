@@ -361,10 +361,4 @@ public class PlayNoteOnTone : MonoBehaviour
         }
         currentNote.Post(tone);
     }
-
-    // void PostNote(string note, GameObject tone)
-    // {
-    //     AkSoundEngine.SetSwitch("Notes", note, tone);
-    //     AkSoundEngine.PostEvent("O2", tone);
-    // }
 }

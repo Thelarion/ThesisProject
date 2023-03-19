@@ -60,7 +60,7 @@ public class GameManager : MonoBehaviour
     IEnumerator PlayMelody()
     {
         AkSoundEngine.PostEvent("Play_M1", player);
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(3f);
         if (index < 2)
         {
             StartCoroutine(PlayMelody());

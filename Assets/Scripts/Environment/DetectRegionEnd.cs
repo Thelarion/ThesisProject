@@ -38,7 +38,10 @@ public class DetectRegionEnd : MonoBehaviour
     {
         isSemaphore = true;
         AkSoundEngine.PostEvent("Play_EndRegion", gameObject);
-        closedCaptions.DisplayCaptions("You cannot climb the mountains!");
+        if (StartMenuManager.ColourState)
+        {
+            closedCaptions.DisplayCaptions("You cannot climb the mountains!");
+        }
         yield return new WaitForSeconds(5f);
         isSemaphore = false;
     }

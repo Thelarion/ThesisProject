@@ -6,13 +6,16 @@ using UnityEngine;
 public class TargetIndicator : MonoBehaviour
 {
     private Transform _target;
+    private Transform _bells;
     private float rotationSpeed = 50f;
     private bool indicateState = false;
     private GameObject indicatorGO;
     private bool startMelodyDone = false;
     private bool semaphore = false;
+    private bool stopIndicateTargetState = false;
 
     public Transform Target { get => _target; set { _target = value; IndicateTarget(); } }
+    public Transform Bells { get => _target; set { _target = value; stopIndicateTargetState = true; IndicateBells(); } }
 
 
     public bool StartMelodyDone
@@ -32,7 +35,7 @@ public class TargetIndicator : MonoBehaviour
 
     private void IndicateTarget()
     {
-        if (!semaphore && startMelodyDone)
+        if (!semaphore && startMelodyDone && !stopIndicateTargetState)
         {
             StartCoroutine(IndicateInterval());
         }
@@ -51,6 +54,12 @@ public class TargetIndicator : MonoBehaviour
         yield return new WaitForSeconds(10f);
         semaphore = false;
 
+    }
+
+    private void IndicateBells()
+    {
+        indicateState = true;
+        indicatorGO.SetActive(true);
     }
 
     private void Update()

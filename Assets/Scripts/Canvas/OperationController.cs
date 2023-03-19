@@ -270,7 +270,7 @@ public class OperationController : MonoBehaviour
             if (child.GetChild(0).GetComponent<ListItemIdentity>().LockState == true)
             {
                 StartCoroutine(DecreaseAlpha(GetModeAndImage(!ColourHelpState, x)));
-                print(child.name);
+                // print(child.name);
                 ActivateFrameSuccess(x, child.name);
             }
             x++;
@@ -369,7 +369,6 @@ public class OperationController : MonoBehaviour
         currentFrame.color = newColorSafety;
     }
 
-    // https://gamedevbeginner.com/the-right-way-to-lerp-in-unity-with-examples/
     IEnumerator IncreaseAlpha(Image currentImageComponent)
     {
         float time = 0f;

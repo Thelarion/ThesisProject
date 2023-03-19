@@ -44,7 +44,7 @@ public class AimManager : MonoBehaviour
 
                 AkSoundEngine.SetSwitch("OnTarget", "Pitch" + hitOnTargetCheck.collider.name[0], gameObject);
 
-                print("Pitch" + hitOnTargetCheck.collider.name[0]);
+                // print("Pitch" + hitOnTargetCheck.collider.name[0]);
 
                 setAimOnTargetStatus();
             }

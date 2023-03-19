@@ -13,6 +13,7 @@ public class TargetIdentity : MonoBehaviour
     [SerializeField] private int missedTaps = 0;
     private static OperationController operationController;
     [HideInInspector] public TargetSpawnPoints targetSpawnPoints;
+    private ClosedCaptions closedCaptions;
 
     // every instance registers to and removes itself from here
     private static readonly HashSet<TargetIdentity> _instances = new HashSet<TargetIdentity>();
@@ -32,6 +33,7 @@ public class TargetIdentity : MonoBehaviour
 
     private void Start()
     {
+        closedCaptions = GameObject.Find("ClosedCaptions").GetComponent<ClosedCaptions>();
         gameObject.transform.position = targetSpawnPoints.ReturnRandomSpawnTransform(_indexInSequence).position;
         AdjustSizeAndVoice();
         // GameObject.Find("TargetIndicator").GetComponent<TargetIndicator>().Target = gameObject.transform;
@@ -80,6 +82,10 @@ public class TargetIdentity : MonoBehaviour
         if (transform.GetComponentInParent<TargetController>().TargetCount > 1)
         {
             AkSoundEngine.PostEvent("Play_M1_Success_Announce", GameObject.Find("Player"));
+            if (StartMenuManager.ColourState)
+            {
+                closedCaptions.DisplayCaptionsTop("Great, that is the correct note! Search for the next.");
+            }
             Transform nextTone = transform.GetComponentInParent<TargetController>().ActivateNextTone();
             GetComponentInParent<SuccessEvent>().PlaySuccessEvent(this.transform);
             DistanceToTarget.CurrentTargetIdentity = nextTone.transform.GetComponent<TargetIdentity>();

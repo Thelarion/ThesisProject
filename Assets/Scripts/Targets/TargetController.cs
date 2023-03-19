@@ -12,7 +12,10 @@ public class TargetController : MonoBehaviour
     private Transform targetCheckStateForDistance;
     private Transform currentShortestDistance;
     private ScoreManager scoreManager;
+    private ClosedCaptions closedCaptions;
+    private TargetIndicator targetIndicator;
     public GameObject Goal;
+    public GameObject Bells;
     private enum notes
     {
         C2, C2s, D2b, D2, D2s, E2b, E2, F2, F2s, G2b, G2, G2s, A2b, A2, A2s, B2b, B2,
@@ -36,6 +39,12 @@ public class TargetController : MonoBehaviour
             x++;
         }
         InitializeMaterials();
+    }
+
+    private void Start()
+    {
+        closedCaptions = GameObject.Find("ClosedCaptions").GetComponent<ClosedCaptions>();
+        targetIndicator = GameObject.Find("TargetIndicator").GetComponent<TargetIndicator>();
     }
 
     private void Update()
@@ -138,6 +147,11 @@ public class TargetController : MonoBehaviour
 
             i++;
             AkSoundEngine.PostEvent("Play_MelodyComplete", GameObject.Find("Player"));
+            if (StartMenuManager.ColourState)
+            {
+                closedCaptions.DisplayCaptionsTop("You completed the melody! Now follow the inidcator to the end.");
+                targetIndicator.Bells = Bells.transform;
+            }
             GameObject.Find("List").GetComponent<OperationController>().DecreaseAlphaIfZeroTargets();
             Invoke("PlayBells", 9f);
         }

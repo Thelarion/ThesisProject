@@ -20,7 +20,7 @@ public class StartMenuManager : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("Forest");
+        SceneManager.LoadScene("PracticeMode");
         AkSoundEngine.PostEvent("Stop_AllEvents", null);
     }
 

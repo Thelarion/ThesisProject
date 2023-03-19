@@ -62,9 +62,4 @@ public class Goal : MonoBehaviour
             }
         }
     }
-
-    // private void OnTriggerExit(Collider other)
-    // {
-    //     GetComponent<BoxCollider>().isTrigger = true;
-    // }
 }

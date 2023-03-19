@@ -42,7 +42,7 @@ public class CanvasController : MonoBehaviour
         {
             GameUI.SetActive(true);
         }
-        else if (sceneName == "Forest")
+        else if (sceneName == "Forest" || sceneName == "PracticeMode")
         {
             GameUI.SetActive(true);
             scoreManager = GameObject.Find("ScoreSystem").GetComponent<ScoreManager>();
@@ -66,7 +66,7 @@ public class CanvasController : MonoBehaviour
 
     private void Start()
     {
-        if (sceneName == "Forest")
+        if (sceneName == "Forest" || sceneName == "PracticeMode")
         {
             firstPersonController = GameObject.Find("Player").GetComponent<FirstPersonController>();
         }
@@ -82,13 +82,13 @@ public class CanvasController : MonoBehaviour
         {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
-            if (sceneName == "Forest") { firstPersonController.MenuToggle = true; }
+            if (sceneName == "Forest" || sceneName == "PracticeMode") { firstPersonController.MenuToggle = true; }
         }
         else
         {
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
-            if (sceneName == "Forest") { firstPersonController.MenuToggle = false; }
+            if (sceneName == "Forest" || sceneName == "PracticeMode") { firstPersonController.MenuToggle = false; }
         }
 
 
