@@ -47,7 +47,7 @@ public class TargetIndicator : MonoBehaviour
 
         indicatorGO.SetActive(true);
         indicateState = true;
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(5f);
         indicatorGO.SetActive(false);
         indicateState = false;
 

@@ -91,4 +91,10 @@ public class ClosedCaptions : MonoBehaviour
         Text cc = captions.GetComponent<Text>();
         cc.text = text;
     }
+
+    public void DeactivateCC()
+    {
+        captions.SetActive(false);
+        ccBackground.SetActive(false);
+    }
 }

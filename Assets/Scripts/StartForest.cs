@@ -37,6 +37,8 @@ public class StartForest : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.Return))
             {
+                LogManager.ResetLogging();
+                closedCaptions.DeactivateCC();
                 AkSoundEngine.PostEvent("Stop_AllEvents", null);
                 levelLoader.LoadScene();
             }

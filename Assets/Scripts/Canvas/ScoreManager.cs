@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System.Linq;
 
@@ -18,6 +19,13 @@ public class ScoreManager : MonoBehaviour
 
     private void Start()
     {
+
+
+        if (SceneManager.GetActiveScene().name != "Credits")
+        {
+            _currentScore = 0;
+        }
+
         var load = Resources.LoadAll("UI_DigitsScore", typeof(Sprite)).Cast<Sprite>();
 
         foreach (var item in load)
@@ -27,6 +35,11 @@ public class ScoreManager : MonoBehaviour
         }
 
         SetToSprite();
+    }
+
+    public void ResetPoints()
+    {
+        CurrentScore = 0;
     }
 
     public void CalculatePoints(int missedTaps)

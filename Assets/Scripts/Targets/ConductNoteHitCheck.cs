@@ -49,7 +49,7 @@ public class ConductNoteHitCheck : MonoBehaviour
 
             if (StartMenuManager.ColourState)
             {
-                closedCaptions.DisplayCaptions("That was the wrong note. The note moved but is still nearby!");
+                closedCaptions.DisplayCaptionsTop("That was the wrong note. The note moved but is still nearby!");
             }
 
             targetMove.InitializeMovementAfterMissOrInclusion();

@@ -36,6 +36,17 @@ public class LogManager : MonoBehaviour
     public static float MusicVolume { get => musicVolume; set => musicVolume = value; }
     public static float EffectsVolume { get => effectsVolume; set => effectsVolume = value; }
 
+    public static void ResetLogging()
+    {
+        TotalPoints = 0;
+        TriggerCount = 0;
+        MissedTaps = 0;
+        MelodyCount = 0;
+        North = 0;
+        South = 0;
+        East = 0;
+        West = 0;
+    }
 
 
     // Update is called once per frame
