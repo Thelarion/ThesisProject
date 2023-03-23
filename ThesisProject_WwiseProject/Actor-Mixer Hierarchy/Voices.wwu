@@ -186,6 +186,31 @@
 								<ActiveSource Name="PracticeEnd" ID="{12B113B7-4828-4656-A8FF-36749A6AF76C}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="CharacterStuck" ID="{0E699B9C-D04E-490B-B5C1-8E0758D96E72}" ShortID="232780809">
+							<PropertyList>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="CharacterStuck" ID="{6A718135-35DF-4CC9-B513-C6C3264B8D96}">
+									<Language>English(US)</Language>
+									<AudioFile>CharacterStuck.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="151668210"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="CharacterStuck" ID="{6A718135-35DF-4CC9-B513-C6C3264B8D96}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 				<SwitchContainer Name="ButtonReadAloud" ID="{167BCFFC-09B8-4343-9234-2955A1E0A23C}" ShortID="311647369">
@@ -1061,16 +1086,16 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Announce_M1_P2_E3" ID="{09C97570-7498-4AD5-BF42-EF0BF3095337}">
+										<AudioFileSource Name="Announce_M1_P2_E3" ID="{64A4C696-C590-4D50-9C9E-CB6145A790A0}">
 											<Language>SFX</Language>
-											<AudioFile>M1Announce\Announce_M1_P2_E3.wav</AudioFile>
+											<AudioFile>Announce_M1_P2_E3.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="221912054"/>
+												<MediaID ID="237824840"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="Announce_M1_P2_E3" ID="{09C97570-7498-4AD5-BF42-EF0BF3095337}" Platform="Linked"/>
+										<ActiveSource Name="Announce_M1_P2_E3" ID="{64A4C696-C590-4D50-9C9E-CB6145A790A0}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Announce_M1_P3_A2" ID="{2CDED401-F224-46D6-8FE9-9D2047055C3A}" ShortID="765865551">
@@ -1083,68 +1108,22 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Announce_M1_P3_A2" ID="{062E5D75-7BA2-48FA-BE8F-FF65E2B7931D}">
+										<AudioFileSource Name="Announce_M1_P3_A2" ID="{B178AE76-3FF0-408F-B5E9-7ABB71E5CC4B}">
 											<Language>SFX</Language>
-											<AudioFile>M1Announce\Announce_M1_P3_A2.wav</AudioFile>
+											<AudioFile>Announce_M1_P3_A2.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="387326776"/>
+												<MediaID ID="397557872"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="Announce_M1_P3_A2" ID="{062E5D75-7BA2-48FA-BE8F-FF65E2B7931D}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Announce_M1_P4_B2" ID="{34F51DCC-5208-4BE0-91D7-3CB3AA313D94}" ShortID="653340260">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Announce_M1_P4_B2" ID="{8D23D062-B13B-442F-B901-B8B8ACDFB4DD}">
-											<Language>SFX</Language>
-											<AudioFile>M1Announce\Announce_M1_P4_B2.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="906158194"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Announce_M1_P4_B2" ID="{8D23D062-B13B-442F-B901-B8B8ACDFB4DD}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Announce_M1_P5_C3" ID="{43D1B64B-881C-4664-8D5F-CF7DBD7F5D07}" ShortID="634198923">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Announce_M1_P5_C3" ID="{25CFCC85-5672-489B-9D20-E45D9E29EBC7}">
-											<Language>SFX</Language>
-											<AudioFile>M1Announce\Announce_M1_P5_C3.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="10711433"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Announce_M1_P5_C3" ID="{25CFCC85-5672-489B-9D20-E45D9E29EBC7}" Platform="Linked"/>
+										<ActiveSource Name="Announce_M1_P3_A2" ID="{B178AE76-3FF0-408F-B5E9-7ABB71E5CC4B}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
 							<Playlist>
 								<ItemRef Name="Announce_M1_P2_E3" ID="{323325DB-F48D-4BF2-AED0-59717A86178E}"/>
 								<ItemRef Name="Announce_M1_P3_A2" ID="{2CDED401-F224-46D6-8FE9-9D2047055C3A}"/>
-								<ItemRef Name="Announce_M1_P4_B2" ID="{34F51DCC-5208-4BE0-91D7-3CB3AA313D94}"/>
-								<ItemRef Name="Announce_M1_P5_C3" ID="{43D1B64B-881C-4664-8D5F-CF7DBD7F5D07}"/>
 							</Playlist>
 						</RandomSequenceContainer>
 						<Sound Name="Announce_M1_P1_C3" ID="{A627D404-EF3E-4808-A5EB-9DA4BE3E6ECB}" ShortID="4985314">
@@ -1157,7 +1136,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Announce_M1_P1_C3" ID="{BF49352E-1BB9-4119-AD79-1C94B9FA385D}">
+								<AudioFileSource Name="Announce_M1_P1_C3" ID="{1A51E97B-9A6D-4B5A-8080-5672AC0AF4EB}">
 									<Language>SFX</Language>
 									<AudioFile>Announce_M1_P1_C3.wav</AudioFile>
 									<MediaIDList>
@@ -1166,7 +1145,7 @@
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Announce_M1_P1_C3" ID="{BF49352E-1BB9-4119-AD79-1C94B9FA385D}" Platform="Linked"/>
+								<ActiveSource Name="Announce_M1_P1_C3" ID="{1A51E97B-9A6D-4B5A-8080-5672AC0AF4EB}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

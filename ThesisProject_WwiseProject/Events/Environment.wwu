@@ -142,6 +142,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_TreeIndication" ID="{1745D30F-8A86-4AC1-B636-BB2A542500BA}">
+					<ChildrenList>
+						<Action Name="" ID="{FF84FA13-217C-4FDF-B5BF-7C89B0CBCCFF}" ShortID="962778817">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TreeIndication" ID="{6090ECFE-9FD7-4A92-8347-BB332571DC14}" WorkUnitID="{C9AE1A60-1F64-439A-AD46-9C53EF882DCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_StoneIndication" ID="{A6188DF3-7D07-430C-9B5D-566BAE6C9B39}">
+					<ChildrenList>
+						<Action Name="" ID="{FB226608-DDD7-4275-A0A2-56493577F4E3}" ShortID="761956962">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="StoneIndication" ID="{5F13ABA4-0F0B-4EE8-BD27-02258EA27B7A}" WorkUnitID="{C9AE1A60-1F64-439A-AD46-9C53EF882DCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

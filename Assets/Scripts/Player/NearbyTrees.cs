@@ -86,7 +86,7 @@ public class NearbyTrees : MonoBehaviour
 
         }
 
-        yield return new WaitForSeconds(9f);
+        yield return new WaitForSeconds(5f);
 
         StartCoroutine(SonifyTrees());
     }

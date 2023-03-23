@@ -19,8 +19,9 @@ public class LookManager : MonoBehaviour
     public AK.Wwise.Event Play_South;
     public AK.Wwise.Event Play_East;
     public AK.Wwise.Event Play_North;
-    bool ignoreFirstState = false;
     private bool stopAudioCompassOnSuccess = false;
+    bool stopAnnounceState = false;
+    bool ignoreFirstState = false;
 
     // Update is called once per frame
     private void Update()
@@ -79,49 +80,50 @@ public class LookManager : MonoBehaviour
         }
         float newAngle = Mathf.Round(_mTempAngle);
 
-        if (newAngle != 180 && (newAngle % 45 == 0 || newAngle % 22.5f == 0.5f) && newAngle != roundedAngle && ignoreFirstState)
+        if (newAngle != 180 && (newAngle % 45 == 0) && !stopAnnounceState && ignoreFirstState)
         {
-            roundedAngle = newAngle;
-            // Play_LookAngle.Post(gameObject);
 
-            switch (roundedAngle)
+            stopAnnounceState = true;
+            // StartCoroutine(DelayNextAnnounce());
+            //  && newAngle != roundedAngle)
+            // roundedAngle = newAngle;
+
+            // print(newAngle);
+            switch (newAngle)
             {
                 case 0:
                     Play_North.Post(gameObject);
                     LogManager.North++;
                     break;
-                case 23:
-                    Play_LookAngle.Post(gameObject);
-                    break;
                 case 45:
                     Play_East.Post(gameObject);
                     LogManager.East++;
-                    break;
-                case 68f:
-                    Play_LookAngle.Post(gameObject);
                     break;
                 case 90:
                     Play_South.Post(gameObject);
                     LogManager.South++;
                     break;
-                case 113f:
-                    Play_LookAngle.Post(gameObject);
-                    break;
                 case 135:
                     Play_West.Post(gameObject);
                     LogManager.West++;
                     break;
-                case 158:
-                    Play_LookAngle.Post(gameObject);
-                    break;
             }
-            // print(roundedAngle);
+        }
+        else if ((newAngle % 45 != 0))
+        {
+            stopAnnounceState = false;
         }
 
         if (!ignoreFirstState && newAngle != 0f && newAngle != 180)
         {
-            roundedAngle = newAngle;
             ignoreFirstState = true;
         }
+    }
+
+    IEnumerator DelayNextAnnounce()
+    {
+        stopAnnounceState = true;
+        yield return new WaitForSeconds(0.6f);
+        stopAnnounceState = false;
     }
 }

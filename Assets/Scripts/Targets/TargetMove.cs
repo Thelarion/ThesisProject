@@ -60,10 +60,10 @@ public class TargetMove : MonoBehaviour
             {
                 StartCoroutine(InterpolateRandomMovementXYZ(rawSinWave, interpolateX, interpolateY, interpolateZ));
             }
-            else if (InclusionIO == true)
-            {
-                StartCoroutine(InterpolateRandomMovementXZ(rawSinWave, interpolateX, interpolateZ));
-            }
+            // else if (InclusionIO == true)
+            // {
+            //     StartCoroutine(InterpolateRandomMovementXZ(rawSinWave, interpolateX, interpolateZ));
+            // }
         }
         movementFactor = (rawSinWave + 1f) / 2f;
         offset = movementVector * movementFactor;

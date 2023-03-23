@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Linq;
 
 public class TargetController : MonoBehaviour
@@ -14,8 +15,10 @@ public class TargetController : MonoBehaviour
     private ScoreManager scoreManager;
     private ClosedCaptions closedCaptions;
     private TargetIndicator targetIndicator;
+    private StartForest startForest;
     public GameObject Goal;
     public GameObject Bells;
+    private LevelLoader levelLoader;
     private enum notes
     {
         C2, C2s, D2b, D2, D2s, E2b, E2, F2, F2s, G2b, G2, G2s, A2b, A2, A2s, B2b, B2,
@@ -45,6 +48,11 @@ public class TargetController : MonoBehaviour
     {
         closedCaptions = GameObject.Find("ClosedCaptions").GetComponent<ClosedCaptions>();
         targetIndicator = GameObject.Find("TargetIndicator").GetComponent<TargetIndicator>();
+        levelLoader = GameObject.Find("LevelLoader").GetComponent<LevelLoader>();
+        if (SceneManager.GetActiveScene().name == "PracticeMode")
+        {
+            startForest = GameObject.Find("Targets").GetComponent<StartForest>();
+        }
     }
 
     private void Update()
@@ -146,21 +154,20 @@ public class TargetController : MonoBehaviour
         {
 
             i++;
-            AkSoundEngine.PostEvent("Play_MelodyComplete", GameObject.Find("Player"));
-            if (StartMenuManager.ColourState)
+            // AkSoundEngine.PostEvent("Play_MelodyComplete", GameObject.Find("Player"));
+
+            if (SceneManager.GetActiveScene().name == "PracticeMode")
             {
-                closedCaptions.DisplayCaptionsTop("You completed the melody! Now follow the inidcator to the end.");
-                targetIndicator.Bells = Bells.transform;
+                startForest.OnNoteFound();
             }
-            GameObject.Find("List").GetComponent<OperationController>().DecreaseAlphaIfZeroTargets();
-            Invoke("PlayBells", 9f);
+            else
+            {
+                levelLoader.LoadScene();
+            }
         }
     }
 
-    void PlayBells()
-    {
-        AkSoundEngine.PostEvent("Play_Bells", Goal);
-    }
+
 
     public int CountChildrenTargets(Transform t)
     {

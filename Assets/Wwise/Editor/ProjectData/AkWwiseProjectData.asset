@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 111a36df2b99a2459ec0d5f0605e9fb4
     GuidInternal: 
-    m_lastTime: -8585227947243903720
+    m_lastTime: -8585220162091279016
     List:
     - name: AudioMenu
       guid: e673bc3db8f4c14eaffb601995ce92ae
@@ -359,7 +359,7 @@ MonoBehaviour:
     ParentPath: Events\Environment
     guid: 6b6ecfb2ce1fa94d909b1661ebea4ead
     GuidInternal: 
-    m_lastTime: -8585227152178413818
+    m_lastTime: -8585220213954036434
     List:
     - name: Play_Ambience
       guid: fa3455309387fb439b0c79717ed08820
@@ -514,6 +514,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_StoneIndication
+      guid: f38d18a6077d0c439b5d566bae6c9b39
+      id: 2946471667
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Environment
+        ObjectType: 12
+        guid: 6b6ecfb2ce1fa94d909b1661ebea4ead
+      - ElementName: Play_StoneIndication
+        ObjectType: 3
+        guid: f38d18a6077d0c439b5d566bae6c9b39
+      Path: Events\Environment\Play_StoneIndication
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_ThankYou
       guid: 0ebe16f6fde40446b8ee6e484f13e1b9
       id: 1793656911
@@ -565,6 +582,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_TreeIndication
+      guid: 0fd34517868ac14ab636bb2a542500ba
+      id: 3593300948
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Environment
+        ObjectType: 12
+        guid: 6b6ecfb2ce1fa94d909b1661ebea4ead
+      - ElementName: Play_TreeIndication
+        ObjectType: 3
+        guid: 0fd34517868ac14ab636bb2a542500ba
+      Path: Events\Environment\Play_TreeIndication
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\Melodies.wwu
     PathAndIcons:
     - ElementName: Events
@@ -576,7 +610,7 @@ MonoBehaviour:
     ParentPath: Events\Melodies
     guid: 66b8f97f472fd74791287fbb4e712395
     GuidInternal: 
-    m_lastTime: -8585235606183381006
+    m_lastTime: -8585220147553225995
     List:
     - name: MelodyStateOff
       guid: a8fea77287b0f348ad210b6acb17e0e4
@@ -2075,7 +2109,7 @@ MonoBehaviour:
     ParentPath: Events\SFX
     guid: 25bc135fc28aee46b33f4240d933cdbd
     GuidInternal: 
-    m_lastTime: -8585235102500703848
+    m_lastTime: -8585220136112301777
     List:
     - name: Beacon
       guid: bbc8b6179a41b343bca8b3cfc8a7a553
@@ -2498,6 +2532,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: f9ebb45caf01bd4e8c1ab55247bfb390
       Path: Events\SFX\Buttons\Play_Button_Selection
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_CharacterStuck
+      guid: 0f302def7d05fb47b1e9827c63a227b1
+      id: 1046621301
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: SFX
+        ObjectType: 12
+        guid: 25bc135fc28aee46b33f4240d933cdbd
+      - ElementName: Play_CharacterStuck
+        ObjectType: 3
+        guid: 0f302def7d05fb47b1e9827c63a227b1
+      Path: Events\SFX\Play_CharacterStuck
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1

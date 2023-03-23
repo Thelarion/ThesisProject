@@ -227,6 +227,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_CharacterStuck" ID="{EF2D300F-057D-47FB-B1E9-827C63A227B1}">
+					<ChildrenList>
+						<Action Name="" ID="{C892A7A6-D31B-4A11-B14C-A81DE377DB84}" ShortID="1039821095">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CharacterStuck" ID="{0E699B9C-D04E-490B-B5C1-8E0758D96E72}" WorkUnitID="{14E6A00B-1C33-466E-9627-FBDE77EDBF18}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

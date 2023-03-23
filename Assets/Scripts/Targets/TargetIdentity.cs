@@ -43,7 +43,7 @@ public class TargetIdentity : MonoBehaviour
     {
         if (StartMenuManager.InclusionState == true)
         {
-            transform.localScale = new Vector3(80f, 80f, 80f);
+            transform.localScale = new Vector3(100f, 100f, 100f);
             AkSoundEngine.SetRTPCValue("RTPC_MelodyVoice", 1f);
         }
         else if (StartMenuManager.InclusionState == false)
@@ -84,7 +84,7 @@ public class TargetIdentity : MonoBehaviour
             AkSoundEngine.PostEvent("Play_M1_Success_Announce", GameObject.Find("Player"));
             if (StartMenuManager.ColourState)
             {
-                closedCaptions.DisplayCaptionsTop("Great, that is the correct note! Search for the next.");
+                closedCaptions.DisplayCaptionsTop("Great, that is the correct note! On to the next.");
             }
             Transform nextTone = transform.GetComponentInParent<TargetController>().ActivateNextTone();
             GetComponentInParent<SuccessEvent>().PlaySuccessEvent(this.transform);

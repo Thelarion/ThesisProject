@@ -6,7 +6,8 @@
 				<MusicSwitchContainer Name="Melodies" ID="{C6F14BA1-D298-4772-8DD2-8457CA9DF44A}" ShortID="949471318">
 					<PropertyList>
 						<Property Name="3DPosition" Type="int16" Value="1"/>
-						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+						<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -31,23 +32,23 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<MusicTrack Name="C3_E3_A2_B2_C3" ID="{97E18C46-F5AA-4517-8649-5F4B4F005FF6}" ShortID="329753352">
+								<MusicTrack Name="M1_3Tone" ID="{2B67D4AF-5414-4860-B696-EEF69D21A1F4}" ShortID="733575173">
 									<ReferenceList>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="C3_E3_A2_B3_C3" ID="{6E15B6BF-5F0F-443C-91B0-A5FD4CFD1842}">
+										<AudioFileSource Name="M1_3Tone" ID="{0C584CAE-1447-480A-9CF2-6A8E62C185CA}">
 											<Language>SFX</Language>
-											<AudioFile>C3_E3_A2_B3_C3.wav</AudioFile>
+											<AudioFile>M1_3Tone.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="170761103"/>
+												<MediaID ID="386279124"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<TransitionList>
-										<MusicTransition Name="Root" ID="{29F9216C-B298-4839-B0DF-D07AFC80A4D0}">
+										<MusicTransition Name="Root" ID="{0733DDC4-AA49-4BC3-BB62-040F40264665}">
 											<PropertyList>
 												<Property Name="IsFolder" Type="bool" Value="True"/>
 											</PropertyList>
@@ -58,104 +59,19 @@
 										<ObjectList Name="Sequences">
 											<Reference>
 												<Local>
-													<MusicTrackSequence Name="" ID="{5FD328D8-1834-4B77-8C80-F335FDC51671}">
+													<MusicTrackSequence Name="" ID="{397BDF4A-AEAF-4C17-93B4-CC85C8659922}">
 														<ObjectLists>
 															<ObjectList Name="Clips">
 																<Reference>
 																	<Local>
-																		<MusicClip Name="C3_E3_A2_B3_C3" ID="{2636722F-94D1-442B-92D9-AC1A79CC610C}">
+																		<MusicClip Name="M1_3Tone" ID="{5C4D5C1C-C53B-4617-BAF4-5B9ECD5784BA}">
 																			<PropertyList>
-																				<Property Name="EndTrimOffset" Type="Real64" Value="2899.00110987795"/>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="1500"/>
 																				<Property Name="FadeInMode" Type="int16" Value="0"/>
-																				<Property Name="FadeOutDuration" Type="Real64" Value="568.257491675916"/>
-																				<Property Name="PlayAt" Type="Real64" Value="1005.97994056826"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																			</PropertyList>
-																			<AudioSourceRef Name="C3_E3_A2_B3_C3" ID="{6E15B6BF-5F0F-443C-91B0-A5FD4CFD1842}"/>
-																			<PropertyCurveList>
-																				<PropertyCurve PropertyName="Highpass">
-																					<Curve Name="" ID="{CAEC2860-5F1F-469B-BA46-B58A8E10D39E}">
-																						<PropertyList>
-																							<Property Name="Flags" Type="int32" Value="1"/>
-																						</PropertyList>
-																						<PointList>
-																							<Point>
-																								<XPos>0</XPos>
-																								<YPos>0</YPos>
-																								<Flags>5</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>2.899</XPos>
-																								<YPos>0</YPos>
-																								<Flags>37</Flags>
-																							</Point>
-																						</PointList>
-																					</Curve>
-																				</PropertyCurve>
-																				<PropertyCurve PropertyName="Lowpass">
-																					<Curve Name="" ID="{AEB9DBE9-60FE-4F75-91C6-8CD0E52706E5}">
-																						<PropertyList>
-																							<Property Name="Flags" Type="int32" Value="1"/>
-																						</PropertyList>
-																						<PointList>
-																							<Point>
-																								<XPos>0</XPos>
-																								<YPos>0</YPos>
-																								<Flags>5</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>2.899</XPos>
-																								<YPos>0</YPos>
-																								<Flags>37</Flags>
-																							</Point>
-																						</PointList>
-																					</Curve>
-																				</PropertyCurve>
-																				<PropertyCurve PropertyName="Volume">
-																					<Curve Name="" ID="{2DFE7508-38FE-4920-B4A7-A3684DDD5CF2}">
-																						<PropertyList>
-																							<Property Name="Flags" Type="int32" Value="3"/>
-																						</PropertyList>
-																						<PointList>
-																							<Point>
-																								<XPos>0</XPos>
-																								<YPos>0</YPos>
-																								<Flags>5</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>2.899</XPos>
-																								<YPos>0</YPos>
-																								<Flags>37</Flags>
-																							</Point>
-																						</PointList>
-																					</Curve>
-																				</PropertyCurve>
-																			</PropertyCurveList>
+																			<AudioSourceRef Name="M1_3Tone" ID="{0C584CAE-1447-480A-9CF2-6A8E62C185CA}"/>
 																		</MusicClip>
-																	</Local>
-																</Reference>
-																<Reference>
-																	<Local>
-																		<MusicEventCue Name="" ID="{4F7D4092-99B3-4FEB-8EF6-6FE31135C603}" ShortID="36438004">
-																			<ReferenceList>
-																				<Reference Name="PostEventTarget">
-																					<ObjectRef Name="MelodyStateOn" ID="{BDE770CE-500D-4C71-A1BC-CE0F4264B374}" WorkUnitID="{7FF9B866-2F47-47D7-9128-7FBB4E712395}"/>
-																				</Reference>
-																			</ReferenceList>
-																		</MusicEventCue>
-																	</Local>
-																</Reference>
-																<Reference>
-																	<Local>
-																		<MusicEventCue Name="" ID="{688AF8F2-F926-41CF-95C0-E3FE512FC0E6}" ShortID="437205635">
-																			<PropertyList>
-																				<Property Name="PlayAt" Type="Real64" Value="3161.48790587347"/>
-																			</PropertyList>
-																			<ReferenceList>
-																				<Reference Name="PostEventTarget">
-																					<ObjectRef Name="MelodyStateOff" ID="{72A7FEA8-B087-48F3-AD21-0B6ACB17E0E4}" WorkUnitID="{7FF9B866-2F47-47D7-9128-7FBB4E712395}"/>
-																				</Reference>
-																			</ReferenceList>
-																		</MusicEventCue>
 																	</Local>
 																</Reference>
 															</ObjectList>

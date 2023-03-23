@@ -10,6 +10,7 @@ public class SuccessEvent : MonoBehaviour
     int i = 0;
     private NearbyTrees nearbyTreesIndicator;
     private LookManager lookManager;
+    bool initalBirdWaitState = false;
 
     private void Start()
     {
@@ -47,19 +48,31 @@ public class SuccessEvent : MonoBehaviour
 
         }
 
+        if (!initalBirdWaitState)
+        {
+            initalBirdWaitState = true;
+            yield return new WaitForSeconds(12f);
+        }
+
+
+
         if (treeWithShortestDistance != null)
         {
             // print(shortestDistanceTreeToTarget);
-            print(treeWithShortestDistance.name);
+            // print(treeWithShortestDistance.name);
             Play_M1_Birds.Post(treeWithShortestDistance.gameObject);
         }
 
-        yield return new WaitForSeconds(4f);
 
+        yield return new WaitForSeconds(4f);
 
         if (i <= 1)
         {
             StartCoroutine(SonifyTreeEnvironment(treeWithShortestDistance));
+        }
+        else
+        {
+            initalBirdWaitState = false;
         }
         i++;
     }

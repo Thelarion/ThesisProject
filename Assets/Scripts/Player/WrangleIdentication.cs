@@ -18,7 +18,7 @@ public class WrangleIdentication : MonoBehaviour
 
     IEnumerator PlayWrangleIdentication()
     {
-        float randInterval = Random.Range(20f, 30f);
+        float randInterval = Random.Range(10f, 20f);
         yield return new WaitForSeconds(randInterval);
 
         float distanceToPlayer = Vector3.Distance(gameObject.transform.position, player.position);

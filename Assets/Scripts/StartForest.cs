@@ -17,7 +17,7 @@ public class StartForest : MonoBehaviour
         levelLoader = GameObject.Find("LevelLoader").GetComponent<LevelLoader>();
     }
 
-    private void OnTriggerEnter(Collider other)
+    public void OnNoteFound()
     {
         practiceModeEndState = true;
         if (StartMenuManager.ColourState)

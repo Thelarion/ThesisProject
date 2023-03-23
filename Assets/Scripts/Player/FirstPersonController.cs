@@ -89,6 +89,7 @@ namespace StarterAssets
         private Transform bumpDetection;
         bool AllowGruntState = false;
         float plyr_fstp_duration;
+        bool initalStuckState = false;
 
 
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
@@ -211,7 +212,7 @@ namespace StarterAssets
 
         IEnumerator WaitForStartMelody()
         {
-            yield return new WaitForSeconds(15f);
+            yield return new WaitForSeconds(17f);
             semaphoreStartMelPlaying = false;
         }
 
@@ -258,11 +259,6 @@ namespace StarterAssets
                 {
                     RotationSpeed = 0.6f;
                 }
-
-
-
-
-
 
                 _cinemachineTargetPitch += _input.look.y * RotationSpeed * deltaTimeMultiplier;
                 _rotationVelocity = _input.look.x * RotationSpeed * deltaTimeMultiplier;
@@ -363,12 +359,25 @@ namespace StarterAssets
             if (AllowGruntState)
             {
                 Play_Plyr_Grunts.Post(gameObject);
+                if (!initalStuckState)
+                {
+                    initalStuckState = true;
+                    StartCoroutine(DelayStuckAnnounce());
+                }
             }
 
             yield return new WaitForSeconds(0.5f); //delay for a period of time
 
             AllowGruntState = true;
             isGruntCycleOn = false;
+        }
+
+        IEnumerator DelayStuckAnnounce()
+        {
+            yield return new WaitForSeconds(1f);
+            AkSoundEngine.PostEvent("Play_CharacterStuck", gameObject);
+            yield return new WaitForSeconds(10f);
+            initalStuckState = false;
         }
 
         private void JumpAndGravity()

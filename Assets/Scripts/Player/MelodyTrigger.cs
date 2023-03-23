@@ -67,7 +67,16 @@ public class MelodyTrigger : MonoBehaviour
 
         for (int i = 0; i < max_value; i++)
         {
-            Play_Melody_Seq.Post(sortedGOs[i]);
+            // Play_Melody_Seq.Post(sortedGOs[i]);
+
+            if (sortedGOs[i].tag == "Tree")
+            {
+                AkSoundEngine.PostEvent("Play_TreeIndication", sortedGOs[i]);
+            }
+            if (sortedGOs[i].tag == "Stone")
+            {
+                AkSoundEngine.PostEvent("Play_StoneIndication", sortedGOs[i]);
+            }
 
 
 
