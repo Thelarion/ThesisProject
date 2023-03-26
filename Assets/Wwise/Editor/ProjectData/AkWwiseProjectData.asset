@@ -1928,7 +1928,7 @@ MonoBehaviour:
     ParentPath: Events\Player
     guid: a739f7e5ca298a44a84cf8243f0f273a
     GuidInternal: 
-    m_lastTime: -8585236678527704535
+    m_lastTime: -8585218495611674888
     List:
     - name: AudioCompass
       guid: 22ef93209ff3f34883d405b2c3ccca84
@@ -1944,6 +1944,23 @@ MonoBehaviour:
         ObjectType: 4
         guid: 22ef93209ff3f34883d405b2c3ccca84
       Path: Events\Player\AudioCompass
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_AimSynthOne
+      guid: c1c9cacf85c659469342fd63c90a260f
+      id: 908417035
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: a739f7e5ca298a44a84cf8243f0f273a
+      - ElementName: Play_AimSynthOne
+        ObjectType: 3
+        guid: c1c9cacf85c659469342fd63c90a260f
+      Path: Events\Player\Play_AimSynthOne
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -2098,6 +2115,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Stop_AimSynthOne
+      guid: 4ba1e9c35a70f24cb8ecd090af9c0cab
+      id: 2033440605
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: a739f7e5ca298a44a84cf8243f0f273a
+      - ElementName: Stop_AimSynthOne
+        ObjectType: 3
+        guid: 4ba1e9c35a70f24cb8ecd090af9c0cab
+      Path: Events\Player\Stop_AimSynthOne
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\SFX.wwu
     PathAndIcons:
     - ElementName: Events
@@ -2109,7 +2143,7 @@ MonoBehaviour:
     ParentPath: Events\SFX
     guid: 25bc135fc28aee46b33f4240d933cdbd
     GuidInternal: 
-    m_lastTime: -8585220136112301777
+    m_lastTime: -8585218534273068095
     List:
     - name: Beacon
       guid: bbc8b6179a41b343bca8b3cfc8a7a553
@@ -2478,23 +2512,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Play_Bells
-      guid: 79a1dfc8325b584b9b84d3648490c173
-      id: 2324519816
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: SFX
-        ObjectType: 12
-        guid: 25bc135fc28aee46b33f4240d933cdbd
-      - ElementName: Play_Bells
-        ObjectType: 3
-        guid: 79a1dfc8325b584b9b84d3648490c173
-      Path: Events\SFX\Play_Bells
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: Play_Button_OnClick
       guid: bd8b88d306b93742a50eda05eb13a157
       id: 283810802
@@ -2845,8 +2862,22 @@ MonoBehaviour:
     ParentPath: Game Parameters\Aiming
     guid: cf635df824843d478873aedff484c348
     GuidInternal: 
-    m_lastTime: -8585239255303986297
+    m_lastTime: -8585218507391881781
     List:
+    - name: RTPC_aim_volume
+      guid: a0d3e78a18d19644895695c3ac2345ac
+      id: 4174671671
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Aiming
+        ObjectType: 12
+        guid: cf635df824843d478873aedff484c348
+      - ElementName: RTPC_aim_volume
+        ObjectType: 13
+        guid: a0d3e78a18d19644895695c3ac2345ac
+      Path: Game Parameters\Aiming\RTPC_aim_volume
     - name: RTPC_distance_freq
       guid: fe80d52caaf1b548be6137f43f4af98d
       id: 1364189011

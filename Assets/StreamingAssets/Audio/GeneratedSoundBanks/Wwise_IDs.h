@@ -79,10 +79,10 @@ namespace AK
         static const AkUniqueID G4S = 1972204327U;
         static const AkUniqueID MELODYSTATEOFF = 2810620855U;
         static const AkUniqueID MELODYSTATEON = 747211651U;
+        static const AkUniqueID PLAY_AIMSYNTHONE = 908417035U;
         static const AkUniqueID PLAY_AMBIENCE = 278617630U;
         static const AkUniqueID PLAY_BEACONLOCK = 3923622767U;
         static const AkUniqueID PLAY_BEACONLR = 194014728U;
-        static const AkUniqueID PLAY_BELLS = 2324519816U;
         static const AkUniqueID PLAY_BGM_MENU = 2295745746U;
         static const AkUniqueID PLAY_BIRDS = 3025897706U;
         static const AkUniqueID PLAY_BUTTON_ONCLICK = 283810802U;
@@ -129,6 +129,7 @@ namespace AK
         static const AkUniqueID RESET_M1_DISSECTED = 419352152U;
         static const AkUniqueID RESET_M1_SEQ = 39386235U;
         static const AkUniqueID RESET_M1_SUCESS_ANNOUNCE = 2401183550U;
+        static const AkUniqueID STOP_AIMSYNTHONE = 2033440605U;
         static const AkUniqueID STOP_ALLEVENTS = 2371377610U;
         static const AkUniqueID STOP_BGM_MENU = 388256776U;
         static const AkUniqueID STOP_BUTTONREADALOUD = 632677629U;
@@ -350,6 +351,7 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID RTPC_AIM_VOLUME = 4174671671U;
         static const AkUniqueID RTPC_BEACON_LR_VOLUME = 4120900405U;
         static const AkUniqueID RTPC_DISTANCE_FREQ = 1364189011U;
         static const AkUniqueID RTPC_EFFECTSVOLUMESETTINGS = 1574311894U;

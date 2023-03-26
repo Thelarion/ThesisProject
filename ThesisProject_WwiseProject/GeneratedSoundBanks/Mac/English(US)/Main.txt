@@ -13,6 +13,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	747211651	MelodyStateOn			\Melodies\MelodyStateOn	
 	763214702	Play_M1_Success_Announce			\Melodies\Play_M1_Success_Announce	
 	810809264	d100			\SFX\Beacon\DistanceCount\d100	
+	908417035	Play_AimSynthOne			\Player\Play_AimSynthOne	
 	988427829	Play_ReflectionBumpPrevention			\Environment\Play_ReflectionBumpPrevention	
 	1046621301	Play_CharacterStuck			\SFX\Play_CharacterStuck	
 	1103419735	Play_West			\Player\AudioCompass\Play_West	
@@ -67,7 +68,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	2184134547	Play_M1_Intro			\Melodies\Play_M1_Intro	
 	2262911975	Play_ButtonReadAloud			\UI\Play_ButtonReadAloud	
 	2295745746	Play_BGM_Menu			\BGM\Play_BGM_Menu	
-	2324519816	Play_Bells			\SFX\Play_Bells	
 	2360441072	Play_DirectionIndicator			\SFX\Play_DirectionIndicator	
 	2371377610	Stop_AllEvents			\UI\Stop_AllEvents	
 	2401183550	Reset_M1_Sucess_Announce			\Melodies\Reset_M1_Sucess_Announce	
@@ -175,16 +175,19 @@ Switch	ID	Name	Switch Group			Notes
 	1752637687	I5	Instructions			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
+	1364189011	RTPC_distance_freq			\Aiming\RTPC_distance_freq	
 	2033424207	RTPC_MelodyVoice			\Melody\RTPC_MelodyVoice	
 	3316058687	RTPC_Obstruction			\Obstruction_Occlusion\RTPC_Obstruction	
 	3707704703	RTPC_left_right			\Aiming\RTPC_left_right	
 	4120900405	RTPC_beacon_lr_volume			\Beacon\RTPC_beacon_lr_volume	
+	4174671671	RTPC_aim_volume			\Aiming\RTPC_aim_volume	
 
 Effect plug-ins	ID	Name	Type				Notes
 	3043085106	High_Impact	Wwise Compressor			
 	3604890626	High_Pass_60Hz	Wwise Parametric EQ			
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	342427797	Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\SFX\AimDirector\AimSynthOne\Synth One	
 	449421765	Silence	Wwise Silence		\Actor-Mixer Hierarchy\SFX\Player\AudioCompass\InBetween\Silence	
 	737587789	Silence	Wwise Silence		\Actor-Mixer Hierarchy\SFX\Unused\Beacon\BeaconLR\SilenceBeacon\Silence	
 

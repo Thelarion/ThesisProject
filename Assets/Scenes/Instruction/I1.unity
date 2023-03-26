@@ -934,6 +934,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 632668501166953064, guid: 65f748173ded71e46a9a8d9964c60a07,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4303475040652791018, guid: 65f748173ded71e46a9a8d9964c60a07,
         type: 3}
       propertyPath: m_Pivot.x
@@ -1436,8 +1441,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 8287edaeb31e672439b503ce4a52dd95,
-      type: 2}
+    WwiseObjectReference: {fileID: 0}
   useCallbacks: 0
   Callbacks: []
   playingId: 0

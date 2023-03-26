@@ -8,8 +8,6 @@ using System;
 
 public class GameManager : MonoBehaviour
 {
-    // public GameObject menuAccessibility;
-    // private FirstPersonController firstPersonController;
     private static List<string> paletteOptions = new List<string>();
     private static string chosenPalette;
     public GameObject MenuInGameSettings;
@@ -32,13 +30,18 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        // Initialization
         closedCaptions = GameObject.Find("ClosedCaptions").GetComponent<ClosedCaptions>();
         targetIndicator = GameObject.Find("TargetIndicator").GetComponent<TargetIndicator>();
         player = GameObject.Find("Player");
 
+        // Logging
         LogManager.StartTime = Time.time;
 
+        // Start of the Game: Melody introduction
         Invoke("PlayMelodyCoroutine", 1.5f);
+
+        // Change the soundscape based on the game mode
         if (!StartMenuManager.InclusionState)
         {
             AkSoundEngine.PostEvent("Play_Birds", player);
@@ -58,16 +61,19 @@ public class GameManager : MonoBehaviour
 
     IEnumerator PlayMelody()
     {
+        // Melody first
         AkSoundEngine.PostEvent("Play_M1", player);
         yield return new WaitForSeconds(2.5f);
 
-        AkSoundEngine.PostEvent("Reset_M1_Success_Announce", player);
+        // Introduction
+        AkSoundEngine.PostEvent("Reset_M1_Success_Announce", player); // Reset Playlist
         AkSoundEngine.PostEvent("Play_M1_Intro", player);
         closedCaptions.StartMelodyDone = true;
         targetIndicator.StartMelodyDone = true;
 
     }
 
+    // Switch between Colour Palettes
     private void SetPaletteChoice()
     {
         paletteOptions.Add("Palette1");
@@ -86,6 +92,7 @@ public class GameManager : MonoBehaviour
         Application.Quit();
     }
 
+    // In Game Menu Toggle
     public void ToggleMenu()
     {
         if (!menuActive)

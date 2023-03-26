@@ -95,6 +95,31 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_AimSynthOne" ID="{CFCAC9C1-C685-4659-9342-FD63C90A260F}">
+					<ChildrenList>
+						<Action Name="" ID="{E68C9970-6BDA-4F2B-816F-28817E1FAC5A}" ShortID="760199073">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AimSynthOne" ID="{058D7CDF-EC33-4BC5-9EC8-C377BCA8912F}" WorkUnitID="{690ABE9D-D445-44AA-AE0F-2C6B0F3C9C08}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_AimSynthOne" ID="{C3E9A14B-705A-4CF2-B8EC-D090AF9C0CAB}">
+					<ChildrenList>
+						<Action Name="" ID="{8D45917E-54EA-4A1F-BFBC-9B2A2B6ABF5C}" ShortID="22137354">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AimSynthOne" ID="{058D7CDF-EC33-4BC5-9EC8-C377BCA8912F}" WorkUnitID="{690ABE9D-D445-44AA-AE0F-2C6B0F3C9C08}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

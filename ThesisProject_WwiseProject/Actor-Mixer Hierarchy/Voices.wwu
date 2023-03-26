@@ -14,6 +14,13 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Sound Name="WrongNote" ID="{49FE5778-A0B2-471F-B88D-4966FF41A239}" ShortID="660227625">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
@@ -164,6 +171,11 @@
 						<Sound Name="PracticeEnd" ID="{9634C841-2B73-4BBF-AD25-58682D90C243}" ShortID="12498081">
 							<PropertyList>
 								<Property Name="IsVoice" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>4</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -174,7 +186,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="PracticeEnd" ID="{12B113B7-4828-4656-A8FF-36749A6AF76C}">
+								<AudioFileSource Name="PracticeEnd" ID="{BAD88B41-E09C-41DF-9406-EAC115AFFE0B}">
 									<Language>English(US)</Language>
 									<AudioFile>PracticeEnd.wav</AudioFile>
 									<MediaIDList>
@@ -183,12 +195,17 @@
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="PracticeEnd" ID="{12B113B7-4828-4656-A8FF-36749A6AF76C}" Platform="Linked"/>
+								<ActiveSource Name="PracticeEnd" ID="{BAD88B41-E09C-41DF-9406-EAC115AFFE0B}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="CharacterStuck" ID="{0E699B9C-D04E-490B-B5C1-8E0758D96E72}" ShortID="232780809">
 							<PropertyList>
 								<Property Name="IsVoice" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>4</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -888,7 +905,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="I3" ID="{C425F0E6-49F1-4EEE-A3A6-2EC1C3DFC021}">
+								<AudioFileSource Name="I3" ID="{43189B9D-6666-42DB-BB9A-94CFF5A5EFE9}">
 									<Language>English(US)</Language>
 									<AudioFile>I3.wav</AudioFile>
 									<MediaIDList>
@@ -897,7 +914,7 @@
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="I3" ID="{C425F0E6-49F1-4EEE-A3A6-2EC1C3DFC021}" Platform="Linked"/>
+								<ActiveSource Name="I3" ID="{43189B9D-6666-42DB-BB9A-94CFF5A5EFE9}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Instruction4" ID="{7AF6D23A-73A8-4558-AC85-F643B35F1625}" ShortID="287989670">
@@ -913,7 +930,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="I4" ID="{9D134BCD-361B-40BA-9816-D5516AA9F7B0}">
+								<AudioFileSource Name="I4" ID="{F1211ABE-A562-4516-B271-36223993040F}">
 									<Language>English(US)</Language>
 									<AudioFile>I4.wav</AudioFile>
 									<MediaIDList>
@@ -922,7 +939,7 @@
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="I4" ID="{9D134BCD-361B-40BA-9816-D5516AA9F7B0}" Platform="Linked"/>
+								<ActiveSource Name="I4" ID="{F1211ABE-A562-4516-B271-36223993040F}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Instruction1" ID="{0D42BFA2-4DAF-4B76-8FCB-CE2CCC24D00E}" ShortID="596224026">
@@ -938,7 +955,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="I1" ID="{B4A4035D-71C6-4BE3-8DAB-084A9AA5626B}">
+								<AudioFileSource Name="I1" ID="{7E80B9C4-9F36-41D6-BECE-3B7A00A8E82B}">
 									<Language>English(US)</Language>
 									<AudioFile>I1.wav</AudioFile>
 									<MediaIDList>
@@ -947,7 +964,7 @@
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="I1" ID="{B4A4035D-71C6-4BE3-8DAB-084A9AA5626B}" Platform="Linked"/>
+								<ActiveSource Name="I1" ID="{7E80B9C4-9F36-41D6-BECE-3B7A00A8E82B}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Instruction5" ID="{74C027E4-297B-4ED9-9FD6-A4AF8E9B5935}" ShortID="287484790">
@@ -963,7 +980,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="I5" ID="{456065FC-4468-4F7A-8BAD-F13C6BC70016}">
+								<AudioFileSource Name="I5" ID="{B40F5E80-EC9F-4B85-994C-6F196848B910}">
 									<Language>English(US)</Language>
 									<AudioFile>I5.wav</AudioFile>
 									<MediaIDList>
@@ -972,7 +989,7 @@
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="I5" ID="{456065FC-4468-4F7A-8BAD-F13C6BC70016}" Platform="Linked"/>
+								<ActiveSource Name="I5" ID="{B40F5E80-EC9F-4B85-994C-6F196848B910}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Instruction2" ID="{14260CB7-76E0-4F2F-A42E-0859AF2FD185}" ShortID="56319458">
@@ -988,7 +1005,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="I2" ID="{F07BED48-4AA9-4E6C-AFE9-633803694E55}">
+								<AudioFileSource Name="I2" ID="{B4DAB5E3-30B3-4777-A3FE-2D0664C8FC06}">
 									<Language>English(US)</Language>
 									<AudioFile>I2.wav</AudioFile>
 									<MediaIDList>
@@ -997,7 +1014,7 @@
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="I2" ID="{F07BED48-4AA9-4E6C-AFE9-633803694E55}" Platform="Linked"/>
+								<ActiveSource Name="I2" ID="{B4DAB5E3-30B3-4777-A3FE-2D0664C8FC06}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
@@ -1077,6 +1094,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="Announce_M1_P2_E3" ID="{323325DB-F48D-4BF2-AED0-59717A86178E}" ShortID="421618739">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
@@ -1086,7 +1110,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Announce_M1_P2_E3" ID="{64A4C696-C590-4D50-9C9E-CB6145A790A0}">
+										<AudioFileSource Name="Announce_M1_P2_E3" ID="{00F82658-9B59-410C-94F7-AFBA138D3777}">
 											<Language>SFX</Language>
 											<AudioFile>Announce_M1_P2_E3.wav</AudioFile>
 											<MediaIDList>
@@ -1095,7 +1119,7 @@
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="Announce_M1_P2_E3" ID="{64A4C696-C590-4D50-9C9E-CB6145A790A0}" Platform="Linked"/>
+										<ActiveSource Name="Announce_M1_P2_E3" ID="{00F82658-9B59-410C-94F7-AFBA138D3777}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Announce_M1_P3_A2" ID="{2CDED401-F224-46D6-8FE9-9D2047055C3A}" ShortID="765865551">
@@ -1108,7 +1132,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Announce_M1_P3_A2" ID="{B178AE76-3FF0-408F-B5E9-7ABB71E5CC4B}">
+										<AudioFileSource Name="Announce_M1_P3_A2" ID="{5F2E9772-7A83-4B26-92C7-066110ED2B73}">
 											<Language>SFX</Language>
 											<AudioFile>Announce_M1_P3_A2.wav</AudioFile>
 											<MediaIDList>
@@ -1117,7 +1141,7 @@
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="Announce_M1_P3_A2" ID="{B178AE76-3FF0-408F-B5E9-7ABB71E5CC4B}" Platform="Linked"/>
+										<ActiveSource Name="Announce_M1_P3_A2" ID="{5F2E9772-7A83-4B26-92C7-066110ED2B73}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
@@ -1127,6 +1151,13 @@
 							</Playlist>
 						</RandomSequenceContainer>
 						<Sound Name="Announce_M1_P1_C3" ID="{A627D404-EF3E-4808-A5EB-9DA4BE3E6ECB}" ShortID="4985314">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
@@ -1136,7 +1167,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Announce_M1_P1_C3" ID="{1A51E97B-9A6D-4B5A-8080-5672AC0AF4EB}">
+								<AudioFileSource Name="Announce_M1_P1_C3" ID="{BFD15FFD-2A1D-4085-959F-ADEEF898C413}">
 									<Language>SFX</Language>
 									<AudioFile>Announce_M1_P1_C3.wav</AudioFile>
 									<MediaIDList>
@@ -1145,7 +1176,7 @@
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Announce_M1_P1_C3" ID="{1A51E97B-9A6D-4B5A-8080-5672AC0AF4EB}" Platform="Linked"/>
+								<ActiveSource Name="Announce_M1_P1_C3" ID="{BFD15FFD-2A1D-4085-959F-ADEEF898C413}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

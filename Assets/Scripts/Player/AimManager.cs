@@ -37,14 +37,11 @@ public class AimManager : MonoBehaviour
 
     private void CheckIfAimOnTarget()
     {
-        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hitOnTargetCheck, 35f, layerMask))
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hitOnTargetCheck, 25f, layerMask))
         {
             if (hitOnTargetCheck.collider.tag == "Target")
             {
-
                 AkSoundEngine.SetSwitch("OnTarget", "Pitch" + hitOnTargetCheck.collider.name[0], gameObject);
-
-                // print("Pitch" + hitOnTargetCheck.collider.name[0]);
 
                 setAimOnTargetStatus();
             }
@@ -53,8 +50,8 @@ public class AimManager : MonoBehaviour
         }
         // If ray hits nothing at all
         else setAimOffTargetStatus();
-
     }
+
     private void setAimOnTargetStatus()
     {
         // print("onTarget");
@@ -73,6 +70,4 @@ public class AimManager : MonoBehaviour
             Play_OnTarget.Stop(gameObject);
         }
     }
-
-
 }

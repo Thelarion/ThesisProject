@@ -216,17 +216,6 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Event Name="Play_Bells" ID="{C8DFA179-5B32-4B58-9B84-D3648490C173}">
-					<ChildrenList>
-						<Action Name="" ID="{D65A0E47-577B-47F4-A93C-947969CE936A}" ShortID="866060013">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Bells" ID="{F8B4DD8B-851D-4C50-9D5F-1EED5FB9F157}" WorkUnitID="{690ABE9D-D445-44AA-AE0F-2C6B0F3C9C08}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_CharacterStuck" ID="{EF2D300F-057D-47FB-B1E9-827C63A227B1}">
 					<ChildrenList>
 						<Action Name="" ID="{C892A7A6-D31B-4A11-B14C-A81DE377DB84}" ShortID="1039821095">

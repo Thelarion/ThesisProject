@@ -219,7 +219,15 @@ namespace StarterAssets
         IEnumerator DelimitMelodyToNSec()
         {
             semaphore = true;
-            GetComponent<MelodyTrigger>().PlayMelodyRadius();
+
+            if (StartMenuManager.InclusionState)
+            {
+                GetComponent<MelodyTrigger>().PlayMelodyRadius();
+            }
+            else
+            {
+                AkSoundEngine.PostEvent("Play_M1", gameObject);
+            }
             yield return new WaitForSeconds(5f);
             semaphore = false;
         }

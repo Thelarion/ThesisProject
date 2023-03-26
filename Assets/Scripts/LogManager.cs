@@ -61,12 +61,13 @@ public class LogManager : MonoBehaviour
         writer.WriteLine("Total Time: " + (endTime - startTime).ToString());
         writer.WriteLine("-------- Statistics --------");
         writer.WriteLine("Points/Score: " + totalPoints.ToString());
-        writer.WriteLine("Trigger count: " + triggerCount.ToString());
+        writer.WriteLine("Tap count: " + triggerCount.ToString());
         writer.WriteLine("Taps on wrong note: " + missedTaps.ToString());
-        writer.WriteLine("North: " + north.ToString());
-        writer.WriteLine("East: " + east.ToString());
-        writer.WriteLine("South: " + south.ToString());
-        writer.WriteLine("West: " + west.ToString());
+        writer.WriteLine("Melody count: " + melodyCount.ToString());
+        // writer.WriteLine("North: " + north.ToString());
+        // writer.WriteLine("East: " + east.ToString());
+        // writer.WriteLine("South: " + south.ToString());
+        // writer.WriteLine("West: " + west.ToString());
         writer.WriteLine("-------- Volume Level --------");
         writer.WriteLine("MusicVolume: " + musicVolume.ToString());
         writer.WriteLine("VoiceVolume: " + voiceVolume.ToString());

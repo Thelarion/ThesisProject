@@ -9,11 +9,11 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1229948536" Type="User" Language="SFX" Hash="{7C09EAE0-05CB-9B95-38C9-8258AA7B9EE6}">
+		<SoundBank Id="1229948536" Type="User" Language="SFX">
 			<ShortName>Environment</ShortName>
 			<Path>Environment.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{B37B5234-EF79-5B9E-8C6F-CBAB74795D05}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{295E500D-BB7D-9A2D-19A4-7857E4AC187C}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -66,6 +66,7 @@
 				<GameParameter Id="3707704703" Name="RTPC_left_right"/>
 				<GameParameter Id="3726690316" Name="RTPC_MelodyOn"/>
 				<GameParameter Id="4120900405" Name="RTPC_beacon_lr_volume"/>
+				<GameParameter Id="4174671671" Name="RTPC_aim_volume"/>
 			</GameParameters>
 			<StateGroups>
 				<StateGroup Id="1021618141" Name="MusicState">
@@ -201,7 +202,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{1D18F7E6-46A5-B362-F535-0D1F6AB87E86}">
+		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{21D28005-8655-9480-4065-FB92B21E0039}">
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
 			<Media>
@@ -1152,6 +1153,7 @@
 			</Media>
 			<Plugins>
 				<Custom>
+					<Plugin Id="342427797" Name="Synth One" LibName="Wwise Synth One" LibId="9699330"/>
 					<Plugin Id="449421765" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
 					<Plugin Id="737587789" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
 				</Custom>
@@ -1487,6 +1489,13 @@
 						<ActionSetStateEntry GroupId="3443944880" Id="2796181470" Name="MelodyOn"/>
 					</ActionSetState>
 				</Event>
+				<Event Id="908417035" Name="Play_AimSynthOne" DurationType="Unknown">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="342427797"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
 				<Event Id="278617630" Name="Play_Ambience" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="655126732"/>
@@ -1507,7 +1516,6 @@
 						</Custom>
 					</PluginRefs>
 				</Event>
-				<Event Id="2324519816" Name="Play_Bells" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2295745746" Name="Play_BGM_Menu" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="967319205"/>
@@ -1694,7 +1702,7 @@
 						</Custom>
 					</PluginRefs>
 				</Event>
-				<Event Id="1184431001" Name="Play_Instructions" DurationType="OneShot" DurationMin="19.2425" DurationMax="32.31373">
+				<Event Id="1184431001" Name="Play_Instructions" DurationType="OneShot" DurationMin="10.338333" DurationMax="26.713333">
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="4273002286" Id="1752637680"/>
@@ -1747,7 +1755,7 @@
 						<MediaRef Id="716105785"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2184134547" Name="Play_M1_Intro" DurationType="OneShot" DurationMin="14.668" DurationMax="14.668">
+				<Event Id="2184134547" Name="Play_M1_Intro" DurationType="OneShot" DurationMin="14.756208" DurationMax="14.756208">
 					<MediaRefs>
 						<MediaRef Id="923941858"/>
 					</MediaRefs>
@@ -1761,7 +1769,7 @@
 						<MediaRef Id="647086168"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="763214702" Name="Play_M1_Success_Announce" DurationType="OneShot" DurationMin="10.388021" DurationMax="12.2560005">
+				<Event Id="763214702" Name="Play_M1_Success_Announce" DurationType="OneShot" DurationMin="8.0998745" DurationMax="12.460021">
 					<MediaRefs>
 						<MediaRef Id="237824840"/>
 						<MediaRef Id="397557872"/>
@@ -1935,7 +1943,7 @@
 						<MediaRef Id="992939571"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2598215984" Name="Play_PracticeEnd" DurationType="OneShot" DurationMin="7.4796457" DurationMax="7.4796457">
+				<Event Id="2598215984" Name="Play_PracticeEnd" DurationType="OneShot" DurationMin="7.1866875" DurationMax="7.1866875">
 					<MediaRefs>
 						<MediaRef Id="79578983"/>
 					</MediaRefs>
@@ -2061,6 +2069,7 @@
 				<Event Id="419352152" Name="Reset_M1_Dissected" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="39386235" Name="Reset_M1_Seq" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2401183550" Name="Reset_M1_Sucess_Announce" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2033440605" Name="Stop_AimSynthOne" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2371377610" Name="Stop_AllEvents" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="388256776" Name="Stop_BGM_Menu" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="632677629" Name="Stop_ButtonReadAloud" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
@@ -2068,10 +2077,12 @@
 				<Event Id="3712676862" Name="Stop_VolumeCheck" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 			<GameParameters>
+				<GameParameter Id="1364189011" Name="RTPC_distance_freq"/>
 				<GameParameter Id="2033424207" Name="RTPC_MelodyVoice"/>
 				<GameParameter Id="3316058687" Name="RTPC_Obstruction"/>
 				<GameParameter Id="3707704703" Name="RTPC_left_right"/>
 				<GameParameter Id="4120900405" Name="RTPC_beacon_lr_volume"/>
+				<GameParameter Id="4174671671" Name="RTPC_aim_volume"/>
 			</GameParameters>
 			<StateGroups>
 				<StateGroup Id="3443944880" Name="MelodyState">
@@ -2152,5 +2163,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{9E87F0D8-D6B0-400A-B82B-C770E16C1576}</FileHash>
+	<FileHash>{D06EDBC5-0742-3187-4A64-B86655945E2F}</FileHash>
 </SoundBanksInfo>

@@ -12,8 +12,8 @@
 				</GameParameter>
 				<GameParameter Name="RTPC_distance_freq" ID="{2CD580FE-F1AA-48B5-BE61-37F43F4AF98D}">
 					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="10"/>
-						<Property Name="Max" Type="Real64" Value="10"/>
+						<Property Name="InitialValue" Type="Real64" Value="30"/>
+						<Property Name="Max" Type="Real64" Value="30"/>
 					</PropertyList>
 				</GameParameter>
 				<GameParameter Name="RTPC_synth_pwm_up_down" ID="{BC431978-D304-4090-BEC8-40C997D41550}">
@@ -24,6 +24,12 @@
 				<GameParameter Name="RTPC_frequency_depth" ID="{600FFE17-1FEE-4D17-901F-C9F00C6592B8}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="RTPC_aim_volume" ID="{8AE7D3A0-D118-4496-8956-95C3AC2345AC}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
 					</PropertyList>
 				</GameParameter>
 			</ChildrenList>
