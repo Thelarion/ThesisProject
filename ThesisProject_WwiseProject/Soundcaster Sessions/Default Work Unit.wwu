@@ -53,7 +53,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="RTPC_distance_freq" ID="{2CD580FE-F1AA-48B5-BE61-37F43F4AF98D}"/>
-							<Value>30</Value>
+							<Value>35</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="RTPC_Occlusion" ID="{CDBF976E-CA53-49B6-8C0C-5767DD5366F1}"/>
@@ -77,6 +77,7 @@
 						<CurrentSwitchRef Name="Effects" ID="{DF101DDA-99A3-4826-BB05-82E4347BC0B5}"/>
 						<CurrentSwitchRef Name="M1" ID="{EE148B74-339E-4862-B987-D0463480A443}"/>
 						<CurrentSwitchRef Name="Track1" ID="{DF0AB87B-7594-47E9-A09B-20EC64FAC28A}"/>
+						<CurrentSwitchRef Name="B3b" ID="{CEC2E3C2-6759-4B5D-97A8-F758D7A0055B}"/>
 						<CurrentSwitchRef Name="PitchA" ID="{BEB698A7-6745-49AD-BD7E-FC25B1ADB065}"/>
 						<CurrentSwitchRef Name="A" ID="{69A2F832-DD04-48E8-A090-5AF674AE02FC}"/>
 						<CurrentSwitchRef Name="InclusionModeOff" ID="{B8BF384A-A71B-41B5-B967-6E8389C3EB50}"/>

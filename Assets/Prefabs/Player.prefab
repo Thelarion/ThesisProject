@@ -1487,6 +1487,7 @@ GameObject:
   - component: {fileID: 2055162322186341556}
   - component: {fileID: 1095127568}
   - component: {fileID: 1936247151}
+  - component: {fileID: 5537444756744510050}
   m_Layer: 0
   m_Name: MainCamera
   m_TagString: MainCamera
@@ -1799,6 +1800,22 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: e001b424f1b7feb43af1f7e297081dbc,
       type: 2}
+--- !u!114 &5537444756744510050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3528674100898286625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b84e21dec1547044b8e2664050719b91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetTone: {fileID: 0}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 6144
 --- !u!1 &3606295275162554051
 GameObject:
   m_ObjectHideFlags: 0
@@ -2426,7 +2443,7 @@ GameObject:
   - component: {fileID: 8788240315370662263}
   - component: {fileID: 8727506440519283333}
   - component: {fileID: 5537444756744510055}
-  - component: {fileID: 5537444756744510050}
+  - component: {fileID: 1112660973960230477}
   - component: {fileID: 1237326603}
   m_Layer: 8
   m_Name: BumpDetection
@@ -2514,7 +2531,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 3
---- !u!114 &5537444756744510050
+--- !u!114 &1112660973960230477
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

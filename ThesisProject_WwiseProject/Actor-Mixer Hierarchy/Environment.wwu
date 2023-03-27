@@ -584,28 +584,6 @@
 										<ActiveSource Name="StoneBump1" ID="{A54015B2-6FC0-4A3A-B482-A9840584BE28}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="StoneBump2" ID="{F4A159CC-7752-4B1D-9A4F-4B7EE030D8FE}" ShortID="979342303">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="StoneBump2" ID="{BED5B75F-D8FA-478A-AE76-9D464C6C3172}">
-											<Language>SFX</Language>
-											<AudioFile>StoneBump\StoneBump2.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="418019861"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="StoneBump2" ID="{BED5B75F-D8FA-478A-AE76-9D464C6C3172}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
 								<Sound Name="StoneBump3" ID="{6DD00E41-636A-4A5D-9C48-D198DD4DB53C}" ShortID="281397170">
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1094,7 +1072,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="TreeIndication_01" ID="{73E59282-ECB6-4ACE-8354-56B200325830}" ShortID="487836050">
+								<Sound Name="TreeAxe_01" ID="{C7FFE818-9DCB-43C4-9CC5-20BDFA3799F0}" ShortID="754092040">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
@@ -1104,19 +1082,24 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="TreeIndication_01" ID="{08A8436F-7AC6-4D19-99B5-C09040E6B204}">
+										<AudioFileSource Name="TreeAxe_01" ID="{EC828421-2796-488B-906E-50FDD30D8669}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="14.7170899470899"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="14.7170899470899"/>
+											</PropertyList>
 											<Language>SFX</Language>
-											<AudioFile>TreeIndication_01.wav</AudioFile>
+											<AudioFile>TreeAxe_01.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="567893771"/>
+												<MediaID ID="700226813"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="TreeIndication_01" ID="{08A8436F-7AC6-4D19-99B5-C09040E6B204}" Platform="Linked"/>
+										<ActiveSource Name="TreeAxe_01" ID="{EC828421-2796-488B-906E-50FDD30D8669}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="TreeIndication_02" ID="{D912741A-CF81-48BD-AD55-AD1DA74864D3}" ShortID="302018289">
+								<Sound Name="TreeChainsaw_01" ID="{16836BE1-7320-43F6-8F75-951103ECAE89}" ShortID="384973371">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
@@ -1126,19 +1109,31 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="TreeIndication_02" ID="{5164E29F-973B-468A-B99E-BAF55DB255CC}">
+										<AudioFileSource Name="TreeChainsaw_01" ID="{8C5D5F03-37DA-4806-AA33-561A2FB70AD2}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="10.1733884297521"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="11.5631955922865"/>
+											</PropertyList>
 											<Language>SFX</Language>
-											<AudioFile>TreeIndication_02.wav</AudioFile>
+											<AudioFile>TreeChainsaw_01.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="183238745"/>
+												<MediaID ID="284212118"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="TreeIndication_02" ID="{5164E29F-973B-468A-B99E-BAF55DB255CC}" Platform="Linked"/>
+										<ActiveSource Name="TreeChainsaw_01" ID="{8C5D5F03-37DA-4806-AA33-561A2FB70AD2}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="TreeIndication_03" ID="{BE193F31-5994-48BA-9FEE-E8AC856B3521}" ShortID="921163448">
+								<Sound Name="TreeChainsaw_02" ID="{1A8CBE8A-9319-4134-9905-61F5455C91B1}" ShortID="582066678">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
@@ -1148,19 +1143,25 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="TreeIndication_03" ID="{33058D73-89B9-4AAF-B3BF-E95A33B8F5A9}">
+										<AudioFileSource Name="TreeChainsaw_02" ID="{7D44D48C-2D71-41C7-A6DD-B0E4FA477651}">
+											<PropertyList>
+												<Property Name="ChannelConfigOverride" Type="int64" Value="513"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="3.54644628099173"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="23.084738292011"/>
+											</PropertyList>
 											<Language>SFX</Language>
-											<AudioFile>TreeIndication_03.wav</AudioFile>
+											<AudioFile>TreeChainsaw_02.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="764851200"/>
+												<MediaID ID="391071439"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="TreeIndication_03" ID="{33058D73-89B9-4AAF-B3BF-E95A33B8F5A9}" Platform="Linked"/>
+										<ActiveSource Name="TreeChainsaw_02" ID="{7D44D48C-2D71-41C7-A6DD-B0E4FA477651}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="TreeIndication_04" ID="{63D805B1-6AEE-4FAB-BAEF-B876F278F4DA}" ShortID="311111025">
+								<Sound Name="TreeFall_01" ID="{340ACDEF-EEB8-4547-8DAD-B6B387993C80}" ShortID="109731321">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
@@ -1170,19 +1171,19 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="TreeIndication_04" ID="{C1126DBF-E129-4824-9AC2-15BD76214B28}">
+										<AudioFileSource Name="TreeFall_01" ID="{A6E5DCB7-06F1-4239-87B2-2B64B59971CC}">
 											<Language>SFX</Language>
-											<AudioFile>TreeIndication_04.wav</AudioFile>
+											<AudioFile>TreeFall_01.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="504256570"/>
+												<MediaID ID="873776271"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="TreeIndication_04" ID="{C1126DBF-E129-4824-9AC2-15BD76214B28}" Platform="Linked"/>
+										<ActiveSource Name="TreeFall_01" ID="{A6E5DCB7-06F1-4239-87B2-2B64B59971CC}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="TreeIndication_05" ID="{38C791C3-D50B-46A7-9CDA-2334C24D400A}" ShortID="300276919">
+								<Sound Name="TreeFall_02" ID="{B3D46557-4C7C-4C40-9C13-ACBC49C5BC55}" ShortID="401810410">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
@@ -1192,19 +1193,19 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="TreeIndication_05" ID="{696BC025-B61E-458A-B564-E205104B8B06}">
+										<AudioFileSource Name="TreeFall_02" ID="{0EFD5C39-310A-4070-9527-B6564049E9E2}">
 											<Language>SFX</Language>
-											<AudioFile>TreeIndication_05.wav</AudioFile>
+											<AudioFile>TreeFall_02.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="555265354"/>
+												<MediaID ID="481268898"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="TreeIndication_05" ID="{696BC025-B61E-458A-B564-E205104B8B06}" Platform="Linked"/>
+										<ActiveSource Name="TreeFall_02" ID="{0EFD5C39-310A-4070-9527-B6564049E9E2}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="TreeIndication_06" ID="{42980ED2-B80E-442B-98B0-1BFBC8529C85}" ShortID="558603409">
+								<Sound Name="TreeFall_05" ID="{90318D2E-F991-40AE-98AF-479E6F3ADC95}" ShortID="231515460">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
@@ -1214,16 +1215,92 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="TreeIndication_06" ID="{552F3BC1-4100-4DD8-ACFC-363FD28DB0A0}">
+										<AudioFileSource Name="TreeFall_05" ID="{F4DA164F-AB9F-4800-9C88-9183DDE5E8AA}">
 											<Language>SFX</Language>
-											<AudioFile>TreeIndication_06.wav</AudioFile>
+											<AudioFile>TreeFall_05.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="811603588"/>
+												<MediaID ID="563872510"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="TreeIndication_06" ID="{552F3BC1-4100-4DD8-ACFC-363FD28DB0A0}" Platform="Linked"/>
+										<ActiveSource Name="TreeFall_05" ID="{F4DA164F-AB9F-4800-9C88-9183DDE5E8AA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TreeFall_06" ID="{C5B058CA-EFE1-46B3-8195-6598C1607DC8}" ShortID="758432707">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TreeFall_06" ID="{4C7678D3-4C00-4268-AA4F-4A5AAF2BED2B}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.58724801356589"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="9.82377824612404"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>TreeFall_06.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="388169196"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TreeFall_06" ID="{4C7678D3-4C00-4268-AA4F-4A5AAF2BED2B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TreeFall_07" ID="{DC62DA3C-0754-478B-8A56-0E3D2BE7C200}" ShortID="191530472">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TreeFall_07" ID="{A37C4467-8DF3-4214-8D59-0C31D7F1C12E}">
+											<Language>SFX</Language>
+											<AudioFile>TreeFall_07.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="310755968"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TreeFall_07" ID="{A37C4467-8DF3-4214-8D59-0C31D7F1C12E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TreeHitting_01" ID="{75CDF6EC-FF7A-475E-97BC-62A1CE0B4BB5}" ShortID="475564502">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TreeHitting_01" ID="{E93D39FC-9904-4482-97AE-AA0B81F4A858}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.174418604651163"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.31395348837209"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>TreeHitting_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1016418286"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TreeHitting_01" ID="{E93D39FC-9904-4482-97AE-AA0B81F4A858}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
@@ -1245,7 +1322,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="StoneIndication_01" ID="{A55FCF8C-07CA-4BA9-B81A-AD4F13640A3F}" ShortID="2317345">
+								<Sound Name="Stone_01" ID="{BDF2EAA1-C1CC-4EDA-8D1A-CF001044B12F}" ShortID="861716818">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
@@ -1255,19 +1332,19 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="StoneIndication_01" ID="{BD31640E-07E2-48EE-AAD4-89F5195B6E9F}">
+										<AudioFileSource Name="Stone_01" ID="{F7451A63-1271-4633-8492-B673524AD609}">
 											<Language>SFX</Language>
-											<AudioFile>StoneIndication_01.wav</AudioFile>
+											<AudioFile>Stone_01.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="129800306"/>
+												<MediaID ID="1045717228"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="StoneIndication_01" ID="{BD31640E-07E2-48EE-AAD4-89F5195B6E9F}" Platform="Linked"/>
+										<ActiveSource Name="Stone_01" ID="{F7451A63-1271-4633-8492-B673524AD609}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="StoneIndication_02" ID="{904BF6A6-FD1D-4971-9A26-62814A894B9B}" ShortID="629184990">
+								<Sound Name="Stone_02" ID="{50685955-0549-4479-86DB-0382A19F1D14}" ShortID="190065618">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
@@ -1277,19 +1354,19 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="StoneIndication_02" ID="{FC2B3142-79A8-4FF6-873A-35B56BE51A8A}">
+										<AudioFileSource Name="Stone_02" ID="{0CA95573-14C7-4DF8-910E-D90CF30A1280}">
 											<Language>SFX</Language>
-											<AudioFile>StoneIndication_02.wav</AudioFile>
+											<AudioFile>Stone_02.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="169806685"/>
+												<MediaID ID="914621836"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="StoneIndication_02" ID="{FC2B3142-79A8-4FF6-873A-35B56BE51A8A}" Platform="Linked"/>
+										<ActiveSource Name="Stone_02" ID="{0CA95573-14C7-4DF8-910E-D90CF30A1280}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="StoneIndication_03" ID="{C118303D-7A3E-4303-9130-18B88BB9C882}" ShortID="796449093">
+								<Sound Name="Stone_03" ID="{A74B65B4-0DA9-4837-8C24-A520427173AC}" ShortID="831327477">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
@@ -1299,19 +1376,19 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="StoneIndication_03" ID="{9AEE9BBD-0B8C-4BBA-8BDE-D73C6937CC83}">
+										<AudioFileSource Name="Stone_03" ID="{0A658784-4D34-4FD3-A82B-0D346B4CAD8D}">
 											<Language>SFX</Language>
-											<AudioFile>StoneIndication_03.wav</AudioFile>
+											<AudioFile>Stone_03.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="855996151"/>
+												<MediaID ID="36420285"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="StoneIndication_03" ID="{9AEE9BBD-0B8C-4BBA-8BDE-D73C6937CC83}" Platform="Linked"/>
+										<ActiveSource Name="Stone_03" ID="{0A658784-4D34-4FD3-A82B-0D346B4CAD8D}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="StoneIndication_04" ID="{5DBAD6A9-AE48-416E-849E-B7DB641452B5}" ShortID="364569434">
+								<Sound Name="Stone_04" ID="{CDEC51F3-9695-4DD9-BB17-0345F0CE1750}" ShortID="771566477">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
@@ -1321,19 +1398,19 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="StoneIndication_04" ID="{94D95359-1C70-40BC-922C-E05653ADE0B4}">
+										<AudioFileSource Name="Stone_04" ID="{9D5A54F8-E1C8-497B-A483-E868D44EB62B}">
 											<Language>SFX</Language>
-											<AudioFile>StoneIndication_04.wav</AudioFile>
+											<AudioFile>Stone_04.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="584701427"/>
+												<MediaID ID="987618943"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="StoneIndication_04" ID="{94D95359-1C70-40BC-922C-E05653ADE0B4}" Platform="Linked"/>
+										<ActiveSource Name="Stone_04" ID="{9D5A54F8-E1C8-497B-A483-E868D44EB62B}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="StoneIndication_05" ID="{16FE4BAD-800D-4701-8263-E80C970CAF8D}" ShortID="545543604">
+								<Sound Name="Stone_05" ID="{C62AF936-E72A-420D-B0F6-6E8509A2D709}" ShortID="606857127">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
@@ -1343,16 +1420,82 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="StoneIndication_05" ID="{C7E5A251-70AF-4B98-BECD-F485251C7830}">
+										<AudioFileSource Name="Stone_05" ID="{B3695F56-1C5B-42A0-A831-1EF4FE5BB40C}">
 											<Language>SFX</Language>
-											<AudioFile>StoneIndication_05.wav</AudioFile>
+											<AudioFile>Stone_05.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="217946136"/>
+												<MediaID ID="164017223"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="StoneIndication_05" ID="{C7E5A251-70AF-4B98-BECD-F485251C7830}" Platform="Linked"/>
+										<ActiveSource Name="Stone_05" ID="{B3695F56-1C5B-42A0-A831-1EF4FE5BB40C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Stone_06" ID="{A816951A-8625-4A2A-B267-36A8ED885F89}" ShortID="312027456">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Stone_06" ID="{33418979-28D3-465D-AA52-29F5E3243DA5}">
+											<Language>SFX</Language>
+											<AudioFile>Stone_06.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="301167507"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Stone_06" ID="{33418979-28D3-465D-AA52-29F5E3243DA5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Stone_07" ID="{90EEA4BC-3273-46FA-862E-01C28AD16771}" ShortID="349490890">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Stone_07" ID="{E2E34640-33C0-4477-A719-E0EC57B56480}">
+											<Language>SFX</Language>
+											<AudioFile>Stone_07.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="268412815"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Stone_07" ID="{E2E34640-33C0-4477-A719-E0EC57B56480}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Stone_08" ID="{61A4A29F-8EC0-4DE1-A08D-9D8E2B0BABCB}" ShortID="1013491719">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DF361A11-992B-45A2-9EC0-D5F0605E9FB4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Stone_08" ID="{D52D9DE3-20DB-4BEE-B986-933AEBA6D902}">
+											<Language>SFX</Language>
+											<AudioFile>Stone_08.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="75001240"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Stone_08" ID="{D52D9DE3-20DB-4BEE-B986-933AEBA6D902}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>

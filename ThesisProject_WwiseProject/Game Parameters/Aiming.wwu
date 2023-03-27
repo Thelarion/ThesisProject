@@ -12,8 +12,8 @@
 				</GameParameter>
 				<GameParameter Name="RTPC_distance_freq" ID="{2CD580FE-F1AA-48B5-BE61-37F43F4AF98D}">
 					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="30"/>
-						<Property Name="Max" Type="Real64" Value="30"/>
+						<Property Name="InitialValue" Type="Real64" Value="35"/>
+						<Property Name="Max" Type="Real64" Value="35"/>
 					</PropertyList>
 				</GameParameter>
 				<GameParameter Name="RTPC_synth_pwm_up_down" ID="{BC431978-D304-4090-BEC8-40C997D41550}">

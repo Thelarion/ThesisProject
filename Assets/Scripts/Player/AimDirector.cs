@@ -70,6 +70,10 @@ public class AimDirector : MonoBehaviour
                 targetTone = checkNewTarget;
             }
         }
+        else
+        {
+            AkSoundEngine.SetRTPCValue("RTPC_aim_volume", 0);
+        }
     }
 
     public void ToggleAimDirectionOn()
@@ -96,9 +100,9 @@ public class AimDirector : MonoBehaviour
         if (!obstacleState)
         {
 
+            // print(directionFace);
 
-
-            if (directionFace >= 0.7)
+            if (directionFace >= 0.4)
             {
                 if (projectionOnRight > -1.5 && projectionOnRight < 1.5)
                 {

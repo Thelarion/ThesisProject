@@ -2814,6 +2814,13 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Sound Name="AimSynthOne" ID="{058D7CDF-EC33-4BC5-9EC8-C377BCA8912F}" ShortID="765696208">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{633DC7AD-E5A4-4200-972C-66F48219AE45}"/>
@@ -2852,7 +2859,7 @@
 																				<Flags>5</Flags>
 																			</Point>
 																			<Point>
-																				<XPos>30</XPos>
+																				<XPos>35</XPos>
 																				<YPos>79.74668</YPos>
 																				<Flags>37</Flags>
 																			</Point>

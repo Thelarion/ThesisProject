@@ -35,6 +35,14 @@ public class LogManager : MonoBehaviour
     public static float VoiceVolume { get => voiceVolume; set => voiceVolume = value; }
     public static float MusicVolume { get => musicVolume; set => musicVolume = value; }
     public static float EffectsVolume { get => effectsVolume; set => effectsVolume = value; }
+    private static StreamWriter writer;
+
+    public static void InitializeWriter()
+    {
+        writer = new StreamWriter(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + "\\TapToneStats.txt", true);
+    }
+
+
 
     public static void ResetLogging()
     {
@@ -48,11 +56,16 @@ public class LogManager : MonoBehaviour
         West = 0;
     }
 
+    public static void PrintCoordinates(float x, float z)
+    {
+        writer.WriteLine(Time.time.ToString() + ", " + x.ToString() + ", " + z.ToString());
+        writer.Flush();
+    }
 
     // Update is called once per frame
     public static void PrintToTxt()
     {
-        StreamWriter writer = new StreamWriter(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + "\\TapToneStats.txt", true);
+        writer.WriteLine("-------- Output --------");
         writer.WriteLine("Data Log file: Tap Tone");
         writer.WriteLine("Time of study: " + System.DateTime.Now.ToString());
         writer.WriteLine("-------- Time Measurement --------");
@@ -64,10 +77,6 @@ public class LogManager : MonoBehaviour
         writer.WriteLine("Tap count: " + triggerCount.ToString());
         writer.WriteLine("Taps on wrong note: " + missedTaps.ToString());
         writer.WriteLine("Melody count: " + melodyCount.ToString());
-        // writer.WriteLine("North: " + north.ToString());
-        // writer.WriteLine("East: " + east.ToString());
-        // writer.WriteLine("South: " + south.ToString());
-        // writer.WriteLine("West: " + west.ToString());
         writer.WriteLine("-------- Volume Level --------");
         writer.WriteLine("MusicVolume: " + musicVolume.ToString());
         writer.WriteLine("VoiceVolume: " + voiceVolume.ToString());

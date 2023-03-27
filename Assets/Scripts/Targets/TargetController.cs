@@ -162,6 +162,11 @@ public class TargetController : MonoBehaviour
             }
             else
             {
+                LogManager.EndTime = Time.time;
+                LogManager.TotalPoints = scoreManager.CurrentScore;
+                LogManager.PrintToTxt();
+
+                AkSoundEngine.PostEvent("Stop_AllEvents", null);
                 levelLoader.LoadScene();
             }
         }

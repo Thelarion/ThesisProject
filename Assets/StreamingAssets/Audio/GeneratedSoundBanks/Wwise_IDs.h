@@ -94,6 +94,7 @@ namespace AK
         static const AkUniqueID PLAY_ENDREGION = 1410858841U;
         static const AkUniqueID PLAY_FENCEGOLEFT = 2139524352U;
         static const AkUniqueID PLAY_FENCEGORIGHT = 4293820695U;
+        static const AkUniqueID PLAY_HORN = 2956245481U;
         static const AkUniqueID PLAY_INBETWEEN = 342260041U;
         static const AkUniqueID PLAY_INSTRUCTIONS = 1184431001U;
         static const AkUniqueID PLAY_M1 = 2447410352U;
@@ -239,6 +240,67 @@ namespace AK
                 static const AkUniqueID WELCOMEINCLUSION = 984851287U;
             } // namespace SWITCH
         } // namespace BUTTONREADALOUD
+
+        namespace HORNS
+        {
+            static const AkUniqueID GROUP = 4173622173U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID A2 = 1886858600U;
+                static const AkUniqueID A2B = 1939634906U;
+                static const AkUniqueID A2S = 1939634891U;
+                static const AkUniqueID A3 = 1886858601U;
+                static const AkUniqueID A3B = 1956412457U;
+                static const AkUniqueID A3S = 1956412472U;
+                static const AkUniqueID A4 = 1886858606U;
+                static const AkUniqueID A4B = 2040300616U;
+                static const AkUniqueID A4S = 2040300633U;
+                static const AkUniqueID B2 = 1870081013U;
+                static const AkUniqueID B2B = 1838822093U;
+                static const AkUniqueID B3 = 1870081012U;
+                static const AkUniqueID B3B = 1822044542U;
+                static const AkUniqueID B4 = 1870081011U;
+                static const AkUniqueID B4B = 1805266923U;
+                static const AkUniqueID C2 = 1853303302U;
+                static const AkUniqueID C2S = 3952551681U;
+                static const AkUniqueID C3 = 1853303303U;
+                static const AkUniqueID C3S = 3969329526U;
+                static const AkUniqueID C4 = 1853303296U;
+                static const AkUniqueID C4S = 3851886195U;
+                static const AkUniqueID D2 = 1836525715U;
+                static const AkUniqueID D2B = 3851738891U;
+                static const AkUniqueID D2S = 3851738906U;
+                static const AkUniqueID D3 = 1836525714U;
+                static const AkUniqueID D3B = 3834961332U;
+                static const AkUniqueID D3S = 3834961317U;
+                static const AkUniqueID D4 = 1836525717U;
+                static const AkUniqueID D4B = 3885294317U;
+                static const AkUniqueID D4S = 3885294332U;
+                static const AkUniqueID DEFAULTERROR = 2416969594U;
+                static const AkUniqueID E2 = 1819748156U;
+                static const AkUniqueID E2B = 4220699414U;
+                static const AkUniqueID E3 = 1819748157U;
+                static const AkUniqueID E3B = 4237477221U;
+                static const AkUniqueID E4 = 1819748154U;
+                static const AkUniqueID E4B = 4187144236U;
+                static const AkUniqueID F2 = 1802970441U;
+                static const AkUniqueID F2S = 1972351384U;
+                static const AkUniqueID F3 = 1802970440U;
+                static const AkUniqueID F3S = 1955573803U;
+                static const AkUniqueID F4 = 1802970447U;
+                static const AkUniqueID F4S = 2073017134U;
+                static const AkUniqueID G2 = 1786192858U;
+                static const AkUniqueID G2B = 1938649164U;
+                static const AkUniqueID G2S = 1938649181U;
+                static const AkUniqueID G3 = 1786192859U;
+                static const AkUniqueID G3B = 1955426723U;
+                static const AkUniqueID G3S = 1955426738U;
+                static const AkUniqueID G4 = 1786192860U;
+                static const AkUniqueID G4B = 1972204342U;
+                static const AkUniqueID G4S = 1972204327U;
+            } // namespace SWITCH
+        } // namespace HORNS
 
         namespace INCLUSIONMODETOGGLE
         {

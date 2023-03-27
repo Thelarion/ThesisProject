@@ -145,7 +145,7 @@ public class RunInterval : MonoBehaviour
     {
         PlayNoteOnTone.PlayNote(currentMaterialName, _nameGOOctave, _nameGOAccidental, transform.gameObject);
         // noteParticles.Play();
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(3);
         StartCoroutine(IntervalNoteAndEffect());
     }
 }

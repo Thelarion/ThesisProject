@@ -359,6 +359,22 @@ public class PlayNoteOnTone : MonoBehaviour
                 }
                 break;
         }
-        currentNote.Post(tone);
+        // currentNote.Post(tone);
+
+
+        if (_nameGOSharpFlat != "b")
+        {
+            print(materialToNote + _nameGOOctave);
+            // AkSoundEngine.PostEvent(materialToNote + _nameGOOctave, tone);
+            AkSoundEngine.SetSwitch("Horns", materialToNote + _nameGOOctave, tone);
+            AkSoundEngine.PostEvent("Play_Horn", tone);
+        }
+        else
+        {
+            // AkSoundEngine.PostEvent(materialToNote + _nameGOOctave + _nameGOSharpFlat, tone);
+            AkSoundEngine.SetSwitch("Horns", materialToNote + _nameGOOctave + _nameGOSharpFlat, tone);
+            AkSoundEngine.PostEvent("Play_Horn", tone);
+        }
+
     }
 }

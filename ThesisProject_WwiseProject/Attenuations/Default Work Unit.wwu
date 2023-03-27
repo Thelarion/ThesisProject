@@ -99,6 +99,11 @@
 				</Attenuation>
 				<Attenuation Name="att_NoteAttenuation" ID="{30B6C5D9-94C7-4A5C-A5C6-1A69B4CC9AC3}" ShortID="424983686">
 					<PropertyList>
+						<Property Name="HeightSpreadEnable" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
 						<Property Name="RadiusMax" Type="Real64" Value="200"/>
 					</PropertyList>
 					<CurveUsageInfoList>
@@ -116,8 +121,14 @@
 											<SegmentShape>Log1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>48.77479</XPos>
-											<YPos>-6.37517</YPos>
+											<XPos>23.10385</XPos>
+											<YPos>0</YPos>
+											<Flags>0</Flags>
+											<SegmentShape>Log1</SegmentShape>
+										</Point>
+										<Point>
+											<XPos>81.68028</XPos>
+											<YPos>-4.71198</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>Log1</SegmentShape>
 										</Point>
