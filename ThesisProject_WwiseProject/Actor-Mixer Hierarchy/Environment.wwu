@@ -933,11 +933,6 @@
 								<Sound Name="Birds_lp_01" ID="{026E9F11-1885-4501-8334-973B7203E366}" ShortID="768730649">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>5</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -963,11 +958,6 @@
 								<Sound Name="Birds_lp_02" ID="{B58EA822-D5C5-42BE-85D4-4714FC72B3F4}" ShortID="624541231">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>3</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -996,11 +986,6 @@
 								<Sound Name="Birds_lp_03" ID="{A30ABF2A-48E0-4BBE-97F7-5BA0EA1AFC66}" ShortID="716049295">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>3</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1026,11 +1011,6 @@
 								<Sound Name="Birds_lp_04" ID="{29B494BB-440E-4593-A1A2-A035DB706DBA}" ShortID="929828436">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>5</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">

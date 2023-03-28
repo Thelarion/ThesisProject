@@ -364,7 +364,7 @@ public class PlayNoteOnTone : MonoBehaviour
 
         if (_nameGOSharpFlat != "b")
         {
-            print(materialToNote + _nameGOOctave);
+            // print(materialToNote + _nameGOOctave);
             // AkSoundEngine.PostEvent(materialToNote + _nameGOOctave, tone);
             AkSoundEngine.SetSwitch("Horns", materialToNote + _nameGOOctave, tone);
             AkSoundEngine.PostEvent("Play_Horn", tone);

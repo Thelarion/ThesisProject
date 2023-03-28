@@ -63,13 +63,17 @@ public class GameManager : MonoBehaviour
     {
         // Melody first
         AkSoundEngine.PostEvent("Play_M1", player);
-        yield return new WaitForSeconds(2.5f);
+        yield return new WaitForSeconds(4f);
 
-        // Introduction
-        AkSoundEngine.PostEvent("Reset_M1_Success_Announce", player); // Reset Playlist
-        AkSoundEngine.PostEvent("Play_M1_Intro", player);
-        closedCaptions.StartMelodyDone = true;
-        targetIndicator.StartMelodyDone = true;
+
+        if (StartMenuManager.InclusionState)
+        {
+            // Introduction
+            AkSoundEngine.PostEvent("Reset_M1_Success_Announce", player); // Reset Playlist
+            AkSoundEngine.PostEvent("Play_M1_Intro", player);
+            closedCaptions.StartMelodyDone = true;
+            targetIndicator.StartMelodyDone = true;
+        }
 
     }
 

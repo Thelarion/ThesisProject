@@ -13,7 +13,7 @@
 			<ShortName>Environment</ShortName>
 			<Path>Environment.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{18BCE358-E496-97BD-5825-137A9AFCEA20}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{F6E80B6E-5613-992B-A16F-EFBFDEFD7409}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -190,6 +190,62 @@
 						<Switch Id="4248645337" Name="Grass"/>
 					</Switches>
 				</SwitchGroup>
+				<SwitchGroup Id="4173622173" Name="Horns">
+					<Switches>
+						<Switch Id="1786192858" Name="G2"/>
+						<Switch Id="1786192859" Name="G3"/>
+						<Switch Id="1786192860" Name="G4"/>
+						<Switch Id="1802970440" Name="F3"/>
+						<Switch Id="1802970441" Name="F2"/>
+						<Switch Id="1802970447" Name="F4"/>
+						<Switch Id="1805266923" Name="B4b"/>
+						<Switch Id="1819748154" Name="E4"/>
+						<Switch Id="1819748156" Name="E2"/>
+						<Switch Id="1819748157" Name="E3"/>
+						<Switch Id="1822044542" Name="B3b"/>
+						<Switch Id="1836525714" Name="D3"/>
+						<Switch Id="1836525715" Name="D2"/>
+						<Switch Id="1836525717" Name="D4"/>
+						<Switch Id="1838822093" Name="B2b"/>
+						<Switch Id="1853303296" Name="C4"/>
+						<Switch Id="1853303302" Name="C2"/>
+						<Switch Id="1853303303" Name="C3"/>
+						<Switch Id="1870081011" Name="B4"/>
+						<Switch Id="1870081012" Name="B3"/>
+						<Switch Id="1870081013" Name="B2"/>
+						<Switch Id="1886858600" Name="A2"/>
+						<Switch Id="1886858601" Name="A3"/>
+						<Switch Id="1886858606" Name="A4"/>
+						<Switch Id="1938649164" Name="G2b"/>
+						<Switch Id="1938649181" Name="G2s"/>
+						<Switch Id="1939634891" Name="A2s"/>
+						<Switch Id="1939634906" Name="A2b"/>
+						<Switch Id="1955426723" Name="G3b"/>
+						<Switch Id="1955426738" Name="G3s"/>
+						<Switch Id="1955573803" Name="F3s"/>
+						<Switch Id="1956412457" Name="A3b"/>
+						<Switch Id="1956412472" Name="A3s"/>
+						<Switch Id="1972204327" Name="G4s"/>
+						<Switch Id="1972204342" Name="G4b"/>
+						<Switch Id="1972351384" Name="F2s"/>
+						<Switch Id="2040300616" Name="A4b"/>
+						<Switch Id="2040300633" Name="A4s"/>
+						<Switch Id="2073017134" Name="F4s"/>
+						<Switch Id="2416969594" Name="DefaultError"/>
+						<Switch Id="3834961317" Name="D3s"/>
+						<Switch Id="3834961332" Name="D3b"/>
+						<Switch Id="3851738891" Name="D2b"/>
+						<Switch Id="3851738906" Name="D2s"/>
+						<Switch Id="3851886195" Name="C4s"/>
+						<Switch Id="3885294317" Name="D4b"/>
+						<Switch Id="3885294332" Name="D4s"/>
+						<Switch Id="3952551681" Name="C2s"/>
+						<Switch Id="3969329526" Name="C3s"/>
+						<Switch Id="4187144236" Name="E4b"/>
+						<Switch Id="4220699414" Name="E2b"/>
+						<Switch Id="4237477221" Name="E3b"/>
+					</Switches>
+				</SwitchGroup>
 				<SwitchGroup Id="4273002286" Name="Instructions">
 					<Switches>
 						<Switch Id="1752637680" Name="I2"/>
@@ -202,7 +258,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{E04948ED-051E-CD9E-88B2-C9E4A077AED5}">
+		<SoundBank Id="3161908922" Type="User" Language="English(US)" Hash="{712E6331-2FFF-2AB0-660F-3E8E784FE07F}">
 			<ShortName>Main</ShortName>
 			<Path>English(US)/Main.bnk</Path>
 			<Media>
@@ -246,9 +302,21 @@
 					<ShortName>SteppingFlowersGrass\Step_GrassFlowers_05.wav</ShortName>
 					<CachePath>SFX/SteppingFlowersGrass/Step_GrassFlowers_05_3F75BDB9.wem</CachePath>
 				</File>
+				<File Id="35822434" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>D2_H.wav</ShortName>
+					<CachePath>SFX/D2_H_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="36420285" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Stone_03.wav</ShortName>
+					<CachePath>SFX/Stone_03_3F75BDB9.wem</CachePath>
+				</File>
 				<File Id="38162978" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>Resume.wav</ShortName>
 					<CachePath>Voices/English(US)/Resume_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="40232992" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>E2_H.wav</ShortName>
+					<CachePath>SFX/E2_H_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="45056509" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>StoneBump\StoneBump4.wav</ShortName>
@@ -262,9 +330,17 @@
 					<ShortName>SteppingFlowersGrass\Step_GrassFlowers_03.wav</ShortName>
 					<CachePath>SFX/SteppingFlowersGrass/Step_GrassFlowers_03_3F75BDB9.wem</CachePath>
 				</File>
+				<File Id="61248538" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>E4b_H.wav</ShortName>
+					<CachePath>SFX/E4b_H_3F75BDB9.wem</CachePath>
+				</File>
 				<File Id="74676487" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>LeavesRustlingIndicator\Leaves_Rustling_06.wav</ShortName>
 					<CachePath>SFX/LeavesRustlingIndicator/Leaves_Rustling_06_10C4C929.wem</CachePath>
+				</File>
+				<File Id="75001240" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Stone_08.wav</ShortName>
+					<CachePath>SFX/Stone_08_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="77008919" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>North.wav</ShortName>
@@ -277,6 +353,10 @@
 				<File Id="79818769" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>I2.wav</ShortName>
 					<CachePath>Voices/English(US)/I2_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="86341108" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>G2_H.wav</ShortName>
+					<CachePath>SFX/G2_H_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="105873676" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AudioVisualiserOff.wav</ShortName>
@@ -294,6 +374,10 @@
 					<ShortName>Grass\Plyr_Fstps_Grass_06.wav</ShortName>
 					<CachePath>SFX/Grass/Plyr_Fstps_Grass_06_10C4C929.wem</CachePath>
 				</File>
+				<File Id="122013757" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>G2#_H.wav</ShortName>
+					<CachePath>SFX/G2#_H_3F75BDB9.wem</CachePath>
+				</File>
 				<File Id="124046553" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grass\Plyr_Fstps_Grass_01.wav</ShortName>
 					<CachePath>SFX/Grass/Plyr_Fstps_Grass_01_10C4C929.wem</CachePath>
@@ -310,9 +394,9 @@
 					<ShortName>Disstected Melody\M1_P4_B2_Dissected.wav</ShortName>
 					<CachePath>SFX/Disstected Melody/M1_P4_B2_Dissected_10C4C929.wem</CachePath>
 				</File>
-				<File Id="129800306" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>StoneIndication_01.wav</ShortName>
-					<CachePath>SFX/StoneIndication_01_3F75BDB9.wem</CachePath>
+				<File Id="131127661" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>D3#_H.wav</ShortName>
+					<CachePath>SFX/D3#_H_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="136132481" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Tile\FS_Tile_03.wav</ShortName>
@@ -322,6 +406,14 @@
 					<ShortName>O3\E3.wav</ShortName>
 					<CachePath>SFX/O3/E3_10C4C929.wem</CachePath>
 				</File>
+				<File Id="145216165" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>B4_H.wav</ShortName>
+					<CachePath>SFX/B4_H_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="146077204" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>D4#_H.wav</ShortName>
+					<CachePath>SFX/D4#_H_3F75BDB9.wem</CachePath>
+				</File>
 				<File Id="151668210" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>CharacterStuck.wav</ShortName>
 					<CachePath>Voices/English(US)/CharacterStuck_3F75BDB9.wem</CachePath>
@@ -329,6 +421,10 @@
 				<File Id="162125142" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>LeavesRustlingIndicator\Leaves_Rustling_03.wav</ShortName>
 					<CachePath>SFX/LeavesRustlingIndicator/Leaves_Rustling_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="164017223" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Stone_05.wav</ShortName>
+					<CachePath>SFX/Stone_05_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="164636996" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>F4#.wav</ShortName>
@@ -346,9 +442,9 @@
 					<ShortName>Fence_Right.wav</ShortName>
 					<CachePath>Voices/English(US)/Fence_Right_3F75BDB9.wem</CachePath>
 				</File>
-				<File Id="169806685" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>StoneIndication_02.wav</ShortName>
-					<CachePath>SFX/StoneIndication_02_3F75BDB9.wem</CachePath>
+				<File Id="173011971" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>C2_H.wav</ShortName>
+					<CachePath>SFX/C2_H_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="179996937" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>DistanceCount\30.wav</ShortName>
@@ -358,9 +454,9 @@
 					<ShortName>O2\E2.wav</ShortName>
 					<CachePath>SFX/O2/E2_10C4C929.wem</CachePath>
 				</File>
-				<File Id="183238745" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>TreeIndication_02.wav</ShortName>
-					<CachePath>SFX/TreeIndication_02_3F75BDB9.wem</CachePath>
+				<File Id="184254641" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>G3#_H.wav</ShortName>
+					<CachePath>SFX/G3#_H_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="188859037" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Water\Plyr_Fstps_Water_05.wav</ShortName>
@@ -398,13 +494,21 @@
 					<ShortName>A3#.wav</ShortName>
 					<CachePath>SFX/A3#_10C4C929.wem</CachePath>
 				</File>
-				<File Id="217946136" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>StoneIndication_05.wav</ShortName>
-					<CachePath>SFX/StoneIndication_05_3F75BDB9.wem</CachePath>
+				<File Id="217401190" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>B4b_H.wav</ShortName>
+					<CachePath>SFX/B4b_H_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="218048551" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>A4b_H.wav</ShortName>
+					<CachePath>SFX/A4b_H_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="221568551" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>DistanceCount\10.wav</ShortName>
 					<CachePath>SFX/DistanceCount/10_10C4C929.wem</CachePath>
+				</File>
+				<File Id="221838846" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>D2b_H.wav</ShortName>
+					<CachePath>SFX/D2b_H_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="232226852" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>M1_C3_P5.wav</ShortName>
@@ -421,6 +525,18 @@
 				<File Id="263546722" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>VoiceVolume.wav</ShortName>
 					<CachePath>Voices/English(US)/VoiceVolume_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="265492144" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>A2_H.wav</ShortName>
+					<CachePath>SFX/A2_H_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="265965449" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>C4_H.wav</ShortName>
+					<CachePath>SFX/C4_H_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="268412815" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Stone_07.wav</ShortName>
+					<CachePath>SFX/Stone_07_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="268897836" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Winter Wren\WinterWren_03.wav</ShortName>
@@ -450,6 +566,10 @@
 					<ShortName>I1.wav</ShortName>
 					<CachePath>Voices/English(US)/I1_3F75BDB9.wem</CachePath>
 				</File>
+				<File Id="284212118" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>TreeChainsaw_01.wav</ShortName>
+					<CachePath>SFX/TreeChainsaw_01_C10D79E5.wem</CachePath>
+				</File>
 				<File Id="288447565" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Water\Plyr_Fstps_Water_02.wav</ShortName>
 					<CachePath>SFX/Water/Plyr_Fstps_Water_02_10C4C929.wem</CachePath>
@@ -466,9 +586,25 @@
 					<ShortName>LeavesRustlingIndicator\Leaves_Rustling_02.wav</ShortName>
 					<CachePath>SFX/LeavesRustlingIndicator/Leaves_Rustling_02_10C4C929.wem</CachePath>
 				</File>
+				<File Id="298424507" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>C3_H.wav</ShortName>
+					<CachePath>SFX/C3_H_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="301167507" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Stone_06.wav</ShortName>
+					<CachePath>SFX/Stone_06_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="304256637" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>D2#_H.wav</ShortName>
+					<CachePath>SFX/D2#_H_3F75BDB9.wem</CachePath>
+				</File>
 				<File Id="308599422" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Plyr_Grunt_05.wav</ShortName>
 					<CachePath>SFX/Plyr_Grunt_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="310755968" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>TreeFall_07.wav</ShortName>
+					<CachePath>SFX/TreeFall_07_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="313915896" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>EndRegion.wav</ShortName>
@@ -510,6 +646,14 @@
 					<ShortName>Water\Plyr_Fstps_Water_07.wav</ShortName>
 					<CachePath>SFX/Water/Plyr_Fstps_Water_07_10C4C929.wem</CachePath>
 				</File>
+				<File Id="351491395" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>E2b_H.wav</ShortName>
+					<CachePath>SFX/E2b_H_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="356308472" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>G4#_H.wav</ShortName>
+					<CachePath>SFX/G4#_H_3F75BDB9.wem</CachePath>
+				</File>
 				<File Id="357122905" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Plyr_Grunt_04.wav</ShortName>
 					<CachePath>SFX/Plyr_Grunt_04_10C4C929.wem</CachePath>
@@ -542,6 +686,22 @@
 					<ShortName>M1_3Tone.wav</ShortName>
 					<CachePath>SFX/M1_3Tone_D79FB2B7.wem</CachePath>
 				</File>
+				<File Id="386867692" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>B2_H.wav</ShortName>
+					<CachePath>SFX/B2_H_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="387959535" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>E4_H.wav</ShortName>
+					<CachePath>SFX/E4_H_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="388169196" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>TreeFall_06.wav</ShortName>
+					<CachePath>SFX/TreeFall_06_0C07B47B.wem</CachePath>
+				</File>
+				<File Id="391071439" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>TreeChainsaw_02.wav</ShortName>
+					<CachePath>SFX/TreeChainsaw_02_BAF1EB28.wem</CachePath>
+				</File>
 				<File Id="391679118" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Dirt\FS_Dirt_03.wav</ShortName>
 					<CachePath>SFX/Footsteps/Dirt/FS_Dirt_03_10C4C929.wem</CachePath>
@@ -558,10 +718,6 @@
 					<ShortName>TreeBump\Dropping Wood 02.wav</ShortName>
 					<CachePath>SFX/TreeBump/Dropping Wood 02_3F75BDB9.wem</CachePath>
 				</File>
-				<File Id="418019861" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>StoneBump\StoneBump2.wav</ShortName>
-					<CachePath>SFX/StoneBump/StoneBump2_3F75BDB9.wem</CachePath>
-				</File>
 				<File Id="423178395" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O2\F2.wav</ShortName>
 					<CachePath>SFX/O2/F2_10C4C929.wem</CachePath>
@@ -577,6 +733,10 @@
 				<File Id="441185423" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AudioVisualiserOn.wav</ShortName>
 					<CachePath>SFX/AudioVisualiserOn_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="444981274" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>G4_H.wav</ShortName>
+					<CachePath>SFX/G4_H_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="447603507" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>destination_reached.wav</ShortName>
@@ -606,13 +766,25 @@
 					<ShortName>B3b.wav</ShortName>
 					<CachePath>SFX/B3b_10C4C929.wem</CachePath>
 				</File>
+				<File Id="481268898" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>TreeFall_02.wav</ShortName>
+					<CachePath>SFX/TreeFall_02_3F75BDB9.wem</CachePath>
+				</File>
 				<File Id="481546061" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Birds_lp_04.wav</ShortName>
 					<CachePath>SFX/Birds_lp_04_9EDFC787.wem</CachePath>
 				</File>
+				<File Id="489547541" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>F4_H.wav</ShortName>
+					<CachePath>SFX/F4_H_3F75BDB9.wem</CachePath>
+				</File>
 				<File Id="490717431" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Dirt\FS_Dirt_02.wav</ShortName>
 					<CachePath>SFX/Footsteps/Dirt/FS_Dirt_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="495621439" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>D3b_H.wav</ShortName>
+					<CachePath>SFX/D3b_H_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="496510789" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>I3.wav</ShortName>
@@ -622,13 +794,17 @@
 					<ShortName>G2b.wav</ShortName>
 					<CachePath>SFX/G2b_10C4C929.wem</CachePath>
 				</File>
-				<File Id="504256570" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>TreeIndication_04.wav</ShortName>
-					<CachePath>SFX/TreeIndication_04_3F75BDB9.wem</CachePath>
+				<File Id="503711425" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>D3_H.wav</ShortName>
+					<CachePath>SFX/D3_H_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="509973139" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>DistanceCount\70.wav</ShortName>
 					<CachePath>SFX/DistanceCount/70_10C4C929.wem</CachePath>
+				</File>
+				<File Id="511704722" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>G3_H.wav</ShortName>
+					<CachePath>SFX/G3_H_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="512266225" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Dirt\FS_Dirt_01.wav</ShortName>
@@ -666,9 +842,9 @@
 					<ShortName>A2b.wav</ShortName>
 					<CachePath>SFX/A2b_10C4C929.wem</CachePath>
 				</File>
-				<File Id="555265354" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>TreeIndication_05.wav</ShortName>
-					<CachePath>SFX/TreeIndication_05_3F75BDB9.wem</CachePath>
+				<File Id="549989419" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>E3b_H.wav</ShortName>
+					<CachePath>SFX/E3b_H_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="556685349" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Disstected Melody\M1_P1_C3_Dissected.wav</ShortName>
@@ -678,13 +854,17 @@
 					<ShortName>Water\Plyr_Fstps_Water_01.wav</ShortName>
 					<CachePath>SFX/Water/Plyr_Fstps_Water_01_10C4C929.wem</CachePath>
 				</File>
+				<File Id="563872510" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>TreeFall_05.wav</ShortName>
+					<CachePath>SFX/TreeFall_05_3F75BDB9.wem</CachePath>
+				</File>
 				<File Id="564419961" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Dirt\FS_Dirt_04.wav</ShortName>
 					<CachePath>SFX/Footsteps/Dirt/FS_Dirt_04_10C4C929.wem</CachePath>
 				</File>
-				<File Id="567893771" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>TreeIndication_01.wav</ShortName>
-					<CachePath>SFX/TreeIndication_01_3F75BDB9.wem</CachePath>
+				<File Id="572373707" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>G2b_H.wav</ShortName>
+					<CachePath>SFX/G2b_H_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="580739463" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TreeBump\Dropping Wood 12.wav</ShortName>
@@ -698,9 +878,9 @@
 					<ShortName>Grass\Plyr_Fstps_Grass_08.wav</ShortName>
 					<CachePath>SFX/Grass/Plyr_Fstps_Grass_08_10C4C929.wem</CachePath>
 				</File>
-				<File Id="584701427" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>StoneIndication_04.wav</ShortName>
-					<CachePath>SFX/StoneIndication_04_3F75BDB9.wem</CachePath>
+				<File Id="591993128" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>C2#_H.wav</ShortName>
+					<CachePath>SFX/C2#_H_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="592682436" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>C3_E3_A2_B3_C3_v5.wav</ShortName>
@@ -722,6 +902,10 @@
 					<ShortName>C3_E3_A2_B3_C3_v2.wav</ShortName>
 					<CachePath>SFX/C3_E3_A2_B3_C3_v2_D79FB2B7.wem</CachePath>
 				</File>
+				<File Id="601583920" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>A3_H.wav</ShortName>
+					<CachePath>SFX/A3_H_3F75BDB9.wem</CachePath>
+				</File>
 				<File Id="603105156" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>DistanceCount\100.wav</ShortName>
 					<CachePath>SFX/DistanceCount/100_10C4C929.wem</CachePath>
@@ -734,6 +918,14 @@
 					<ShortName>Reflections.wav</ShortName>
 					<CachePath>SFX/Reflections_9EDFC787.wem</CachePath>
 				</File>
+				<File Id="605345863" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>C4#_H.wav</ShortName>
+					<CachePath>SFX/C4#_H_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="618014053" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>A3#_H.wav</ShortName>
+					<CachePath>SFX/A3#_H_3F75BDB9.wem</CachePath>
+				</File>
 				<File Id="618258995" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>D4b.wav</ShortName>
 					<CachePath>SFX/D4b_10C4C929.wem</CachePath>
@@ -742,6 +934,10 @@
 					<ShortName>O2\D2.wav</ShortName>
 					<CachePath>SFX/O2/D2_10C4C929.wem</CachePath>
 				</File>
+				<File Id="626998779" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>F3_H.wav</ShortName>
+					<CachePath>SFX/F3_H_3F75BDB9.wem</CachePath>
+				</File>
 				<File Id="628564408" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>ListenAgain.wav</ShortName>
 					<CachePath>Voices/English(US)/ListenAgain_3F75BDB9.wem</CachePath>
@@ -749,6 +945,10 @@
 				<File Id="632144886" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BeaconSignal.wav</ShortName>
 					<CachePath>SFX/BeaconSignal_10C4C929.wem</CachePath>
+				</File>
+				<File Id="636913850" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>B2b_H.wav</ShortName>
+					<CachePath>SFX/B2b_H_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="638180037" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>M1_P2_E3_Dissected.wav</ShortName>
@@ -770,6 +970,10 @@
 					<ShortName>BackToMainMenu.wav</ShortName>
 					<CachePath>Voices/English(US)/BackToMainMenu_3F75BDB9.wem</CachePath>
 				</File>
+				<File Id="671871584" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>F3#_H.wav</ShortName>
+					<CachePath>SFX/F3#_H_3F75BDB9.wem</CachePath>
+				</File>
 				<File Id="672218961" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Plyr_Grunt_03.wav</ShortName>
 					<CachePath>SFX/Plyr_Grunt_03_10C4C929.wem</CachePath>
@@ -777,6 +981,10 @@
 				<File Id="673892171" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>G3#.wav</ShortName>
 					<CachePath>SFX/G3#_10C4C929.wem</CachePath>
+				</File>
+				<File Id="674963817" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>A4#_H.wav</ShortName>
+					<CachePath>SFX/A4#_H_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="675839683" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>StoneBump\StoneBump3.wav</ShortName>
@@ -786,13 +994,25 @@
 					<ShortName>OnTarget\OnTarget_PitchE.wav</ShortName>
 					<CachePath>SFX/OnTarget/OnTarget_PitchE_D79FB2B7.wem</CachePath>
 				</File>
+				<File Id="683045178" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>A3b_H.wav</ShortName>
+					<CachePath>SFX/A3b_H_3F75BDB9.wem</CachePath>
+				</File>
 				<File Id="686006542" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>A4#.wav</ShortName>
 					<CachePath>SFX/A4#_10C4C929.wem</CachePath>
 				</File>
+				<File Id="691806817" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>B3b_H.wav</ShortName>
+					<CachePath>SFX/B3b_H_3F75BDB9.wem</CachePath>
+				</File>
 				<File Id="698313299" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Woodpicker\Woodpicker_Pick_02.wav</ShortName>
 					<CachePath>SFX/Woodpicker/Woodpicker_Pick_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="700226813" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>TreeAxe_01.wav</ShortName>
+					<CachePath>SFX/TreeAxe_01_6B4D3C1D.wem</CachePath>
 				</File>
 				<File Id="705663367" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>InclusionModeOn.wav</ShortName>
@@ -818,6 +1038,10 @@
 					<ShortName>LeavesRustlingIndicator\Leaves_Rustling_01.wav</ShortName>
 					<CachePath>SFX/LeavesRustlingIndicator/Leaves_Rustling_01_10C4C929.wem</CachePath>
 				</File>
+				<File Id="737580540" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>E3_H.wav</ShortName>
+					<CachePath>SFX/E3_H_3F75BDB9.wem</CachePath>
+				</File>
 				<File Id="742077720" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Tile\FS_Tile_01.wav</ShortName>
 					<CachePath>SFX/Footsteps/Tile/FS_Tile_01_10C4C929.wem</CachePath>
@@ -825,6 +1049,10 @@
 				<File Id="748943891" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SteppingFlowersGrass\Step_GrassFlowers_04.wav</ShortName>
 					<CachePath>SFX/SteppingFlowersGrass/Step_GrassFlowers_04_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="753800207" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>A2#_H.wav</ShortName>
+					<CachePath>SFX/A2#_H_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="754521329" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>InclusionModeOff.wav</ShortName>
@@ -842,9 +1070,9 @@
 					<ShortName>E2b.wav</ShortName>
 					<CachePath>SFX/E2b_10C4C929.wem</CachePath>
 				</File>
-				<File Id="764851200" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>TreeIndication_03.wav</ShortName>
-					<CachePath>SFX/TreeIndication_03_3F75BDB9.wem</CachePath>
+				<File Id="764392578" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>A2b_H.wav</ShortName>
+					<CachePath>SFX/A2b_H_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="765385419" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Plyr_Grunt_08.wav</ShortName>
@@ -882,6 +1110,10 @@
 					<ShortName>Footsteps\Gravel\FS_Gravel_02.wav</ShortName>
 					<CachePath>SFX/Footsteps/Gravel/FS_Gravel_02_10C4C929.wem</CachePath>
 				</File>
+				<File Id="798780486" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>F2#_H.wav</ShortName>
+					<CachePath>SFX/F2#_H_3F75BDB9.wem</CachePath>
+				</File>
 				<File Id="807706107" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O2\G2.wav</ShortName>
 					<CachePath>SFX/O2/G2_10C4C929.wem</CachePath>
@@ -889,10 +1121,6 @@
 				<File Id="808692484" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>A4b.wav</ShortName>
 					<CachePath>SFX/A4b_10C4C929.wem</CachePath>
-				</File>
-				<File Id="811603588" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>TreeIndication_06.wav</ShortName>
-					<CachePath>SFX/TreeIndication_06_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="812700246" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TreeBump\Dropping Wood 09.wav</ShortName>
@@ -922,6 +1150,14 @@
 					<ShortName>TreeBump\Dropping Wood 15.wav</ShortName>
 					<CachePath>SFX/TreeBump/Dropping Wood 15_3F75BDB9.wem</CachePath>
 				</File>
+				<File Id="829588326" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>A4_H.wav</ShortName>
+					<CachePath>SFX/A4_H_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="831633126" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>C3#_H.wav</ShortName>
+					<CachePath>SFX/C3#_H_3F75BDB9.wem</CachePath>
+				</File>
 				<File Id="843155914" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Tile\FS_Tile_02.wav</ShortName>
 					<CachePath>SFX/Footsteps/Tile/FS_Tile_02_10C4C929.wem</CachePath>
@@ -933,10 +1169,6 @@
 				<File Id="855718662" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>LeavesRustlingIndicator\Leaves_Rustling_05.wav</ShortName>
 					<CachePath>SFX/LeavesRustlingIndicator/Leaves_Rustling_05_10C4C929.wem</CachePath>
-				</File>
-				<File Id="855996151" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>StoneIndication_03.wav</ShortName>
-					<CachePath>SFX/StoneIndication_03_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="857896596" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Plyr_Grunt_06.wav</ShortName>
@@ -950,9 +1182,21 @@
 					<ShortName>C3#.wav</ShortName>
 					<CachePath>SFX/C3#_10C4C929.wem</CachePath>
 				</File>
+				<File Id="870418613" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>G3b_H.wav</ShortName>
+					<CachePath>SFX/G3b_H_3F75BDB9.wem</CachePath>
+				</File>
 				<File Id="872404735" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>C3_E3_A2_B3_C3_v3.wav</ShortName>
 					<CachePath>SFX/C3_E3_A2_B3_C3_v3_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="873776271" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>TreeFall_01.wav</ShortName>
+					<CachePath>SFX/TreeFall_01_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="874808945" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>F2_H.wav</ShortName>
+					<CachePath>SFX/F2_H_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="875746989" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>MusicVolume.wav</ShortName>
@@ -981,6 +1225,10 @@
 				<File Id="899448972" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>C3_E3_A2_B3_C3_Bird.wav</ShortName>
 					<CachePath>SFX/C3_E3_A2_B3_C3_Bird_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="914621836" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Stone_02.wav</ShortName>
+					<CachePath>SFX/Stone_02_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="915905125" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>E4b.wav</ShortName>
@@ -1017,6 +1265,10 @@
 				<File Id="927525782" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O3\D3.wav</ShortName>
 					<CachePath>SFX/O3/D3_10C4C929.wem</CachePath>
+				</File>
+				<File Id="930005589" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>D4_H.wav</ShortName>
+					<CachePath>SFX/D4_H_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="932724716" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grass\Plyr_Fstps_Grass_02.wav</ShortName>
@@ -1074,6 +1326,10 @@
 					<ShortName>O2\C2.wav</ShortName>
 					<CachePath>SFX/O2/C2_10C4C929.wem</CachePath>
 				</File>
+				<File Id="987618943" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Stone_04.wav</ShortName>
+					<CachePath>SFX/Stone_04_3F75BDB9.wem</CachePath>
+				</File>
 				<File Id="990206362" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O3\B3.wav</ShortName>
 					<CachePath>SFX/O3/B3_10C4C929.wem</CachePath>
@@ -1094,17 +1350,37 @@
 					<ShortName>TreeBumpPrevention.wav</ShortName>
 					<CachePath>SFX/TreeBumpPrevention_9EDFC787.wem</CachePath>
 				</File>
+				<File Id="1005386459" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>B3_H.wav</ShortName>
+					<CachePath>SFX/B3_H_3F75BDB9.wem</CachePath>
+				</File>
 				<File Id="1014629448" Language="English(US)" Streaming="false" Location="Memory">
 					<ShortName>Continue.wav</ShortName>
 					<CachePath>Voices/English(US)/Continue_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="1016418286" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>TreeHitting_01.wav</ShortName>
+					<CachePath>SFX/TreeHitting_01_D1648E8D.wem</CachePath>
 				</File>
 				<File Id="1020057871" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Woodpicker\Woodpicker_Pick_04.wav</ShortName>
 					<CachePath>SFX/Woodpicker/Woodpicker_Pick_04_10C4C929.wem</CachePath>
 				</File>
+				<File Id="1025488588" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>G4b_H.wav</ShortName>
+					<CachePath>SFX/G4b_H_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="1026600546" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>D4b_H.wav</ShortName>
+					<CachePath>SFX/D4b_H_3F75BDB9.wem</CachePath>
+				</File>
 				<File Id="1030614238" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps\Concrete\FS_Concrete_04.wav</ShortName>
 					<CachePath>SFX/Footsteps/Concrete/FS_Concrete_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1034654781" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>F4#_H.wav</ShortName>
+					<CachePath>SFX/F4#_H_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="1042648744" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>DistanceCount\20.wav</ShortName>
@@ -1113,6 +1389,10 @@
 				<File Id="1045015971" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SquirrelNoteWrangle_02.wav</ShortName>
 					<CachePath>SFX/SquirrelNoteWrangle_02_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="1045717228" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Stone_01.wav</ShortName>
+					<CachePath>SFX/Stone_01_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="1047754521" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Winter Wren\WinterWren_02.wav</ShortName>
@@ -1137,6 +1417,10 @@
 				<File Id="1055002628" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>StoneBump\StoneBump8.wav</ShortName>
 					<CachePath>SFX/StoneBump/StoneBump8_3F75BDB9.wem</CachePath>
+				</File>
+				<File Id="1060658115" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ErrorDefault_H.wav</ShortName>
+					<CachePath>SFX/ErrorDefault_H_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="1064747333" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>O3\F3.wav</ShortName>
@@ -1695,6 +1979,322 @@
 						<MediaRef Id="168050965"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2956245481" Name="Play_Horn" MaxAttenuation="200" DurationType="OneShot" DurationMin="2" DurationMax="3">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="1972204327"/>
+							<MediaRefs>
+								<MediaRef Id="356308472"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="1853303296"/>
+							<MediaRefs>
+								<MediaRef Id="265965449"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="1870081013"/>
+							<MediaRefs>
+								<MediaRef Id="386867692"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="1870081012"/>
+							<MediaRefs>
+								<MediaRef Id="1005386459"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="1870081011"/>
+							<MediaRefs>
+								<MediaRef Id="145216165"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="2040300616"/>
+							<MediaRefs>
+								<MediaRef Id="218048551"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="1805266923"/>
+							<MediaRefs>
+								<MediaRef Id="217401190"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="1819748156"/>
+							<MediaRefs>
+								<MediaRef Id="40232992"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="1939634906"/>
+							<MediaRefs>
+								<MediaRef Id="764392578"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="1802970441"/>
+							<MediaRefs>
+								<MediaRef Id="874808945"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="3952551681"/>
+							<MediaRefs>
+								<MediaRef Id="591993128"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="1786192859"/>
+							<MediaRefs>
+								<MediaRef Id="511704722"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="3851738891"/>
+							<MediaRefs>
+								<MediaRef Id="221838846"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="1802970447"/>
+							<MediaRefs>
+								<MediaRef Id="489547541"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="4187144236"/>
+							<MediaRefs>
+								<MediaRef Id="61248538"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="3834961332"/>
+							<MediaRefs>
+								<MediaRef Id="495621439"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="1938649181"/>
+							<MediaRefs>
+								<MediaRef Id="122013757"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="1938649164"/>
+							<MediaRefs>
+								<MediaRef Id="572373707"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="1972351384"/>
+							<MediaRefs>
+								<MediaRef Id="798780486"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="1819748157"/>
+							<MediaRefs>
+								<MediaRef Id="737580540"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="4237477221"/>
+							<MediaRefs>
+								<MediaRef Id="549989419"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="3851886195"/>
+							<MediaRefs>
+								<MediaRef Id="605345863"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="1886858600"/>
+							<MediaRefs>
+								<MediaRef Id="265492144"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="1955426738"/>
+							<MediaRefs>
+								<MediaRef Id="184254641"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="1786192860"/>
+							<MediaRefs>
+								<MediaRef Id="444981274"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="3969329526"/>
+							<MediaRefs>
+								<MediaRef Id="831633126"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="1972204342"/>
+							<MediaRefs>
+								<MediaRef Id="1025488588"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="1886858601"/>
+							<MediaRefs>
+								<MediaRef Id="601583920"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="1786192858"/>
+							<MediaRefs>
+								<MediaRef Id="86341108"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="1836525717"/>
+							<MediaRefs>
+								<MediaRef Id="930005589"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="1956412472"/>
+							<MediaRefs>
+								<MediaRef Id="618014053"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="3885294317"/>
+							<MediaRefs>
+								<MediaRef Id="1026600546"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="2040300633"/>
+							<MediaRefs>
+								<MediaRef Id="674963817"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="1956412457"/>
+							<MediaRefs>
+								<MediaRef Id="683045178"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="3851738906"/>
+							<MediaRefs>
+								<MediaRef Id="304256637"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="1939634891"/>
+							<MediaRefs>
+								<MediaRef Id="753800207"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="3885294332"/>
+							<MediaRefs>
+								<MediaRef Id="146077204"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="1853303302"/>
+							<MediaRefs>
+								<MediaRef Id="173011971"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="1955573803"/>
+							<MediaRefs>
+								<MediaRef Id="671871584"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="1853303303"/>
+							<MediaRefs>
+								<MediaRef Id="298424507"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="1822044542"/>
+							<MediaRefs>
+								<MediaRef Id="691806817"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="1838822093"/>
+							<MediaRefs>
+								<MediaRef Id="636913850"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="2073017134"/>
+							<MediaRefs>
+								<MediaRef Id="1034654781"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="2416969594" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="1060658115"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="4220699414"/>
+							<MediaRefs>
+								<MediaRef Id="351491395"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="1802970440"/>
+							<MediaRefs>
+								<MediaRef Id="626998779"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="1819748154"/>
+							<MediaRefs>
+								<MediaRef Id="387959535"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="1836525714"/>
+							<MediaRefs>
+								<MediaRef Id="503711425"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="3834961317"/>
+							<MediaRefs>
+								<MediaRef Id="131127661"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="1836525715"/>
+							<MediaRefs>
+								<MediaRef Id="35822434"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="1955426723"/>
+							<MediaRefs>
+								<MediaRef Id="870418613"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4173622173" Id="1886858606"/>
+							<MediaRefs>
+								<MediaRef Id="829588326"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
 				<Event Id="342260041" Name="Play_InBetween" DurationType="OneShot" DurationMin="0.1" DurationMax="0.1">
 					<PluginRefs>
 						<Custom>
@@ -1702,7 +2302,7 @@
 						</Custom>
 					</PluginRefs>
 				</Event>
-				<Event Id="1184431001" Name="Play_Instructions" DurationType="OneShot" DurationMin="19.2425" DurationMax="32.31373">
+				<Event Id="1184431001" Name="Play_Instructions" DurationType="OneShot" DurationMin="10.338333" DurationMax="26.713333">
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="4273002286" Id="1752637680"/>
@@ -1755,7 +2355,7 @@
 						<MediaRef Id="716105785"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2184134547" Name="Play_M1_Intro" DurationType="OneShot" DurationMin="14.668" DurationMax="14.668">
+				<Event Id="2184134547" Name="Play_M1_Intro" DurationType="OneShot" DurationMin="14.756208" DurationMax="14.756208">
 					<MediaRefs>
 						<MediaRef Id="923941858"/>
 					</MediaRefs>
@@ -1769,7 +2369,7 @@
 						<MediaRef Id="647086168"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="763214702" Name="Play_M1_Success_Announce" DurationType="OneShot" DurationMin="10.388021" DurationMax="12.2560005">
+				<Event Id="763214702" Name="Play_M1_Success_Announce" DurationType="OneShot" DurationMin="8.0998745" DurationMax="12.460021">
 					<MediaRefs>
 						<MediaRef Id="237824840"/>
 						<MediaRef Id="397557872"/>
@@ -1943,7 +2543,7 @@
 						<MediaRef Id="992939571"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2598215984" Name="Play_PracticeEnd" DurationType="OneShot" DurationMin="7.4796457" DurationMax="7.4796457">
+				<Event Id="2598215984" Name="Play_PracticeEnd" DurationType="OneShot" DurationMin="7.1866875" DurationMax="7.1866875">
 					<MediaRefs>
 						<MediaRef Id="79578983"/>
 					</MediaRefs>
@@ -1970,7 +2570,6 @@
 				<Event Id="3385122965" Name="Play_StoneBump" DurationType="OneShot" DurationMin="0.86822915" DurationMax="1.7662916">
 					<MediaRefs>
 						<MediaRef Id="45056509"/>
-						<MediaRef Id="418019861"/>
 						<MediaRef Id="429045180"/>
 						<MediaRef Id="462856247"/>
 						<MediaRef Id="646510716"/>
@@ -1981,13 +2580,16 @@
 						<MediaRef Id="1055002628"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2946471667" Name="Play_StoneIndication" MaxAttenuation="30" DurationType="OneShot" DurationMin="1" DurationMax="1.5">
+				<Event Id="2946471667" Name="Play_StoneIndication" MaxAttenuation="30" DurationType="OneShot" DurationMin="0.48002082" DurationMax="4.20195">
 					<MediaRefs>
-						<MediaRef Id="129800306"/>
-						<MediaRef Id="169806685"/>
-						<MediaRef Id="217946136"/>
-						<MediaRef Id="584701427"/>
-						<MediaRef Id="855996151"/>
+						<MediaRef Id="36420285"/>
+						<MediaRef Id="75001240"/>
+						<MediaRef Id="164017223"/>
+						<MediaRef Id="268412815"/>
+						<MediaRef Id="301167507"/>
+						<MediaRef Id="914621836"/>
+						<MediaRef Id="987618943"/>
+						<MediaRef Id="1045717228"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="83581882" Name="Play_TestClick" DurationType="Infinite">
@@ -2024,14 +2626,17 @@
 						<MediaRef Id="1002045619"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3593300948" Name="Play_TreeIndication" MaxAttenuation="30" DurationType="OneShot" DurationMin="0.875" DurationMax="1.375">
+				<Event Id="3593300948" Name="Play_TreeIndication" MaxAttenuation="30" DurationType="OneShot" DurationMin="3.3139534" DurationMax="23.084738">
 					<MediaRefs>
-						<MediaRef Id="183238745"/>
-						<MediaRef Id="504256570"/>
-						<MediaRef Id="555265354"/>
-						<MediaRef Id="567893771"/>
-						<MediaRef Id="764851200"/>
-						<MediaRef Id="811603588"/>
+						<MediaRef Id="284212118"/>
+						<MediaRef Id="310755968"/>
+						<MediaRef Id="388169196"/>
+						<MediaRef Id="391071439"/>
+						<MediaRef Id="481268898"/>
+						<MediaRef Id="563872510"/>
+						<MediaRef Id="700226813"/>
+						<MediaRef Id="873776271"/>
+						<MediaRef Id="1016418286"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1569887440" Name="Play_VolumeCheck" DurationType="OneShot" DurationMin="0.8030625" DurationMax="2">
@@ -2069,6 +2674,7 @@
 				<Event Id="419352152" Name="Reset_M1_Dissected" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="39386235" Name="Reset_M1_Seq" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2401183550" Name="Reset_M1_Sucess_Announce" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2033440605" Name="Stop_AimSynthOne" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2371377610" Name="Stop_AllEvents" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="388256776" Name="Stop_BGM_Menu" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="632677629" Name="Stop_ButtonReadAloud" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
@@ -2149,6 +2755,62 @@
 						<Switch Id="4248645337" Name="Grass"/>
 					</Switches>
 				</SwitchGroup>
+				<SwitchGroup Id="4173622173" Name="Horns">
+					<Switches>
+						<Switch Id="1786192858" Name="G2"/>
+						<Switch Id="1786192859" Name="G3"/>
+						<Switch Id="1786192860" Name="G4"/>
+						<Switch Id="1802970440" Name="F3"/>
+						<Switch Id="1802970441" Name="F2"/>
+						<Switch Id="1802970447" Name="F4"/>
+						<Switch Id="1805266923" Name="B4b"/>
+						<Switch Id="1819748154" Name="E4"/>
+						<Switch Id="1819748156" Name="E2"/>
+						<Switch Id="1819748157" Name="E3"/>
+						<Switch Id="1822044542" Name="B3b"/>
+						<Switch Id="1836525714" Name="D3"/>
+						<Switch Id="1836525715" Name="D2"/>
+						<Switch Id="1836525717" Name="D4"/>
+						<Switch Id="1838822093" Name="B2b"/>
+						<Switch Id="1853303296" Name="C4"/>
+						<Switch Id="1853303302" Name="C2"/>
+						<Switch Id="1853303303" Name="C3"/>
+						<Switch Id="1870081011" Name="B4"/>
+						<Switch Id="1870081012" Name="B3"/>
+						<Switch Id="1870081013" Name="B2"/>
+						<Switch Id="1886858600" Name="A2"/>
+						<Switch Id="1886858601" Name="A3"/>
+						<Switch Id="1886858606" Name="A4"/>
+						<Switch Id="1938649164" Name="G2b"/>
+						<Switch Id="1938649181" Name="G2s"/>
+						<Switch Id="1939634891" Name="A2s"/>
+						<Switch Id="1939634906" Name="A2b"/>
+						<Switch Id="1955426723" Name="G3b"/>
+						<Switch Id="1955426738" Name="G3s"/>
+						<Switch Id="1955573803" Name="F3s"/>
+						<Switch Id="1956412457" Name="A3b"/>
+						<Switch Id="1956412472" Name="A3s"/>
+						<Switch Id="1972204327" Name="G4s"/>
+						<Switch Id="1972204342" Name="G4b"/>
+						<Switch Id="1972351384" Name="F2s"/>
+						<Switch Id="2040300616" Name="A4b"/>
+						<Switch Id="2040300633" Name="A4s"/>
+						<Switch Id="2073017134" Name="F4s"/>
+						<Switch Id="2416969594" Name="DefaultError"/>
+						<Switch Id="3834961317" Name="D3s"/>
+						<Switch Id="3834961332" Name="D3b"/>
+						<Switch Id="3851738891" Name="D2b"/>
+						<Switch Id="3851738906" Name="D2s"/>
+						<Switch Id="3851886195" Name="C4s"/>
+						<Switch Id="3885294317" Name="D4b"/>
+						<Switch Id="3885294332" Name="D4s"/>
+						<Switch Id="3952551681" Name="C2s"/>
+						<Switch Id="3969329526" Name="C3s"/>
+						<Switch Id="4187144236" Name="E4b"/>
+						<Switch Id="4220699414" Name="E2b"/>
+						<Switch Id="4237477221" Name="E3b"/>
+					</Switches>
+				</SwitchGroup>
 				<SwitchGroup Id="4273002286" Name="Instructions">
 					<Switches>
 						<Switch Id="1752637680" Name="I2"/>
@@ -2162,5 +2824,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{3ABDF33E-C055-73D0-9855-AC26A3C43A68}</FileHash>
+	<FileHash>{DD694497-4CCD-ED59-3692-45862FF5AFDB}</FileHash>
 </SoundBanksInfo>

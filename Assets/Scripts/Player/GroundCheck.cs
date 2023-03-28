@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GroundCheck : MonoBehaviour
 {
@@ -13,13 +14,16 @@ public class GroundCheck : MonoBehaviour
 
     private void Start()
     {
-        LogManager.InitializeWriter();
-        StartCoroutine(TrackCoordinates());
+        if (SceneManager.GetActiveScene().name != "PracticeMode")
+        {
+            LogManager.InitializeWriter();
+            StartCoroutine(TrackCoordinates());
+        }
     }
 
     IEnumerator TrackCoordinates()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(2.5f);
         LogManager.PrintCoordinates(transform.position.x, transform.position.z);
         StartCoroutine(TrackCoordinates());
     }
