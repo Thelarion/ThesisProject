@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 
+// Details: LogManager
+// Provides logging in several aspects of the game
+
 public class LogManager : MonoBehaviour
 {
     private static float startTime;
@@ -19,9 +22,6 @@ public class LogManager : MonoBehaviour
     private static float musicVolume = 5f;
     private static float effectsVolume = 5f;
 
-
-
-
     public static float StartTime { get => startTime; set => startTime = value; }
     public static float EndTime { get => endTime; set => endTime = value; }
     public static int TotalPoints { get => totalPoints; set => totalPoints = value; }
@@ -37,13 +37,14 @@ public class LogManager : MonoBehaviour
     public static float EffectsVolume { get => effectsVolume; set => effectsVolume = value; }
     private static StreamWriter writer;
 
+    // Initialize the stream writer:
+    // Place the file on the Desktop the participant names TapTopneStats.txt
     public static void InitializeWriter()
     {
         writer = new StreamWriter(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + "\\TapToneStats.txt", true);
     }
 
-
-
+    // Reset all data points after the practice mode
     public static void ResetLogging()
     {
         TotalPoints = 0;
@@ -56,13 +57,13 @@ public class LogManager : MonoBehaviour
         West = 0;
     }
 
+    // Separate method to print the coordinates in a stream after every x seconds
     public static void PrintCoordinates(float x, float z)
     {
         writer.WriteLine(Time.time.ToString() + "; " + x.ToString() + "; " + z.ToString());
         writer.Flush();
     }
 
-    // Update is called once per frame
     public static void PrintToTxt()
     {
         writer.WriteLine("-------- Output --------");

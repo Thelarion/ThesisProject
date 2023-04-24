@@ -1,9 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using StarterAssets;
-using Cinemachine;
 using UnityEngine.InputSystem;
+
+// Details: Inclusion
+// Sets up all important details regarding the inclusion mode
 
 public class Inclusion : MonoBehaviour
 {
@@ -15,6 +15,7 @@ public class Inclusion : MonoBehaviour
     public bool InclusionQuickStart = false;
     public bool ColourQuickStart = false;
 
+    // Check for the chosen mode or state
     private void Awake()
     {
         if (InclusionQuickStart)
@@ -29,8 +30,10 @@ public class Inclusion : MonoBehaviour
 
     private void Start()
     {
+        // If inclusion state, set up the game in inclusion mode
         if (StartMenuManager.InclusionState == true)
         {
+
             InclusionIO();
         }
     }

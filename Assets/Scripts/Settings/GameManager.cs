@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
-using StarterAssets;
-using System;
+
+// Details: GameManager
+// Decision on Color Palette, 
+// Melody Initialization, 
+// Soundscape based on mode, 
+// Menu toggle
 
 public class GameManager : MonoBehaviour
 {
@@ -103,6 +105,7 @@ public class GameManager : MonoBehaviour
         {
             AkSoundEngine.PostEvent("Play_MenuOpen", gameObject);
             InGameUI.SetActive(false);
+            // Set background blurry to distinguish from in-game
             Blur.SetActive(true);
             MenuInGameSettings.SetActive(true);
             audioMenuInGame.ButtonReadAloud();

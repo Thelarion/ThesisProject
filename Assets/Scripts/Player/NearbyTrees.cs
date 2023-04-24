@@ -23,7 +23,7 @@ public class NearbyTrees : MonoBehaviour
         StartCoroutine(SonifyTrees());
     }
 
-    public void DelayIndicatorOnSucess()
+    public void DelayIndicatorOnSuccess()
     {
         StartCoroutine(ToggleIndicator());
     }

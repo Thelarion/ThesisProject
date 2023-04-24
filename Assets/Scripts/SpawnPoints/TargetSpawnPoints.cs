@@ -1,7 +1,7 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+
+// Details: TargetSpawnPoints
+// Store all possible spawn points
 
 public class TargetSpawnPoints : MonoBehaviour
 {

@@ -1,7 +1,7 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+
+// Details: CheckOcclusion
+// High cut the note sound when an obstacle is in between the player and the note
 
 public class CheckOcclusion : MonoBehaviour
 {
@@ -15,17 +15,18 @@ public class CheckOcclusion : MonoBehaviour
         CheckIfPlayerBehindObstacle();
     }
 
+    // Shoot a straight line, check with a layerMask
     private void CheckIfPlayerBehindObstacle()
     {
         if (Physics.Linecast(transform.position, player.transform.position, out playerOcclusionCheck, layerMask))
         {
+            // Fade in the high cut
             AkSoundEngine.SetRTPCValue("RTPC_Obstruction", 1, gameObject);
-            // print("1");
         }
         else
         {
+            // Fade out the high cut
             AkSoundEngine.SetRTPCValue("RTPC_Obstruction", 0, gameObject);
-            // print("0");
         }
     }
 }

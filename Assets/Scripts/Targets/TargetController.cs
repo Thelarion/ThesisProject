@@ -1,9 +1,11 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Linq;
+
+// Details: TargetController
+// Overall parent of all targets
+// Storage of child information
 
 public class TargetController : MonoBehaviour
 {
@@ -29,11 +31,14 @@ public class TargetController : MonoBehaviour
     private ArrayList _materialsAvailableString = new ArrayList();
     private bool initializationState = false;
 
+    // Set up the score manager, and operation controller
+    // Set up the melody and name the targets accordingly
     void Awake()
     {
         scoreManager = GameObject.Find("ScoreSystem").GetComponent<ScoreManager>();
         _operationController = GameObject.Find("List").GetComponent<OperationController>();
         int x = 0;
+        // Filter through the melody and name the targets
         foreach (notes note in _operationController._melodySequence)
         {
             Transform _childTarget = transform.GetChild(x);
@@ -41,6 +46,7 @@ public class TargetController : MonoBehaviour
             _childTarget.GetComponent<TargetIdentity>().setIndexInSequence(x);
             x++;
         }
+        // Set up the materials
         InitializeMaterials();
     }
 
@@ -57,9 +63,11 @@ public class TargetController : MonoBehaviour
 
     private void Update()
     {
-
+        // Useful when several targets are available at the same time on the map
+        // This will always search for the closest note and set it active in the UI
         InitializeDistanceTarget();
 
+        // Check for remaining targets
         CheckTargetCount();
         GetTargetWithShortestDistance();
     }
@@ -70,6 +78,7 @@ public class TargetController : MonoBehaviour
         {
             currentShortestDistance = DistanceToTarget.CurrentTargetIdentity.transform;
             targetCheckStateForDistance = currentShortestDistance;
+            // Enable occlusion when target active
             currentShortestDistance.GetComponent<CheckOcclusion>().enabled = true;
             initializationState = true;
         }
@@ -95,8 +104,10 @@ public class TargetController : MonoBehaviour
 
     }
 
+    // Set the materials based on the chosen color palette
     private void InitializeMaterials()
     {
+        // Load all the materials of the color palette
         var load = Resources.LoadAll("UI_Materials/" + GameManager.ChosenPalette, typeof(Material)).Cast<Material>();
         foreach (var material in load)
         {
@@ -111,6 +122,7 @@ public class TargetController : MonoBehaviour
         }
     }
 
+    // Based on the inclusion mode, move the targets less or more
     public void ToggleInclusionTargets()
     {
         foreach (Transform child in transform)
@@ -128,6 +140,7 @@ public class TargetController : MonoBehaviour
         }
     }
 
+    // Reactivate the movement after it was stopped to transform the position
     public void InitializeMovementAfterStopped()
     {
         foreach (Transform child in transform)
@@ -143,18 +156,17 @@ public class TargetController : MonoBehaviour
             child.GetComponent<TargetMove>().StopMovementWhenMissOrInclusion();
         }
     }
-    // int i = 0;
+
 
     public int TargetCount { get => _targetCount; set => _targetCount = value; }
 
+
+    // Always check for the target count, so that a new level loads once all targets are found
     private void CheckTargetCount()
     {
 
         if (CountChildrenTargets(transform) <= 0)
         {
-
-            // i++;
-            // AkSoundEngine.PostEvent("Play_MelodyComplete", GameObject.Find("Player"));
 
             if (SceneManager.GetActiveScene().name == "PracticeMode")
             {
@@ -173,7 +185,7 @@ public class TargetController : MonoBehaviour
     }
 
 
-
+    // Child count = amount of targets
     public int CountChildrenTargets(Transform t)
     {
         int k = 0;
@@ -187,6 +199,7 @@ public class TargetController : MonoBehaviour
         return k;
     }
 
+    // If one tone has been found, activate the next tone
     public Transform ActivateNextTone()
     {
         if (transform.GetChild(1) != null)

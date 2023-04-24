@@ -1,6 +1,9 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+
+// Details: RunInterval
+// Note chages materials after a specific interval
+// Gathering of all possible materials, selection of palette and application of next material
 
 public class RunInterval : MonoBehaviour
 {
@@ -15,11 +18,11 @@ public class RunInterval : MonoBehaviour
     [HideInInspector] public bool TapState;
     [HideInInspector] public PlayNoteOnTone PlayNoteOnTone;
     private string currentMaterialName;
-    private string constructedNote;
-    // private ParticleSystem noteParticles;
 
+    // Start
     void Start()
     {
+        // Set up components, names and first render
         GetComponents();
         SetNames();
         SetRenderer();
@@ -29,7 +32,6 @@ public class RunInterval : MonoBehaviour
 
         void GetComponents()
         {
-            // noteParticles = transform.GetChild(0).GetComponent<ParticleSystem>();
             PlayNoteOnTone = transform.parent.gameObject.GetComponent<PlayNoteOnTone>();
         }
 
@@ -40,17 +42,22 @@ public class RunInterval : MonoBehaviour
         }
     }
 
-    // Caution: Same as in OperationController, lean it down!
+    // Dissmantle the name of the gameObject as the name contains all relevant information
     private void SetNames()
     {
+        // Full name
         _nameGOFull = transform.name;
+        // Note name
         _nameGONote = _nameGOFull[0].ToString();
+        // Octave name
         _nameGOOctave = _nameGOFull[1].ToString();
+        // Make sure to account for the note name plus octave = 2 digits
         int digitCountBeforeAccidental = 2; // e.g. A2 = 2, A2# = 3
+        // Check for accidentals
         string accidentalCheck = _nameGOFull.Length > digitCountBeforeAccidental ? _nameGOFull[2].ToString() : "null";
-        _nameGOAccidental = accidentalCheck; // Accidental or null 
+        // Set to accidental or null 
+        _nameGOAccidental = accidentalCheck;
     }
-
 
     void ChangeMaterial()
     {
@@ -94,7 +101,6 @@ public class RunInterval : MonoBehaviour
             correctMaterial = MaterialsAvailable[MaterialsAvailableString.IndexOf(_nameGONote)] as Material;
             // Remove the correct material from the fluent array
             fluentMaterialArray.Remove(correctMaterial);
-            // print(correctMaterial);
 
             // Get first random Material
             randomMaterial1 = fluentMaterialArray[Random.Range(0, fluentMaterialArray.Count)] as Material;
@@ -137,14 +143,17 @@ public class RunInterval : MonoBehaviour
         CheckTargetState();
         currentMaterialName = _materialRenderer[0].name;
 
+        // Change every 3 seconds
         yield return new WaitForSeconds(3);
         StartCoroutine(IntervalChangeTarget());
     }
 
     IEnumerator IntervalNoteAndEffect()
     {
+        // Pass the information on to the Wwise Event
         PlayNoteOnTone.PlayNote(currentMaterialName, _nameGOOctave, _nameGOAccidental, transform.gameObject);
-        // noteParticles.Play();
+
+        // Change every 3 seconds
         yield return new WaitForSeconds(3);
         StartCoroutine(IntervalNoteAndEffect());
     }

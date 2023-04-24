@@ -2,6 +2,9 @@ using System;
 using System.Collections;
 using UnityEngine;
 
+// Details: TargetMove
+// Movement of each individual target
+
 public class TargetMove : MonoBehaviour
 {
     float movementFactor;
@@ -21,17 +24,21 @@ public class TargetMove : MonoBehaviour
         StartCoroutine(WaitForPositionInitialization());
     }
 
+    // Before transformation, stop the movement
+    // Also do not apply movement when in inclusion mode
     public void StopMovementWhenMissOrInclusion()
     {
         positionIsSet = false;
     }
 
+    // Initlaize movement once it was stopped
     public void InitializeMovementAfterMissOrInclusion()
     {
         startingPosition = transform.position;
         positionIsSet = true;
     }
 
+    // Minor cooldown after positon change
     IEnumerator WaitForPositionInitialization()
     {
         yield return new WaitForSeconds(0.2f);
@@ -44,6 +51,7 @@ public class TargetMove : MonoBehaviour
         if (positionIsSet) { OscillateMovement(); }
     }
 
+    // Move from a to b in 3 dimensions
     private void OscillateMovement()
     {
         float cycles = Time.time / period;
@@ -60,15 +68,13 @@ public class TargetMove : MonoBehaviour
             {
                 StartCoroutine(InterpolateRandomMovementXYZ(rawSinWave, interpolateX, interpolateY, interpolateZ));
             }
-            // else if (InclusionIO == true)
-            // {
-            //     StartCoroutine(InterpolateRandomMovementXZ(rawSinWave, interpolateX, interpolateZ));
-            // }
         }
         movementFactor = (rawSinWave + 1f) / 2f;
         offset = movementVector * movementFactor;
         transform.position = startingPosition + offset;
     }
+
+    // Calulate the movement for Inclusion mode (only 2 dimensions)
     IEnumerator InterpolateRandomMovementXZ(float rawSinWave, float interpolateX, float interpolateZ)
     {
         interpolate = true;
@@ -94,6 +100,8 @@ public class TargetMove : MonoBehaviour
 
         interpolate = false;
     }
+
+    // Calulate the movement on all 3 dimensions
     IEnumerator InterpolateRandomMovementXYZ(float rawSinWave, float interpolateX, float interpolateY, float interpolateZ)
     {
         interpolate = true;
@@ -123,17 +131,17 @@ public class TargetMove : MonoBehaviour
         interpolate = false;
     }
 
-    private float CheckUnwantedAccelerationX(float randomXNew)
-    {
-        if (randomXNew > 0 && (randomXNew - randomXPrev) > 1)
-        {
-            randomXNew = randomXNew - 1;
-        }
-        if (randomXNew < 0 && (randomXPrev - randomXNew) > 1)
-        {
-            randomXNew = randomXNew + 1;
-        }
+    // private float CheckUnwantedAccelerationX(float randomXNew)
+    // {
+    //     if (randomXNew > 0 && (randomXNew - randomXPrev) > 1)
+    //     {
+    //         randomXNew = randomXNew - 1;
+    //     }
+    //     if (randomXNew < 0 && (randomXPrev - randomXNew) > 1)
+    //     {
+    //         randomXNew = randomXNew + 1;
+    //     }
 
-        return randomXNew;
-    }
+    //     return randomXNew;
+    // }
 }

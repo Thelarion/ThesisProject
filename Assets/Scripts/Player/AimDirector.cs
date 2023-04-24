@@ -1,7 +1,7 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+
+// Details: AudioController
+// Can be removed in a future version
 
 public class AimDirector : MonoBehaviour
 {

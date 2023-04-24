@@ -33,7 +33,7 @@ public class LookManager : MonoBehaviour
 
     }
 
-    public void DelayAudioCompassOnSucess()
+    public void DelayAudioCompassOnSuccess()
     {
         StartCoroutine(ToggleIndicator());
     }

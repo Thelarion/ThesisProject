@@ -1,8 +1,8 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+
+// Details: SliderController
+// Control of the slider functionallity of the voice, music and effect slider
 
 public class SliderController : MonoBehaviour
 {
@@ -36,6 +36,7 @@ public class SliderController : MonoBehaviour
         Initialize();
     }
 
+    // Initialize each volume slider, each default value is 5
     private void Initialize()
     {
         if (!VolumeInitialized)
@@ -51,6 +52,8 @@ public class SliderController : MonoBehaviour
 
             VolumeInitialized = true;
         }
+        // Do not change the volume settings once the default has been established
+        // because not it was changed by the player
         else
         {
             ignoreSliderChange = true;
@@ -71,8 +74,13 @@ public class SliderController : MonoBehaviour
     {
         Stop_VolumeCheck.Post(gameObject);
         Play_VolumeCheck.Post(gameObject);
-        // AkSoundEngine.UnregisterGameObj(gameObject);
     }
+
+    // Set up the value
+    // Get corresponding sound from Wwise
+    // Set the corresponding volume level
+    // Logging the value
+    // Post the event
     public void OnVoiceSliderChanged(float value)
     {
         if (!ignoreSliderChange)
@@ -85,7 +93,11 @@ public class SliderController : MonoBehaviour
         }
     }
 
-
+    // Set up the value
+    // Get corresponding sound from Wwise
+    // Set the corresponding volume level
+    // Logging the value
+    // Post the event
     public void OnMusicVolumeSliderChanged(float value)
     {
         if (!ignoreSliderChange)
@@ -98,6 +110,11 @@ public class SliderController : MonoBehaviour
         }
     }
 
+    // Set up the value
+    // Get corresponding sound from Wwise
+    // Set the corresponding volume level
+    // Logging the value
+    // Post the event
     public void OnEffectsVolumeSliderChanged(float value)
     {
         if (!ignoreSliderChange)

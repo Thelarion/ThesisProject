@@ -3,6 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Details: PlayNoteOnTone
+// Logic to play the correct Wwise event on each note
+
 public class PlayNoteOnTone : MonoBehaviour
 {
     public AK.Wwise.Event C2;
@@ -60,7 +63,7 @@ public class PlayNoteOnTone : MonoBehaviour
     private AK.Wwise.Event currentNote = new AK.Wwise.Event();
 
 
-
+    // Classify and filter down each information passed through the method
     public void PlayNote(string materialToNote, string _nameGOOctave, string _nameGOSharpFlat, GameObject tone)
     {
         switch (materialToNote)
@@ -359,19 +362,18 @@ public class PlayNoteOnTone : MonoBehaviour
                 }
                 break;
         }
-        // currentNote.Post(tone);
 
 
+        // Play the note accordingly
+        // Without accidentals
         if (_nameGOSharpFlat != "b")
         {
-            // print(materialToNote + _nameGOOctave);
-            // AkSoundEngine.PostEvent(materialToNote + _nameGOOctave, tone);
             AkSoundEngine.SetSwitch("Horns", materialToNote + _nameGOOctave, tone);
             AkSoundEngine.PostEvent("Play_Horn", tone);
         }
+        // For flats:
         else
         {
-            // AkSoundEngine.PostEvent(materialToNote + _nameGOOctave + _nameGOSharpFlat, tone);
             AkSoundEngine.SetSwitch("Horns", materialToNote + _nameGOOctave + _nameGOSharpFlat, tone);
             AkSoundEngine.PostEvent("Play_Horn", tone);
         }

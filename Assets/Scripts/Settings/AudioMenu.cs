@@ -1,9 +1,9 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+
+// Details: AudioMenu
+// Controls the voice overs in the menus
 
 public class AudioMenu : MonoBehaviour
 {
@@ -20,6 +20,7 @@ public class AudioMenu : MonoBehaviour
 
     public static bool MenuInitializedState { get => menuInitializedState; set => menuInitializedState = value; }
 
+    // Activate the voice over menu based on the chosen mode
     public void AudioMenuToggle(bool value)
     {
         if (value)
@@ -32,13 +33,17 @@ public class AudioMenu : MonoBehaviour
         }
     }
 
+    // Parse the button name and read it out loud
     public void SwitchToggleAndReadAloud(GameObject switchGO, string subSwitchValue)
     {
+        // Switch between the buttons, related to the switches created in Wwise
         AkSoundEngine.SetSwitch("ButtonReadAloud", switchGO.name, gameObject);
         AkSoundEngine.SetSwitch(switchGO.name, subSwitchValue, gameObject);
+        // Stop and Play the events
         PostEvents();
     }
 
+    // Iterate through the array of buttons
     public void ToggleReadAloud(GameObject switchGO)
     {
         AkSoundEngine.SetSwitch("ButtonReadAloud", switchGO.name, gameObject);
@@ -60,12 +65,14 @@ public class AudioMenu : MonoBehaviour
         PostEvents();
     }
 
+    // Set switch to selection
     public void ButtonReadAloud()
     {
         AkSoundEngine.SetSwitch("ButtonReadAloud", toggles[Selection].name, gameObject);
         PostEvents();
     }
 
+    // Main function to post the events
     private void PostEvents()
     {
         Stop_ButtonReadAloud.Post(gameObject);
@@ -74,19 +81,17 @@ public class AudioMenu : MonoBehaviour
 
     private void Start()
     {
-        if (SceneManager.GetActiveScene().name == "Credits")
-        {
-
-        }
-
+        // If the current scene is the start menu, then play a welcome and offer to switch on the inclusion mode
         if (!MenuInitializedState && SceneManager.GetActiveScene().name == "StartSettings")
         {
             AkSoundEngine.SetState("AudioMenuState", "AudioMenuOff");
+            // Delay for 1 second to make sure everything is loaded correctly
             Invoke("ReadInclusionWelcome", 1);
             MenuInitializedState = true;
         }
     }
 
+    // Read the start menu message
     private void ReadInclusionWelcome()
     {
         AkSoundEngine.SetSwitch("ButtonReadAloud", "WelcomeInclusion", gameObject);
@@ -94,6 +99,7 @@ public class AudioMenu : MonoBehaviour
         Play_ButtonReadAloud.Post(gameObject);
     }
 
+    // Manage the button presses
     void Update()
     {
         toggles[Selection].Select(); // Always highlight the selected button
@@ -106,8 +112,7 @@ public class AudioMenu : MonoBehaviour
         GetSpaceKey();
     }
 
-
-
+    // Logic for Arrow Right clicks
     private void GetArrowRight()
     {
         if (Input.GetKeyDown(KeyCode.RightArrow))
@@ -126,6 +131,7 @@ public class AudioMenu : MonoBehaviour
         }
     }
 
+    // Logic for Arrow Left clicks
     private void GetArrowLeft()
     {
         string toggleName = toggles[Selection].name;
@@ -145,6 +151,7 @@ public class AudioMenu : MonoBehaviour
         }
     }
 
+    // Logic for Arrow Up clicks
     private void GetArrowUp()
     {
         if (Input.GetKeyDown(KeyCode.UpArrow))
@@ -162,6 +169,7 @@ public class AudioMenu : MonoBehaviour
         }
     }
 
+    // Logic for Arrow Down clicks
     private void GetArrowDown()
     {
         if (Input.GetKeyDown(KeyCode.DownArrow))

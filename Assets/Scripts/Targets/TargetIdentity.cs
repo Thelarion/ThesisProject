@@ -1,8 +1,8 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+
+// Details: TargetIdentity
+// Separate information class for each target
 
 // Put this component on your enemy prefabs / objects
 public class TargetIdentity : MonoBehaviour
@@ -36,17 +36,20 @@ public class TargetIdentity : MonoBehaviour
         closedCaptions = GameObject.Find("ClosedCaptions").GetComponent<ClosedCaptions>();
         gameObject.transform.position = targetSpawnPoints.ReturnRandomSpawnTransform(_indexInSequence).position;
         AdjustSizeAndVoice();
-        // GameObject.Find("TargetIndicator").GetComponent<TargetIndicator>().Target = gameObject.transform;
     }
 
+    // Adjust details about the note based on the chosen inclusion mode
     private void AdjustSizeAndVoice()
     {
+        // If inclusion mode, increase the 3D size
+        // Increase the collider size
         if (StartMenuManager.InclusionState == true)
         {
             transform.localScale = new Vector3(100f, 100f, 100f);
             transform.GetComponent<BoxCollider>().size = new Vector3(0.06f, 0.08f, 0.05f);
             AkSoundEngine.SetRTPCValue("RTPC_MelodyVoice", 1f);
         }
+        // If not inclusion mode, set it back to the usual values, which is smaller
         else if (StartMenuManager.InclusionState == false)
         {
             transform.localScale = new Vector3(20f, 20f, 20f);
@@ -72,14 +75,14 @@ public class TargetIdentity : MonoBehaviour
     // Remove target from instances when destroyed
     private void OnDestroy()
     {
-
+        // Active the success frame
         if (_tapState && operationController != null)
         {
             operationController.ActivateFrameSuccess(_indexInSequence, transform.name);
             operationController.DelayDistanceFrameCoroutine(4.5f);
         }
 
-
+        // While this is not the last note, play success announcement and continue
         if (transform.GetComponentInParent<TargetController>().TargetCount > 1)
         {
             if (StartMenuManager.InclusionState)
@@ -90,7 +93,9 @@ public class TargetIdentity : MonoBehaviour
                     closedCaptions.DisplayCaptionsTop("Great, that is the correct note! On to the next.");
                 }
             }
+            // Activate a new note
             Transform nextTone = transform.GetComponentInParent<TargetController>().ActivateNextTone();
+            // Play success event
             GetComponentInParent<SuccessEvent>().PlaySuccessEvent(this.transform);
             DistanceToTarget.CurrentTargetIdentity = nextTone.transform.GetComponent<TargetIdentity>();
         }
