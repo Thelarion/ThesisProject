@@ -58,7 +58,7 @@ public class LogManager : MonoBehaviour
 
     public static void PrintCoordinates(float x, float z)
     {
-        writer.WriteLine(Time.time.ToString() + ", " + x.ToString() + ", " + z.ToString());
+        writer.WriteLine(Time.time.ToString() + "; " + x.ToString() + "; " + z.ToString());
         writer.Flush();
     }
 

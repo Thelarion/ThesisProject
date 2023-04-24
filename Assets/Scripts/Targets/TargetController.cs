@@ -143,17 +143,17 @@ public class TargetController : MonoBehaviour
             child.GetComponent<TargetMove>().StopMovementWhenMissOrInclusion();
         }
     }
-    int i = 0;
+    // int i = 0;
 
     public int TargetCount { get => _targetCount; set => _targetCount = value; }
 
     private void CheckTargetCount()
     {
 
-        if (CountChildrenTargets(transform) <= 0 && i < 1)
+        if (CountChildrenTargets(transform) <= 0)
         {
 
-            i++;
+            // i++;
             // AkSoundEngine.PostEvent("Play_MelodyComplete", GameObject.Find("Player"));
 
             if (SceneManager.GetActiveScene().name == "PracticeMode")

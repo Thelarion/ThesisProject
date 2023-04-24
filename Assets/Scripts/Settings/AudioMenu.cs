@@ -60,6 +60,12 @@ public class AudioMenu : MonoBehaviour
         PostEvents();
     }
 
+    public void ButtonReadAloud()
+    {
+        AkSoundEngine.SetSwitch("ButtonReadAloud", toggles[Selection].name, gameObject);
+        PostEvents();
+    }
+
     private void PostEvents()
     {
         Stop_ButtonReadAloud.Post(gameObject);
@@ -100,11 +106,7 @@ public class AudioMenu : MonoBehaviour
         GetSpaceKey();
     }
 
-    public void ButtonReadAloud()
-    {
-        AkSoundEngine.SetSwitch("ButtonReadAloud", toggles[Selection].name, gameObject);
-        PostEvents();
-    }
+
 
     private void GetArrowRight()
     {
