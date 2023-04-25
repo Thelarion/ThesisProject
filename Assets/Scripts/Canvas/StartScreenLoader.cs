@@ -1,11 +1,12 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+// Details: StartScreenLoader
+// Loading screen at the boot of the game for 5 seconds
+
 public class StartScreenLoader : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
         StartCoroutine(StartScreenLoaderFn());

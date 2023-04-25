@@ -1,9 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.InputSystem;
-using System;
+
+// Details: AimManager
+// Check if the aim is aligned to the target
 
 public class AimManager : MonoBehaviour
 {
@@ -25,7 +23,7 @@ public class AimManager : MonoBehaviour
         }
     }
 
-
+    // Put focus on target with shortest distance
     private void DetermineCurrentTarget()
     {
         if (DistanceToTarget.CurrentTargetIdentity != null)
@@ -34,15 +32,18 @@ public class AimManager : MonoBehaviour
         }
     }
 
-
+    // Check if the aim is aligned with the target
+    // If yes, play and indication Wwise event
     private void CheckIfAimOnTarget()
     {
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hitOnTargetCheck, 25f, layerMask))
         {
+            // Collision with the target
             if (hitOnTargetCheck.collider.tag == "Target")
             {
                 AkSoundEngine.SetSwitch("OnTarget", "Pitch" + hitOnTargetCheck.collider.name[0], gameObject);
 
+                // Aim Target status ON
                 setAimOnTargetStatus();
             }
             // If ray hits objects that are not targets
@@ -52,9 +53,9 @@ public class AimManager : MonoBehaviour
         else setAimOffTargetStatus();
     }
 
+    // Aim Target ON
     private void setAimOnTargetStatus()
     {
-        // print("onTarget");
         if (!isAimOnTarget)
         {
             isAimOnTarget = true;
@@ -62,6 +63,7 @@ public class AimManager : MonoBehaviour
         }
     }
 
+    // Aim Target OFF
     private void setAimOffTargetStatus()
     {
         if (isAimOnTarget)

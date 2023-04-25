@@ -1,6 +1,8 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+
+// Details: NearbyTrees
+// Play audio cues on nearby trees
 
 public class NearbyTrees : MonoBehaviour
 {
@@ -11,6 +13,8 @@ public class NearbyTrees : MonoBehaviour
     private bool stopIndicatorOnSucess = false;
     private TargetIndicator targetIndicator;
     private ClosedCaptions closedCaptions;
+
+    // Delay the audio cues, so that the player has time to get used to the environment first
     private void Start()
     {
         Invoke("DelayedStart", 20f);
@@ -18,25 +22,35 @@ public class NearbyTrees : MonoBehaviour
         closedCaptions = GameObject.Find("ClosedCaptions").GetComponent<ClosedCaptions>();
     }
 
+    // Delay 20 seconds
     private void DelayedStart()
     {
         StartCoroutine(SonifyTrees());
     }
 
+    // Delay 30 seconds
     public void DelayIndicatorOnSuccess()
     {
         StartCoroutine(ToggleIndicator());
     }
 
+    // When successful hit, stop the audio cues for 30 seconds to let the player search first
     IEnumerator ToggleIndicator()
     {
         stopIndicatorOnSucess = true;
         yield return new WaitForSeconds(30f);
         stopIndicatorOnSucess = false;
     }
+
+    // SonifyTrees: 
+    // Get the distance to the target
+    // Determine the trees around the player in a specific radius
+    // Determine the tree with the closest distance to the target
+    // Play the audio cue on exact that object
     Transform currentTargetTone;
     IEnumerator SonifyTrees()
     {
+        // Get the distance to the target
         if (DistanceToTarget.CurrentTargetIdentity != null)
         {
             currentTargetTone = DistanceToTarget.CurrentTargetIdentity.transform;
@@ -46,6 +60,7 @@ public class NearbyTrees : MonoBehaviour
 
         float shortestDistanceTreeToTarget = Mathf.Infinity;
 
+        // Determine the trees around the player in a specific radius
         Collider[] hitColliders = Physics.OverlapSphere(transform.position, radius);
         foreach (var hitCollider in hitColliders)
         {
@@ -64,7 +79,7 @@ public class NearbyTrees : MonoBehaviour
 
             }
         }
-
+        // Play the audio cue on exact that object
         if (shortestDistanceTreeToTarget <= 40f)
         {
             stopIndicator = true;

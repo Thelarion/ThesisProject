@@ -1,6 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+
+// Details: ListItemIdentity
 
 public class ListItemIdentity : MonoBehaviour
 {

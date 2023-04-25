@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
-using System;
+
+// Details: OperationController
+// Operation of the UI
 
 public class OperationController : MonoBehaviour
 {
@@ -48,17 +50,16 @@ public class OperationController : MonoBehaviour
     public Sprite UI_ListBackground_Contrast;
     [Header("Wwise")]
     public AK.Wwise.Event DistanceFrameTransition;
-    // private bool blockInitialPost = false;
 
     private void Start()
     {
         ColourHelpState = StartMenuManager.ColourState;
         UpdateUI();
-        // ActivateFrameDistance();
     }
 
     private void Update()
     {
+        // Change the distance color when a new target in shorter distance
         ActivateFrameDistance();
     }
 
@@ -72,6 +73,7 @@ public class OperationController : MonoBehaviour
             InitializeUIAccidentals();
             IterateSequences();
             SetInfosToIdentity();
+
             _initializationDone = true;
         }
 
@@ -82,6 +84,7 @@ public class OperationController : MonoBehaviour
         SetSequencesToUI();
     }
 
+    // Set up the interface for solely the notes
     private void InitializeUINotes()
     {
         var loaded_ui_notes = Resources.LoadAll("UI_Notes", typeof(Sprite)).Cast<Sprite>();
@@ -93,6 +96,7 @@ public class OperationController : MonoBehaviour
         }
     }
 
+    // Set up the interface for solely the octaces
     private void InitializeUIOctaves()
     {
         var loaded_ui_octaves = Resources.LoadAll("UI_Octaves", typeof(Sprite)).Cast<Sprite>();
@@ -104,6 +108,7 @@ public class OperationController : MonoBehaviour
         }
     }
 
+    // Set up the interface for solely the accidentals
     private void InitializeUIAccidentals()
     {
         var loaded_ui_accidentals = Resources.LoadAll("UI_Accidentals", typeof(Sprite)).Cast<Sprite>();
@@ -115,6 +120,7 @@ public class OperationController : MonoBehaviour
         }
     }
 
+    // Finish up the complete interface sequence
     private void IterateSequences()
     {
         foreach (notes note in _melodySequence)
@@ -135,6 +141,7 @@ public class OperationController : MonoBehaviour
         }
     }
 
+    // Identify each component
     private void SetInfosToIdentity()
     {
         int x = 0;
@@ -155,6 +162,7 @@ public class OperationController : MonoBehaviour
         }
     }
 
+    // Finally, set all components to the UI
     private void SetSequencesToUI()
     {
         foreach (Transform childGO in transform)
@@ -179,6 +187,7 @@ public class OperationController : MonoBehaviour
         }
     }
 
+    // Check for available tones
     public List<Transform> CheckIfTonesCompleted()
     {
         List<Transform> missingTones = new List<Transform>();
@@ -194,6 +203,7 @@ public class OperationController : MonoBehaviour
         return missingTones;
     }
 
+    // Set the background according to the mode
     private void InitializeUIBackgrounds()
     {
         if (!ColourHelpState)
@@ -255,6 +265,7 @@ public class OperationController : MonoBehaviour
         }
     }
 
+    // Colour mode List
     public void ToggleListColourHelp()
     {
         ColourHelpState = ColourHelpState == true ? false : true;
@@ -262,6 +273,7 @@ public class OperationController : MonoBehaviour
         ToggleUISuccessFrameColour();
     }
 
+    // Success frame according to the mode
     private void ToggleUISuccessFrameColour()
     {
         int x = 0;
@@ -270,13 +282,13 @@ public class OperationController : MonoBehaviour
             if (child.GetChild(0).GetComponent<ListItemIdentity>().LockState == true)
             {
                 StartCoroutine(DecreaseAlpha(GetModeAndImage(!ColourHelpState, x)));
-                // print(child.name);
                 ActivateFrameSuccess(x, child.name);
             }
             x++;
         }
     }
 
+    // Correct note found = success frame
     public void ActivateFrameSuccess(int tappedListItemIndex, string tappedName)
     {
         // Set the sprite within the list UI
@@ -289,6 +301,7 @@ public class OperationController : MonoBehaviour
         }
     }
 
+    // Change the UI according to the mode
     private Image GetModeAndImage(bool ColourHelpOn, int index)
     {
         int mode = ColourHelpOn ? 3 : 2;
@@ -296,11 +309,13 @@ public class OperationController : MonoBehaviour
         return currentFrameSuccess;
     }
 
+    // Delay the distance when a new target found
     public void DelayDistanceFrameCoroutine(float value)
     {
         StartCoroutine(DelayDistanceFrame(value));
     }
 
+    // Delay the distance when a new target found
     public IEnumerator DelayDistanceFrame(float value)
     {
         _distanceFrameDelayState = true;
@@ -347,6 +362,7 @@ public class OperationController : MonoBehaviour
         StartCoroutine(DecreaseAlpha(_currentFrameDistance));
     }
 
+    // Regulate the alpha values for a smooth transition
     IEnumerator DecreaseAlpha(Image currentFrame)
     {
         float time = 0f;
@@ -369,6 +385,7 @@ public class OperationController : MonoBehaviour
         currentFrame.color = newColorSafety;
     }
 
+    // Regulate the alpha values for a smooth transition
     IEnumerator IncreaseAlpha(Image currentImageComponent)
     {
         float time = 0f;

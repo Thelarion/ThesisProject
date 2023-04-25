@@ -1,9 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using StarterAssets;
+
+// Details: CanvasController
+// Overarching controller for child elements of the UI
 
 public class CanvasController : MonoBehaviour
 {
@@ -26,33 +27,41 @@ public class CanvasController : MonoBehaviour
     private string sceneName;
     private FirstPersonController firstPersonController;
 
-    // Start is called before the first frame update
+    // Determine the currenct scene and set the UI accordingly
     void Awake()
     {
         Scene currentScene = SceneManager.GetActiveScene();
 
         sceneName = currentScene.name;
 
+        // Startmenu
         if (sceneName == "StartSettings")
         {
             MenuStartSettings.SetActive(true);
 
         }
+
+        // Playground
         else if (sceneName == "Playground")
         {
             GameUI.SetActive(true);
         }
+
+        // Practice mode or Forest
         else if (sceneName == "Forest" || sceneName == "PracticeMode")
         {
             GameUI.SetActive(true);
             scoreManager = GameObject.Find("ScoreSystem").GetComponent<ScoreManager>();
         }
+
+        // Credits
         else if (sceneName == "Credits")
         {
             Credits.SetActive(true);
             AkSoundEngine.PostEvent("Play_ThankYou", gameObject);
         }
 
+        // Switch to inclusion mode (contrasting interface)
         if (currentScene.name == "StartSettings" && StartMenuManager.InclusionState == true)
         {
             Image InclusionImage = InclusionModeToggle.transform.GetChild(0).GetComponent<Image>();
@@ -76,6 +85,8 @@ public class CanvasController : MonoBehaviour
     {
         CheckCursorLockState();
     }
+
+    // If any menu is open, activate the visibility of the cursor
     void CheckCursorLockState()
     {
         if (MenuStart.activeSelf || MenuInGame.activeSelf || MenuCredits.activeSelf)
@@ -90,14 +101,10 @@ public class CanvasController : MonoBehaviour
             Cursor.visible = false;
             if (sceneName == "Forest" || sceneName == "PracticeMode") { firstPersonController.MenuToggle = false; }
         }
-
-
     }
 
     public void BackToStartMenu()
     {
-        // AkSoundEngine.StopAll();
-
         if (scoreManager != null)
         {
             scoreManager.CurrentScore = 0;

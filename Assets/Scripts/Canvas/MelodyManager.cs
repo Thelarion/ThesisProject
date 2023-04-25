@@ -1,16 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+
+// Details: MelodyManager
+// Interface for administrator the set up melodies for levels
 
 public class MelodyManager : MonoBehaviour
 {
     public AK.Wwise.Event Melody;
     bool isSoundPlaying;
-
-    private void Update()
-    {
-        // print(isSoundPlaying);
-    }
 
     public void PlayMelody()
     {

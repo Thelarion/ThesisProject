@@ -1,8 +1,8 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+
+// Details: SpriteUIContrastSwitch
+// Switch the UI based on the inclusion mode
 
 public class SpriteUIContrastSwitch : MonoBehaviour
 {
@@ -40,6 +40,7 @@ public class SpriteUIContrastSwitch : MonoBehaviour
         }
     }
 
+    // Constrast image change
     private void SwitchContrastModeImage()
     {
         if (inclusionState)
@@ -52,6 +53,7 @@ public class SpriteUIContrastSwitch : MonoBehaviour
         }
     }
 
+    // Color code of the contrast slider
     private void SwitchContrastModeSlider()
     {
         if (inclusionState)

@@ -1,7 +1,8 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using System;
+
+// Details: LookManager
+// Supports the cardinal directions
 
 public class LookManager : MonoBehaviour
 {
@@ -33,6 +34,7 @@ public class LookManager : MonoBehaviour
 
     }
 
+    // Delay the compass to support the voice-over instructions
     public void DelayAudioCompassOnSuccess()
     {
         StartCoroutine(ToggleIndicator());

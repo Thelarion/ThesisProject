@@ -1,14 +1,17 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+
+// Details: InstructionManager
+// Manage the instructions
 
 public class InstructionManager : MonoBehaviour
 {
     private LevelLoader levelLoader;
     private int childIndex = 0;
     private GameObject instructionButtons;
+
+    // Check for the current instructions page
     void Start()
     {
         instructionButtons = GameObject.Find("InstructionButtons");
@@ -35,6 +38,7 @@ public class InstructionManager : MonoBehaviour
         CheckInclusionMode();
     }
 
+    // If inclusion mode is on, read the instructions aloud
     private void CheckInclusionMode()
     {
         if (StartMenuManager.InclusionState)
@@ -50,6 +54,7 @@ public class InstructionManager : MonoBehaviour
 
     }
 
+    // Play the event
     void PlayInstructionVoice()
     {
         AkSoundEngine.PostEvent("Play_Instructions", gameObject);
@@ -66,6 +71,7 @@ public class InstructionManager : MonoBehaviour
         }
     }
 
+    // The player can listen again to the instructions
     private bool isPlaying = false;
     public void ListenAgain()
     {
@@ -75,6 +81,7 @@ public class InstructionManager : MonoBehaviour
         }
     }
 
+    // Make sure the player does not accidentaly plays the instructions twice (within 3 seconds)
     IEnumerator CheckPlaying()
     {
         isPlaying = true;

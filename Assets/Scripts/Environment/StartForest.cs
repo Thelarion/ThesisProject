@@ -1,6 +1,6 @@
 using UnityEngine;
 
-// StartForest Details:
+// Details: StartForest
 // Serves as a layer to support the practice mode
 // Provides the Key Press action when the first note is found
 

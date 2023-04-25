@@ -1,7 +1,7 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+
+// Details: DistanceToTarget
+// Controls the distance to put focus on shortest target
 
 public class DistanceToTarget : MonoBehaviour
 {

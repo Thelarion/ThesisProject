@@ -1,7 +1,8 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+
+// Details: DetectRegionEnd
+// Detects the mountains and stops the player from moving any further
 
 public class DetectRegionEnd : MonoBehaviour
 {
@@ -27,17 +28,21 @@ public class DetectRegionEnd : MonoBehaviour
     {
         CheckForRegionEndCollision();
 
+        // Start the region end announcement when detected colliders greater 0
         if (triggeredRegionEnds.Count > 0 && !isSemaphore)
         {
-            StartCoroutine(EndZoneAnnouncement());
+            StartCoroutine(RegionEndAnnouncement());
         }
 
     }
 
-    IEnumerator EndZoneAnnouncement()
+    // Announcement to the player that there is not further way
+    IEnumerator RegionEndAnnouncement()
     {
         isSemaphore = true;
+        // Wwise event
         AkSoundEngine.PostEvent("Play_EndRegion", gameObject);
+        // CC
         if (StartMenuManager.ColourState)
         {
             closedCaptions.DisplayCaptions("You cannot climb the mountains!");
@@ -48,12 +53,14 @@ public class DetectRegionEnd : MonoBehaviour
 
     public void CheckForRegionEndCollision()
     {
+        // Prepare the Rays
         myPosition = transform.position;
         rayDirectionForward = transform.TransformDirection(Vector3.forward);
         rayDirectionLeft = transform.TransformDirection(Vector3.left);
         rayDirectionRight = transform.TransformDirection(Vector3.right);
         rayDirectionBack = transform.TransformDirection(Vector3.back);
 
+        // Raycast in each 4 cardinal directions, to detect the colliders from each side
         if (
         Physics.Raycast(myPosition, rayDirectionForward, out detectionRay, rayLengthMeters) ||
         Physics.Raycast(myPosition, rayDirectionLeft, out detectionRay, rayLengthMeters) ||
@@ -61,8 +68,10 @@ public class DetectRegionEnd : MonoBehaviour
         Physics.Raycast(myPosition, rayDirectionBack, out detectionRay, rayLengthMeters)
         )
         {
+            // Collider detected
             if (detectionRay.collider.gameObject.name == "RegionEnd")
             {
+                // Indicator true
                 regionEndState = true;
                 GameObject triggeredGO = detectionRay.collider.gameObject.GetComponentInParent<Transform>().gameObject;
 
@@ -71,6 +80,7 @@ public class DetectRegionEnd : MonoBehaviour
                     triggeredRegionEndIDs.Add(triggeredGO.GetInstanceID());
                     triggeredRegionEnds.Add(triggeredGO);
                 }
+                // Activate each shader concerned to show the alert mode
                 detectionRay.collider.gameObject.GetComponent<RegionEndIdentity>().TransitionToAlert();
             }
         }
@@ -78,6 +88,7 @@ public class DetectRegionEnd : MonoBehaviour
         {
             if (regionEndState == true)
             {
+                // deactivate the alert mode for each collider in the array
                 foreach (GameObject regionEnd in triggeredRegionEnds)
                 {
                     regionEnd.transform.gameObject.GetComponent<RegionEndIdentity>().TransitionAlertOver();

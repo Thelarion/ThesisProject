@@ -1,6 +1,8 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+
+// Details: MelodyTrigger
+// Supports the melody to illuminate the obstacles around the player
 
 public class MelodyTrigger : MonoBehaviour
 {
@@ -9,16 +11,23 @@ public class MelodyTrigger : MonoBehaviour
     public AK.Wwise.Event Play_Melody_Seq;
     public AK.Wwise.Event Reset_Melody_Seq;
 
+    // Determine the radius
+    // Determine all objects around the player
+    // Get the 5 closest obstacles
+    // Play the event on those obstacles
     public void PlayMelodyRadius()
     {
         float radius = 30f;
 
+        // Determine all objects around the player within the radius
         Collider[] hitColliders = Physics.OverlapSphere(transform.position, radius, layerMask);
         objectDistances = new float[hitColliders.Length];
 
+        // If obstacles at all available
         if (hitColliders.Length != 0)
         {
             int x = 0;
+            // Iterate through the array
             foreach (var hitCollider in hitColliders)
             {
                 GameObject colliderGO = hitCollider.gameObject;
@@ -29,6 +38,7 @@ public class MelodyTrigger : MonoBehaviour
             GameObject[] sortedGOs = new GameObject[hitColliders.Length];
             print(sortedGOs.Length);
 
+            // Sort the obstacles according to their shortest distance
             for (int j = 0; j < objectDistances.Length; j++)
             {
                 var min = Mathf.Infinity;
@@ -46,7 +56,7 @@ public class MelodyTrigger : MonoBehaviour
                 sortedGOs[j] = hitColliders[index].gameObject;
                 objectDistances[index] = Mathf.Infinity;
             }
-
+            // Start playing the sequence
             StartCoroutine(PlayMelSeq(sortedGOs));
         }
         else
@@ -63,6 +73,7 @@ public class MelodyTrigger : MonoBehaviour
     {
         int max_value;
 
+        // Limit the sequence to the amount of notes in the melody (here 5)
         max_value = sortedGOs.Length > 5 ? 5 : sortedGOs.Length;
 
         for (int i = 0; i < max_value; i++)
@@ -78,8 +89,8 @@ public class MelodyTrigger : MonoBehaviour
                 AkSoundEngine.PostEvent("Play_StoneIndication", sortedGOs[i]);
             }
 
-
-
+            // Each intervall is according to their tonal interaval within the melody
+            // Improvement: do it dynamically based on the input given by a user
             switch (i)
             {
                 case 0:
